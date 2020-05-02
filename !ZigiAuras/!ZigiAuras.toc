@@ -1,0 +1,7 @@
+## Interface: 80300
+## Title: ZigiAuras
+## Version: 8.3.0
+## Notes: Global variables for WeakAuras
+## Author: Leo Bolin
+
+!ZigiAuras.lua
