@@ -6008,6 +6008,9 @@ local function updateData()
 					[308411] = 3671889, -- Candied Amberjack Cakes
 					[308415] = 3671886, -- Banana Beaf Pudding
 					-- Light Meals
+					[354768] = 135233, -- Porous Rock Candy
+					[354764] = 132814, -- Twilight Tea
+					[354766] = 133950, -- Bonemeal Bread
 					[308404] = 3671890, -- Cinnamon Bonefish Stew
 					[308412] = 3671894, -- Meaty Apple Dumplings
 					[308425] = 3671901, -- Sweet Silvergill Sausages
@@ -6537,6 +6540,8 @@ local function updateData()
 					[310501] = 3557124, -- Flexible Ectoplasmic Specs
 					[310507] = 3557127, -- Articulated Ectoplasmic Specs
 					-- Optional Reagents
+					[343103] = 1500875, -- Crafter's Mark of the Chained Isle
+					[343102] = 1500871, -- Crafter's Mark III
 					[343100] = 1500867, -- Crafter's Mark II
 					[343099] = 1500863, -- Crafter's Mark I
 					[343661] = 1500861, -- Novice Crafter's Mark
@@ -7310,9 +7315,11 @@ local function updateData()
 					[310871] = 3386277, -- Shrouded Cloth Cape
 					[310872] = 3386279, -- Shrouded Cloth Mittens
 					[310876] = 3449934, -- Shrouded Cloth Belt
-					[334499] = 669448, -- Pink Party Hat
 					[310869] = 3386274, -- Shrouded Cloth Sandals
 					[310877] = 3386275, -- Shrouded Cloth Bracers
+					-- Hatd & Accessories
+					[355183] = 454036, -- Shrouded Hand Towel
+					[334499] = 669448, -- Pink Party Hat
 					-- Bags
 					[345986] = 3528455, -- Lightless Silk Pouch
 					[3528454] = 3528454, -- Shrouded Cloth Bag
@@ -7320,6 +7327,9 @@ local function updateData()
 					[310923] = 3528457, -- Heavy Shrouded Cloth Bandage
 					[310924] = 3528458, -- Shrouded Cloth Bandage
 					-- Optional Reagents
+					[352445] = 1411836, -- Vestige of Origins
+					[343200] = 1500875, -- Crafter's Mark of the Chained Isle
+					[343201] = 1500871, -- Crafter's Mark III
 					[343202] = 1500867, -- Crafter's Mark II
 					[343204] = 1500863, -- Crafter's Mark I
 					[343659] = 1500861, -- Novice Crafter's Mark
@@ -7524,6 +7534,25 @@ local function updateData()
 					-- Tool of the Trade
 					[292946] = 2490714, -- Synchronous Thread
 				-- Legion Patterns
+					-- Trainnig
+					[186799] = 526170, -- Basic Silkweave Robe
+					[186801] = 526170, -- Embroidered Silkweave Robe
+					[186803] = 133656, -- Handcrafted Silkweave Bag
+					[187060] = 1045771, -- Handcrafted Silkweave Hood
+					[186738] = 526170, -- Handcrafted Silkweave Robe
+					[187066] = 446097, -- Masterwork Silkweave Bracers
+					[186764] = 446098, -- Rune-Threaded Silkweave Bracers
+					[186763] = 526170, -- Rune-Threaded Silkweave Robe
+					[187064] = 133806, -- Silkweave Bracer Lining
+					[187065] = 446097, -- Silkweave Bracer: Outer Layer
+					[187058] = 133135, -- Silkweave Hood Lining
+					[187059] = 1045771, -- Silkweave Hood: Outer Layer
+					-- Optional Reagents
+					[330252] = 132527, -- Relic of the Past I
+					[330253] = 132528, -- Relic of the Past II
+					[330254] = 132529, -- Relic of the Past III
+					[330255] = 132531, -- Relic of the Past IV
+					[330256] = 132532, -- Relic of the Past V
 					-- Reagents
 					[185962] = 1379174, -- Imbued Silkweave
 					-- Cloth Armor
@@ -7556,20 +7585,29 @@ local function updateData()
 					[247808] = 1662771, -- Lightweave Breeches (Rank 2)
 					[247807] = 1662771, -- Lightweave Breeches (Rank 1)
 					[185942] = 1267783, -- Silkweave Bracers (Rank 3)
-					--[] = 1267783, -- Silkweave Bracers (Rank 2)
-					--[] = 1267783, -- Silkweave Bracers (Rank 1)
+					[185934] = 1267783, -- Silkweave Bracers (Rank 2)
+					[185918] = 1267783, -- Silkweave Bracers (Rank 1)
 					[185943] = 1267781, -- Silkweave Cinch (Rank 3)
-					--[] = 1267781, -- Silkweave Cinch (Rank 2)
-					--[] = 1267781, -- Silkweave Cinch (Rank 1)
+					[185935] = 1267781, -- Silkweave Cinch (Rank 2)
+					[185919] = 1267781, -- Silkweave Cinch (Rank 1)
 					[185944] = 1267788, -- Silkweave Epaulets (Rank 3)
-					--[] = 1267788, -- Silkweave Epaulets (Rank 2)
-					--[] = 1267788, -- Silkweave Epaulets (Rank 1)
+					[185936] = 1267788, -- Silkweave Epaulets (Rank 2)
+					[185920] = 1267788, -- Silkweave Epaulets (Rank 1)
 					[208350] = 1267785, -- Silkweave Gloves (Rank 3)
-					--[] = 1267785, -- Silkweave Gloves (Rank 2)
-					--[] = 1267785, -- Silkweave Gloves (Rank 1)
+					[185939] = 1267785, -- Silkweave Gloves (Rank 2)
+					[185923] = 1267785, -- Silkweave Gloves (Rank 1)
 					[208351] = 1267786, -- Silkweave Hood (Rank 3)
-					--[] = 1267786, -- Silkweave Hood (Rank 2)
-					--[] = 1267786, -- Silkweave Hood (Rank 1)
+					[185938] = 1267786, -- Silkweave Hood (Rank 2)
+					[185922] = 1267786, -- Silkweave Hood (Rank 1)
+					[208353] = 1267787, -- Silkweave Pantaloons (Rank 3)
+					[185937] = 1267787, -- Silkweave Pantaloons (Rank 2)
+					[185921] = 1267787, -- Silkweave Pantaloons (Rank 1)
+					[185945] = 1267784, -- Silkweave Robe (Rank 3)
+					[185941] = 1267784, -- Silkweave Robe (Rank 2)
+					[185925] = 1267784, -- Silkweave Robe (Rank 1)
+					[208352] = 1267782, -- Silkweave Slippers (Rank 3)
+					[185940] = 1267782, -- Silkweave Slippers (Rank 2)
+					[185924] = 1267782, -- Silkweave Slippers (Rank 1)
 					-- Cloaks
 					[186114] = 1315132, -- Imbued Silkweave Cover (Rank 3)
 					[186113] = 1315132, -- Imbued Silkweave Cover (Rank 2)
@@ -7583,18 +7621,62 @@ local function updateData()
 					[186108] = 1315132, -- Imbued Silkweave Shade (Rank 3)
 					[186107] = 1315132, -- Imbued Silkweave Shade (Rank 2)
 					[186106] = 1315132, -- Imbued Silkweave Shade (Rank 1)
+					[186097] = 1315132, -- Silkweave Cover
+					[186100] = 1315132, -- Silkweave Drape
+					[186094] = 1315132, -- Silkweave Flourish
+					[186091] = 1315132, -- Silkweave Shade
 					-- Other
 					[229045] = 1379173, -- Imbued Silkweave Bag (Rank 3)
 					[229043] = 1379173, -- Imbued Silkweave Bag (Rank 2)
 					[229041] = 1379173, -- Imbued Silkweave Bag (Rank 1)
+					[220511] = 1379171, -- Bloodtotem Saddle Blanket
+					[213035] = 1379168, -- Clothes Chest: Dalaran Citizens
+					[213036] = 1379169, -- Clothes Chest: Karazhan Opera House
+					[213037] = 1379170, -- Clothes Chest: Molten Core
+					[186388] = 1379173, -- Silkweave Satchel
 					-- Cures of the Broken Isles
-					[202854] = 1387612, -- Silkweave Splint (Rank 1?)
+					[202854] = 1387612, -- Silkweave Splint
+					[230047] = 132911, -- Feathered Luffa
+					[202853] = 1387610, -- Silkweave Bandage
 				-- Draenor Patterns
+					-- Optional Reagents
+					[330247] = 132527, -- Relic of the Past I
+					[330248] = 132528, -- Relic of the Past II
+					[330249] = 132529, -- Relic of the Past III
+					[330250] = 132531, -- Relic of the Past IV
+					[330251] = 132532, -- Relic of the Past V
 					-- Reagents and Research
+					[182123] = 1029754, -- Primal Weaving
+					[168835] = 1029754, -- Hexweave Cloth
+					[176058] = 133735, -- Secrets of Draenor Tailoring
 					-- Dyes and Thread
+					[168836] = 1029753, -- Hexweave Embroidery
 					-- Armor
+					[168847] = 1044837, -- Brilliant Hexweave Cloak
+					[168844] = 973183, -- Hexweave Belt
+					[168842] = 973187, -- Hexweave Bracers
+					[168838] = 973193, -- Hexweave Cowl
+					[168840] = 973191, -- Hexweave Gloves
+					[168839] = 973195, -- Hexweave Leggings
+					[168837] = 973199, -- Hexweave Mantle
+					[168841] = 973197, -- Hexweave Robe
+					[168843] = 973185, -- Hexweave Slippers
+					[168846] = 1044837, -- Nimble Hexweave Cloak
+					[168845] = 1044837, -- Powerful Hexweave Cloak
+					[168852] = 973194, -- Sumptuous Cowl
+					[168854] = 973196, -- Sumptuous Leggings
+					[168853] = 973198, -- Sumptuous Robes
+					-- Battle Standards
+					[176314] = 132486, -- Fearsome Battle Standard (Alliance)
+					[176316] = 132485, -- Fearsome Battle Standard (Horde)
+					[176313] = 132486, -- Inspiring Battle Standard (Alliance)
+					[176315] = 132485, -- Inspiring Battle Standard (Horde)
 					-- Other
+					[168850] = 1029750, -- Creeping Carpet
+					[168849] = 1044082, -- Elekk Plushie
+					[168848] = 1029751, -- Hexweave Bag
 					-- Cures of Draenor
+					[172539] = 1014022, -- Antiseptic Bandage
 				-- Pandaria Patterns
 					-- Materials
 					-- Embroidery
