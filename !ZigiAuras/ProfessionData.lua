@@ -1322,10 +1322,86 @@ ZA.CastIconBySpellID = {
 			-- Tools
 			[12590] = 134429, -- Gyromatic Micro-Adjustor
 			[7430] = 134520, -- Arclight Spanner
+	
+	-- Alchemy
+		-- Shadowlands Alchemy
+			-- Quest Recipes
+			[338204] = 1029738, -- Bramblethorn Juice
+			[338199] = 650637, -- Brutal Oil
+			[338200] = 133849, -- Crushed Bones
+			[338195] = 132807, -- Distilled Resolve
+			[338198] = 609897, -- Draught of Grotesque Strength
+			[338202] = 967530, -- Elixir of Humility
+			[338194] = 609901, -- Flask of Measured Discipline
+			[338191] = 236878, -- Liquid Sleep
+			[338190] = 967529, -- Potion of Hibernal Rest
+			[338192] = 134379, -- Powdered Dreamroot
+			[338196] = 133208, -- Pulverized Breezebloom
+			[338203] = 461806, -- Refined Submission
+			-- Optional Reagents
+			[343676] = 1500875, -- Crafter's Mark of the Chained Isle
+			[343677] = 1500871, -- Crafter's Mark III
+			[343678] = 1500867, -- Crafter's Mark II
+			[343679] = 1500863, -- Crafter's Mark I
+			[343675] = 1500861, -- Novice Crafter's Mark
+			-- Cauldrons
+			[307087] = 3620414, -- Eternal Cauldron
+			-- Transmutation
+			[307143] = 1778229, -- Shadestone
+			[307142] = 3528421, -- Shadowghast Ingot
+			[307144] = 1519431, -- Stones to Ore
+			-- Trinkets
+			[307200] = 3566862, -- Spiritual Alchemy Stone
+			-- Flasks
+			[307101] = 3566840, -- Spectral Flask of Power
+			[307103] = 3566841, -- Spectral Flask of Stamina
+			-- Combat Potions
+			[307093] = 3566835, -- Potion of Spectral Agility
+			[307096] = 3566836, -- Potion of Spectral Intellect
+			[307097] = 3566837, -- Potion of Spectral Stamina
+			[307098] = 3566838, -- Potion of Spectral Strength
+			[307384] = 3566833, -- Potion of Deathly Fixation
+			[307381] = 3566831, -- Potion of Empowered Exorcisms
+			[307383] = 3566830, -- Potion of Divine Awakening
+			[307382] = 3566829, -- Potion of Phantom Fire
+			[322301] = 3566832, -- Potion of Sacrificial Anima
+			[307094] = 3566834, -- Potion of Hardened Shadows
+			[307095] = 3566828, -- Potion of Spiritual Clarity
+			[261423] = 3566859, -- Spiritual Rejuvenation Potion
+			[301578] = 3566860, -- Spiritual Healing Potion
+			[301683] = 3566858, -- Spiritual Mana Potion
+			-- Utility Potions
+			[344316] = 967556, -- Potion of the Psychopomp's Speed
+			[256133] = 3566866, -- Potion of Specter Swiftness
+			[256134] = 3566865, -- Potion of Soul Purity
+			[342887] = 3566869, -- Potion of Unhindered Passing
+			[295084] = 3566867, -- Potion of Shaded Sight
+			[261424] = 3566868, -- Potion of the Hidden Spirit
+			-- Oils and Extracts
+			[307122] = 3566853, -- Ground Widowbloom
+			[307121] = 3566852, -- Ground Vigil's Torch
+			[307125] = 3566850, -- Ground Nightshade
+			[307123] = 3566856, -- Ground Marrowroot
+			[307124] = 3566857, -- Ground Rising Glory
+			[307120] = 3566855, -- Ground Death Blossom
+			[307119] = 463544, -- Embalmer's Oil
+			[307118] = 463543, -- Shadowcore Oil
+			-- Anti-Venoms
+			[307100] = 3566826, -- Spiritual Anti-Venom
+			-- Other
+			[354885] = 3566847, -- Blossom Burst
+			[354881] = 3566849, -- Glory Burst
+			[354880] = 3566848, -- Marrow Burst
+			[354884] = 3566844, -- Torch Burst
+			[354882] = 3566845, -- Widow Burst
+			[334413] = 2061718, -- Red Noggin Candle
+	
+	-- Blacksmithing
+		-- Shadowlands Plans
 
 	-- Inscription
 		-- Kul Tiran Inscription & Zandalari Inscription
-		[298929] = 3007458, -- Marron Ink
+		[298929] = 3007458, -- Maroon Ink
 		[264777] = 2178489, -- Crimson Ink
 		[264776] = 2178529, -- Ultramarine Ink
 
