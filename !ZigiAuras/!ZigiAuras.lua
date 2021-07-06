@@ -28,10 +28,10 @@ frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	-- Sinfall: g416
 	-- Ember Court: 1644
 -- The Maw: 1543,1648
--- Korthia: 1961,2006
+-- Korthia: 1961,2006,2007
 
 -- All Shadowlands Outdoor Zones:
--- 1961,2006,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,g419,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
+-- 1961,2006,2007,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,g419,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
 
 -------------------------
 
@@ -410,6 +410,8 @@ local function updateData()
 			--: Physical
 			-------------------------
 			--! Mechanical
+			["Shotgun"] = 100,
+			["Return to Entrance"] = 100,
 			["Repair Carriage"] = 100,
 			["Defibrilate"] = 100,
 			["Healing Spray"] = 100,
@@ -500,6 +502,7 @@ local function updateData()
 			["Squish 'Em"] = 107,
 			["Sunder Armor"] = 107,
 			["Crush Armor"] = 107,
+			["Crunch Armor"] = 107,
 			["War Stomp"] = 107,
 			["Wild Carve"] = 107,
 			["Destroying"] = 107,
@@ -522,6 +525,7 @@ local function updateData()
 			["Belly Slam"] = 108,
 			["Bite"] = 108,
 			["Crushing Smash"] = 108,
+			["Brutal Smash"] = 108,
 			["Overhead Smash"] = 108,
 			["Pincer"] = 108,
 			["Resolute Armor"] = 108,
@@ -548,6 +552,7 @@ local function updateData()
 			["Grand Melee"] = 109,
 
 			--! Strike (Blue)
+			["Peck"] = 110,
 			["Bulwark"] = 110,
 			["Heroic Throw"] = 110,
 			["Call to Arms:132486"] = 110,
@@ -585,6 +590,7 @@ local function updateData()
 			["Skull and Crossbones"] = 113,
 
 			--! Bleed
+			["Jagged Chop"] = 101,
 			["Shredding Whirl"] = 101,
 			["Catch of the Day"] = 101,
 			["Steel Trap"] = 101,
@@ -662,6 +668,8 @@ local function updateData()
 			["Unholy Strength"] = 106,
 
 			--! Alacrity
+			["Rearing Charge"] = 104,
+			["Hop"] = 104,
 			["Leaping Bite"] = 104,
 			["Vicious Charge"] = 104,
 			["Skirmisher's Speed"] = 104,
@@ -719,6 +727,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Howling in Pain"] = 111,
 			["Interrupting Shout"] = 111,
 			["Call Mommy"] = 111,
 			["Sonic Projection"] = 111,
@@ -757,8 +766,11 @@ local function updateData()
 			["Store Kinetic Energy"] = 111,
 			["Supersonic"] = 111,
 			["Threatening Roar"] = 111,
+			["Primal Roar"] = 111,
 
 			--! Enrage
+			["Death Wish"] = 106,
+			["Blood Rage"] = 106,
 			["Alpha Tiger"] = 103,
 			["Undying Frenzy"] = 103,
 			["Moonkin Frenzy"] = 103,
@@ -892,6 +904,7 @@ local function updateData()
 			["Sear:135818"] = 400,
 
 			--! Flamestrike
+			["Sharpen Steel"] = 5,
 			["Cannon Shot"] = 5,
 			["Shell Spin:459027"] = 5,
 			["Hurl Boulder:135812"] = 5,
@@ -977,6 +990,8 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
+			["Infernal Smash"] = 401,
+			["Searing Rend:1093862"] = 401,
 			["Fel Rain"] = 401,
 			["Fel Firebolt"] = 401,
 			["Summon Overfiend"] = 401,
@@ -1152,6 +1167,8 @@ local function updateData()
 			["Rain of Chaos"] = 127,
 
 			--! Felstrike
+			["Loading Cannon:133009"] = 427,
+			["Overpowering Flurry:1344646"] = 427,
 			["Emblazoned Swipe:135802"] = 427,
 			["Demon Spikes"] = 427,
 			["Demonic Trample"] = 427,
@@ -1181,6 +1198,8 @@ local function updateData()
 			--: Holy
 			-------------------------
 			--! Holy
+			["Holy Smite"] = 2,
+			["Blessing of K'ara"] = 2,
 			["Scarlet Resurrection"] = 2,
 			["Renew"] = 2,
 			["Soulforged Censer"] = 2,
@@ -1217,6 +1236,7 @@ local function updateData()
 			["Waygate Transfer"] = 3,
 			["Arrow of Light"] = 3,
 			["Blinding Trap"] = 3,
+			["Blinding Radiance"] = 3,
 			["Crescent Strike"] = 3,
 			["Debilitating Beam"] = 3,
 			["Devoted Strike"] = 3,
@@ -1224,26 +1244,37 @@ local function updateData()
 			["Judgment"] = 3,
 			["Light Impalement"] = 3,
 			["Valiant Strike"] = 3,
+			["Blinding Faith"] = 3,
+			["Stellar Pylon:253400"] = 3,
 
-			--! Holy Fire
+			--! Holy Fire / Solar Fire
+			["Solar Shower"] = 6,
+			["Might of the Sun"] = 6,
 			["Blessing of Dawn"] = 6,
 			["Cleansing Flame"] = 6,
-			["Righteous Fury"] = 6,
-			["Purge the Wicked"] = 6,
-			["Searing Wrath"] = 6,
-			["Blinding Faith"] = 6,
-			["Consecration"] = 6,
 			["Consecrate"] = 6,
+			["Consecration"] = 6,
+			["Eclipse (Solar)"] = 6,
 			["Holy Fire"] = 6,
 			["Inert Flames"] = 6,
+			["Purge the Wicked"] = 6,
+			["Righteous Fury"] = 6,
+			["Searing Wrath"] = 6,
 			["Shield of Vengeance"] = 6,
 			["Solar Empowerment"] = 6,
+			["Solar Eruption"] = 6,
 			["Solar Radiance"] = 6,
+			["Solar Chakram"] = 6,
+			["Sun Strike"] = 6,
 			["Solar Wrath"] = 6,
 			["Solar Zone"] = 6,
+			["Solar Beam"] = 6,
+			["Stellar Emission:1360763"] = 6,
+			["Sun Bolt"] = 6,
 			["Sunfire"] = 6,
 			["Wrath"] = 6,
-			["Eclipse (Solar)"] = 6,
+			["Summon Solar Orb"] = 6,
+			["Solar Orb"] = 6,
 
 			--! Holy Power
 			["The Golden Gaze"] = "Holy Power",
@@ -1342,6 +1373,8 @@ local function updateData()
 			["Valiant Flame"] = 600,
 
 			--! Discipline
+			["Serve Tea"] = 202,
+			["Reading"] = 202,
 			["Freeing Critter"] = 202,
 			["Scripture of Elune"] = 202,
 			["Dampen Harm"] = 202,
@@ -1401,6 +1434,11 @@ local function updateData()
 			["Unspoken Gratitude"] = 202,
 
 			--! Hallow
+			["Anima Nova:3528303"] = 203,
+			["Unleashed Soulstorm:4067362"] = 203,
+			["Soulstorm:4067362"] = 203,
+			["Soulsmash:237526"] = 203,
+			["Activate Empowerment:4005160"] = 203,
 			["Tal'Galan's Trial"] = 203,
 			["Anima Extrapolation:3675491"] = 203,
 			["Fallen Priest's Blessing"] = 203,
@@ -1622,6 +1660,7 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike
+			["Bag of Snakes"] = 900,
 			["Dire Beast"] = 900,
 			["Hurl Seed"] = 900,
 			["Shell Shield"] = 900,
@@ -1844,6 +1883,7 @@ local function updateData()
 			["Localized Storm"] = 911,
 
 			--! Lightning
+			["Thundercharge"] = 800,
 			["Conducted Shock Pulse"] = 800,
 			["Corruption Shock"] = 800,
 			["Electrostatic Charge"] = 800,
@@ -1940,6 +1980,7 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water
+			["Touch of the Drowned"] = 801,
 			["Restorative Waters"] = 801,
 			["Undulating Tides"] = 801,
 			["Tidal Wave"] = 801,
@@ -2060,6 +2101,7 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth
+			["Kinetic Impact:132838"] = 803,
 			["Niuzao"] = 803,
 			["Niuzao, the Black Ox"] = 803,
 			["Invoke Niuzao, the Black Ox"] = 803,
@@ -2101,6 +2143,8 @@ local function updateData()
 			["Hardened Muck"] = 803,
 
 			--! Earthstrike
+			["Shattering Stomp"] = 903,
+			["Lumbering Stomp"] = 903,
 			["Basilisk"] = 903,
 			["Dire Beast: Basilisk"] = 903,
 			["Crush:451165"] = 903,
@@ -2184,6 +2228,8 @@ local function updateData()
 			["Eruption:236758"] = 804,
 
 			--! Crystal
+			["Glass Cannon"] = 808,
+			["Hurl Crystalshards"] = 808,
 			["Prospecting"] = 808,
 			["Shattering Ruby"] = 808,
 			["Chuck Crystal"] = 808,
@@ -2323,6 +2369,7 @@ local function updateData()
 			["A Guide to Skinning in Draenor"] = 65,
 			["A Treatise on Mining in Draenor"] = 65,
 			["A Treatise on the Alchemy of Draenor"] = 65,
+			["A Treatise on the Inscription of Draenor"] = 65,
 			["Draenor Blacksmithing"] = 65,
 			["Draenor Jewelcrafting"] = 65,
 			["Draenor Leatherworking"] = 65,
@@ -2452,6 +2499,7 @@ local function updateData()
 			["Whirling Mist"] = 414,
 
 			--! Plague
+			["Carrion Swarm"] = 40,
 			["Impact Spit"] = 40,
 			["Putrid Swarm"] = 40,
 			["Infested Breath"] = 40,
@@ -2465,7 +2513,6 @@ local function updateData()
 			["Twigin's Wings"] = 40,
 			["Belch Organs"] = 40,
 			["Belch Slime"] = 40,
-			["Carrion Swarm"] = 40,
 			["Clining Infestation"] = 40,
 			["Contagion"] = 40,
 			["Contaminate"] = 40,
@@ -2538,6 +2585,14 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death
+			["Defiling Dreadslam"] = 411,
+			["Font of Torment"] = 411,
+			["Painwaves:3528305"] = 411,
+			["Mawsworn Shield"] = 411,
+			["Relic Breaker:3528303"] = 411,
+			["Mawsworn Bombardment"] = 411,
+			["Mawsworn Slam"] = 411,
+			["Pillage Hope"] = 411,
 			["Piercing Lens:132160"] = 411,
 			["Wracking Torture"] = 411,
 			["Wracking Interrogation"] = 411,
@@ -2618,6 +2673,8 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust
+			["Devouring Rift"] = 413,
+			["Essence Link:132146"] = 413,
 			["Essence Rift:135729"] = 413,
 			["Gorging Smash"] = 413,
 			["Tear Rift:462651"] = 413,
@@ -2638,6 +2695,7 @@ local function updateData()
 			--: Shadow
 			-------------------------
 			--! Shadow
+			["Mind Blast"] = 32,
 			["Sudden Doom"] = 32,
 			["Death's Advance"] = 32,
 			["Dark Thought"] = 32,
@@ -2689,6 +2747,7 @@ local function updateData()
 			["Chain Cleave"] = 33,
 
 			--! Pain
+			["Surge of Pain"] = 322,
 			["Excruciating Agony"] = 322,
 			["Wave of Agony"] = 322,
 			["Agony"] = 322,
@@ -2733,6 +2792,8 @@ local function updateData()
 			["Wail"] = 323,
 
 			--! Corruption
+			["Mass Corruption"] = 324,
+			["Endless Hunger"] = 324,
 			["Corrupt"] = 324,
 			["Corrupting Nova"] = 324,
 			["Devouring Blackness"] = 324,
@@ -2762,6 +2823,7 @@ local function updateData()
 			["Festering Wound"] = 324,
 
 			--! Spellshadow
+			["Detecting Life"] = 96,
 			["Soulshift"] = 96,
 			["Shadow Rip"] = 96,
 			["Rune-Etched Axe"] = 96,
@@ -2828,6 +2890,11 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Circle of Power:425958"] = 320,
+			["Mental Assault"] = 320,
+			["Void Buffet"] = 320,
+			["Cries of the Void"] = 320,
+			["Disintegration Beam:1386551"] = 320,
 			["Rain of Darkness"] = 320,
 			["Unleash the Void"] = 320,
 			["Glimpse of the Void"] = 320,
@@ -3124,6 +3191,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse
+			["Horrifying Bolt"] = 325,
 			["Arugal's Gift"] = 325,
 			["Debilitating Smash"] = 325,
 			["Weeping Burden"] = 325,
@@ -3153,13 +3221,21 @@ local function updateData()
 			["Voodoo Totem"] = 325,
 
 			--! Dread
+			["Darkest Secrets:3528308"] = 327,
+			["Darkmist Bombardment"] = 327,
+			["Maddening Roar"] = 327,
+			["Touch of the Abyss"] = 327,
+			["Terror Gasp"] = 327,
+			["Bewildering Gaze:136215"] = 327,
+			["Mawfused Orb"] = 327,
+			["Mawfused Orbs"] = 327,
+			["Mawfocused Orb"] = 327,
 			["Mawfocused Orbs"] = 327,
 			["Detonate:3528304"] = 327,
 			["Explosive Mawsphere"] = 327,
 			["Explosive Mawspheres"] = 327,
 			["Terror Blast"] = 327,
 			["Death Wail"] = 327,
-			["Shadow Storm"] = 327,
 			["Dread Roar"] = 327,
 			["Howl from Beyond"] = 327,
 			["Focused Loathing"] = 327,
@@ -3221,6 +3297,9 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic
+			["Convert Souls"] = 360,
+			["Soul Charge"] = 360,
+			["Twisted Lightning"] = 360,
 			["Demonic Rift"] = 360,
 			["Ritual of Summoning"] = 360,
 			["Malefic Rapture"] = 360,
@@ -3239,6 +3318,7 @@ local function updateData()
 			["Call Dreadstalkers"] = 360,
 
 			--! Shadowfel
+			["Agent of the All-Seer"] = 361,
 			["Create Healthstone"] = 361,
 			["Create Soulwell"] = 361,
 			["Demonic Gateway"] = 361,
@@ -3267,6 +3347,10 @@ local function updateData()
 			--! Combo Points
 			["Broadside"] = "Combo Points",
 
+			--! Rage
+			["Bloodrage"] = "Rage",
+			["Battle Trance"] = "Rage",
+
 
 			--: Other
 			-------------------------
@@ -3281,6 +3365,8 @@ local function updateData()
 
 			-------------------------
 			--! Mounts
+			["Sapphire Skyblazer"] = 600,
+			["Fireplume Phoenix"] = 68,
 			["Abyss Worm"] = 32,
 			["Acherus Deathcharger"] = 411,
 			["Acid Belcher"] = 401,
@@ -4406,6 +4492,18 @@ local function updateData()
 			[351391] = 203,
 			[354133] = 6,
 			[354119] = 6,
+			[352560] = 811,
+			[352836] = 203,
+			[353740] = 203,
+			[346310] = 203,
+			[358432] = 805,
+			[353543] = 805,
+			[353597] = 805,
+			[353135] = 202,
+			[351205] = 203,
+			[355862] = 202,
+			[352230] = 65,
+			[254667] = 401,
 			--qqq
 
 			--! NPC spells
@@ -4428,6 +4526,8 @@ local function updateData()
 			[211685] = 401, -- Focused Trance (Soulkeeper, Fangs of the Devourer Scenario)
 			[318879] = 321, -- Summon Guardian (Revendreth NPCs)
 			[225249] = 412, -- Devastating Stomp (Emerald Nightmare)
+			[149236] = 320, -- Darkrush (Terrorfang)
+			[244969] = 127, -- Eradication (Garothi Worldbreaker)
 			--nnn
 
 			--! Auras
@@ -5691,6 +5791,7 @@ local function updateData()
 			["Prospecting"] = 0,
 			["Attacking"] = 0,
 			["Opening"] = 0,
+			["Return to Entrance"] = 0,
 			["Handing Over"] = 0,
 			["Kicking"] = 0,
 			["Pulling"] = 0,
@@ -5717,6 +5818,7 @@ local function updateData()
 			["A Guide to Skinning in Draenor"] = 0,
 			["A Treatise on Mining in Draenor"] = 0,
 			["A Treatise on the Alchemy of Draenor"] = 0,
+			["A Treatise on the Inscription of Draenor"] = 0,
 			["Draenor Blacksmithing"] = 0,
 			["Draenor Jewelcrafting"] = 0,
 			["Draenor Leatherworking"] = 0,
@@ -5920,6 +6022,14 @@ local function updateData()
 			[352909] = 237476,
 			[353191] = 237476,
 			[354782] = 0,
+			[352560] = 0,
+			[346310] = 0,
+			[358432] = 0,
+			[353543] = 0,
+			[353597] = 0,
+			[353135] = 0,
+			[355862] = 0,
+			[352230] = 0,
 			--qqi
 
 
@@ -7317,7 +7427,7 @@ local function updateData()
 					[310876] = 3449934, -- Shrouded Cloth Belt
 					[310869] = 3386274, -- Shrouded Cloth Sandals
 					[310877] = 3386275, -- Shrouded Cloth Bracers
-					-- Hatd & Accessories
+					-- Hats & Accessories
 					[355183] = 454036, -- Shrouded Hand Towel
 					[334499] = 669448, -- Pink Party Hat
 					-- Bags
