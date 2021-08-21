@@ -67,6 +67,21 @@ local function updateData()
 		-- Debug Mode
 		ZA.DebugMode = false
 
+		ZA.MyOutgoingMD = ""
+
+		function ZA.dump(o)
+			if type(o) == 'table' then
+				local s = '{ '
+				for k,v in pairs(o) do
+					if type(k) ~= 'number' then k = '"'..k..'"' end
+					s = s .. '['..k..'] = ' .. ZA.dump(v) .. ','
+				end
+				return s .. '} '
+			else
+				return tostring(o)
+			end
+		end
+
 		-- FormatShortNumber(number, siginifixant)
 		function ZA.FormatShortNumber(number, significant)
 			if type(number) ~= "number" then
@@ -163,132 +178,136 @@ local function updateData()
 
 			--ccc
 			-- Physical
-			[1]   = "8e8981:c6c2b9", -- Physical
-			[100] = "a89f94:7be2ff", -- Mechanical
-			[112] = "9d9eb1:e58c8c", -- Strike (Red)
-			[107] = "9d9eb1:f4bc85", -- Strike (Orange)
-			[108] = "9d9eb1:f4e885", -- Strike (Yellow)
-			[109] = "9d9eb1:b7f485", -- Strike (Green)
-			[110] = "9d9eb1:90afe6", -- Strike (Blue)
-			[113] = "9d9eb1:ba9de6", -- Strike (Purple)
-			[101] = "877f71:8f4646", -- Bleed
+			[1]   = "8e8981:c6c2b9", -- Physical | Unknown
+			[100] = "a89f94:7be2ff", -- Mechanical | Engineering
+			[112] = "9d9eb1:e58c8c", -- Strike, Red
+			[107] = "9d9eb1:f4bc85", -- Strike, Orange | Cleave
+			[108] = "9d9eb1:f4e885", -- Strike, Yellow | Swipe
+			[109] = "9d9eb1:b7f485", -- Strike, Green
+			[110] = "9d9eb1:90afe6", -- Strike, Blue | Armor | Thrown
+			[113] = "9d9eb1:ba9de6", -- Strike, Purple | Slam | Tailoring
+			[101] = "877f71:8f4646", -- Bleed | Skinning
 			[102] = "755c56:a51a10", -- Heavy Bleed
 			[106] = "b05642:dda082", -- Strength
-			[104] = "edc716:fef972", -- Alacrity
-			[111] = "efff65:dcffeb", -- Sonic
+			[104] = "edc716:fef972", -- Alacrity | Speed
+			[111] = "efff65:dcffeb", -- Sonic | Sound
 			[103] = "ffa894:ff7225", -- Enrage
 			[105] = "c80034:ff8258", -- Bloodlust
 
 			-- Fire
 			[4]   = "ff3600:ffc000", -- Fire (Dynamic)
-			[400] = "ff3600:ffc000", -- Fire (Flames)
-			[5]   = "d45e3e:ffd262", -- Flamestrike (Fire + Physical)
-			[12]  = "780033:ff7920", -- Magma (Nature + Fire)
+			[400] = "ff3600:ffc000", -- Fire | Cooking
+			[5]   = "d45e3e:ffd262", -- Flamestrike | Smelting (Fire + Physical)
+			[12]  = "780033:ff7920", -- Magma | Lava (Nature + Fire)
 			[402] = "ca0000:ff5e2c", -- Hellfire
-			[20]  = "97cdff:ff9d41", -- Frostfire (Frost + Fire)
-			[68]  = "ff3883:ffba00", -- Spellfire (Arcane + Fire)
+			[20]  = "97cdff:ff9d41", -- Frostfire | Steam (Frost + Fire)
+			[68]  = "ff3883:ffba00", -- Spellfire | Phoenix (Arcane + Fire)
 			
 			-- Fel
 			[401] = "3dec00:fff94f", -- Felfire
-			[127] = "00575a:96ff30", -- Chaos (Arcane + Shadow + Frost + Nature + Fire + Holy + Physical)
+			[127] = "00575a:96ff30", -- Chaos (All Schools)
 			[427] = "355859:73a640", -- Felstrike
 
 			-- Holy
 			[2]   = "ffc539:ffffcb", -- Holy
-			[3]   = "bccccf:ffd76b", -- Holystrike (Holy + Physical)
-			[6]   = "ff6c00:ffd42a", -- Holy Fire (Holy + Fire)
-			[201] = "00baff:fff9de", -- Ethereal
-			[600] = "134cff:00baff", -- Ethereal Fire
-			[202] = "ce958c:fff1d6", -- Discipline
-			[203] = "2a5863:ffffff", -- Hallow
-			[18]  = "72f1e1:fffde8", -- Holyfrost (Frost + Holy)
-			[200] = "0090ff:f8ff66", -- Azerite
+			[200] = "ffa500:fff58a", -- Holy Light | Gold
+			[3]   = "bccccf:ffd76b", -- Holystrike | Flash (Holy + Physical)
+			[6]   = "ff6c00:ffd42a", -- Holy Fire | Solar (Holy + Fire)
+			[201] = "00baff:fff9de", -- Ethereal | Kyrian
+			[600] = "134cff:00baff", -- Ethereal Flame
+			[202] = "ce958c:fff1d6", -- Discipline | Bandage | Brewing | Inscription
+			[203] = "ffffff:82aab4", -- Hyperlight | Hallow | Broker
+			[204] = "0090ff:f8ff66", -- Azerite
 
 			-- Divine
-			[66]  = "ff769c:fff7c4", -- Divine (Arcane + Holy)
+			[66]  = "ff769c:fff7c4", -- Divine | Chi-Ji (Arcane + Holy)
 			[660] = "ff2d63:ff905a", -- Legendary
 			[661] = "ff5484:ffd7f9", -- Love
 
 			-- Frost
 			[16]  = "21a4fd:d0fffe", -- Frost
+			[160] = "7ed5d6:e8fbff", -- Ice | Snow
 			[17]  = "3d5992:afc2df", -- Froststrike (Frost + Physical)
 			[24]  = "008aac:b0fff5", -- Froststorm (Frost + Nature)
 			[80]  = "8d5ce6:88eaff", -- Spellfrost (Arcane + Frost)
+			[18]  = "72f1e1:fffad3", -- Holyfrost (Frost + Holy)
 
 			-- Elemental
 			[28]  = "ff8400:c263ff", -- Elemental (Frost + Nature + Fire)
-			[280] = "afe446:7eceff", -- Natural (Frost + Nature + Physical)
+			[280] = "afe446:7eceff", -- Natural | Spiritual (Frost + Nature + Physical)
+			[281] = "c9de57:7cb700", -- Chemical | Alchemy
 
 			-- Nature
-			[8]   = "3bb53b:beff72", -- Nature
-			[900] = "609f5f:cff3a5", -- Naturestrike
-			[10]  = "8ee858:e5ffb2", -- Life (Nature + Holy)
-			[805] = "803aff:21d3ff", -- Fey
+			[8]   = "3bb53b:beff72", -- Nature | Herbalism
+			[900] = "609f5f:cff3a5", -- Naturestrike | Web
+			[10]  = "8ee858:e5ffb2", -- Life | Wild Gods (Nature + Holy)
+			[805] = "803aff:21d3ff", -- Fey | Night Fae
 
 			-- Poison
-			[806] = "00f139:aeff00", -- Poison
+			[806] = "00f139:aeff00", -- Poison | Venom | Slime
 			[906] = "1d7211:55bf38", -- Poisonstrike
 
 			-- Air
-			[811] = "90a3ab:f8ffff", -- Wind
+			[811] = "90a3ab:f8ffff", -- Wind | Air
 			[911] = "5d6a8c:ccdbdb", -- Storm
-			[800] = "4f64ff:a6f2ff", -- Lightning
+			[800] = "4f64ff:a6f2ff", -- Lightning | Thunder
 			[9]   = "95b2bc:9497ff", -- Stormstrike (Nature + Physical)
 
 			-- Water
-			[801] = "2882bf:2dedc9", -- Water
+			[801] = "2882bf:2dedc9", -- Water | Sea | Fishing
 			[901] = "2c5c7c:76c6b8", -- Waterstrike
 
 			-- Mist
 			[802] = "0aff9a:ffff96", -- Mist
-			[902] = "007b6e:a0ff90", -- Jade
+			[902] = "007b6e:a0ff90", -- Jade | Yu'lon
 			[807] = "00c99d:d6ffc0", -- Jade Lightning
-			[907] = "004eb8:aafff8", -- Chi
+			[907] = "004eb8:aafff8", -- Chi | Xuen
 
 			-- Earth
-			[803] = "91622d:f9c265", -- Earth
-			[903] = "85704f:dcbc85", -- Earthstrike
-			[809] = "4e556c:b6b8c9", -- Stone
-			[909] = "6c6f7b:dcdce1", -- Stonestrike
-			[804] = "b68640:ffea96", -- Sand
-			[808] = "4c395e:ebbaf4", -- Crystal
+			[803] = "91622d:f9c265", -- Earth | Mud
+			[903] = "85704f:dcbc85", -- Earthstrike | Leatherworking
+			[809] = "4e556c:b6b8c9", -- Stone | Rock
+			[909] = "6c6f7b:dcdce1", -- Stonestrike | Metal | Salt | Blacksmithing | Mining
+			[804] = "b68640:ffea96", -- Sand | Ash
+			[808] = "4c395e:ebbaf4", -- Crystal | Jewelcrafting
 			[810] = "b44c00:ffc243", -- Amber
 
 			-- Arcane
 			[64]  = "b849ff:63e2ff", -- Arcane
 			[65]  = "908894:c492d9", -- Spellstrike (Arcane + Physical)
-			[126] = "ee63f7:c1b1ff", -- Magic (Arcane + Shadow + Frost + Nature + Holy)
+			[126] = "ee63f7:c1b1ff", -- Magic | Enchanting (Arcane + Shadow + Frost + Nature + Holy)
 			[124] = "52ffb8:ff70cb", -- Chromatic (Arcane + Shadow + Frost + Nature + Fire)
-			[640] = "f2e199:ffa019", -- Time
+			[640] = "f2e199:ffa019", -- Temporal | Time
 
 			-- Astral
 			[72]  = "62d5ff:ffa4f3", -- Astral (Arcane + Nature)
 			[720] = "7178d0:76ffba", -- Spectral
 
 			-- Decay
-			[414] = "618400:b4e54e", -- Unholy
+			[414] = "618400:b4e54e", -- Unholy | Bone
 			[40]  = "967213:b7e751", -- Plague (Shadow + Nature)
-			[410] = "6a6009:f1b33b", -- Disease
+			[410] = "6a6009:f1b33b", -- Disease | Rot
 			[412] = "5d243a:ff273b", -- Nightmare
-			[411] = "372e4b:6e857a", -- Death
-			[413] = "212e54:3d97a2", -- Drust
+			[411] = "372e4b:6e857a", -- Death | Mawsworn
+			[413] = "212e54:3d97a2", -- Drust | Devourer
 
 			-- Shadow
 			[32]  = "633768:8f7a93", -- Shadow
-			[33]  = "745378:a995ac", -- Shadowstrike (Shadow + Physical)
+			[328] = "4c3189:7b7c9e", -- Psychic | Mind Control
+			[33]  = "6b616c:635266", -- Shadowstrike (Shadow + Physical)
 			[322] = "73193d:e4c06a", -- Pain
-			[323] = "523d5c:558d8b", -- Haunt
-			[324] = "6e1b3e:ec9da2", -- Corruption
-			[96]  = "602b61:8482d9", -- Spellshadow (Arcane + Shadow)
+			[323] = "523d5c:558d8b", -- Haunt | Nether
+			[324] = "6e1b3e:ec9da2", -- Corruption | Old Gods
+			[96]  = "602b61:8482d9", -- Spellshadow | Runic (Arcane + Shadow)
 			[48]  = "5e3a62:88d4ff", -- Shadowfrost (Shadow + Frost)
 
 			-- Darkness
 			[320] = "220649:243bff", -- Void
 			[34]  = "3949dc:ff256d", -- Twilight (Shadow + Holy)
-			[321] = "711010:f90000", -- Blood
-			[326] = "3e6051:20db9e", -- Necromancy
+			[321] = "711010:f90000", -- Blood | Venthyr
+			[326] = "3e6051:20db9e", -- Necromancy | Necrolord
 			[325] = "44205b:b03ccd", -- Curse
-			[327] = "313146:ffffff", -- Dread
+			[327] = "313146:ffffff", -- Dread | Fear | Sha
 			[36]  = "5400b2:ff5400", -- Shadowflame (Shadow + Fire)
 			[360] = "451ea7:ff73ea", -- Demonic
 			[361] = "6000b2:acff00", -- Shadowfel
@@ -405,52 +424,73 @@ local function updateData()
 			["Activating Specialization"] = class or 0,
 			["Serenity Blessing"] = (primary == "int") and 126 or 106,
 			["Ascendance:135791"] = (class == "SHAMAN" and spec == 1) and 400 or (class == "SHAMAN" and spec == 2) and 811 or (class == "SHAMAN" and spec == 3) and 801 or 28,
+			["Capturing:132487"] = ZA.AH(110, 112),
 
 
 			--: Physical
 			-------------------------
-			--! Mechanical
-			["Shotgun"] = 100,
-			["Return to Entrance"] = 100,
-			["Repair Carriage"] = 100,
-			["Defibrilate"] = 100,
-			["Healing Spray"] = 100,
-			["Opening Shredder Crate"] = 100,
-			["Retrofit"] = 100,
-			["Haywire"] = 100,
-			["Cutting Beam"] = 100,
-			["Scrapping"] = 100,
-			["Repairing"] = 100,
-			["Tune Up"] = 100,
-			["Disabling"] = 100,
-			["Reactivating"] = 100,
-			["Mole Machine"] = 100,
+			--! Mechanical  ! Engineering
+			["Meteor Impact:369278"] = 100,
+			["Sashj'tar Harpoon"] = 100,
+			["Harpoon Barrage"] = 100,
+			["Pistol Shot"] = 100,
 			["Activating"] = 100,
-			["Mobile Banking"] = 100,
-			["Placing"] = 100,
-			["Unlocking"] = 100,
-			["Rapid-Fire"] = 100,
-			["Opening"] = 100,
-			["Kicking"] = 110,
-			["Loot-A-Rang"] = 100,
+			["Aimed Shot"] = 100,
+			["Barrage"] = 100,
+			["Construct Heavy Barricade"] = 100,
+			["Cutting Beam"] = 100,
+			["Defibrilate"] = 100,
+			["Disabling"] = 100,
 			["Electrostatic Distortion"] = 100,
+			["Energize"] = 100,
 			["Engineering"] = 100,
+			["Gnome Ingenuity"] = 100,
 			["Gnomish Transporter"] = 100,
 			["Goblin Glider"] = 100,
 			["Goblin Transporter"] = 100,
+			["Haywire"] = 100,
+			["Healing Spray"] = 100,
 			["Holographic Digitalization Hearthstone"] = 100,
 			["Hyper Organic Light Originator"] = 100,
+			["Kicking"] = 110,
+			["Loot-A-Rang"] = 100,
+			["Mobile Banking"] = 100,
+			["Mole Machine"] = 100,
 			["Ogre Transformation"] = 100,
+			["Opening Shredder Crate"] = 100,
+			["Opening"] = 100,
+			["Parachute"] = 100,
 			["Pick Lock"] = 100,
+			["Placing Wood"] = 100,
+			["Placing"] = 100,
+			["Proto-Beam"] = 100,
+			["Proto Beam"] = 100,
+			["Rapid-Fire"] = 100,
+			["Reactivating"] = 100,
+			["Reaping Blows"] = 100,
+			["Repair Carriage"] = 100,
+			["Repairing"] = 100,
+			["Retrofit"] = 100,
+			["Return to Entrance"] = 100,
 			["Scatter Shot"] = 100,
+			["Scrapping"] = 100,
+			["Shoot"] = 100,
+			["Shotgun"] = 100,
+			["Steady Shot"] = 100,
+			["Survey"] = 100,
 			["Teleport With Error"] = 100,
 			["Toshley's Station Transporter"] = 100,
+			["Trusty Shotgun"] = 100,
+			["Tune Up"] = 100,
+			["Unlocking"] = 100,
 			["Wormhole Teleport"] = 100,
 			["Wormhole"] = 100,
 			["Wormhole: Pandaria"] = 100,
-			["Parachute"] = 100,
 
-			--! Strike (Red)
+			--! Strike, Red
+			["Jump Strike"] = 112,
+			["Savage Assault"] = 112,
+			["Hampering Strike"] = 112,
 			["Chomp"] = 112,
 			["Call to Arms:132485"] = 112,
 			["Die by the Sword"] = 112,
@@ -471,7 +511,6 @@ local function updateData()
 			["Spreadshot:132208"] = 112,
 			["Shattering Pain:1357802"] = 112,
 			["Goring Swipe"] = 112,
-			["Claw Swipe"] = 112,
 			["Hack"] = 112,
 			["Tenderize"] = 112,
 			["Impaling Gaze"] = 112,
@@ -479,7 +518,10 @@ local function updateData()
 			["Claw Strike"] = 112,
 			["Devour"] = 112,
 
-			--! Strike (Orange)
+			--! Strike, Orange  ! Cleave
+			["Unwavering Assault"] = 107,
+			["Furious Thrashing"] = 107,
+			["Snap & Chop"] = 107,
 			["Claw:575745"] = 107,
 			["Tail Swipe:575745"] = 107,
 			["Downward Strike"] = 107,
@@ -509,7 +551,19 @@ local function updateData()
 			["Penta-Strike"] = 107,
 			["Crushing Strike"] = 107,
 
-			--! Strike (Yellow)
+			--! Strike, Yellow  ! Swipe
+			["Pulverize"] = 108,
+			["Throw Spear"] = 108,
+			["Claw Swipe"] = 108,
+			["Swipe"] = 108,
+			["Double Swipe"] = 108,
+			["Claw"] = 108,
+			["Throw Chakram"] = 108,
+			["Spinning Blade"] = 108,
+			["Smack"] = 108,
+			["Hunting Talons"] = 108,
+			["Snap and Toss"] = 108,
+			["Ram"] = 108,
 			["Headbutt"] = 108,
 			["Huddle"] = 108,
 			["Hampering Blow"] = 108,
@@ -529,14 +583,13 @@ local function updateData()
 			["Overhead Smash"] = 108,
 			["Pincer"] = 108,
 			["Resolute Armor"] = 108,
-			["Steady Shot"] = 108,
-			["Shoot"] = 108,
-			["Trusty Shotgun"] = 108,
 			["Wild Chop"] = 108,
 			["Relentless Mauling"] = 108,
 			["Haymaker"] = 108,
 
-			--! Strike (Green)
+			--! Strike, Green
+			["Spiked Bulwark"] = 109,
+			["Cleave"] = 109,
 			["Big Bop"] = 109,
 			["Bop Barrage"] = 109,
 			["Smack Down"] = 109,
@@ -551,7 +604,15 @@ local function updateData()
 			["Shell Spin"] = 109,
 			["Grand Melee"] = 109,
 
-			--! Strike (Blue)
+			--! Strike, Blue  ! Armor  ! Thrown
+			["Massive Blow"] = 110,
+			["Log Smash"] = 110,
+			["Throw Axe"] = 110,
+			["Throw Witchalok Blade"] = 110,
+			["Face Kick"] = 110,
+			["Clobber"] = 110,
+			["Throw"] = 110,
+			["Throw Gears"] = 110,
 			["Peck"] = 110,
 			["Bulwark"] = 110,
 			["Heroic Throw"] = 110,
@@ -568,28 +629,36 @@ local function updateData()
 			["Double Strike"] = 110,
 			["Shield Slam"] = 110,
 			["Shield Block"] = 110,
-			["Shattering Throw"] = 110,
 			["Whirlwind"] = 110,
+			["Whirling Spin"] = 110,
 			["Arrow Barrage"] = 110,
-			["Aimed Shot"] = 110,
-			["Barrage"] = 110,
 			["Crush"] = 110,
 			["Impaling Spear"] = 110,
+			["Pinning Spear"] = 110,
 			["Mortal Strike"] = 110,
 			["Volley"] = 110,
 			["Shield Wall"] = 110,
 			["Ruthless Precision"] = 110,
 
-			--! Strike (Purple)
+			--! Strike, Purple  ! Slam  ! Tailoring
+			["Overwhelm"] = 113,
+			["Backhand"] = 113,
+			["Mash"] = 113,
 			["Champion's Honor:135884"] = 113,
 			["Wicked Slash"] = 113,
 			["Wicked Smash"] = 113,
 			["Soulsunder"] = 113,
 			["Slam"] = 113,
+			["Staggering Slam"] = 113,
 			["Blessing of Protection"] = 113,
 			["Skull and Crossbones"] = 113,
 
-			--! Bleed
+			--! Bleed  ! Skinning
+			["Cut to the Bone"] = 101,
+			["Cut To The Bone"] = 101,
+			["Barbed Spear"] = 101,
+			["Rending Cut"] = 101,
+			["Bleeding Swipe"] = 101,
 			["Jagged Chop"] = 101,
 			["Shredding Whirl"] = 101,
 			["Catch of the Day"] = 101,
@@ -648,6 +717,10 @@ local function updateData()
 			["Rip"] = 102,
 
 			--! Strength
+			["Survival Instincts"] = 106,
+			["Primal Instinct"] = 106,
+			["Gladiator's Badge"] = 106,
+			["Gladiator's Insignia"] = 106,
 			["Fury of the Beast"] = 106,
 			["Sigil of Skoldus"] = 106,
 			["Mighty Slam"] = 106,
@@ -656,25 +729,35 @@ local function updateData()
 			["Negative Energy Token"] = 106,
 			["Demoralizing Shout"] = 106,
 			["Rallying Cry"] = 106,
-			["Accursed Strength"] = 106,
 			["Demonbane"] = 106,
 			["Carrying the Wounded"] = 106,
 			["Bestial Wrath"] = 106,
 			["Colossus Smash"] = 106,
+			["Colossal Strike"] = 106,
 			["Coordinated Assault"] = 106,
 			["Crushing Slam"] = 106,
 			["Obliterate"] = 106,
 			["Holy Strength"] = 106,
 			["Unholy Strength"] = 106,
 
-			--! Alacrity
+			--! Alacrity  ! Speed
+			["Barbarian"] = 104,
+			["Quilboar Rush"] = 104,
+			["Wily Wits"] = 104,
+			["Wild Charge"] = 104,
+			["Shoulder Charge"] = 104,
+			["Trampling Charge"] = 104,
+			["Shuffle"] = 104,
+			["Rolling Charge"] = 104,
+			["Stampeding Charge"] = 104,
+			["Deadeye Charge"] = 104,
+			["Swiftstep"] = 104,
 			["Rearing Charge"] = 104,
 			["Hop"] = 104,
 			["Leaping Bite"] = 104,
 			["Vicious Charge"] = 104,
 			["Skirmisher's Speed"] = 104,
 			["Bounding Crush"] = 104,
-			["Spirit Walk"] = 104,
 			["Bounding Stride"] = 104,
 			["Spirit's Swiftness"] = 104,
 			["Dark Stride"] = 104,
@@ -689,18 +772,14 @@ local function updateData()
 			["Empyreal Reflexes"] = 104,
 			["Evasive Lunge"] = 104,
 			["Hypertune Anima"] = 104,
-			["Chrono Shift"] = 104,
 			["Revenge!"] = 104,
 			["War Machine"] = 104,
-			["Chi Torpedo"] = 104,
 			["Murmuring Shawl"] = 104,
 			["Acceleration Rune"] = 104,
 			["Alacrity"] = 104,
-			["Angelic Feather"] = 104,
 			["Aspect of the Cheetah"] = 104,
 			["Body and Soul"] = 104,
 			["Dash"] = 104,
-			["Divine Steed"] = 104,
 			["Draenic Living Action Potion"] = 104,
 			["Draenic Swiftness Potion"] = 104,
 			["Egg Rush!"] = 104,
@@ -723,10 +802,18 @@ local function updateData()
 			["The Sentinel's Eternal Refuge"] = 104,
 			["Tiger Dash"] = 104,
 			["Tiger's Lust"] = 104,
-			["Vampiric Speed"] = 104,
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Call the Pack"] = 111,
+			["Sonic Scream"] = 111,
+			["Screaming Blast"] = 111,
+			["Howling Screech"] = 111,
+			["Ferocious Yell"] = 111,
+			["Reckless Provocation:132352"] = 111,
+			["Empyreal Roar"] = 111,
+			["Whistling"] = 111,
+			["Lumbering Roar"] = 111,
 			["Howling in Pain"] = 111,
 			["Interrupting Shout"] = 111,
 			["Call Mommy"] = 111,
@@ -771,9 +858,8 @@ local function updateData()
 			--! Enrage
 			["Death Wish"] = 106,
 			["Blood Rage"] = 106,
-			["Alpha Tiger"] = 103,
 			["Undying Frenzy"] = 103,
-			["Moonkin Frenzy"] = 103,
+			["Owlkin Frenzy"] = 103,
 			["Fel Rage"] = 103,
 			["Berserk"] = 103,
 			["Berserker Frenzy"] = 103,
@@ -815,8 +901,9 @@ local function updateData()
 			["Violent Eruption:136215"] = 103,
 
 			--! Bloodlust
+			["Voracious"] = 105,
+			["Blood Frenzy"] = 105,
 			["Victorious"] = 105,
-			["Dark Succor"] = 105,
 			["Enraged Regeneration"] = 105,
 			["Lust for Battle"] = 105,
 			["Reflection: Massacre"] = 105,
@@ -852,7 +939,15 @@ local function updateData()
 
 			--: Fire
 			-------------------------
-			--! Fire
+			--! Fire  ! Cooking
+			["Blast Wave:135903"] = 400,
+			["Blazing Wave"] = 400,
+			["Flame Thrower"] = 400,
+			["Barrage of Flame"] = 400,
+			["Blaze of Glory"] = 400,
+			["Burn"] = 400,
+			["Firestorm"] = 400,
+			["Fire Whirl"] = 400,
 			["Toss Fuel on Bonfire"] = 400,
 			["Summon Blazing Servitor"] = 400,
 			["Firestorm Kick"] = 400,
@@ -860,7 +955,6 @@ local function updateData()
 			["Call Flames:135789"] = 400,
 			["Self-Destruct"] = 400,
 			["Self-Destruct Protocol"] = 400,
-			["Meteor Shower:135821"] = 400,
 			["Seething Flames"] = 400,
 			["Light Bonfire"] = 400,
 			["Throw Torch"] = 400,
@@ -903,56 +997,97 @@ local function updateData()
 			["Sear:135810"] = 400,
 			["Sear:135818"] = 400,
 
-			--! Flamestrike
-			["Sharpen Steel"] = 5,
+			--! Flamestrike  ! Cannonfire  ! Smelting
+			["Bombard"] = 5,
 			["Cannon Shot"] = 5,
-			["Shell Spin:459027"] = 5,
+			["Fanning the Flames"] = 5,
+			["Fiery Strike"] = 5,
+			["Flame Arrows"] = 5,
+			["Gauntlet Smash:509966"] = 5,
+			["Giantbreaker Spear"] = 5,
+			["Gyro-Scrap"] = 5,
+			["Heating Up"] = 5,
 			["Hurl Boulder:135812"] = 5,
 			["Hurl Boulder:252172"] = 5,
-			["Flame Arrows"] = 5,
-			["Bombard"] = 5,
-			["Ticking Time Bomb"] = 5,
-			["Gyro-Scrap"] = 5,
-			["Throw Cluster Bomb"] = 5,
-			["Giantbreaker Spear"] = 5,
-			["Shrapnel Blast"] = 5,
-			["Gauntlet Smash:509966"] = 5,
-			["Fiery Strike"] = 5,
-			["Heating Up"] = 5,
-			["Fanning the Flames"] = 5,
-			["Flamestrike"] = 5,
 			["Left Piston"] = 5,
 			["Right Piston"] = 5,
+			["Sharpen Steel"] = 5,
+			["Shell Spin:459027"] = 5,
+			["Shrapnel Blast"] = 5,
 			["Stoke the Flames"] = 5,
+			["Throw Cluster Bomb"] = 5,
+			["Ticking Time Bomb"] = 5,
+			["Meteor Fists"] = 5,
+			["Refine Meteorite"] = 5,
+			["Meteorite Whetstone"] = 5,
 
-			--! Magma
-			["Fire Shards"] = 12,
-			["Seal Armor Breach:538043"] = 12,
-			["Searing Plasma"] = 12,
-			["Massive Eruption:135830"] = 12,
-			["Soulforge Embers"] = 12,
-			["Hurl Boulders:892832"] = 12,
-			["Dormant Volcano"] = 12,
-			["Dormant Volcanoes"] = 12,
-			["Molten Surge"] = 12,
-			["Fiery Brimstone"] = 12,
-			["Rune of Destruction:978470"] = 12,
+			--! Magma  ! Lava  ! Meteor
+			["Burning Slag"] = 12,
+			["Call Meteor"] = 12,
 			["Crashing Inferno"] = 12,
 			["Dormant Volcano"] = 12,
+			["Dormant Volcano"] = 12,
+			["Dormant Volcanoes"] = 12,
+			["Fiery Boulder"] = 12,
+			["Fiery Brimstone"] = 12,
+			["Fire Shards"] = 12,
 			["Fireblood"] = 12,
-			["Lava Burst"] = 12,
-			["Lava Shock"] = 12,
-			["Lava Surge"] = 12,
+			["Fissure:1032476"] = 12,
+			["Flamestrike"] = 12,
+			["Hurl Boulders:892832"] = 12,
 			["Lava Beam"] = 12,
+			["Lava Burst"] = 12,
+			["Lava Gout"] = 12,
+			["Lava Shock"] = 12,
+			["Lava Spew"] = 12,
+			["Lava Spit"] = 12,
+			["Lava Surge"] = 12,
 			["Liquid Magma Totem"] = 12,
+			["Living Meteor"] = 12,
+			["Magma Barrage"] = 12,
 			["Magma Belch"] = 12,
+			["Magma Eruption"] = 12,
+			["Massive Eruption:135830"] = 12,
+			["Meteorite"] = 12,
+			["Meteor Burn"] = 12,
+			["Meteor Cleave"] = 12,
+			["Meteor Crack"] = 12,
+			["Meteor Explosion"] = 12,
+			["Meteor Impact"] = 12,
+			["Meteor Rain"] = 12,
+			["Meteor Shard"] = 12,
+			["Meteor Shower"] = 12,
+			["Meteor Slash"] = 12,
+			["Meteor Storm"] = 12,
+			["Meteor Strike"] = 12,
+			["Meteor Swarm"] = 12,
+			["Meteor Swarm"] = 12,
+			["Abyssal Meteor Fall"] = 12,
+			["Meteor"] = 12,
+			["Meteorfall"] = 12,
+			["Meteoric Impact"] = 12,
 			["Molten Eruption"] = 12,
+			["Molten Meteor"] = 12,
+			["Molten Pool"] = 12,
+			["Molten Surge"] = 12,
 			["Primal Magma"] = 12,
+			["Rune of Destruction:978470"] = 12,
+			["Seal Armor Breach:538043"] = 12,
+			["Searing Plasma"] = 12,
 			["Slag Bolt"] = 12,
 			["Slag Breath"] = 12,
+			["Soulforge Embers"] = 12,
+			["Summon Meteor"] = 12,
 			["Summon Slag Elemental"] = 12,
+			["Summon Unstable Slag"] = 12,
+			["Volcanic Tantrum"] = 12,
 			
 			--! Hellfire
+			["Soul Explosion"] = 402,
+			["Roaring Heat"] = 402,
+			["Tormenting Flames"] = 402,
+			["Cauterize Master"] = 402,
+			["Burning Hatred"] = 402,
 			["Nuclear Blast"] = 402,
 			["Disintegration Laser"] = 402,
 			["Soul Fire"] = 402,
@@ -963,7 +1098,7 @@ local function updateData()
 			["Hellfire"] = 402,
 			["Ritual of Doom"] = 402,
 
-			--! Frostfire
+			--! Frostfire  ! Steam
 			["Steam Blast"] = 20,
 			["Scald"] = 20,
 			["Crystalfire Breath"] = 20,
@@ -975,7 +1110,7 @@ local function updateData()
 			["Thawing"] = 20,
 			["Crystallize:135866"] = 20,
 
-			--! Spellfire
+			--! Spellfire  ! Phoenix
 			["Phoenix Renewal"] = 68,
 			["Phoenix Flames"] = 68,
 			["Phoenix Flight"] = 68,
@@ -990,42 +1125,64 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
-			["Infernal Smash"] = 401,
-			["Searing Rend:1093862"] = 401,
-			["Fel Rain"] = 401,
-			["Fel Firebolt"] = 401,
-			["Summon Overfiend"] = 401,
-			["Fel Tempest"] = 401,
-			["Sear:135799"] = 401,
-			["Sear:135802"] = 401,
+			["Blazing Swipe:135802"] = 401,
+			["Fel Destruction"] = 401,
+			["Felshard Meteor"] = 401,
+			["Felshard Meteors"] = 401,
+			["Meteor Impact:136120"] = 401,
+			["Meteor:840199"] = 401,
+			["Meteor Slash:135801"] = 401,
+			["Meteor Storm:135804"] = 401,
+			["Rain of Meteors:135803"] = 401,
 			["Backdraft:840404"] = 401,
 			["Barrage:135804"] = 401,
 			["Belch Flame:135797"] = 401,
 			["Blade of Flames:1118739"] = 401,
 			["Blazing Hellfire:841221"] = 401,
 			["Breath of Annihilation"] = 401,
+			["Burn:135794"] = 401,
+			["Burn:135799"] = 401,
 			["Burning Armor:135799"] = 401,
+			["Burning Barrage:135804"] = 401,
+			["Burning Bite:135799"] = 401,
+			["Burning Blood:841221"] = 401,
+			["Burning Breath:135794"] = 401,
+			["Burning Fel"] = 401,
+			["Burning Flames:135799"] = 401,
+			["Burning Fury:841221"] = 401,
 			["Burning Fury:841221"] = 401,
 			["Burning Gaze:1117876"] = 401,
 			["Burning Gaze:841220"] = 401,
+			["Burning Iris:1387707"] = 401,
 			["Burning Mirror"] = 401,
+			["Burning Pitch:135804"] = 401,
 			["Burning Slash:135802"] = 401,
+			["Burning Spit:841220"] = 401,
 			["Burning Spittle:135797"] = 401,
+			["Burning:132108"] = 401,
+			["Burning:135794"] = 401,
+			["Burning:135802"] = 401,
 			["Cannon Fire:135797"] = 401,
+			["Cauterize Master:840409"] = 401,
 			["Chain Felfire"] = 401,
 			["Chemical Flames"] = 401,
 			["Crashing Comet:135797"] = 401,
+			["Crashing Fissure:1118738"] = 401,
 			["Dancing Flames:135797"] = 401,
+			["Dark Communion:1121020"] = 401,
 			["Death Blast:135803"] = 401,
 			["Demonic Breath"] = 401,
 			["Desecrated Runeblast"] = 401,
 			["Empowered Felblast"] = 401,
 			["Explosive Fel Rune"] = 401,
 			["Eye of Kilrogg"] = 401,
+			["Fel Annihilation"] = 401,
 			["Fel Bile"] = 401,
 			["Fel Bindings"] = 401,
 			["Fel Blast"] = 401,
 			["Fel Bolt"] = 401,
+			["Fel Breath"] = 401,
+			["Fel Burn"] = 401,
 			["Fel Cannon Blast"] = 401,
 			["Fel Cauterize"] = 401,
 			["Fel Devastation"] = 401,
@@ -1033,6 +1190,7 @@ local function updateData()
 			["Fel Fire"] = 401,
 			["Fel Fireball"] = 401,
 			["Fel Fireblast"] = 401,
+			["Fel Firebolt"] = 401,
 			["Fel Firebomb"] = 401,
 			["Fel Firestorm"] = 401,
 			["Fel Fissure"] = 401,
@@ -1051,24 +1209,27 @@ local function updateData()
 			["Fel Lava Burst"] = 401,
 			["Fel Lightning"] = 401,
 			["Fel Meteor"] = 401,
+			["Fel Meteor Swarm"] = 401,
+			["Fel Meteor Explosion"] = 401,
+			["Fel Meteorite"] = 401,
 			["Fel Poison"] = 401,
+			["Fel Rain"] = 401,
 			["Fel Sear"] = 401,
+			["Fel Shield Blast"] = 401,
 			["Fel Shock"] = 401,
+			["Fel Slagblast"] = 401,
 			["Fel Slash:135802"] = 427,
 			["Fel Spike"] = 401,
 			["Fel Squall"] = 401,
 			["Fel Storm"] = 401,
 			["Fel Streak"] = 401,
 			["Fel Tear"] = 401,
+			["Fel Tempest"] = 401,
+			["Fel Weaving"] = 401,
+			["Felblast"] = 401,
 			["Felblaze Cleave"] = 401,
 			["Felbolt"] = 401,
 			["Felburst"] = 401,
-			["Foul Tempest:136135"] = 401,
-			["Gather Felfire Munitions"] = 401,
-			["Infernal"] = 401,
-			["Massive Eruption:135801"] = 401,
-			["Soul Fire:841220"] = 401,
-			["Summon Infernal"] = 401,
 			["Felfire Assault"] = 401,
 			["Felfire Blast"] = 401,
 			["Felfire Bolt"] = 401,
@@ -1092,8 +1253,12 @@ local function updateData()
 			["Flaming Core:135799"] = 401,
 			["Flickering Flame:135797"] = 401,
 			["Focused Blast:1117885"] = 401,
+			["Foul Tempest:136135"] = 401,
+			["Gather Felfire Munitions"] = 401,
+			["Gift of the Martyr:841219"] = 401,
 			["Glaive Blast:135797"] = 401,
 			["Glob of Fel"] = 401,
+			["Hellfire:841221"] = 401,
 			["Ignite Felblade"] = 401,
 			["Immolate:135802"] = 401,
 			["Immolate:840192"] = 401,
@@ -1109,10 +1274,13 @@ local function updateData()
 			["Incinerate:841221"] = 401,
 			["Incinerating Blast:135797"] = 401,
 			["Infernal Burning"] = 401,
+			["Infernal Smash"] = 401,
 			["Infernal Tempest"] = 401,
 			["Infernal Torment"] = 401,
 			["Infernal"] = 401,
+			["Infernal"] = 401,
 			["Living Felflame"] = 401,
+			["Massive Eruption:135801"] = 401,
 			["Melt Flesh:135802"] = 401,
 			["Molten Core:841218"] = 401,
 			["Nova:135799"] = 401,
@@ -1123,15 +1291,23 @@ local function updateData()
 			["Rain of Felfire"] = 401,
 			["Rain of Fire:135804"] = 401,
 			["Reverse Entropy"] = 401,
+			["Rumbling Fissure:1118738"] = 401,
+			["Sear:135799"] = 401,
+			["Sear:135802"] = 401,
+			["Searing Rend:1093862"] = 401,
 			["Shoot Me:135797"] = 401,
 			["Siege Nova:135795"] = 401,
 			["Siege Nova:135799"] = 401,
 			["Sigil of Flame:1344652"] = 401,
+			["Soul Fire:841220"] = 401,
 			["Soul Fissure:135793"] = 401,
+			["Soul Fissure:135794"] = 401,
 			["Spectral Sight"] = 401,
 			["Summon Fel Imp"] = 401,
 			["Summon Felguard"] = 401,
 			["Summon Imp"] = 401,
+			["Summon Infernal"] = 401,
+			["Summon Overfiend"] = 401,
 			["Summon Phantomflame Infernal"] = 401,
 			["Summon Vilefiend"] = 401,
 			["Unstable Fel Crystal"] = 401,
@@ -1141,32 +1317,35 @@ local function updateData()
 			["Wrath Bolt"] = 401,
 
 			--! Chaos
-			["Fel Conduit"] = 127,
-			["Fel Gravity Well"] = 127,
-			["Gift of Argus"] = 127,
-			["Bang, Bang, Bang"] = 127,
-			["Fel Rupture"] = 127,
-			["Fel Spikes"] = 127,
+			["Chaos Meteor"] = 127,
 			["Annihilation"] = 127,
-			["Fel Channeling"] = 127,
+			["Bang, Bang, Bang"] = 127,
 			["Carrion Beam"] = 127,
 			["Chaos Blast"] = 127,
 			["Chaos Bolt"] = 127,
 			["Chaos Volley"] = 127,
+			["Claws of Argus"] = 127,
 			["Dark Portal"] = 127,
 			["Darkglare"] = 127,
 			["Deomic Tyrant"] = 127,
 			["Eye Beam"] = 127,
 			["Fel Armament"] = 127,
 			["Fel Barrage"] = 127,
+			["Fel Channeling"] = 127,
+			["Fel Conduit"] = 127,
+			["Fel Gravity Well"] = 127,
+			["Fel Rupture"] = 127,
+			["Fel Spikes"] = 127,
 			["Felguard"] = 127,
 			["Felstorm"] = 127,
+			["Gift of Argus"] = 127,
 			["Hand of Arax'ath"] = 127,
 			["Incineratus"] = 127,
 			["Metamorphosis"] = 127,
 			["Rain of Chaos"] = 127,
 
 			--! Felstrike
+			["Meteor Slam:1344650"] = 427,
 			["Loading Cannon:133009"] = 427,
 			["Overpowering Flurry:1344646"] = 427,
 			["Emblazoned Swipe:135802"] = 427,
@@ -1198,6 +1377,10 @@ local function updateData()
 			--: Holy
 			-------------------------
 			--! Holy
+			["Light's Speed"] = 2,
+			["Solar Heal"] = 2,
+			["Divine Steed"] = 2,
+			["Angelic Feather"] = 2,
 			["Holy Smite"] = 2,
 			["Blessing of K'ara"] = 2,
 			["Scarlet Resurrection"] = 2,
@@ -1223,8 +1406,20 @@ local function updateData()
 			["Archon's Grace"] = 2,
 			["Divine Protection"] = 2,
 			["Shining Light"] = 2,
+			["Flash Heal"] = 2,
 
-			--! Holystrike
+			--! Holy Light  ! Gold
+			["The Golden Gaze"] = 200,
+			["Imbuing the Light"] = 200,
+			["Divine Hymn"] = 200,
+			["Avenging Wrath"] = 200,
+			["Archangel"] = 200,
+			["Apotheosis"] = 200,
+			["Avenging Crusader"] = 200,
+			["Guardian of Ancient Kings"] = 200,
+			["Guardian of Ancient Queens"] = 200,
+
+			--! Holystrike  ! Flash
 			["Blessing of the Silver Crescent"] = 3,
 			["Blessed Armor of the Fallen"] = 3,
 			["Penetrating Insight:3136453"] = 3,
@@ -1247,8 +1442,13 @@ local function updateData()
 			["Blinding Faith"] = 3,
 			["Stellar Pylon:253400"] = 3,
 
-			--! Holy Fire / Solar Fire
+			--! Holy Fire  ! Solar
+			["Nature's Wrath:535045"] = 6,
+			["Excite:574795"] = 6,
+			["Blaze of Glory:574795"] = 6,
+			["Golden Bolt"] = 6,
 			["Solar Shower"] = 6,
+			["Solar Healing Nova"] = 6,
 			["Might of the Sun"] = 6,
 			["Blessing of Dawn"] = 6,
 			["Cleansing Flame"] = 6,
@@ -1269,6 +1469,7 @@ local function updateData()
 			["Solar Wrath"] = 6,
 			["Solar Zone"] = 6,
 			["Solar Beam"] = 6,
+			["Solar Burst"] = 6,
 			["Stellar Emission:1360763"] = 6,
 			["Sun Bolt"] = 6,
 			["Sunfire"] = 6,
@@ -1276,18 +1477,11 @@ local function updateData()
 			["Summon Solar Orb"] = 6,
 			["Solar Orb"] = 6,
 
-			--! Holy Power
-			["The Golden Gaze"] = "Holy Power",
-			["Imbuing the Light"] = "Holy Power",
-			["Divine Hymn"] = "Holy Power",
-			["Avenging Wrath"] = "Holy Power",
-			["Archangel"] = "Holy Power",
-			["Apotheosis"] = "Holy Power",
-			["Avenging Crusader"] = "Holy Power",
-			["Guardian of Ancient Kings"] = "Holy Power",
-			["Guardian of Ancient Queens"] = "Holy Power",
-
-			--! Ethereal
+			--! Ethereal  ! Kyrian
+			["Anima Field:3536198"] = 201,
+			["Resonating Arrow"] = 201,
+			["Vesper Totem"] = 201,
+			["Weapons of Order"] = 201,
 			["Spear of Bastion"] = 201,
 			["Lone Protection"] = 201,
 			["Lone Empowerment"] = 201,
@@ -1358,7 +1552,8 @@ local function updateData()
 			["Valiant Shield:135911"] = 201,
 			["Xandria's Wrath"] = 201,
 
-			--! Ethereal Fire
+			--! Ethereal Flame
+			["Crackling Anima"] = 600,
 			["Tarecgosa's Visage"] = 600,
 			["Fervent Barrage"] = 600,
 			["Azure Storm"] = 600,
@@ -1372,7 +1567,13 @@ local function updateData()
 			["Valiant Bolt"] = 600,
 			["Valiant Flame"] = 600,
 
-			--! Discipline
+			--! Discipline  ! Bandage  ! Brewing  ! Inscription
+			["Helping"] = 202,
+			["Bandage"] = 202,
+			["Drunken Haze"] = 202,
+			["Blood Shield"] = 202,
+			["Keg Smash"] = 202,
+			["Celestial Brew"] = 202,
 			["Serve Tea"] = 202,
 			["Reading"] = 202,
 			["Freeing Critter"] = 202,
@@ -1433,15 +1634,11 @@ local function updateData()
 			["Soothing"] = 202,
 			["Unspoken Gratitude"] = 202,
 
-			--! Hallow
-			["Anima Nova:3528303"] = 203,
-			["Unleashed Soulstorm:4067362"] = 203,
-			["Soulstorm:4067362"] = 203,
-			["Soulsmash:237526"] = 203,
+			--! Hyperlight  ! Hallow  ! Broker
+			["\"Borrowed\" Power"] = 203,
 			["Activate Empowerment:4005160"] = 203,
-			["Tal'Galan's Trial"] = 203,
 			["Anima Extrapolation:3675491"] = 203,
-			["Fallen Priest's Blessing"] = 203,
+			["Anima Nova:3528303"] = 203,
 			["Annihilate:2101973"] = 203,
 			["Attendant's Pocket Portal: Ardenweald"] = 203,
 			["Attendant's Pocket Portal: Bastion"] = 203,
@@ -1451,13 +1648,26 @@ local function updateData()
 			["Convocation of Pain"] = 203,
 			["Cypher of Obfuscation"] = 203,
 			["Cypher of Relocation"] = 203,
+			["Death Wave:1778230"] = 203,
 			["Desintegration Wave"] = 203,
 			["Dimensional Tear:526520"] = 203,
 			["Discordant Barrage"] = 203,
 			["Edge of Annihilation:2101973"] = 203,
+			["Fallen Priest's Blessing"] = 203,
+			["Focused Conduit:4037119"] = 203,
 			["Glyph of Assimilation"] = 203,
 			["Glyph of Destruction:236219"] = 203,
+			["Hyperlight Backhand"] = 203,
+			["Hyperlight Beam"] = 203,
+			["Hyperlight Bolt"] = 203,
+			["Hyperlight Bomb"] = 203,
+			["Hyperlight Containment Cell"] = 203,
+			["Hyperlight Eruption"] = 203,
+			["Hyperlight Jolt"] = 203,
+			["Hyperlight Nova"] = 203,
+			["Hyperlight Salvo"] = 203,
 			["Hyperlight Spark"] = 203,
+			["Lantern of Force"] = 203,
 			["Releasing Souls"] = 203,
 			["Rescue Soul"] = 203,
 			["Rift Blast:3528282"] = 203,
@@ -1468,70 +1678,74 @@ local function updateData()
 			["Soul Prison"] = 203,
 			["Soul Shot"] = 203,
 			["Soul Volley"] = 203,
+			["Soulsmash:237526"] = 203,
+			["Soulstorm:4067362"] = 203,
 			["Spectral Smite"] = 203,
 			["Stygian Storm"] = 203,
 			["Tachyon Jump"] = 203,
+			["Tal'Galan's Trial"] = 203,
+			["Unleashed Soulstorm:4067362"] = 203,
 
 			--! Holyfrost
-			["Brain Freeze"] = 18,
-			["Ice Floes"] = 18,
+			-- 18
 
 			--! Azerite
-			["Empowering the Heart"] = 200,
-			["Absorbing Azerite"] = 200,
-			["Ancient Awakening"] = 200,
-			["Artifice of Time"] = 200,
-			["Azerite Barrage"] = 200,
-			["Azerite Blast"] = 200,
-			["Azerite Effusion"] = 200,
-			["Azerite Empowered"] = 200,
-			["Azerite Energy"] = 200,
-			["Azerite Explosion"] = 200,
-			["Azerite Expulsion"] = 200,
-			["Azerite Grenade"] = 200,
+			["Empowering the Heart"] = 204,
+			["Absorbing Azerite"] = 204,
+			["Ancient Awakening"] = 204,
+			["Artifice of Time"] = 204,
+			["Azerite Barrage"] = 204,
+			["Azerite Blast"] = 204,
+			["Azerite Effusion"] = 204,
+			["Azerite Empowered"] = 204,
+			["Azerite Energy"] = 204,
+			["Azerite Explosion"] = 204,
+			["Azerite Expulsion"] = 204,
+			["Azerite Grenade"] = 204,
 			["Azerite Infusion"] = 800,
-			["Azerite Potion"] = 200,
-			["Azerite Shards"] = 200,
-			["Azerite Smash"] = 200,
-			["Blood of the Enemy"] = 200,
-			["Breath of Everlasting Spirit"] = 200,
-			["Breath of the Dying"] = 200,
-			["Concentrated Flame"] = 200,
-			["Condensed Life-Force"] = 200,
-			["Conflict and Strife"] = 200,
-			["Empower Heart of Azeroth"] = 200,
-			["Empower Heart"] = 200,
-			["Essence of the Focusing Iris"] = 200,
-			["Guardian of Azeroth"] = 200,
-			["Heart of Azeroth"] = 200,
-			["Life-Binder's Invocation"] = 200,
-			["Memory of Lucid Dreams"] = 200,
-			["Purification Protocol"] = 200,
-			["Reaping Flames"] = 200,
-			["Resonant Burst"] = 200,
-			["Resonant Cascade"] = 200,
-			["Resonant Pulse"] = 200,
-			["Ripple in Space"] = 200,
-			["Spark of Inspiration"] = 200,
-			["Sparks of Unwavering Strength"] = 200,
-			["Spirit of Preservation"] = 200,
-			["Strength of the Warden"] = 200,
-			["The Crucible of Flame"] = 200,
-			["The Ever-Rising Tide"] = 200,
-			["The Formless Void"] = 200,
-			["The Unbound Force"] = 200,
-			["The Well of Existance"] = 200,
-			["Touch of the Everlasting"] = 200,
-			["Unleash Heart of Azeroth"] = 200,
-			["Unwavering Ward"] = 200,
-			["Vision of Perfection"] = 200,
-			["Vitality Conduit"] = 200,
-			["Worldvein Resonance"] = 200,
+			["Azerite Potion"] = 204,
+			["Azerite Shards"] = 204,
+			["Azerite Smash"] = 204,
+			["Blood of the Enemy"] = 204,
+			["Breath of Everlasting Spirit"] = 204,
+			["Breath of the Dying"] = 204,
+			["Concentrated Flame"] = 204,
+			["Condensed Life-Force"] = 204,
+			["Conflict and Strife"] = 204,
+			["Empower Heart of Azeroth"] = 204,
+			["Empower Heart"] = 204,
+			["Essence of the Focusing Iris"] = 204,
+			["Guardian of Azeroth"] = 204,
+			["Heart of Azeroth"] = 204,
+			["Life-Binder's Invocation"] = 204,
+			["Memory of Lucid Dreams"] = 204,
+			["Purification Protocol"] = 204,
+			["Reaping Flames"] = 204,
+			["Resonant Burst"] = 204,
+			["Resonant Cascade"] = 204,
+			["Resonant Pulse"] = 204,
+			["Ripple in Space"] = 204,
+			["Spark of Inspiration"] = 204,
+			["Sparks of Unwavering Strength"] = 204,
+			["Spirit of Preservation"] = 204,
+			["Strength of the Warden"] = 204,
+			["The Crucible of Flame"] = 204,
+			["The Ever-Rising Tide"] = 204,
+			["The Formless Void"] = 204,
+			["The Unbound Force"] = 204,
+			["The Well of Existance"] = 204,
+			["Touch of the Everlasting"] = 204,
+			["Unleash Heart of Azeroth"] = 204,
+			["Unwavering Ward"] = 204,
+			["Vision of Perfection"] = 204,
+			["Vitality Conduit"] = 204,
+			["Worldvein Resonance"] = 204,
 
 
 			--: Divine
 			-------------------------
-			--! Divine
+			--! Divine  ! Chi-Ji
+			["Crumbling Aegis"] = 66,
 			["Chi-Ji"] = 66,
 			["Chi-Ji, the Red Crane"] = 66,
 			["Invoke Chi-Ji, the Red Crane"] = 66,
@@ -1551,6 +1765,9 @@ local function updateData()
 			["Steadfast Resolve"] = 660,
 
 			--! Love
+			["Seduction"] = 661,
+			["Tame Beast"] = 661,
+			["Ball!"] = 661,
 			["Peddlefeet's Lovely Hearthstone"] = 661,
 			["Petting"] = 661,
 			["Rainbow Generator"] = 661,
@@ -1566,16 +1783,28 @@ local function updateData()
 			["Frostbolt"] = 16,
 			["Freezing Blast"] = 16,
 			["Blizzard"] = 16,
+			["Frozen Rain"] = 16,
 			["Elemental Blast: Mastery"] = 16,
 			["Frostflurry"] = 16,
-			["Frozen Orb"] = 16,
 			["Greatfather Winter's Hearthstone"] = 16,
-			["Icefury"] = 16,
 			["Path of Frost"] = 16,
-			["Ice Barrier"] = 16,
-			["Ice Fall"] = 16,
-			["Ice Form"] = 16,
 			["Icy Veins"] = 16,
+
+			--! Ice  ! Snow
+			["Ring of Frost"] = 160,
+			["Snowball"] = 160,
+			["Ice Fall"] = 160,
+			["Ice Form"] = 160,
+			["Icefury"] = 160,
+			["Frozen Orb"] = 160,
+			["Ice Barrier"] = 160,
+			["Icy Grip"] = 160,
+			["Ice Wall"] = 160,
+			["Ice Shard"] = 160,
+			["Fingers of Frost"] = 160,
+			["Ice Floes"] = 160,
+			["Ice Lance"] = 160,
+			["Icicles"] = 160,
 
 			--! Froststrike
 			["Hurl Boulder:429385"] = 17,
@@ -1583,15 +1812,14 @@ local function updateData()
 			["Killing Machine"] = 17,
 			["Belch Frost"] = 17,
 			["Big Blue Fist"] = 17,
-			["Fingers of Frost"] = 17,
+			["Brain Freeze"] = 17,
 			["Frost Strike"] = 17,
 			["Ice Block"] = 17,
-			["Ice Shard"] = 17,
 			["Icebound Fortitude"] = 17,
 			["Icestrand Web"] = 17,
-			["Icy Grip"] = 17,
 
 			--! Froststorm
+			["Typhoon:135861"] = 24,
 			["Piercing Rain"] = 24,
 			["Remorseless Winter"] = 24,
 			["Chilling Winds"] = 24,
@@ -1602,7 +1830,6 @@ local function updateData()
 			["Cry of Wrath"] = 24,
 			["Freezing Rain"] = 24,
 			["Froststorm Breath"] = 24,
-			["Summon Water Elemental"] = 24,
 
 			--! Spellfrost
 			["Frost Armor"] = 80,
@@ -1621,19 +1848,32 @@ local function updateData()
 			["Elemental Blast"] = 28,
 			["Storm, Earth, and Fire"] = 28,
 
-			--! Natural
+			--! Natural  ! Spiritual
+			["Spirit Link Totem"] = 280,
+			["Healing Ward"] = 280,
 			["Spirit Mend"] = 280,
 			["Ancestral Spirit"] = 280,
 			["Ancestral Vision"] = 280,
-			["Gaseous Bubbles"] = 280,
 			["Master of the Elements"] = 280,
-			["Rejuvenating Serum"] = 280,
 			["Spiritwalker's Grace"] = 280,
+
+			--! Chemical  ! Alchemy
+			["Gaseous Bubbles"] = 281,
+			["Rejuvenating Serum"] = 281,
+			["Healing Balm"] = 281,
+			["Alchemy"] = 281,
 			
 			
 			--: Nature
 			-------------------------
-			--! Nature
+			--! Nature  ! Herbalism
+			["Germinate Arborblade"] = 8,
+			["Entanglement"] = 8,
+			["Bramble Patch"] = 8,
+			["Regurgitate"] = 8,
+			["Regeneration:1850550"] = 8,
+			["Regeneration:136077"] = 8,
+			["Induce Regeneration:136077"] = 8,
 			["Wrath:136006"] = 8,
 			["Pick Flower"] = 8,
 			["Feed Young:134437"] = 8,
@@ -1659,11 +1899,19 @@ local function updateData()
 			["The Innkeeper's Daughter"] = 8,
 			["Survival of the Fittest"] = 8,
 
-			--! Naturestrike
+			--! Naturestrike  ! Web
+			["Give Silk"] = 900,
+			["Lashing Flurry:134218"] = 900,
+			["Spider Swarm"] = 900,
+			["Blinding Webs"] = 900,
+			["Vile Webbing"] = 900,
+			["Briarskin"] = 900,
+			["Leeching Bite"] = 900,
 			["Bag of Snakes"] = 900,
 			["Dire Beast"] = 900,
 			["Hurl Seed"] = 900,
 			["Shell Shield"] = 900,
+			["Scale Shield"] = 900,
 			["Razor Spin"] = 900,
 			["Web Strand"] = 900,
 			["Summon Spiderlings"] = 900,
@@ -1683,7 +1931,8 @@ local function updateData()
 			["Thorns"] = 900,
 			["Throw Brambles"] = 900,
 
-			--! Life
+			--! Life  ! Wild Gods
+			["Genesis"] = 10,
 			["Rebirth"] = 10,
 			["Dreamwalk"] = 10,
 			["Cenarion Ward"] = 10,
@@ -1692,7 +1941,15 @@ local function updateData()
 			["Grow Tree"] = 10,
 			["Rejuvenating Wind"] = 10,
 
-			--! Fey
+			--! Fey  ! Night Fae
+			["Bewildering Pollen:134219"] = 805,
+			["Fae Transfusion"] = 805,
+			["Guessing Game"] = 805,
+			["Dodge Ball:132387"] = 805,
+			["Wrathful Faerie"] = 805,
+			["Guardian Faerie"] = 805,
+			["Benevolent Faerie"] = 805,
+			["Fae Guardians"] = 805,
 			["Ancient Aftershock"] = 805,
 			["The Hunt"] = 805,
 			["Fury of Elune"] = 805,
@@ -1731,39 +1988,46 @@ local function updateData()
 
 			--: Poison
 			-------------------------
-			--! Poison
-			["Corrupted Healing Totem"] = 806,
-			["Luciferase"] = 806,
-			["Toxic Mist"] = 806,
-			["Melt Flesh:132108"] = 806,
-			["Venomous Shot"] = 806,
-			["Volatile Acid"] = 806,
-			["Caustic Liquid"] = 806,
-			["Acidic Spit"] = 806,
-			["Acidic Spittle"] = 806,
+			--! Poison  ! Venom  ! Slime
 			["Abrasive Slime"] = 806,
 			["Acid Spit"] = 806,
 			["Acid Spray"] = 806,
 			["Acid"] = 806,
 			["Acidic Injection"] = 806,
+			["Acidic Spit"] = 806,
+			["Acidic Spittle"] = 806,
+			["Belch Slime"] = 806,
+			["Blight Bomb"] = 806,
 			["Blighted Arrow"] = 806,
+			["Blighted Lick"] = 806,
 			["Blow Dart"] = 806,
 			["Brinescale Venom"] = 806,
 			["Bursting Toxin"] = 806,
+			["Caustic Liquid"] = 806,
+			["Caustic Orb"] = 806,
 			["Concentrated Venom"] = 806,
 			["Corrosive Breath"] = 806,
+			["Corrupted Healing Totem"] = 806,
 			["Crippling Poison"] = 806,
 			["Deadly Poison"] = 806,
+			["Death Venom"] = 806,
 			["Debilitating Vial"] = 806,
+			["Dissolving Bolt"] = 806,
 			["Ebon Scourge"] = 806,
+			["Fatal Sting"] = 806,
 			["Grim Venom"] = 806,
 			["Instant Poison"] = 806,
+			["Luciferase"] = 806,
+			["Melt Flesh:132108"] = 806,
 			["Mind-Numbing Extract"] = 806,
 			["Mischievous Blast"] = 806,
+			["Necrotic Burst"] = 806,
+			["Noxious Eruption"] = 806,
 			["Noxious Fumes"] = 806,
 			["Noxious Mixture"] = 806,
 			["Numbing Poison"] = 806,
 			["Ogron Be-Gone"] = 806,
+			["Oozing Slime"] = 806,
 			["Parabolic Excrement"] = 806,
 			["Plague in a Jar"] = 806,
 			["Poison Barrage"] = 806,
@@ -1783,7 +2047,10 @@ local function updateData()
 			["Retched Acid"] = 806,
 			["Serpent Sting"] = 806,
 			["Shiver Venom"] = 806,
+			["Slime Injection"] = 806,
 			["Slimy Coating"] = 806,
+			["Snail Slime"] = 806,
+			["Sneezing Fit"] = 806,
 			["Spear of Anguish"] = 806,
 			["Sting"] = 806,
 			["Stoneblood Bolt"] = 806,
@@ -1792,6 +2059,8 @@ local function updateData()
 			["Toxic Blades"] = 806,
 			["Toxic Breath"] = 806,
 			["Toxic Fumes"] = 806,
+			["Toxic Mist"] = 806,
+			["Toxic Spit"] = 806,
 			["Toxic Volley"] = 806,
 			["Venom Bolt"] = 806,
 			["Venom Spit"] = 806,
@@ -1799,13 +2068,20 @@ local function updateData()
 			["Venom"] = 806,
 			["Venomous Bite"] = 806,
 			["Venomous Fangs"] = 806,
+			["Venomous Shot"] = 806,
 			["Vile Impact"] = 806,
+			["Vile Sting"] = 806,
 			["Virulent Burrow"] = 806,
+			["Virulent Gasp"] = 806,
+			["Volatile Acid"] = 806,
 			["Whimsy Barb"] = 806,
 			["Worm Bile"] = 806,
 			["Wound Poison"] = 806,
 
 			--! Poisonstrike
+			["Poisoning Strike"] = 906,
+			["Poisonous Claws"] = 906,
+			["Barbed Assault"] = 906,
 			["Venom-Laced Web"] = 906,
 			["Triple Bite:463493"] = 906,
 			["Triple Bite:136067"] = 906,
@@ -1819,7 +2095,14 @@ local function updateData()
 
 			--: Air
 			-------------------------
-			--! Wind
+			--! Wind  ! Air
+			["Flap Wings"] = 811,
+			["Gale Slash"] = 811,
+			["Wing Buffet"] = 811,
+			["Windburst"] = 811,
+			["Four Winds"] = 811,
+			["Windwall"] = 811,
+			["Wing Buffet"] = 811,
 			["Dire Beast: Hawk"] = 811,
 			["Hawk"] = 811,
 			["Summon Air Elemental"] = 811,
@@ -1858,8 +2141,12 @@ local function updateData()
 			["Wing Buffet"] = 811,
 			["Windwall"] = 811,
 			["Wind Rush"] = 811,
+			["Swooping Lunge"] = 811,
 
 			--! Storm
+			["Wild Tornado"] = 911,
+			["Tornado"] = 911,
+			["Dervish"] = 911,
 			["Dark Lightning:252174"] = 911,
 			["Shockbitten"] = 911,
 			["Highborne Compendium of Storms"] = 911,
@@ -1882,7 +2169,12 @@ local function updateData()
 			["Windrush"] = 911,
 			["Localized Storm"] = 911,
 
-			--! Lightning
+			--! Lightning  ! Thunder
+			["Stormbringer"] = 800,
+			["Lizard Bolt"] = 800,
+			["Channel Lightning"] = 800,
+			["Nimbus Bolt:136048"] = 800,
+			["Polarization"] = 800,
 			["Thundercharge"] = 800,
 			["Conducted Shock Pulse"] = 800,
 			["Corruption Shock"] = 800,
@@ -1966,6 +2258,10 @@ local function updateData()
 			["Zot!"] = 800,
 
 			--! Stormstrike
+			["Crashing Storm"] = 9,
+			["Sashj'tar Blast"] = 9,
+			["Stormhammer"] = 9,
+			["Thundering Rush"] = 9,
 			["Focused Assault:294033"] = 9,
 			["Throw Totem"] = 9,
 			["Thundering Stomp"] = 9,
@@ -1979,7 +2275,14 @@ local function updateData()
 
 			--: Water
 			-------------------------
-			--! Water
+			--! Water  ! Sea  ! Fishing
+			["Summon Water Elemental"] = 801,
+			["Wild Charge:136148"] = 801,
+			["Rapid Tides"] = 801,
+			["Revitalizing Waters"] = 801,
+			["Healing Waters"] = 801,
+			["Spawn Waterlings"] = 801,
+			["Pull of the Tides"] = 801,
 			["Touch of the Drowned"] = 801,
 			["Restorative Waters"] = 801,
 			["Undulating Tides"] = 801,
@@ -2044,6 +2347,7 @@ local function updateData()
 			["Tide Crush"] = 901,
 
 			--! Mist
+			["Soothing Breath"] = 802,
 			["Dance of Chi-Ji"] = 802,
 			["Summon Cloud Serpent"] = 802,
 			["Call of the Mists"] = 802,
@@ -2059,7 +2363,7 @@ local function updateData()
 			["Surging Mist"] = 802,
 			["Vivify"] = 802,
 
-			--! Jade
+			--! Jade  ! Yu'lon
 			["Jade Crystal Fragment"] = 902,
 			["Jade Serpent Statue"] = 902,
 			["Summon Jade Serpent Statue"] = 902,
@@ -2069,6 +2373,8 @@ local function updateData()
 			["Invoke Yu'lon, the Jade Serpent"] = 902,
 
 			--! Jade Lightning
+			["Alpha Tiger"] = 807,
+			["Chi Torpedo"] = 807,
 			["Flying Serpent Kick"] = 807,
 			["Crackling Jade Lightning"] = 807,
 			["Jade Fire"] = 807,
@@ -2081,15 +2387,14 @@ local function updateData()
 			["Zen Healing"] = 807,
 			["Zen Meditation"] = 807,
 			["Zen Pilgrimage"] = 807,
-			["Zen Travel"] = 807,
 			["Serenity"] = 807,
 
-			--! Chi
+			--! Chi  ! Xuen
+			["Zen Travel"] = 907,
 			["Xuen, the White Tiger"] = 907,
 			["Xuen"] = 907,
 			["Invoke Xuen, the White Tiger"] = 907,
 			["Focused Chi Burst"] = 907,
-			["Crackling Anima"] = 907,
 			["Blackout Kick!"] = 907,
 			["Touch of Karma"] = 907,
 			["Invoke Xuen"] = 907,
@@ -2100,7 +2405,17 @@ local function updateData()
 
 			--: Earth
 			-------------------------
-			--! Earth
+			--! Earth  ! Mud
+			["Meteoric Earthspire"] = 803,
+			["Pulverizing Meteor:2101174"] = 803,
+			["Earth Rumble"] = 803,
+			["Rupture Line"] = 803,
+			["Sling Mud"] = 803,
+			["Slag Smash"] = 803,
+			["Shatter Earth"] = 803,
+			["Earth Crush"] = 803,
+			["Wallow"] = 803,
+			["Tunnel"] = 803,
 			["Kinetic Impact:132838"] = 803,
 			["Niuzao"] = 803,
 			["Niuzao, the Black Ox"] = 803,
@@ -2142,7 +2457,13 @@ local function updateData()
 			["Earthen Blast"] = 803,
 			["Hardened Muck"] = 803,
 
-			--! Earthstrike
+			--! Earthstrike  ! Leatherworking
+			["Meteor Leap"] = 903,
+			["Angry Snort"] = 903,
+			["Crushing Swipe"] = 903,
+			["Seismic Slam"] = 903,
+			["Colossal Blow"] = 903,
+			["Snort"] = 903,
 			["Shattering Stomp"] = 903,
 			["Lumbering Stomp"] = 903,
 			["Basilisk"] = 903,
@@ -2174,7 +2495,13 @@ local function updateData()
 			["Harden Skin"] = 903,
 			["Harden"] = 903,
 
-			--! Stone
+			--! Stone  ! Rock
+			["Rock Bash"] = 809,
+			["Cave-in"] = 809,
+			["Stone Bulwark"] = 809,
+			["Stoneshape"] = 809,
+			["Rock Barrage"] = 809,
+			["Stone Splinter"] = 809,
 			["Animate Pebble"] = 809,
 			["Boulder Barrage"] = 809,
 			["Boulder"] = 809,
@@ -2210,15 +2537,25 @@ local function updateData()
 			["Stoneskin"] = 809,
 			["Swamp Breath"] = 809,
 
-			--! Stonestrike
+			--! Stonestrike  ! Metal  ! Salt  ! Blacksmithing  ! Mining
+			["Scourge Hook"] = 909,
 			["Stone Breaker"] = 909,
 			["Stonebreaker"] = 909,
 			["Stone Throw"] = 909,
 			["Brulbash"] = 909,
 			["Salt Spray"] = 909,
 			["Mining"] = 909,
+			["Shackles"] = 909,
+			["Iron Shackles"] = 909,
+			["Lockdown"] = 909,
+			["Subduing Chains"] = 909,
+			["In Irons"] = 909,
 
-			--! Sand
+			--! Sand  ! Ash
+			["Sand Breath"] = 804,
+			["From the Ashes"] = 804,
+			["Kick Up Dust"] = 804,
+			["Dirt Toss"] = 804,
 			["Hindering Soot"] = 804,
 			["Ashen Bolt"] = 804,
 			["Ashen Bolt Volley"] = 804,
@@ -2227,7 +2564,7 @@ local function updateData()
 			["Sandblast"] = 804,
 			["Eruption:236758"] = 804,
 
-			--! Crystal
+			--! Crystal  ! Jewelcrafting
 			["Glass Cannon"] = 808,
 			["Hurl Crystalshards"] = 808,
 			["Prospecting"] = 808,
@@ -2332,12 +2669,16 @@ local function updateData()
 			--: Arcane
 			-------------------------
 			--! Arcane
+			["Arcane Meteor"] = 64,
+			["Star Gate:610471"] = 64,
+			["Meteor Shower:1041233"] = 64,
+			["Arcane Bolt"] = 64,
+			["Arcane Bolts"] = 64,
 			["Blink:135736"] = 64,
 			["Sear:135731"] = 64,
 			["Arcane Wall"] = 64,
 			["Eclipse (Lunar)"] = 64,
 			["Portal: Dalaran"] = 64,
-			["Prismatic Barrier"] = 64,
 			["Moonfire"] = 64,
 			["Arcane Bombardment"] = 64,
 			["Arcane Bomb"] = 64,
@@ -2347,7 +2688,6 @@ local function updateData()
 			["Arcane Barrage"] = 64,
 			["Arcane Blast"] = 64,
 			["Arcane Burst"] = 64,
-			["Arcane Missiles"] = 64,
 			["Arcane Power"] = 64,
 			["Empower Golem"] = 64,
 			["Ethereal Portal"] = 64,
@@ -2380,16 +2720,22 @@ local function updateData()
 			["Mana Rage"] = 65,
 			["Glowing Rune Axe"] = 65,
 			["Runic Strike"] = 65,
+			["Shattering Throw"] = 65,
 			["Mass Spell Reflection"] = 65,
 			["Diffuse Magic"] = 65,
 			["Reflective Shield"] = 65,
 			["Rune of the Stoneskin Gargoyle"] = 65,
 			["Runic Cleave"] = 65,
-			["Sashj'tar Blast"] = 65,
 			["Spell Reflect"] = 65,
 			["Spell Reflection"] = 65,
 
-			--! Magic
+			--! Magic  ! Enchanting
+			["Prismatic Barrier"] = 126,
+			["Arcane Explosion"] = 126,
+			["Arcane Missiles"] = 126,
+			["Summon Wolfoids"] = 126,
+			["Summon Doomskull"] = 126,
+			["Touch of the Magi"] = 126,
 			["Focused Bursts:136050"] = 126,
 			["Translocate"] = 126,
 			["Orb of Translocation"] = 126,
@@ -2407,7 +2753,7 @@ local function updateData()
 			["Garrison Hearthstone"] = 126,
 			["Teleport to Shipyard"] = 126,
 
-			--! Chromatic
+			--! Chromatic  ! Prismatic
 			["Protective Phantasma"] = 124,
 			["Chromatic Infusion"] = 124,
 			["Chromatic Mantle of the Dawn"] = 124,
@@ -2416,7 +2762,9 @@ local function updateData()
 			["Chromatic Shift"] = 124,
 			["Mindmeld"] = 124,
 
-			--! Time
+			--! Temporal  ! Time
+			["Accelerated Mending"] = 2,
+			["Chrono Shift"] = 640,
 			["True Bearing"] = 640,
 			["Slow"] = 640,
 			["Mass Slow"] = 640,
@@ -2428,10 +2776,10 @@ local function updateData()
 			--: Astral
 			-------------------------
 			--! Astral
+			["Constellation Shield"] = 72,
 			["Starfall"] = 72,
 			["Celestial Alignment"] = 72,
 			["Ancestral Protection Totem"] = 72,
-			["Celestial Brew"] = 72,
 			["Ancestral Guidance"] = 72,
 			["Astral Annihilation"] = 72,
 			["Astral Shift"] = 72,
@@ -2441,12 +2789,13 @@ local function updateData()
 			["Siphon Nightwell"] = 72,
 
 			--! Spectral
+			["Spirit Walk"] = 720,
 			["Spirit Stream"] = 720,
 			["Lesser Invisibility"] = 720,
 			["Invisibility"] = 720,
+			["Invisible"] = 720,
 			["Mass Invisibility"] = 720,
 			["Greater Invisibility"] = 720,
-			["Spirit Link Totem"] = 720,
 			["Veilwalking"] = 720,
 			["Doom Gaze"] = 720,
 			["Fade"] = 720,
@@ -2463,8 +2812,11 @@ local function updateData()
 
 			--: Decay
 			-------------------------
-			--! Unholy
+			--! Unholy  ! Bone
+			["Bone Splinter"] = 414,
+			["Exhume the Crypts"] = 414,
 			["Apocalypse"] = 414,
+			["Ectoplasm"] = 414,
 			["Ectoplasm Spew"] = 414,
 			["Dark Transformation"] = 414,
 			["Lichborne"] = 414,
@@ -2473,6 +2825,7 @@ local function updateData()
 			["Bone Spike Graveyard"] = 414,
 			["Bone Spike"] = 414,
 			["Bone Spear"] = 414,
+			["Bone Toss"] = 414,
 			["Grave Spike"] = 414,
 			["Shambling Rush"] = 414,
 			["Jagged Spines"] = 414,
@@ -2499,6 +2852,11 @@ local function updateData()
 			["Whirling Mist"] = 414,
 
 			--! Plague
+			["Infected Thorn"] = 40,
+			["Bile Spew"] = 40,
+			["Belch"] = 40,
+			["Gaseous Breath"] = 40,
+			["Parasitic Growth"] = 40,
 			["Carrion Swarm"] = 40,
 			["Impact Spit"] = 40,
 			["Putrid Swarm"] = 40,
@@ -2512,7 +2870,6 @@ local function updateData()
 			["Fling Goop"] = 40,
 			["Twigin's Wings"] = 40,
 			["Belch Organs"] = 40,
-			["Belch Slime"] = 40,
 			["Clining Infestation"] = 40,
 			["Contagion"] = 40,
 			["Contaminate"] = 40,
@@ -2525,7 +2882,6 @@ local function updateData()
 			["Fling Filth"] = 40,
 			["Heaving Retch"] = 40,
 			["Ooz's Frictionless Coating"] = 40,
-			["Oozing Slime"] = 40,
 			["Plague Spit"] = 40,
 			["Plaguepiercer"] = 40,
 			["Putrefied Flesh"] = 40,
@@ -2533,12 +2889,21 @@ local function updateData()
 			["Rotting Bolt"] = 40,
 			["Rotting Tempest"] = 40,
 			["Shoot Plague"] = 40,
-			["Slime Injection"] = 40,
 			["Unraveling Flesh"] = 40,
 			["Call Plagueling"] = 40,
 			["Vile Eruption"] = 40,
+			["Ooze Cap"] = 40,
+			["Insect Plague"] = 40,
+			["Retch"] = 40,
 
-			--! Disease
+			--! Disease  ! Rot
+			["Diseased Spit"] = 410,
+			["Rotten to the Core"] = 410,
+			["Mimic:342913"] = 410,
+			["Desperate Retching"] = 410,
+			["Sludge Bolt"] = 410,
+			["Blood Plague"] = 410,
+			["Fetid Bite"] = 410,
 			["Muck Spit"] = 410,
 			["Putrid Jar"] = 410,
 			["Foul Breath"] = 410,
@@ -2555,8 +2920,11 @@ local function updateData()
 			["Unfettered Growth"] = 410,
 			["Throw Blight Crystal"] = 410,
 			["Drink Muck"] = 410,
+			["Clinging Infestation"] = 410,
 
 			--! Nightmare
+			["Shadow Meteor:1357805"] = 412,
+			["Corrupted Dreams"] = 412,
 			["Raining Filth:1357799"] = 412,
 			["Darkfall:1357806"] = 412,
 			["Twisted Nova:1357801"] = 412,
@@ -2584,7 +2952,17 @@ local function updateData()
 			["Torment Dreams"] = 412,
 			["Unleashed Madness:1357797"] = 412,
 
-			--! Death
+			--! Death  ! Mawsworn
+			["Torment Soul:3528300"] = 411,
+			["Dark Communion:3528299"] = 411,
+			["Wracking Torment"] = 411,
+			["Dark Eclupse"] = 411,
+			["Draw Soulkindling"] = 411,
+			["Steal Essence:347045"] = 411,
+			["Defiling Slam"] = 411,
+			["Call Shade:3731618"] = 411,
+			["Mawsworn Fervor"] = 411,
+			["Stygian Rampage"] = 411,
 			["Defiling Dreadslam"] = 411,
 			["Font of Torment"] = 411,
 			["Painwaves:3528305"] = 411,
@@ -2662,7 +3040,6 @@ local function updateData()
 			["Mawsworn Crossbow"] = 411,
 			["Ritual of Bone"] = 411,
 			["Ritual of Bones"] = 411,
-			["Seed of Doubt"] = 411,
 			["Shroud of Concealment"] = 411,
 			["Succumb to Doubt"] = 411,
 			["Suffering"] = 411,
@@ -2672,7 +3049,14 @@ local function updateData()
 			["Vanish"] = 411,
 			["Wave of Suffering"] = 411,
 
-			--! Drust
+			--! Drust  ! Devourer
+			["Ruinous Bolt"] = 413,
+			["Soul Bolt:631503"] = 413,
+			["Scar Soul:895888"] = 413,
+			["Hungering Eruption:135786"] = 413,
+			["Severing Roar:1778228"] = 413,
+			["Unstable Ejection:342917"] = 413,
+			["Devourer Rift"] = 413,
 			["Devouring Rift"] = 413,
 			["Essence Link:132146"] = 413,
 			["Essence Rift:135729"] = 413,
@@ -2695,53 +3079,59 @@ local function updateData()
 			--: Shadow
 			-------------------------
 			--! Shadow
-			["Mind Blast"] = 32,
+			["Woven Shadows"] = 32,
 			["Sudden Doom"] = 32,
 			["Death's Advance"] = 32,
-			["Dark Thought"] = 32,
 			["Catharstick"] = 32,
 			["Shadow Bulwark"] = 32,
 			["Bone Rattling Howl"] = 32,
 			["Expulse Shadows"] = 32,
-			["Mind Sear"] = 32,
-			["Mind Flay"] = 32,
 			["Shadowfiend"] = 32,
-			["Shadow Strangle"] = 32,
 			["Breathless Darkness"] = 32,
 			["Corruption Ritual"] = 32,
-			["Dark Ritual"] = 32,
-			["Malevolence"] = 32,
-			["Mind Flay"] = 32,
 			["Shadow Bolt"] = 32,
 			["Shadow Dance"] = 32,
-			["Shadow Sight"] = 32,
 			["Shadowstep"] = 32,
-			["Siphon of Acherus"] = 32,
-			["Unstable Shadows"] = 32,
 			["Nightfall"] = 32,
 
+			--! Psychic  ! Mind Control
+			["Silence"] = 328,
+			["Mana Burn"] = 328,
+			["Mindbender"] = 328,
+			["Addled Mind"] = 328,
+			["Dark Thought"] = 328,
+			["Mind Blast"] = 328,
+			["Mind Control"] = 328,
+			["Mind Flay"] = 328,
+			["Mind Sear"] = 328,
+			["Mind Soothe"] = 328,
+			["Mind Trauma"] = 328,
+			["Mind Vision"] = 328,
+			["Searing Nightmare"] = 328,
+			["Mind Bomb"] = 328,
+			["Mind Warp"] = 328,
+			["Shadow Sight"] = 328,
+			["Shadow Strangle"] = 328,
+			["Siphon of Acherus"] = 328,
+
 			--! Shadowstrike
+			["Heaving Blow"] = 33,
+			["Blindside"] = 33,
 			["Darkflight"] = 33,
 			["Rat Traps"] = 33,
 			["Rat Trap"] = 33,
 			["Death Blow"] = 33,
-			["Lockdown"] = 33,
 			["Sweeping Blow:916656"] = 33,
 			["Dark Claw"] = 33,
 			["Forsworn Strike"] = 33,
-			["Massive Strike:454057"] = 33,
 			["Shadowstrike"] = 33,
 			["Shadow Strike"] = 33,
 			["Shadow Strikes"] = 33,
-			["Iron Shackles"] = 33,
 			["Gargoyle Strike"] = 33,
 			["Harrow"] = 33,
 			["Hollow Bite"] = 33,
-			["Massive Strike"] = 33,
 			["Running Wild"] = 33,
-			["Shackles"] = 33,
 			["Soulsunder"] = 33,
-			["Subduing Chains"] = 33,
 			["Summon Gargoyle"] = 33,
 			["Tentacle Slam"] = 33,
 			["Chain Cleave"] = 33,
@@ -2757,10 +3147,21 @@ local function updateData()
 			["Shadow Word: Pain"] = 322,
 			["Torment"] = 322,
 
-			--! Haunt
+			--! Haunt  ! Nether
+			["Cries of Anguish"] = 323,
+			["Desperation"] = 323,
+			["Nether Meteor"] = 323,
+			["Nether Touch"] = 323,
+			["Withered Woe"] = 323,
+			["Unrelenting Anguish"] = 323,
+			["Tortured Soul"] = 323,
+			["Shattered Visage"] = 323,
+			["Soul Steal"] = 323,
+			["Soul Shred"] = 323,
+			["Torn Spirits"] = 323,
+			["Soul Vessel"] = 323,
 			["Banshee Wail"] = 323,
 			["Phantom Lance"] = 323,
-			["Depraved Reversion:237585"] = 323,
 			["Demon Soul"] = 323,
 			["Obsidian Claw"] = 323,
 			["Nathrian Hymn: Gloomveil"] = 323,
@@ -2787,42 +3188,60 @@ local function updateData()
 			["Spectral Shackle"] = 323,
 			["Unleashed Torment"] = 323,
 			["Vampiric Embrace"] = 323,
+			["Vampiric Speed"] = 323,
 			["Vampiric Touch"] = 323,
 			["Wail of the Restless"] = 323,
 			["Wail"] = 323,
 
-			--! Corruption
-			["Mass Corruption"] = 324,
-			["Endless Hunger"] = 324,
+			--! Corruption  ! Old Gods
+			["Insanity"] = 324,
+			["Constricting Grasp"] = 324,
+			["Consuming Bite"] = 324,
+			["Corrupt Soul"] = 324,
 			["Corrupt"] = 324,
 			["Corrupting Nova"] = 324,
-			["Devouring Blackness"] = 324,
-			["Constricting Grasp"] = 324,
-			["Leviathan's Grip"] = 324,
-			["Summon Tentacle of the Old Ones"] = 324,
-			["Tentacle of the Old Ones"] = 324,
-			["Orb of Corruption"] = 324,
-			["Wither"] = 324,
 			["Corruption Bolt"] = 324,
-			["Steal Memories"] = 324,
+			["Corruption"] = 324,
+			["Creepy Crawly"] = 324,
+			["Creepy Crawler"] = 324,
 			["Crushing Doubt"] = 324,
-			["Seed of Corruption"] = 324,
-			["Unleash Burden"] = 324,
-			["Unleash Burdens"] = 324,
-			["Externalize Rage"] = 324,
-			["Mind Control"] = 324,
-			["Devouring Plague"] = 324,
 			["Dark Drain"] = 324,
 			["Dark Maul"] = 324,
+			["Defiled Ground"] = 324,
 			["Despair"] = 324,
-			["Corruption"] = 324,
+			["Devouring Blackness"] = 324,
+			["Devouring Plague"] = 324,
 			["Emotion Expulsion"] = 324,
+			["Emotional Outburst:136158"] = 324,
+			["Emotional Outburst:136184"] = 324,
+			["Endless Hunger"] = 324,
+			["Externalize Rage"] = 324,
+			["Festering Wound"] = 324,
+			["Leviathan's Grip"] = 324,
+			["Mass Corruption"] = 324,
+			["Orb of Corruption"] = 324,
+			["Piercing Memory:878214"] = 324,
+			["Seed of Corruption"] = 324,
+			["Seed of Doubt"] = 324,
+			["Steal Memories"] = 324,
+			["Summon Tentacle of the Old Ones"] = 324,
+			["Surrender to Madness"] = 324,
+			["Tentacle of the Old Ones"] = 324,
+			["Unleash Burden"] = 324,
+			["Unleash Burdens"] = 324,
+			["Unleash Corruption"] = 324,
 			["Unleashed Madness"] = 324,
 			["Unstable Gloom"] = 324,
-			["Consuming Bite"] = 324,
-			["Festering Wound"] = 324,
+			["Wither"] = 324,
 
-			--! Spellshadow
+			--! Spellshadow  ! Runic
+			["Ritual of the Berserker"] = 96,
+			["Shadow Prison"] = 96,
+			["Etch:136202"] = 96,
+			["Surging Fist:877699"] = 96,
+			["Shadowdelving"] = 96,
+			["Frailty"] = 96,
+			["Shattered Resolve:136201"] = 96,
 			["Detecting Life"] = 96,
 			["Soulshift"] = 96,
 			["Shadow Rip"] = 96,
@@ -2831,7 +3250,6 @@ local function updateData()
 			["Soulstone"] = 96,
 			["Enslave Demon"] = 96,
 			["Assassin's Soulcloak"] = 96,
-			["Mindbender"] = 96,
 			["Detect Anima"] = 96,
 			["Soul Shroud"] = 96,
 			["Anima Rune"] = 96,
@@ -2875,6 +3293,7 @@ local function updateData()
 			["Shattered Rune"] = 96,
 			["Shield of Runes"] = 96,
 			["Shroud of Runes"] = 96,
+			["Dancing Rune Weapon"] = 96,
 			["Stygian Rune of Oblivion"] = 96,
 			["Stygian Rune Tap"] = 96,
 			["Unravel the Runes"] = 96,
@@ -2882,6 +3301,8 @@ local function updateData()
 			["Soul Reaper"] = 96,
 
 			--! Shadowfrost
+			["Forlorn Tears"] = 48,
+			["Frozen Tears"] = 48,
 			["Shadowfrost Shard"] = 48,
 			["Soulfreezing Rune"] = 48,
 			["Rune of Razorice"] = 48,
@@ -2890,9 +3311,26 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Delving the Void"] = 320,
+			["Void Whip"] = 320,
+			["Stampeding Corruption"] = 320,
+			["Decimator:1097742"] = 320,
+			["Dark Force:136201"] = 320,
+			["Orb of Annihilation:132851"] = 320,
+			["Void Quills"] = 320,
+			["Moonless Night Kick"] = 320,
+			["Void Mending"] = 320,
+			["Void Vortex"] = 320,
+			["Whispers of the Dark Star"] = 320,
+			["Rending Voidlash"] = 320,
+			["Void Shift"] = 320,
+			["Void Pulse"] = 320,
+			["Creeping Tendrils:537022"] = 320,
+			["Grip of the Void"] = 320,
 			["Circle of Power:425958"] = 320,
 			["Mental Assault"] = 320,
 			["Void Buffet"] = 320,
+			["Void Burst"] = 320,
 			["Cries of the Void"] = 320,
 			["Disintegration Beam:1386551"] = 320,
 			["Rain of Darkness"] = 320,
@@ -2932,7 +3370,7 @@ local function updateData()
 			["Open Vision"] = 320,
 			["Pierce the Veil"] = 320,
 			["Reality Rend"] = 320,
-			["Ring of Chaos"] = 320,
+			["Ring of Chaos:632353"] = 320,
 			["Screech From Beyond"] = 320,
 			["Shadow Bond"] = 320,
 			["Shadow Word: Void"] = 320,
@@ -2969,18 +3407,43 @@ local function updateData()
 			["Voidwrath"] = 320,
 
 			--! Twilight
+			["Edge of Twilight"] = 34,
 			["Hour of Twilight"] = 34,
+			["Twilight Barrage"] = 34,
+			["Twilight Barrier"] = 34,
+			["Twilight Blast"] = 34,
+			["Twilight Bolt"] = 34,
+			["Twilight Burst"] = 34,
+			["Twilight Fissure"] = 34,
 			["Twilight Flames"] = 34,
-			["Twlight Flames"] = 34, -- [sic]
+			["Twilight Meteor"] = 34,
+			["Twilight Meteorite"] = 34,
+			["Twilight Phoenix"] = 34,
 			["Twilight Volley"] = 34,
 			["Twilight Whirl"] = 34,
-			["Edge of Twilight"] = 34,
-			["Twilight Bolt"] = 34,
-			["Twilight Barrage"] = 34,
-			["Twilight Blast"] = 34,
-			["Twilight Phoenix"] = 34,
+			["Twlight Flames"] = 34, -- [sic]
 
-			--! Blood
+			--! Blood  ! Venthyr
+			["Summon Arsenal:3151164"] = 321,
+			["Ashen Hallow"] = 321,
+			["Sanguine Feast"] = 321,
+			["Dark Omen"] = 321,
+			["Dark Reconstruction"] = 321,
+			["Blood Howl"] = 321,
+			["Queen's Bite:136231"] = 321,
+			["Vampiric Blood"] = 321,
+			["Sanguine Sphere"] = 321,
+			["Crimson Scourge"] = 321,
+			["Dark Communion:3528308"] = 321,
+			["Dark Communion:3528312"] = 321,
+			["Dark Succor"] = 321,
+			["Chain Harvest"] = 321,
+			["Ritual of Woe:237536"] = 321,
+			["Telekinetic Onslaught:135822"] = 321,
+			["Sanguine Extraction"] = 321,
+			["Vile Deluge:3528310"] = 321,
+			["Overflowing Chalice"] = 321,
+			["Depraved Reversion:237585"] = 321,
 			["Sinful Brand"] = 321,
 			["Ravenous Frenzy:3565718"] = 321,
 			["Anima Ring"] = 321,
@@ -3094,8 +3557,17 @@ local function updateData()
 			["Wrathful Invocation"] = 321,
 			["Vampiric Drain"] = 321,
 			["Vampire Drain"] = 321,
+			["Mindgames:3565723"] = 321,
 
-			--! Necromancy
+			--! Necromancy  ! Necrolord
+			["Putrid Burst"] = 326,
+			["Stygic Bolt"] = 326,
+			["Wing Buffet:2576095"] = 326,
+			["Death Burst:2576094"] = 326,
+			["Bonedust Brew"] = 326,
+			["Abomination Limb"] = 326,
+			["Immortality:3528292"] = 326,
+			["Unholy Transfusion"] = 326,
 			["Soul Leech"] = 326,
 			["Summon Skeletons"] = 326,
 			["Conqueror's Banner:3578234"] = 326,
@@ -3143,6 +3615,7 @@ local function updateData()
 			["Decaying Touch"] = 326,
 			["Desecrate"] = 326,
 			["Drain Life"] = 326,
+			["Harvest Essence"] = 326,
 			["Drain Essence"] = 326,
 			["Drain Spirit"] = 326,
 			["Draw Soul:2576083"] = 326,
@@ -3191,15 +3664,12 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse
-			["Horrifying Bolt"] = 325,
 			["Arugal's Gift"] = 325,
-			["Debilitating Smash"] = 325,
-			["Weeping Burden"] = 325,
-			["Vulgar Brand"] = 325,
 			["Banish"] = 325,
 			["Banshee's Curse"] = 325,
 			["Big Bad Voodoo"] = 325,
 			["Curse of Agony"] = 325,
+			["Curse of Blood"] = 325,
 			["Curse of Exhaustion"] = 325,
 			["Curse of Frailty"] = 325,
 			["Curse of Stone"] = 325,
@@ -3210,17 +3680,30 @@ local function updateData()
 			["Curse of Weakness"] = 325,
 			["Curse"] = 325,
 			["Dark Luck"] = 325,
+			["Debilitating Smash"] = 325,
 			["Diminishing Curse"] = 325,
 			["Hex of Weakness"] = 325,
 			["Hex"] = 325,
+			["Horrifying Bolt"] = 325,
 			["Mindwrack"] = 325,
 			["Shadow Manacles"] = 325,
 			["Shrink"] = 325,
 			["Sorrowful Burden"] = 325,
 			["Unnerving Wail"] = 325,
 			["Voodoo Totem"] = 325,
+			["Vulgar Brand"] = 325,
+			["Weeping Burden"] = 325,
 
-			--! Dread
+			--! Dread  ! Fear  ! Sha
+			["Meteor Storm:651092"] = 327,
+			["Touch of the Ravenclaw"] = 327,
+			["Hopelessness"] = 327,
+			["Unnerving Howl"] = 327,
+			["Gift of G'huun"] = 327,
+			["Psychic Terror"] = 327,
+			["Psychic Terrors"] = 327,
+			["Frightening Roar"] = 327,
+			["Bellowing Roar"] = 327,
 			["Darkest Secrets:3528308"] = 327,
 			["Darkmist Bombardment"] = 327,
 			["Maddening Roar"] = 327,
@@ -3279,11 +3762,12 @@ local function updateData()
 			["Unleashed Wrath:651092"] = 327,
 			["Unleashed:895887"] = 327,
 			["Unyielding Terror"] = 327,
-			["Wracking Torment"] = 327,
 			["Crushing Doubt:651087"] = 327,
 			["Rejection:651096"] = 327,
 
 			--! Shadowflame
+			["Shadow Meteor"] = 36,
+			["Accursed Strength"] = 36,
 			["Eradicate:460698"] = 36,
 			["Shadowflame Immolation"] = 36,
 			["Shadow Slagblast"] = 36,
@@ -3297,13 +3781,31 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic
+			["Summon Lesser Demon"] = 360,
+			["Summon Lesser Demons"] = 360,
+			["Demonic Burst"] = 360,
+			["Convocation of Shadow"] = 360,
+			["Dark Gaze"] = 360,
+			["Dark Ritual"] = 360,
+			["Malevolence"] = 360,
+			["Unstable Shadows"] = 360,
+			["Abyss Howl"] = 360,
+			["Dark Intent"] = 360,
+			["Dark Communion:237564"] = 360,
+			["Grimoire of Service"] = 360,
+			["Grimoire of Servitude"] = 360,
+			["Grimoire of Sacrifice"] = 360,
+			["Malevolence"] = 360,
+			["Malefic Grasp"] = 360,
+			["Malefic"] = 360,
+			["Chaos Wave:607850"] = 360,
+			["Chaos Wave:463569"] = 360,
 			["Convert Souls"] = 360,
 			["Soul Charge"] = 360,
 			["Twisted Lightning"] = 360,
 			["Demonic Rift"] = 360,
 			["Ritual of Summoning"] = 360,
 			["Malefic Rapture"] = 360,
-			["Malefic Grasp"] = 360,
 			["Twilight Immolate"] = 360,
 			["Leyflame Burner"] = 360,
 			["Demonic Calling"] = 360,
@@ -3318,6 +3820,7 @@ local function updateData()
 			["Call Dreadstalkers"] = 360,
 
 			--! Shadowfel
+			["Demon Spit"] = 361,
 			["Agent of the All-Seer"] = 361,
 			["Create Healthstone"] = 361,
 			["Create Soulwell"] = 361,
@@ -3365,8 +3868,6 @@ local function updateData()
 
 			-------------------------
 			--! Mounts
-			["Sapphire Skyblazer"] = 600,
-			["Fireplume Phoenix"] = 68,
 			["Abyss Worm"] = 32,
 			["Acherus Deathcharger"] = 411,
 			["Acid Belcher"] = 401,
@@ -3380,6 +3881,7 @@ local function updateData()
 			["Amber Ardenmoth"] = 805,
 			["Amber Primordial Direhorn"] = 903,
 			["Amber Scorpion"] = 810,
+			["Amber Shardhide"] = 903,
 			["Amethyst Ruinstrider"] = 33,
 			["Ankoan Waveray"] = 901,
 			["Antoran Charhound"] = 400,
@@ -3409,6 +3911,7 @@ local function updateData()
 			["Armored Skyscreamer"] = 811,
 			["Armored Snowy Gryphon"] = 811,
 			["Armored War-Bred Tauralus"] = 40,
+			["Ascendant's Aquilon"] = 201,
 			["Ascended Skymane"] = 201,
 			["Ashen Pandaren Phoenix"] = 802,
 			["Ashenvale Chimaera"] = 33,
@@ -3427,10 +3930,13 @@ local function updateData()
 			["Battle Gargon Silessa"] = 903,
 			["Battle Gargon Vrednic"] = 903,
 			["Battle-Bound Warhound"] = 414,
+			["Battle-Hardened Aquilon"] = 201,
+			["Battlefield Swarmer"] = 40,
 			["Battlelord's Bloodthirsty War Wyrm"] = 105,
 			["Beastlord's Irontusk"] = 5,
 			["Beastlord's Warwolf"] = 5,
 			["Beryl Ruinstrider"] = 33,
+			["Beryl Shardhide"] = 903,
 			["Big Blizzard Bear"] = 903,
 			["Big Love Rocket"] = 661,
 			["Biletooth Gnasher"] = 806,
@@ -3460,7 +3966,7 @@ local function updateData()
 			["Blessed Felcrusher"] = 2,
 			["Blisterback Bloodtusk"] = 40,
 			["Blonde Riding Yak"] = 903,
-			["Bloodbathed Frostbrood Vanquisher"] = 16,
+			["Bloodbathed Frostbrood Vanquisher"] = 160,
 			["Bloodfang Widow"] = 101,
 			["Bloodflank Charger"] = 903,
 			["Bloodgorged Crawg"] = 101,
@@ -3505,6 +4011,7 @@ local function updateData()
 			["Callow Flayedwing"] = 40,
 			["Captured Swampstalker"] = 811,
 			["Caravan Hyena"] = 804,
+			["Cartel Master's Gearglider"] = 203,
 			["Celestial Steed"] = 72,
 			["Cenarion War Hippogryph"] = 811,
 			["Cerulean Ruinstrider"] = 33,
@@ -3513,7 +4020,7 @@ local function updateData()
 			["Chauffeured Mechano-Hog"] = 100,
 			["Chestnut Mare"] = 903,
 			["Child of Torcali"] = 903,
-			["Chittering Animite"] = 805,
+			["Chittering Animite"] = 413,
 			["Chosen Tauralus"] = 40,
 			["Cindermane Charger"] = 400,
 			["Cloudwing Hippogryph"] = 811,
@@ -3538,6 +4045,7 @@ local function updateData()
 			["Crimson Deathcharger"] = 411,
 			["Crimson Pandaren Phoenix"] = 802,
 			["Crimson Primal Direhorn"] = 903,
+			["Crimson Shardhide"] = 903,
 			["Crimson Slavermaw"] = 401,
 			["Crimson Tidestallion"] = 801,
 			["Crimson Water Strider"] = 901,
@@ -3549,10 +4057,11 @@ local function updateData()
 			["Dark Riding Talbuk"] = 903,
 			["Dark War Talbuk"] = 903,
 			["Darkflutter Ardenmoth"] = 805,
+			["Darkmaul"] = 903,
 			["Darkmoon Dancing Bear"] = 903,
 			["Darkmoon Dirigible"] = 100,
 			["Darkspear Raptor"] = 903,
-			["Darkspore Mana Ray"] = 811,
+			["Darkspore Mana Ray"] = 328,
 			["Darkwarren Hardshell"] = 805,
 			["Darkwater Skate"] = 801,
 			["Darnassian Nightsaber"] = 903,
@@ -3578,12 +4087,14 @@ local function updateData()
 			["Dreamlight Runestag"] = 805,
 			["Dune Scavenger"] = 804,
 			["Duskflutter Ardenmoth"] = 805,
+			["Dusklight Razorwing"] = 811,
 			["Dusky Waycrest Gryphon"] = 811,
 			["Dustmane Direwolf"] = 903,
 			["Dusty Rockhide"] = 903,
 			["Ebon Gryphon"] = 811,
 			["Eclipse Dragonhawk"] = 68,
 			["Elusive Quickhoof"] = 804,
+			["Elysian Aquilon"] = 201,
 			["Emerald Drake"] = 8,
 			["Emerald Hippogryph"] = 8,
 			["Emerald Pandaren Phoenix"] = 802,
@@ -3593,7 +4104,7 @@ local function updateData()
 			["Enchanted Shadeleaf Runestag"] = 805,
 			["Enchanted Wakener's Runestag"] = 805,
 			["Enchanted Winterborn Runestag"] = 805,
-			["Endmire Flyer"] = 805,
+			["Endmire Flyer"] = 413,
 			["Ensorcelled Everwyrm"] = 201,
 			["Eternal Phalynx of Courage"] = 201,
 			["Eternal Phalynx of Humility"] = 201,
@@ -3605,6 +4116,7 @@ local function updateData()
 			["Explorer's Dunetrekker"] = 804,
 			["Explorer's Jungle Hopper"] = 100,
 			["Fabious"] = 801,
+			["Fallen Charger"] = 411,
 			["Fathom Dweller"] = 324,
 			["Felblaze Infernal"] = 401,
 			["Felfire Hawk"] = 401,
@@ -3612,11 +4124,14 @@ local function updateData()
 			["Felsaber"] = 401,
 			["Felsteed"] = greenfire and 401 or 402,
 			["Felsteel Annihilator"] = 127,
+			["Fierce Razorwing"] = 811,
 			["Fiery Warhorse"] = 401,
+			["Fireplume Phoenix"] = 68,
 			["Flametalon of Alysrazor"] = 400,
 			["Flameward Hippogryph"] = 400,
 			["Flying Carpet"] = 64,
 			["Flying Machine"] = 100,
+			["Foresworn Aquilon"] = 96,
 			["Forsaken Warhorse"] = 32,
 			["Fossilized Raptor"] = 803,
 			["Frenzied Feltalon"] = 401,
@@ -3625,9 +4140,10 @@ local function updateData()
 			["Frostshard Infernal"] = 16,
 			["Frostwolf Snarler"] = 903,
 			["Frosty Flying Carpet"] = 80,
-			["G.M.O.D."] = 200,
+			["G.M.O.D."] = 204,
 			["Garn Nighthowl"] = 903,
 			["Garn Steelmaw"] = 903,
+			["Garnet Razorwing"] = 811,
 			["Geosynchronous World Spinner"] = 100,
 			["Giant Coldsnout"] = 903,
 			["Gilded Prowler"] = 811,
@@ -3689,6 +4205,11 @@ local function updateData()
 			["Grove Defiler"] = 412,
 			["Grove Warden"] = 805,
 			["Gruesome Flayedwing"] = 40,
+			["Hand of Bahmethra"] = 360,
+			["Hand of Hrestimorak"] = 48,
+			["Hand of Nilganihmaht"] = 411,
+			["Hand of Salaranga"] = 411,
+			["Harvester's Dredwing"] = 321,
 			["Headless Horseman's Mount"] = 401,
 			["Heart of the Aspects"] = 2,
 			["Hearthsteed"] = 201,
@@ -3718,7 +4239,7 @@ local function updateData()
 			["Huntmaster's Fierce Wolfhawk"] = 811,
 			["Huntmaster's Loyal Wolfhawk"] = 811,
 			["Ice Mammoth"] = 903,
-			["Icebound Frostbrood Vanquisher"] = 16,
+			["Icebound Frostbrood Vanquisher"] = 160,
 			["Illidari Felstalker"] = 32,
 			["Imperial Quilen"] = 902,
 			["Infernal Direwolf"] = 401,
@@ -3748,27 +4269,31 @@ local function updateData()
 			["Kor'kron Juggernaut"] = 100,
 			["Kor'kron War Wolf"] = 903,
 			["Kul Tiran Charger"] = 903,
-			["Lambent Mana Ray"] = 811,
+			["Lambent Mana Ray"] = 328,
 			["Leaping Veinseeker"] = 101,
 			["Leyfeather Hippogryph"] = 126,
 			["Leywoven Flying Carpet"] = 126,
 			["Life-Binder's Handmaiden"] = 66,
 			["Lightforged Felcrusher"] = 2,
-			["Lightforged Warframe"] = 2,
+			["Lightforged Warframe"] = 200,
 			["Lil' Donkey"] = 903,
 			["Llothien Prowler"] = 903,
 			["Long-Forgotten Hippogryph"] = 811,
-			["Loyal Gorger"] = 905,
+			["Lord of the Corpseflies"] = 40,
+			["Loyal Gorger"] = 413,
 			["Lucid Nightmare"] = 320,
 			["Lucky Yun"] = 902,
 			["Luminous Starseeker"] = 72,
 			["Lurid Bloodtusk"] = 40,
 			["Maddened Chaosrunner"] = 127,
+			["Maelie, the Wanderer"] = 661,
 			["Mag'har Direwolf"] = 903,
 			["Magnificent Flying Carpet"] = 68,
 			["Mail Muncher"] = 324,
+			["Maldraxxian Corpsefly"] = 40,
 			["Malevolent Drone"] = 324,
 			["Marrowfang"] = 40,
+			["Mawsworn Charger"] = 48,
 			["Mawsworn Soulhunter"] = 411,
 			["Meat Wagon"] = 101,
 			["Mecha-Mogul Mk2"] = 100,
@@ -3838,6 +4363,7 @@ local function updateData()
 			["Qinsho's Eternal Hound"] = 902,
 			["Quel'dorei Steed"] = 802,
 			["Rajani Warserpent"] = 800,
+			["Rampaging Mauler"] = 413,
 			["Rampart Screecher"] = 101,
 			["Ran Riding Talbuk"] = 903,
 			["Ratstallion"] = 903,
@@ -3855,6 +4381,7 @@ local function updateData()
 			["Red Shado-Pan Riding Tiger"] = 903,
 			["Red Skeletal Horse"] = 32,
 			["Red Skeletal Warhorse"] = 32,
+			["Regal Corpsefly"] = 40,
 			["Regal Riding Crane"] = 903,
 			["Ren's Stalwart Hound"] = 902,
 			["Riddler's Mind-Worm"] = 906,
@@ -3871,11 +4398,13 @@ local function updateData()
 			["Rusty Mechanocrawler"] = 100,
 			["Sable Ruinstrider"] = 33,
 			["Saltwater Seahorse"] = 801,
+			["Sanctum Gloomcharger"] = 32,
 			["Sandstone Drake"] = 804,
 			["Sandy Nightsaber"] = 903,
 			["Sapphire Panther"] = 808,
 			["Sapphire Riverbeast"] = 901,
-			["Scintillating Mana Ray"] = 811,
+			["Sapphire Skyblazer"] = 600,
+			["Scintillating Mana Ray"] = 200,
 			["Scrapforged Mechaspider"] = 100,
 			["Sea Turtle"] = 801,
 			["Seabraid Stallion"] = 903,
@@ -3889,7 +4418,7 @@ local function updateData()
 			["Shadowhide Pearltusk"] = 903,
 			["Shadowmane Charger"] = 903,
 			["Sharkbait"] = 811,
-			["Shimmermist Runner"] = 201,
+			["Shimmermist Runner"] = 805,
 			["Shu-Zen, the Divine Sentinel"] = 2,
 			["Silent Glider"] = 901,
 			["Silky Shimmermoth"] = 805,
@@ -3917,9 +4446,12 @@ local function updateData()
 			["Snowfeather Hunter"] = 17,
 			["Snowstorm"] = 16,
 			["Snowy Gryphon"] = 811,
+			["Soaring Razorwing"] = 811,
 			["Soaring Skyterror"] = 811,
 			["Solar Spirehawk"] = 6,
 			["Son of Galleon"] = 903,
+			["Soulbound Gloomcharger"] = 326,
+			["Soultwisted Deathwalker"] = 326,
 			["Spawn of Galakras"] = 5,
 			["Spawn of Horridon"] = 903,
 			["Spectral Gryphon"] = 720,
@@ -4011,9 +4543,11 @@ local function updateData()
 			["Swift Zhevra"] = 903,
 			["Swift Zulian Panther"] = 903,
 			["Sylverian Dreamer"] = 805,
+			["Tamed Mauler"] = 413,
 			["Tan Riding Camel"] = 804,
 			["Tan War Talbuk"] = 903,
 			["Tawny Wind Rider"] = 811,
+			["Tazavesh Gearglider"] = 203,
 			["Teldrassil Hippogryph"] = 811,
 			["Terrified Pack Mule"] = 903,
 			["The Dreadwake"] = 323,
@@ -4045,18 +4579,20 @@ local function updateData()
 			["Ultramarine Qiraji Battle Tank"] = 324,
 			["Umber Nightsaber"] = 903,
 			["Umber Ruinstrider"] = 33,
-			["Umbral Scythehorn"] = 805,
+			["Umbral Scythehorn"] = 413,
 			["Uncorrupted Voidwing"] = 320,
 			["Undercity Plaguebat"] = 414,
 			["Underrot Crawg"] = 101,
+			["Undying Darkhound"] = 32,
 			["Unpainted Mechanostrider"] = 100,
 			["Unshackled Waveray"] = 901,
 			["Valarjar Stormwing"] = 800,
 			["Vashj'ir Seahorse"] = 801,
+			["Vengeance"] = 411,
 			["Venomhide Ravasaur"] = 903,
 			["Veridian Netherwing Drake"] = 323,
 			["Vibrant Flutterwing"] = 805,
-			["Vibrant Mana Ray"] = 811,
+			["Vibrant Mana Ray"] = 328,
 			["Vicious Black Bonesteed"] = 36,
 			["Vicious Black Warsaber"] = 903,
 			["Vicious Gilnean Warhorse"] = 903,
@@ -4067,6 +4603,7 @@ local function updateData()
 			["Vicious War Clefthoof"] = 903,
 			["Vicious War Elekk"] = 903,
 			["Vicious War Fox"] = 903,
+			["Vicious War Gorm"] = 905,
 			["Vicious War Kodo"] = 903,
 			["Vicious War Lion"] = 903,
 			["Vicious War Mechanostrider"] = 100,
@@ -4094,7 +4631,7 @@ local function updateData()
 			["Voidtalon of the Dark Star"] = 36,
 			["Volcanic Stone Drake"] = 808,
 			["Voldunai Dunescraper"] = 811,
-			["Voracious Gorger"] = 805,
+			["Voracious Gorger"] = 413,
 			["Vulpine Familiar"] = 805,
 			["Wakener's Runestag"] = 805,
 			["Wandering Ancient"] = 8,
@@ -4117,6 +4654,7 @@ local function updateData()
 			["Wild Dreamrunner"] = 8,
 			["Wild Glimmerfur Prowler"] = 902,
 			["Wild Goretusk"] = 903,
+			["Wild Hunt Legsplitter"] = 805,
 			["Wildseed Cradle"] = 805,
 			["Winged Guardian"] = 202,
 			["Winged Steed of the Ebon Blade"] = 411,
@@ -4145,7 +4683,7 @@ local function updateData()
 
 		ZA.CastSchoolByIcon = {
 			-- Azerite
-			[1869493] = 200, -- Heart of Azeroth
+			[1869493] = 204, -- Heart of Azeroth
 		}
 
 		ZA.CastSchoolBySpellID = {
@@ -4207,7 +4745,7 @@ local function updateData()
 			[255460] = 2,
 			[257795] = 801,
 			[262446] = 325,
-			[300203] = 200,
+			[300203] = 204,
 			[300656] = 2,
 			[305716] = 100,
 			[308080] = 321,
@@ -4504,15 +5042,112 @@ local function updateData()
 			[355862] = 202,
 			[352230] = 65,
 			[254667] = 401,
+			[168103] = 65,
+			[351138] = 201,
+			[351245] = 202,
+			[352413] = 203,
+			[357969] = 203,
+			[357963] = 203,
+			[357983] = 203,
+			[352820] = 660,
+			[168115] = 65,
+			[79450] = 202,
+			[312443] = 201,
+			[324937] = 804,
+			[310646] = 600,
+			[310648] = 600,
+			[310647] = 100,
+			[310687] = 202,
+			[307434] = 201,
+			[77821] = 909,
+			[77819] = 202,
+			[78395] = 107,
+			[78628] = 33,
+			[311792] = 3,
+			[309369] = 201,
+			[320718] = 201,
+			[324364] = 202,
+			[324359] = 202,
+			[309678] = 805,
+			[309779] = 805,
+			[327844] = 804,
+			[311775] = 321,
+			[311278] = 100,
+			[312098] = 811,
+			[312018] = 202,
+			[321313] = 40,
+			[316317] = 202,
+			[320559] = 809,
+			[311848] = 321,
+			[310586] = 321,
+			[191827] = 107,
+			[202064] = 107,
+			[204588] = 100,
+			[67869] = 100,
+			[200255] = 202,
+			[201112] = 107,
+			[191481] = 202,
+			[192252] = 107,
+			[196731] = 326,
+			[196724] = 326,
+			[67922] = 126,
+			[69054] = 126,
+			[68945] = 126,
+			[69230] = 18,
+			[69217] = 100,
+			[76241] = 5,
+			[74793] = 400,
+			[74475] = 72,
+			[76724] = 10,
+			[76759] = 111,
+			[89821] = 321,
+			[89752] = 806,
+			[91085] = 100,
+			[91400] = 100,
+			[154475] = 202,
+			[154485] = 202,
+			[325380] = 100,
+			[351910] = 203,
+			[317175] = 107,
+			[303967] = 811,
+			[285327] = 413,
+			[284447] = 413,
+			[286256] = 126,
+			[171204] = 101,
+			[77976] = 100,
+			[78141] = 281,
+			[78336] = 96,
+			[70155] = 111,
+			[70476] = 280,
+			[71225] = 100,
+			[321920] = 326,
+			[197071] = 126,
+			[200170] = 909,
+			[204867] = 126,
+			[224553] = 126,
+			[201200] = 202,
+			[31549] = 321,
+			[313684] = 202,
+			[346327] = 202,
+			[317812] = 202,
+			[317813] = 202,
+			[330938] = 33,
+			[333473] = 100,
+			[333474] = 100,
+			[333475] = 100,
+			[325543] = 202,
+			[325722] = 202,
+			[150029] = 202,
 			--qqq
 
 			--! NPC spells
-			[325143] = 201, -- Restore (Bastion NPCs)
-			[335485] = 327, -- Bwllowing Roar (Maw NPCs)
-			[333821] = 326, -- Ancient Tome (Maldraxxus NPCs)
-			[324114] = 326, -- Forbidden Knowledge (Maldraxxus NPCs)
+			[319294] = 326, -- Spirit Bolt (Exile's Reach)
+			[325143] = 201, -- Restore (Bastion)
+			[335485] = 327, -- Bwllowing Roar (The Maw)
+			[333821] = 326, -- Ancient Tome (Maldraxxus)
+			[324114] = 326, -- Forbidden Knowledge (Maldraxxus)
 			[322802] = 805, -- Psychic Blast (Gorm Matriarch)
-			[324483] = 805, -- Anima-Charged Spear (Ardenweald NPCs)
+			[324483] = 805, -- Anima-Charged Spear (Ardenweald)
 			[327474] = 201, -- Crushing Doubt (Uther)
 			[329509] = 68, -- Blazing Surge (Kael'thas)
 			[343086] = 321, -- Ricocheting Shuriken (General Kaal)
@@ -4522,16 +5157,36 @@ local function updateData()
 			[342328] = 48, -- Soul Fissure (Kel'Thuzad)
 			[338591] = 326, -- Death and Decay (Kel'Thuzad)
 			[338590] = 326, -- Death and Decay (Kel'Thuzad)
-			[334509] = 326, -- Warlord's Slam (Maldraxxus NPCs)
-			[211685] = 401, -- Focused Trance (Soulkeeper, Fangs of the Devourer Scenario)
-			[318879] = 321, -- Summon Guardian (Revendreth NPCs)
+			[334509] = 326, -- Warlord's Slam (Maldraxxus)
+			[211685] = 401, -- Focused Trance (Soulkeeper - Fangs of the Devourer Scenario)
+			[318879] = 321, -- Summon Guardian (Revendreth)
 			[225249] = 412, -- Devastating Stomp (Emerald Nightmare)
-			[149236] = 320, -- Darkrush (Terrorfang)
-			[244969] = 127, -- Eradication (Garothi Worldbreaker)
+			[149236] = 320, -- Darkrush (Terrorfang - WoD Shadowmoon Valley)
+			[244969] = 127, -- Eradication (Garothi Worldbreaker - Antorus)
+			[337344] = 96, -- Mystic Bolt (Revendreth)
+			[339120] = 413, -- Ruinous Bolt (Ardenweald)
+			[153804] = 811, -- Inhale (Bonemaw - Shadowmoon Burial Grounds)
+			[292903] = 411, -- Massive Strike (Mawsworn)
+			[320734] = 411, -- Massive Strike (Mawsworn)
+			[347091] = 411, -- Massive Strike (Mawsworn)
+			[322450] = 413, -- Consumption (Tred'ova - Mists of Tirna Scithe)
+			[153153] = 323, -- Dark Communion (Sedana Bloodfury - Shadowmoon Burial Grounds)
+			[154110] = 3, -- Smash (Araknat - Skyreach)
+			[154135] = 6, -- Burst (Araknath - Skyreach)
+			[304946] = 411, -- Shadow Rip (The Maw)
+			[157742] = 320, -- Reave (Shadowmoon Orcs)
+			[306828] = 320, -- Defiled Ground (Visions of N'Zoth - Thrall)
+			[306726] = 320, -- Defiled Ground (Visions of N'Zoth - Vez'okk the Lightless)
+			[256880] = 413, -- Bone Splinter (Drustvar)
+			[266035] = 413, -- Bone Splinter (Waycrest Manor)
+			[263455] = 360, -- Sacrifice (Waycrest Manor - Matron Christiane)
+			[214184] = 360, -- Vortex (Legion Demons)
+			[355456] = 411, -- Damnation (The Maw - Mor'geth)
 			--nnn
 
 			--! Auras
 			[345569] = 105, -- Flagellation (Haste Buff)
+			[312106] = 600, -- Weapons of Order (Debuff)
 
 
 			-- Ascension Crafting
@@ -5784,6 +6439,7 @@ local function updateData()
 			-- Minor
 			["Herbalism"] = 0,
 			["Herb Gathering"] = 0,
+			["Fishing"] = 0,
 			["Mining"] = 0,
 			["Skinning"] = 0,
 			["Engineering"] = 0,
@@ -6030,12 +6686,81 @@ local function updateData()
 			[353135] = 0,
 			[355862] = 0,
 			[352230] = 0,
+			[351245] = 0,
+			[352413] = 0,
+			[352672] = 0,
+			[352607] = 0,
+			[352820] = 0,
+			[168115] = 0,
+			[168103] = 0,
+			[312443] = 0,
+			[312448] = 0,
+			[324937] = 0,
+			[310647] = 0,
+			[310687] = 0,
+			[311049] = 0,
+			[312493] = 0,
+			[327057] = 0,
+			[307434] = 0,
+			[77821] = 0,
+			[78628] = 136091,
+			[309369] = 0,
+			[320718] = 0,
+			[320728] = 0,
+			[308671] = 0,
+			[327914] = 0,
+			[324364] = 0,
+			[324359] = 0,
+			[309779] = 0,
+			[327844] = 0,
+			[311278] = 0,
+			[311682] = 0,
+			[312018] = 0,
+			[321313] = 0,
+			[307474] = 0,
+			[320559] = 0,
+			[316317] = 0,
+			[191827] = 0,
+			[202064] = 0,
+			[319184] = 0,
+			[314180] = 0,
+			[201112] = 0,
+			[191481] = 0,
+			[192252] = 0,
+			[196731] = 0,
+			[196724] = 0,
+			[69217] = 0,
+			[76241] = 134337,
+			[74654] = 0,
+			[76759] = 132161,
+			[193724] = 0,
+			[91085] = 237030,
+			[154475] = 0,
+			[154485] = 0,
+			[325380] = 0,
+			[351910] = 0,
+			[317175] = 0,
+			[171204] = 135650,
+			[77976] = 0,
+			[78141] = 133013,
+			[70155] = 134228,
+			[70813] = 135638,
+			[71711] = 414,
+			[71225] = 0,
+			[197071] = 0,
+			[194402] = 0,
+			[31549] = 134801,
+			[346327] = 0,
+			[325543] = 0,
 			--qqi
 
 
 			-- Spells
 			[164862] = 0, -- Flap
-
+			[337344] = 132868, -- Mystic Bolt (missing icon)
+			[337346] = 135731, -- Arcane Bolt (missing icon)
+			[80066] = 511543, -- Tornado (Cataclysm air elementals, wrong icon)
+			[355456] = 3528298, -- Damnation (transparent icon)
 
 			-- Ascension Crafting
 				-- Lures
