@@ -17,8 +17,8 @@ frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 -------------------------
 -- Oribos: g411
 -- Bastion: 1533,1569,1813,1690,1711,1713,1714
-	-- Elysian Hold: g418
-	-- Spires of Ascension: g419
+	-- Elysian Hold: g418,2018
+	-- Path of Ascension: 1711
 -- Maldraxxus: 1536,1689,1741,1814,1649,1650,1651,1652,1724,1725
 	-- Seat of the Primus: 1698
 -- Ardenweald: 1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829
@@ -30,8 +30,20 @@ frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 -- The Maw: 1543,1648
 -- Korthia: 1961,2006,2007
 
+-- Instances:
+	-- De Other Side: g413
+	-- Halls of Atonement: g409
+	-- Mists of Tirna Scithe: 1669
+	-- Plaguefall: g415
+	-- Sanguine Depths: g412
+	-- Spires of Ascension: g419
+	-- Tazavesh, the Veiled Market: g423
+	-- The Necrotic Wake: g410
+	-- Theater of Pain: g414
+-- All Shadowlands Instances: g413,g409,1669,g415,g412,g419,g423,g410,g414
+
 -- All Shadowlands Outdoor Zones:
--- 1961,2006,2007,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,g419,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
+-- 2018,1961,2006,2007,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
 
 -------------------------
 
@@ -168,6 +180,8 @@ local function updateData()
 			ZA.PetIcons["Boop"] = 2399272
 		elseif name == "Aldous" then
 			ZA.PetIcons["Zoey"] = 1861689
+		elseif name == "Claire" then
+			ZA.PetIcons["Daisy"] = 2027853
 		end
 
 
@@ -197,22 +211,22 @@ local function updateData()
 			-- Fire
 			[4]   = "ff3600:ffc000", -- Fire (Dynamic)
 			[400] = "ff3600:ffc000", -- Fire | Cooking
-			[5]   = "d45e3e:ffd262", -- Flamestrike | Smelting (Fire + Physical)
-			[12]  = "780033:ff7920", -- Magma | Lava (Nature + Fire)
+			[5]   = "d45e3e:ffd262", -- Flamestrike | Smelting
+			[12]  = "780033:ff7920", -- Magma | Lava
 			[402] = "ca0000:ff5e2c", -- Hellfire
-			[20]  = "97cdff:ff9d41", -- Frostfire | Steam (Frost + Fire)
-			[68]  = "ff3883:ffba00", -- Spellfire | Phoenix (Arcane + Fire)
+			[20]  = "97cdff:ff9d41", -- Frostfire | Steam
+			[68]  = "ff3883:ffba00", -- Spellfire | Phoenixfire
 			
 			-- Fel
 			[401] = "3dec00:fff94f", -- Felfire
-			[127] = "00575a:96ff30", -- Chaos (All Schools)
+			[127] = "00575a:96ff30", -- Chaos
 			[427] = "355859:73a640", -- Felstrike
 
 			-- Holy
 			[2]   = "ffc539:ffffcb", -- Holy
 			[200] = "ffa500:fff58a", -- Holy Light | Gold
-			[3]   = "bccccf:ffd76b", -- Holystrike | Flash (Holy + Physical)
-			[6]   = "ff6c00:ffd42a", -- Holy Fire | Solar (Holy + Fire)
+			[3]   = "bccccf:ffd76b", -- Holystrike | Flash
+			[6]   = "ff6c00:ffd42a", -- Holy Fire | Solar
 			[201] = "00baff:fff9de", -- Ethereal | Kyrian
 			[600] = "134cff:00baff", -- Ethereal Flame
 			[202] = "ce958c:fff1d6", -- Discipline | Bandage | Brewing | Inscription
@@ -220,27 +234,27 @@ local function updateData()
 			[204] = "0090ff:f8ff66", -- Azerite
 
 			-- Divine
-			[66]  = "ff769c:fff7c4", -- Divine | Chi-Ji (Arcane + Holy)
+			[66]  = "ff769c:fff7c4", -- Divine | Chi-Ji
 			[660] = "ff2d63:ff905a", -- Legendary
 			[661] = "ff5484:ffd7f9", -- Love
 
 			-- Frost
 			[16]  = "21a4fd:d0fffe", -- Frost
 			[160] = "7ed5d6:e8fbff", -- Ice | Snow
-			[17]  = "3d5992:afc2df", -- Froststrike (Frost + Physical)
-			[24]  = "008aac:b0fff5", -- Froststorm (Frost + Nature)
-			[80]  = "8d5ce6:88eaff", -- Spellfrost (Arcane + Frost)
-			[18]  = "72f1e1:fffad3", -- Holyfrost (Frost + Holy)
+			[17]  = "3d5992:afc2df", -- Froststrike
+			[24]  = "008aac:b0fff5", -- Froststorm
+			[80]  = "8d5ce6:88eaff", -- Spellfrost
+			[18]  = "72f1e1:fffad3", -- Holyfrost
 
 			-- Elemental
-			[28]  = "ff8400:c263ff", -- Elemental (Frost + Nature + Fire)
-			[280] = "afe446:7eceff", -- Natural | Spiritual (Frost + Nature + Physical)
+			[28]  = "ff8400:c263ff", -- Elemental
+			[280] = "afe446:7eceff", -- Natural | Spiritual
 			[281] = "c9de57:7cb700", -- Chemical | Alchemy
 
 			-- Nature
 			[8]   = "3bb53b:beff72", -- Nature | Herbalism
 			[900] = "609f5f:cff3a5", -- Naturestrike | Web
-			[10]  = "8ee858:e5ffb2", -- Life | Wild Gods (Nature + Holy)
+			[10]  = "8ee858:e5ffb2", -- Life | Wild
 			[805] = "803aff:21d3ff", -- Fey | Night Fae
 
 			-- Poison
@@ -251,7 +265,7 @@ local function updateData()
 			[811] = "90a3ab:f8ffff", -- Wind | Air
 			[911] = "5d6a8c:ccdbdb", -- Storm
 			[800] = "4f64ff:a6f2ff", -- Lightning | Thunder
-			[9]   = "95b2bc:9497ff", -- Stormstrike (Nature + Physical)
+			[9]   = "95b2bc:9497ff", -- Stormstrike
 
 			-- Water
 			[801] = "2882bf:2dedc9", -- Water | Sea | Fishing
@@ -269,23 +283,34 @@ local function updateData()
 			[809] = "4e556c:b6b8c9", -- Stone | Rock
 			[909] = "6c6f7b:dcdce1", -- Stonestrike | Metal | Salt | Blacksmithing | Mining
 			[804] = "b68640:ffea96", -- Sand | Ash
-			[808] = "4c395e:ebbaf4", -- Crystal | Jewelcrafting
 			[810] = "b44c00:ffc243", -- Amber
 
+			-- Gem
+			[808] = "8362a2:ffe4ce", -- Crystal | Glass | Jewelcrafting
+			[812] = "e2ddd1:daebf5", -- Diamond | Prismatic | White
+			[813] = "72449d:e598f3", -- Amethyst | Purple
+			[814] = "3c5bb3:45d0ff", -- Sapphire | Blue
+			[815] = "25c669:b1ff87", -- Emerald | Green
+			[816] = "e4b915:fffe91", -- Citrine | Yellow
+			[817] = "f2510d:ffae57", -- Topaz | Orange
+			[818] = "92151b:f56760", -- Ruby | Red
+			[819] = "382c44:5f6e5b", -- Onyx | Obsidian | Black
+
 			-- Arcane
-			[64]  = "b849ff:63e2ff", -- Arcane
-			[65]  = "908894:c492d9", -- Spellstrike (Arcane + Physical)
-			[126] = "ee63f7:c1b1ff", -- Magic | Enchanting (Arcane + Shadow + Frost + Nature + Holy)
-			[124] = "52ffb8:ff70cb", -- Chromatic (Arcane + Shadow + Frost + Nature + Fire)
-			[640] = "f2e199:ffa019", -- Temporal | Time
+			[64]  = "6ec3ff:dd40ff", -- Arcane
+			[65]  = "908894:c492d9", -- Spellstrike
+			[126] = "d830f1:d8b5ff", -- Magic
+			[646] = "a4feff:8fb7ff", -- Conjuration | Teleport | Enchanting
+			[124] = "52ffb8:ff70cb", -- Chromatic
+			[640] = "f2e199:ffa019", -- Temporal
 
 			-- Astral
-			[72]  = "62d5ff:ffa4f3", -- Astral (Arcane + Nature)
+			[72]  = "62d5ff:ffa4f3", -- Astral
 			[720] = "7178d0:76ffba", -- Spectral
 
 			-- Decay
 			[414] = "618400:b4e54e", -- Unholy | Bone
-			[40]  = "967213:b7e751", -- Plague (Shadow + Nature)
+			[40]  = "967213:b7e751", -- Plague
 			[410] = "6a6009:f1b33b", -- Disease | Rot
 			[412] = "5d243a:ff273b", -- Nightmare
 			[411] = "372e4b:6e857a", -- Death | Mawsworn
@@ -294,23 +319,23 @@ local function updateData()
 			-- Shadow
 			[32]  = "633768:8f7a93", -- Shadow
 			[328] = "4c3189:7b7c9e", -- Psychic | Mind Control
-			[33]  = "6b616c:635266", -- Shadowstrike (Shadow + Physical)
+			[33]  = "6b616c:635266", -- Shadowstrike
 			[322] = "73193d:e4c06a", -- Pain
 			[323] = "523d5c:558d8b", -- Haunt | Nether
 			[324] = "6e1b3e:ec9da2", -- Corruption | Old Gods
-			[96]  = "602b61:8482d9", -- Spellshadow | Runic (Arcane + Shadow)
-			[48]  = "5e3a62:88d4ff", -- Shadowfrost (Shadow + Frost)
+			[96]  = "602b61:8482d9", -- Spellshadow | Runic
+			[48]  = "5e3a62:88d4ff", -- Shadowfrost
 
 			-- Darkness
 			[320] = "220649:243bff", -- Void
-			[34]  = "3949dc:ff256d", -- Twilight (Shadow + Holy)
+			[34]  = "3949dc:ff256d", -- Twilight
 			[321] = "711010:f90000", -- Blood | Venthyr
 			[326] = "3e6051:20db9e", -- Necromancy | Necrolord
 			[325] = "44205b:b03ccd", -- Curse
 			[327] = "313146:ffffff", -- Dread | Fear | Sha
-			[36]  = "5400b2:ff5400", -- Shadowflame (Shadow + Fire)
+			[36]  = "5400b2:ff5400", -- Shadowflame
 			[360] = "451ea7:ff73ea", -- Demonic
-			[361] = "6000b2:acff00", -- Shadowfel
+			[361] = "6000b2:acff00", -- Shadowfelflame
 			--ccx
 
 			-- Resources
@@ -401,6 +426,7 @@ local function updateData()
 			["Mountebank's Colorful Cloak"] = true,
 			["Necrolord Hearthstone"] = true,
 			["Night Fae Hearthstone"] = true,
+			["Ardenweald Hearthstone"] = true,
 			["Noble Gardener's Hearthstone"] = true,
 			["Peddlefeet's Lovely Hearthstone"] = true,
 			["The Innkeeper's Daughter"] = true,
@@ -430,11 +456,18 @@ local function updateData()
 			--: Physical
 			-------------------------
 			--! Mechanical  ! Engineering
+			["Grappling Gun"] = 100,
+			["Searching"] = 100,
+			["Handing Over"] = 100,
+			["Throw Wyrmtongue Crate"] = 100,
+			["Examining"] = 100,
+			["Investigating"] = 100,
 			["Meteor Impact:369278"] = 100,
 			["Sashj'tar Harpoon"] = 100,
 			["Harpoon Barrage"] = 100,
 			["Pistol Shot"] = 100,
 			["Activating"] = 100,
+			["Deactivating"] = 100,
 			["Aimed Shot"] = 100,
 			["Barrage"] = 100,
 			["Construct Heavy Barricade"] = 100,
@@ -488,6 +521,9 @@ local function updateData()
 			["Wormhole: Pandaria"] = 100,
 
 			--! Strike, Red
+			["Bloody Blades"] = 112,
+			["Piercing Chomp"] = 112,
+			["Critical Shot"] = 112,
 			["Jump Strike"] = 112,
 			["Savage Assault"] = 112,
 			["Hampering Strike"] = 112,
@@ -519,6 +555,9 @@ local function updateData()
 			["Devour"] = 112,
 
 			--! Strike, Orange  ! Cleave
+			["Furious Assault"] = 107,
+			["Hew"] = 107,
+			["Wide Swing"] = 107,
 			["Unwavering Assault"] = 107,
 			["Furious Thrashing"] = 107,
 			["Snap & Chop"] = 107,
@@ -552,6 +591,7 @@ local function updateData()
 			["Crushing Strike"] = 107,
 
 			--! Strike, Yellow  ! Swipe
+			["Double Claw"] = 108,
 			["Pulverize"] = 108,
 			["Throw Spear"] = 108,
 			["Claw Swipe"] = 108,
@@ -588,6 +628,9 @@ local function updateData()
 			["Haymaker"] = 108,
 
 			--! Strike, Green
+			["Hulking Kick"] = 109,
+			["Night Glaive"] = 109,
+			["Gieger Smash"] = 109,
 			["Spiked Bulwark"] = 109,
 			["Cleave"] = 109,
 			["Big Bop"] = 109,
@@ -596,7 +639,6 @@ local function updateData()
 			["Bolas"] = 109,
 			["Flowing Strike"] = 109,
 			["Devouring Ambush"] = 109,
-			["Disengage"] = 109,
 			["Smack:458717"] = 109,
 			["Snapping Bite"] = 109,
 			["Glaive Toss"] = 109,
@@ -605,6 +647,8 @@ local function updateData()
 			["Grand Melee"] = 109,
 
 			--! Strike, Blue  ! Armor  ! Thrown
+			["Throw Weapon"] = 110,
+			["Overwhelming Slam:136170"] = 110,
 			["Massive Blow"] = 110,
 			["Log Smash"] = 110,
 			["Throw Axe"] = 110,
@@ -643,6 +687,7 @@ local function updateData()
 			--! Strike, Purple  ! Slam  ! Tailoring
 			["Overwhelm"] = 113,
 			["Backhand"] = 113,
+			["Overhead Smash"] = 113,
 			["Mash"] = 113,
 			["Champion's Honor:135884"] = 113,
 			["Wicked Slash"] = 113,
@@ -654,6 +699,7 @@ local function updateData()
 			["Skull and Crossbones"] = 113,
 
 			--! Bleed  ! Skinning
+			["Vicious Throw"] = 101,
 			["Cut to the Bone"] = 101,
 			["Cut To The Bone"] = 101,
 			["Barbed Spear"] = 101,
@@ -692,7 +738,6 @@ local function updateData()
 			["Heart Strike"] = 101,
 			["Internal Bleeding"] = 102,
 			["Jagged Maw"] = 101,
-			["Kill Command"] = 101,
 			["Leech"] = 101,
 			["Rake"] = 101,
 			["Rake"] = 101,
@@ -706,6 +751,7 @@ local function updateData()
 			["Puncturing Stab"] = 101,
 
 			--! Heavy Bleed
+			["Shredder"] = 102,
 			["Nanoslicer"] = 102,
 			["Bloody Tantrum"] = 102,
 			["Big Sharp Nasty Teeth"] = 102,
@@ -717,6 +763,8 @@ local function updateData()
 			["Rip"] = 102,
 
 			--! Strength
+			["Torturous Might"] = 106,
+			["Kill Command"] = 106,
 			["Survival Instincts"] = 106,
 			["Primal Instinct"] = 106,
 			["Gladiator's Badge"] = 106,
@@ -741,6 +789,12 @@ local function updateData()
 			["Unholy Strength"] = 106,
 
 			--! Alacrity  ! Speed
+			["Gore Charge"] = 104,
+			["Disengage"] = 104,
+			["Acrobatic Strike"] = 104,
+			["Acrobatic Strikes"] = 104,
+			["Boar Charge"] = 104,
+			["Deadly Pounce"] = 104,
 			["Barbarian"] = 104,
 			["Quilboar Rush"] = 104,
 			["Wily Wits"] = 104,
@@ -763,7 +817,6 @@ local function updateData()
 			["Dark Stride"] = 104,
 			["Hulking Charge"] = 104,
 			["Thunderous Paws"] = 104,
-			["Argent War Horn"] = 104,
 			["Courageous Spirit:236362"] = 104,
 			["Charge"] = 104,
 			["Goring Charge"] = 104,
@@ -791,7 +844,6 @@ local function updateData()
 			["March of the Highlord"] = 104,
 			["Onslaught"] = 104,
 			["Posthaste"] = 104,
-			["Ragged Roar"] = 104,
 			["Roar of the Crowd"] = 104,
 			["Slice and Dice"] = 104,
 			["Speed of Gonk"] = 104,
@@ -805,6 +857,15 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Deathsong"] = 111,
+			["Mrgggrrrll!"] = 111,
+			["Massive Screech"] = 111,
+			["Bone Rattling Howl"] = 111,
+			["Call For Help"] = 111,
+			["Call for Help"] = 111,
+			["Howl"] = 111,
+			["Ragged Roar"] = 111,
+			["Argent War Horn"] = 111,
 			["Call the Pack"] = 111,
 			["Sonic Scream"] = 111,
 			["Screaming Blast"] = 111,
@@ -828,7 +889,6 @@ local function updateData()
 			["Colossal Roar"] = 111,
 			["Deafening Howl"] = 111,
 			["Deafening Roar"] = 111,
-			["Deathsong"] = 411,
 			["Disruptive Screams"] = 111,
 			["Dread Screech"] = 111,
 			["Earsplitting Shriek"] = 111,
@@ -856,8 +916,9 @@ local function updateData()
 			["Primal Roar"] = 111,
 
 			--! Enrage
-			["Death Wish"] = 106,
-			["Blood Rage"] = 106,
+			["Mongoose Fury"] = 103,
+			["Death Wish"] = 103,
+			["Blood Rage"] = 103,
 			["Undying Frenzy"] = 103,
 			["Owlkin Frenzy"] = 103,
 			["Fel Rage"] = 103,
@@ -901,6 +962,7 @@ local function updateData()
 			["Violent Eruption:136215"] = 103,
 
 			--! Bloodlust
+			["Voracious Haste"] = 105,
 			["Voracious"] = 105,
 			["Blood Frenzy"] = 105,
 			["Victorious"] = 105,
@@ -940,6 +1002,8 @@ local function updateData()
 			--: Fire
 			-------------------------
 			--! Fire  ! Cooking
+			["Smoldering Inertia"] = 400,
+			["Fiery Blast"] = 400,
 			["Blast Wave:135903"] = 400,
 			["Blazing Wave"] = 400,
 			["Flame Thrower"] = 400,
@@ -992,12 +1056,13 @@ local function updateData()
 			["Uncontrolled Fire"] = 400,
 			["Wildfire Bomb"] = 400,
 			["Blazing Barrier"] = 400,
-			["Sear:135825"] = 400,
-			["Sear:135813"] = 400,
-			["Sear:135810"] = 400,
-			["Sear:135818"] = 400,
+			["Sear"] = 400,
 
 			--! Flamestrike  ! Cannonfire  ! Smelting
+			["Exploding Oil Barrel"] = 5,
+			["Flare"] = 5,
+			["Grapeshot Blast"] = 5,
+			["Blazing Shot"] = 5,
 			["Bombard"] = 5,
 			["Cannon Shot"] = 5,
 			["Fanning the Flames"] = 5,
@@ -1020,8 +1085,11 @@ local function updateData()
 			["Meteor Fists"] = 5,
 			["Refine Meteorite"] = 5,
 			["Meteorite Whetstone"] = 5,
+			["Fire Support: Black Skies"] = 5,
+			["Fire Support: Blackest Skies"] = 5,
 
 			--! Magma  ! Lava  ! Meteor
+			["Obsidian Skin"] = 12,
 			["Burning Slag"] = 12,
 			["Call Meteor"] = 12,
 			["Crashing Inferno"] = 12,
@@ -1110,7 +1178,7 @@ local function updateData()
 			["Thawing"] = 20,
 			["Crystallize:135866"] = 20,
 
-			--! Spellfire  ! Phoenix
+			--! Spellfire  ! Phoenixfire
 			["Phoenix Renewal"] = 68,
 			["Phoenix Flames"] = 68,
 			["Phoenix Flight"] = 68,
@@ -1125,6 +1193,9 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
+			["Foul Blast:135804"] = 401,
+			["Hellfire and Brimstone:135801"] = 401,
+			["Devour Soul:841221"] = 401,
 			["Blazing Swipe:135802"] = 401,
 			["Fel Destruction"] = 401,
 			["Felshard Meteor"] = 401,
@@ -1315,6 +1386,7 @@ local function updateData()
 			["Withering Felfire"] = 401,
 			["Worldbreaking Stomp:1118738"] = 401,
 			["Wrath Bolt"] = 401,
+			["Felborne Rage"] = 401,
 
 			--! Chaos
 			["Chaos Meteor"] = 127,
@@ -1345,6 +1417,9 @@ local function updateData()
 			["Rain of Chaos"] = 127,
 
 			--! Felstrike
+			["Fel Whirlwind"] = 427,
+			["Call Fel Lord"] = 427,
+			["Fel Lord"] = 427,
 			["Meteor Slam:1344650"] = 427,
 			["Loading Cannon:133009"] = 427,
 			["Overpowering Flurry:1344646"] = 427,
@@ -1377,6 +1452,8 @@ local function updateData()
 			--: Holy
 			-------------------------
 			--! Holy
+			["Blessing of Freedom"] = 2,
+			["Holy Light"] = 2,
 			["Light's Speed"] = 2,
 			["Solar Heal"] = 2,
 			["Divine Steed"] = 2,
@@ -1419,7 +1496,8 @@ local function updateData()
 			["Guardian of Ancient Kings"] = 200,
 			["Guardian of Ancient Queens"] = 200,
 
-			--! Holystrike  ! Flash
+			--! Holystrike  ! Flash  ! Titan
+			["Shielding Words"] = 3,
 			["Blessing of the Silver Crescent"] = 3,
 			["Blessed Armor of the Fallen"] = 3,
 			["Penetrating Insight:3136453"] = 3,
@@ -1443,6 +1521,7 @@ local function updateData()
 			["Stellar Pylon:253400"] = 3,
 
 			--! Holy Fire  ! Solar
+			["Flame Reborn"] = 6,
 			["Nature's Wrath:535045"] = 6,
 			["Excite:574795"] = 6,
 			["Blaze of Glory:574795"] = 6,
@@ -1478,6 +1557,11 @@ local function updateData()
 			["Solar Orb"] = 6,
 
 			--! Ethereal  ! Kyrian
+			["Popo's Potion"] = 201,
+			["Newfound Resolve"] = 201,
+			["Purifying Blast:3528286"] = 201,
+			["Centurion Blast:3528286"] = 201,
+			["Anima Farshot"] = 201,
 			["Anima Field:3536198"] = 201,
 			["Resonating Arrow"] = 201,
 			["Vesper Totem"] = 201,
@@ -1553,6 +1637,7 @@ local function updateData()
 			["Xandria's Wrath"] = 201,
 
 			--! Ethereal Flame
+			["Detonate:3528287"] = 600,
 			["Crackling Anima"] = 600,
 			["Tarecgosa's Visage"] = 600,
 			["Fervent Barrage"] = 600,
@@ -1568,6 +1653,10 @@ local function updateData()
 			["Valiant Flame"] = 600,
 
 			--! Discipline  ! Bandage  ! Brewing  ! Inscription
+			["Waking"] = 202,
+			["Unbinding"] = 202,
+			["Aiding"] = 202,
+			["Toss Stewards"] = 202,
 			["Helping"] = 202,
 			["Bandage"] = 202,
 			["Drunken Haze"] = 202,
@@ -1595,7 +1684,6 @@ local function updateData()
 			["Administering Antidote"] = 202,
 			["Apply Salve"] = 202,
 			["Bandaging"] = 202,
-			["Blessing of Freedom"] = 202,
 			["Brewfest Reveler's Hearthstone"] = 202,
 			["Calming"] = 202,
 			["Coax"] = 202,
@@ -1635,6 +1723,9 @@ local function updateData()
 			["Unspoken Gratitude"] = 202,
 
 			--! Hyperlight  ! Hallow  ! Broker
+			["Steal Essence:636333"] = 203,
+			["Focused Annihilation"] = 203,
+			["Summon Condemned"] = 203,
 			["\"Borrowed\" Power"] = 203,
 			["Activate Empowerment:4005160"] = 203,
 			["Anima Extrapolation:3675491"] = 203,
@@ -1690,6 +1781,8 @@ local function updateData()
 			-- 18
 
 			--! Azerite
+			["Puryfying Blast:2967103"] = 204,
+			["Puryfying Blast:1408832"] = 204,
 			["Empowering the Heart"] = 204,
 			["Absorbing Azerite"] = 204,
 			["Ancient Awakening"] = 204,
@@ -1765,6 +1858,8 @@ local function updateData()
 			["Steadfast Resolve"] = 660,
 
 			--! Love
+			["Mass Temptation"] = 661,
+			["Temptation"] = 661,
 			["Seduction"] = 661,
 			["Tame Beast"] = 661,
 			["Ball!"] = 661,
@@ -1807,6 +1902,7 @@ local function updateData()
 			["Icicles"] = 160,
 
 			--! Froststrike
+			["Bitter Slash"] = 17,
 			["Hurl Boulder:429385"] = 17,
 			["Froststrike"] = 17,
 			["Killing Machine"] = 17,
@@ -1819,6 +1915,7 @@ local function updateData()
 			["Icestrand Web"] = 17,
 
 			--! Froststorm
+			["Wardstone Activation"] = 24,
 			["Typhoon:135861"] = 24,
 			["Piercing Rain"] = 24,
 			["Remorseless Winter"] = 24,
@@ -1899,7 +1996,9 @@ local function updateData()
 			["The Innkeeper's Daughter"] = 8,
 			["Survival of the Fittest"] = 8,
 
-			--! Naturestrike  ! Web
+			--! Naturestrike  ! Web  ! Milling
+			["Hibernate"] = 900,
+			["Deep Slumber"] = 900,
 			["Give Silk"] = 900,
 			["Lashing Flurry:134218"] = 900,
 			["Spider Swarm"] = 900,
@@ -1931,7 +2030,7 @@ local function updateData()
 			["Thorns"] = 900,
 			["Throw Brambles"] = 900,
 
-			--! Life  ! Wild Gods
+			--! Life  ! Wild
 			["Genesis"] = 10,
 			["Rebirth"] = 10,
 			["Dreamwalk"] = 10,
@@ -1942,13 +2041,19 @@ local function updateData()
 			["Rejuvenating Wind"] = 10,
 
 			--! Fey  ! Night Fae
-			["Bewildering Pollen:134219"] = 805,
+			["Eyes of Elune"] = 805,
+			["Convocation of Elune"] = 805,
+			["Nightfire"] = 805,
+			["Elune's Wrath"] = 805,
+			["Bewildering Slam"] = 805,
+			["Bewildering Pollen"] = 805,
 			["Fae Transfusion"] = 805,
 			["Guessing Game"] = 805,
 			["Dodge Ball:132387"] = 805,
 			["Wrathful Faerie"] = 805,
 			["Guardian Faerie"] = 805,
 			["Benevolent Faerie"] = 805,
+			["Fae Guardian"] = 805,
 			["Fae Guardians"] = 805,
 			["Ancient Aftershock"] = 805,
 			["The Hunt"] = 805,
@@ -1969,6 +2074,7 @@ local function updateData()
 			["Gorging Leap:1506795"] = 805,
 			["Let's Play Catch!"] = 805,
 			["Night Fae Hearthstone"] = 805,
+			["Ardenweald Hearthstone"] = 805,
 			["Seeds of Extinction:3575389"] = 805,
 			["Seeds of Extinction:3636841"] = 805,
 			["Sepsis"] = 805,
@@ -1989,6 +2095,9 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Volatile Burst:136182"] = 806,
+			["Volatile Burst:136030"] = 806,
+			["Turbulent Juice"] = 806,
 			["Abrasive Slime"] = 806,
 			["Acid Spit"] = 806,
 			["Acid Spray"] = 806,
@@ -2169,7 +2278,9 @@ local function updateData()
 			["Windrush"] = 911,
 			["Localized Storm"] = 911,
 
-			--! Lightning  ! Thunder
+			--! Lightning  ! Thunder  ! Electric
+			["Electric Shock"] = 800,
+			["Sashj'tar Blast"] = 800,
 			["Stormbringer"] = 800,
 			["Lizard Bolt"] = 800,
 			["Channel Lightning"] = 800,
@@ -2259,7 +2370,6 @@ local function updateData()
 
 			--! Stormstrike
 			["Crashing Storm"] = 9,
-			["Sashj'tar Blast"] = 9,
 			["Stormhammer"] = 9,
 			["Thundering Rush"] = 9,
 			["Focused Assault:294033"] = 9,
@@ -2276,6 +2386,7 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water  ! Sea  ! Fishing
+			["Watery Splash"] = 801,
 			["Summon Water Elemental"] = 801,
 			["Wild Charge:136148"] = 801,
 			["Rapid Tides"] = 801,
@@ -2406,6 +2517,7 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth  ! Mud
+			["Digging"] = 803,
 			["Meteoric Earthspire"] = 803,
 			["Pulverizing Meteor:2101174"] = 803,
 			["Earth Rumble"] = 803,
@@ -2458,6 +2570,10 @@ local function updateData()
 			["Hardened Muck"] = 803,
 
 			--! Earthstrike  ! Leatherworking
+			["Ground Stomp"] = 903,
+			["Colossal Smash"] = 903,
+			["Shattering Smash"] = 903,
+			["Ground Crush"] = 903,
 			["Meteor Leap"] = 903,
 			["Angry Snort"] = 903,
 			["Crushing Swipe"] = 903,
@@ -2538,7 +2654,9 @@ local function updateData()
 			["Swamp Breath"] = 809,
 
 			--! Stonestrike  ! Metal  ! Salt  ! Blacksmithing  ! Mining
+			["Binding Chains"] = 909,
 			["Scourge Hook"] = 909,
+			["Shield Spike"] = 909,
 			["Stone Breaker"] = 909,
 			["Stonebreaker"] = 909,
 			["Stone Throw"] = 909,
@@ -2563,58 +2681,6 @@ local function updateData()
 			["Sand Bolt"] = 804,
 			["Sandblast"] = 804,
 			["Eruption:236758"] = 804,
-
-			--! Crystal  ! Jewelcrafting
-			["Glass Cannon"] = 808,
-			["Hurl Crystalshards"] = 808,
-			["Prospecting"] = 808,
-			["Shattering Ruby"] = 808,
-			["Chuck Crystal"] = 808,
-			["Crystal Barbs"] = 808,
-			["Crystal Barrage"] = 808,
-			["Crystal Bolt"] = 808,
-			["Crystal Breath"] = 808,
-			["Crystal Call"] = 808,
-			["Crystal Charge"] = 808,
-			["Crystal Eruption"] = 808,
-			["Crystal Flash"] = 808,
-			["Crystal Gaze"] = 808,
-			["Crystal Growth"] = 808,
-			["Crystal Shards"] = 808,
-			["Crystal Spike"] = 808,
-			["Crystal Spikes"] = 808,
-			["Crystal Storm"] = 808,
-			["Crystal Trap"] = 808,
-			["Crystal"] = 808,
-			["Crystalize"] = 808,
-			["Crystalline Assault"] = 808,
-			["Crystalline Barrier"] = 808,
-			["Crystalline Bolt"] = 808,
-			["Crystalline Bonds"] = 808,
-			["Crystalline Burst"] = 808,
-			["Crystalline Cage"] = 808,
-			["Crystalline Cleave"] = 808,
-			["Crystalline Command"] = 808,
-			["Crystalline Defense Grid"] = 808,
-			["Crystalline Dust"] = 808,
-			["Crystalline Ground"] = 808,
-			["Crystalline Growth"] = 808,
-			["Crystalline Kick"] = 808,
-			["Crystalline Resonance"] = 808,
-			["Crystalline Shield"] = 808,
-			["Crystalline Shrapnel"] = 808,
-			["Crystalline Slumber"] = 808,
-			["Crystalline Surge"] = 808,
-			["Crystalline Tether"] = 808,
-			["Crystalline Torment"] = 808,
-			["Crystallize"] = 808,
-			["Death Glare:433446"] = 808,
-			["Exposed Core"] = 808,
-			["Form Crystals"] = 808,
-			["Impaling Coral"] = 808,
-			["Piercing Shards"] = 808,
-			["Resonating Crystals"] = 808,
-			["Throw Crystal"] = 808,
 
 			--! Amber
 			["Splintered Elemental Rod"] = 810,
@@ -2665,16 +2731,92 @@ local function updateData()
 			["Runic Brand:442743"] = 810,
 			["Runic Spike"] = 810,
 
+			--! Crystal  ! Glass  ! Jewelcrafting
+			["Summon Rogg Shard"] = 808,
+			["Lethargic Glare"] = 808,
+			["Glass Cannon"] = 808,
+			["Hurl Crystalshards"] = 808,
+			["Prospecting"] = 808,
+			["Chuck Crystal"] = 808,
+			["Crystal Barbs"] = 808,
+			["Crystal Barrage"] = 808,
+			["Crystal Bolt"] = 808,
+			["Crystal Breath"] = 808,
+			["Crystal Call"] = 808,
+			["Crystal Charge"] = 808,
+			["Crystal Eruption"] = 808,
+			["Crystal Flash"] = 808,
+			["Crystal Gaze"] = 808,
+			["Crystal Growth"] = 808,
+			["Crystal Shards"] = 808,
+			["Crystal Spike"] = 808,
+			["Crystal Spikes"] = 808,
+			["Crystal Storm"] = 808,
+			["Crystal Trap"] = 808,
+			["Crystal"] = 808,
+			["Crystalize"] = 808,
+			["Crystalline Assault"] = 808,
+			["Crystalline Barrier"] = 808,
+			["Crystalline Bolt"] = 808,
+			["Crystalline Bonds"] = 808,
+			["Crystalline Burst"] = 808,
+			["Crystalline Cage"] = 808,
+			["Crystalline Cleave"] = 808,
+			["Crystalline Command"] = 808,
+			["Crystalline Defense Grid"] = 808,
+			["Crystalline Dust"] = 808,
+			["Crystalline Ground"] = 808,
+			["Crystalline Growth"] = 808,
+			["Crystalline Kick"] = 808,
+			["Crystalline Resonance"] = 808,
+			["Crystalline Shield"] = 808,
+			["Crystalline Shrapnel"] = 808,
+			["Crystalline Slumber"] = 808,
+			["Crystalline Surge"] = 808,
+			["Crystalline Tether"] = 808,
+			["Crystalline Torment"] = 808,
+			["Crystallize"] = 808,
+			["Death Glare:433446"] = 808,
+			["Exposed Core"] = 808,
+			["Form Crystals"] = 808,
+			["Impaling Coral"] = 808,
+			["Piercing Shards"] = 808,
+			["Throw Crystal"] = 808,
+
+			--! Diamond  ! Prismatic  ! White
+			-- 812
+
+			--! Amethyst  ! Purple
+			["Resonating Crystals"] = 813,
+
+			--! Sapphire  ! Blue
+			-- 814
+
+			--! Emerald  ! Green
+			-- 815
+
+			--! Citrine  ! Yellow
+			-- 816
+
+			--! Topaz  ! Orange
+			-- 817
+
+			--! Ruby  ! Red
+			["Shattering Ruby"] = 818,
+
+			--! Onyx  ! Obsidian  ! Black
+			-- 819
+
 
 			--: Arcane
 			-------------------------
 			--! Arcane
+			["Prismatic Barrier"] = 64,
 			["Arcane Meteor"] = 64,
 			["Star Gate:610471"] = 64,
 			["Meteor Shower:1041233"] = 64,
 			["Arcane Bolt"] = 64,
 			["Arcane Bolts"] = 64,
-			["Blink:135736"] = 64,
 			["Sear:135731"] = 64,
 			["Arcane Wall"] = 64,
 			["Eclipse (Lunar)"] = 64,
@@ -2729,29 +2871,90 @@ local function updateData()
 			["Spell Reflect"] = 65,
 			["Spell Reflection"] = 65,
 
-			--! Magic  ! Enchanting
-			["Prismatic Barrier"] = 126,
+			--! Magic
 			["Arcane Explosion"] = 126,
 			["Arcane Missiles"] = 126,
-			["Summon Wolfoids"] = 126,
 			["Summon Doomskull"] = 126,
 			["Touch of the Magi"] = 126,
 			["Focused Bursts:136050"] = 126,
-			["Translocate"] = 126,
-			["Orb of Translocation"] = 126,
-			["Enchant"] = 126,
-			["Enchanting"] = 126,
-			["Disenchant"] = 126,
-			["Disenchanting Carefully"] = 126,
-			["Disenchanting"] = 126,
 			["Cantrips"] = 126,
 			["Teleport: Hall of the Guardian"] = 126,
 			["Runic Mending"] = 126,
 			["Wild Magic"] = 126,
 			["Energy Drain"] = 126,
-			["Dalaran Hearthstone"] = 126,
-			["Garrison Hearthstone"] = 126,
-			["Teleport to Shipyard"] = 126,
+			["Conjure Mana Gem"] = 126,
+
+			--! Conjuration  ! Teleport  ! Enchanting
+			["Mirror Image"] = 646,
+			["Mirror Images"] = 646,
+			["Dalaran Hearthstone"] = 646,
+			["Ancient Portal: Dalaran"] = 646,
+			["Ancient Teleport: Dalaran"] = 646,
+			["Blink"] = 646,
+			["Disenchant"] = 646,
+			["Disenchanting Carefully"] = 646,
+			["Disenchanting"] = 646,
+			["Enchant"] = 646,
+			["Enchanting"] = 646,
+			["Garrison Hearthstone"] = 646,
+			["Orb of Translocation"] = 646,
+			["Portal: Boralus"] = 646,
+			["Portal: Dalaran - Broken Isles"] = 646,
+			["Portal: Dalaran - Northrend"] = 646,
+			["Portal: Dalaran"] = 646,
+			["Portal: Darnassus"] = 646,
+			["Portal: Dazar'alor"] = 646,
+			["Portal: Exodar"] = 646,
+			["Portal: Ironforge"] = 646,
+			["Portal: Moonglade"] = 646,
+			["Portal: Orgrimmar"] = 646,
+			["Portal: Oribos"] = 646,
+			["Portal: Shattrath"] = 646,
+			["Portal: Silvermoon"] = 646,
+			["Portal: Stonard"] = 646,
+			["Portal: Stormshield"] = 646,
+			["Portal: Stormwind"] = 646,
+			["Portal: Theramore"] = 646,
+			["Portal: Thunder Bluff"] = 646,
+			["Portal: Tol Barad"] = 646,
+			["Portal: Undercity"] = 646,
+			["Portal: Vale of Eternal Blossoms"] = 646,
+			["Portal: Warspear"] = 646,
+			["Portal: The Broken Shore"] = 646,
+			["Portal: Violet Hold"] = 646,
+			["Raid Portal: Oribos"] = 646,
+			["Summon Wolfoids"] = 646,
+			["Teleport to Shipyard"] = 646,
+			["Teleport"] = 646,
+			["Teleport: Boralus"] = 646,
+			["Teleport: Dalaran - Broken Isles"] = 646,
+			["Teleport: Dalaran - Northrend"] = 646,
+			["Teleport: Dalaran"] = 646,
+			["Teleport: Darnassus"] = 646,
+			["Teleport: Dazar'alor"] = 646,
+			["Teleport: Exodar"] = 646,
+			["Teleport: Ironforge"] = 646,
+			["Teleport: Moonglade"] = 646,
+			["Teleport: Orgrimmar"] = 646,
+			["Teleport: Oribos"] = 646,
+			["Teleport: Shattrath"] = 646,
+			["Teleport: Silvermoon"] = 646,
+			["Teleport: Stonard"] = 646,
+			["Teleport: Stormshield"] = 646,
+			["Teleport: Stormwind"] = 646,
+			["Teleport: Theramore"] = 646,
+			["Teleport: Thunder Bluff"] = 646,
+			["Teleport: Tol Barad"] = 646,
+			["Teleport: Undercity"] = 646,
+			["Teleport: Vale of Eternal Blossoms"] = 646,
+			["Teleport: Warspear"] = 646,
+			["Translocate"] = 646,
+			["Conjure Food"] = 646,
+			["Conjure Water"] = 646,
+			["Conjure Refreshment"] = 646,
+			["Conjure Refreshments"] = 646,
+			["Conjure Refreshment Table"] = 646,
+			["Conjure Image"] = 646,
 
 			--! Chromatic  ! Prismatic
 			["Protective Phantasma"] = 124,
@@ -2763,7 +2966,8 @@ local function updateData()
 			["Mindmeld"] = 124,
 
 			--! Temporal  ! Time
-			["Accelerated Mending"] = 2,
+			["Temporal Blast"] = 640,
+			["Accelerated Mending"] = 640,
 			["Chrono Shift"] = 640,
 			["True Bearing"] = 640,
 			["Slow"] = 640,
@@ -2789,6 +2993,10 @@ local function updateData()
 			["Siphon Nightwell"] = 72,
 
 			--! Spectral
+			["Spirit of Ka-Sha"] = 720,
+			["Starlance Vigil"] = 720,
+			["Shadow Pounce"] = 720,
+			["Spectral Swipe"] = 720,
 			["Spirit Walk"] = 720,
 			["Spirit Stream"] = 720,
 			["Lesser Invisibility"] = 720,
@@ -2813,6 +3021,9 @@ local function updateData()
 			--: Decay
 			-------------------------
 			--! Unholy  ! Bone
+			["Bind to the Bones"] = 414,
+			["Helya's Boon"] = 414,
+			["Foul Smash"] = 414,
 			["Bone Splinter"] = 414,
 			["Exhume the Crypts"] = 414,
 			["Apocalypse"] = 414,
@@ -2852,6 +3063,7 @@ local function updateData()
 			["Whirling Mist"] = 414,
 
 			--! Plague
+			["Carrion Slam"] = 40,
 			["Infected Thorn"] = 40,
 			["Bile Spew"] = 40,
 			["Belch"] = 40,
@@ -2897,6 +3109,7 @@ local function updateData()
 			["Retch"] = 40,
 
 			--! Disease  ! Rot
+			["Rats!"] = 410,
 			["Diseased Spit"] = 410,
 			["Rotten to the Core"] = 410,
 			["Mimic:342913"] = 410,
@@ -2923,6 +3136,10 @@ local function updateData()
 			["Clinging Infestation"] = 410,
 
 			--! Nightmare
+			["Corrupt the Wild:1357812"] = 412,
+			["Nightmare Blast"] = 412,
+			["Nightmare Nova"] = 412,
+			["Nightmare Swipe"] = 412,
 			["Shadow Meteor:1357805"] = 412,
 			["Corrupted Dreams"] = 412,
 			["Raining Filth:1357799"] = 412,
@@ -2953,6 +3170,27 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Doomblast:3528298"] = 411,
+			["Torturous Reach"] = 411,
+			["Effigy of Torment"] = 411,
+			["Soul Fracture"] = 411,
+			["Fracture Soul"] = 411,
+			["Unraveler's Tempest:3528305"] = 411,
+			["Ritual of Pain:3528301"] = 411,
+			["Pain Bringer:1035046"] = 411,
+			["Trap the Soul"] = 411,
+			["Persecute"] = 411,
+			["Crashing Death"] = 411,
+			["Execution Sentence:306922"] = 411,
+			["Corrupted Ordnance:3528302"] = 411,
+			["Corrupted Ordnance:3528301"] = 411,
+			["Anima Cannon:3528303"] = 411,
+			["Tortured Stomp:3528303"] = 411,
+			["Darkmist Bombardment"] = 411,
+			["Call of the Tormented"] = 411,
+			["Entropic Detonation:3528301"] = 411,
+			["Fracture Soul"] = 411,
+			["Siphon Loyalty"] = 411,
 			["Torment Soul:3528300"] = 411,
 			["Dark Communion:3528299"] = 411,
 			["Wracking Torment"] = 411,
@@ -3050,6 +3288,10 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Devourer
+			["Bewitching Eye"] = 413,
+			["Devourer's Rift"] = 413,
+			["Worldeating Rift"] = 413,
+			["Mass Devour"] = 413,
 			["Ruinous Bolt"] = 413,
 			["Soul Bolt:631503"] = 413,
 			["Scar Soul:895888"] = 413,
@@ -3084,7 +3326,6 @@ local function updateData()
 			["Death's Advance"] = 32,
 			["Catharstick"] = 32,
 			["Shadow Bulwark"] = 32,
-			["Bone Rattling Howl"] = 32,
 			["Expulse Shadows"] = 32,
 			["Shadowfiend"] = 32,
 			["Breathless Darkness"] = 32,
@@ -3095,6 +3336,14 @@ local function updateData()
 			["Nightfall"] = 32,
 
 			--! Psychic  ! Mind Control
+			["Mind Rend"] = 328,
+			["Cripple"] = 328,
+			["Piercing Gaze"] = 328,
+			["Subjugate"] = 328,
+			["Subjugate Demon"] = 328,
+			["Control Undead"] = 328,
+			["Debilitate"] = 328,
+			["Mass Debilitate"] = 328,
 			["Silence"] = 328,
 			["Mana Burn"] = 328,
 			["Mindbender"] = 328,
@@ -3115,6 +3364,9 @@ local function updateData()
 			["Siphon of Acherus"] = 328,
 
 			--! Shadowstrike
+			["Veil of Midnight"] = 33,
+			["Foul Smash:607850"] = 33,
+			["Dark Rend"] = 33,
 			["Heaving Blow"] = 33,
 			["Blindside"] = 33,
 			["Darkflight"] = 33,
@@ -3148,6 +3400,7 @@ local function updateData()
 			["Torment"] = 322,
 
 			--! Haunt  ! Nether
+			["Unleashed Suffering"] = 323,
 			["Cries of Anguish"] = 323,
 			["Desperation"] = 323,
 			["Nether Meteor"] = 323,
@@ -3173,6 +3426,7 @@ local function updateData()
 			["Tormenting Haunt"] = 323,
 			["Rend Soul"] = 323,
 			["Banish"] = 323,
+			["Banishment"] = 323,
 			["Banish Scourge Crystal"] = 323,
 			["Cry of the Forgotten"] = 323,
 			["Dispersion"] = 323,
@@ -3190,6 +3444,7 @@ local function updateData()
 			["Vampiric Embrace"] = 323,
 			["Vampiric Speed"] = 323,
 			["Vampiric Touch"] = 323,
+			["Leeching Cleave"] = 323,
 			["Wail of the Restless"] = 323,
 			["Wail"] = 323,
 
@@ -3234,7 +3489,10 @@ local function updateData()
 			["Unstable Gloom"] = 324,
 			["Wither"] = 324,
 
-			--! Spellshadow  ! Runic
+			--! Spellshadow  ! Runic  ! Harpy
+			["Shadow Bond:611425"] = 96,
+			["Vicious Storm:649816"] = 96,
+			["Foul Blast:425959"] = 96,
 			["Ritual of the Berserker"] = 96,
 			["Shadow Prison"] = 96,
 			["Etch:136202"] = 96,
@@ -3247,7 +3505,6 @@ local function updateData()
 			["Shadow Rip"] = 96,
 			["Rune-Etched Axe"] = 96,
 			["Dark Pact"] = 96,
-			["Soulstone"] = 96,
 			["Enslave Demon"] = 96,
 			["Assassin's Soulcloak"] = 96,
 			["Detect Anima"] = 96,
@@ -3311,6 +3568,16 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Unravel:236296"] = 320,
+			["Unravel:136202"] = 320,
+			["Shadow Wrath"] = 320,
+			["Void Crash"] = 320,
+			["Void Crush"] = 320,
+			["Voidrend"] = 320,
+			["Call of the Void"] = 320,
+			["Void Infusion"] = 320,
+			["Pitch Blast:460700"] = 320,
+			["Drops of Void"] = 320,
 			["Delving the Void"] = 320,
 			["Void Whip"] = 320,
 			["Stampeding Corruption"] = 320,
@@ -3372,7 +3639,6 @@ local function updateData()
 			["Reality Rend"] = 320,
 			["Ring of Chaos:632353"] = 320,
 			["Screech From Beyond"] = 320,
-			["Shadow Bond"] = 320,
 			["Shadow Word: Void"] = 320,
 			["Singularity"] = 320,
 			["Spatial Rift"] = 320,
@@ -3424,6 +3690,13 @@ local function updateData()
 			["Twlight Flames"] = 34, -- [sic]
 
 			--! Blood  ! Venthyr
+			["Consume the Living"] = 321,
+			["Impending Catastrophe"] = 321,
+			["Lingering Hunger"] = 321,
+			["Blood Drinker"] = 321,
+			["Consume Wrath:3528308"] = 321,
+			["Wrath Unleashed:3565716"] = 321,
+			["Blood Splatter"] = 321,
 			["Summon Arsenal:3151164"] = 321,
 			["Ashen Hallow"] = 321,
 			["Sanguine Feast"] = 321,
@@ -3560,6 +3833,8 @@ local function updateData()
 			["Mindgames:3565723"] = 321,
 
 			--! Necromancy  ! Necrolord
+			["Soul Fracture:2576087"] = 326,
+			["Devour Soul"] = 326,
 			["Putrid Burst"] = 326,
 			["Stygic Bolt"] = 326,
 			["Wing Buffet:2576095"] = 326,
@@ -3664,6 +3939,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse
+			["Touch of the Occult"] = 325,
 			["Arugal's Gift"] = 325,
 			["Banish"] = 325,
 			["Banshee's Curse"] = 325,
@@ -3695,6 +3971,13 @@ local function updateData()
 			["Weeping Burden"] = 325,
 
 			--! Dread  ! Fear  ! Sha
+			["Cry of Desolation"] = 327,
+			["Trembling Roar"] = 327,
+			["Mortal Coil"] = 327,
+			["Cries of the Tormented"] = 327,
+			["Terrifying Slam"] = 327,
+			["Primal Howl"] = 327,
+			["Withering Roar"] = 327,
 			["Meteor Storm:651092"] = 327,
 			["Touch of the Ravenclaw"] = 327,
 			["Hopelessness"] = 327,
@@ -3705,7 +3988,6 @@ local function updateData()
 			["Frightening Roar"] = 327,
 			["Bellowing Roar"] = 327,
 			["Darkest Secrets:3528308"] = 327,
-			["Darkmist Bombardment"] = 327,
 			["Maddening Roar"] = 327,
 			["Touch of the Abyss"] = 327,
 			["Terror Gasp"] = 327,
@@ -3739,7 +4021,6 @@ local function updateData()
 			["Eyes of the Empress"] = 327,
 			["Fear"] = 327,
 			["Fearsome Shriek"] = 327,
-			["Focused Annihilation"] = 327,
 			["Horrifying Shout"] = 327,
 			["Howl of Terror"] = 327,
 			["Manifest Dread"] = 327,
@@ -3781,6 +4062,22 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic
+			["Erupting Shadow:136201"] = 360,
+			["Soulstone"] = 360,
+			["Summon Demonic Tyrant"] = 360,
+			["Shadowfury"] = 360,
+			["Shadow Bolt:136197"] = 360,
+			["Expulse Shadows"] = 360,
+			["Ritual of Shadow"] = 360,
+			["Demonic Strikes"] = 360,
+			["Shadow Swipe"] = 360,
+			["Shadow Nova"] = 360,
+			["Dark Hunger"] = 360,
+			["Defiled Consecration"] = 360,
+			["Shadow Burst"] = 360,
+			["Consume Shadows"] = 360,
+			["Call of the Legion:132303"] = 360,
+			["Ritual of Destruction"] = 360,
 			["Summon Lesser Demon"] = 360,
 			["Summon Lesser Demons"] = 360,
 			["Demonic Burst"] = 360,
@@ -3797,6 +4094,7 @@ local function updateData()
 			["Grimoire of Sacrifice"] = 360,
 			["Malevolence"] = 360,
 			["Malefic Grasp"] = 360,
+			["Malefic Rapture"] = 360,
 			["Malefic"] = 360,
 			["Chaos Wave:607850"] = 360,
 			["Chaos Wave:463569"] = 360,
@@ -3819,7 +4117,7 @@ local function updateData()
 			["Dreadstalkers"] = 360,
 			["Call Dreadstalkers"] = 360,
 
-			--! Shadowfel
+			--! Shadowfelflame
 			["Demon Spit"] = 361,
 			["Agent of the All-Seer"] = 361,
 			["Create Healthstone"] = 361,
@@ -3868,6 +4166,10 @@ local function updateData()
 
 			-------------------------
 			--! Mounts
+			["Ardenweald Wilderling"] = 805,
+			["Autumnal Wilderling"] = 200,
+			["Summer Wilderling"] = 8,
+			["Winter Wilderling"] = 160,
 			["Abyss Worm"] = 32,
 			["Acherus Deathcharger"] = 411,
 			["Acid Belcher"] = 401,
@@ -3882,7 +4184,7 @@ local function updateData()
 			["Amber Primordial Direhorn"] = 903,
 			["Amber Scorpion"] = 810,
 			["Amber Shardhide"] = 903,
-			["Amethyst Ruinstrider"] = 33,
+			["Amethyst Ruinstrider"] = 903,
 			["Ankoan Waveray"] = 901,
 			["Antoran Charhound"] = 400,
 			["Antoran Gloomhound"] = 36,
@@ -3935,7 +4237,7 @@ local function updateData()
 			["Battlelord's Bloodthirsty War Wyrm"] = 105,
 			["Beastlord's Irontusk"] = 5,
 			["Beastlord's Warwolf"] = 5,
-			["Beryl Ruinstrider"] = 33,
+			["Beryl Ruinstrider"] = 903,
 			["Beryl Shardhide"] = 903,
 			["Big Blizzard Bear"] = 903,
 			["Big Love Rocket"] = 661,
@@ -3962,7 +4264,7 @@ local function updateData()
 			["Blackpaw"] = 903,
 			["Blacksteel Battleboar"] = 903,
 			["Blazing Drake"] = 5,
-			["Bleakhoof Ruinstrider"] = 127,
+			["Bleakhoof Ruinstrider"] = 427,
 			["Blessed Felcrusher"] = 2,
 			["Blisterback Bloodtusk"] = 40,
 			["Blonde Riding Yak"] = 903,
@@ -4014,7 +4316,7 @@ local function updateData()
 			["Cartel Master's Gearglider"] = 203,
 			["Celestial Steed"] = 72,
 			["Cenarion War Hippogryph"] = 811,
-			["Cerulean Ruinstrider"] = 33,
+			["Cerulean Ruinstrider"] = 903,
 			["Challenger's War Yeti"] = 903,
 			["Champion's Treadblade"] = 100,
 			["Chauffeured Mechano-Hog"] = 100,
@@ -4147,7 +4449,7 @@ local function updateData()
 			["Geosynchronous World Spinner"] = 100,
 			["Giant Coldsnout"] = 903,
 			["Gilded Prowler"] = 811,
-			["Gilded Ravasaur"] = 903,
+			["Gilded Ravasaur"] = 200,
 			["Glacial Tidestorm"] = 24,
 			["Glorious Felcrusher"] = 2,
 			["Gnomeregan Mechanostrider"] = 100,
@@ -4260,9 +4562,9 @@ local function updateData()
 			["Ivory Hawkstrider"] = 903,
 			["Jade Cloud Serpent"] = 902,
 			["Jade Pandaren Kite"] = 802,
-			["Jade Panther"] = 808,
+			["Jade Panther"] = 815,
 			["Jade Primordial Direhorn"] = 902,
-			["Jeweled Onyx Panther"] = 808,
+			["Jeweled Onyx Panther"] = 819,
 			["Junkheap Drifter"] = 100,
 			["Kaldorei Nightsaber"] = 903,
 			["Kor'kron Annihilator"] = 906,
@@ -4287,6 +4589,7 @@ local function updateData()
 			["Lurid Bloodtusk"] = 40,
 			["Maddened Chaosrunner"] = 127,
 			["Maelie, the Wanderer"] = 661,
+			["Wandering Arden Doe"] = 661,
 			["Mag'har Direwolf"] = 903,
 			["Magnificent Flying Carpet"] = 68,
 			["Mail Muncher"] = 324,
@@ -4318,11 +4621,11 @@ local function updateData()
 			["Netherlord's Chaotic Wrathsteed"] = 127,
 			["Nightborne Manasaber"] = 126,
 			["Ny'alotha Allseer"] = 324,
-			["Obsidian Krolusk"] = 903,
-			["Obsidian Nightwing"] = 809,
+			["Obsidian Krolusk"] = 819,
+			["Obsidian Nightwing"] = 819,
 			["Obsidian Worldbreaker"] = 12,
 			["Ochre Skeletal Warhorse"] = 32,
-			["Onyx Cloud Serpent"] = 809,
+			["Onyx Cloud Serpent"] = 819,
 			["Onyx Netherwing Drake"] = 323,
 			["Onyxian Drake"] = 12,
 			["Orgrimmar Interceptor"] = 100,
@@ -4336,7 +4639,7 @@ local function updateData()
 			["Phalynx of Humility"] = 201,
 			["Phalynx of Loyalty"] = 96,
 			["Phalynx of Purity"] = 201,
-			["Phosphorescent Stone Drake"] = 808,
+			["Phosphorescent Stone Drake"] = 813,
 			["Pinto"] = 903,
 			["Plaguerot Tauralus"] = 40,
 			["Pond Nettle"] = 324,
@@ -4390,18 +4693,18 @@ local function updateData()
 			["Rivendare's Deathcharger"] = 32,
 			["Rocktusk Battleboar"] = 903,
 			["Royal Snapdragon"] = 901,
-			["Ruby Panther"] = 808,
+			["Ruby Panther"] = 818,
 			["Rubyshell Krolusk"] = 903,
-			["Russet Ruinstrider"] = 33,
+			["Russet Ruinstrider"] = 903,
 			["Rustbolt Resistor"] = 100,
 			["Rusted Proto-Drake"] = 804,
 			["Rusty Mechanocrawler"] = 100,
-			["Sable Ruinstrider"] = 33,
+			["Sable Ruinstrider"] = 903,
 			["Saltwater Seahorse"] = 801,
 			["Sanctum Gloomcharger"] = 32,
-			["Sandstone Drake"] = 804,
+			["Sandstone Drake"] = 816,
 			["Sandy Nightsaber"] = 903,
-			["Sapphire Panther"] = 808,
+			["Sapphire Panther"] = 814,
 			["Sapphire Riverbeast"] = 901,
 			["Sapphire Skyblazer"] = 600,
 			["Scintillating Mana Ray"] = 200,
@@ -4491,7 +4794,7 @@ local function updateData()
 			["Sunhide Gronnling"] = 903,
 			["Sunreaver Dragonhawk"] = 68,
 			["Sunreaver Hawkstrider"] = 903,
-			["Sunstone Panther"] = 808,
+			["Sunstone Panther"] = 816,
 			["Surf Jelly"] = 324,
 			["Swift Albino Raptor"] = 903,
 			["Swift Blue Gryphon"] = 811,
@@ -4556,7 +4859,7 @@ local function updateData()
 			["Thundering August Cloud Serpent"] = 6,
 			["Thundering Cobalt Cloud Serpent"] = 80,
 			["Thundering Jade Cloud Serpent"] = 902,
-			["Thundering Onyx Cloud Serpent"] = 809,
+			["Thundering Onyx Cloud Serpent"] = 819,
 			["Thundering Ruby Cloud Serpent"] = 5,
 			["Timber Wolf"] = 903,
 			["Time-Lost Proto-Drake"] = 640,
@@ -4578,7 +4881,7 @@ local function updateData()
 			["Tyrael's Charger"] = 201,
 			["Ultramarine Qiraji Battle Tank"] = 324,
 			["Umber Nightsaber"] = 903,
-			["Umber Ruinstrider"] = 33,
+			["Umber Ruinstrider"] = 903,
 			["Umbral Scythehorn"] = 413,
 			["Uncorrupted Voidwing"] = 320,
 			["Undercity Plaguebat"] = 414,
@@ -4624,12 +4927,12 @@ local function updateData()
 			["Violet Pandaren Phoenix"] = 802,
 			["Violet Proto-Drake"] = 5,
 			["Violet Raptor"] = 903,
-			["Violet Spellwing"] = 126,
+			["Violet Spellwing"] = 64,
 			["Viridian Phase-Hunter"] = 323,
 			["Viridian Sharptalon"] = 8,
 			["Vitreous Stone Drake"] = 808,
 			["Voidtalon of the Dark Star"] = 36,
-			["Volcanic Stone Drake"] = 808,
+			["Volcanic Stone Drake"] = 818,
 			["Voldunai Dunescraper"] = 811,
 			["Voracious Gorger"] = 413,
 			["Vulpine Familiar"] = 805,
@@ -4721,10 +5024,10 @@ local function updateData()
 			[207493] = 34,
 			[207501] = 107,
 			[210773] = 801,
-			[211546] = 126,
+			[211546] = 646,
 			[212782] = 126,
 			[213485] = 808,
-			[214482] = 808,
+			[214482] = 813,
 			[215749] = 72,
 			[216693] = 66,
 			[219920] = 127,
@@ -5045,7 +5348,7 @@ local function updateData()
 			[168103] = 65,
 			[351138] = 201,
 			[351245] = 202,
-			[352413] = 203,
+			[352413] = 100,
 			[357969] = 203,
 			[357963] = 203,
 			[357983] = 203,
@@ -5138,6 +5441,48 @@ local function updateData()
 			[325543] = 202,
 			[325722] = 202,
 			[150029] = 202,
+			[336250] = 202,
+			[181456] = 202,
+			[186052] = 5,
+			[226373] = 201,
+			[248062] = 204,
+			[199728] = 100,
+			[321212] = 805,
+			[340626] = 100,
+			[223600] = 202,
+			[351673] = 201,
+			[356553] = 3,
+			[319666] = 100,
+			[319697] = 100,
+			[319698] = 100,
+			[319699] = 100,
+			[351895] = 201,
+			[351905] = 201,
+			[297365] = 204,
+			[341726] = 203,
+			[354171] = 805,
+			[352672] = 100,
+			[358113] = 326,
+			[357779] = 326,
+			[350591] = 36,
+			[351333] = 321,
+			[322332] = 201,
+			[337039] = 326,
+			[350186] = 201,
+			[350187] = 201,
+			[350192] = 201,
+			[357319] = 805,
+			[357307] = 326,
+			[357301] = 201,
+			[357299] = 321,
+			[235570] = 901,
+			[236525] = 202,
+			[169758] = 202,
+			[169973] = 640,
+			[356266] = 326,
+			[214669] = 326,
+			[356593] = 203,
+			[203675] = 646,
 			--qqq
 
 			--! NPC spells
@@ -5182,11 +5527,24 @@ local function updateData()
 			[263455] = 360, -- Sacrifice (Waycrest Manor - Matron Christiane)
 			[214184] = 360, -- Vortex (Legion Demons)
 			[355456] = 411, -- Damnation (The Maw - Mor'geth)
+			[332239] = 413, -- Shatter Essence (Drust)
+			[227660] = 28, -- Guardian's Breath (Guarm)
+			[227666] = 28, -- Guardian's Breath (Guarm)
+			[227669] = 28, -- Guardian's Breath (Guarm)
+			[227658] = 28, -- Guardian's Breath (Guarm)
+			[333931] = 48, -- Elemental Chomp (Ylva)
+			[358835] = 28, -- Guardian's Breath (Ylva)
+			[354114] = 411, -- Unleashed Suffering (Mawsworn)
+			[358303] = 413, -- Essence Ejection (Konthrogz the Obliterator)
+			[353782] = 260, -- Shadow Nova (Nathrezim)
+			[217003] = 360, -- Slumber Fog (Nathrezim)
+			[193100] = 9, -- Dropping the Hammer (Dargrul)
 			--nnn
 
 			--! Auras
 			[345569] = 105, -- Flagellation (Haste Buff)
 			[312106] = 600, -- Weapons of Order (Debuff)
+			[259277] = 101, -- Kill Command (Bleed) (Bloodseeker talent)
 
 
 			-- Ascension Crafting
@@ -5265,8 +5623,8 @@ local function updateData()
 			[55211] = 5, -- Smelt Titanium
 			[55208] = 5, -- Smelt Titansteel
 			[49252] = 5, -- Smelt Cobalt
-			[35750] = 5, -- Earth Sunder
-			[35751] = 5, -- Fire Sunder
+			[35750] = 803, -- Earth Sunder
+			[35751] = 400, -- Fire Sunder
 			[46353] = 5, -- Smelt Hardened Khorium
 			[29361] = 5, -- Smelt Khorium
 			[29686] = 5, -- Smelt Hardened Adamantite
@@ -6411,6 +6769,79 @@ local function updateData()
 			[26418] = 100, -- Small Red Rocket
 			[12590] = 100, -- Gyromatic Micro-Adjustor
 			[7430] = 100, -- Arclight Spanner
+
+			-- Jewelcrafting
+				-- Shadowlands Designs
+					-- Quest Recipes
+					[338248] = 818, -- Brilliant Bauble
+					[338244] = 808, -- Carved Crystal Ring
+					[338239] = 909, -- Engraved Phaedrum Band
+					[338246] = 808, -- Faceted Crystal
+					[338249] = 909, -- Fine Sinvyr Chain
+					[338238] = 808, -- Gem Studded Bangle
+					[338241] = 814, -- Gleaming Kyranite Necklace
+					[338245] = 808, -- Hollowed Crystal
+					[338242] = 808, -- Kyranite Dangle
+					[338240] = 808, -- Polished Gemstones
+					[338247] = 818, -- Sinister Choker
+					[338243] = 909, -- Solenium Wire
+					-- Gems
+					[311867] = 815, -- Straddling Jewel Doublet
+					[311866] = 814, -- Versatile Jewel Doublet
+					[311868] = 817, -- Deadly Jewel Doublet
+					[311869] = 813, -- Masterful Jewel Doublet
+					[311871] = 816, -- Quick Jewel Doublet
+					[311870] = 818, -- Revitalizing Jewel Doublet
+					[311863] = 817, -- Deadly Jewel Cluster
+					[311859] = 814, -- Versatile Jewel Cluster
+					[311864] = 813, -- Masterful Jewel Cluster
+					[311865] = 816, -- Quick Jewel Cluster
+					-- Mass Prospecting
+					[311948] = 808, -- Mass Prospect Laestrite
+					[311950] = 808, -- Mass Prospect Oxxein
+					[311951] = 808, -- Mass Prospect Phaedrum
+					[311952] = 808, -- Mass Prospect Sinvyr
+					[311949] = 808, -- Mass Prospect Solenium
+					[311953] = 808, -- Mass Prospect Elethium
+					-- Optional Reagents
+					[343693] = 202, -- Novice Crafter's Mark
+					[343697] = 202, -- Crafter's Mark I
+					[343696] = 202, -- Crafter's Mark II
+					[343695] = 202, -- Crafter's Mark III
+					[352443] = 660, -- Vestige of Origins
+					[343694] = 202, -- Crafter's Mark of the Chained Isle
+					-- Necklaces
+					[311902] = 817, -- Deadly Laestrite Choker
+					[311904] = 813, -- Masterful Laestrite Choker
+					[311903] = 816, -- Quick Laestrite Choker
+					[311905] = 814, -- Versatile Laestrite Choker
+					[311906] = 817, -- Deadly Sinvyr Necklace
+					[311908] = 813, -- Masterful Phaedrum Necklace
+					[311907] = 816, -- Quick Oxxein Necklace
+					[311909] = 814, -- Versatile Solenium Necklace
+					-- Rings
+					[311880] = 817, -- Deadly Laestrite Band
+					[311882] = 813, -- Masterful Laestrite Band
+					[311881] = 816, -- Quick Laestrite Band
+					[311883] = 814, -- Versatile Laestrite Band
+					[311884] = 817, -- Deadly Sinvyr Ring
+					[311886] = 813, -- Masterful Phaedrum Ring
+					[311885] = 816, -- Quick Oxxein Ring
+					[311887] = 814, -- Versatile Solenium Ring
+					-- Specialized Jewelry
+					[327921] = 818, -- Shadowghast Necklace (Rank 1)
+					[332040] = 818, -- Shadowghast Necklace (Rank 2)
+					[332075] = 818, -- Shadowghast Necklace (Rank 3)
+					[338977] = 818, -- Shadowghast Necklace (Rank 4)
+					[327920] = 818, -- Shadowghast Ring (Rank 1)
+					[332039] = 818, -- Shadowghast Ring (Rank 2)
+					[332074] = 818, -- Shadowghast Ring (Rank 3)
+					[338978] = 818, -- Shadowghast Ring (Rank 4)
+					-- Statues
+					[355187] = 809, -- Porous Stone Statue
+					[355189] = 809, -- Shaded Stone Statue
+					-- Hats
+					[334548] = 812, -- Crown of the Righteous
 		}
 
 		-- !aura
@@ -6437,14 +6868,6 @@ local function updateData()
 			-- Class
 			["Activating Specialization"] = ZA.ClassIcons[class] or 0,
 			-- Minor
-			["Herbalism"] = 0,
-			["Herb Gathering"] = 0,
-			["Fishing"] = 0,
-			["Mining"] = 0,
-			["Skinning"] = 0,
-			["Engineering"] = 0,
-			["Milling"] = 0,
-			["Prospecting"] = 0,
 			["Attacking"] = 0,
 			["Opening"] = 0,
 			["Return to Entrance"] = 0,
@@ -6463,12 +6886,8 @@ local function updateData()
 			["Destroying"] = 0,
 			["Freeing"] = 0,
 			["Petting"] = 0,
-			["Disenchant"] = 0,
-			["Disenchanting"] = 0,
-			["Disenchanting Carefully"] = 0,
 			["Jump to Skyhold"] = 0,
 			["Grappling Hook"] = 0,
-			["Dismiss Pet"] = 0,
 			-- Learning
 			["A Compendium of the Herbs of Draenor"] = 0,
 			["A Guide to Skinning in Draenor"] = 0,
@@ -6505,7 +6924,7 @@ local function updateData()
 		}
 
 		ZA.CastIconBySpellID = {
-			-- Quest
+			-- § Quest
 			[79450] = 237329,
 			[21050] = 133942,
 			[93773] = 133015,
@@ -6752,17 +7171,50 @@ local function updateData()
 			[31549] = 134801,
 			[346327] = 0,
 			[325543] = 0,
+			[181456] = 0,
+			[199728] = 0,
+			[340626] = 0,
+			[351673] = 0,
+			[312692] = 133226,
+			[319782] = 0,
+			[319840] = 0,
+			[351895] = 0,
+			[351905] = 0,
+			[341726] = 0,
+			[352978] = 0,
+			[358113] = 0,
+			[357779] = 0,
+			[350208] = 0,
+			[351333] = 0,
+			[322332] = 0,
+			[358089] = 0,
+			[357319] = 3257750,
+			[357307] = 3257749,
+			[357301] = 3257748,
+			[357299] = 3257751,
+			[235570] = 0,
+			[186608] = 0,
+			[193017] = 0,
+			[193100] = 1487017,
+			[208755] = 0,
+			[169758] = 0,
+			[356266] = 0,
+			[356593] = 0,
+			[194477] = 0,
+			[194479] = 0,
+			[188432] = 0,
+			[211546] = 979574,
 			--qqi
 
 
-			-- Spells
+			-- § Spells
 			[164862] = 0, -- Flap
 			[337344] = 132868, -- Mystic Bolt (missing icon)
 			[337346] = 135731, -- Arcane Bolt (missing icon)
 			[80066] = 511543, -- Tornado (Cataclysm air elementals, wrong icon)
 			[355456] = 3528298, -- Damnation (transparent icon)
 
-			-- Ascension Crafting
+			-- § Ascension Crafting
 				-- Lures
 				[328321] = 465875, -- Overcharged Goliath Core
 				[328680] = 132878, -- Soul Mirror
@@ -6800,7 +7252,7 @@ local function updateData()
 				[333374] = 3079436, -- Spiritforged Aegis
 				[345978] = 1408456, -- Ring of Warding
 
-			-- Abominable Stitching
+			-- § Abominable Stitching
 			[325284] = 3622121, -- Construct Body: "Chordy"
 			[325454] = 3622122, -- Construct Body: "Atticus"
 			[325452] = 3601552, -- Construct Body: "Marz"
@@ -6816,7 +7268,6 @@ local function updateData()
 			[326408] = 3601552, -- Construct Body: "Mama Tomalin"
 			[325458] = 3601552, -- Construct Body: "Miru"
 			[326379] = 2492254, -- Construct Body: "Neena"
-
 			[326525] = 3622121, -- Call Chordy
 			[327203] = 3622122, -- Call Atticus
 			[327556] = 3601552, -- Call Marz
@@ -6830,530 +7281,322 @@ local function updateData()
 			[340340] = 3601552, -- Call Iron Phillip
 			[340841] = 3622121, -- Call Naxx
 
-			-- Cooking
-				-- Shadowlands Cuisine
-					-- Feasts
-					[308402] = 3760524, -- Surprisingly Palatable Feast
-					[308403] = 3760523, -- Feast of Gluttonous Hedonism
-					-- Large Meals
-					[308400] = 3671897, -- Spinefin Souffle and Fries
-					[308413] = 3671891, -- Iridescent Ravioli with Apple Sauce
-					[308405] = 3671905, -- Tenebrous Crown Roast Aspic
-					[308426] = 3671904, -- Steal a la Mode
-					[308411] = 3671889, -- Candied Amberjack Cakes
-					[308415] = 3671886, -- Banana Beaf Pudding
-					-- Light Meals
-					[354768] = 135233, -- Porous Rock Candy
-					[354764] = 132814, -- Twilight Tea
-					[354766] = 133950, -- Bonemeal Bread
-					[308404] = 3671890, -- Cinnamon Bonefish Stew
-					[308412] = 3671894, -- Meaty Apple Dumplings
-					[308425] = 3671901, -- Sweet Silvergill Sausages
-					[308397] = 3671888, -- Butterscotch Marinated Ribs
-					[308414] = 3671898, -- Pickled Meat Smoothie
-					[308410] = 3671887, -- Biscuits and Caviar
-					-- Soul Food
-					[308419] = 3671902, -- Smothered Shank
-					[308417] = 3671900, -- Seraph Tenders
-					[308416] = 3671899, -- Quiethounds
-					[308420] = 3671893, -- Fried Bonefish
+			-- § Alchemy
+				-- Shadowlands Alchemy
 					-- Quest Recipes
-					[338100] = 651358, -- Arden Apple Pie
-					[338107] = 650635, -- Diced Vegetables
-					[338115] = 133779, -- Ember Sauce
-					[338106] = 1045948, -- Grazer Bone Broth
-					[338101] = 1500973, -- Oat Pie Crust
-					[338117] = 134040, -- Seared Cutlets
-					[338116] = 237337, -- Skewered Meats
-					[338102] = 646177, -- Sliced Arden Apples
-					[338110] = 237346, -- Spider Jerky
-					[338105] = 134019, -- Steward Stew
-					[338113] = 237339, -- Thick Spider Meat
-				-- Kul Tiran Cuisine & Zandalari Cuisine
-					-- Delicacies
-					[314959] = 461132, -- Baked Voidfin
-					[314961] = 237335, -- Dubious Delight
-					[314962] = 237331, -- Ghastly Goulash
-					[314963] = 237353, -- Grilled Gnasher
-					[314960] = 461134, -- K'Bab
-					-- Light Meals
-					[303788] = 134042, -- Unagi Skewer
-					[259435] = 2066018, -- Seasoned Loins (Rank 3)
-					[259434] = 2066018, -- Seasoned Loins (Rank 2)
-					[259433] = 2066018, -- Seasoned Loins (Rank 1)
-					[286381] = 2443145, -- Honey Potpie
-					[259432] = 2066007, -- Grilled Catfish (Rank 3)
-					[259431] = 2066007, -- Grilled Catfish (Rank 2)
-					[259430] = 2066007, -- Grilled Catfish (Rank 1)
-					[280282] = 133199, -- Heartsbane Hexwurst
-					-- Desserts
-					[259413] = 2066009, -- Kul Tiramisu (Rank 3)
-					[259412] = 2066009, -- Kul Tiramisu (Rank 2)
-					[259411] = 2066009, -- Kul Tiramisu (Rank 1)
-					[259438] = 2066010, -- Loa Loaf (Rank 3)
-					[259437] = 2066010, -- Loa Loaf (Rank 2)
-					[259436] = 2066010, -- Loa Loaf (Rank 1)
-					[259444] = 2066014, -- Mon'Dazi (Rank 3)
-					[259443] = 2066014, -- Mon'Dazi (Rank 2)
-					[259442] = 2066014, -- Mon'Dazi (Rank 1)
-					[259426] = 2066016, -- Ravenberry Tarts (Rank 3)
-					[259425] = 2066016, -- Ravenberry Tarts (Rank 2)
-					[259424] = 2066016, -- Ravenberry Tarts (Rank 1)
-					[288029] = 2466573, -- Wild Berry Bread (Rank 3)
-					[288028] = 2466573, -- Wild Berry Bread (Rank 2)
-					[288027] = 2466573, -- Wild Berry Bread (Rank 1)
-					-- Large Meals
-					[301392] = 134063, -- Mecha-Bytes
-					[297086] = 133904, -- Abyssal-Fried Rissole (Rank 3)
-					[297085] = 133904, -- Abyssal-Fried Rissole (Rank 2)
-					[297084] = 133904, -- Abyssal-Fried Rissole (Rank 1)
-					[297083] = 651570, -- Baked Port Tato (Rank 3)
-					[297082] = 651570, -- Baked Port Tato (Rank 2)
-					[297081] = 651570, -- Baked Port Tato (Rank 1)
-					[297089] = 134004, -- Bil'Tong (Rank 3)
-					[297088] = 134004, -- Bil'Tong (Rank 2)
-					[297087] = 134004, -- Bil'Tong (Rank 1)
-					[297074] = 461136, -- Fragrant Kakavia (Rank 3)
-					[297075] = 461136, -- Fragrant Kakavia (Rank 2)
-					[297077] = 461136, -- Fragrant Kakavia (Rank 1)
-					[297080] = 1046262, -- Mech-Dowel's "Big Mech" (Rank 3)
-					[297079] = 1046262, -- Mech-Dowel's "Big Mech" (Rank 2)
-					[297078] = 1046262, -- Mech-Dowel's "Big Mech" (Rank 1)
-					[259416] = 2066008, -- Honey-Glazed Haunches (Rank 3)
-					[259415] = 2066008, -- Honey-Glazed Haunches (Rank 3)
-					[259414] = 2066008, -- Honey-Glazed Haunches (Rank 3)
-					[259441] = 2066017, -- Sailor's Pie (Rank 3)
-					[259440] = 2066017, -- Sailor's Pie (Rank 2)
-					[259439] = 2066017, -- Sailor's Pie (Rank 1)
-					[288033] = 2466899, -- Seasoned Steak and Potatoes (Rank 3)
-					[288032] = 2466899, -- Seasoned Steak and Potatoes (Rank 2)
-					[288030] = 2466899, -- Seasoned Steak and Potatoes (Rank 1)
-					[259447] = 2066019, -- Spiced Snapper (Rank 3)
-					[259446] = 2066019, -- Spiced Snapper (Rank 2)
-					[259445] = 2066019, -- Spiced Snapper (Rank 1)
-					[259429] = 2066021, -- Swamp Fish 'n Chips (Rank 3)
-					[259428] = 2066021, -- Swamp Fish 'n Chips (Rank 2)
-					[259427] = 2066021, -- Swamp Fish 'n Chips (Rank 1)
-					[290473] = 133197, -- Boralus Blood Sausage (Rank 3)
-					[290472] = 133197, -- Boralus Blood Sausage (Rank 2)
-					[290471] = 133197, -- Boralus Blood Sausage (Rank 1)
-					-- Feasts
-					[297107] = 456330, -- Famine Evaluator And Snack Table (Rank 3)
-					[297106] = 456330, -- Famine Evaluator And Snack Table (Rank 2)
-					[297105] = 456330, -- Famine Evaluator And Snack Table (Rank 1)
-					[259423] = 2066011, -- Bountiful Captain's Feast (Rank 3)
-					[259422] = 2066011, -- Bountiful Captain's Feast (Rank 2)
-					[259421] = 2066011, -- Bountiful Captain's Feast (Rank 1)
-					[287112] = 2451910, -- Sanguinated Feast (Rank 3)
-					[287110] = 2451910, -- Sanguinated Feast (Rank 2)
-					[287108] = 2451910, -- Sanguinated Feast (Rank 1)
-					[259420] = 2066013, -- Galley Banquet (Rank 3)
-					[259419] = 2066013, -- Galley Banquet (Rank 2)
-					[259418] = 2066013, -- Galley Banquet (Rank 1)
-				-- Food of the Broken Isles
-					-- Snacks
-					[201685] = 1387636, -- Crispy Bacon (Rank 3)
-					[201684] = 1387636, -- Crispy Bacon (Rank 2)
-					[201683] = 1387636, -- Crispy Bacon (Rank 1)
-					[230046] = 651570, -- Spiced Falcosaur Omelet
-					[201560] = 1387641, -- Bear Tartare (Rank 3)
-					[201540] = 1387641, -- Bear Tartare (Rank 2)
-					[201513] = 1387641, -- Bear Tartare (Rank 1)
-					[201559] = 1387645, -- Dried Mackerel Strips (Rank 3)
-					[201539] = 1387645, -- Dried Mackerel Strips (Rank 2)
-					[201512] = 1387645, -- Dried Mackerel Strips (Rank 1)
-					[201561] = 1387649, -- Fighter Chow (Rank 3)
-					[201541] = 1387649, -- Fighter Chow (Rank 2)
-					[201514] = 1387649, -- Fighter Chow (Rank 1)
-					-- Light Meals
-					[201545] = 1387644, -- Deep-Fried Mossgill (Rank 3)
-					[201525] = 1387644, -- Deep-Fried Mossgill (Rank 2)
-					[201496] = 1387644, -- Deep-Fried Mossgill (Rank 1)
-					[201547] = 1387647, -- Faronaar Fizz (Rank 3)
-					[201527] = 1387647, -- Faronaar Fizz (Rank 2)
-					[201498] = 1387647, -- Faronaar Fizz (Rank 1)
-					[201546] = 1387660, -- Pickled Stormray (Rank 3)
-					[201526] = 1387660, -- Pickled Stormray (Rank 2)
-					[201497] = 1387660, -- Pickled Stormray (Rank 1)
-					[201544] = 1387662, -- Salt and Pepper Shank (Rank 3)
-					[201524] = 1387662, -- Salt and Pepper Shank (Rank 2)
-					[201413] = 1387662, -- Salt and Pepper Shank (Rank 1)
-					[201548] = 1387664, -- Spiced Rib Roast (Rank 3)
-					[201528] = 1387664, -- Spiced Rib Roast (Rank 2)
-					[201499] = 1387664, -- Spiced Rib Roast (Rank 1)
-					-- Large Meals
-					[201551] = 1387640, -- Barracuda Mrglgagh (Rank 3)
-					[201531] = 1387640, -- Barracuda Mrglgagh (Rank 2)
-					[201502] = 1387640, -- Barracuda Mrglgagh (Rank 1)
-					[201553] = 1387646, -- Drogbar-Style Salmon (Rank 3)
-					[201533] = 1387646, -- Drogbar-Style Salmon (Rank 2)
-					[201504] = 1387646, -- Drogbar-Style Salmon (Rank 1)
-					[201552] = 1387653, -- Koi-Scented Stormray (Rank 3)
-					[201532] = 1387653, -- Koi-Scented Stormray (Rank 2)
-					[201503] = 1387653, -- Koi-Scented Stormray (Rank 1)
-					[201549] = 1387656, -- Leybeque Ribs (Rank 3)
-					[201529] = 1387656, -- Leybeque Ribs (Rank 2)
-					[201500] = 1387656, -- Leybeque Ribs (Rank 1)
-					[201550] = 1387666, -- Suramar Surf and Turf (Rank 3)
-					[201530] = 1387666, -- Suramar Surf and Turf (Rank 2)
-					[201501] = 1387666, -- Suramar Surf and Turf (Rank 1)
-					-- Delicacies
-					[201555] = 1387635, -- Azshari Salad (Rank 3)
-					[201535] = 1387635, -- Azshari Salad (Rank 2)
-					[201506] = 1387635, -- Azshari Salad (Rank 1)
-					[201558] = 1387650, -- Fishbrul Special (Rank 3)
-					[201538] = 1387650, -- Fishbrul Special (Rank 2)
-					[201511] = 1387650, -- Fishbrul Special (Rank 1)
-					[201556] = 1387659, -- Nightborne Delicacy Platter (Rank 3)
-					[201536] = 1387659, -- Nightborne Delicacy Platter (Rank 2)
-					[201507] = 1387659, -- Nightborne Delicacy Platter (Rank 1)
-					[201557] = 1387663, -- Seed-Battered Fish Plate (Rank 3)
-					[201537] = 1387663, -- Seed-Battered Fish Plate (Rank 2)
-					[201508] = 1387663, -- Seed-Battered Fish Plate (Rank 1)
-					[201554] = 1387667, -- The Hungry Magister (Rank 3)
-					[201534] = 1387667, -- The Hungry Magister (Rank 2)
-					[201505] = 1387667, -- The Hungry Magister (Rank 1)
-					-- Feasts
-					[201562] = 1387652, -- Hearty Feast (Rank 3)
-					[201542] = 1387652, -- Hearty Feast (Rank 2)
-					[201515] = 1387652, -- Hearty Feast (Rank 1)
-					[201563] = 1387654, -- Lavish Suramar Feast (Rank 3)
-					[201543] = 1387654, -- Lavish Suramar Feast (Rank 2)
-					[201516] = 1387654, -- Lavish Suramar Feast (Rank 1)
-					[251258] = 237270, -- Feast of the Fishes
-				-- Food of Draenor
-					-- Feasts
-					[173978] = 1053712, -- Feast of Blood
-					[173979] = 1053713, -- Feast of the Waters
-					-- Delicacies
-					[160986] = 1046248, -- Blackrock Barbecue
-					[160999] = 1046251, -- Calamari Crepes
-					[160987] = 1046255, -- Frosty Stew
-					[161000] = 1046256, -- Gorgrond Chowder
-					[160989] = 1046261, -- Sleeper Surprise
-					[160984] = 1046263, -- Talador Surf and Turf
-					-- Meat Dishes
-					[160962] = 1046249, -- Blackrock Ham
-					[160968] = 1046250, -- Braised Riverbeast
-					[160971] = 1046253, -- Clefthoof Sausages
-					[160958] = 1046257, -- Hearty Elekk Steak
-					[160966] = 1046259, -- Pan-Seared Talbuk
-					[160969] = 1046260, -- Rylak Crepes
-					[190788] = 1241154, -- Fel Eggs and Ham
-					-- Fish Dishes
-					[160981] = 1045937, -- Fat Sleeper Cakes
-					[160982] = 1045938, -- Fiery Calamari
-					[160978] = 1045939, -- Grilled Gulper
-					[160983] = 1045952, -- Skulker Chowder
-					[160973] = 1045950, -- Steamed Scorpion
-					[160979] = 1045951, -- Sturgeon Stew
-					[161002] = 1045940, -- Grilled Saberfish
-					[161001] = 1045948, -- Saberfish Broth
-					[180761] = 1045949, -- Buttered Sturgeon
-					[180759] = 533422, -- Jumbo Sea Dog
-					[180758] = 461138, -- Pickled Eel
-					[180757] = 350561, -- Salty Squid Roll
-					[180762] = 461137, -- Sleeper Sushi
-					[180760] = 461132, -- Whiptail Fillet
-				-- Pandaren Cuisine
-					-- Way of the Grill
-					[125141] = 651575, -- Banquet of the Grill
-					[104300] = 651331, -- Black Pepper Ribs and Shrimp
-					[145311] = 133948, -- Fluffy Silkfeather Omelet
-					[125142] = 651585, -- Great Banquet of the Grill
-					[104299] = 651568, -- Eternal Blossom Fish
-					[104298] = 651597, -- Charbroiled Tiger Steak
-					-- Way of the Wok
-					[125594] = 651589, -- Banquet of the Wok
-					[125595] = 651579, -- Great Banquet of the Wok
-					[104303] = 651592, -- Sea Mist Rice Noodles
-					[145305] = 646177, -- Seasoned Pomfruit Slices
-					[104302] = 651599, -- Valley Stir Fry
-					[104301] = 651591, -- Sauteed Carrots
-					-- Way of the Pot
-					[125596] = 651587, -- Banquet of the Pot
-					[125597] = 651577, -- Great Banquet of the Pot
-					[104306] = 651582, -- Mogu Fish Stew
-					[145307] = 134210, -- Spiced Blossom Soup
-					[104305] = 651567, -- Braised Turtle
-					[104304] = 651596, -- Swiling Mist Soup
-					-- Way of the Steamer
-					[125598] = 651588, -- Banquet of the Steamer
-					[145309] = 237331, -- Farmer's Delight
-					[125599] = 651578, -- Great Banquet of the Steamer
-					[104309] = 651595, -- Steamed Crab Surprise
-					[104308] = 651569, -- Fire Spirit Salmon
-					[104307] = 651593, -- Shrimp Dumplings
-					-- Way of the Oven
-					[125600] = 651586, -- Banquet of the Oven
-					[104312] = 651594, -- Chun Tian Spring Rolls
-					[125601] = 651576, -- Great Banquet of the Oven
-					[145310] = 451162, -- Stuffed Lushrooms
-					[104311] = 651598, -- Twin Fish Platter
-					[104310] = 651600, -- Wildfowl Roast
-					-- Way of the Brew
-					[125602] = 651583, -- Banquet of the Brew
-					[125603] = 651573, -- Great Banquet of the Brew
-					[124054] = 461805, -- Mad Brewer's Breakfast
-					[126655] = 132788, -- Banana Infused Rum
-					[126654] = 651581, -- Four Senses Brew
-					[124053] = 461804, -- Jade Witch Brew
-					[124052] = 651571, -- Ginseng Tea
-					-- Everyday Cooking
-					[145061] = 879828, -- Deluxe Noodle Cart Kit
-					[105194] = 651574, -- Great Pandaren Banquet
-					[145308] = 895874, -- Mango Ice
-					[145038] = 879826, -- Noodle Cart Kit
-					[105190] = 651584, -- Pandaren Banquet
-					[145062] = 879827, -- Pandaren Treasure Noodle Cart Kit
-					[125120] = 350563, -- Spicy Salmon
-					[125123] = 649817, -- Spicy Vegetable Chips
-					[124032] = 237337, -- Krasarang Fritters
-					[125122] = 650006, -- Rice Pudding
-					[124029] = 134020, -- Viseclaw Soup
-					[124233] = 651487, -- Blanched Needle Mushrooms
-					[124229] = 655152, -- Red Bean Bun
-					[124228] = 651538, -- Boiled Silkwork Pupa
-					[124227] = 651488, -- Dried Needle Mushrooms
-					[124226] = 134255, -- Dried Peaches
-					[104297] = 651570, -- Fish Cake
-					[104237] = 651572, -- Golden Carp Consomme
-					[124231] = 655706, -- Green Curry Fish
-					[124232] = 651358, -- Peach Pie
-					[125080] = 132815, -- Pearl Milk Tea
-					[125067] = 651997, -- Perfectly Cooked Instant Noodles
-					[124223] = 571819, -- Pounded Rice Cake
-					[125078] = 651601, -- Roasted Barley Tea
-					[124234] = 651877, -- Skewered Peanut Chicken
-					[125117] = 646177, -- Sliced Peaches
-					[124230] = 655708, -- Tangy Yogurt
-					[124225] = 651276, -- Toasted Fish Jerky
-					[125121] = 651489, -- Wildfowl Ginseng Soup
-					[124224] = 650635, -- Yak Cheese Curds
-				-- Cataclysm Recipes
-					-- Everyday Cooking
-					[88011] = 134055, -- Broiled Dragon Feast
-					[88019] = 460881, -- Fortune Cookie
-					[88036] = 350559, -- Seafood Magnifique Feast
-					[88003] = 351500, -- Baked Rockfish
-					[88004] = 133973, -- Basilisk Liverdog
-					[88005] = 350565, -- Beer-Basted Crocolisk
-					[88034] = 351506, -- Blackbelly Sushi
-					[88014] = 350567, -- Crocolisk Au Gratin
-					[88016] = 351503, -- Delicious Sagefish Tail
-					[88020] = 237335, -- Grilled Dragon
-					[88025] = 351499, -- Lavascale Minestrone
-					[88031] = 350558, -- Mushroom Sauce Mudfish
-					[88039] = 351505, -- Severed Sagefish Head
-					[88042] = 351508, -- Skewered Eel
-					[88013] = 237363, -- Chocolate Cookie
-					[88018] = 134044, -- Fish Fry
-					[96133] = 461136, -- Scalding Murglesnout
-					[88021] = 350560, -- Hearty Seafood Soup
-					[88033] = 351507, -- Pickled Guppy
-					[88046] = 350562, -- Tender Baked Turtle
-					[88012] = 351504, -- Broiled Mountain Trout
-					[88024] = 351501, -- Lavascale Fillet
-					[88028] = 351502, -- Lightly Fried Lurker
-					[88030] = 350562, -- Lurker Lunch
-					[88035] = 237299, -- Salted Eye
-					[88037] = 133708, -- Seasoned Crab
-					[88047] = 350559, -- Whitecrest Gumbo
-					[88006] = 133962, -- Blackened Surprise
-					-- Delightful Drinks
-					[88044] = 443395, -- South Island Iced Tea
-					[88022] = 132813, -- Highland Spirits
-					[88045] = 132802, -- Starfire Espresso
-					[88015] = 135999, -- Darkbrew Lager
-					-- Lures
-					[88017] = 135992, -- Feathered Lure
-				-- Recipes of the Cold North
-					-- Everyday Cooking
-					[57423] = 237303, -- Fish Feast
-					[58528] = 132184, -- Small Feast
-					[58527] = 132184, -- Gigantic Feast
-					[57441] = 237355, -- Blackened Dragonfin
-					[57438] = 134040, -- Blackened Worg Steak
-					[57435] = 134044, -- Critter Bites
-					[57439] = 237346, -- Cuttlesteak
-					[57442] = 134031, -- Dragonfin Filet
-					[45568] = 237354, -- Firecracker Salmon
-					[57436] = 237329, -- Hearty Rhino
-					[45570] = 237334, -- Imperial Manta Steak
-					[45555] = 133962, -- Mega Mammoth Meal
-					[45559] = 134022, -- Mighty Rhino Dogs
-					[45567] = 134033, -- Poached Northern Sculpin
-					[57434] = 134003, -- Rhinolicious Wormsteak
-					[57437] = 237342, -- Snapper Extreme
-					[57440] = 237336, -- Spiced Mammoth Treats
-					[45557] = 134021, -- Spiced Worm Burger
-					[45571] = 237352, -- Spicy Blue Nettlefish
-					[57433] = 134034, -- Spicy Fried Herring
-					[45556] = 237335, -- Tender Shoveltusk Steak
-					[57443] = 134041, -- Tracker Snacks
-					[45558] = 134016, -- Very Burnt Worg
-					[64358] = 134438, -- Black Jelly
-					[62350] = 134027, -- Worg Tartare
-					[45554] = 132184, -- Great Feast
-					[45569] = 237353, -- Baked Manta Ray
-					[58065] = 133780, -- Dalaran Clam Chowder
-					[45563] = 134035, -- Grilled Sculpin
-					[45549] = 237330, -- Mammoth Meal
-					[45566] = 134032, -- Pickled Fangtooth
-					[45565] = 237351, -- Poached Nettlefish
-					[45553] = 134009, -- Rhino Dogs
-					[45552] = 134042, -- Roasted Worg
-					[45550] = 134045, -- Shoveltusk Steak
-					[45564] = 237343, -- Smoked Salmon
-					[45551] = 237337, -- Worm Delight
-					[53056] = 132808, -- Kungaloosh
-					[58523] = 134431, -- Bad Clams
-					[45561] = 237356, -- Grilled Bonescale
-					[58525] = 237317, -- Haunted Herring
-					[58521] = 237328, -- Last Week's Mammoth
-					[57421] = 237331, -- Northern Stew
-					[45562] = 237338, -- Sauteed Goby
-					[45560] = 237344, -- Smoked Rockfin
-					[58512] = 135457, -- Tasty Cupcake
-				-- Outlandish Dishes
-					-- Everyday Cooking
-					[42302] = 134044, -- Fisherman's Feast
-					[42305] = 134032, -- Hot Buttered Trout
-					[33296] = 133902, -- Spicy Crawdad
-					[38868] = 134044, -- Crunchy Serpent
-					[38867] = 134004, -- Mok'Nathal Shortribs
-					[33295] = 133904, -- Golden Fish Sticks
-					[43772] = 134005, -- Kibler's Bits
-					[33287] = 134016, -- Roasted Clefthoof
-					[33289] = 134040, -- Talbuk Steak
-					[33288] = 134021, -- Warp Burger
-					[33293] = 134034, -- Grilled Mudfish
-					[33294] = 134032, -- Poached Bluefish
-					[33286] = 134042, -- Blackened Basilisk
-					[43707] = 134019, -- Skullfish Soup
-					[43765] = 134040, -- Spicy Hot Talbuk
-					[42296] = 134020, -- Stewed Trout
-					[33292] = 134035, -- Blackened Sporefish
-					[33290] = 134033, -- Blackened Trout
-					[43761] = 133915, -- Broiled Bloodfin
-					[33279] = 134041, -- Buzzard Bites
-					[36210] = 133983, -- Clam Bar
-					[33291] = 134030, -- Feltail Delight
-					[33284] = 134009, -- Ravager Dog
-					[43758] = 134047, -- Stormchops
-				-- Old World Recipes
-					-- Everyday Cooking
-					[18247] = 133906, -- Baked Salmon
-					[25659] = 134021, -- Dirge's Kickin' Chimaerok Chops
-					[18245] = 132804, -- Lobster Stew
-					[18246] = 134003, -- Mightfish Steak
-					[22761] = 134019, -- Runn Tum Tuber Surprise
-					[24801] = 134020, -- Smoked Desert Dumplings
-					[18242] = 133889, -- Hot Smoked Bass
-					[46684] = 134024, -- Charred Bear Kabobs
-					[46688] = 134021, -- Juicy Bear Burger
-					[18243] = 132804, -- Nightfin Soup
-					[18244] = 133905, -- Poached Sunscale Salmon
-					[64054] = 134433, -- Clamlette Magnifique
-					[18239] = 134301, -- Cooked Glossy Mightfish
-					[18241] = 133892, -- Filet of Redgill
-					[15933] = 133948, -- Monster Omelet
-					[15915] = 134004, -- Spiced Chili Crab
-					[22480] = 134003, -- Tender Wolf Steak
-					[20626] = 132804, -- Unddermine Clam Chowder
-					[185705] = 351502, -- Fancy Darkmoon Feast
-					[18240] = 133899, -- Grilled Squid
-					[18238] = 133887, -- Spotted Yellowtail
-					[15910] = 132806, -- Heavy Kodo Stew
-					[15863] = 134005, -- Carrion Surprise
-					[7213] = 132386, -- Giant Clam Scorcho
-					[15856] = 134004, -- Hot Wolf Ribs
-					[15861] = 132804, -- Jungle Stew
-					[20916] = 133888, -- Mithril Head Trout
-					[15865] = 132806, -- Mystery Stew
-					[15855] = 134006, -- Roast Raptor
-					[25954] = 133907, -- Sagefish Delight
-					[21175] = 134022, -- Spider Sausage
-					[7828] = 133890, -- Rockscale Cod
-					[4094] = 133974, -- Barbecued Buzzard Wing
-					[3400] = 133748, -- Soothing Turtle Bisque
-					[3398] = 133974, -- Hot Lion Chops
-					[13028] = 132802, -- Goldthorn Tea
-					[3376] = 132835, -- Curiously Tasty Omelet
-					[15853] = 134003, -- Lean Wolf Steak
-					[3373] = 133748, -- Crocolisk Gumbo
-					[24418] = 134020, -- Heavy Crocolisk Stew
-					[3399] = 133970, -- Tasty Lion Steak
-					[3377] = 133952, -- Gooey Spider Cake
-					[6419] = 134343, -- Lean Venison
-					[7755] = 133916, -- Bristle Whisker Catfish
-					[6418] = 133973, -- Crispy Lizard Tail
-					[2549] = 133972, -- Seasoned Wolf Kabob
-					[2547] = 133748, -- Redridge Goulash
-					[6501] = 134712, -- Clam Chowder
-					[6417] = 133748, -- Dig Rat Stew
-					[3372] = 133748, -- Murloc Fin Soup
-					[2548] = 133972, -- Succulent Pork Ribs
-					[6500] = 134431, -- Goblin Deviled Clams
-					[185708] = 1045940, -- Sugar-Crusted Fish Feast
-					[2545] = 133708, -- Cooked Crab Claw
-					[3370] = 134003, -- Crocolisk Steak
-					[25704] = 133906, -- Smoked Sagefish
-					[2543] = 133748, -- Westfall Stew
-					[3371] = 134005, -- Blood Sausage
-					[28267] = 134044, -- Crunchy Spider Surprise
-					[33278] = 134042, -- Bat Bites
-					[2542] = 133952, -- Goretusk Liver Pie
-					[7754] = 134712, -- Loch Frenzy Delight
-					[7753] = 133918, -- Longjaw Mud Snapper
-					[7827] = 133913, -- Rainbow Fin Albacore
-					[6416] = 133748, -- Strider Stew
-					[2546] = 134004, -- Dry Pork Ribs
-					[8607] = 133969, -- Smoked Bear Meat
-					[2544] = 133950, -- Crab Cake
-					[6414] = 134016, -- Roasted Kodo Meat
-					[2795] = 134004, -- Beer Basted Boar Ribs
-					[6413] = 133952, -- Scorpid Surprise
-					[6499] = 134432, -- Boiled Clams
-					[2541] = 134021, -- Coyote Steak
-					[6415] = 133891, -- Fillet of Frenzy
-					[185704] = 134034, -- Lemon Herb Fillet
-					[43779] = 133783, -- Delicious Chocolate Cake
-					[7751] = 133893, -- Brilliant Smallfish
-					[2538] = 133974, -- Charred Wolf Meat
-					[15935] = 134002, -- Crispy Bat Wing
-					[8604] = 132834, -- Herb Baked Egg
-					[33276] = 134003, -- Lynx Steak
-					[2540] = 133974, -- Roasted Boar Meat
-					[33277] = 134016, -- Roasted Moongraze Tenderloin
-					[7752] = 133910, -- Slitherskin Mackerel
-					[93741] = 133969, -- Venison Jerky
-					[6412] = 134024, -- Kaldorei Spider Kabob
-					[2539] = 134021, -- Spiced Wolf Meat
-					[3397] = 134003, -- Big Bear Steak
-					[37836] = 134051, -- Spice Bread
-					-- Holiday Cooking
-					[45022] = 132810, -- Hot Apple Cider
-					[62051] = 250625, -- Candied Sweet Potato (Alliance)
-					[66034] = 250625, -- Candied Sweet Potato (Horde)
-					[62049] = 250622, -- Cranberry Chutney (Alliance)
-					[66035] = 250622, -- Cranberry Chutney (Horde)
-					[62045] = 250626, -- Slow-Roasted Turkey (Alliance)
-					[66037] = 250626, -- Slow-Roasted Turkey (Horde)
-					[62044] = 250623, -- Pumpkin Pie (Alliance)
-					[66036] = 250623, -- Pumpkin Pie (Horde)
-					[66038] = 250624, -- Spice Bread Stuffing (Aliance)
-					[62050] = 250624, -- Spice Bread Stuffing (Horde)
-					[21144] = 132791, -- Winter Veil Egg Nog
-					[21143] = 134018, -- Gingerbread Cookie
-					[65454] = 307567, -- Bread of the Dead
-					-- Unusual Delights
-					[15906] = 132804, -- Dragonbreath Chili
-					[8238] = 134302, -- Savory Deviate Delight
-					[9513] = 132819, -- Thistle Tea
-					[45695] = 132790, -- Captain Rumsey's Lager
+					[338204] = 1029738, -- Bramblethorn Juice
+					[338199] = 650637, -- Brutal Oil
+					[338200] = 133849, -- Crushed Bones
+					[338195] = 132807, -- Distilled Resolve
+					[338198] = 609897, -- Draught of Grotesque Strength
+					[338202] = 967530, -- Elixir of Humility
+					[338194] = 609901, -- Flask of Measured Discipline
+					[338191] = 236878, -- Liquid Sleep
+					[338190] = 967529, -- Potion of Hibernal Rest
+					[338192] = 134379, -- Powdered Dreamroot
+					[338196] = 133208, -- Pulverized Breezebloom
+					[338203] = 461806, -- Refined Submission
+					-- Anti-Venoms
+					[307100] = 3566826, -- Spiritual Anti-Venom
+					-- Cauldrons
+					[307087] = 3620414, -- Eternal Cauldron
+					-- Combat Potions
+					[307093] = 3566835, -- Potion of Spectral Agility
+					[307096] = 3566836, -- Potion of Spectral Intellect
+					[307097] = 3566837, -- Potion of Spectral Stamina
+					[307098] = 3566838, -- Potion of Spectral Strength
+					[307384] = 3566833, -- Potion of Deathly Fixation
+					[307381] = 3566831, -- Potion of Empowered Exorcisms
+					[307383] = 3566830, -- Potion of Divine Awakening
+					[307382] = 3566829, -- Potion of Phantom Fire
+					[322301] = 3566832, -- Potion of Sacrificial Anima
+					[307094] = 3566834, -- Potion of Hardened Shadows
+					[307095] = 3566828, -- Potion of Spiritual Clarity
+					[261423] = 3566859, -- Spiritual Rejuvenation Potion
+					[301578] = 3566860, -- Spiritual Healing Potion
+					[301683] = 3566858, -- Spiritual Mana Potion
+					-- Flasks
+					[307101] = 3566840, -- Spectral Flask of Power
+					[307103] = 3566841, -- Spectral Flask of Stamina
+					-- Optional Reagents
+					[343676] = 1500875, -- Crafter's Mark of the Chained Isle
+					[343677] = 1500871, -- Crafter's Mark III
+					[343678] = 1500867, -- Crafter's Mark II
+					[343679] = 1500863, -- Crafter's Mark I
+					[343675] = 1500861, -- Novice Crafter's Mark
+					-- Oils and Extracts
+					[307122] = 3566853, -- Ground Widowbloom
+					[307121] = 3566852, -- Ground Vigil's Torch
+					[307125] = 3566850, -- Ground Nightshade
+					[307123] = 3566856, -- Ground Marrowroot
+					[307124] = 3566857, -- Ground Rising Glory
+					[307120] = 3566855, -- Ground Death Blossom
+					[307119] = 463544, -- Embalmer's Oil
+					[307118] = 463543, -- Shadowcore Oil
+					-- Transmutation
+					[307143] = 1778229, -- Shadestone
+					[307142] = 3528421, -- Shadowghast Ingot
+					[307144] = 1519431, -- Stones to Ore
+					-- Trinkets
+					[307200] = 3566862, -- Spiritual Alchemy Stone
+					-- Utility Potions
+					[344316] = 967556, -- Potion of the Psychopomp's Speed
+					[256133] = 3566866, -- Potion of Specter Swiftness
+					[256134] = 3566865, -- Potion of Soul Purity
+					[342887] = 3566869, -- Potion of Unhindered Passing
+					[295084] = 3566867, -- Potion of Shaded Sight
+					[261424] = 3566868, -- Potion of the Hidden Spirit
+					-- Other
+					[354885] = 3566847, -- Blossom Burst
+					[354881] = 3566849, -- Glory Burst
+					[354880] = 3566848, -- Marrow Burst
+					[354884] = 3566844, -- Torch Burst
+					[354882] = 3566845, -- Widow Burst
+					[334413] = 2061718, -- Red Noggin Candle
+				-- Kul Tiran Alchemy & Zandalari Alchemy
+					-- Cauldrons
+					-- Combat Potions
+					-- Utility Potions
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Alchemy of the Broken Isles
+					-- Cauldrons
+					-- Combat Potions
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Utility Potions
+				-- Alchemy of Draenor
+					-- Cures & Tonics
+					-- Reagents and Research
+					-- Flasks
+					-- Transmutation
+					-- Potions and Elixirs
+					-- Trinkets and Trinket Upgrades
+				-- Alchemy of Pandaria
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+				-- Alchemy of the Cataclysm
+					-- Cauldrons
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+					-- Mounts
+				-- Alchemy of Northrend
+					-- Research
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+				-- Alchemy of Outland
+					-- Cauldrons
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+				-- Alchemy
+					-- Materials
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+					-- Anti-Venoms
 
-			-- Engineering
+			-- § Blacksmithing
+				-- Shadowlands Plans
+					-- Armor
+					-- Optional Reagents
+					-- Other
+					-- Shields
+					-- Reagents
+					-- Specialized Armor
+					-- Weapons
+					-- Weapons Mods
+				-- Kul Tiran Plans & Zandalari Plans
+					-- Optional Reagents
+					-- Armor
+					-- Weapons
+					-- Other
+					-- Mount Equipment
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Plans
+					-- Optional Reagents
+					-- Reagents
+					-- Relics
+					-- Armor
+					-- Other
+				-- Draenor Plans
+					-- Optional Reagents
+					-- Reagents and Research
+					-- Item Enhancers
+					-- Armor
+					-- Weapons and Shields
+					-- Other
+				-- Pandaren Plans
+					-- Optional Reagents
+					-- Materials
+					-- Equipment Mods
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Gauntlets
+					-- Bracers
+					-- Belts
+					-- Legs
+					-- Boots
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+				-- Cataclysm Plans
+					-- Optional Reagents
+					-- Materials
+					-- Equipment Mods
+					-- Armor
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+				-- Northrend Plans
+					-- Optional Reagents
+					-- Equipment Mods
+					-- Armor
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+				-- Outland Plans
+					-- Optional Reagents
+					-- Equipment Mods
+					-- Armor
+					-- Weapons
+				-- Blacksmithing Plans
+					-- Optional Reagents
+					-- Materials
+					-- Weapon Mods
+					-- Armor Mods
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Gauntlets
+					-- Bracers
+					-- Belts
+					-- Legs
+					-- Boots
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+
+			-- § Enchanting
+				-- Shadowlands Enchanting
+					-- Boot Enchantments
+					-- Bracer Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Glove Enchantments
+					-- Optional Reagents
+					-- Reagents
+					-- Ring Enchantments
+					-- Shatters
+					-- Wands
+					-- Weapon Enchantments
+					-- Other
+				-- Kul Tiran Enchanting & Zandalari Enchanting
+					-- Glove Enchantments
+					-- Ring Enchantments
+					-- Weapon Enchantments
+					-- Wrist Enchantments
+					-- Wands
+					-- Pets
+					-- Conversions
+					-- Mount Equipment
+					-- Disenchants
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Enchanting
+					-- Disenchant
+					-- Ring Enchantments
+					-- Cloak Enchantments
+					-- Neck Enchantments
+					-- Shoulder Enchantments
+					-- Glove Enchantments
+					-- Relics
+					-- Toys, Pets, and Mounts
+				-- Draenor Enchanting
+					-- Reagents and Research
+					-- Illusions
+					-- Weapon
+					-- Cloak
+					-- Neck
+					-- Ring
+					-- Other
+				-- Pandaria Enchanting
+					-- Illusions
+					-- Reagents
+					-- Armor Enchantments
+					-- Weapon Enchantments
+					-- Shield and Off-Hand Enchantments
+				-- Cataclysm Enchanting
+					-- Illusions
+					-- Reagents
+					-- Armor Enchantments
+					-- Weapon Enchantments
+					-- Shield and Off-Hand Enchantments
+					-- Pets
+				-- Northrend Enchanting
+					-- Illusions
+					-- Reagents
+					-- Boot Enchantments
+					-- Glove Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Bracer Enchantments
+					-- Weapon Enchantments
+					-- Shield Enchantments
+				-- Outland Enchanting
+					-- Illusions
+					-- Reagents
+					-- Boot Enchantments
+					-- Bracer Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Glove Enchantments
+					-- Weapon Enchantments
+					-- Shield Enchantments
+					-- Oils
+					-- Other
+				-- Enchanting
+					-- Illusions
+					-- Reagents
+					-- Boot Enchantments
+					-- Bracer Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Glove Enchantments
+					-- Weapon Enchantments
+					-- Shield Enchantments
+					-- Wands
+					-- Oils
+					-- Trinket
+
+			-- § Engineering
 				-- Shadowlands Engineering
 					-- Belt Attachments
 					[310496] = 136243, -- Electro-Jump
@@ -8086,81 +8329,421 @@ local function updateData()
 					[12590] = 134429, -- Gyromatic Micro-Adjustor
 					[7430] = 134520, -- Arclight Spanner
 
-			-- Inscription
+			-- § Inscription
+				-- Shadowlands Inscription
+					-- Ink
+					-- Optional Reagents
+					-- Books & Scrolls
+					-- Contracts
+					-- Cards
+					-- Vantus Runes
+					-- Staves
+					-- Off-Hands
+					-- Mass Milling
+					-- Hats
 				-- Kul Tiran Inscription & Zandalari Inscription
-				[298929] = 3007458, -- Marron Ink
-				[264777] = 2178489, -- Crimson Ink
-				[264776] = 2178529, -- Ultramarine Ink
+					-- Inks
+					[298929] = 3007458, -- Maroon Ink
+					[264777] = 2178489, -- Crimson Ink
+					[264776] = 2178529, -- Ultramarine Ink
+					[264778] = 2178532, -- Viridescent Ink
+					-- Books & Scrolls
+					-- Contracts
+					-- Trinkets
+					-- Off-Hands
+					-- Mass Milling
+					-- Vantus Runes
+					-- Glyphs
+					-- Conversions
+					-- Blood Contracts
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Inscription
+					-- Cards
+					-- Mass Milling
+					-- Glyphs
+					-- Vantus Runes
+					-- Books & Scrolls
+					-- Relics
+				-- Draenor Inscription
+					-- Reagents and Research
+					-- Tools
+					-- Mass Milling
+					-- Glyphs
+					-- Item Enhancers
+					-- Card
+					-- Staves & Wands
+					-- Off-Hand
+				-- Pandaria Inscription
+					-- Inks
+					-- Glyphs
+					-- Staves & Off-Hands
+					-- Trinkets
+					-- Cards
+					-- Scrolls & Research
+					-- Shoulder Inscription
+					-- Quest
+					-- Toys & Pets
+				-- Cataclysm Inscription
+					-- Inks
+					-- Glyphs
+					-- Scrolls & Research
+					-- Cards
+					-- Shoulder Inscription
+					-- Weapons & Off-Hands
+					-- Quest
+					-- Toys
+				-- Northrend Inscription
+					-- Inks
+					-- Glyphs
+					-- Scrolls & Research
+					-- Cards
+					-- Off-Hands
+					-- Shoulder Inscription
+				-- Outland Inscription
+					-- Inks
+					-- Glyphs
+					-- Cards
+					-- Scrolls & Research
+					-- Off-Hands
+				-- Inscription
+					-- Research
+					-- Ink
+					-- Card
+					-- Off-Hand
+					-- Scrolls
+					-- Clear Mind
+					-- Glyphs
+					-- Other
 
-			-- Mining
-				-- Pandaria Mining
-				[102167] = 612063, -- Smelt Trillium
-				[102165] = 538438, -- Smelt Ghost Iron
-				-- Cataclysm Mining
-				[74529] = 466846, -- Smelt Pyrite
-				[74537] = 463522, -- Smelt Hardened Elementium
-				[74530] = 463549, -- Smelt Elementium
-				[84038] = 135241, -- Smelt Obsidium
-				-- Northrend Mining
-				[49258] = 237049, -- Smelt Saronite
-				[55211] = 237045, -- Smelt Titanium
-				[55208] = 237046, -- Smelt Titansteel
-				[49252] = 133228, -- Smelt Cobalt
-				-- Outland Mining
-				[35750] = 132838, -- Earth Sunder
-				[35751] = 132839, -- Fire Sunder
-				[46353] = 133235, -- Smelt Hardened Khorium
-				[29361] = 133223, -- Smelt Khorium
-				[29686] = 133226, -- Smelt Hardened Adamantite
-				[29360] = 133231, -- Smelt Felsteel
-				[29359] = 133225, -- Smelt Eternium
-				[29358] = 133224, -- Smelt Adamantite
-				[29356] = 133230, -- Smelt Fel Iron
-				-- Mining
-				[14891] = 133233, -- Smelt Dark Iron
-				[22967] = 133235, -- Smelt Enchanted Elementium
-				[70524] = 133229, -- Enchanted Thorium Bar
-				[16153] = 133221, -- Smelt Thorium
-				[10098] = 133222, -- Smelt Truesilver
-				[10097] = 133220, -- Smelt Mithril
-				[3308] = 133217, -- Smelt Gold
-				[3307] = 133232, -- Smelt Iron
-				[3569] = 133234, -- Smelt Steel
-				[2659] = 133227, -- Smelt Bronze
-				[2658] = 133215, -- Smelt Silver
-				[3304] = 133219, -- Smelt Tin
-				[2657] = 133216, -- Smelt Copper
+			-- § Jewelcrafting
+				-- Shadowlands Designs
+					-- Quest Recipes
+					[338248] = 1033177, -- Brilliant Bauble
+					[338244] = 1022155, -- Carved Crystal Ring
+					[338239] = 1408445, -- Engraved Phaedrum Band
+					[338246] = 135229, -- Faceted Crystal
+					[338249] = 236922, -- Fine Sinvyr Chain
+					[338238] = 1391681, -- Gem Studded Bangle
+					[338241] = 1112954, -- Gleaming Kyranite Necklace
+					[338245] = 1716831, -- Hollowed Crystal
+					[338242] = 338783, -- Kyranite Dangle
+					[338240] = 134072, -- Polished Gemstones
+					[338247] = 1379215, -- Sinister Choker
+					[338243] = 133243, -- Solenium Wire
+					-- Gems
+					[311867] = 3743163, -- Straddling Jewel Doublet
+					[311866] = 3743155, -- Versatile Jewel Doublet
+					[311868] = 3743164, -- Deadly Jewel Doublet
+					[311869] = 3743165, -- Masterful Jewel Doublet
+					[311871] = 3743167, -- Quick Jewel Doublet
+					[311870] = 3743166, -- Revitalizing Jewel Doublet
+					[311863] = 3743190, -- Deadly Jewel Cluster
+					[311859] = 3743188, -- Versatile Jewel Cluster
+					[311864] = 3743191, -- Masterful Jewel Cluster
+					[311865] = 3743193, -- Quick Jewel Cluster
+					-- Mass Prospecting
+					[311948] = 3594132, -- Mass Prospect Laestrite
+					[311950] = 3608331, -- Mass Prospect Oxxein
+					[311951] = 3537032, -- Mass Prospect Phaedrum
+					[311952] = 3616941, -- Mass Prospect Sinvyr
+					[311949] = 3731242, -- Mass Prospect Solenium
+					[311953] = 3749971, -- Mass Prospect Elethium
+					-- Optional Reagents
+					[343693] = 1500861, -- Novice Crafter's Mark
+					[343697] = 1500863, -- Crafter's Mark I
+					[343696] = 1500867, -- Crafter's Mark II
+					[343695] = 1500871, -- Crafter's Mark III
+					[352443] = 1411836, -- Vestige of Origins
+					[343694] = 1500875, -- Crafter's Mark of the Chained Isle
+					-- Necklaces
+					[311902] = 3754299, -- Deadly Laestrite Choker
+					[311904] = 3743178, -- Masterful Laestrite Choker
+					[311903] = 3754300, -- Quick Laestrite Choker
+					[311905] = 3743176, -- Versatile Laestrite Choker
+					[311906] = 3754302, -- Deadly Sinvyr Necklace
+					[311908] = 3747267, -- Masterful Phaedrum Necklace
+					[311907] = 3754303, -- Quick Oxxein Necklace
+					[311909] = 3747265, -- Versatile Solenium Necklace
+					-- Rings
+					[311880] = 3743181, -- Deadly Laestrite Band
+					[311882] = 3743182, -- Masterful Laestrite Band
+					[311881] = 3754301, -- Quick Laestrite Band
+					[311883] = 3743180, -- Versatile Laestrite Band
+					[311884] = 3743185, -- Deadly Sinvyr Ring
+					[311886] = 3743186, -- Masterful Phaedrum Ring
+					[311885] = 3754304, -- Quick Oxxein Ring
+					[311887] = 3743184, -- Versatile Solenium Ring
+					-- Specialized Jewelry
+					[327921] = 3747268, -- Shadowghast Necklace (Rank 1)
+					[332040] = 3747268, -- Shadowghast Necklace (Rank 2)
+					[332075] = 3747268, -- Shadowghast Necklace (Rank 3)
+					[338977] = 3747268, -- Shadowghast Necklace (Rank 4)
+					[327920] = 3743187, -- Shadowghast Ring (Rank 1)
+					[332039] = 3743187, -- Shadowghast Ring (Rank 2)
+					[332074] = 3743187, -- Shadowghast Ring (Rank 3)
+					[338978] = 3743187, -- Shadowghast Ring (Rank 4)
+					-- Statues
+					[355187] = 3852566, -- Porous Stone Statue
+					[355189] = 3852564, -- Shaded Stone Statue
+					-- Hats
+					[334548] = 1670851, -- Crown of the Righteous
+				-- Kul Tiran Designs & Zandalari Designs
+					-- Gems
+					-- Mass Prospecting
+					-- Rings
+					-- Weapons
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Designs
+					-- Rings
+					-- Necklaces
+					-- Gems
+					-- Crowns
+					-- Other
+					-- Mass Prospecting
+				-- Draenor Designs
+					-- Reagents and Research
+					-- Jewelry Enhancers
+					-- Jewelry
+					-- Gems
+					-- Other
+				-- Pandaria Designs
+					-- Research
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Necklaces
+					-- Rings
+					-- Mounts
+					-- Toys & Pets
+				-- Cataclysm Designs
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Necklaces
+					-- Rings
+					-- Crowns
+					-- Fist Weapons
+					-- Toys & Prisms
+				-- Northrend Designs
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Prismatic Gems
+					-- Necklaces
+					-- Rings
+					-- Pets and Projects
+				-- Outland Designs
+					-- Reagents
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Necklaces
+					-- Rings
+					-- Crowns
+					-- Trinkets
+					-- Prisms & Statues
+				-- Jewelcrafting Designs
+					-- Rings
+					-- Necklaces
+					-- Materials
+					-- Crowns
+					-- Trinkets
+					-- Fist Weapons
+					-- Statues
 
-			-- Tailoring
+			-- § Leatherworking
 				-- Shadowlands Patterns
-					-- Armor
-					[310901] = 3527521, -- Shadowlace Trousers
-					[310902] = 3527525, -- Shadowlace Mantle
-					[310897] = 3527523, -- Shadowlace Tunic
-					[310900] = 3527519, -- Shadowlace Cowl
-					[310898] = 3527513, -- Shadowlace Cloak
-					[310899] = 3527517, -- Shadowlace Handwraps
-					[310903] = 3527505, -- Shadowlace Cord
-					[310896] = 3527508, -- Shadowlace Footwraps
-					[310904] = 3527510, -- Shadowlace Cuffs
-					[310875] = 3386283, -- Shrouded Cloth Spaulders
-					[310874] = 3386281, -- Shrouded Cloth Pants
-					[310870] = 3386282, -- Shrouded Cloth Robe
-					[310873] = 3386280, -- Shrouded Cloth Hood
-					[310871] = 3386277, -- Shrouded Cloth Cape
-					[310872] = 3386279, -- Shrouded Cloth Mittens
-					[310876] = 3449934, -- Shrouded Cloth Belt
-					[310869] = 3386274, -- Shrouded Cloth Sandals
-					[310877] = 3386275, -- Shrouded Cloth Bracers
-					-- Hats & Accessories
-					[355183] = 454036, -- Shrouded Hand Towel
-					[334499] = 669448, -- Pink Party Hat
+					-- Materials
+					-- Optional Reagents
+					-- Armor Kits
+					-- Other
+					-- Specialized Armor
+					-- Leather Armor
+					-- Mail Armor
+					-- Weapons
+					-- Mount Equipment
+				-- Kul Tiran Patterns & Zandalari Patterns
+					-- Optional Reagents
+					-- Leather Armor
+					-- Mail Armor
+					-- Weapons
+					-- Mount Equipment
+					-- Other
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Patterns
+					-- Optional Reagents
+					-- Leather Armor
+					-- Mail Armor
+					-- Other
+				-- Draenor Patterns
+					-- Optional Reagents
+					-- Reagents and Research
 					-- Bags
-					[345986] = 3528455, -- Lightless Silk Pouch
-					[3528454] = 3528454, -- Shrouded Cloth Bag
-					-- Bandages
-					[310923] = 3528457, -- Heavy Shrouded Cloth Bandage
-					[310924] = 3528458, -- Shrouded Cloth Bandage
+					-- Armor Enhancers
+					-- Leather Armor
+					-- Mail Armor
+					-- Cloaks
+					-- Other
+				-- Pandaria Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Embossments
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Drums
+					-- Research
+				-- Cataclysm Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+				-- Northrend Patterns
+					-- Optional Research
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Drums
+				-- Outland Patterns
+					-- Optional Research
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Special
+					-- Drums
+				-- Leatherworking Patterns
+					-- Optional Research
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+
+			-- § Mining
+				-- Pandaria Mining
+					-- Smelting
+					[102167] = 612063, -- Smelt Trillium
+					[102165] = 538438, -- Smelt Ghost Iron
+				-- Cataclysm Mining
+					-- Smelting
+					[74529] = 466846, -- Smelt Pyrite
+					[74537] = 463522, -- Smelt Hardened Elementium
+					[74530] = 463549, -- Smelt Elementium
+					[84038] = 135241, -- Smelt Obsidium
+				-- Northrend Mining
+					-- Smelting
+					[49258] = 237049, -- Smelt Saronite
+					[55211] = 237045, -- Smelt Titanium
+					[55208] = 237046, -- Smelt Titansteel
+					[49252] = 133228, -- Smelt Cobalt
+				-- Outland Mining
+					-- Elemental
+					[35750] = 132838, -- Earth Sunder
+					[35751] = 132839, -- Fire Sunder
+					-- Smelting
+					[46353] = 133235, -- Smelt Hardened Khorium
+					[29361] = 133223, -- Smelt Khorium
+					[29686] = 133226, -- Smelt Hardened Adamantite
+					[29360] = 133231, -- Smelt Felsteel
+					[29359] = 133225, -- Smelt Eternium
+					[29358] = 133224, -- Smelt Adamantite
+					[29356] = 133230, -- Smelt Fel Iron
+				-- Mining
+					-- Smelting
+					[14891] = 133233, -- Smelt Dark Iron
+					[22967] = 133235, -- Smelt Enchanted Elementium
+					[70524] = 133229, -- Enchanted Thorium Bar
+					[16153] = 133221, -- Smelt Thorium
+					[10098] = 133222, -- Smelt Truesilver
+					[10097] = 133220, -- Smelt Mithril
+					[3308] = 133217, -- Smelt Gold
+					[3307] = 133232, -- Smelt Iron
+					[3569] = 133234, -- Smelt Steel
+					[2659] = 133227, -- Smelt Bronze
+					[2658] = 133215, -- Smelt Silver
+					[3304] = 133219, -- Smelt Tin
+					[2657] = 133216, -- Smelt Copper
+
+			-- § Tailoring
+				-- Shadowlands Patterns
+					-- Quest Recipes
+					[338270] = 132901, -- Ardensilk Cloth
+					[338277] = 237280, -- Bleakcloth
+					[338269] = 132902, -- Bolt of Ardensilk Cloth
+					[338276] = 463536, -- Bolt of Bleakcloth
+					[338279] = 466845, -- Bolt of Prideweave
+					[338272] = 348544, -- Bolt of Woven Gossamer
+					[338267] = 348279, -- Cloak of Camouflage
+					[338273] = 463524, -- Gossamer Cloth
+					[338275] = 1318381, -- Haunting Hood
+					[338278] = 132484, -- Looming Tapestry
+					[338280] = 466843, -- Pridewing Cloth
+					[338271] = 132625, -- Woven Gossamer Tunic
 					-- Optional Reagents
 					[352445] = 1411836, -- Vestige of Origins
 					[343200] = 1500875, -- Crafter's Mark of the Chained Isle
@@ -8168,6 +8751,9 @@ local function updateData()
 					[343202] = 1500867, -- Crafter's Mark II
 					[343204] = 1500863, -- Crafter's Mark I
 					[343659] = 1500861, -- Novice Crafter's Mark
+					-- Bags
+					[345986] = 3528455, -- Lightless Silk Pouch
+					[3528454] = 3528454, -- Shrouded Cloth Bag
 					-- Specialized Armor
 					[310885] = 3552673, -- Grim-Veiled Belt
 					[332037] = 3552673, -- Grim-Veiled Belt
@@ -8205,25 +8791,43 @@ local function updateData()
 					[332036] = 3552785, -- Grim-Veiled Spaulders
 					[332071] = 3552785, -- Grim-Veiled Spaulders
 					[339002] = 3552785, -- Grim-Veiled Spaulders
-					-- Quest Recipes
-					[338270] = 132901, -- Ardensilk Cloth
-					[338277] = 237280, -- Bleakcloth
-					[338269] = 132902, -- Bolt of Ardensilk Cloth
-					[338276] = 463536, -- Bolt of Bleakcloth
-					[338279] = 466845, -- Bolt of Prideweave
-					[338272] = 348544, -- Bolt of Woven Gossamer
-					[338267] = 348279, -- Cloak of Camouflage
-					[338273] = 463524, -- Gossamer Cloth
-					[338275] = 1318381, -- Haunting Hood
-					[338278] = 132484, -- Looming Tapestry
-					[338280] = 466843, -- Pridewing Cloth
-					[338271] = 132625, -- Woven Gossamer Tunic
+					-- Armor
+					[310901] = 3527521, -- Shadowlace Trousers
+					[310902] = 3527525, -- Shadowlace Mantle
+					[310897] = 3527523, -- Shadowlace Tunic
+					[310900] = 3527519, -- Shadowlace Cowl
+					[310898] = 3527513, -- Shadowlace Cloak
+					[310899] = 3527517, -- Shadowlace Handwraps
+					[310903] = 3527505, -- Shadowlace Cord
+					[310896] = 3527508, -- Shadowlace Footwraps
+					[310904] = 3527510, -- Shadowlace Cuffs
+					[310875] = 3386283, -- Shrouded Cloth Spaulders
+					[310874] = 3386281, -- Shrouded Cloth Pants
+					[310870] = 3386282, -- Shrouded Cloth Robe
+					[310873] = 3386280, -- Shrouded Cloth Hood
+					[310871] = 3386277, -- Shrouded Cloth Cape
+					[310872] = 3386279, -- Shrouded Cloth Mittens
+					[310876] = 3449934, -- Shrouded Cloth Belt
+					[310869] = 3386274, -- Shrouded Cloth Sandals
+					[310877] = 3386275, -- Shrouded Cloth Bracers
+					-- Hats & Accessories
+					[355183] = 454036, -- Shrouded Hand Towel
+					[334499] = 669448, -- Pink Party Hat
+					-- Bandages
+					[310923] = 3528457, -- Heavy Shrouded Cloth Bandage
+					[310924] = 3528458, -- Shrouded Cloth Bandage
 				-- Kul Tiran Patterns & Zandalari Patterns
 					-- Embroidery
 					[272440] = 2060257, -- Embroidered Deep Sea Satin
 					[279183] = 136249, -- Discreet Spellthread
 					[279184] = 136249, -- Feathery Spellthread
 					[279182] = 136249, -- Resilient Spellthread
+					-- Optional Reagents
+					[330257] = 132527, -- Relic of the Past I
+					[330258] = 132528, -- Relic of the Past II
+					[330259] = 132529, -- Relic of the Past III
+					[330260] = 132531, -- Relic of the Past IV
+					[330261] = 132532, -- Relic of the Past V
 					-- Bags
 					[257130] = 2023244, -- Embroidered Deep Sea Bag (Rank 3)
 					[257129] = 2023244, -- Embroidered Deep Sea Bag (Rank 2)
@@ -8513,6 +9117,7 @@ local function updateData()
 					-- Cures of Draenor
 					[172539] = 1014022, -- Antiseptic Bandage
 				-- Pandaria Patterns
+					-- Optional Reagents
 					-- Materials
 					-- Embroidery
 					-- Spellthreads
@@ -8528,6 +9133,7 @@ local function updateData()
 					-- Cloaks
 					-- Bandages
 				-- Cataclysm Patterns
+					-- Optional Reagents
 					-- Materials
 					-- Spellthreads
 					-- Bags
@@ -8543,8 +9149,9 @@ local function updateData()
 					-- Nets
 					-- Bandages
 				-- Northrend Patterns
+					-- Optional Reagents
 					-- Materials
-					-- Spellthreads
+					-- Spellthread
 					-- Bags
 					-- Hats & Hoods
 					-- Shoulders
@@ -8560,6 +9167,7 @@ local function updateData()
 					-- Nets
 					-- Bandages
 				-- Outland Patterns
+					-- Optional Reagents
 					-- Materials
 					-- Spellthreads
 					-- Bags
@@ -8575,6 +9183,7 @@ local function updateData()
 					-- Nets
 					-- Bandages
 				-- Tailoring Patterns
+					-- Optional Reagents
 					-- Materials
 					-- Bags
 					-- Hats & Hoods
@@ -8588,6 +9197,531 @@ local function updateData()
 					-- Cloaks
 					-- Shirts
 					-- Bandages
+
+			-- § Cooking
+				-- Shadowlands Cuisine
+					-- Feasts
+					[308402] = 3760524, -- Surprisingly Palatable Feast
+					[308403] = 3760523, -- Feast of Gluttonous Hedonism
+					-- Large Meals
+					[308400] = 3671897, -- Spinefin Souffle and Fries
+					[308413] = 3671891, -- Iridescent Ravioli with Apple Sauce
+					[308405] = 3671905, -- Tenebrous Crown Roast Aspic
+					[308426] = 3671904, -- Steal a la Mode
+					[308411] = 3671889, -- Candied Amberjack Cakes
+					[308415] = 3671886, -- Banana Beaf Pudding
+					-- Light Meals
+					[354768] = 135233, -- Porous Rock Candy
+					[354764] = 132814, -- Twilight Tea
+					[354766] = 133950, -- Bonemeal Bread
+					[308404] = 3671890, -- Cinnamon Bonefish Stew
+					[308412] = 3671894, -- Meaty Apple Dumplings
+					[308425] = 3671901, -- Sweet Silvergill Sausages
+					[308397] = 3671888, -- Butterscotch Marinated Ribs
+					[308414] = 3671898, -- Pickled Meat Smoothie
+					[308410] = 3671887, -- Biscuits and Caviar
+					-- Soul Food
+					[308419] = 3671902, -- Smothered Shank
+					[308417] = 3671900, -- Seraph Tenders
+					[308416] = 3671899, -- Quiethounds
+					[308420] = 3671893, -- Fried Bonefish
+					-- Quest Recipes
+					[338100] = 651358, -- Arden Apple Pie
+					[338107] = 650635, -- Diced Vegetables
+					[338115] = 133779, -- Ember Sauce
+					[338106] = 1045948, -- Grazer Bone Broth
+					[338101] = 1500973, -- Oat Pie Crust
+					[338117] = 134040, -- Seared Cutlets
+					[338116] = 237337, -- Skewered Meats
+					[338102] = 646177, -- Sliced Arden Apples
+					[338110] = 237346, -- Spider Jerky
+					[338105] = 134019, -- Steward Stew
+					[338113] = 237339, -- Thick Spider Meat
+				-- Kul Tiran Cuisine & Zandalari Cuisine
+					-- Delicacies
+					[314959] = 461132, -- Baked Voidfin
+					[314961] = 237335, -- Dubious Delight
+					[314962] = 237331, -- Ghastly Goulash
+					[314963] = 237353, -- Grilled Gnasher
+					[314960] = 461134, -- K'Bab
+					-- Light Meals
+					[303788] = 134042, -- Unagi Skewer
+					[259435] = 2066018, -- Seasoned Loins (Rank 3)
+					[259434] = 2066018, -- Seasoned Loins (Rank 2)
+					[259433] = 2066018, -- Seasoned Loins (Rank 1)
+					[286381] = 2443145, -- Honey Potpie
+					[259432] = 2066007, -- Grilled Catfish (Rank 3)
+					[259431] = 2066007, -- Grilled Catfish (Rank 2)
+					[259430] = 2066007, -- Grilled Catfish (Rank 1)
+					[280282] = 133199, -- Heartsbane Hexwurst
+					-- Desserts
+					[259413] = 2066009, -- Kul Tiramisu (Rank 3)
+					[259412] = 2066009, -- Kul Tiramisu (Rank 2)
+					[259411] = 2066009, -- Kul Tiramisu (Rank 1)
+					[259438] = 2066010, -- Loa Loaf (Rank 3)
+					[259437] = 2066010, -- Loa Loaf (Rank 2)
+					[259436] = 2066010, -- Loa Loaf (Rank 1)
+					[259444] = 2066014, -- Mon'Dazi (Rank 3)
+					[259443] = 2066014, -- Mon'Dazi (Rank 2)
+					[259442] = 2066014, -- Mon'Dazi (Rank 1)
+					[259426] = 2066016, -- Ravenberry Tarts (Rank 3)
+					[259425] = 2066016, -- Ravenberry Tarts (Rank 2)
+					[259424] = 2066016, -- Ravenberry Tarts (Rank 1)
+					[288029] = 2466573, -- Wild Berry Bread (Rank 3)
+					[288028] = 2466573, -- Wild Berry Bread (Rank 2)
+					[288027] = 2466573, -- Wild Berry Bread (Rank 1)
+					-- Large Meals
+					[301392] = 134063, -- Mecha-Bytes
+					[297086] = 133904, -- Abyssal-Fried Rissole (Rank 3)
+					[297085] = 133904, -- Abyssal-Fried Rissole (Rank 2)
+					[297084] = 133904, -- Abyssal-Fried Rissole (Rank 1)
+					[297083] = 651570, -- Baked Port Tato (Rank 3)
+					[297082] = 651570, -- Baked Port Tato (Rank 2)
+					[297081] = 651570, -- Baked Port Tato (Rank 1)
+					[297089] = 134004, -- Bil'Tong (Rank 3)
+					[297088] = 134004, -- Bil'Tong (Rank 2)
+					[297087] = 134004, -- Bil'Tong (Rank 1)
+					[297074] = 461136, -- Fragrant Kakavia (Rank 3)
+					[297075] = 461136, -- Fragrant Kakavia (Rank 2)
+					[297077] = 461136, -- Fragrant Kakavia (Rank 1)
+					[297080] = 1046262, -- Mech-Dowel's "Big Mech" (Rank 3)
+					[297079] = 1046262, -- Mech-Dowel's "Big Mech" (Rank 2)
+					[297078] = 1046262, -- Mech-Dowel's "Big Mech" (Rank 1)
+					[259416] = 2066008, -- Honey-Glazed Haunches (Rank 3)
+					[259415] = 2066008, -- Honey-Glazed Haunches (Rank 3)
+					[259414] = 2066008, -- Honey-Glazed Haunches (Rank 3)
+					[259441] = 2066017, -- Sailor's Pie (Rank 3)
+					[259440] = 2066017, -- Sailor's Pie (Rank 2)
+					[259439] = 2066017, -- Sailor's Pie (Rank 1)
+					[288033] = 2466899, -- Seasoned Steak and Potatoes (Rank 3)
+					[288032] = 2466899, -- Seasoned Steak and Potatoes (Rank 2)
+					[288030] = 2466899, -- Seasoned Steak and Potatoes (Rank 1)
+					[259447] = 2066019, -- Spiced Snapper (Rank 3)
+					[259446] = 2066019, -- Spiced Snapper (Rank 2)
+					[259445] = 2066019, -- Spiced Snapper (Rank 1)
+					[259429] = 2066021, -- Swamp Fish 'n Chips (Rank 3)
+					[259428] = 2066021, -- Swamp Fish 'n Chips (Rank 2)
+					[259427] = 2066021, -- Swamp Fish 'n Chips (Rank 1)
+					[290473] = 133197, -- Boralus Blood Sausage (Rank 3)
+					[290472] = 133197, -- Boralus Blood Sausage (Rank 2)
+					[290471] = 133197, -- Boralus Blood Sausage (Rank 1)
+					-- Feasts
+					[297107] = 456330, -- Famine Evaluator And Snack Table (Rank 3)
+					[297106] = 456330, -- Famine Evaluator And Snack Table (Rank 2)
+					[297105] = 456330, -- Famine Evaluator And Snack Table (Rank 1)
+					[259423] = 2066011, -- Bountiful Captain's Feast (Rank 3)
+					[259422] = 2066011, -- Bountiful Captain's Feast (Rank 2)
+					[259421] = 2066011, -- Bountiful Captain's Feast (Rank 1)
+					[287112] = 2451910, -- Sanguinated Feast (Rank 3)
+					[287110] = 2451910, -- Sanguinated Feast (Rank 2)
+					[287108] = 2451910, -- Sanguinated Feast (Rank 1)
+					[259420] = 2066013, -- Galley Banquet (Rank 3)
+					[259419] = 2066013, -- Galley Banquet (Rank 2)
+					[259418] = 2066013, -- Galley Banquet (Rank 1)
+				-- Food of the Broken Isles
+					-- Snacks
+					[201685] = 1387636, -- Crispy Bacon (Rank 3)
+					[201684] = 1387636, -- Crispy Bacon (Rank 2)
+					[201683] = 1387636, -- Crispy Bacon (Rank 1)
+					[230046] = 651570, -- Spiced Falcosaur Omelet
+					[201560] = 1387641, -- Bear Tartare (Rank 3)
+					[201540] = 1387641, -- Bear Tartare (Rank 2)
+					[201513] = 1387641, -- Bear Tartare (Rank 1)
+					[201559] = 1387645, -- Dried Mackerel Strips (Rank 3)
+					[201539] = 1387645, -- Dried Mackerel Strips (Rank 2)
+					[201512] = 1387645, -- Dried Mackerel Strips (Rank 1)
+					[201561] = 1387649, -- Fighter Chow (Rank 3)
+					[201541] = 1387649, -- Fighter Chow (Rank 2)
+					[201514] = 1387649, -- Fighter Chow (Rank 1)
+					-- Light Meals
+					[201545] = 1387644, -- Deep-Fried Mossgill (Rank 3)
+					[201525] = 1387644, -- Deep-Fried Mossgill (Rank 2)
+					[201496] = 1387644, -- Deep-Fried Mossgill (Rank 1)
+					[201547] = 1387647, -- Faronaar Fizz (Rank 3)
+					[201527] = 1387647, -- Faronaar Fizz (Rank 2)
+					[201498] = 1387647, -- Faronaar Fizz (Rank 1)
+					[201546] = 1387660, -- Pickled Stormray (Rank 3)
+					[201526] = 1387660, -- Pickled Stormray (Rank 2)
+					[201497] = 1387660, -- Pickled Stormray (Rank 1)
+					[201544] = 1387662, -- Salt and Pepper Shank (Rank 3)
+					[201524] = 1387662, -- Salt and Pepper Shank (Rank 2)
+					[201413] = 1387662, -- Salt and Pepper Shank (Rank 1)
+					[201548] = 1387664, -- Spiced Rib Roast (Rank 3)
+					[201528] = 1387664, -- Spiced Rib Roast (Rank 2)
+					[201499] = 1387664, -- Spiced Rib Roast (Rank 1)
+					-- Large Meals
+					[201551] = 1387640, -- Barracuda Mrglgagh (Rank 3)
+					[201531] = 1387640, -- Barracuda Mrglgagh (Rank 2)
+					[201502] = 1387640, -- Barracuda Mrglgagh (Rank 1)
+					[201553] = 1387646, -- Drogbar-Style Salmon (Rank 3)
+					[201533] = 1387646, -- Drogbar-Style Salmon (Rank 2)
+					[201504] = 1387646, -- Drogbar-Style Salmon (Rank 1)
+					[201552] = 1387653, -- Koi-Scented Stormray (Rank 3)
+					[201532] = 1387653, -- Koi-Scented Stormray (Rank 2)
+					[201503] = 1387653, -- Koi-Scented Stormray (Rank 1)
+					[201549] = 1387656, -- Leybeque Ribs (Rank 3)
+					[201529] = 1387656, -- Leybeque Ribs (Rank 2)
+					[201500] = 1387656, -- Leybeque Ribs (Rank 1)
+					[201550] = 1387666, -- Suramar Surf and Turf (Rank 3)
+					[201530] = 1387666, -- Suramar Surf and Turf (Rank 2)
+					[201501] = 1387666, -- Suramar Surf and Turf (Rank 1)
+					-- Delicacies
+					[201555] = 1387635, -- Azshari Salad (Rank 3)
+					[201535] = 1387635, -- Azshari Salad (Rank 2)
+					[201506] = 1387635, -- Azshari Salad (Rank 1)
+					[201558] = 1387650, -- Fishbrul Special (Rank 3)
+					[201538] = 1387650, -- Fishbrul Special (Rank 2)
+					[201511] = 1387650, -- Fishbrul Special (Rank 1)
+					[201556] = 1387659, -- Nightborne Delicacy Platter (Rank 3)
+					[201536] = 1387659, -- Nightborne Delicacy Platter (Rank 2)
+					[201507] = 1387659, -- Nightborne Delicacy Platter (Rank 1)
+					[201557] = 1387663, -- Seed-Battered Fish Plate (Rank 3)
+					[201537] = 1387663, -- Seed-Battered Fish Plate (Rank 2)
+					[201508] = 1387663, -- Seed-Battered Fish Plate (Rank 1)
+					[201554] = 1387667, -- The Hungry Magister (Rank 3)
+					[201534] = 1387667, -- The Hungry Magister (Rank 2)
+					[201505] = 1387667, -- The Hungry Magister (Rank 1)
+					-- Feasts
+					[201562] = 1387652, -- Hearty Feast (Rank 3)
+					[201542] = 1387652, -- Hearty Feast (Rank 2)
+					[201515] = 1387652, -- Hearty Feast (Rank 1)
+					[201563] = 1387654, -- Lavish Suramar Feast (Rank 3)
+					[201543] = 1387654, -- Lavish Suramar Feast (Rank 2)
+					[201516] = 1387654, -- Lavish Suramar Feast (Rank 1)
+					[251258] = 237270, -- Feast of the Fishes
+				-- Food of Draenor
+					-- Feasts
+					[173978] = 1053712, -- Feast of Blood
+					[173979] = 1053713, -- Feast of the Waters
+					-- Delicacies
+					[160986] = 1046248, -- Blackrock Barbecue
+					[160999] = 1046251, -- Calamari Crepes
+					[160987] = 1046255, -- Frosty Stew
+					[161000] = 1046256, -- Gorgrond Chowder
+					[160989] = 1046261, -- Sleeper Surprise
+					[160984] = 1046263, -- Talador Surf and Turf
+					-- Meat Dishes
+					[160962] = 1046249, -- Blackrock Ham
+					[160968] = 1046250, -- Braised Riverbeast
+					[160971] = 1046253, -- Clefthoof Sausages
+					[160958] = 1046257, -- Hearty Elekk Steak
+					[160966] = 1046259, -- Pan-Seared Talbuk
+					[160969] = 1046260, -- Rylak Crepes
+					[190788] = 1241154, -- Fel Eggs and Ham
+					-- Fish Dishes
+					[160981] = 1045937, -- Fat Sleeper Cakes
+					[160982] = 1045938, -- Fiery Calamari
+					[160978] = 1045939, -- Grilled Gulper
+					[160983] = 1045952, -- Skulker Chowder
+					[160973] = 1045950, -- Steamed Scorpion
+					[160979] = 1045951, -- Sturgeon Stew
+					[161002] = 1045940, -- Grilled Saberfish
+					[161001] = 1045948, -- Saberfish Broth
+					[180761] = 1045949, -- Buttered Sturgeon
+					[180759] = 533422, -- Jumbo Sea Dog
+					[180758] = 461138, -- Pickled Eel
+					[180757] = 350561, -- Salty Squid Roll
+					[180762] = 461137, -- Sleeper Sushi
+					[180760] = 461132, -- Whiptail Fillet
+				-- Pandaren Cuisine
+					-- Way of the Grill
+					[125141] = 651575, -- Banquet of the Grill
+					[104300] = 651331, -- Black Pepper Ribs and Shrimp
+					[145311] = 133948, -- Fluffy Silkfeather Omelet
+					[125142] = 651585, -- Great Banquet of the Grill
+					[104299] = 651568, -- Eternal Blossom Fish
+					[104298] = 651597, -- Charbroiled Tiger Steak
+					-- Way of the Wok
+					[125594] = 651589, -- Banquet of the Wok
+					[125595] = 651579, -- Great Banquet of the Wok
+					[104303] = 651592, -- Sea Mist Rice Noodles
+					[145305] = 646177, -- Seasoned Pomfruit Slices
+					[104302] = 651599, -- Valley Stir Fry
+					[104301] = 651591, -- Sauteed Carrots
+					-- Way of the Pot
+					[125596] = 651587, -- Banquet of the Pot
+					[125597] = 651577, -- Great Banquet of the Pot
+					[104306] = 651582, -- Mogu Fish Stew
+					[145307] = 134210, -- Spiced Blossom Soup
+					[104305] = 651567, -- Braised Turtle
+					[104304] = 651596, -- Swiling Mist Soup
+					-- Way of the Steamer
+					[125598] = 651588, -- Banquet of the Steamer
+					[145309] = 237331, -- Farmer's Delight
+					[125599] = 651578, -- Great Banquet of the Steamer
+					[104309] = 651595, -- Steamed Crab Surprise
+					[104308] = 651569, -- Fire Spirit Salmon
+					[104307] = 651593, -- Shrimp Dumplings
+					-- Way of the Oven
+					[125600] = 651586, -- Banquet of the Oven
+					[104312] = 651594, -- Chun Tian Spring Rolls
+					[125601] = 651576, -- Great Banquet of the Oven
+					[145310] = 451162, -- Stuffed Lushrooms
+					[104311] = 651598, -- Twin Fish Platter
+					[104310] = 651600, -- Wildfowl Roast
+					-- Way of the Brew
+					[125602] = 651583, -- Banquet of the Brew
+					[125603] = 651573, -- Great Banquet of the Brew
+					[124054] = 461805, -- Mad Brewer's Breakfast
+					[126655] = 132788, -- Banana Infused Rum
+					[126654] = 651581, -- Four Senses Brew
+					[124053] = 461804, -- Jade Witch Brew
+					[124052] = 651571, -- Ginseng Tea
+					-- Everyday Cooking
+					[145061] = 879828, -- Deluxe Noodle Cart Kit
+					[105194] = 651574, -- Great Pandaren Banquet
+					[145308] = 895874, -- Mango Ice
+					[145038] = 879826, -- Noodle Cart Kit
+					[105190] = 651584, -- Pandaren Banquet
+					[145062] = 879827, -- Pandaren Treasure Noodle Cart Kit
+					[125120] = 350563, -- Spicy Salmon
+					[125123] = 649817, -- Spicy Vegetable Chips
+					[124032] = 237337, -- Krasarang Fritters
+					[125122] = 650006, -- Rice Pudding
+					[124029] = 134020, -- Viseclaw Soup
+					[124233] = 651487, -- Blanched Needle Mushrooms
+					[124229] = 655152, -- Red Bean Bun
+					[124228] = 651538, -- Boiled Silkwork Pupa
+					[124227] = 651488, -- Dried Needle Mushrooms
+					[124226] = 134255, -- Dried Peaches
+					[104297] = 651570, -- Fish Cake
+					[104237] = 651572, -- Golden Carp Consomme
+					[124231] = 655706, -- Green Curry Fish
+					[124232] = 651358, -- Peach Pie
+					[125080] = 132815, -- Pearl Milk Tea
+					[125067] = 651997, -- Perfectly Cooked Instant Noodles
+					[124223] = 571819, -- Pounded Rice Cake
+					[125078] = 651601, -- Roasted Barley Tea
+					[124234] = 651877, -- Skewered Peanut Chicken
+					[125117] = 646177, -- Sliced Peaches
+					[124230] = 655708, -- Tangy Yogurt
+					[124225] = 651276, -- Toasted Fish Jerky
+					[125121] = 651489, -- Wildfowl Ginseng Soup
+					[124224] = 650635, -- Yak Cheese Curds
+				-- Cataclysm Recipes
+					-- Everyday Cooking
+					[88011] = 134055, -- Broiled Dragon Feast
+					[88019] = 460881, -- Fortune Cookie
+					[88036] = 350559, -- Seafood Magnifique Feast
+					[88003] = 351500, -- Baked Rockfish
+					[88004] = 133973, -- Basilisk Liverdog
+					[88005] = 350565, -- Beer-Basted Crocolisk
+					[88034] = 351506, -- Blackbelly Sushi
+					[88014] = 350567, -- Crocolisk Au Gratin
+					[88016] = 351503, -- Delicious Sagefish Tail
+					[88020] = 237335, -- Grilled Dragon
+					[88025] = 351499, -- Lavascale Minestrone
+					[88031] = 350558, -- Mushroom Sauce Mudfish
+					[88039] = 351505, -- Severed Sagefish Head
+					[88042] = 351508, -- Skewered Eel
+					[88013] = 237363, -- Chocolate Cookie
+					[88018] = 134044, -- Fish Fry
+					[96133] = 461136, -- Scalding Murglesnout
+					[88021] = 350560, -- Hearty Seafood Soup
+					[88033] = 351507, -- Pickled Guppy
+					[88046] = 350562, -- Tender Baked Turtle
+					[88012] = 351504, -- Broiled Mountain Trout
+					[88024] = 351501, -- Lavascale Fillet
+					[88028] = 351502, -- Lightly Fried Lurker
+					[88030] = 350562, -- Lurker Lunch
+					[88035] = 237299, -- Salted Eye
+					[88037] = 133708, -- Seasoned Crab
+					[88047] = 350559, -- Whitecrest Gumbo
+					[88006] = 133962, -- Blackened Surprise
+					-- Delightful Drinks
+					[88044] = 443395, -- South Island Iced Tea
+					[88022] = 132813, -- Highland Spirits
+					[88045] = 132802, -- Starfire Espresso
+					[88015] = 135999, -- Darkbrew Lager
+					-- Lures
+					[88017] = 135992, -- Feathered Lure
+				-- Recipes of the Cold North
+					-- Everyday Cooking
+					[57423] = 237303, -- Fish Feast
+					[58528] = 132184, -- Small Feast
+					[58527] = 132184, -- Gigantic Feast
+					[57441] = 237355, -- Blackened Dragonfin
+					[57438] = 134040, -- Blackened Worg Steak
+					[57435] = 134044, -- Critter Bites
+					[57439] = 237346, -- Cuttlesteak
+					[57442] = 134031, -- Dragonfin Filet
+					[45568] = 237354, -- Firecracker Salmon
+					[57436] = 237329, -- Hearty Rhino
+					[45570] = 237334, -- Imperial Manta Steak
+					[45555] = 133962, -- Mega Mammoth Meal
+					[45559] = 134022, -- Mighty Rhino Dogs
+					[45567] = 134033, -- Poached Northern Sculpin
+					[57434] = 134003, -- Rhinolicious Wormsteak
+					[57437] = 237342, -- Snapper Extreme
+					[57440] = 237336, -- Spiced Mammoth Treats
+					[45557] = 134021, -- Spiced Worm Burger
+					[45571] = 237352, -- Spicy Blue Nettlefish
+					[57433] = 134034, -- Spicy Fried Herring
+					[45556] = 237335, -- Tender Shoveltusk Steak
+					[57443] = 134041, -- Tracker Snacks
+					[45558] = 134016, -- Very Burnt Worg
+					[64358] = 134438, -- Black Jelly
+					[62350] = 134027, -- Worg Tartare
+					[45554] = 132184, -- Great Feast
+					[45569] = 237353, -- Baked Manta Ray
+					[58065] = 133780, -- Dalaran Clam Chowder
+					[45563] = 134035, -- Grilled Sculpin
+					[45549] = 237330, -- Mammoth Meal
+					[45566] = 134032, -- Pickled Fangtooth
+					[45565] = 237351, -- Poached Nettlefish
+					[45553] = 134009, -- Rhino Dogs
+					[45552] = 134042, -- Roasted Worg
+					[45550] = 134045, -- Shoveltusk Steak
+					[45564] = 237343, -- Smoked Salmon
+					[45551] = 237337, -- Worm Delight
+					[53056] = 132808, -- Kungaloosh
+					[58523] = 134431, -- Bad Clams
+					[45561] = 237356, -- Grilled Bonescale
+					[58525] = 237317, -- Haunted Herring
+					[58521] = 237328, -- Last Week's Mammoth
+					[57421] = 237331, -- Northern Stew
+					[45562] = 237338, -- Sauteed Goby
+					[45560] = 237344, -- Smoked Rockfin
+					[58512] = 135457, -- Tasty Cupcake
+				-- Outlandish Dishes
+					-- Everyday Cooking
+					[42302] = 134044, -- Fisherman's Feast
+					[42305] = 134032, -- Hot Buttered Trout
+					[33296] = 133902, -- Spicy Crawdad
+					[38868] = 134044, -- Crunchy Serpent
+					[38867] = 134004, -- Mok'Nathal Shortribs
+					[33295] = 133904, -- Golden Fish Sticks
+					[43772] = 134005, -- Kibler's Bits
+					[33287] = 134016, -- Roasted Clefthoof
+					[33289] = 134040, -- Talbuk Steak
+					[33288] = 134021, -- Warp Burger
+					[33293] = 134034, -- Grilled Mudfish
+					[33294] = 134032, -- Poached Bluefish
+					[33286] = 134042, -- Blackened Basilisk
+					[43707] = 134019, -- Skullfish Soup
+					[43765] = 134040, -- Spicy Hot Talbuk
+					[42296] = 134020, -- Stewed Trout
+					[33292] = 134035, -- Blackened Sporefish
+					[33290] = 134033, -- Blackened Trout
+					[43761] = 133915, -- Broiled Bloodfin
+					[33279] = 134041, -- Buzzard Bites
+					[36210] = 133983, -- Clam Bar
+					[33291] = 134030, -- Feltail Delight
+					[33284] = 134009, -- Ravager Dog
+					[43758] = 134047, -- Stormchops
+				-- Old World Recipes
+					-- Everyday Cooking
+					[18247] = 133906, -- Baked Salmon
+					[25659] = 134021, -- Dirge's Kickin' Chimaerok Chops
+					[18245] = 132804, -- Lobster Stew
+					[18246] = 134003, -- Mightfish Steak
+					[22761] = 134019, -- Runn Tum Tuber Surprise
+					[24801] = 134020, -- Smoked Desert Dumplings
+					[18242] = 133889, -- Hot Smoked Bass
+					[46684] = 134024, -- Charred Bear Kabobs
+					[46688] = 134021, -- Juicy Bear Burger
+					[18243] = 132804, -- Nightfin Soup
+					[18244] = 133905, -- Poached Sunscale Salmon
+					[64054] = 134433, -- Clamlette Magnifique
+					[18239] = 134301, -- Cooked Glossy Mightfish
+					[18241] = 133892, -- Filet of Redgill
+					[15933] = 133948, -- Monster Omelet
+					[15915] = 134004, -- Spiced Chili Crab
+					[22480] = 134003, -- Tender Wolf Steak
+					[20626] = 132804, -- Unddermine Clam Chowder
+					[185705] = 351502, -- Fancy Darkmoon Feast
+					[18240] = 133899, -- Grilled Squid
+					[18238] = 133887, -- Spotted Yellowtail
+					[15910] = 132806, -- Heavy Kodo Stew
+					[15863] = 134005, -- Carrion Surprise
+					[7213] = 132386, -- Giant Clam Scorcho
+					[15856] = 134004, -- Hot Wolf Ribs
+					[15861] = 132804, -- Jungle Stew
+					[20916] = 133888, -- Mithril Head Trout
+					[15865] = 132806, -- Mystery Stew
+					[15855] = 134006, -- Roast Raptor
+					[25954] = 133907, -- Sagefish Delight
+					[21175] = 134022, -- Spider Sausage
+					[7828] = 133890, -- Rockscale Cod
+					[4094] = 133974, -- Barbecued Buzzard Wing
+					[3400] = 133748, -- Soothing Turtle Bisque
+					[3398] = 133974, -- Hot Lion Chops
+					[13028] = 132802, -- Goldthorn Tea
+					[3376] = 132835, -- Curiously Tasty Omelet
+					[15853] = 134003, -- Lean Wolf Steak
+					[3373] = 133748, -- Crocolisk Gumbo
+					[24418] = 134020, -- Heavy Crocolisk Stew
+					[3399] = 133970, -- Tasty Lion Steak
+					[3377] = 133952, -- Gooey Spider Cake
+					[6419] = 134343, -- Lean Venison
+					[7755] = 133916, -- Bristle Whisker Catfish
+					[6418] = 133973, -- Crispy Lizard Tail
+					[2549] = 133972, -- Seasoned Wolf Kabob
+					[2547] = 133748, -- Redridge Goulash
+					[6501] = 134712, -- Clam Chowder
+					[6417] = 133748, -- Dig Rat Stew
+					[3372] = 133748, -- Murloc Fin Soup
+					[2548] = 133972, -- Succulent Pork Ribs
+					[6500] = 134431, -- Goblin Deviled Clams
+					[185708] = 1045940, -- Sugar-Crusted Fish Feast
+					[2545] = 133708, -- Cooked Crab Claw
+					[3370] = 134003, -- Crocolisk Steak
+					[25704] = 133906, -- Smoked Sagefish
+					[2543] = 133748, -- Westfall Stew
+					[3371] = 134005, -- Blood Sausage
+					[28267] = 134044, -- Crunchy Spider Surprise
+					[33278] = 134042, -- Bat Bites
+					[2542] = 133952, -- Goretusk Liver Pie
+					[7754] = 134712, -- Loch Frenzy Delight
+					[7753] = 133918, -- Longjaw Mud Snapper
+					[7827] = 133913, -- Rainbow Fin Albacore
+					[6416] = 133748, -- Strider Stew
+					[2546] = 134004, -- Dry Pork Ribs
+					[8607] = 133969, -- Smoked Bear Meat
+					[2544] = 133950, -- Crab Cake
+					[6414] = 134016, -- Roasted Kodo Meat
+					[2795] = 134004, -- Beer Basted Boar Ribs
+					[6413] = 133952, -- Scorpid Surprise
+					[6499] = 134432, -- Boiled Clams
+					[2541] = 134021, -- Coyote Steak
+					[6415] = 133891, -- Fillet of Frenzy
+					[185704] = 134034, -- Lemon Herb Fillet
+					[43779] = 133783, -- Delicious Chocolate Cake
+					[7751] = 133893, -- Brilliant Smallfish
+					[2538] = 133974, -- Charred Wolf Meat
+					[15935] = 134002, -- Crispy Bat Wing
+					[8604] = 132834, -- Herb Baked Egg
+					[33276] = 134003, -- Lynx Steak
+					[2540] = 133974, -- Roasted Boar Meat
+					[33277] = 134016, -- Roasted Moongraze Tenderloin
+					[7752] = 133910, -- Slitherskin Mackerel
+					[93741] = 133969, -- Venison Jerky
+					[6412] = 134024, -- Kaldorei Spider Kabob
+					[2539] = 134021, -- Spiced Wolf Meat
+					[3397] = 134003, -- Big Bear Steak
+					[37836] = 134051, -- Spice Bread
+					-- Holiday Cooking
+					[45022] = 132810, -- Hot Apple Cider
+					[62051] = 250625, -- Candied Sweet Potato (Alliance)
+					[66034] = 250625, -- Candied Sweet Potato (Horde)
+					[62049] = 250622, -- Cranberry Chutney (Alliance)
+					[66035] = 250622, -- Cranberry Chutney (Horde)
+					[62045] = 250626, -- Slow-Roasted Turkey (Alliance)
+					[66037] = 250626, -- Slow-Roasted Turkey (Horde)
+					[62044] = 250623, -- Pumpkin Pie (Alliance)
+					[66036] = 250623, -- Pumpkin Pie (Horde)
+					[66038] = 250624, -- Spice Bread Stuffing (Aliance)
+					[62050] = 250624, -- Spice Bread Stuffing (Horde)
+					[21144] = 132791, -- Winter Veil Egg Nog
+					[21143] = 134018, -- Gingerbread Cookie
+					[65454] = 307567, -- Bread of the Dead
+					-- Unusual Delights
+					[15906] = 132804, -- Dragonbreath Chili
+					[8238] = 134302, -- Savory Deviate Delight
+					[9513] = 132819, -- Thistle Tea
+					[45695] = 132790, -- Captain Rumsey's Lager
+
+			-- §
 		}
 	end
 end
@@ -8622,10 +9756,10 @@ function SlashCmdList.ZIGIAURAS(msg, editbox)
 	if ZA then
 		if not ZA.DebugMode then
 			ZA.DebugMode = true
-			print("ZA: Debug Mode is now ON until end of session")
+			print(CreateAtlasMarkup("groupfinder-icon-greencheckmark") .. " |cff32de00Debug Mode Enabled|r")
 		else
 			ZA.DebugMode = false
-			print("ZA: Debug Mode is now OFF")
+			print(CreateAtlasMarkup("LFG-lock") .. " Debug Mode Disabled")
 		end
 	else
 		print("ZA is not initialized")
