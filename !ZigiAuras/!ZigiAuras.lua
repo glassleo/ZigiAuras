@@ -10,13 +10,19 @@ frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
 
---zzz
---: Zone IDs
 
---! The Shadowlands: 1550
--------------------------
+-- Map IDs
+-- https://wowpedia.fandom.com/wiki/UiMapID
+
+--------------------------------------------------
+
+
+-- ! Shadowlands
+--  -------------
+
 -- Oribos: g411
--- Bastion: 1533,1569,1813,1690,1711,1713,1714
+	-- Shadowlands (in-between): 1550
+-- Bastion: 1533,1569,1813,1690,1713,1714
 	-- Elysian Hold: g418,2018
 	-- Path of Ascension: 1711
 -- Maldraxxus: 1536,1689,1741,1814,1649,1650,1651,1652,1724,1725
@@ -28,9 +34,12 @@ frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	-- Sinfall: g416
 	-- Ember Court: 1644
 -- The Maw: 1543,1648
--- Korthia: 1961,2006,2007
+-- Korthia: 1961,2006,2007,2008
 
--- Instances:
+-- All Zones: 2018,1961,2006,2007,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
+
+
+-- Dungeons: g413,g409,1669,g415,g412,g419,g423,g410,g414
 	-- De Other Side: g413
 	-- Halls of Atonement: g409
 	-- Mists of Tirna Scithe: 1669
@@ -40,12 +49,459 @@ frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	-- Tazavesh, the Veiled Market: g423
 	-- The Necrotic Wake: g410
 	-- Theater of Pain: g414
--- All Shadowlands Instances: g413,g409,1669,g415,g412,g419,g423,g410,g414
+-- Raids: 
+	-- Castle Nathria: 
+	-- Sanctum of Domination: 
+-- All Instances: 
 
--- All Shadowlands Outdoor Zones:
--- 2018,1961,2006,2007,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
+--------------------------------------------------
 
--------------------------
+
+-- ! Battle for Azeroth
+--  --------------------
+
+-- Chamber of Heart: 
+-- Boralus: 1161
+-- Dazar'alor: 1163,1164,1165
+
+-- Kul Tiras: 876
+-- Tiragarde Sound: 895,974,1171,1172,1184,1185
+-- Drustvar: 896,1045
+-- Stormsong Valley: 942,1179,1180,1182,1183
+-- Mechagon Island: 1462
+
+-- Zandalar: 875
+-- Zuldazar: 862,1173,1174,1176,1177
+-- Nazmir: 863
+-- Vol'dun: 
+
+-- THe Great Sea: 1156,1157
+-- Nazjatar: 1504,1355,1499,1500,1524,1528
+
+-- All Zones: 
+
+-- Dungeons:
+	-- Atal'Dazar: 
+	-- Freehold: 
+	-- King's Rest: 
+	-- Operation: Mechagon: 
+	-- Shrine of the Storm: 
+	-- Siege of Boralus: 
+	-- Temple of Sethraliss: 
+	-- The MOTHERLODE!!: 
+	-- The Underrot: 
+	-- Tol Dagor: 
+	-- Waycrest Manor: 
+-- Raids:
+	-- Uldir: 
+	-- Battle of Dazar'alor: 
+	-- Crucible of Storms: 
+	-- The Eternal Palace: 
+	-- Ny'alotha, the Waking City: 
+-- All Instances:
+
+
+--------------------------------------------------
+
+
+-- ! Legion
+--  --------
+
+-- Dalaran: g227
+-- Order Halls: ?
+	-- Acherus, the Ebon Hold: 647,648
+	-- Mardum, the Shattered Abyss: 672,673,674,675,719,720,721,861,879,880
+	-- The Dreamgrove: 747
+		-- Emerald Dreamway: 715
+	-- Trueshot Lodge: 739
+	-- Hall of the Guardian: 734,735
+	-- The Wandering Isle: 709
+	-- Sanctum of Light: 24
+	-- Netherlight Temple: 702
+	-- The Hall of Shadows: 626 (might be part of Dalaran g227?)
+	-- The Maelstrom: 725,726
+	-- Dreadscar Rift: 717,718
+	-- Skyhold: 695
+
+-- Broken Isles: 619
+-- Azsuna: 630,631,632,633,713
+-- Val'sharah: 641,642,643,644
+-- Highmountain: 650,651,652,653,654,655,656,657,658,659,660,750
+-- Stormheim: 634,635,636,637,638,639,640,649
+-- Suramar: 680,681,682,683,684,685,686,687,688,689,690,691,692,693
+-- Niskara: 714,748
+-- Broken Shore: 646,676,758,1192
+
+-- Argus: 905
+	-- The Vindicaar: 886,887,831,832,940,941,883,884
+	-- Antoran Wastes: 885
+	-- Krokuun: 830,833
+	-- Eredath: 882
+	-- Invasion Points: 921,922,923,924,925,926,927,928,929,930,931,932
+
+-- All Zones: 921,922,923,924,925,926,927,928,929,930,931,932,830,833,882,885,886,887,831,832,940,941,883,884,619,645,993,905,994,672,673,674,675,719,720,721,861,879,880,647,648,646,676,758,1192,714,748,740,741,680,681,682,683,684,685,686,687,688,689,690,691,692,693,1191,695,634,635,636,637,638,639,640,696,1190,649,671,694,1190,739,g227,702,709,717,718,725,726,630,631,632,633,713,1187,641,642,643,644,733,758,793,1188,747,1468,1475,715,1471,650,651,652,653,654,655,656,657,658,659,660,731,750,1189
+
+
+-- Dungeons: 
+	-- Assault on Violet Hold: 
+	-- Black Rook Hold: 
+	-- Cathedral of Eternal Night: 
+	-- Court of Stars: 
+	-- Darkheart Thicket: 
+	-- Eye of Azshara: 
+	-- Halls of Valor: 
+	-- Maw of Souls: 
+	-- Neltharion's Lair: 
+	-- Return to Karazhan: 
+	-- Seat of the Triumvirate: 
+	-- The Arcway: 
+	-- Vault of the Wardens: 
+-- Raids: 
+	-- The Emerald Nightmare: 
+	-- Trial of Valor: 
+	-- The Nighthold: 
+	-- Tomb of Sargeras: 
+	-- Antorus, the Burning Throne: 
+-- All Instances: 
+
+
+--------------------------------------------------
+
+
+-- ! Warlords of Draenor
+--  ---------------------
+
+-- Garrison: 1152,1330,1153,1158,1331,1159
+
+-- Draenor: 572
+-- All Zones: 
+
+-- Dungeons: 
+	-- Auchindoun: 
+	-- Bloodmaul Slag Mines: 
+	-- Grimrail Depot: 
+	-- Iron Docks: 
+	-- Shadowmoon Burial Grounds: 
+	-- Skyreach: 
+	-- The Everbloom: 
+	-- Upper Blackrock Spire: 
+-- Raids: 
+	-- Highmaul: 
+	-- Blackrock Foundry: 
+	-- Hellfire Citadel: 
+-- All Instances: 
+
+
+--------------------------------------------------
+
+
+-- ! Mists of Pandaria
+--  -------------------
+
+-- Shrine of Two Moons: 391,392
+-- Shrine of Seven Stars: 393,394
+
+-- Pandaria: 424
+-- The Jade Forest: 371,372,373,374,375
+-- Valley of the Four Winds: 376,377
+-- The Veiled Stair: 433,434
+-- Krasarang Wilds: 418,419,420,421
+-- Kun-Lai Summit: 379,380,381,382,383,384,385,386,387
+-- Townlong Steppes: 388,389
+-- Dread Wastes: 422
+-- Vale of Eternal Blossoms: 390,395,396
+-- Isle of Giants: 507
+-- Isle of Thunder: 504,505,506,516,517,518
+-- Timeless Isle: 554,555
+
+-- All Zones: 
+
+
+-- Dungeons: 
+	-- Gate of the Setting Sun: 
+	-- Mogu'shan Palace: 
+	-- Scarlet Halls (Heroic): 
+	-- Scarlet Monastery (Heroic): 
+	-- Scholomance (Heroic): 
+	-- Shado-Pan Monastery: 
+	-- Siege of Niuzao Temple: 
+	-- Stormstout Brewery: 
+	-- Temple of the Jade Serpent: 
+-- Raids: 
+	-- Mogu'shan Vaults: 
+	-- Heart of Fear: 
+	-- Terrace of Endless Spring: 
+	-- Throne of Thunder: 
+	-- Siege of Orgrimmar: 
+-- Scenarios: 
+	-- Celestial Tournament: 571
+
+-- All Instances: 
+
+
+--------------------------------------------------
+
+
+-- ! Cataclysm
+--  -----------
+
+-- The Maelstrom: 948
+-- Tol Barad: 244,245
+-- Mount Hyjal: 198
+	-- Molten Front: 338
+-- Vashj'ir: 201,203,204,205
+-- Deepholm: 207,208,209
+-- Uldum: 249
+-- Twilight Highlands: 241
+
+-- All Zones: 948,244,245,198,338,201,203,204,205,207,208,209,249,241
+
+
+-- Dungeons: 
+	-- Blackrock Caverns: 
+	-- Deadmines (Heroic): 
+	-- End Time: 
+	-- Grim Batol: 
+	-- Halls of Origination: 
+	-- Hour of Twilight: 
+	-- Lost City of the Tol'vir: 
+	-- Shadowfang Keep (Heroic): 
+	-- The StoneCore: 
+	-- The Vortex Pinnacle: 
+	-- Throne of the Tides: 
+	-- Well of Eternity: 
+	-- Zul'Aman: 
+	-- Zul'Gurub: 
+-- Raids: 
+	-- Baradin Hold: 
+	-- Blackwing Descent: 
+	-- The Bastion of Twilight:
+	-- Throne of the Four Winds: 
+	-- Firelands: g191
+	-- Dragon Soul: 
+-- All Instances: 
+
+
+--------------------------------------------------
+
+
+-- ! Wrath of the Lich King
+--  ------------------------
+
+-- Dalaran: g170
+
+-- Northrend: 113
+-- Borean Tundra: 114
+-- Howling Fjord: 117
+-- Dragonblight: 115
+-- Grizzly Hills: 116
+-- Zul'Drak: 121
+-- Sholazar Basin: 119
+-- The Storm Peaks: 120
+-- Icecrown: 118
+-- Hrothgar's Landing: 170
+-- Wintergrasp: 123
+-- Crystalsong Forest: 127
+
+-- All Zones: g170,113,114,117,115,116,121,119,120,118,170,123,127
+
+
+-- Dungeons: 
+	-- Ahn'kahet: The Old Kingdom: 
+	-- Azjol-Nerub: 
+	-- Drak'Tharon Keep: 
+	-- Gundrak: 
+	-- Halls of Lightning: 
+	-- Halls of Reflection: 
+	-- Halls of Stone: 
+	-- Pit of Saron: 
+	-- The Culling of Stratholme: 
+	-- The Forge of Souls: 
+	-- The Nexus: 
+	-- THe Oculus: 
+	-- The Violet Hold: 
+	-- Trial of the Champion: 
+	-- Utgarde Keep: 
+	-- Utgarde Pinnacle: 
+-- Raids: 
+	-- Vault of Archavon: 
+	-- Naxxramas: 
+	-- The Obsidian Sanctum: 
+	-- The Eye of Eternity: 
+	-- Ulduar: 
+	-- Trial of the Crusader: 
+	-- Onyxia's Lair: 
+	-- Icecrown Citadel: 
+	-- The Ruby Sanctum: 
+-- All Instances: 
+
+
+--------------------------------------------------
+
+
+-- ! Burning Crusade
+--  -----------------
+
+-- Shattrath: 
+
+-- Outland: 101
+-- All Zones: 
+
+
+-- Dungeons: 
+	-- Auchenai Crypts: 
+	-- Hellfire Ramparts: 
+	-- Magister's Terrace: 
+	-- Mana-Tombs: 
+	-- Old Hillsbrad Foothills: 
+	-- Sethekk Halls: 
+	-- Shadow Labyrinth: 
+	-- The Arcatraz: 
+	-- The Black Morass: 
+	-- THe Blood Furnace: 
+	-- The Botanica: 
+	-- The Mechanaar: 
+	-- The Shattered Halls: 
+	-- The Slave Pens: 
+	-- The Steamvault: 
+	-- The Underbog: 
+-- Raids: 
+	-- Karazhan: 
+	-- Gruul's Lair: 
+	-- Magtheridon's Lair: 
+	-- Serpentshrine Cavern: 
+	-- The Eye: 
+	-- The Battle for Mount Hyjal: 
+	-- Black Temple: 
+	-- Sunwell Plateau: 
+-- All Instances: 
+
+
+--------------------------------------------------
+
+
+-- ! Classic
+--  ---------
+
+-- Eastern Kingdoms: 13
+-- Stormwind City: 84
+	-- Deeprun Tram: 499
+	-- Bizmos's Brawlpub: 500
+-- Ironforge: 87
+-- Darnassus: 89
+-- The Exodar: 103
+
+-- Orgrimmar: 85,86
+	-- Brawl'gar Arena: 503
+-- Thunder Bluff: 88
+-- Undercity: 90
+-- Silvermoon City: 110
+
+-- Eversong Woods: 94,467
+-- Ghostlands: 95,96
+-- Tirisfal Glades: 18,19,465,466
+-- Western Plaguelands: 22
+-- Eastern Plaguelands: 23
+-- Silverpine Forest: 21
+-- Hillsbrad Foothills: 25
+-- The Hinterlands: 26
+-- Ruins of Gilneas: 217,218,1030
+-- Arathi Highlands: 14
+-- Wetlands: 56
+-- Dun Morogh: 27,28,29,30,31
+	-- Coldridge Valley: 427,428
+	-- New Tinkertown: 469,470
+-- Loch Modan: 48
+-- Searing Gorge: 32
+-- Badlands: 15,16
+-- Burning Steppes: 36
+	-- Blackrock Mountain: 33,34,35
+-- Elwynn Forest: 37,38,39,40,425,426
+-- Redridge Mountains: 49
+-- Westfall: 52,53,54,55
+-- Duskwood: 47
+-- Deadwind Pass: 42,43,44,45,46
+-- Swamp of Sorrows: 51
+-- Stranglethorn Vale: 224
+	-- Northern Stranglethorn: 50
+	-- The Cape of Stranglethorn: 210
+-- Blasted Lands: 17
+
+
+-- Kalimdor: 12
+-- Teldrassil: 57,58,59,60,61,460
+-- Azuremyst Isle: 97,98,99,468
+-- Bloodmyst Isle: 106
+-- Darkshore: 62
+-- Moonglade: 80
+-- Winterspring: 83
+-- Felwood: 77
+-- Azshara: 76
+-- Ashenvale: 63
+-- Stonetalon Mountains: 65
+-- Northern Barrens: 10,11
+-- Durotar: 1,2,3,4,5,6
+	-- Valley of Trials: 461
+	-- Echo Isles: 463,464
+-- Desolace: 66,67,68
+-- Mulgore: 7,8,9,462
+-- Southern Barrens: 199
+-- Dustwallow Marsh: 70
+-- Feralas: 69
+-- Thousand Needles: 64
+-- Silithus: 81,82
+	-- Ahn'Qiraj: 
+-- Un'Goro Crater: 78,79
+-- Tanaris: 71,72,73
+	-- Caverns of Time: 74,75
+
+
+-- Dungeons: 
+	-- Blackfathom Deeps: 
+	-- Blackrock Depths: 
+	-- Deadmines (Normal):
+	-- Dire Maul: 
+		-- 3 wings
+	-- Gnomeregan: 
+	-- Lower Blackrock Spire: 
+	-- Maraudon: 
+	-- Ragefire Chasm: 
+	-- Razorfen Downs: 
+	-- Razorfen Kraul: 
+	-- Scarlet Halls (Normal): 
+	-- Scarlet Monastery (Normal): 
+	-- Scholomance (Normal): 
+	-- Shadowfang Keep (Normal): 
+	-- Stratholme: 
+		-- 2 wings
+	-- The Stockade: 
+	-- The Temple of Atal'hakkar: 
+	-- Uldaman: 
+	-- Wailing Caverns: 
+	-- Zul'Farrak: 
+-- Raids: 
+	-- Molten Core: 
+	-- Blackwing Lair: 
+	-- Ruins of Ahn'Qiraj: 
+	-- Temple of Ahn'Qiraj: 
+
+
+--------------------------------------------------
+
+
+-- Calendar Event IDs
+
+-- /run local c=C_Calendar.GetDayEvent(0, 20, 1) print(c.eventID, c.title)
+
+-- Timewalking
+	-- Burning Crusade: 622
+	-- Wrath of the Lich King: 616
+	-- Cataclysm: 628
+	-- Mists of Pandaria: 652
+	-- Warlords of Draenor: 1063
+
+
+--------------------------------------------------
 
 
 local function updateData()
@@ -94,34 +550,114 @@ local function updateData()
 			end
 		end
 
-		-- FormatShortNumber(number, siginifixant)
-		function ZA.FormatShortNumber(number, significant)
-			if type(number) ~= "number" then
-				number = tonumber(number)
+		-- Transliterate Cyrillic to Latin
+		-- LibTranslit 1.0 by Vardex, modified for ZigiAuras
+		-- https://github.com/Vardex/LibTranslit
+		function ZA.translit(str, mark)
+			if not str then
+				return ""
 			end
-			if not number then return end
 
-			if type(significant) ~= "number" then
-				significant = tonumber(significant)
+			local CyrToLat = {
+				["А"] = "A",
+				["а"] = "a",
+				["Б"] = "B",
+				["б"] = "b",
+				["В"] = "V",
+				["в"] = "v",
+				["Г"] = "G",
+				["г"] = "g",
+				["Д"] = "D",
+				["д"] = "d",
+				["Е"] = "E",
+				["е"] = "e",
+				["Ё"] = "e",
+				["ё"] = "e",
+				["Ж"] = "Zh",
+				["ж"] = "zh",
+				["З"] = "Z",
+				["з"] = "z",
+				["И"] = "I",
+				["и"] = "i",
+				["Й"] = "Y",
+				["й"] = "y",
+				["К"] = "K",
+				["к"] = "k",
+				["Л"] = "L",
+				["л"] = "l",
+				["М"] = "M",
+				["м"] = "m",
+				["Н"] = "N",
+				["н"] = "n",
+				["О"] = "O",
+				["о"] = "o",
+				["П"] = "P",
+				["п"] = "p",
+				["Р"] = "R",
+				["р"] = "r",
+				["С"] = "S",
+				["с"] = "s",
+				["Т"] = "T",
+				["т"] = "t",
+				["У"] = "U",
+				["у"] = "u",
+				["Ф"] = "F",
+				["ф"] = "f",
+				["Х"] = "Kh",
+				["х"] = "kh",
+				["Ц"] = "Ts",
+				["ц"] = "ts",
+				["Ч"] = "Ch",
+				["ч"] = "ch",
+				["Ш"] = "Sh",
+				["ш"] = "sh",
+				["Щ"] = "Shch",
+				["щ"] = "shch",
+				["Ъ"] = "",
+				["ъ"] = "",
+				["Ы"] = "Y",
+				["ы"] = "y",
+				["Ь"] = "",
+				["ь"] = "",
+				["Э"] = "E",
+				["э"] = "e",
+				["Ю"] = "Yu",
+				["ю"] = "yu",
+				["Я"] = "Ya",
+				["я"] = "ya"
+			}
+
+			local mark = mark or ""
+			local tstr = ""
+			local marked = false
+			local i = 1
+
+			while i <= string.len(str) do
+				local c = str:sub(i, i)
+				local b = string.byte(c)
+
+				if b == 208 or b == 209 then
+					if marked == false then
+						tstr = tstr .. mark
+						marked = true
+					end
+					c = str:sub(i + 1, i + 1)
+					tstr = tstr .. (CyrToLat[string.char(b, string.byte(c))] or string.char(b, string.byte(c)))
+
+					i = i + 2
+				else
+					if c == " " or c == "-" then
+						marked = false
+					end
+					tstr = tstr .. c
+					i = i + 1
+				end
 			end
-			significant = significant or 2
 
-			local affixes = { "K", "M", "B", "T", }
-			affixes[0] = ""
-
-			local log, floor, max, abs = math.log, math.floor, math.max, math.abs
-
-			local powerTen = floor(log(abs(number)) / log(10))
-			powerTen = powerTen < 0 and 0 or powerTen
-			local affix = floor(powerTen / 3)
-			local divNum = number / 1000^affix
-			local before = powerTen%3 + 1
-			local after = max(0, significant - before)
-
-			if number < 1000 then return number end
-			return string.format(string.format("%%.%df%s", after, affixes[affix]), divNum)
+			return tstr
 		end
 
+		-- Alliance or Horde
 		function ZA.AH(alliance, horde)
 			local faction = UnitFactionGroup("player")
 
@@ -185,23 +721,25 @@ local function updateData()
 		end
 
 
-		-- Spell School Color Gradients
-		ZA.SchoolGradients = {
+		-- Color Gradients
+		ZA.Gradients = {
 			[0]   = "8e8981:c6c2b9", -- Unknown
+
+			-- Spell Schools
 			[999] = "3b3b3b:6e6d59", -- Fatigue
 
 			--ccc
 			-- Physical
 			[1]   = "8e8981:c6c2b9", -- Physical | Unknown
-			[100] = "a89f94:7be2ff", -- Mechanical | Engineering
-			[112] = "9d9eb1:e58c8c", -- Strike, Red
-			[107] = "9d9eb1:f4bc85", -- Strike, Orange | Cleave
-			[108] = "9d9eb1:f4e885", -- Strike, Yellow | Swipe
-			[109] = "9d9eb1:b7f485", -- Strike, Green
-			[110] = "9d9eb1:90afe6", -- Strike, Blue | Armor | Thrown
-			[113] = "9d9eb1:ba9de6", -- Strike, Purple | Slam | Tailoring
-			[101] = "877f71:8f4646", -- Bleed | Skinning
-			[102] = "755c56:a51a10", -- Heavy Bleed
+			[100] = "6f9cd4:8fe6ff", -- Mechanical | Engineering
+			[112] = "d67070:ffbdbd", -- Physical Red
+			[107] = "d5985c:ffecc6", -- Physical Orange
+			[108] = "ffdd53:ffd483", -- Physical Yellow
+			[109] = "91c652:e9ffb3", -- Physical Green
+			[110] = "8b9fc3:d4e1fa", -- Physical Blue | Armor
+			[113] = "977fb9:c8b7df", -- Physical Purple | Tailoring
+			[101] = "bc434c:de726b", -- Bleed | Skinning
+			[102] = "802d2d:c73c33", -- Heavy Bleed
 			[106] = "b05642:dda082", -- Strength
 			[104] = "edc716:fef972", -- Alacrity | Speed
 			[111] = "efff65:dcffeb", -- Sonic | Sound
@@ -209,11 +747,10 @@ local function updateData()
 			[105] = "c80034:ff8258", -- Bloodlust
 
 			-- Fire
-			[4]   = "ff3600:ffc000", -- Fire (Dynamic)
-			[400] = "ff3600:ffc000", -- Fire | Cooking
+			[4]   = "ff3600:ffc000", -- Fire | Cooking
 			[5]   = "d45e3e:ffd262", -- Flamestrike | Smelting
 			[12]  = "780033:ff7920", -- Magma | Lava
-			[402] = "ca0000:ff5e2c", -- Hellfire
+			[400] = "ca0000:ff5e2c", -- Hellfire
 			[20]  = "97cdff:ff9d41", -- Frostfire | Steam
 			[68]  = "ff3883:ffba00", -- Spellfire | Phoenixfire
 			
@@ -230,7 +767,7 @@ local function updateData()
 			[201] = "00baff:fff9de", -- Ethereal | Kyrian
 			[600] = "134cff:00baff", -- Ethereal Flame
 			[202] = "ce958c:fff1d6", -- Discipline | Bandage | Brewing | Inscription
-			[203] = "ffffff:82aab4", -- Hyperlight | Hallow | Broker
+			[203] = "ffffff:b1c5ca", -- Hyperlight | Hallow | Broker
 			[204] = "0090ff:f8ff66", -- Azerite
 
 			-- Divine
@@ -265,7 +802,7 @@ local function updateData()
 			[811] = "90a3ab:f8ffff", -- Wind | Air
 			[911] = "5d6a8c:ccdbdb", -- Storm
 			[800] = "4f64ff:a6f2ff", -- Lightning | Thunder
-			[9]   = "95b2bc:9497ff", -- Stormstrike
+			[9]   = "8972ff:c0e8ff", -- Stormstrike
 
 			-- Water
 			[801] = "2882bf:2dedc9", -- Water | Sea | Fishing
@@ -298,14 +835,14 @@ local function updateData()
 
 			-- Arcane
 			[64]  = "6ec3ff:dd40ff", -- Arcane
-			[65]  = "908894:c492d9", -- Spellstrike
+			[65]  = "7c6ecf:c48fe0", -- Spellstrike
 			[126] = "d830f1:d8b5ff", -- Magic
 			[646] = "a4feff:8fb7ff", -- Conjuration | Teleport | Enchanting
 			[124] = "52ffb8:ff70cb", -- Chromatic
 			[640] = "f2e199:ffa019", -- Temporal
 
 			-- Astral
-			[72]  = "62d5ff:ffa4f3", -- Astral
+			[72]  = "62ebff:ffa5f3", -- Astral
 			[720] = "7178d0:76ffba", -- Spectral
 
 			-- Decay
@@ -320,7 +857,7 @@ local function updateData()
 			[32]  = "633768:8f7a93", -- Shadow
 			[328] = "4c3189:7b7c9e", -- Psychic | Mind Control
 			[33]  = "6b616c:635266", -- Shadowstrike
-			[322] = "73193d:e4c06a", -- Pain
+			[322] = "aa3f55:e4c06a", -- Pain
 			[323] = "523d5c:558d8b", -- Haunt | Nether
 			[324] = "6e1b3e:ec9da2", -- Corruption | Old Gods
 			[96]  = "602b61:8482d9", -- Spellshadow | Runic
@@ -338,44 +875,40 @@ local function updateData()
 			[361] = "6000b2:acff00", -- Shadowfelflame
 			--ccx
 
-			-- Resources
-			["Arcane Charges"] = "b066fe:fca5f1",
-			["Astral Power"] = "fca5f1:b5ffff",
+			-- Primary Resources
+			["Energy"] = "ffa800:ffe042",
+			["Focus"] = "ef6824:ffb06a",
+			["Mana"] = "684fff:4a9fff",
+			["Rage"] = "ec4059:f10f30",
+			["Runic Power"] = "6f94c8:cdbde9",
+
+			-- Secondary Resources
+			["Arcane Charges"] = "ca97ff:ffa9f4",
+			["Astral Power"] = "ff99f2:c1f4ff",
 			["Chi"] = "bcebdc:fffff6",
-			["Combo Points"] = "aa301b:dd5d24",
-			["Energy"] = "ffa800:ffd91a",
-			["Focus"] = "ff8040:ff9840",
-			["Fury"] = "a21046:e63375",
+			["Combo Points"] = "aa301b:f67e48",
+			["Fury"] = "b82645:ff458a",
 			["Holy Power"] = "ffa500:fff58a",
 			["Insanity"] = "220649:243bff",
-			["Maelstrom"] = "83acff:d9f5ff",
-			["Mana"] = "305dc3:3c94d1",
-			["Rage"] = "e6334d:f10f30",
-			["Runic Power"] = "6e8bb5:ab9fc0",
-			["Soul Shards"] = "a927cf:ae6bdf",
+			["Maelstrom"] = "9d8eff:a6efff",
+			["Soul Shards"] = "9b19cc:b670e9",
+			["Runes"] = "615da1:876191",
 
-			-- Anima - Dynamic based on covenant
+			-- Anima - Dynamic depending on covenant
 
-			-- Reaction
+			-- Reputation/Reaction
+			["Paragon"] = "3fbeff:9ff0ff", -- Solid: 4cc2ff
+			["Exalted"] = "3fbeff:9ff0ff", -- Solid: 4cc2ff
+			["Revered"] = "00d5aa:89ffe7", -- Solid: 00ffcc
+			["Honored"] = "00a95a:5bffb2", -- Solid: 00ff88
+			["Friendly"] = "33991a:6ed854", -- Solid: 00ff00
+			["Neutral"] = "ecbd00:ffd632", -- Solid: ffff00
+			["Unfriendly"] = "d0591e:f47c23", -- Solid: cc2222
+			["Hostile"] = "b3331a:b3331a", -- Solid: ff0000
+			["Hated"] = "770000:ae0000", -- Solid: cc2222
 			["Tapped"] = "808080:9b9b9b",
-			["Friendly"] = "33991a:6ed854",
-			["Neutral"] = "ffcc00:ffcc00",
-			["Hostile"] = "b3331a:b3331a",
-		}
 
-		if covenant == 1 then
-			ZA.SchoolGradients["Anima"] = ZA.SchoolGradients[201]
-		elseif covenant == 2 then
-			ZA.SchoolGradients["Anima"] = ZA.SchoolGradients[321]
-		elseif covenant == 3 then
-			ZA.SchoolGradients["Anima"] = ZA.SchoolGradients[805]
-		elseif covenant == 4 then
-			ZA.SchoolGradients["Anima"] = ZA.SchoolGradients[326]
-		else
-			ZA.SchoolGradients["Anima"] = ZA.SchoolGradients["Mana"]
-		end
-
-		ZA.ClassGradients = {
+			-- Classes
 			["DEATHKNIGHT"] = "a6172d:c62843",
 			["DEMONHUNTER"] = "8325ab:a738cb",
 			["DRUID"] = "e46008:ff8214",
@@ -390,73 +923,70 @@ local function updateData()
 			["WARRIOR"] = "a97c54:c9a074",
 		}
 
-		ZA.ClassGradient = ZA.ClassGradients[class or 0] or "6a5f50:998b7d" --Compatibility
 
-		ZA.SchoolGradients["DEATHKNIGHT"] = ZA.ClassGradients["DEATHKNIGHT"]
-		ZA.SchoolGradients["DEMONHUNTER"] = ZA.ClassGradients["DEMONHUNTER"]
-		ZA.SchoolGradients["DRUID"] = ZA.ClassGradients["DRUID"]
-		ZA.SchoolGradients["HUNTER"] = ZA.ClassGradients["HUNTER"]
-		ZA.SchoolGradients["MAGE"] = ZA.ClassGradients["MAGE"]
-		ZA.SchoolGradients["MONK"] = ZA.ClassGradients["MONK"]
-		ZA.SchoolGradients["PALADIN"] = ZA.ClassGradients["PALADIN"]
-		ZA.SchoolGradients["PRIEST"] = ZA.ClassGradients["PRIEST"]
-		ZA.SchoolGradients["ROGUE"] = ZA.ClassGradients["ROGUE"]
-		ZA.SchoolGradients["SHAMAN"] = ZA.ClassGradients["SHAMAN"]
-		ZA.SchoolGradients["WARLOCK"] = ZA.ClassGradients["WARLOCK"]
-		ZA.SchoolGradients["WARRIOR"] = ZA.ClassGradients["WARRIOR"]
+		ZA.Gradients["Anima"] = (covenant == 1) and ZA.Gradients[201] or (covenant == 2) and ZA.Gradients[321] or (covenant == 3) and ZA.Gradients[805] or (covenant == 4) and ZA.Gradients[326] or ZA.Gradients[203]
 
-		ZA.SelfSchoolGradients = ZA.SchoolGradients
 
-		greenfire = false
-		if class and class == "WARLOCK" and IsSpellKnown(101508) then
-		    ZA.SelfSchoolGradients[4] = ZA.SchoolGradients[401] -- The Codex of Xerrath
-		    greenfire = true
-		end
-
-		ZA.IsHearthstone = {
-			["Hearthstone"] = true,
-			["Brewfest Reveler's Hearthstone"] = true,
-			["Eternal Traveler's Hearthstone"] = true,
-			["Fire Eater's Hearthstone"] = true,
-			["Greatfather Winter's Hearthstone"] = true,
-			["Headless Horseman's Hearthstone"] = true,
-			["Holographic Digitalization Hearthstone"] = true,
-			["Kyrian Hearthstone"] = true,
-			["Lunar Elder's Hearthstone"] = true,
-			["Mountebank's Colorful Cloak"] = true,
-			["Necrolord Hearthstone"] = true,
-			["Night Fae Hearthstone"] = true,
-			["Ardenweald Hearthstone"] = true,
-			["Noble Gardener's Hearthstone"] = true,
-			["Peddlefeet's Lovely Hearthstone"] = true,
-			["The Innkeeper's Daughter"] = true,
-			["Venthyr Sinstone"] = true,
+		-- Vehicles
+		ZA.Vehicles = {
+			["Prince Farondis"] = "MAGE",
 		}
 
-		ZA.IsAltHearthstone = {
-			["Astral Recall"] = true,
-			["Dark Portal"] = true,
-			["Ethereal Portal"] = true,
-			["Ruby Slippers"] = true,
-			["Town Portal"] = true,
+		ZA.Hearthstones = {
+			-- Hearthstones
+			["Hearthstone"] = "Hearthstone",
+			["Brewfest Reveler's Hearthstone"] = "Hearthstone",
+			["Eternal Traveler's Hearthstone"] = "Hearthstone",
+			["Fire Eater's Hearthstone"] = "Hearthstone",
+			["Greatfather Winter's Hearthstone"] = "Hearthstone",
+			["Headless Horseman's Hearthstone"] = "Hearthstone",
+			["Holographic Digitalization Hearthstone"] = "Hearthstone",
+			["Kyrian Hearthstone"] = "Hearthstone",
+			["Lunar Elder's Hearthstone"] = "Hearthstone",
+			["Mountebank's Colorful Cloak"] = "Hearthstone",
+			["Necrolord Hearthstone"] = "Hearthstone",
+			["Night Fae Hearthstone"] = "Hearthstone",
+			["Ardenweald Hearthstone"] = "Hearthstone",
+			["Noble Gardener's Hearthstone"] = "Hearthstone",
+			["Peddlefeet's Lovely Hearthstone"] = "Hearthstone",
+			["The Innkeeper's Daughter"] = "Hearthstone",
+			["Venthyr Sinstone"] = "Hearthstone",
+			-- Special Hearthstones
+			["Astral Recall"] = "Astral Recall",
+			["Dark Portal"] = "Dark Portal",
+			["Ethereal Portal"] = "Ethereal Portal",
+			["Ruby Slippers"] = "Ruby Slippers",
+			["Town Portal"] = "Town Portal",
 		}
 
-		if not ZA.CastSchoolByNameAuto then
-			ZA.CastSchoolByNameAuto = {}
+		if not ZA.AutoSpells then
+			ZA.AutoSpells = {}
 		end
 
-		ZA.CastSchoolByName = {
+		-- Spells
+		-- Match priority: ID > Name:Icon > *:Icon > Name
+		ZA.Spells = {
 			--! Dynamic
 			["Activating Specialization"] = class or 0,
 			["Serenity Blessing"] = (primary == "int") and 126 or 106,
-			["Ascendance:135791"] = (class == "SHAMAN" and spec == 1) and 400 or (class == "SHAMAN" and spec == 2) and 811 or (class == "SHAMAN" and spec == 3) and 801 or 28,
-			["Capturing:132487"] = ZA.AH(110, 112),
+			["Ascendance:135791"] = (class == "SHAMAN" and spec == 1) and 4 or (class == "SHAMAN" and spec == 2) and 811 or (class == "SHAMAN" and spec == 3) and 801 or 28,
+			["Capturing:132487"] = ZA.AH(814, 818),
 
+			--! Physical
+			["Slam"] = 1,
 
-			--: Physical
-			-------------------------
 			--! Mechanical  ! Engineering
+			["Shoot RJR"] = 100,
+			["Shot"] = 100,
+			["Shoot"] = 100,
+			["Hide-Piercing Shot"] = 100,
+			["Piercing Shot"] = 100,
+			["Rifle Shot"] = 100,
+			["Machine Gun"] = 100,
+			["Volley"] = 100,
+			["Between the Eyes"] = 100,
 			["Grappling Gun"] = 100,
+			["Lock and Load"] = 100,
 			["Searching"] = 100,
 			["Handing Over"] = 100,
 			["Throw Wyrmtongue Crate"] = 100,
@@ -469,7 +999,6 @@ local function updateData()
 			["Activating"] = 100,
 			["Deactivating"] = 100,
 			["Aimed Shot"] = 100,
-			["Barrage"] = 100,
 			["Construct Heavy Barricade"] = 100,
 			["Cutting Beam"] = 100,
 			["Defibrilate"] = 100,
@@ -509,18 +1038,16 @@ local function updateData()
 			["Scrapping"] = 100,
 			["Shoot"] = 100,
 			["Shotgun"] = 100,
-			["Steady Shot"] = 100,
 			["Survey"] = 100,
 			["Teleport With Error"] = 100,
 			["Toshley's Station Transporter"] = 100,
 			["Trusty Shotgun"] = 100,
 			["Tune Up"] = 100,
 			["Unlocking"] = 100,
-			["Wormhole Teleport"] = 100,
-			["Wormhole"] = 100,
-			["Wormhole: Pandaria"] = 100,
 
-			--! Strike, Red
+			--! Physical Red
+			["Precise Shots"] = 112,
+			["Rapid Fire"] = 112,
 			["Bloody Blades"] = 112,
 			["Piercing Chomp"] = 112,
 			["Critical Shot"] = 112,
@@ -554,7 +1081,8 @@ local function updateData()
 			["Claw Strike"] = 112,
 			["Devour"] = 112,
 
-			--! Strike, Orange  ! Cleave
+			--! Physical Orange
+			["Stampede"] = 107,
 			["Furious Assault"] = 107,
 			["Hew"] = 107,
 			["Wide Swing"] = 107,
@@ -589,22 +1117,28 @@ local function updateData()
 			["Destroying"] = 107,
 			["Penta-Strike"] = 107,
 			["Crushing Strike"] = 107,
+			["Trick Shots"] = 107,
+			["Whirlwind"] = 107,
 
-			--! Strike, Yellow  ! Swipe
+			--! Physical Yellow
+			["Rain of Arrows"] = 108,
+			["Double Tap"] = 108,
+			["Evasion"] = 108,
+			["Steady Focus"] = 108,
+			["Steady Shot"] = 108,
+			["Barrage"] = 108,
+			["Drop Prey"] = 108,
+			["Gorge Bite"] = 108,
+			["Snatch Armor"] = 108,
 			["Double Claw"] = 108,
 			["Pulverize"] = 108,
-			["Throw Spear"] = 108,
 			["Claw Swipe"] = 108,
 			["Swipe"] = 108,
 			["Double Swipe"] = 108,
-			["Claw"] = 108,
 			["Throw Chakram"] = 108,
 			["Spinning Blade"] = 108,
-			["Smack"] = 108,
 			["Hunting Talons"] = 108,
 			["Snap and Toss"] = 108,
-			["Ram"] = 108,
-			["Headbutt"] = 108,
 			["Huddle"] = 108,
 			["Hampering Blow"] = 108,
 			["Hamstring"] = 108,
@@ -616,8 +1150,6 @@ local function updateData()
 			["Pillage"] = 108,
 			["Open Chest"] = 108,
 			["Collecting"] = 108,
-			["Belly Slam"] = 108,
-			["Bite"] = 108,
 			["Crushing Smash"] = 108,
 			["Brutal Smash"] = 108,
 			["Overhead Smash"] = 108,
@@ -627,7 +1159,7 @@ local function updateData()
 			["Relentless Mauling"] = 108,
 			["Haymaker"] = 108,
 
-			--! Strike, Green
+			--! Physical Green
 			["Hulking Kick"] = 109,
 			["Night Glaive"] = 109,
 			["Gieger Smash"] = 109,
@@ -646,57 +1178,37 @@ local function updateData()
 			["Shell Spin"] = 109,
 			["Grand Melee"] = 109,
 
-			--! Strike, Blue  ! Armor  ! Thrown
-			["Throw Weapon"] = 110,
+			--! Physical Blue  ! Armor
 			["Overwhelming Slam:136170"] = 110,
-			["Massive Blow"] = 110,
-			["Log Smash"] = 110,
-			["Throw Axe"] = 110,
 			["Throw Witchalok Blade"] = 110,
 			["Face Kick"] = 110,
-			["Clobber"] = 110,
-			["Throw"] = 110,
-			["Throw Gears"] = 110,
 			["Peck"] = 110,
 			["Bulwark"] = 110,
-			["Heroic Throw"] = 110,
 			["Call to Arms:132486"] = 110,
 			["Overpower"] = 110,
-			["Hide-Piercing Shot"] = 110,
-			["Piercing Shot"] = 110,
-			["Rifle Shot"] = 110,
-			["Machine Gun"] = 110,
-			["Between the Eyes"] = 110,
 			["Three Blade Strike"] = 110,
 			["Gluttonous Slam"] = 110,
 			["Armor Plating"] = 110,
 			["Double Strike"] = 110,
 			["Shield Slam"] = 110,
 			["Shield Block"] = 110,
-			["Whirlwind"] = 110,
 			["Whirling Spin"] = 110,
 			["Arrow Barrage"] = 110,
 			["Crush"] = 110,
-			["Impaling Spear"] = 110,
 			["Pinning Spear"] = 110,
 			["Mortal Strike"] = 110,
-			["Volley"] = 110,
-			["Shield Wall"] = 110,
 			["Ruthless Precision"] = 110,
 
-			--! Strike, Purple  ! Slam  ! Tailoring
+			--! Physical Purple  ! Tailoring
 			["Overwhelm"] = 113,
 			["Backhand"] = 113,
-			["Overhead Smash"] = 113,
-			["Mash"] = 113,
 			["Champion's Honor:135884"] = 113,
 			["Wicked Slash"] = 113,
 			["Wicked Smash"] = 113,
 			["Soulsunder"] = 113,
-			["Slam"] = 113,
-			["Staggering Slam"] = 113,
 			["Blessing of Protection"] = 113,
 			["Skull and Crossbones"] = 113,
+			["Shield Wall"] = 113,
 
 			--! Bleed  ! Skinning
 			["Vicious Throw"] = 101,
@@ -728,8 +1240,6 @@ local function updateData()
 			["Rending Talons"] = 101,
 			["Serrated Slash"] = 101,
 			["Gore"] = 101,
-			["A Feast of Eyes"] = 101,
-			["A Murder of Crows"] = 101,
 			["Bloody Pin"] = 101,
 			["Bloody Talons"] = 101,
 			["Bruising Strike"] = 101,
@@ -744,7 +1254,6 @@ local function updateData()
 			["Rupture"] = 102,
 			["Savage Maul"] = 101,
 			["Shred"] = 101,
-			["Skinning"] = 101,
 			["Talon Rake"] = 101,
 			["Thrash"] = 101,
 			["Throw Flesh"] = 101,
@@ -773,7 +1282,6 @@ local function updateData()
 			["Sigil of Skoldus"] = 106,
 			["Mighty Slam"] = 106,
 			["Petrified Pet Food"] = 106,
-			["Stampede"] = 106,
 			["Negative Energy Token"] = 106,
 			["Demoralizing Shout"] = 106,
 			["Rallying Cry"] = 106,
@@ -789,6 +1297,8 @@ local function updateData()
 			["Unholy Strength"] = 106,
 
 			--! Alacrity  ! Speed
+			["Swift Paws"] = 104,
+			["Pounce"] = 104,
 			["Gore Charge"] = 104,
 			["Disengage"] = 104,
 			["Acrobatic Strike"] = 104,
@@ -837,7 +1347,6 @@ local function updateData()
 			["Draenic Swiftness Potion"] = 104,
 			["Egg Rush!"] = 104,
 			["Empyreal Reflexs"] = 104,
-			["Evasion"] = 104,
 			["Free Action"] = 104,
 			["Haste"] = 104,
 			["Living Free Action"] = 104,
@@ -857,6 +1366,8 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Aural Fracture"] = 111,
+			["Playing Music"] = 111,
 			["Deathsong"] = 111,
 			["Mrgggrrrll!"] = 111,
 			["Massive Screech"] = 111,
@@ -956,7 +1467,7 @@ local function updateData()
 			["Growing Anger"] = 103,
 			["Killing Spree"] = 103,
 			["Rabid Frenzy"] = 103,
-			["Rapid Fire"] = 103,
+			["Rapid Shot"] = 103,
 			["Tantrum"] = 103,
 			["Taunka Rage"] = 103,
 			["Violent Eruption:136215"] = 103,
@@ -1002,64 +1513,68 @@ local function updateData()
 			--: Fire
 			-------------------------
 			--! Fire  ! Cooking
-			["Smoldering Inertia"] = 400,
-			["Fiery Blast"] = 400,
-			["Blast Wave:135903"] = 400,
-			["Blazing Wave"] = 400,
-			["Flame Thrower"] = 400,
-			["Barrage of Flame"] = 400,
-			["Blaze of Glory"] = 400,
-			["Burn"] = 400,
-			["Firestorm"] = 400,
-			["Fire Whirl"] = 400,
-			["Toss Fuel on Bonfire"] = 400,
-			["Summon Blazing Servitor"] = 400,
-			["Firestorm Kick"] = 400,
-			["Flame Breath"] = 400,
-			["Call Flames:135789"] = 400,
-			["Self-Destruct"] = 400,
-			["Self-Destruct Protocol"] = 400,
-			["Seething Flames"] = 400,
-			["Light Bonfire"] = 400,
-			["Throw Torch"] = 400,
-			["Blazing Surge"] = 400,
-			["Burning"] = 400,
-			["Backdraft"] = 400,
-			["Ball of Fire"] = 400,
-			["Breath of Fire"] = 400,
-			["Burn Corpse"] = 400,
-			["Chaotic Inferno"] = 400,
-			["Combustion"] = 400,
-			["Conflagrate"] = 400,
-			["Dragon's Breath"] = 400,
-			["Elemental Blast: Critical Strike"] = 400,
-			["Fiery Breath"] = 400,
-			["Fire Eater's Hearthstone"] = 400,
-			["Fire Elemental"] = 400,
-			["Greater Fire Elemental"] = 400,
-			["Primal Fire Elemental"] = 400,
-			["Fireball"] = 400,
-			["Firebird"] = 400,
-			["Firebolt"] = 400,
-			["Flame Shock"] = 400,
-			["Flick Match"] = 400,
-			["Fuselighter"] = 400,
-			["Immolation Aura"] = 400,
-			["Lavacore Bomb"] = 400,
-			["Living Bomb"] = 400,
-			["Napalm Thrower"] = 400,
-			["Nitro Boosts"] = 400,
-			["Rune of Asvior"] = 400,
-			["Runed Flame Jets"] = 400,
-			["Scorch"] = 400,
-			["Signal Flare"] = 400,
-			["Uncontrolled Fire"] = 400,
-			["Wildfire Bomb"] = 400,
-			["Blazing Barrier"] = 400,
-			["Sear"] = 400,
+			["Flame Spit"] = 4,
+			["Light's Out"] = 4,
+			["Explosive Shot"] = 4,
+			["Smoldering Inertia"] = 4,
+			["Fiery Blast"] = 4,
+			["Blast Wave:135903"] = 4,
+			["Blazing Wave"] = 4,
+			["Flame Thrower"] = 4,
+			["Barrage of Flame"] = 4,
+			["Blaze of Glory"] = 4,
+			["Burn"] = 4,
+			["Firestorm"] = 4,
+			["Fire Whirl"] = 4,
+			["Toss Fuel on Bonfire"] = 4,
+			["Summon Blazing Servitor"] = 4,
+			["Firestorm Kick"] = 4,
+			["Flame Breath"] = 4,
+			["Call Flames:135789"] = 4,
+			["Self-Destruct"] = 4,
+			["Self-Destruct Protocol"] = 4,
+			["Seething Flames"] = 4,
+			["Light Bonfire"] = 4,
+			["Throw Torch"] = 4,
+			["Blazing Surge"] = 4,
+			["Burning"] = 4,
+			["Backdraft"] = 4,
+			["Ball of Fire"] = 4,
+			["Breath of Fire"] = 4,
+			["Burn Corpse"] = 4,
+			["Chaotic Inferno"] = 4,
+			["Combustion"] = 4,
+			["Conflagrate"] = 4,
+			["Dragon's Breath"] = 4,
+			["Elemental Blast: Critical Strike"] = 4,
+			["Fiery Breath"] = 4,
+			["Fire Eater's Hearthstone"] = 4,
+			["Fire Elemental"] = 4,
+			["Greater Fire Elemental"] = 4,
+			["Primal Fire Elemental"] = 4,
+			["Fireball"] = 4,
+			["Firebird"] = 4,
+			["Firebolt"] = 4,
+			["Flame Shock"] = 4,
+			["Flick Match"] = 4,
+			["Fuselighter"] = 4,
+			["Immolation Aura"] = 4,
+			["Lavacore Bomb"] = 4,
+			["Living Bomb"] = 4,
+			["Napalm Thrower"] = 4,
+			["Nitro Boosts"] = 4,
+			["Rune of Asvior"] = 4,
+			["Runed Flame Jets"] = 4,
+			["Scorch"] = 4,
+			["Uncontrolled Fire"] = 4,
+			["Wildfire Bomb"] = 4,
+			["Blazing Barrier"] = 4,
+			["Sear"] = 4,
 
 			--! Flamestrike  ! Cannonfire  ! Smelting
+			["Ticking Bomb"] = 5,
 			["Exploding Oil Barrel"] = 5,
+			["Signal Flare"] = 5,
 			["Flare"] = 5,
 			["Grapeshot Blast"] = 5,
 			["Blazing Shot"] = 5,
@@ -1151,20 +1666,20 @@ local function updateData()
 			["Volcanic Tantrum"] = 12,
 			
 			--! Hellfire
-			["Soul Explosion"] = 402,
-			["Roaring Heat"] = 402,
-			["Tormenting Flames"] = 402,
-			["Cauterize Master"] = 402,
-			["Burning Hatred"] = 402,
-			["Nuclear Blast"] = 402,
-			["Disintegration Laser"] = 402,
-			["Soul Fire"] = 402,
-			["Rain of Fire"] = 402,
-			["Immolate"] = 402,
-			["Incinerate"] = 402,
-			["Headless Horseman's Hearthstone"] = 402,
-			["Hellfire"] = 402,
-			["Ritual of Doom"] = 402,
+			["Soul Explosion"] = 400,
+			["Roaring Heat"] = 400,
+			["Tormenting Flames"] = 400,
+			["Cauterize Master"] = 400,
+			["Burning Hatred"] = 400,
+			["Nuclear Blast"] = 400,
+			["Disintegration Laser"] = 400,
+			["Soul Fire"] = 400,
+			["Rain of Fire"] = 400,
+			["Immolate"] = 400,
+			["Incinerate"] = 400,
+			["Headless Horseman's Hearthstone"] = 400,
+			["Hellfire"] = 400,
+			["Ritual of Doom"] = 400,
 
 			--! Frostfire  ! Steam
 			["Steam Blast"] = 20,
@@ -1179,6 +1694,7 @@ local function updateData()
 			["Crystallize:135866"] = 20,
 
 			--! Spellfire  ! Phoenixfire
+			["Birthing Flame"] = 68,
 			["Phoenix Renewal"] = 68,
 			["Phoenix Flames"] = 68,
 			["Phoenix Flight"] = 68,
@@ -1398,7 +1914,6 @@ local function updateData()
 			["Chaos Volley"] = 127,
 			["Claws of Argus"] = 127,
 			["Dark Portal"] = 127,
-			["Darkglare"] = 127,
 			["Deomic Tyrant"] = 127,
 			["Eye Beam"] = 127,
 			["Fel Armament"] = 127,
@@ -1417,6 +1932,7 @@ local function updateData()
 			["Rain of Chaos"] = 127,
 
 			--! Felstrike
+			["Empowered Slice:1109118"] = 427,
 			["Fel Whirlwind"] = 427,
 			["Call Fel Lord"] = 427,
 			["Fel Lord"] = 427,
@@ -1452,6 +1968,7 @@ local function updateData()
 			--: Holy
 			-------------------------
 			--! Holy
+			["Perseverance of the Gods"] = 2,
 			["Blessing of Freedom"] = 2,
 			["Holy Light"] = 2,
 			["Light's Speed"] = 2,
@@ -1484,6 +2001,7 @@ local function updateData()
 			["Divine Protection"] = 2,
 			["Shining Light"] = 2,
 			["Flash Heal"] = 2,
+			["Ephemeral Wings"] = 2,
 
 			--! Holy Light  ! Gold
 			["The Golden Gaze"] = 200,
@@ -1536,7 +2054,6 @@ local function updateData()
 			["Eclipse (Solar)"] = 6,
 			["Holy Fire"] = 6,
 			["Inert Flames"] = 6,
-			["Purge the Wicked"] = 6,
 			["Righteous Fury"] = 6,
 			["Searing Wrath"] = 6,
 			["Shield of Vengeance"] = 6,
@@ -1557,6 +2074,7 @@ local function updateData()
 			["Solar Orb"] = 6,
 
 			--! Ethereal  ! Kyrian
+			["Scouring Tithe"] = 201,
 			["Popo's Potion"] = 201,
 			["Newfound Resolve"] = 201,
 			["Purifying Blast:3528286"] = 201,
@@ -1653,6 +2171,7 @@ local function updateData()
 			["Valiant Flame"] = 600,
 
 			--! Discipline  ! Bandage  ! Brewing  ! Inscription
+			["Eating"] = 202,
 			["Waking"] = 202,
 			["Unbinding"] = 202,
 			["Aiding"] = 202,
@@ -1723,6 +2242,8 @@ local function updateData()
 			["Unspoken Gratitude"] = 202,
 
 			--! Hyperlight  ! Hallow  ! Broker
+			["Incorporeal Weave"] = 203,
+			["Soul Ruin"] = 203,
 			["Steal Essence:636333"] = 203,
 			["Focused Annihilation"] = 203,
 			["Summon Condemned"] = 203,
@@ -1771,7 +2292,6 @@ local function updateData()
 			["Soul Volley"] = 203,
 			["Soulsmash:237526"] = 203,
 			["Soulstorm:4067362"] = 203,
-			["Spectral Smite"] = 203,
 			["Stygian Storm"] = 203,
 			["Tachyon Jump"] = 203,
 			["Tal'Galan's Trial"] = 203,
@@ -1781,6 +2301,7 @@ local function updateData()
 			-- 18
 
 			--! Azerite
+			[":1869493"] = 204, -- Heart of Azeroth
 			["Puryfying Blast:2967103"] = 204,
 			["Puryfying Blast:1408832"] = 204,
 			["Empowering the Heart"] = 204,
@@ -1838,6 +2359,7 @@ local function updateData()
 			--: Divine
 			-------------------------
 			--! Divine  ! Chi-Ji
+			["Maker's Sanctuary:135954"] = 66,
 			["Crumbling Aegis"] = 66,
 			["Chi-Ji"] = 66,
 			["Chi-Ji, the Red Crane"] = 66,
@@ -1871,6 +2393,8 @@ local function updateData()
 			--: Frost
 			-------------------------
 			--! Frost
+			["Pillar of Frost"] = 16,
+			["Rime"] = 16,
 			["Frozen Sweep"] = 16,
 			["Unstable Frost"] = 16,
 			["Icy Shard"] = 16,
@@ -1886,6 +2410,8 @@ local function updateData()
 			["Icy Veins"] = 16,
 
 			--! Ice  ! Snow
+			["Remorseless Winter"] = 160,
+			["Cold Heart"] = 160,
 			["Ring of Frost"] = 160,
 			["Snowball"] = 160,
 			["Ice Fall"] = 160,
@@ -1918,7 +2444,6 @@ local function updateData()
 			["Wardstone Activation"] = 24,
 			["Typhoon:135861"] = 24,
 			["Piercing Rain"] = 24,
-			["Remorseless Winter"] = 24,
 			["Chilling Winds"] = 24,
 			["Glacial Winds"] = 24,
 			["Freezing Storm"] = 24,
@@ -1929,12 +2454,12 @@ local function updateData()
 			["Froststorm Breath"] = 24,
 
 			--! Spellfrost
+			["Breath of Sindragosa"] = 80,
 			["Frost Armor"] = 80,
 			["Crystal Eruption:132783"] = 80,
 			["Crystal Growth:132783"] = 80,
 			["Crystalline Dust:135776"] = 80,
 			["Crystalline Ground:132779"] = 80,
-			["Pillar of Frost"] = 80,
 
 
 			--: Elemental
@@ -1953,6 +2478,7 @@ local function updateData()
 			["Ancestral Vision"] = 280,
 			["Master of the Elements"] = 280,
 			["Spiritwalker's Grace"] = 280,
+			["Astral Recall"] = 280,
 
 			--! Chemical  ! Alchemy
 			["Gaseous Bubbles"] = 281,
@@ -1978,7 +2504,6 @@ local function updateData()
 			["Leafstorm"] = 8,
 			["Overgrowth"] = 8,
 			["Frenzied Regeneration"] = 8,
-			["Astral Recall"] = 8,
 			["Gather Pollen"] = 8,
 			["Seeds of Sorrow"] = 8,
 			["Bounding Spores"] = 8,
@@ -1997,6 +2522,8 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Reflective Shell"] = 900,
+			["Tangled Webs"] = 900,
 			["Hibernate"] = 900,
 			["Deep Slumber"] = 900,
 			["Give Silk"] = 900,
@@ -2041,6 +2568,7 @@ local function updateData()
 			["Rejuvenating Wind"] = 10,
 
 			--! Fey  ! Night Fae
+			["Glimmering Illusion"] = 805,
 			["Eyes of Elune"] = 805,
 			["Convocation of Elune"] = 805,
 			["Nightfire"] = 805,
@@ -2095,6 +2623,7 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Hydra Sputum"] = 806,
 			["Volatile Burst:136182"] = 806,
 			["Volatile Burst:136030"] = 806,
 			["Turbulent Juice"] = 806,
@@ -2188,6 +2717,7 @@ local function updateData()
 			["Wound Poison"] = 806,
 
 			--! Poisonstrike
+			["Barrage:132204"] = 906,
 			["Poisoning Strike"] = 906,
 			["Poisonous Claws"] = 906,
 			["Barbed Assault"] = 906,
@@ -2231,7 +2761,7 @@ local function updateData()
 			["Choosing Pa'ku"] = 811,
 			["Colossal Blowback"] = 811,
 			["Embrace of Pa'ku"] = 811,
-			["Farseer's Raging Tempest"] = 811,
+			["Farseer's Raging Tempest"] = (class == "SHAMAN" and spec == 1) and 4 or (class == "SHAMAN" and spec == 3) and 24 or 811,
 			["Feather Burst"] = 811,
 			["Flap"] = 811,
 			["Gale Force"] = 811,
@@ -2253,6 +2783,7 @@ local function updateData()
 			["Swooping Lunge"] = 811,
 
 			--! Storm
+			["Frenzyheart's Fury:136018"] = 911,
 			["Wild Tornado"] = 911,
 			["Tornado"] = 911,
 			["Dervish"] = 911,
@@ -2279,6 +2810,8 @@ local function updateData()
 			["Localized Storm"] = 911,
 
 			--! Lightning  ! Thunder  ! Electric
+			["Blister"] = 800,
+			["Defibrillate"] = 800,
 			["Electric Shock"] = 800,
 			["Sashj'tar Blast"] = 800,
 			["Stormbringer"] = 800,
@@ -2369,6 +2902,8 @@ local function updateData()
 			["Zot!"] = 800,
 
 			--! Stormstrike
+			["Thunderclap"] = 9,
+			["Thunder Clap"] = 9,
 			["Crashing Storm"] = 9,
 			["Stormhammer"] = 9,
 			["Thundering Rush"] = 9,
@@ -2386,6 +2921,7 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water  ! Sea  ! Fishing
+			["Compressed Ocean Fishing"] = 801,
 			["Watery Splash"] = 801,
 			["Summon Water Elemental"] = 801,
 			["Wild Charge:136148"] = 801,
@@ -2569,7 +3105,8 @@ local function updateData()
 			["Earthen Blast"] = 803,
 			["Hardened Muck"] = 803,
 
-			--! Earthstrike  ! Leatherworking
+			--! Earthstrike  ! Skinning  ! Leatherworking
+			["Skinning"] = 903,
 			["Ground Stomp"] = 903,
 			["Colossal Smash"] = 903,
 			["Shattering Smash"] = 903,
@@ -2612,6 +3149,7 @@ local function updateData()
 			["Harden"] = 903,
 
 			--! Stone  ! Rock
+			["Restore Stone"] = 809,
 			["Rock Bash"] = 809,
 			["Cave-in"] = 809,
 			["Stone Bulwark"] = 809,
@@ -2670,6 +3208,7 @@ local function updateData()
 			["In Irons"] = 909,
 
 			--! Sand  ! Ash
+			["Return to Camp"] = 804,
 			["Sand Breath"] = 804,
 			["From the Ashes"] = 804,
 			["Kick Up Dust"] = 804,
@@ -2683,6 +3222,7 @@ local function updateData()
 			["Eruption:236758"] = 804,
 
 			--! Amber
+			["Explosive Bombardment:892832"] = 810,
 			["Splintered Elemental Rod"] = 810,
 			["Amber Blast"] = 810,
 			["Amber Bolt"] = 810,
@@ -2706,7 +3246,6 @@ local function updateData()
 			["Ambergesic"] = 810,
 			["Ancient Rune:1058940"] = 810,
 			["Blight Crystal Explosion"] = 810,
-			["Blister"] = 810,
 			["Caustic Amber"] = 810,
 			["Chuck Crystal:132777"] = 810,
 			["Crystal Barbs:237196"] = 810,
@@ -2777,7 +3316,6 @@ local function updateData()
 			["Crystalline Torment"] = 808,
 			["Crystallize"] = 808,
 			["Death Glare:433446"] = 808,
-			["Exposed Core"] = 808,
 			["Form Crystals"] = 808,
 			["Impaling Coral"] = 808,
 			["Piercing Shards"] = 808,
@@ -2788,8 +3326,9 @@ local function updateData()
 
 			--! Amethyst  ! Purple
 			["Resonating Crystals"] = 813,
+			["Exposed Core"] = 813,
 
-			--! Sapphire  ! Blue
+			--! Sapphire  ! Blue  ! Alliance
 			-- 814
 
 			--! Emerald  ! Green
@@ -2801,7 +3340,7 @@ local function updateData()
 			--! Topaz  ! Orange
 			-- 817
 
-			--! Ruby  ! Red
+			--! Ruby  ! Red  ! Horde
 			["Shattering Ruby"] = 818,
 
 			--! Onyx  ! Obsidian  ! Black
@@ -2843,9 +3382,11 @@ local function updateData()
 			["Scrying"] = 64,
 			["Summon Power Crystal"] = 64,
 			["Summon Power Crystals"] = 64,
-			["Town Portal"] = 64,
+			["Arcane Explosion"] = 64,
+			["Arcane Missiles"] = 64,
 
 			--! Spellstrike
+			["Binding Shot"] = 65,
 			["Umbral Glaive Storm"] = 65,
 			["A Compendium of the Herbs of Draenor"] = 65,
 			["A Guide to Skinning in Draenor"] = 65,
@@ -2872,8 +3413,6 @@ local function updateData()
 			["Spell Reflection"] = 65,
 
 			--! Magic
-			["Arcane Explosion"] = 126,
-			["Arcane Missiles"] = 126,
 			["Summon Doomskull"] = 126,
 			["Touch of the Magi"] = 126,
 			["Focused Bursts:136050"] = 126,
@@ -2885,6 +3424,17 @@ local function updateData()
 			["Conjure Mana Gem"] = 126,
 
 			--! Conjuration  ! Teleport  ! Enchanting
+			["Trueshot"] = 646,
+			["Create Belt"] = 646,
+			["Create Bracer"] = 646,
+			["Create Boots"] = 646,
+			["Create Leggings"] = 646,
+			["Create Curio"] = 646,
+			["Create Lavalliere"] = 646,
+			["Wormhole Teleport"] = 646,
+			["Wormhole"] = 646,
+			["Wormhole: Pandaria"] = 646,
+			["Town Portal"] = 646,
 			["Mirror Image"] = 646,
 			["Mirror Images"] = 646,
 			["Dalaran Hearthstone"] = 646,
@@ -2966,6 +3516,7 @@ local function updateData()
 			["Mindmeld"] = 124,
 
 			--! Temporal  ! Time
+			["Time Stop"] = 640,
 			["Temporal Blast"] = 640,
 			["Accelerated Mending"] = 640,
 			["Chrono Shift"] = 640,
@@ -2980,6 +3531,7 @@ local function updateData()
 			--: Astral
 			-------------------------
 			--! Astral
+			["Glitter Burst"] = 72,
 			["Constellation Shield"] = 72,
 			["Starfall"] = 72,
 			["Celestial Alignment"] = 72,
@@ -2993,6 +3545,8 @@ local function updateData()
 			["Siphon Nightwell"] = 72,
 
 			--! Spectral
+			["Feral Spirit"] = 720,
+			["Spectral Smite"] = 720,
 			["Spirit of Ka-Sha"] = 720,
 			["Starlance Vigil"] = 720,
 			["Shadow Pounce"] = 720,
@@ -3021,6 +3575,8 @@ local function updateData()
 			--: Decay
 			-------------------------
 			--! Unholy  ! Bone
+			["Bone Saw"] = 414,
+			["Devour Humanoid"] = 414,
 			["Bind to the Bones"] = 414,
 			["Helya's Boon"] = 414,
 			["Foul Smash"] = 414,
@@ -3063,6 +3619,7 @@ local function updateData()
 			["Whirling Mist"] = 414,
 
 			--! Plague
+			["Wretched Belch"] = 40,
 			["Carrion Slam"] = 40,
 			["Infected Thorn"] = 40,
 			["Bile Spew"] = 40,
@@ -3170,6 +3727,14 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Surge of Pain:3528302"] = 411,
+			["Phase Shift:3528299"] = 411,
+			["Wailing Blast:3528302"] = 411,
+			["Impaling Spikes:136181"] = 411,
+			["Accursed Vigor"] = 411,
+			["Consume Life:3528300"] = 411,
+			["Mark for Death"] = 411,
+			["Stygian Rain"] = 411,
 			["Doomblast:3528298"] = 411,
 			["Torturous Reach"] = 411,
 			["Effigy of Torment"] = 411,
@@ -3222,7 +3787,6 @@ local function updateData()
 			["Sudden Death"] = 411,
 			["Attenuated Barrage:3528304"] = 411,
 			["Dark Seeker:1345085"] = 411,
-			["Unstable Affliction"] = 411,
 			["Excruciating Agony:3528304"] = 411,
 			["Stygia Tap"] = 411,
 			["Stygian Breath"] = 411,
@@ -3274,7 +3838,6 @@ local function updateData()
 			["Defile"] = 411,
 			["Ebon Clarion"] = 411,
 			["Feign Death"] = 411,
-			["Infuse Death"] = 411,
 			["Mawsworn Crossbow"] = 411,
 			["Ritual of Bone"] = 411,
 			["Ritual of Bones"] = 411,
@@ -3288,6 +3851,7 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Devourer
+			["Consume:1778226"] = 413,
 			["Bewitching Eye"] = 413,
 			["Devourer's Rift"] = 413,
 			["Worldeating Rift"] = 413,
@@ -3316,11 +3880,14 @@ local function updateData()
 			["Relentless Feeding"] = 413,
 			["Devour Essence"] = 413,
 			["Desolate:1778230"] = 413,
+			["Edge of Obliteration:1778227"] = 413,
+			["Sweeping Scythe:1692685"] = 413,
 
 
 			--: Shadow
 			-------------------------
 			--! Shadow
+			["Dark Mending"] = 32,
 			["Woven Shadows"] = 32,
 			["Sudden Doom"] = 32,
 			["Death's Advance"] = 32,
@@ -3336,6 +3903,7 @@ local function updateData()
 			["Nightfall"] = 32,
 
 			--! Psychic  ! Mind Control
+			["Bindings of Submission"] = 328,
 			["Mind Rend"] = 328,
 			["Cripple"] = 328,
 			["Piercing Gaze"] = 328,
@@ -3364,6 +3932,7 @@ local function updateData()
 			["Siphon of Acherus"] = 328,
 
 			--! Shadowstrike
+			["Tormenting Strike"] = 33,
 			["Veil of Midnight"] = 33,
 			["Foul Smash:607850"] = 33,
 			["Dark Rend"] = 33,
@@ -3389,6 +3958,7 @@ local function updateData()
 			["Chain Cleave"] = 33,
 
 			--! Pain
+			["Purge the Wicked"] = 322,
 			["Surge of Pain"] = 322,
 			["Excruciating Agony"] = 322,
 			["Wave of Agony"] = 322,
@@ -3400,6 +3970,8 @@ local function updateData()
 			["Torment"] = 322,
 
 			--! Haunt  ! Nether
+			["A Feast of Eyes"] = 323,
+			["A Murder of Crows"] = 323,
 			["Unleashed Suffering"] = 323,
 			["Cries of Anguish"] = 323,
 			["Desperation"] = 323,
@@ -3430,14 +4002,12 @@ local function updateData()
 			["Banish Scourge Crystal"] = 323,
 			["Cry of the Forgotten"] = 323,
 			["Dispersion"] = 323,
-			["Drain Soul"] = 323,
 			["Feint"] = 323,
 			["Ghastly Wail"] = 323,
 			["Harrowing Wail"] = 323,
 			["Haunt"] = 323,
 			["Incorporeal"] = 323,
 			["Mind Vision"] = 323,
-			["Phantom Singularity"] = 323,
 			["Shrieking Souls"] = 323,
 			["Spectral Shackle"] = 323,
 			["Unleashed Torment"] = 323,
@@ -3568,6 +4138,8 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Psychic Blast"] = 320,
+			["Phantom Singularity"] = 320,
 			["Unravel:236296"] = 320,
 			["Unravel:136202"] = 320,
 			["Shadow Wrath"] = 320,
@@ -3614,7 +4186,6 @@ local function updateData()
 			["Void Scars"] = 320,
 			["Charge:136221"] = 320,
 			["Void Frenzy"] = 320,
-			["Consume:1778226"] = 320,
 			["Call Voidwalker"] = 320,
 			["Force of Gravity"] = 320,
 			["Void Consumption"] = 320,
@@ -3690,6 +4261,9 @@ local function updateData()
 			["Twlight Flames"] = 34, -- [sic]
 
 			--! Blood  ! Venthyr
+			["Blood Call"] = 321,
+			["Bewitch:132096"] = 321,
+			["Sanguine Fury"] = 321,
 			["Consume the Living"] = 321,
 			["Impending Catastrophe"] = 321,
 			["Lingering Hunger"] = 321,
@@ -3833,6 +4407,8 @@ local function updateData()
 			["Mindgames:3565723"] = 321,
 
 			--! Necromancy  ! Necrolord
+			["Infuse Death"] = 326,
+			["Consume Life"] = 326,
 			["Soul Fracture:2576087"] = 326,
 			["Devour Soul"] = 326,
 			["Putrid Burst"] = 326,
@@ -3971,6 +4547,8 @@ local function updateData()
 			["Weeping Burden"] = 325,
 
 			--! Dread  ! Fear  ! Sha
+			["Devour Phantasma"] = 327,
+			["Terrify"] = 327,
 			["Cry of Desolation"] = 327,
 			["Trembling Roar"] = 327,
 			["Mortal Coil"] = 327,
@@ -4062,6 +4640,13 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic
+			["Dark Soul"] = 360,
+			["Dark Soul: Misery"] = 360,
+			["Rapid Contagion:237557"] = 360,
+			["Darkglare"] = 360,
+			["Summon Darkglare"] = 360,
+			["Unstable Affliction"] = 360,
+			["Drain Soul"] = 360,
 			["Erupting Shadow:136201"] = 360,
 			["Soulstone"] = 360,
 			["Summon Demonic Tyrant"] = 360,
@@ -4125,7 +4710,6 @@ local function updateData()
 			["Demonic Gateway"] = 361,
 			["Demonic Circle"] = 361,
 			["Soulflame:841221"] = 361,
-			["Blood Call:134437"] = 361,
 			["Hand of Gul'dan"] = 361,
 			["Bilescourge Bombers"] = 361,
 
@@ -4133,7 +4717,12 @@ local function updateData()
 			--: Resources
 			-------------------------
 			--! Mana
+			["Excess Mana"] = "Mana",
+			["Titanic Surge:136075"] = "Mana",
+			["Mana Thirst"] = "Mana",
+			["Drain Mana"] = "Mana",
 			["Clearcasting"] = "Mana",
+			["Mana Barrier"] = "Mana",
 			["Deposit Anima"] = "Anima",
 			["Evocation"] = "Mana",
 			["Innervate"] = "Mana",
@@ -4155,11 +4744,14 @@ local function updateData()
 
 			--: Other
 			-------------------------
-			--! Fatigue
+			--! Fatigue  ! Tar
+			["Tar Trap"] = 999,
+			["Fatigue"] = 999,
 			["Weakened Soul"] = 999,
 			["Forbearance"] = 999,
 			["Exhaustion"] = 999,
 			["Sated"] = 999,
+			["Fatigued"] = 999,
 			["Temporal Displacement:458224"] = 999,
 
 			
@@ -4167,8 +4759,8 @@ local function updateData()
 			-------------------------
 			--! Mounts
 			["Ardenweald Wilderling"] = 805,
-			["Autumnal Wilderling"] = 200,
-			["Summer Wilderling"] = 8,
+			["Autumnal Wilderling"] = 66,
+			["Summer Wilderling"] = 280,
 			["Winter Wilderling"] = 160,
 			["Abyss Worm"] = 32,
 			["Acherus Deathcharger"] = 411,
@@ -4186,13 +4778,13 @@ local function updateData()
 			["Amber Shardhide"] = 903,
 			["Amethyst Ruinstrider"] = 903,
 			["Ankoan Waveray"] = 901,
-			["Antoran Charhound"] = 400,
+			["Antoran Charhound"] = 4,
 			["Antoran Gloomhound"] = 36,
 			["Arboreal Gulper"] = 805,
 			["Arcadian War Turtle"] = 12,
 			["Arcanist's Manasaber"] = 64,
 			["Archmage's Prismatic Disc:1516058"] = 64, -- Arcane
-			["Archmage's Prismatic Disc:1517838"] = 400, -- Fire
+			["Archmage's Prismatic Disc:1517838"] = 4, -- Fire
 			["Archmage's Prismatic Disc:1517839"] = 16, -- Frost
 			["Argent Charger"] = 2,
 			["Argent Hippogryph"] = 3,
@@ -4324,7 +4916,7 @@ local function updateData()
 			["Child of Torcali"] = 903,
 			["Chittering Animite"] = 413,
 			["Chosen Tauralus"] = 40,
-			["Cindermane Charger"] = 400,
+			["Cindermane Charger"] = 4,
 			["Cloudwing Hippogryph"] = 811,
 			["Clutch of Ha-Li"] = 811,
 			["Clutch of Ji-Kun"] = 811,
@@ -4385,7 +4977,7 @@ local function updateData()
 			["Drake of the South Wind"] = 800,
 			["Drake of the West Wind"] = 800,
 			["Dread Raven"] = 6,
-			["Dreadsteed"] = greenfire and 401 or 402,
+			["Dreadsteed"] = (class == "WARLOCK" and IsSpellKnown(101508)) and 401 or 400,
 			["Dreamlight Runestag"] = 805,
 			["Dune Scavenger"] = 804,
 			["Duskflutter Ardenmoth"] = 805,
@@ -4424,18 +5016,18 @@ local function updateData()
 			["Felfire Hawk"] = 401,
 			["Felglow Mana Ray"] = 401,
 			["Felsaber"] = 401,
-			["Felsteed"] = greenfire and 401 or 402,
+			["Felsteed"] = (class == "WARLOCK" and IsSpellKnown(101508)) and 401 or 400,
 			["Felsteel Annihilator"] = 127,
 			["Fierce Razorwing"] = 811,
 			["Fiery Warhorse"] = 401,
 			["Fireplume Phoenix"] = 68,
-			["Flametalon of Alysrazor"] = 400,
-			["Flameward Hippogryph"] = 400,
+			["Flametalon of Alysrazor"] = 4,
+			["Flameward Hippogryph"] = 4,
 			["Flying Carpet"] = 64,
 			["Flying Machine"] = 100,
 			["Foresworn Aquilon"] = 96,
 			["Forsaken Warhorse"] = 32,
-			["Fossilized Raptor"] = 803,
+			["Fossilized Raptor"] = 414,
 			["Frenzied Feltalon"] = 401,
 			["Frightened Kodo"] = 903,
 			["Frostplains Battleboar"] = 903,
@@ -4519,7 +5111,7 @@ local function updateData()
 			["Heavenly Crimson Cloud Serpent"] = 66,
 			["Heavenly Golden Cloud Serpent"] = 2,
 			["Heavenly Onyx Cloud Serpent"] = 203,
-			["Hellfire Infernal"] = 402,
+			["Hellfire Infernal"] = 400,
 			["High Priest's Lightsworn Seeker:1509824"] = 2,
 			["High Priest's Lightsworn Seeker:1518632"] = 201, -- Discipline
 			["High Priest's Lightsworn Seeker:1518633"] = 2, -- Holy
@@ -4605,7 +5197,7 @@ local function updateData()
 			["Mechagon Peacekeeper"] = 100,
 			["Mechanized Lumber Extractor"] = 100,
 			["Mekgineer's Chopper"] = 100,
-			["Midnight"] = 402,
+			["Midnight"] = 400,
 			["Mighty Caravan Brutosaur"] = 903,
 			["Mimiron's Head"] = 100,
 			["Minion of Grumpus"] = 903,
@@ -4617,7 +5209,7 @@ local function updateData()
 			["Mystic Runesaber"] = 126,
 			["Nazjatar Blood Serpent"] = 321,
 			["Netherlord's Accursed Wrathsteed"] = 320,
-			["Netherlord's Brimstone Wrathsteed"] = 402,
+			["Netherlord's Brimstone Wrathsteed"] = 400,
 			["Netherlord's Chaotic Wrathsteed"] = 127,
 			["Nightborne Manasaber"] = 126,
 			["Ny'alotha Allseer"] = 324,
@@ -4653,9 +5245,9 @@ local function updateData()
 			["Prestigious War Steed"] = 903,
 			["Prestigious War Wolf"] = 903,
 			["Priestess' Moonsaber"] = 72,
-			["Primal Flamesaber"] = 400,
+			["Primal Flamesaber"] = 4,
 			["Proudmoore Sea Scout"] = 811,
-			["Pureblood Fire Hawk"] = 400,
+			["Pureblood Fire Hawk"] = 4,
 			["Pureheart Courser"] = 201,
 			["Purple Dragon Turtle"] = 900,
 			["Purple Elekk"] = 903,
@@ -4743,7 +5335,7 @@ local function updateData()
 			["Slime Serpent"] = 410,
 			["Smoky Charger"] = 903,
 			["Smoky Direwolf"] = 903,
-			["Smoldering Ember Wyrm"] = 400,
+			["Smoldering Ember Wyrm"] = 4,
 			["Snapback Scuttler"] = 901,
 			["Snapdragon Kelpstalker"] = 901,
 			["Snowfeather Hunter"] = 17,
@@ -4939,7 +5531,7 @@ local function updateData()
 			["Wakener's Runestag"] = 805,
 			["Wandering Ancient"] = 8,
 			["War-Bred Tauralus"] = 40,
-			["Warforged Nightmare"] = 402,
+			["Warforged Nightmare"] = 400,
 			["Warlord's Deathwheel"] = 100,
 			["Warsong Direfang"] = 903,
 			["Warstitched Darkhound"] = 32,
@@ -4976,23 +5568,10 @@ local function updateData()
 			["Yellow Qiraji Battle Tank"] = 324,
 			["Yu'lei, Daughter of Jade"] = 902,
 			["Zandalari Direhorn"] = 903,
-		}
 
-		if class and class == "SHAMAN" and spec == 1 then
-			ZA.CastSchoolByName["Farseer's Raging Tempest"] = 400
-		elseif class and class == "SHAMAN" and spec == 3 then
-			ZA.CastSchoolByName["Farseer's Raging Tempest"] = 24
-		end
-
-		ZA.CastSchoolByIcon = {
-			-- Azerite
-			[1869493] = 204, -- Heart of Azeroth
-		}
-
-		ZA.CastSchoolBySpellID = {
-			-- Quest
+			--# Quest
 			[106872] = 327,
-			[145949] = 400,
+			[145949] = 4,
 			[156087] = 323,
 			[178335] = 202,
 			[178787] = 361,
@@ -5019,7 +5598,7 @@ local function updateData()
 			[198444] = 323,
 			[199336] = 96,
 			[200228] = 401,
-			[203156] = 202,
+			[203156] = "HUNTER",
 			[204542] = 8,
 			[207493] = 34,
 			[207501] = 107,
@@ -5040,7 +5619,7 @@ local function updateData()
 			[236262] = 202,
 			[240473] = 360,
 			[243833] = 321,
-			[245030] = 400,
+			[245030] = 4,
 			[248345] = 2,
 			[248906] = 202,
 			[251746] = 800,
@@ -5215,9 +5794,9 @@ local function updateData()
 			[70458] = 8,
 			[70476] = 100,
 			[70813] = 101,
-			[71030] = 400,
+			[71030] = 4,
 			[75192] = 28,
-			[77314] = 400,
+			[77314] = 4,
 			[78336] = 32,
 			[80702] = 32,
 			[80704] = 32,
@@ -5228,8 +5807,8 @@ local function updateData()
 			[210519] = 202,
 			[189038] = 112,
 			[219181] = 900,
-			[219297] = 400,
-			[213293] = 400,
+			[219297] = 4,
+			[213293] = 4,
 			[218184] = 107,
 			[218296] = 202,
 			[219448] = 8,
@@ -5244,7 +5823,7 @@ local function updateData()
 			[56562] = 101,
 			[337624] = 805,
 			[319538] = 805,
-			[313558] = 400,
+			[313558] = 4,
 			[321587] = 805,
 			[343890] = 65,
 			[324346] = 411,
@@ -5287,14 +5866,14 @@ local function updateData()
 			[326487] = 100,
 			[329193] = 411,
 			[327895] = 203,
-			[213297] = 400,
-			[129586] = 400,
+			[213297] = 4,
+			[129586] = 4,
 			[229086] = 202,
 			[192456] = 202,
 			[192481] = 107,
 			[206766] = 107,
 			[73945] = 100,
-			[198513] = 400,
+			[198513] = 4,
 			[147002] = 401,
 			[146915] = 360,
 			[166018] = 8,
@@ -5313,8 +5892,8 @@ local function updateData()
 			[162237] = 900,
 			[162240] = 900,
 			[163381] = 320,
-			[167108] = 400,
-			[166661] = 400,
+			[167108] = 4,
+			[166661] = 4,
 			[167133] = 101,
 			[167301] = 808,
 			[171985] = 102,
@@ -5399,7 +5978,7 @@ local function updateData()
 			[69230] = 18,
 			[69217] = 100,
 			[76241] = 5,
-			[74793] = 400,
+			[74793] = 4,
 			[74475] = 72,
 			[76724] = 10,
 			[76759] = 111,
@@ -5483,15 +6062,26 @@ local function updateData()
 			[214669] = 326,
 			[356593] = 203,
 			[203675] = 646,
+			[354222] = 65,
+			[356615] = 660,
+			[339329] = 201,
+			[341641] = 202,
+			[353963] = 201,
+			[51962] = 202,
+			[51210] = 580,
+			[51845] = 280,
+			[53038] = 111,
+			[52333] = 808,
+			[51659] = 100,
+			[52066] = 66,
 			--qqq
 
-			--! NPC spells
+			--# NPC spells
 			[319294] = 326, -- Spirit Bolt (Exile's Reach)
 			[325143] = 201, -- Restore (Bastion)
 			[335485] = 327, -- Bwllowing Roar (The Maw)
 			[333821] = 326, -- Ancient Tome (Maldraxxus)
 			[324114] = 326, -- Forbidden Knowledge (Maldraxxus)
-			[322802] = 805, -- Psychic Blast (Gorm Matriarch)
 			[324483] = 805, -- Anima-Charged Spear (Ardenweald)
 			[327474] = 201, -- Crushing Doubt (Uther)
 			[329509] = 68, -- Blazing Surge (Kael'thas)
@@ -5536,18 +6126,20 @@ local function updateData()
 			[358835] = 28, -- Guardian's Breath (Ylva)
 			[354114] = 411, -- Unleashed Suffering (Mawsworn)
 			[358303] = 413, -- Essence Ejection (Konthrogz the Obliterator)
-			[353782] = 260, -- Shadow Nova (Nathrezim)
+			[353782] = 360, -- Shadow Nova (Nathrezim)
 			[217003] = 360, -- Slumber Fog (Nathrezim)
+			[356984] = 360, -- Slumber Fog (Diathorus the Seeker)
 			[193100] = 9, -- Dropping the Hammer (Dargrul)
+			[206355] = 427, -- Mighty Stomp (Niskara - Felblade Defender)
 			--nnn
 
-			--! Auras
+			--# Auras
 			[345569] = 105, -- Flagellation (Haste Buff)
 			[312106] = 600, -- Weapons of Order (Debuff)
 			[259277] = 101, -- Kill Command (Bleed) (Bloodseeker talent)
+			[113942] = 999, -- Demonic Gateway (Debuff)
 
-
-			-- Ascension Crafting
+			--# Ascension Crafting
 			[328321] = 201, -- Overcharged Goliath Core
 			[328680] = 201, -- Soul Mirror
 			[333209] = 201, -- Herald's Footpads
@@ -5582,7 +6174,7 @@ local function updateData()
 			[345978] = 201, -- Ring of Warding
 
 
-			-- Abominable Stitching
+			--# Abominable Stitching
 			[325284] = 414, -- Construct Body: "Chordy"
 			[325454] = 414, -- Construct Body: "Atticus"
 			[325452] = 414, -- Construct Body: "Marz"
@@ -5598,7 +6190,6 @@ local function updateData()
 			[326408] = 414, -- Construct Body: "Mama Tomalin"
 			[325458] = 414, -- Construct Body: "Miru"
 			[326379] = 414, -- Construct Body: "Neena"
-
 			[326525] = 326, -- Call Chordy
 			[327203] = 326, -- Call Atticus
 			[327556] = 326, -- Call Marz
@@ -5612,7 +6203,7 @@ local function updateData()
 			[340340] = 326, -- Call Iron Phillip
 			[340841] = 326, -- Call Naxx
 
-			-- Mining
+			--# Mining
 			[102167] = 5, -- Smelt Trillium
 			[102165] = 5, -- Smelt Ghost Iron
 			[74529] = 5, -- Smelt Pyrite
@@ -5624,7 +6215,7 @@ local function updateData()
 			[55208] = 5, -- Smelt Titansteel
 			[49252] = 5, -- Smelt Cobalt
 			[35750] = 803, -- Earth Sunder
-			[35751] = 400, -- Fire Sunder
+			[35751] = 4, -- Fire Sunder
 			[46353] = 5, -- Smelt Hardened Khorium
 			[29361] = 5, -- Smelt Khorium
 			[29686] = 5, -- Smelt Hardened Adamantite
@@ -5646,1131 +6237,1265 @@ local function updateData()
 			[3304] = 5, -- Smelt Tin
 			[2657] = 5, -- Smelt Copper
 
-			-- Cooking
-			[308402] = 400, -- Surprisingly Palatable Feast
-			[308403] = 400, -- Feast of Gluttonous Hedonism
-			[308400] = 400, -- Spinefin Souffle and Fries
-			[308413] = 400, -- Iridescent Ravioli with Apple Sauce
-			[308405] = 400, -- Tenebrous Crown Roast Aspic
-			[308426] = 400, -- Steal a la Mode
-			[308411] = 400, -- Candied Amberjack Cakes
-			[308415] = 400, -- Banana Beaf Pudding
-			[308404] = 400, -- Cinnamon Bonefish Stew
-			[308412] = 400, -- Meaty Apple Dumplings
-			[308425] = 400, -- Sweet Silvergill Sausages
-			[308397] = 400, -- Butterscotch Marinated Ribs
-			[308414] = 400, -- Pickled Meat Smoothie
-			[308410] = 400, -- Biscuits and Caviar
-			[308419] = 400, -- Smothered Shank
-			[308417] = 400, -- Seraph Tenders
-			[308416] = 400, -- Quiethounds
-			[308420] = 400, -- Fried Bonefish
-			[338100] = 400, -- Arden Apple Pie
-			[338107] = 400, -- Diced Vegetables
-			[338115] = 400, -- Ember Sauce
-			[338106] = 400, -- Grazer Bone Broth
-			[338101] = 400, -- Oat Pie Crust
-			[338117] = 400, -- Seared Cutlets
-			[338116] = 400, -- Skewered Meats
-			[338102] = 400, -- Sliced Arden Apples
-			[338110] = 400, -- Spider Jerky
-			[338105] = 400, -- Steward Stew
-			[338113] = 400, -- Thick Spider Meat
-			[314959] = 400, -- Baked Voidfin
-			[314961] = 400, -- Dubious Delight
-			[314962] = 400, -- Ghastly Goulash
-			[314963] = 400, -- Grilled Gnasher
-			[314960] = 400, -- K'Bab
-			[303788] = 400, -- Unagi Skewer
-			[259435] = 400, -- Seasoned Loins (Rank 3)
-			[259434] = 400, -- Seasoned Loins (Rank 2)
-			[259433] = 400, -- Seasoned Loins (Rank 1)
-			[286381] = 400, -- Honey Potpie
-			[259432] = 400, -- Grilled Catfish (Rank 3)
-			[259431] = 400, -- Grilled Catfish (Rank 2)
-			[259430] = 400, -- Grilled Catfish (Rank 1)
-			[280282] = 400, -- Heartsbane Hexwurst
-			[259413] = 400, -- Kul Tiramisu (Rank 3)
-			[259412] = 400, -- Kul Tiramisu (Rank 2)
-			[259411] = 400, -- Kul Tiramisu (Rank 1)
-			[259438] = 400, -- Loa Loaf (Rank 3)
-			[259437] = 400, -- Loa Loaf (Rank 2)
-			[259436] = 400, -- Loa Loaf (Rank 1)
-			[259444] = 400, -- Mon'Dazi (Rank 3)
-			[259443] = 400, -- Mon'Dazi (Rank 2)
-			[259442] = 400, -- Mon'Dazi (Rank 1)
-			[259426] = 400, -- Ravenberry Tarts (Rank 3)
-			[259425] = 400, -- Ravenberry Tarts (Rank 2)
-			[259424] = 400, -- Ravenberry Tarts (Rank 1)
-			[288029] = 400, -- Wild Berry Bread (Rank 3)
-			[288028] = 400, -- Wild Berry Bread (Rank 2)
-			[288027] = 400, -- Wild Berry Bread (Rank 1)
-			[301392] = 400, -- Mecha-Bytes
-			[297086] = 400, -- Abyssal-Fried Rissole (Rank 3)
-			[297085] = 400, -- Abyssal-Fried Rissole (Rank 2)
-			[297084] = 400, -- Abyssal-Fried Rissole (Rank 1)
-			[297083] = 400, -- Baked Port Tato (Rank 3)
-			[297082] = 400, -- Baked Port Tato (Rank 2)
-			[297081] = 400, -- Baked Port Tato (Rank 1)
-			[297089] = 400, -- Bil'Tong (Rank 3)
-			[297088] = 400, -- Bil'Tong (Rank 2)
-			[297087] = 400, -- Bil'Tong (Rank 1)
-			[297074] = 400, -- Fragrant Kakavia (Rank 3)
-			[297075] = 400, -- Fragrant Kakavia (Rank 2)
-			[297077] = 400, -- Fragrant Kakavia (Rank 1)
-			[297080] = 400, -- Mech-Dowel's "Big Mech" (Rank 3)
-			[297079] = 400, -- Mech-Dowel's "Big Mech" (Rank 2)
-			[297078] = 400, -- Mech-Dowel's "Big Mech" (Rank 1)
-			[259416] = 400, -- Honey-Glazed Haunches (Rank 3)
-			[259415] = 400, -- Honey-Glazed Haunches (Rank 3)
-			[259414] = 400, -- Honey-Glazed Haunches (Rank 3)
-			[259441] = 400, -- Sailor's Pie (Rank 3)
-			[259440] = 400, -- Sailor's Pie (Rank 2)
-			[259439] = 400, -- Sailor's Pie (Rank 1)
-			[288033] = 400, -- Seasoned Steak and Potatoes (Rank 3)
-			[288032] = 400, -- Seasoned Steak and Potatoes (Rank 2)
-			[288030] = 400, -- Seasoned Steak and Potatoes (Rank 1)
-			[259447] = 400, -- Spiced Snapper (Rank 3)
-			[259446] = 400, -- Spiced Snapper (Rank 2)
-			[259445] = 400, -- Spiced Snapper (Rank 1)
-			[259429] = 400, -- Swamp Fish 'n Chips (Rank 3)
-			[259428] = 400, -- Swamp Fish 'n Chips (Rank 2)
-			[259427] = 400, -- Swamp Fish 'n Chips (Rank 1)
-			[290473] = 400, -- Boralus Blood Sausage (Rank 3)
-			[290472] = 400, -- Boralus Blood Sausage (Rank 2)
-			[290471] = 400, -- Boralus Blood Sausage (Rank 1)
-			[297107] = 400, -- Famine Evaluator And Snack Table (Rank 3)
-			[297106] = 400, -- Famine Evaluator And Snack Table (Rank 2)
-			[297105] = 400, -- Famine Evaluator And Snack Table (Rank 1)
-			[259423] = 400, -- Bountiful Captain's Feast (Rank 3)
-			[259422] = 400, -- Bountiful Captain's Feast (Rank 2)
-			[259421] = 400, -- Bountiful Captain's Feast (Rank 1)
-			[287112] = 400, -- Sanguinated Feast (Rank 3)
-			[287110] = 400, -- Sanguinated Feast (Rank 2)
-			[287108] = 400, -- Sanguinated Feast (Rank 1)
-			[259420] = 400, -- Galley Banquet (Rank 3)
-			[259419] = 400, -- Galley Banquet (Rank 2)
-			[259418] = 400, -- Galley Banquet (Rank 1)
-			[201685] = 400, -- Crispy Bacon (Rank 3)
-			[201684] = 400, -- Crispy Bacon (Rank 2)
-			[201683] = 400, -- Crispy Bacon (Rank 1)
-			[230046] = 400, -- Spiced Falcosaur Omelet
-			[201560] = 400, -- Bear Tartare (Rank 3)
-			[201540] = 400, -- Bear Tartare (Rank 2)
-			[201513] = 400, -- Bear Tartare (Rank 1)
-			[201559] = 400, -- Dried Mackerel Strips (Rank 3)
-			[201539] = 400, -- Dried Mackerel Strips (Rank 2)
-			[201512] = 400, -- Dried Mackerel Strips (Rank 1)
-			[201561] = 400, -- Fighter Chow (Rank 3)
-			[201541] = 400, -- Fighter Chow (Rank 2)
-			[201514] = 400, -- Fighter Chow (Rank 1)
-			[201545] = 400, -- Deep-Fried Mossgill (Rank 3)
-			[201525] = 400, -- Deep-Fried Mossgill (Rank 2)
-			[201496] = 400, -- Deep-Fried Mossgill (Rank 1)
-			[201547] = 400, -- Faronaar Fizz (Rank 3)
-			[201527] = 400, -- Faronaar Fizz (Rank 2)
-			[201498] = 400, -- Faronaar Fizz (Rank 1)
-			[201546] = 400, -- Pickled Stormray (Rank 3)
-			[201526] = 400, -- Pickled Stormray (Rank 2)
-			[201497] = 400, -- Pickled Stormray (Rank 1)
-			[201544] = 400, -- Salt and Pepper Shank (Rank 3)
-			[201524] = 400, -- Salt and Pepper Shank (Rank 2)
-			[201413] = 400, -- Salt and Pepper Shank (Rank 1)
-			[201548] = 400, -- Spiced Rib Roast (Rank 3)
-			[201528] = 400, -- Spiced Rib Roast (Rank 2)
-			[201499] = 400, -- Spiced Rib Roast (Rank 1)
-			[201551] = 400, -- Barracuda Mrglgagh (Rank 3)
-			[201531] = 400, -- Barracuda Mrglgagh (Rank 2)
-			[201502] = 400, -- Barracuda Mrglgagh (Rank 1)
-			[201553] = 400, -- Drogbar-Style Salmon (Rank 3)
-			[201533] = 400, -- Drogbar-Style Salmon (Rank 2)
-			[201504] = 400, -- Drogbar-Style Salmon (Rank 1)
-			[201552] = 400, -- Koi-Scented Stormray (Rank 3)
-			[201532] = 400, -- Koi-Scented Stormray (Rank 2)
-			[201503] = 400, -- Koi-Scented Stormray (Rank 1)
-			[201549] = 400, -- Leybeque Ribs (Rank 3)
-			[201529] = 400, -- Leybeque Ribs (Rank 2)
-			[201500] = 400, -- Leybeque Ribs (Rank 1)
-			[201550] = 400, -- Suramar Surf and Turf (Rank 3)
-			[201530] = 400, -- Suramar Surf and Turf (Rank 2)
-			[201501] = 400, -- Suramar Surf and Turf (Rank 1)
-			[201555] = 400, -- Azshari Salad (Rank 3)
-			[201535] = 400, -- Azshari Salad (Rank 2)
-			[201506] = 400, -- Azshari Salad (Rank 1)
-			[201558] = 400, -- Fishbrul Special (Rank 3)
-			[201538] = 400, -- Fishbrul Special (Rank 2)
-			[201511] = 400, -- Fishbrul Special (Rank 1)
-			[201556] = 400, -- Nightborne Delicacy Platter (Rank 3)
-			[201536] = 400, -- Nightborne Delicacy Platter (Rank 2)
-			[201507] = 400, -- Nightborne Delicacy Platter (Rank 1)
-			[201557] = 400, -- Seed-Battered Fish Plate (Rank 3)
-			[201537] = 400, -- Seed-Battered Fish Plate (Rank 2)
-			[201508] = 400, -- Seed-Battered Fish Plate (Rank 1)
-			[201554] = 400, -- The Hungry Magister (Rank 3)
-			[201534] = 400, -- The Hungry Magister (Rank 2)
-			[201505] = 400, -- The Hungry Magister (Rank 1)
-			[201562] = 400, -- Hearty Feast (Rank 3)
-			[201542] = 400, -- Hearty Feast (Rank 2)
-			[201515] = 400, -- Hearty Feast (Rank 1)
-			[201563] = 400, -- Lavish Suramar Feast (Rank 3)
-			[201543] = 400, -- Lavish Suramar Feast (Rank 2)
-			[201516] = 400, -- Lavish Suramar Feast (Rank 1)
-			[251258] = 400, -- Feast of the Fishes
-			[173978] = 400, -- Feast of Blood
-			[173979] = 400, -- Feast of the Waters
-			[160986] = 400, -- Blackrock Barbecue
-			[160999] = 400, -- Calamari Crepes
-			[160987] = 400, -- Frosty Stew
-			[161000] = 400, -- Gorgrond Chowder
-			[160989] = 400, -- Sleeper Surprise
-			[160984] = 400, -- Talador Surf and Turf
-			[160962] = 400, -- Blackrock Ham
-			[160968] = 400, -- Braised Riverbeast
-			[160971] = 400, -- Clefthoof Sausages
-			[160958] = 400, -- Hearty Elekk Steak
-			[160966] = 400, -- Pan-Seared Talbuk
-			[160969] = 400, -- Rylak Crepes
-			[190788] = 400, -- Fel Eggs and Ham
-			[160981] = 400, -- Fat Sleeper Cakes
-			[160982] = 400, -- Fiery Calamari
-			[160978] = 400, -- Grilled Gulper
-			[160983] = 400, -- Skulker Chowder
-			[160973] = 400, -- Steamed Scorpion
-			[160979] = 400, -- Sturgeon Stew
-			[161002] = 400, -- Grilled Saberfish
-			[161001] = 400, -- Saberfish Broth
-			[180761] = 400, -- Buttered Sturgeon
-			[180759] = 400, -- Jumbo Sea Dog
-			[180758] = 400, -- Pickled Eel
-			[180757] = 400, -- Salty Squid Roll
-			[180762] = 400, -- Sleeper Sushi
-			[180760] = 400, -- Whiptail Fillet
-			[125141] = 400, -- Banquet of the Grill
-			[104300] = 400, -- Black Pepper Ribs and Shrimp
-			[145311] = 400, -- Fluffy Silkfeather Omelet
-			[125142] = 400, -- Great Banquet of the Grill
-			[104299] = 400, -- Eternal Blossom Fish
-			[104298] = 400, -- Charbroiled Tiger Steak
-			[125594] = 400, -- Banquet of the Wok
-			[125595] = 400, -- Great Banquet of the Wok
-			[104303] = 400, -- Sea Mist Rice Noodles
-			[145305] = 400, -- Seasoned Pomfruit Slices
-			[104302] = 400, -- Valley Stir Fry
-			[104301] = 400, -- Sauteed Carrots
-			[125596] = 400, -- Banquet of the Pot
-			[125597] = 400, -- Great Banquet of the Pot
-			[104306] = 400, -- Mogu Fish Stew
-			[145307] = 400, -- Spiced Blossom Soup
-			[104305] = 400, -- Braised Turtle
-			[104304] = 400, -- Swiling Mist Soup
-			[125598] = 400, -- Banquet of the Steamer
-			[145309] = 400, -- Farmer's Delight
-			[125599] = 400, -- Great Banquet of the Steamer
-			[104309] = 400, -- Steamed Crab Surprise
-			[104308] = 400, -- Fire Spirit Salmon
-			[104307] = 400, -- Shrimp Dumplings
-			[125600] = 400, -- Banquet of the Oven
-			[104312] = 400, -- Chun Tian Spring Rolls
-			[125601] = 400, -- Great Banquet of the Oven
-			[145310] = 400, -- Stuffed Lushrooms
-			[104311] = 400, -- Twin Fish Platter
-			[104310] = 400, -- Wildfowl Roast
-			[125602] = 400, -- Banquet of the Brew
-			[125603] = 400, -- Great Banquet of the Brew
-			[124054] = 400, -- Mad Brewer's Breakfast
-			[126655] = 400, -- Banana Infused Rum
-			[126654] = 400, -- Four Senses Brew
-			[124053] = 400, -- Jade Witch Brew
-			[124052] = 400, -- Ginseng Tea
-			[145061] = 400, -- Deluxe Noodle Cart Kit
-			[105194] = 400, -- Great Pandaren Banquet
-			[145308] = 400, -- Mango Ice
-			[145038] = 400, -- Noodle Cart Kit
-			[105190] = 400, -- Pandaren Banquet
-			[145062] = 400, -- Pandaren Treasure Noodle Cart Kit
-			[125120] = 400, -- Spicy Salmon
-			[125123] = 400, -- Spicy Vegetable Chips
-			[124032] = 400, -- Krasarang Fritters
-			[125122] = 400, -- Rice Pudding
-			[124029] = 400, -- Viseclaw Soup
-			[124233] = 400, -- Blanched Needle Mushrooms
-			[124229] = 400, -- Red Bean Bun
-			[124228] = 400, -- Boiled Silkwork Pupa
-			[124227] = 400, -- Dried Needle Mushrooms
-			[124226] = 400, -- Dried Peaches
-			[104297] = 400, -- Fish Cake
-			[104237] = 400, -- Golden Carp Consomme
-			[124231] = 400, -- Green Curry Fish
-			[124232] = 400, -- Peach Pie
-			[125080] = 400, -- Pearl Milk Tea
-			[125067] = 400, -- Perfectly Cooked Instant Noodles
-			[124223] = 400, -- Pounded Rice Cake
-			[125078] = 400, -- Roasted Barley Tea
-			[124234] = 400, -- Skewered Peanut Chicken
-			[125117] = 400, -- Sliced Peaches
-			[124230] = 400, -- Tangy Yogurt
-			[124225] = 400, -- Toasted Fish Jerky
-			[125121] = 400, -- Wildfowl Ginseng Soup
-			[124224] = 400, -- Yak Cheese Curds
-			[88011] = 400, -- Broiled Dragon Feast
-			[88019] = 400, -- Fortune Cookie
-			[88036] = 400, -- Seafood Magnifique Feast
-			[88003] = 400, -- Baked Rockfish
-			[88004] = 400, -- Basilisk Liverdog
-			[88005] = 400, -- Beer-Basted Crocolisk
-			[88034] = 400, -- Blackbelly Sushi
-			[88014] = 400, -- Crocolisk Au Gratin
-			[88016] = 400, -- Delicious Sagefish Tail
-			[88020] = 400, -- Grilled Dragon
-			[88025] = 400, -- Lavascale Minestrone
-			[88031] = 400, -- Mushroom Sauce Mudfish
-			[88039] = 400, -- Severed Sagefish Head
-			[88042] = 400, -- Skewered Eel
-			[88013] = 400, -- Chocolate Cookie
-			[88018] = 400, -- Fish Fry
-			[96133] = 400, -- Scalding Murglesnout
-			[88021] = 400, -- Hearty Seafood Soup
-			[88033] = 400, -- Pickled Guppy
-			[88046] = 400, -- Tender Baked Turtle
-			[88012] = 400, -- Broiled Mountain Trout
-			[88024] = 400, -- Lavascale Fillet
-			[88028] = 400, -- Lightly Fried Lurker
-			[88030] = 400, -- Lurker Lunch
-			[88035] = 400, -- Salted Eye
-			[88037] = 400, -- Seasoned Crab
-			[88047] = 400, -- Whitecrest Gumbo
-			[88006] = 400, -- Blackened Surprise
-			[88044] = 400, -- South Island Iced Tea
-			[88022] = 400, -- Highland Spirits
-			[88045] = 400, -- Starfire Espresso
-			[88015] = 400, -- Darkbrew Lager
-			[88017] = 100, -- Feathered Lure
-			[57423] = 400, -- Fish Feast
-			[58528] = 400, -- Small Feast
-			[58527] = 400, -- Gigantic Feast
-			[57441] = 400, -- Blackened Dragonfin
-			[57438] = 400, -- Blackened Worg Steak
-			[57435] = 400, -- Critter Bites
-			[57439] = 400, -- Cuttlesteak
-			[57442] = 400, -- Dragonfin Filet
-			[45568] = 400, -- Firecracker Salmon
-			[57436] = 400, -- Hearty Rhino
-			[45570] = 400, -- Imperial Manta Steak
-			[45555] = 400, -- Mega Mammoth Meal
-			[45559] = 400, -- Mighty Rhino Dogs
-			[45567] = 400, -- Poached Northern Sculpin
-			[57434] = 400, -- Rhinolicious Wormsteak
-			[57437] = 400, -- Snapper Extreme
-			[57440] = 400, -- Spiced Mammoth Treats
-			[45557] = 400, -- Spiced Worm Burger
-			[45571] = 400, -- Spicy Blue Nettlefish
-			[57433] = 400, -- Spicy Fried Herring
-			[45556] = 400, -- Tender Shoveltusk Steak
-			[57443] = 400, -- Tracker Snacks
-			[45558] = 400, -- Very Burnt Worg
-			[64358] = 400, -- Black Jelly
-			[62350] = 400, -- Worg Tartare
-			[45554] = 400, -- Great Feast
-			[45569] = 400, -- Baked Manta Ray
-			[58065] = 400, -- Dalaran Clam Chowder
-			[45563] = 400, -- Grilled Sculpin
-			[45549] = 400, -- Mammoth Meal
-			[45566] = 400, -- Pickled Fangtooth
-			[45565] = 400, -- Poached Nettlefish
-			[45553] = 400, -- Rhino Dogs
-			[45552] = 400, -- Roasted Worg
-			[45550] = 400, -- Shoveltusk Steak
-			[45564] = 400, -- Smoked Salmon
-			[45551] = 400, -- Worm Delight
-			[53056] = 400, -- Kungaloosh
-			[58523] = 400, -- Bad Clams
-			[45561] = 400, -- Grilled Bonescale
-			[58525] = 400, -- Haunted Herring
-			[58521] = 400, -- Last Week's Mammoth
-			[57421] = 400, -- Northern Stew
-			[45562] = 400, -- Sauteed Goby
-			[45560] = 400, -- Smoked Rockfin
-			[58512] = 400, -- Tasty Cupcake
-			[42302] = 400, -- Fisherman's Feast
-			[42305] = 400, -- Hot Buttered Trout
-			[33296] = 400, -- Spicy Crawdad
-			[38868] = 400, -- Crunchy Serpent
-			[38867] = 400, -- Mok'Nathal Shortribs
-			[33295] = 400, -- Golden Fish Sticks
-			[43772] = 400, -- Kibler's Bits
-			[33287] = 400, -- Roasted Clefthoof
-			[33289] = 400, -- Talbuk Steak
-			[33288] = 400, -- Warp Burger
-			[33293] = 400, -- Grilled Mudfish
-			[33294] = 400, -- Poached Bluefish
-			[33286] = 400, -- Blackened Basilisk
-			[43707] = 400, -- Skullfish Soup
-			[43765] = 400, -- Spicy Hot Talbuk
-			[42296] = 400, -- Stewed Trout
-			[33292] = 400, -- Blackened Sporefish
-			[33290] = 400, -- Blackened Trout
-			[43761] = 400, -- Broiled Bloodfin
-			[33279] = 400, -- Buzzard Bites
-			[36210] = 400, -- Clam Bar
-			[33291] = 400, -- Feltail Delight
-			[33284] = 400, -- Ravager Dog
-			[43758] = 400, -- Stormchops
-			[18247] = 400, -- Baked Salmon
-			[25659] = 400, -- Dirge's Kickin' Chimaerok Chops
-			[18245] = 400, -- Lobster Stew
-			[18246] = 400, -- Mightfish Steak
-			[22761] = 400, -- Runn Tum Tuber Surprise
-			[24801] = 400, -- Smoked Desert Dumplings
-			[18242] = 400, -- Hot Smoked Bass
-			[46684] = 400, -- Charred Bear Kabobs
-			[46688] = 400, -- Juicy Bear Burger
-			[18243] = 400, -- Nightfin Soup
-			[18244] = 400, -- Poached Sunscale Salmon
-			[64054] = 400, -- Clamlette Magnifique
-			[18239] = 400, -- Cooked Glossy Mightfish
-			[18241] = 400, -- Filet of Redgill
-			[15933] = 400, -- Monster Omelet
-			[15915] = 400, -- Spiced Chili Crab
-			[22480] = 400, -- Tender Wolf Steak
-			[20626] = 400, -- Unddermine Clam Chowder
-			[185705] = 400, -- Fancy Darkmoon Feast
-			[18240] = 400, -- Grilled Squid
-			[18238] = 400, -- Spotted Yellowtail
-			[15910] = 400, -- Heavy Kodo Stew
-			[15863] = 400, -- Carrion Surprise
-			[7213] = 400, -- Giant Clam Scorcho
-			[15856] = 400, -- Hot Wolf Ribs
-			[15861] = 400, -- Jungle Stew
-			[20916] = 400, -- Mithril Head Trout
-			[15865] = 400, -- Mystery Stew
-			[15855] = 400, -- Roast Raptor
-			[25954] = 400, -- Sagefish Delight
-			[21175] = 400, -- Spider Sausage
-			[7828] = 400, -- Rockscale Cod
-			[4094] = 400, -- Barbecued Buzzard Wing
-			[3400] = 400, -- Soothing Turtle Bisque
-			[3398] = 400, -- Hot Lion Chops
-			[13028] = 400, -- Goldthorn Tea
-			[3376] = 400, -- Curiously Tasty Omelet
-			[15853] = 400, -- Lean Wolf Steak
-			[3373] = 400, -- Crocolisk Gumbo
-			[24418] = 400, -- Heavy Crocolisk Stew
-			[3399] = 400, -- Tasty Lion Steak
-			[3377] = 400, -- Gooey Spider Cake
-			[6419] = 400, -- Lean Venison
-			[7755] = 400, -- Bristle Whisker Catfish
-			[6418] = 400, -- Crispy Lizard Tail
-			[2549] = 400, -- Seasoned Wolf Kabob
-			[2547] = 400, -- Redridge Goulash
-			[6501] = 400, -- Clam Chowder
-			[6417] = 400, -- Dig Rat Stew
-			[3372] = 400, -- Murloc Fin Soup
-			[2548] = 400, -- Succulent Pork Ribs
-			[6500] = 400, -- Goblin Deviled Clams
-			[185708] = 400, -- Sugar-Crusted Fish Feast
-			[2545] = 400, -- Cooked Crab Claw
-			[3370] = 400, -- Crocolisk Steak
-			[25704] = 400, -- Smoked Sagefish
-			[2543] = 400, -- Westfall Stew
-			[3371] = 400, -- Blood Sausage
-			[28267] = 400, -- Crunchy Spider Surprise
-			[33278] = 400, -- Bat Bites
-			[2542] = 400, -- Goretusk Liver Pie
-			[7754] = 400, -- Loch Frenzy Delight
-			[7753] = 400, -- Longjaw Mud Snapper
-			[7827] = 400, -- Rainbow Fin Albacore
-			[6416] = 400, -- Strider Stew
-			[2546] = 400, -- Dry Pork Ribs
-			[8607] = 400, -- Smoked Bear Meat
-			[2544] = 400, -- Crab Cake
-			[6414] = 400, -- Roasted Kodo Meat
-			[2795] = 400, -- Beer Basted Boar Ribs
-			[6413] = 400, -- Scorpid Surprise
-			[6499] = 400, -- Boiled Clams
-			[2541] = 400, -- Coyote Steak
-			[6415] = 400, -- Fillet of Frenzy
-			[185704] = 400, -- Lemon Herb Fillet
-			[43779] = 400, -- Delicious Chocolate Cake
-			[7751] = 400, -- Brilliant Smallfish
-			[2538] = 400, -- Charred Wolf Meat
-			[15935] = 400, -- Crispy Bat Wing
-			[8604] = 400, -- Herb Baked Egg
-			[33276] = 400, -- Lynx Steak
-			[2540] = 400, -- Roasted Boar Meat
-			[33277] = 400, -- Roasted Moongraze Tenderloin
-			[7752] = 400, -- Slitherskin Mackerel
-			[93741] = 400, -- Venison Jerky
-			[6412] = 400, -- Kaldorei Spider Kabob
-			[2539] = 400, -- Spiced Wolf Meat
-			[3397] = 400, -- Big Bear Steak
-			[37836] = 400, -- Spice Bread
-			[45022] = 400, -- Hot Apple Cider
-			[62051] = 400, -- Candied Sweet Potato (Alliance)
-			[66034] = 400, -- Candied Sweet Potato (Horde)
-			[62049] = 400, -- Cranberry Chutney (Alliance)
-			[66035] = 400, -- Cranberry Chutney (Horde)
-			[62045] = 400, -- Slow-Roasted Turkey (Alliance)
-			[66037] = 400, -- Slow-Roasted Turkey (Horde)
-			[62044] = 400, -- Pumpkin Pie (Alliance)
-			[66036] = 400, -- Pumpkin Pie (Horde)
-			[66038] = 400, -- Spice Bread Stuffing (Aliance)
-			[62050] = 400, -- Spice Bread Stuffing (Horde)
-			[21144] = 400, -- Winter Veil Egg Nog
-			[21143] = 400, -- Gingerbread Cookie
-			[65454] = 400, -- Bread of the Dead
-			[15906] = 400, -- Dragonbreath Chili
-			[8238] = 400, -- Savory Deviate Delight
-			[9513] = 400, -- Thistle Tea
-			[45695] = 400, -- Captain Rumsey's Lager
+			--# Cooking 
+				-- Shadowlands Cuisine
+					-- Feasts
+					[308402] = 4, -- Surprisingly Palatable Feast
+					[308403] = 4, -- Feast of Gluttonous Hedonism
+					-- Large Meals
+					[308400] = 4, -- Spinefin Souffle and Fries
+					[308413] = 4, -- Iridescent Ravioli with Apple Sauce
+					[308405] = 4, -- Tenebrous Crown Roast Aspic
+					[308426] = 4, -- Steak a la Mode
+					[308411] = 4, -- Candied Amberjack Cakes
+					[308415] = 4, -- Banana Beaf Pudding
+					-- Light Meals
+					[354768] = 4, -- Porous Rock Candy
+					[354764] = 202, -- Twilight Tea
+					[354766] = 4, -- Bonemeal Bread
+					[308404] = 4, -- Cinnamon Bonefish Stew
+					[308412] = 4, -- Meaty Apple Dumplings
+					[308425] = 4, -- Sweet Silvergill Sausages
+					[308397] = 4, -- Butterscotch Marinated Ribs
+					[308414] = 281, -- Pickled Meat Smoothie
+					[308410] = 4, -- Biscuits and Caviar
+					-- Soul Food
+					[308419] = 4, -- Smothered Shank
+					[308417] = 4, -- Seraph Tenders
+					[308416] = 4, -- Quiethounds
+					[308420] = 4, -- Fried Bonefish
+					-- Quest Recipes
+					[338100] = 4, -- Arden Apple Pie
+					[338107] = 900, -- Diced Vegetables
+					[338115] = 281, -- Ember Sauce
+					[338106] = 4, -- Grazer Bone Broth
+					[338101] = 4, -- Oat Pie Crust
+					[338117] = 4, -- Seared Cutlets
+					[338116] = 4, -- Skewered Meats
+					[338102] = 900, -- Sliced Arden Apples
+					[338110] = 4, -- Spider Jerky
+					[338105] = 4, -- Steward Stew
+					[338113] = 4, -- Thick Spider Meat
+				-- Kul Tiran Cuisine & Zandalari Cuisine
+					-- Delicacies
+					[314959] = 4, -- Baked Voidfin
+					[314961] = 4, -- Dubious Delight
+					[314962] = 4, -- Ghastly Goulash
+					[314963] = 4, -- Grilled Gnasher
+					[314960] = 4, -- K'Bab
+					-- Light Meals
+					[303788] = 4, -- Unagi Skewer
+					[259435] = 4, -- Seasoned Loins (Rank 3)
+					[259434] = 4, -- Seasoned Loins (Rank 2)
+					[259433] = 4, -- Seasoned Loins (Rank 1)
+					[286381] = 4, -- Honey Potpie
+					[259432] = 4, -- Grilled Catfish (Rank 3)
+					[259431] = 4, -- Grilled Catfish (Rank 2)
+					[259430] = 4, -- Grilled Catfish (Rank 1)
+					[280282] = 4, -- Heartsbane Hexwurst
+					-- Desserts
+					[259413] = 4, -- Kul Tiramisu (Rank 3)
+					[259412] = 4, -- Kul Tiramisu (Rank 2)
+					[259411] = 4, -- Kul Tiramisu (Rank 1)
+					[259438] = 4, -- Loa Loaf (Rank 3)
+					[259437] = 4, -- Loa Loaf (Rank 2)
+					[259436] = 4, -- Loa Loaf (Rank 1)
+					[259444] = 4, -- Mon'Dazi (Rank 3)
+					[259443] = 4, -- Mon'Dazi (Rank 2)
+					[259442] = 4, -- Mon'Dazi (Rank 1)
+					[259426] = 4, -- Ravenberry Tarts (Rank 3)
+					[259425] = 4, -- Ravenberry Tarts (Rank 2)
+					[259424] = 4, -- Ravenberry Tarts (Rank 1)
+					[288029] = 4, -- Wild Berry Bread (Rank 3)
+					[288028] = 4, -- Wild Berry Bread (Rank 2)
+					[288027] = 4, -- Wild Berry Bread (Rank 1)
+					-- Large Meals
+					[301392] = 100, -- Mecha-Bytes
+					[297086] = 4, -- Abyssal-Fried Rissole (Rank 3)
+					[297085] = 4, -- Abyssal-Fried Rissole (Rank 2)
+					[297084] = 4, -- Abyssal-Fried Rissole (Rank 1)
+					[297083] = 4, -- Baked Port Tato (Rank 3)
+					[297082] = 4, -- Baked Port Tato (Rank 2)
+					[297081] = 4, -- Baked Port Tato (Rank 1)
+					[297089] = 4, -- Bil'Tong (Rank 3)
+					[297088] = 4, -- Bil'Tong (Rank 2)
+					[297087] = 4, -- Bil'Tong (Rank 1)
+					[297074] = 4, -- Fragrant Kakavia (Rank 3)
+					[297075] = 4, -- Fragrant Kakavia (Rank 2)
+					[297077] = 4, -- Fragrant Kakavia (Rank 1)
+					[297080] = 4, -- Mech-Dowel's "Big Mech" (Rank 3)
+					[297079] = 4, -- Mech-Dowel's "Big Mech" (Rank 2)
+					[297078] = 4, -- Mech-Dowel's "Big Mech" (Rank 1)
+					[259416] = 4, -- Honey-Glazed Haunches (Rank 3)
+					[259415] = 4, -- Honey-Glazed Haunches (Rank 3)
+					[259414] = 4, -- Honey-Glazed Haunches (Rank 3)
+					[259441] = 4, -- Sailor's Pie (Rank 3)
+					[259440] = 4, -- Sailor's Pie (Rank 2)
+					[259439] = 4, -- Sailor's Pie (Rank 1)
+					[288033] = 4, -- Seasoned Steak and Potatoes (Rank 3)
+					[288032] = 4, -- Seasoned Steak and Potatoes (Rank 2)
+					[288030] = 4, -- Seasoned Steak and Potatoes (Rank 1)
+					[259447] = 4, -- Spiced Snapper (Rank 3)
+					[259446] = 4, -- Spiced Snapper (Rank 2)
+					[259445] = 4, -- Spiced Snapper (Rank 1)
+					[259429] = 4, -- Swamp Fish 'n Chips (Rank 3)
+					[259428] = 4, -- Swamp Fish 'n Chips (Rank 2)
+					[259427] = 4, -- Swamp Fish 'n Chips (Rank 1)
+					[290473] = 4, -- Boralus Blood Sausage (Rank 3)
+					[290472] = 4, -- Boralus Blood Sausage (Rank 2)
+					[290471] = 4, -- Boralus Blood Sausage (Rank 1)
+					-- Feasts
+					[297107] = 100, -- Famine Evaluator And Snack Table (Rank 3)
+					[297106] = 100, -- Famine Evaluator And Snack Table (Rank 2)
+					[297105] = 100, -- Famine Evaluator And Snack Table (Rank 1)
+					[259423] = 4, -- Bountiful Captain's Feast (Rank 3)
+					[259422] = 4, -- Bountiful Captain's Feast (Rank 2)
+					[259421] = 4, -- Bountiful Captain's Feast (Rank 1)
+					[287112] = 4, -- Sanguinated Feast (Rank 3)
+					[287110] = 4, -- Sanguinated Feast (Rank 2)
+					[287108] = 4, -- Sanguinated Feast (Rank 1)
+					[259420] = 4, -- Galley Banquet (Rank 3)
+					[259419] = 4, -- Galley Banquet (Rank 2)
+					[259418] = 4, -- Galley Banquet (Rank 1)
+				-- Food of the Broken Isles
+					-- Snacks
+					[201685] = 4, -- Crispy Bacon (Rank 3)
+					[201684] = 4, -- Crispy Bacon (Rank 2)
+					[201683] = 4, -- Crispy Bacon (Rank 1)
+					[230046] = 4, -- Spiced Falcosaur Omelet
+					[201560] = 4, -- Bear Tartare (Rank 3)
+					[201540] = 4, -- Bear Tartare (Rank 2)
+					[201513] = 4, -- Bear Tartare (Rank 1)
+					[201559] = 4, -- Dried Mackerel Strips (Rank 3)
+					[201539] = 4, -- Dried Mackerel Strips (Rank 2)
+					[201512] = 4, -- Dried Mackerel Strips (Rank 1)
+					[201561] = 4, -- Fighter Chow (Rank 3)
+					[201541] = 4, -- Fighter Chow (Rank 2)
+					[201514] = 4, -- Fighter Chow (Rank 1)
+					-- Light Meals
+					[201545] = 4, -- Deep-Fried Mossgill (Rank 3)
+					[201525] = 4, -- Deep-Fried Mossgill (Rank 2)
+					[201496] = 4, -- Deep-Fried Mossgill (Rank 1)
+					[201547] = 202, -- Faronaar Fizz (Rank 3)
+					[201527] = 202, -- Faronaar Fizz (Rank 2)
+					[201498] = 202, -- Faronaar Fizz (Rank 1)
+					[201546] = 4, -- Pickled Stormray (Rank 3)
+					[201526] = 4, -- Pickled Stormray (Rank 2)
+					[201497] = 4, -- Pickled Stormray (Rank 1)
+					[201544] = 4, -- Salt and Pepper Shank (Rank 3)
+					[201524] = 4, -- Salt and Pepper Shank (Rank 2)
+					[201413] = 4, -- Salt and Pepper Shank (Rank 1)
+					[201548] = 4, -- Spiced Rib Roast (Rank 3)
+					[201528] = 4, -- Spiced Rib Roast (Rank 2)
+					[201499] = 4, -- Spiced Rib Roast (Rank 1)
+					-- Large Meals
+					[201551] = 4, -- Barracuda Mrglgagh (Rank 3)
+					[201531] = 4, -- Barracuda Mrglgagh (Rank 2)
+					[201502] = 4, -- Barracuda Mrglgagh (Rank 1)
+					[201553] = 4, -- Drogbar-Style Salmon (Rank 3)
+					[201533] = 4, -- Drogbar-Style Salmon (Rank 2)
+					[201504] = 4, -- Drogbar-Style Salmon (Rank 1)
+					[201552] = 4, -- Koi-Scented Stormray (Rank 3)
+					[201532] = 4, -- Koi-Scented Stormray (Rank 2)
+					[201503] = 4, -- Koi-Scented Stormray (Rank 1)
+					[201549] = 4, -- Leybeque Ribs (Rank 3)
+					[201529] = 4, -- Leybeque Ribs (Rank 2)
+					[201500] = 4, -- Leybeque Ribs (Rank 1)
+					[201550] = 4, -- Suramar Surf and Turf (Rank 3)
+					[201530] = 4, -- Suramar Surf and Turf (Rank 2)
+					[201501] = 4, -- Suramar Surf and Turf (Rank 1)
+					-- Delicacies
+					[201555] = 900, -- Azshari Salad (Rank 3)
+					[201535] = 900, -- Azshari Salad (Rank 2)
+					[201506] = 900, -- Azshari Salad (Rank 1)
+					[201558] = 4, -- Fishbrul Special (Rank 3)
+					[201538] = 4, -- Fishbrul Special (Rank 2)
+					[201511] = 4, -- Fishbrul Special (Rank 1)
+					[201556] = 900, -- Nightborne Delicacy Platter (Rank 3)
+					[201536] = 900, -- Nightborne Delicacy Platter (Rank 2)
+					[201507] = 900, -- Nightborne Delicacy Platter (Rank 1)
+					[201557] = 4, -- Seed-Battered Fish Plate (Rank 3)
+					[201537] = 4, -- Seed-Battered Fish Plate (Rank 2)
+					[201508] = 4, -- Seed-Battered Fish Plate (Rank 1)
+					[201554] = 4, -- The Hungry Magister (Rank 3)
+					[201534] = 4, -- The Hungry Magister (Rank 2)
+					[201505] = 4, -- The Hungry Magister (Rank 1)
+					-- Feasts
+					[201562] = 4, -- Hearty Feast (Rank 3)
+					[201542] = 4, -- Hearty Feast (Rank 2)
+					[201515] = 4, -- Hearty Feast (Rank 1)
+					[201563] = 4, -- Lavish Suramar Feast (Rank 3)
+					[201543] = 4, -- Lavish Suramar Feast (Rank 2)
+					[201516] = 4, -- Lavish Suramar Feast (Rank 1)
+					[251258] = 4, -- Feast of the Fishes
+				-- Food of Draenor
+					-- Feasts
+					[173978] = 4, -- Feast of Blood
+					[173979] = 4, -- Feast of the Waters
+					-- Delicacies
+					[160986] = 4, -- Blackrock Barbecue
+					[160999] = 4, -- Calamari Crepes
+					[160987] = 4, -- Frosty Stew
+					[161000] = 4, -- Gorgrond Chowder
+					[160989] = 4, -- Sleeper Surprise
+					[160984] = 4, -- Talador Surf and Turf
+					-- Meat Dishes
+					[160962] = 4, -- Blackrock Ham
+					[160968] = 4, -- Braised Riverbeast
+					[160971] = 4, -- Clefthoof Sausages
+					[160958] = 4, -- Hearty Elekk Steak
+					[160966] = 4, -- Pan-Seared Talbuk
+					[160969] = 4, -- Rylak Crepes
+					[190788] = 4, -- Fel Eggs and Ham
+					-- Fish Dishes
+					[160981] = 4, -- Fat Sleeper Cakes
+					[160982] = 4, -- Fiery Calamari
+					[160978] = 4, -- Grilled Gulper
+					[160983] = 4, -- Skulker Chowder
+					[160973] = 4, -- Steamed Scorpion
+					[160979] = 4, -- Sturgeon Stew
+					[161002] = 4, -- Grilled Saberfish
+					[161001] = 4, -- Saberfish Broth
+					[180761] = 4, -- Buttered Sturgeon
+					[180759] = 4, -- Jumbo Sea Dog
+					[180758] = 4, -- Pickled Eel
+					[180757] = 4, -- Salty Squid Roll
+					[180762] = 4, -- Sleeper Sushi
+					[180760] = 4, -- Whiptail Fillet
+				-- Pandaren Cuisine
+					-- Way of the Grill
+					[125141] = 4, -- Banquet of the Grill
+					[104300] = 4, -- Black Pepper Ribs and Shrimp
+					[145311] = 4, -- Fluffy Silkfeather Omelet
+					[125142] = 4, -- Great Banquet of the Grill
+					[104299] = 4, -- Eternal Blossom Fish
+					[104298] = 4, -- Charbroiled Tiger Steak
+					-- Way of the Wok
+					[125594] = 4, -- Banquet of the Wok
+					[125595] = 4, -- Great Banquet of the Wok
+					[104303] = 4, -- Sea Mist Rice Noodles
+					[145305] = 4, -- Seasoned Pomfruit Slices
+					[104302] = 4, -- Valley Stir Fry
+					[104301] = 4, -- Sauteed Carrots
+					-- Way of the Pot
+					[125596] = 4, -- Banquet of the Pot
+					[125597] = 4, -- Great Banquet of the Pot
+					[104306] = 4, -- Mogu Fish Stew
+					[145307] = 4, -- Spiced Blossom Soup
+					[104305] = 4, -- Braised Turtle
+					[104304] = 4, -- Swiling Mist Soup
+					-- Way of the Steamer
+					[125598] = 4, -- Banquet of the Steamer
+					[145309] = 4, -- Farmer's Delight
+					[125599] = 4, -- Great Banquet of the Steamer
+					[104309] = 4, -- Steamed Crab Surprise
+					[104308] = 4, -- Fire Spirit Salmon
+					[104307] = 4, -- Shrimp Dumplings
+					-- Way of the Oven
+					[125600] = 4, -- Banquet of the Oven
+					[104312] = 4, -- Chun Tian Spring Rolls
+					[125601] = 4, -- Great Banquet of the Oven
+					[145310] = 4, -- Stuffed Lushrooms
+					[104311] = 4, -- Twin Fish Platter
+					[104310] = 4, -- Wildfowl Roast
+					-- Way of the Brew
+					[125602] = 202, -- Banquet of the Brew
+					[125603] = 202, -- Great Banquet of the Brew
+					[124054] = 202, -- Mad Brewer's Breakfast
+					[126655] = 202, -- Banana Infused Rum
+					[126654] = 202, -- Four Senses Brew
+					[124053] = 281, -- Jade Witch Brew
+					[124052] = 202, -- Ginseng Tea
+					-- Everyday Cooking
+					[145061] = 100, -- Deluxe Noodle Cart Kit
+					[105194] = 4, -- Great Pandaren Banquet
+					[145308] = 202, -- Mango Ice
+					[145038] = 100, -- Noodle Cart Kit
+					[105190] = 4, -- Pandaren Banquet
+					[145062] = 100, -- Pandaren Treasure Noodle Cart Kit
+					[125120] = 4, -- Spicy Salmon
+					[125123] = 4, -- Spicy Vegetable Chips
+					[124032] = 4, -- Krasarang Fritters
+					[125122] = 4, -- Rice Pudding
+					[124029] = 4, -- Viseclaw Soup
+					[124233] = 4, -- Blanched Needle Mushrooms
+					[124229] = 4, -- Red Bean Bun
+					[124228] = 4, -- Boiled Silkwork Pupa
+					[124227] = 4, -- Dried Needle Mushrooms
+					[124226] = 900, -- Dried Peaches
+					[104297] = 4, -- Fish Cake
+					[104237] = 4, -- Golden Carp Consomme
+					[124231] = 4, -- Green Curry Fish
+					[124232] = 4, -- Peach Pie
+					[125080] = 202, -- Pearl Milk Tea
+					[125067] = 4, -- Perfectly Cooked Instant Noodles
+					[124223] = 4, -- Pounded Rice Cake
+					[125078] = 202, -- Roasted Barley Tea
+					[124234] = 4, -- Skewered Peanut Chicken
+					[125117] = 900, -- Sliced Peaches
+					[124230] = 202, -- Tangy Yogurt
+					[124225] = 4, -- Toasted Fish Jerky
+					[125121] = 4, -- Wildfowl Ginseng Soup
+					[124224] = 202, -- Yak Cheese Curds
+				-- Cataclysm Recipes
+					-- Everyday Cooking
+					[88011] = 4, -- Broiled Dragon Feast
+					[88019] = 4, -- Fortune Cookie
+					[88036] = 4, -- Seafood Magnifique Feast
+					[88003] = 4, -- Baked Rockfish
+					[88004] = 4, -- Basilisk Liverdog
+					[88005] = 4, -- Beer-Basted Crocolisk
+					[88034] = 4, -- Blackbelly Sushi
+					[88014] = 4, -- Crocolisk Au Gratin
+					[88016] = 4, -- Delicious Sagefish Tail
+					[88020] = 4, -- Grilled Dragon
+					[88025] = 4, -- Lavascale Minestrone
+					[88031] = 4, -- Mushroom Sauce Mudfish
+					[88039] = 4, -- Severed Sagefish Head
+					[88042] = 4, -- Skewered Eel
+					[88013] = 4, -- Chocolate Cookie
+					[88018] = 4, -- Fish Fry
+					[96133] = 4, -- Scalding Murglesnout
+					[88021] = 4, -- Hearty Seafood Soup
+					[88033] = 4, -- Pickled Guppy
+					[88046] = 4, -- Tender Baked Turtle
+					[88012] = 4, -- Broiled Mountain Trout
+					[88024] = 4, -- Lavascale Fillet
+					[88028] = 4, -- Lightly Fried Lurker
+					[88030] = 4, -- Lurker Lunch
+					[88035] = 4, -- Salted Eye
+					[88037] = 4, -- Seasoned Crab
+					[88047] = 4, -- Whitecrest Gumbo
+					[88006] = 4, -- Blackened Surprise
+					-- Delightful Drinks
+					[88044] = 202, -- South Island Iced Tea
+					[88022] = 202, -- Highland Spirits
+					[88045] = 202, -- Starfire Espresso
+					[88015] = 202, -- Darkbrew Lager
+					-- Lures
+					[88017] = 100, -- Feathered Lure
+				-- Recipes of the Cold North
+					-- Quest Recipes
+					[57729] = 100, -- Wine and Cheese Platter
+					-- Everyday Cooking
+					[57423] = 4, -- Fish Feast
+					[58528] = 4, -- Small Feast
+					[58527] = 4, -- Gigantic Feast
+					[57441] = 4, -- Blackened Dragonfin
+					[57438] = 4, -- Blackened Worg Steak
+					[57435] = 4, -- Critter Bites
+					[57439] = 4, -- Cuttlesteak
+					[57442] = 4, -- Dragonfin Filet
+					[45568] = 4, -- Firecracker Salmon
+					[57436] = 4, -- Hearty Rhino
+					[45570] = 4, -- Imperial Manta Steak
+					[45555] = 4, -- Mega Mammoth Meal
+					[45559] = 4, -- Mighty Rhino Dogs
+					[45567] = 4, -- Poached Northern Sculpin
+					[57434] = 4, -- Rhinolicious Wormsteak
+					[57437] = 4, -- Snapper Extreme
+					[57440] = 4, -- Spiced Mammoth Treats
+					[45557] = 4, -- Spiced Worm Burger
+					[45571] = 4, -- Spicy Blue Nettlefish
+					[57433] = 4, -- Spicy Fried Herring
+					[45556] = 4, -- Tender Shoveltusk Steak
+					[57443] = 4, -- Tracker Snacks
+					[45558] = 4, -- Very Burnt Worg
+					[64358] = 202, -- Black Jelly
+					[62350] = 4, -- Worg Tartare
+					[45554] = 4, -- Great Feast
+					[45569] = 4, -- Baked Manta Ray
+					[58065] = 4, -- Dalaran Clam Chowder
+					[45563] = 4, -- Grilled Sculpin
+					[45549] = 4, -- Mammoth Meal
+					[45566] = 4, -- Pickled Fangtooth
+					[45565] = 4, -- Poached Nettlefish
+					[45553] = 4, -- Rhino Dogs
+					[45552] = 4, -- Roasted Worg
+					[45550] = 4, -- Shoveltusk Steak
+					[45564] = 4, -- Smoked Salmon
+					[45551] = 4, -- Worm Delight
+					[53056] = 202, -- Kungaloosh
+					[58523] = 4, -- Bad Clams
+					[45561] = 4, -- Grilled Bonescale
+					[58525] = 4, -- Haunted Herring
+					[58521] = 4, -- Last Week's Mammoth
+					[57421] = 4, -- Northern Stew
+					[45562] = 4, -- Sauteed Goby
+					[45560] = 4, -- Smoked Rockfin
+					[58512] = 4, -- Tasty Cupcake
+				-- Outlandish Dishes
+					-- Everyday Cooking
+					[42302] = 4, -- Fisherman's Feast
+					[42305] = 4, -- Hot Buttered Trout
+					[33296] = 4, -- Spicy Crawdad
+					[38868] = 4, -- Crunchy Serpent
+					[38867] = 4, -- Mok'Nathal Shortribs
+					[33295] = 4, -- Golden Fish Sticks
+					[43772] = 4, -- Kibler's Bits
+					[33287] = 4, -- Roasted Clefthoof
+					[33289] = 4, -- Talbuk Steak
+					[33288] = 4, -- Warp Burger
+					[33293] = 4, -- Grilled Mudfish
+					[33294] = 4, -- Poached Bluefish
+					[33286] = 4, -- Blackened Basilisk
+					[43707] = 4, -- Skullfish Soup
+					[43765] = 4, -- Spicy Hot Talbuk
+					[42296] = 4, -- Stewed Trout
+					[33292] = 4, -- Blackened Sporefish
+					[33290] = 4, -- Blackened Trout
+					[43761] = 4, -- Broiled Bloodfin
+					[33279] = 4, -- Buzzard Bites
+					[36210] = 4, -- Clam Bar
+					[33291] = 4, -- Feltail Delight
+					[33284] = 4, -- Ravager Dog
+					[43758] = 4, -- Stormchops
+				-- Old World Recipes
+					-- Everyday Cooking
+					[18247] = 4, -- Baked Salmon
+					[25659] = 4, -- Dirge's Kickin' Chimaerok Chops
+					[18245] = 4, -- Lobster Stew
+					[18246] = 4, -- Mightfish Steak
+					[22761] = 4, -- Runn Tum Tuber Surprise
+					[24801] = 4, -- Smoked Desert Dumplings
+					[18242] = 4, -- Hot Smoked Bass
+					[46684] = 4, -- Charred Bear Kabobs
+					[46688] = 4, -- Juicy Bear Burger
+					[18243] = 4, -- Nightfin Soup
+					[18244] = 4, -- Poached Sunscale Salmon
+					[64054] = 4, -- Clamlette Magnifique
+					[18239] = 4, -- Cooked Glossy Mightfish
+					[18241] = 4, -- Filet of Redgill
+					[15933] = 4, -- Monster Omelet
+					[15915] = 4, -- Spiced Chili Crab
+					[22480] = 4, -- Tender Wolf Steak
+					[20626] = 4, -- Unddermine Clam Chowder
+					[185705] = 4, -- Fancy Darkmoon Feast
+					[18240] = 4, -- Grilled Squid
+					[18238] = 4, -- Spotted Yellowtail
+					[15910] = 4, -- Heavy Kodo Stew
+					[15863] = 4, -- Carrion Surprise
+					[7213] = 4, -- Giant Clam Scorcho
+					[15856] = 4, -- Hot Wolf Ribs
+					[15861] = 4, -- Jungle Stew
+					[20916] = 4, -- Mithril Head Trout
+					[15865] = 4, -- Mystery Stew
+					[15855] = 4, -- Roast Raptor
+					[25954] = 4, -- Sagefish Delight
+					[21175] = 4, -- Spider Sausage
+					[7828] = 4, -- Rockscale Cod
+					[4094] = 4, -- Barbecued Buzzard Wing
+					[3400] = 4, -- Soothing Turtle Bisque
+					[3398] = 4, -- Hot Lion Chops
+					[13028] = 202, -- Goldthorn Tea
+					[3376] = 4, -- Curiously Tasty Omelet
+					[15853] = 4, -- Lean Wolf Steak
+					[3373] = 4, -- Crocolisk Gumbo
+					[24418] = 4, -- Heavy Crocolisk Stew
+					[3399] = 4, -- Tasty Lion Steak
+					[3377] = 4, -- Gooey Spider Cake
+					[6419] = 4, -- Lean Venison
+					[7755] = 4, -- Bristle Whisker Catfish
+					[6418] = 4, -- Crispy Lizard Tail
+					[2549] = 4, -- Seasoned Wolf Kabob
+					[2547] = 4, -- Redridge Goulash
+					[6501] = 4, -- Clam Chowder
+					[6417] = 4, -- Dig Rat Stew
+					[3372] = 4, -- Murloc Fin Soup
+					[2548] = 4, -- Succulent Pork Ribs
+					[6500] = 4, -- Goblin Deviled Clams
+					[185708] = 4, -- Sugar-Crusted Fish Feast
+					[2545] = 4, -- Cooked Crab Claw
+					[3370] = 4, -- Crocolisk Steak
+					[25704] = 4, -- Smoked Sagefish
+					[2543] = 4, -- Westfall Stew
+					[3371] = 4, -- Blood Sausage
+					[28267] = 4, -- Crunchy Spider Surprise
+					[33278] = 4, -- Bat Bites
+					[2542] = 4, -- Goretusk Liver Pie
+					[7754] = 4, -- Loch Frenzy Delight
+					[7753] = 4, -- Longjaw Mud Snapper
+					[7827] = 4, -- Rainbow Fin Albacore
+					[6416] = 4, -- Strider Stew
+					[2546] = 4, -- Dry Pork Ribs
+					[8607] = 4, -- Smoked Bear Meat
+					[2544] = 4, -- Crab Cake
+					[6414] = 4, -- Roasted Kodo Meat
+					[2795] = 4, -- Beer Basted Boar Ribs
+					[6413] = 4, -- Scorpid Surprise
+					[6499] = 4, -- Boiled Clams
+					[2541] = 4, -- Coyote Steak
+					[6415] = 4, -- Fillet of Frenzy
+					[185704] = 4, -- Lemon Herb Fillet
+					[43779] = 4, -- Delicious Chocolate Cake
+					[7751] = 4, -- Brilliant Smallfish
+					[2538] = 4, -- Charred Wolf Meat
+					[15935] = 4, -- Crispy Bat Wing
+					[8604] = 4, -- Herb Baked Egg
+					[33276] = 4, -- Lynx Steak
+					[2540] = 4, -- Roasted Boar Meat
+					[33277] = 4, -- Roasted Moongraze Tenderloin
+					[7752] = 4, -- Slitherskin Mackerel
+					[93741] = 4, -- Venison Jerky
+					[6412] = 4, -- Kaldorei Spider Kabob
+					[2539] = 4, -- Spiced Wolf Meat
+					[3397] = 4, -- Big Bear Steak
+					[37836] = 4, -- Spice Bread
+					-- Holiday Cooking
+					[45022] = 202, -- Hot Apple Cider
+					[62051] = 4, -- Candied Sweet Potato (Alliance)
+					[66034] = 4, -- Candied Sweet Potato (Horde)
+					[62049] = 202, -- Cranberry Chutney (Alliance)
+					[66035] = 202, -- Cranberry Chutney (Horde)
+					[62045] = 4, -- Slow-Roasted Turkey (Alliance)
+					[66037] = 4, -- Slow-Roasted Turkey (Horde)
+					[62044] = 4, -- Pumpkin Pie (Alliance)
+					[66036] = 4, -- Pumpkin Pie (Horde)
+					[66038] = 4, -- Spice Bread Stuffing (Aliance)
+					[62050] = 4, -- Spice Bread Stuffing (Horde)
+					[21144] = 202, -- Winter Veil Egg Nog
+					[21143] = 4, -- Gingerbread Cookie
+					[65454] = 4, -- Bread of the Dead
+					-- Unusual Delights
+					[15906] = 4, -- Dragonbreath Chili
+					[8238] = 4, -- Savory Deviate Delight
+					[9513] = 202, -- Thistle Tea
+					[45695] = 202, -- Captain Rumsey's Lager
 
-			-- Engineering
-			[310496] = 100, -- Electro-Jump
-			[310495] = 100, -- Dimensional Shifter
-			[310497] = 100, -- Damage Retaliator
-			[310486] = 100, -- Bomb Bola Launcher
-			[310485] = 100, -- Shadow Land Mine
-			[310484] = 100, -- Nutcracker Grenade
-			[310535] = 100, -- Wormhole Generator: Shadowlands
-			[310490] = 100, -- Momentum Redistributor Boots
-			[310492] = 100, -- Gravimetric Scrambler Cannon
-			[345179] = 100, -- Disposable Spectrophasic Reanimator
-			[310493] = 100, -- 50UL-TR4P
-			[310509] = 100, -- Reinforced Ectoplasmic Specs
-			[310504] = 100, -- Grounded Ectoplasmic Specs
-			[310501] = 100, -- Flexible Ectoplasmic Specs
-			[310507] = 100, -- Articulated Ectoplasmic Specs
-			[343100] = 100, -- Crafter's Mark II
-			[343099] = 100, -- Crafter's Mark I
-			[343661] = 100, -- Novice Crafter's Mark
-			[310526] = 100, -- Wormfed Gear Assembly
-			[310525] = 100, -- Mortal Coiled Spring
-			[310524] = 100, -- Porous Polishing Abrasive
-			[310522] = 100, -- Handful of Laestrite Bolts
-			[331007] = 100, -- PHA7-YNX
-			[310533] = 100, -- Optical Target Embiggener
-			[310534] = 100, -- Infra-green Reflex Sight
-			[310536] = 100, -- Precision Lifeforce Inverter
-			[338218] = 100, -- Bone Reinforced Oxxein Tubing
-			[338217] = 100, -- Boneclad Stake Launcher
-			[338119] = 100, -- Bug Zapifier
-			[338220] = 100, -- Duelist's Pistol
-			[338212] = 100, -- Electro Cable
-			[338210] = 100, -- Energized Battery
-			[338219] = 100, -- Handful of Oxxein Bolts
-			[338216] = 100, -- Hardened Bolts
-			[338214] = 100, -- Piston Assembly
-			[338213] = 100, -- Power Hammer
-			[338222] = 100, -- Sinvyr Barrel
-			[338223] = 100, -- Sinvyr Trigger Mechanism
-			[255936] = 100, -- Belt Enchant: Holographic Horror Projector
-			[269123] = 100, -- Belt Enchant: Miniaturized Plasma Shield
-			[255940] = 100, -- Belt Enchant: Personal Space Amplifier
-			[255394] = 100, -- F.R.I.E.D. (Rank 3)
-			[255393] = 100, -- F.R.I.E.D. (Rank 2)
-			[255392] = 100, -- F.R.I.E.D. (Rank 1)
-			[255409] = 100, -- Organic Discombobulation Grenade (Rank 3)
-			[255408] = 100, -- Organic Discombobulation Grenade (Rank 2)
-			[255407] = 100, -- Organic Discombobulation Grenade (Rank 1)
-			[255397] = 100, -- Thermo-Accelerated Plague Spreader (Rank 3)
-			[255396] = 100, -- Thermo-Accelerated Plague Spreader (Rank 2)
-			[255395] = 100, -- Thermo-Accelerated Plague Spreader (Rank 1)
-			[298930] = 100, -- Blingtron 7000
-			[299105] = 100, -- Wormhole Generator: Kul Tiras
-			[299106] = 100, -- Wormhole Generator: Zandalar
-			[283916] = 100, -- Unstable Temporal Time Shifter (Rank 3)
-			[283915] = 100, -- Unstable Temporal Time Shifter (Rank 2)
-			[283914] = 100, -- Unstable Temporal Time Shifter (Rank 1)
-			[256156] = 100, -- Deployable Attire Rearranger (Rank 3)
-			[256155] = 100, -- Deployable Attire Rearranger (Rank 2)
-			[256154] = 100, -- Deployable Attire Rearranger (Rank 1)
-			[256072] = 100, -- Electroshock Mount Motivator (Rank 3)
-			[256071] = 100, -- Electroshock Mount Motivator (Rank 2)
-			[256070] = 100, -- Electroshock Mount Motivator (Rank 1)
-			[256084] = 100, -- Interdimensional Companion Repository (Rank 3)
-			[256082] = 100, -- Interdimensional Companion Repository (Rank 2)
-			[256080] = 100, -- Interdimensional Companion Repository (Rank 1)
-			[256075] = 100, -- XA-1000 Surface Skimmer (Rank 3)
-			[256074] = 100, -- XA-1000 Surface Skimmer (Rank 2)
-			[256073] = 100, -- XA-1000 Surface Skimmer (Rank 1)
-			[280734] = 100, -- Magical Intrusion Dampener (Rank 3)
-			[280733] = 100, -- Magical Intrusion Dampener (Rank 2)
-			[280732] = 100, -- Magical Intrusion Dampener (Rank 1)
-			[305945] = 100, -- A-N0M-A-L0U5 Synthetic Specs
-			[299005] = 100, -- A5C-3N-D3D Synthetic Specs
-			[299004] = 100, -- Abyssal Synthetic Specs
-			[299006] = 100, -- Charged A5C-3N-D3D Synthetic Specs
-			[305943] = 100, -- Paramount Synthetic Specs
-			[305944] = 100, -- Superior Synthetic Specs
-			[272058] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 3)
-			[272057] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 2)
-			[272056] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 1)
-			[286875] = 100, -- Charged SP1-R1-73D Synthetic Specs
-			[286874] = 100, -- SP1-R1-73D Synthetic Specs
-			[286873] = 100, -- Surging Synthetic Specs
-			[291090] = 100, -- Emblazoned Synthetic Specs
-			[291089] = 100, -- Imbued Synthetic Specs
-			[305942] = 100, -- A-N0M-A-L0U5 Gearspun Goggles
-			[299008] = 100, -- A5C-3N-D3D Gearspun Goggles
-			[299007] = 100, -- Abyssal Gearspun Goggles
-			[299009] = 100, -- Charged A5C-3N-D3D Gearspun Goggles
-			[305940] = 100, -- Paramount Gearspun Goggles
-			[305941] = 100, -- Superior Gearspun Goggles
-			[272061] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 3)
-			[272060] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 2)
-			[272059] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 1)
-			[286869] = 100, -- Charged SP1-R1-73D Gearspun Goggles
-			[286868] = 100, -- SP1-R1-73D Gearspun Goggles
-			[286867] = 100, -- Surging Gearspun Goggles
-			[291092] = 100, -- Emblazoned Gearspun Goggles
-			[291091] = 100, -- Imbued Gearspun Goggles
-			[305951] = 100, -- A-N0M-A-L0U5 Bionic Bifocals
-			[299011] = 100, -- A5C-3N-D3D Bionic Bifocals
-			[299010] = 100, -- Abyssal Bionic Bifocals
-			[299012] = 100, -- Charged A5C-3N-D3D Bionic Bifocals
-			[305949] = 100, -- Paramount Bionic Bifocals
-			[305950] = 100, -- Superior Bionic Bifocals
-			[272064] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 3)
-			[272063] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 2)
-			[272062] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 1)
-			[286866] = 100, -- Charged SP1-R1-73D Bionic Bifocals
-			[286865] = 100, -- SP1-R1-73D Bionic Bifocals
-			[286864] = 100, -- Surging Bionic Bifocals
-			[291094] = 100, -- Emblazoned Bionic Bifocals
-			[291093] = 100, -- Imbued Bionic Bifocals
-			[305948] = 100, -- A-N0M-A-L0U5 Orthogonal Optics
-			[299014] = 100, -- A5C-3N-D3D Orthogonal Optics
-			[299013] = 100, -- Abyssal Orthogonal Optics
-			[299015] = 100, -- Charged A5C-3N-D3D Orthogonal Optics
-			[305946] = 100, -- Paramount Orthogonal Optics
-			[305947] = 100, -- Superior Orthogonal Optics
-			[272067] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 3)
-			[272066] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 2)
-			[272065] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 1)
-			[286872] = 100, -- Charged SP1-R1-73D Orthogonal Optics
-			[286871] = 100, -- SP1-R1-73D Orthogonal Optics
-			[286870] = 100, -- Surging Orthogonal Optics
-			[291096] = 100, -- Emblazoned Orthogonal Optics
-			[291095] = 100, -- Imbued Orthogonal Optics
-			[294786] = 100, -- Notorious Combatant's Discombobulator (Rank 3)
-			[294785] = 100, -- Notorious Combatant's Discombobulator (Rank 2)
-			[294784] = 100, -- Notorious Combatant's Discombobulator (Rank 1)
-			[294789] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 3)
-			[294788] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 2)
-			[294787] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 1)
-			[305861] = 100, -- Uncanny Combatant's Discombobulator (Rank 3)
-			[305862] = 100, -- Uncanny Combatant's Discombobulator (Rank 2)
-			[305863] = 100, -- Uncanny Combatant's Discombobulator (Rank 1)
-			[305858] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 3)
-			[305859] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 2)
-			[305860] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 1)
-			[255459] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 3)
-			[255458] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 2)
-			[255457] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 1)
-			[253152] = 100, -- Precision Attitude Adjuster (Rank 3)
-			[253151] = 100, -- Precision Attitude Adjuster (Rank 2)
-			[253150] = 100, -- Precision Attitude Adjuster (Rank 1)
-			[282808] = 100, -- Sinister Combatant's Discombobulator (Rank 3)
-			[282807] = 100, -- Sinister Combatant's Discombobulator (Rank 2)
-			[282806] = 100, -- Sinister Combatant's Discombobulator (Rank 1)
-			[282811] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 3)
-			[282810] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 2)
-			[282809] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 1)
-			[269726] = 100, -- Honorable Combatant's Discombobulator (Rank 3)
-			[269725] = 100, -- Honorable Combatant's Discombobulator (Rank 2)
-			[269724] = 100, -- Honorable Combatant's Discombobulator (Rank 1)
-			[269729] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 3)
-			[269728] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 2)
-			[269727] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 1)
-			[253122] = 100, -- Magnetic Discombobulator
-			[264962] = 100, -- Crow's Nest Scope (Rank 3)
-			[264961] = 100, -- Crow's Nest Scope (Rank 2)
-			[264960] = 100, -- Crow's Nest Scope (Rank 1)
-			[265102] = 100, -- Frost-Laced Ammunition (Rank 3)
-			[265101] = 100, -- Frost-Laced Ammunition (Rank 2)
-			[265100] = 100, -- Frost-Laced Ammunition (Rank 1)
-			[265099] = 100, -- Incendiary Ammunition (Rank 3)
-			[265098] = 100, -- Incendiary Ammunition (Rank 2)
-			[265097] = 100, -- Incendiary Ammunition (Rank 1)
-			[264967] = 100, -- Monelite Scope of Alacrity (Rank 3)
-			[264966] = 100, -- Monelite Scope of Alacrity (Rank 2)
-			[264964] = 100, -- Monelite Scope of Alacrity (Rank 1)
-			[256132] = 100, -- Super-Charged Engine
-			[274621] = 100, -- Mecha-Mogul Mk2
-			[286478] = 100, -- Mechantula
-			[287279] = 100, -- Aqueous Thermo-Degradation
-			[286647] = 100, -- Sanguinated Thermo-Degradation
-			[278411] = 100, -- Makeshift Azerite Detector
-			[278413] = 100, -- Monelite Fish Finder
-			[307220] = 320, -- Void Focus
-			[298255] = 100, -- Ub3r-Module: P.O.G.O.
-			[298256] = 100, -- Ub3r-Module: Scrap Cannon
-			[298257] = 100, -- Ub3r-Module: Ub3r-Coil
-			[282975] = 100, -- The Ub3r-SPanner
-			[283399] = 100, -- Ub3r-Module: Short-Fused Bomb Bots
-			[283401] = 100, -- Ub3r-Module: Ub3r S3ntry Mk. X8.0
-			[283403] = 100, -- Ub3r-Module: Ub3r-Improved Target Dummy
-			[235755] = 100, -- Chain Skullblasters
-			[199011] = 100, -- Double-Barreled Cranial Cannon (Rank 3)
-			[198997] = 100, -- Double-Barreled Cranial Cannon (Rank 2)
-			[198970] = 100, -- Double-Barreled Cranial Cannon (Rank 1)
-			[235756] = 100, -- Heavy Skullblasters
-			[199012] = 100, -- Ironsight Cranial Cannon (Rank 3)
-			[198998] = 100, -- Ironsight Cranial Cannon (Rank 2)
-			[198971] = 100, -- Ironsight Cranial Cannon (Rank 1)
-			[235754] = 100, -- Rugged Skullblasters
-			[199010] = 100, -- Sawed-Off Cranial Cannon (Rank 3)
-			[198996] = 100, -- Sawed-Off Cranial Cannon (Rank 2)
-			[198969] = 100, -- Sawed-Off Cranial Cannon (Rank 1)
-			[199009] = 100, -- Semi-Automagic Cranial Cannon (Rank 3)
-			[198995] = 100, -- Semi-Automagic Cranial Cannon (Rank 2)
-			[198968] = 100, -- Semi-Automagic Cranial Cannon (Rank 1)
-			[235753] = 100, -- Tailored Skullblasters
-			[199005] = 100, -- Blink-Trigger Headgun (Rank 3)
-			[198991] = 100, -- Blink-Trigger Headgun (Rank 2)
-			[198939] = 100, -- Blink-Trigger Headgun (Rank 1)
-			[199007] = 100, -- Bolt-Action Headgun (Rank 3)
-			[198993] = 100, -- Bolt-Action Headgun (Rank 2)
-			[198966] = 100, -- Bolt-Action Headgun (Rank 1)
-			[199008] = 100, -- Reinforced Headgun (Rank 3)
-			[198994] = 100, -- Reinforced Headgun (Rank 2)
-			[198967] = 100, -- Reinforced Headgun (Rank 1)
-			[199006] = 100, -- Tactical Headgun (Rank 3)
-			[198992] = 100, -- Tactical Headgun (Rank 2)
-			[198965] = 100, -- Tactical Headgun (Rank 1)
-			[199013] = 100, -- Deployable Bullet Dispenser (Rank 3)
-			[198999] = 100, -- Deployable Bullet Dispenser (Rank 2)
-			[198972] = 100, -- Deployable Bullet Dispenser (Rank 1)
-			[199014] = 100, -- Gunpowder Charge (Rank 3)
-			[199000] = 100, -- Gunpowder Charge (Rank 2)
-			[198973] = 100, -- Gunpowder Charge (Rank 1)
-			[199015] = 100, -- Pump-Action Bandage Gun (Rank 3)
-			[199001] = 100, -- Pump-Action Bandage Gun (Rank 2)
-			[198974] = 100, -- Pump-Action Bandage Gun (Rank 1)
-			[198981] = 100, -- Trigger
-			[199017] = 100, -- Auto-Hammer (Rank 3)
-			[199003] = 100, -- Auto-Hammer (Rank 2)
-			[198976] = 100, -- Auto-Hammer (Rank 1)
-			[198980] = 100, -- Blingtron's Circuit Design Tutorial
-			[199018] = 100, -- Failure Detection Pylon (Rank 3)
-			[199004] = 100, -- Failure Detection Pylon (Rank 2)
-			[198977] = 100, -- Failure Detection Pylon (Rank 1)
-			[199016] = 100, -- Gunpack (Rank 3)
-			[199002] = 100, -- Gunpack (Rank 2)
-			[198975] = 100, -- Gunpack (Rank 1)
-			[247744] = 100, -- Wormhole Generator: Argus
-			[247717] = 100, -- Gravitational Reduction Slippers
-			[198978] = 100, -- Gunshoes
-			[198979] = 100, -- Intra-Dalaran Wormhole Generator
-			[209645] = 100, -- Leystone Buoy
-			[209646] = 100, -- Mecha-Bond Imprint Matrix
-			[209501] = 100, -- "The Felic"
-			[209502] = 100, -- Shockinator
-			[235775] = 100, -- Rechargeable Reaves Battery
-			[198989] = 100, -- Reaves Module: Bling Mode
-			[198985] = 100, -- Reaves Module: Failure Detection Mode
-			[198987] = 100, -- Reaves Module: Fireworks Display Mode
-			[198990] = 100, -- Reaves Module: Piloted Combat Mode
-			[198984] = 100, -- Reaves Module: Repair Mode
-			[198988] = 100, -- Reaves Module: Snack Distribution Mode
-			[198983] = 100, -- Reaves Module: Wormhole Generator Mode
-			[200466] = 100, -- Sonic Environment Enhancer
-			[198982] = 100, -- Reaves Battery
-			[182120] = 100, -- Primal Welding
-			[169080] = 100, -- Gearspring Parts
-			[177054] = 100, -- Secrets of Draenor Engineering
-			[162195] = 100, -- Cybernetic Mechshades
-			[162196] = 100, -- Night-Vision Mechshades
-			[162197] = 100, -- Plasma Mechshades
-			[162198] = 100, -- Razorguard Mechshades
-			[187496] = 100, -- Advanced Muzzlesprocket
-			[187497] = 100, -- Bi-Directional Fizzle Reducer
-			[169078] = 100, -- Didi's Delicate Assembly
-			[162205] = 100, -- Findle's Loot-a-Rang
-			[173289] = 100, -- Hemets Heartseeker
-			[187521] = 100, -- Infrablue-Blocker Lenses
-			[463878] = 100, -- Linkgrease Locksprocket
-			[162203] = 100, -- Megawatt Filament
-			[162202] = 100, -- Oglethorpe's Missile Splitter
-			[162214] = 100, -- Personal Hologram
-			[162199] = 100, -- Shrediron's Shredder
-			[162217] = 100, -- Swapblaster
-			[187520] = 100, -- Taladite Firing Pin
-			[177363] = 100, -- True Iron Trigger
-			[162208] = 100, -- Ultimate Gnomish Army Knife (Uncommon)
-			[169140] = 100, -- Ultimate Gnomish Army Knife (Rare)
-			[162206] = 100, -- World Shrinker
-			[162216] = 100, -- Wormhole Centrifuge
-			[162204] = 100, -- Goblin Glider Kit
-			[173308] = 100, -- Mecha-Blast Rocket
-			[173309] = 100, -- Shieldtronic Shield
-			[162207] = 100, -- Stealthman 54
-			[162218] = 100, -- Blingtron 5000
-			[162210] = 100, -- Lifelike Mechanical Frostboar
-			[162209] = 100, -- Mechanical Axebeak
-			[176732] = 100, -- Mechanical Scorpid
-			[171072] = 100, -- Alliance Firework
-			[171073] = 100, -- Horde Firework
-			[171074] = 100, -- Snake Firework
-			[143743] = 100, -- Schematic: Chief Engineer Jard's Journal
-			[127128] = 100, -- Goblin Dragon Gun, Mark II
-			[127127] = 100, -- G91 Landshark
-			[127124] = 100, -- Locksmith's Powderkeg
-			[131256] = 100, -- Autumn Flower Firework
-			[128260] = 100, -- Celestial Firework
-			[128261] = 100, -- Grand Celebration Firework
-			[131258] = 100, -- Jade Blossom Firework
-			[131353] = 100, -- Pandaria Fireworks
-			[128262] = 100, -- Serpent's Heart Firework
-			[139197] = 100, -- Advanced Refrigeration Unit
-			[139196] = 100, -- Pierre
-			[143714] = 100, -- Rascal-Bot
-			[127129] = 100, -- Blingtron 4000
-			[127135] = 100, -- Mechanical Pandaren Dragonling
-			[127132] = 100, -- Wormhole Generator: Pandaria
-			[127134] = 100, -- Ghost Iron Dragonling
-			[127131] = 100, -- Thermal Anvil
-			[126392] = 100, -- Goblin Glider
-			[109099] = 100, -- Watergliding Jets
-			[139176] = 100, -- Jard's Peculiar Energy Source
-			[131563] = 100, -- Tinker's Kit
-			[127113] = 100, -- Ghost Iron Bolts
-			[127114] = 100, -- High-Explosive Gunpowder
-			[127118] = 100, -- Agile Retinal Armor
-			[127119] = 100, -- Camouflage Retinal Armor
-			[127120] = 100, -- Deadly Retinal Armor
-			[127121] = 100, -- Energized Retinal Armor
-			[127117] = 100, -- Lightweight Retinal Armor
-			[127130] = 100, -- Mist-Piercing Goggles
-			[127123] = 100, -- Reinforced Retinal Armor
-			[127122] = 100, -- Specialized Retinal Armor
-			[127137] = 100, -- Long-Range Trillium Sniper
-			[127136] = 100, -- Big Game Hunter
-			[127115] = 100, -- Lord Blastington's Scope of Doom
-			[127116] = 100, -- Mirror Scope
-			[139192] = 100, -- Sky Golem
-			[127138] = 100, -- Depleted-Kyparium Rocket
-			[127139] = 100, -- Geosynchronous World Spinner
-			[131211] = 100, -- Flashing Tinker's Gear
-			[131212] = 100, -- Fractured Tinker's Gear
-			[131213] = 100, -- Precise Tinker's Gear
-			[131214] = 100, -- Quick Tinker's Gear
-			[131215] = 100, -- Rigid Tinker's Gear
-			[131216] = 100, -- Smooth Tinker's Gear
-			[131217] = 100, -- Sparkling Tinker's Gear
-			[131218] = 100, -- Subtle Tinker's Gear
-			[84425] = 100, -- Cardboard Assassin
-			[84427] = 100, -- Grounded Plasma Shield
-			[84424] = 100, -- Invisibility Field
-			[82200] = 100, -- Spinal Healing Injector
-			[94748] = 800, -- Electrified Ether
-			[84403] = 100, -- Handful of Obsidium Bolts
-			[95707] = 100, -- Big Daddy
-			[84409] = 100, -- Volatile Seaforium Blastpack
-			[81722] = 100, -- Agile Bio-Optic Killshades
-			[81724] = 100, -- Camouflage Bio-Optic Killshades
-			[81716] = 100, -- Deadly Bio-Optic Killshades
-			[81720] = 100, -- Energized Bio-Optic Killshades
-			[81725] = 100, -- Lightweight Bio-Optic Killshades
-			[81714] = 100, -- Reinforced Bio-Optic Killshades
-			[81715] = 100, -- Specialized Bio-Optic Killshades
-			[84406] = 100, -- Authentic Jr. Engineer Goggles
-			[84418] = 100, -- Elementium Dragonling
-			[84416] = 100, -- Elementium Toolbox
-			[95705] = 100, -- Gnomish Gravity Well
-			[84421] = 100, -- Loot-a-Rang
-			[84429] = 100, -- Goblin Barbecue
-			[84430] = 100, -- Heat-Treated Spinning Lure
-			[84413] = 100, -- De-Weaponized Mechanical Companion
-			[84412] = 100, -- Personal World Destroyer
-			[84415] = 100, -- Lure Master Tackle Box
-			[95703] = 100, -- Electrostatic Condenser
-			[100687] = 100, -- Extreme-Impact Hole Puncher
-			[84420] = 100, -- Finely-Tuned Throat Needler
-			[84432] = 100, -- Kickback 5000
-			[84431] = 100, -- Overpowered Chicken Splitter
-			[84417] = 100, -- Volatile Thunderstick
-			[84411] = 100, -- High-Powered Bolt Gun
-			[100587] = 100, -- Flintlocke's Woodchucker
-			[84428] = 100, -- Gnomish X-Ray Scope
-			[84408] = 100, -- R19 Threatfinder
-			[84410] = 100, -- Safety Catch Removal Kit
-			[67839] = 100, -- Mind Amplification Dish
-			[55016] = 100, -- Nitro Boosts
-			[54736] = 100, -- EMP Generator
-			[55002] = 100, -- Flexweave Underlay
-			[54793] = 100, -- Frag Belt
-			[56471] = 100, -- Froststeel Tube
-			[56464] = 100, -- Overcharged Capacitor
-			[53281] = 100, -- Volatile Blasting Trigger
-			[56349] = 100, -- Handful of Cobalt Bolts
-			[56514] = 100, -- Global Thermal Sapper Charge
-			[56468] = 100, -- Box of Bombs
-			[56463] = 100, -- Explosive Decoy
-			[56460] = 100, -- Cobalt Frag Bomb
-			[56480] = 100, -- Armored Titanium Goggles
-			[56483] = 100, -- Charged Titanium Specs
-			[56487] = 100, -- Electroflux Sight Enhancers
-			[56486] = 100, -- Greensight Gogs
-			[56574] = 100, -- Truesight Ice Blinders
-			[62271] = 100, -- Unbreakable Healing Amplifiers
-			[56484] = 100, -- Visage Liquification Goggles
-			[56481] = 100, -- Weakness Spectralizers
-			[61482] = 100, -- Mechanized Snow Goggles (Mail)
-			[61483] = 100, -- Mechanized Snow Goggles (Plate)
-			[56465] = 100, -- Mechanized Snow Goggles (Cloth)
-			[61481] = 100, -- Mechanized Snow Goggles (Leather)
-			[56473] = 100, -- Gnomish X-Ray Specs
-			[68067] = 100, -- Jeeves
-			[67920] = 100, -- Wormhole Generator: Northrend
-			[56462] = 100, -- Gnomish Army Knife
-			[56467] = 100, -- Noise Machine
-			[56466] = 100, -- Sonic Booster
-			[56469] = 100, -- Gnomish Lightning Generator
-			[30349] = 100, -- Titanium Toolbox
-			[56472] = 100, -- MOLL-E
-			[56477] = 100, -- Mana Injector Kit
-			[67326] = 100, -- Goblin Beam Welder
-			[56476] = 100, -- Healing Injector Kit
-			[55252] = 100, -- Scapbot Construction Kit
-			[56459] = 100, -- Hammer Pick
-			[56461] = 100, -- Bladed Pickaxe
-			[56479] = 100, -- Armor Plated Combat Shotgun
-			[60874] = 100, -- Nesingwary 4000
-			[54353] = 100, -- Mark "S" Boomstick
-			[60866] = 100, -- Mechano-Hog (Horde)
-			[60867] = 100, -- Mekgineer's Chopper (Alliance)
-			[56478] = 100, -- Heartseeker Scope
-			[56470] = 100, -- Sun Scope
-			[61471] = 100, -- Diamond-cut Refractor Scope
-			[30309] = 100, -- Felsteel Stabilizer
-			[30307] = 100, -- Hardened Adamantite Tube
-			[30308] = 100, -- Khorium Power Core
-			[39971] = 100, -- Icy Blasting Primers
-			[30306] = 100, -- Adamantite Frame
-			[30303] = 100, -- Elemental Blasting Powder
-			[30304] = 100, -- Fel Iron Casing
-			[30305] = 100, -- Handful or Fel Iron Bolts
-			[39973] = 100, -- Frost Grenade
-			[30547] = 100, -- Elemental Seaforium Charge
-			[30560] = 100, -- Super Sapper Charge
-			[30311] = 100, -- Adamantite Grenade
-			[30558] = 100, -- The Bigger One
-			[30310] = 100, -- Fel Iron Bomb
-			[46111] = 100, -- Annihilator Holo-Gogs
-			[46115] = 100, -- Hard Khorium Goggles
-			[46109] = 100, -- Hyper-Magnified Moon Specs
-			[46107] = 100, -- Justicebringer 3000 Specs
-			[46112] = 100, -- Lightning Etched Specs
-			[46114] = 100, -- Mayhem Projection Goggles
-			[46108] = 100, -- Powerheal 9000 Lens
-			[46110] = 100, -- Primal-Attuned Goggles
-			[46116] = 100, -- Quad Deathblow X44 Goggles
-			[46106] = 100, -- Wonderheal XT68 Shades
-			[41317] = 100, -- Deathblow X11 Goggles
-			[41320] = 100, -- Destruction Holo-gogs
-			[40274] = 100, -- Furious Gizmatic Goggles
-			[41315] = 100, -- Gadgetstorm Goggles
-			[41311] = 100, -- Justicebringer 2000 Specs
-			[41316] = 100, -- Living Replicator Specs
-			[41319] = 100, -- Magnified Moon Specs
-			[41321] = 100, -- Powerheal 4000 Lens
-			[41314] = 100, -- Surestrike Goggles v2.0
-			[41312] = 100, -- Tankatronic Goggles
-			[41318] = 100, -- Wonderheal XT40 Shades
-			[30325] = 100, -- Hyper-Vision Goggles
-			[30575] = 100, -- Gnomish Battle Goggles
-			[30574] = 100, -- Gnomish Power Goggles
-			[30318] = 100, -- Ultra-Spectropic Detection Goggles
-			[30316] = 100, -- Cogspinner Goggles
-			[30317] = 100, -- Power Amplification Goggles
-			[46113] = 100, -- Surestrike Goggles v3.0
-			[44391] = 100, -- Field Repair Bot 110G
-			[30565] = 100, -- Foreman's Enchanted Helmet
-			[30566] = 100, -- Foreman's Reinforced Helmet
-			[30556] = 100, -- Rocket Boots Xtreme
-			[46697] = 100, -- Rocket Boots Xtreme Lite
-			[30570] = 100, -- Nigh-Invulnerability Belt
-			[36954] = 100, -- Dimensional Ripper - Area 52
-			[36955] = 100, -- Ultrasafe Transporter - Toshley's Station
-			[30569] = 100, -- Gnomish Pultryizer
-			[30563] = 100, -- Goblin Rocket Launcher
-			[30552] = 100, -- Mana Potion Injector
-			[30568] = 100, -- Gnomish Flame Turret
-			[30337] = 100, -- Crashin' Thrashin' Robot
-			[30551] = 100, -- Healing Potion Injector
-			[30348] = 100, -- Fel Iron Toolbox
-			[30548] = 100, -- Zapthrottle Mote Extractor
-			[30315] = 100, -- Ornate Khorium Rifle
-			[30314] = 100, -- Felsteel Boomstick
-			[41307] = 100, -- Gyro-balanced Khorium Destroyer
-			[30313] = 100, -- Adamantite Rifle
-			[30312] = 100, -- Fel Iron Musket
-			[30334] = 100, -- Stabilized Eternium Scope
-			[30332] = 100, -- Khorium Scope
-			[30329] = 100, -- Adamantite Scope
-			[44157] = 100, -- Turbo-Charged Flying Machine
-			[44155] = 100, -- Flying Machine
-			[30344] = 100, -- Green Smoke Flare
-			[32814] = 100, -- Purple Smoke Flare
-			[30341] = 100, -- White Smoke Flare
-			[19815] = 100, -- Delicate Arcanite Converter
-			[19791] = 100, -- Thorium Widget
-			[19795] = 100, -- Thorium Tube
-			[39895] = 100, -- Fused Wiring
-			[23071] = 100, -- Truesilver Transformer
-			[133587] = 100, -- Dense Blasting Powder
-			[12599] = 100, -- Mithril Casing
-			[12591] = 100, -- Unstable Trigger
-			[12589] = 100, -- Mithril Tube
-			[3961] = 100, -- Gyrochronatom
-			[12715] = 100, -- Goblin Rocket Fuel Recipe
-			[12895] = 100, -- Inlaid Mithril Cylinder Plans
-			[12585] = 100, -- Solid Blasting Powder
-			[3953] = 100, -- Bronze Framework
-			[12584] = 100, -- Gold Power Core
-			[3952] = 100, -- Minor Recombobulator
-			[3958] = 100, -- Iron Strut
-			[3942] = 100, -- Whirring Bronze Gizmo
-			[3938] = 100, -- Bronze Tube
-			[3945] = 100, -- Heavy Blasting Powder
-			[3973] = 100, -- Silver Contact
-			[3929] = 100, -- Coarse Blasting Powder
-			[3922] = 100, -- Handful of Copper Bolts
-			[3918] = 100, -- Rough Blasting Powder
-			[19831] = 100, -- Arcane Bomb
-			[19799] = 100, -- Dark Iron Bomb
-			[19790] = 100, -- Thorium Grenade
-			[23080] = 100, -- Powerful Seaforium Charge
-			[12908] = 100, -- Goblin Dragon Gun
-			[12619] = 100, -- Hi-Explosive Bomb
-			[12754] = 100, -- The Big One
-			[12755] = 100, -- Goblin Bomb Dispenser
-			[23070] = 100, -- Dense Dynamite
-			[12603] = 100, -- Mithril Frag Bomb
-			[12716] = 100, -- Goblin Mortar
-			[12760] = 100, -- Goblin Sapper Charge
-			[3972] = 100, -- Large Seaforium Charge
-			[3968] = 100, -- Goblin Land Mine
-			[3967] = 100, -- Big Iron Bomb
-			[8243] = 100, -- Flash Bomb
-			[23069] = 100, -- EZ-Thro Dynamite II
-			[3962] = 100, -- Iron Grenade
-			[3960] = 100, -- Portable Bronze Mortar
-			[3955] = 100, -- Explosive Sheep
-			[12586] = 100, -- Solid Dynamite
-			[3950] = 100, -- Big Bronze Bomb
-			[3941] = 100, -- Small Bronze Bomb
-			[3933] = 100, -- Small Seaforium Charge
-			[3937] = 100, -- Large Copper Bomb
-			[3946] = 100, -- Heavy Dynamite
-			[8339] = 100, -- EZ-Thro Dynamite
-			[3931] = 100, -- Coarse Dynamite
-			[3923] = 100, -- Rough Copper Bomb
-			[3919] = 100, -- Rough Dynamite
-			[24356] = 100, -- Bloodvine Goggles
-			[24357] = 100, -- Bloodvine Lens
-			[19825] = 100, -- Master Engineer's Goggles
-			[19794] = 100, -- Spellpower Goggles Xtreme Plus
-			[12622] = 100, -- Green Lens
-			[12618] = 100, -- Rose Colored Goggles
-			[12615] = 100, -- Spellpower Goggles Xtreme
-			[12607] = 100, -- Catseye Ultra Goggles
-			[12897] = 100, -- Gnomish Goggles
-			[12594] = 100, -- Fire Goggles
-			[3966] = 100, -- Craftsman's Monocle
-			[12587] = 100, -- Bright-Eye Goggles
-			[3956] = 100, -- Green Tinted Goggles
-			[3940] = 100, -- Shadow Goggles
-			[3934] = 100, -- Flying Tiger Goggles
-			[23486] = 100, -- Dimensional Ripper - Everlook
-			[22704] = 100, -- Field Repair Bot 74A
-			[23489] = 100, -- Ultrasafe Transporter - Gadgetzan
-			[19830] = 100, -- Arcanite Dragonling
-			[22797] = 100, -- Force Reactive Disk
-			[23081] = 100, -- Hyper-Radiant Flame Reflector
-			[23082] = 100, -- Ultra-Flash Shadow Reflector
-			[19819] = 100, -- Voice Amplification Modulator
-			[19814] = 100, -- Masterwork Target Dummy
-			[23078] = 100, -- Goblin Jumper Cables XL
-			[23077] = 100, -- Gyrofreeze Ice Reflector
-			[19793] = 100, -- Lifelike Mechanical Toad
-			[26011] = 100, -- Tranquil Mechanical Yeti
-			[23079] = 100, -- Major Recombobulator
-			[63750] = 100, -- High-powered Flashlight
-			[12624] = 100, -- Mithril Mechanical Dragonling
-			[28327] = 100, -- Steam Tonk Controller
-			[23096] = 100, -- Gnomish Alarm-o-Bot
-			[12758] = 100, -- Goblin Rocket Helmet
-			[12759] = 100, -- Gnomish Death Ray
-			[12907] = 100, -- Gnomish Mind Control Cap
-			[12617] = 100, -- Deepdive Helmet
-			[12906] = 100, -- Gnomish Battle Chicken
-			[23129] = 100, -- World Enlarger
-			[12905] = 100, -- Gnomish Rocket Boots
-			[8895] = 100, -- Goblin Rocket Boots
-			[12616] = 100, -- Parachute Cloak
-			[12903] = 100, -- Gnomish Harm Prevention Belt
-			[12902] = 100, -- Gnomish Net-o-Matic Projector
-			[12899] = 100, -- Gnomish Shrink Ray
-			[12718] = 100, -- Goblin Construction Helmet
-			[12717] = 100, -- Goblin Mining Helmet
-			[3971] = 100, -- Gnomish Cloaking Device
-			[3969] = 100, -- Mechanical Dragonling
-			[15255] = 100, -- Mechanical Repair Kit
-			[21940] = 100, -- Snowmaster 9000
-			[3965] = 100, -- Advanced Target Dummy
-			[3963] = 100, -- Compact Harvest Reaper Kit
-			[15633] = 100, -- Lil' Smoky
-			[15628] = 100, -- Pet Bombling
-			[9273] = 100, -- Goblin Jumper Cables
-			[3959] = 100, -- Discombobulator Ray
-			[3957] = 100, -- Ice Deflector
-			[6458] = 100, -- Ornate Spyglass
-			[3944] = 100, -- Flame Deflector
-			[9269] = 100, -- Gnomish Universal Remote
-			[9271] = 100, -- Aquadynamic Fish Attractor
-			[3932] = 100, -- Target Dummy
-			[3928] = 100, -- Mechanical Squirrel Box
-			[8334] = 100, -- Clockwork Box
-			[22795] = 100, -- Core Marksman Rifle
-			[19833] = 100, -- Flawless Arcanite Rifle
-			[19796] = 100, -- Dark Iron Rifle
-			[19792] = 100, -- Thorium Rifle
-			[12614] = 100, -- Mithril Heavy-bore Rifle
-			[12595] = 100, -- Mithril Blunderbuss
-			[3954] = 100, -- Moonsight Rifle
-			[3949] = 100, -- Silver-plated Shotgun
-			[3939] = 100, -- Lovingly Crafted Boomstick
-			[3936] = 100, -- Deadly Blunderbuss
-			[3925] = 100, -- Rough Boomstick
-			[22793] = 100, -- Biznicks 247x128 Accurascope
-			[12620] = 100, -- Sniper Scope
-			[12597] = 100, -- Deadly Scope
-			[3979] = 100, -- Accurate Scope
-			[3978] = 100, -- Standard Scope
-			[3977] = 100, -- Crude Scope
-			[26443] = 100, -- Cluster Launcher
-			[26426] = 100, -- Large Blue Rocket Cluster
-			[26427] = 100, -- Large Green Rocket Cluster
-			[26428] = 100, -- Large Red Rocket Cluster
-			[23507] = 100, -- Snake Burst Firework
-			[26442] = 100, -- Firework Launcher
-			[26423] = 100, -- Blue Rocket Cluster
-			[26424] = 100, -- Green Rocket Cluster
-			[26425] = 100, -- Red Rocket Cluster
-			[26420] = 100, -- Large Blue Rocket
-			[26421] = 100, -- Large Green Rocket
-			[26422] = 100, -- Large Red Rocket
-			[23067] = 100, -- Blue Firework
-			[23068] = 100, -- Green Firework
-			[23066] = 100, -- Red Fireworks
-			[26416] = 100, -- Small Blue Rocket
-			[26417] = 100, -- Small Green Rocket
-			[26418] = 100, -- Small Red Rocket
-			[12590] = 100, -- Gyromatic Micro-Adjustor
-			[7430] = 100, -- Arclight Spanner
+			--# Engineering
+				-- Shadowlands Engineering
+					-- Belt Attachments
+					[310496] = 100, -- Electro-Jump
+					[310495] = 100, -- Dimensional Shifter
+					[310497] = 100, -- Damage Retaliator
+					-- Bombs
+					[310486] = 100, -- Bomb Bola Launcher
+					[310485] = 100, -- Shadow Land Mine
+					[310484] = 100, -- Nutcracker Grenade
+					-- Devices
+					[310535] = 100, -- Wormhole Generator: Shadowlands
+					[310490] = 100, -- Momentum Redistributor Boots
+					[310492] = 100, -- Gravimetric Scrambler Cannon
+					[345179] = 100, -- Disposable Spectrophasic Reanimator
+					[310493] = 100, -- 50UL-TR4P
+					-- Goggles
+					[310509] = 100, -- Reinforced Ectoplasmic Specs
+					[310504] = 100, -- Grounded Ectoplasmic Specs
+					[310501] = 100, -- Flexible Ectoplasmic Specs
+					[310507] = 100, -- Articulated Ectoplasmic Specs
+					-- Optional Reagents
+					[343103] = 202, -- Crafter's Mark of the Chained Isle
+					[343102] = 202, -- Crafter's Mark III
+					[343100] = 202, -- Crafter's Mark II
+					[343099] = 202, -- Crafter's Mark I
+					[343661] = 202, -- Novice Crafter's Mark
+					-- Parts
+					[310526] = 100, -- Wormfed Gear Assembly
+					[310525] = 100, -- Mortal Coiled Spring
+					[310524] = 100, -- Porous Polishing Abrasive
+					[310522] = 100, -- Handful of Laestrite Bolts
+					-- Robotics
+					[331007] = 100, -- PHA7-YNX
+					-- Scopes
+					[310533] = 100, -- Optical Target Embiggener
+					[310534] = 100, -- Infra-green Reflex Sight
+					-- Weapons
+					[310536] = 100, -- Precision Lifeforce Inverter
+					-- Quest Recipes
+					[338218] = 100, -- Bone Reinforced Oxxein Tubing
+					[338217] = 100, -- Boneclad Stake Launcher
+					[338119] = 100, -- Bug Zapifier
+					[338220] = 100, -- Duelist's Pistol
+					[338212] = 100, -- Electro Cable
+					[338210] = 100, -- Energized Battery
+					[338219] = 100, -- Handful of Oxxein Bolts
+					[338216] = 100, -- Hardened Bolts
+					[338214] = 100, -- Piston Assembly
+					[338213] = 100, -- Power Hammer
+					[338222] = 100, -- Sinvyr Barrel
+					[338223] = 100, -- Sinvyr Trigger Mechanism
+				-- Kul Tiran Engineering & Zandalari Engineering
+					-- Belt Attachments
+					[255936] = 100, -- Belt Enchant: Holographic Horror Projector
+					[269123] = 100, -- Belt Enchant: Miniaturized Plasma Shield
+					[255940] = 100, -- Belt Enchant: Personal Space Amplifier
+					-- Bombs
+					[255394] = 100, -- F.R.I.E.D. (Rank 3)
+					[255393] = 100, -- F.R.I.E.D. (Rank 2)
+					[255392] = 100, -- F.R.I.E.D. (Rank 1)
+					[255409] = 100, -- Organic Discombobulation Grenade (Rank 3)
+					[255408] = 100, -- Organic Discombobulation Grenade (Rank 2)
+					[255407] = 100, -- Organic Discombobulation Grenade (Rank 1)
+					[255397] = 100, -- Thermo-Accelerated Plague Spreader (Rank 3)
+					[255396] = 100, -- Thermo-Accelerated Plague Spreader (Rank 2)
+					[255395] = 100, -- Thermo-Accelerated Plague Spreader (Rank 1)
+					-- Devices
+					[298930] = 100, -- Blingtron 7000
+					[299105] = 100, -- Wormhole Generator: Kul Tiras
+					[299106] = 100, -- Wormhole Generator: Zandalar
+					[283916] = 100, -- Unstable Temporal Time Shifter (Rank 3)
+					[283915] = 100, -- Unstable Temporal Time Shifter (Rank 2)
+					[283914] = 100, -- Unstable Temporal Time Shifter (Rank 1)
+					[256156] = 100, -- Deployable Attire Rearranger (Rank 3)
+					[256155] = 100, -- Deployable Attire Rearranger (Rank 2)
+					[256154] = 100, -- Deployable Attire Rearranger (Rank 1)
+					[256072] = 100, -- Electroshock Mount Motivator (Rank 3)
+					[256071] = 100, -- Electroshock Mount Motivator (Rank 2)
+					[256070] = 100, -- Electroshock Mount Motivator (Rank 1)
+					[256084] = 100, -- Interdimensional Companion Repository (Rank 3)
+					[256082] = 100, -- Interdimensional Companion Repository (Rank 2)
+					[256080] = 100, -- Interdimensional Companion Repository (Rank 1)
+					[256075] = 100, -- XA-1000 Surface Skimmer (Rank 3)
+					[256074] = 100, -- XA-1000 Surface Skimmer (Rank 2)
+					[256073] = 100, -- XA-1000 Surface Skimmer (Rank 1)
+					[280734] = 100, -- Magical Intrusion Dampener (Rank 3)
+					[280733] = 100, -- Magical Intrusion Dampener (Rank 2)
+					[280732] = 100, -- Magical Intrusion Dampener (Rank 1)
+					-- Cloth Goggles
+					[305945] = 100, -- A-N0M-A-L0U5 Synthetic Specs
+					[299005] = 100, -- A5C-3N-D3D Synthetic Specs
+					[299004] = 100, -- Abyssal Synthetic Specs
+					[299006] = 100, -- Charged A5C-3N-D3D Synthetic Specs
+					[305943] = 100, -- Paramount Synthetic Specs
+					[305944] = 100, -- Superior Synthetic Specs
+					[272058] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 3)
+					[272057] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 2)
+					[272056] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 1)
+					[286875] = 100, -- Charged SP1-R1-73D Synthetic Specs
+					[286874] = 100, -- SP1-R1-73D Synthetic Specs
+					[286873] = 100, -- Surging Synthetic Specs
+					[291090] = 100, -- Emblazoned Synthetic Specs
+					[291089] = 100, -- Imbued Synthetic Specs
+					-- Leather Goggles
+					[305942] = 100, -- A-N0M-A-L0U5 Gearspun Goggles
+					[299008] = 100, -- A5C-3N-D3D Gearspun Goggles
+					[299007] = 100, -- Abyssal Gearspun Goggles
+					[299009] = 100, -- Charged A5C-3N-D3D Gearspun Goggles
+					[305940] = 100, -- Paramount Gearspun Goggles
+					[305941] = 100, -- Superior Gearspun Goggles
+					[272061] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 3)
+					[272060] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 2)
+					[272059] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 1)
+					[286869] = 100, -- Charged SP1-R1-73D Gearspun Goggles
+					[286868] = 100, -- SP1-R1-73D Gearspun Goggles
+					[286867] = 100, -- Surging Gearspun Goggles
+					[291092] = 100, -- Emblazoned Gearspun Goggles
+					[291091] = 100, -- Imbued Gearspun Goggles
+					-- Mail Goggles
+					[305951] = 100, -- A-N0M-A-L0U5 Bionic Bifocals
+					[299011] = 100, -- A5C-3N-D3D Bionic Bifocals
+					[299010] = 100, -- Abyssal Bionic Bifocals
+					[299012] = 100, -- Charged A5C-3N-D3D Bionic Bifocals
+					[305949] = 100, -- Paramount Bionic Bifocals
+					[305950] = 100, -- Superior Bionic Bifocals
+					[272064] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 3)
+					[272063] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 2)
+					[272062] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 1)
+					[286866] = 100, -- Charged SP1-R1-73D Bionic Bifocals
+					[286865] = 100, -- SP1-R1-73D Bionic Bifocals
+					[286864] = 100, -- Surging Bionic Bifocals
+					[291094] = 100, -- Emblazoned Bionic Bifocals
+					[291093] = 100, -- Imbued Bionic Bifocals
+					-- Plate Goggles
+					[305948] = 100, -- A-N0M-A-L0U5 Orthogonal Optics
+					[299014] = 100, -- A5C-3N-D3D Orthogonal Optics
+					[299013] = 100, -- Abyssal Orthogonal Optics
+					[299015] = 100, -- Charged A5C-3N-D3D Orthogonal Optics
+					[305946] = 100, -- Paramount Orthogonal Optics
+					[305947] = 100, -- Superior Orthogonal Optics
+					[272067] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 3)
+					[272066] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 2)
+					[272065] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 1)
+					[286872] = 100, -- Charged SP1-R1-73D Orthogonal Optics
+					[286871] = 100, -- SP1-R1-73D Orthogonal Optics
+					[286870] = 100, -- Surging Orthogonal Optics
+					[291096] = 100, -- Emblazoned Orthogonal Optics
+					[291095] = 100, -- Imbued Orthogonal Optics
+					-- Weapons
+					[294786] = 100, -- Notorious Combatant's Discombobulator (Rank 3)
+					[294785] = 100, -- Notorious Combatant's Discombobulator (Rank 2)
+					[294784] = 100, -- Notorious Combatant's Discombobulator (Rank 1)
+					[294789] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 3)
+					[294788] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 2)
+					[294787] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 1)
+					[305861] = 100, -- Uncanny Combatant's Discombobulator (Rank 3)
+					[305862] = 100, -- Uncanny Combatant's Discombobulator (Rank 2)
+					[305863] = 100, -- Uncanny Combatant's Discombobulator (Rank 1)
+					[305858] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 3)
+					[305859] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 2)
+					[305860] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 1)
+					[255459] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 3)
+					[255458] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 2)
+					[255457] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 1)
+					[253152] = 100, -- Precision Attitude Adjuster (Rank 3)
+					[253151] = 100, -- Precision Attitude Adjuster (Rank 2)
+					[253150] = 100, -- Precision Attitude Adjuster (Rank 1)
+					[282808] = 100, -- Sinister Combatant's Discombobulator (Rank 3)
+					[282807] = 100, -- Sinister Combatant's Discombobulator (Rank 2)
+					[282806] = 100, -- Sinister Combatant's Discombobulator (Rank 1)
+					[282811] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 3)
+					[282810] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 2)
+					[282809] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 1)
+					[269726] = 100, -- Honorable Combatant's Discombobulator (Rank 3)
+					[269725] = 100, -- Honorable Combatant's Discombobulator (Rank 2)
+					[269724] = 100, -- Honorable Combatant's Discombobulator (Rank 1)
+					[269729] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 3)
+					[269728] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 2)
+					[269727] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 1)
+					[253122] = 100, -- Magnetic Discombobulator
+					-- Scopes & Ammo
+					[264962] = 100, -- Crow's Nest Scope (Rank 3)
+					[264961] = 100, -- Crow's Nest Scope (Rank 2)
+					[264960] = 100, -- Crow's Nest Scope (Rank 1)
+					[265102] = 100, -- Frost-Laced Ammunition (Rank 3)
+					[265101] = 100, -- Frost-Laced Ammunition (Rank 2)
+					[265100] = 100, -- Frost-Laced Ammunition (Rank 1)
+					[265099] = 100, -- Incendiary Ammunition (Rank 3)
+					[265098] = 100, -- Incendiary Ammunition (Rank 2)
+					[265097] = 100, -- Incendiary Ammunition (Rank 1)
+					[264967] = 100, -- Monelite Scope of Alacrity (Rank 3)
+					[264966] = 100, -- Monelite Scope of Alacrity (Rank 2)
+					[264964] = 100, -- Monelite Scope of Alacrity (Rank 1)
+					-- Mounts & Pets
+					[256132] = 100, -- Super-Charged Engine
+					[274621] = 100, -- Mecha-Mogul Mk2
+					[286478] = 100, -- Mechantula
+					-- Conversions
+					[287279] = 801, -- Aqueous Thermo-Degradation
+					[286647] = 321, -- Sanguinated Thermo-Degradation
+					-- Follower Equipment
+					[278411] = 100, -- Makeshift Azerite Detector
+					[278413] = 100, -- Monelite Fish Finder
+					-- Focus
+					[307220] = 321, -- Void Focus
+					-- Tools of the Trade
+					[298255] = 100, -- Ub3r-Module: P.O.G.O.
+					[298256] = 100, -- Ub3r-Module: Scrap Cannon
+					[298257] = 100, -- Ub3r-Module: Ub3r-Coil
+					[282975] = 100, -- The Ub3r-SPanner
+					[283399] = 100, -- Ub3r-Module: Short-Fused Bomb Bots
+					[283401] = 100, -- Ub3r-Module: Ub3r S3ntry Mk. X8.0
+					[283403] = 100, -- Ub3r-Module: Ub3r-Improved Target Dummy
+				-- Legion Engineering
+					-- Goggles
+					[235755] = 100, -- Chain Skullblasters
+					[199011] = 100, -- Double-Barreled Cranial Cannon (Rank 3)
+					[198997] = 100, -- Double-Barreled Cranial Cannon (Rank 2)
+					[198970] = 100, -- Double-Barreled Cranial Cannon (Rank 1)
+					[235756] = 100, -- Heavy Skullblasters
+					[199012] = 100, -- Ironsight Cranial Cannon (Rank 3)
+					[198998] = 100, -- Ironsight Cranial Cannon (Rank 2)
+					[198971] = 100, -- Ironsight Cranial Cannon (Rank 1)
+					[235754] = 100, -- Rugged Skullblasters
+					[199010] = 100, -- Sawed-Off Cranial Cannon (Rank 3)
+					[198996] = 100, -- Sawed-Off Cranial Cannon (Rank 2)
+					[198969] = 100, -- Sawed-Off Cranial Cannon (Rank 1)
+					[199009] = 100, -- Semi-Automagic Cranial Cannon (Rank 3)
+					[198995] = 100, -- Semi-Automagic Cranial Cannon (Rank 2)
+					[198968] = 100, -- Semi-Automagic Cranial Cannon (Rank 1)
+					[235753] = 100, -- Tailored Skullblasters
+					[199005] = 100, -- Blink-Trigger Headgun (Rank 3)
+					[198991] = 100, -- Blink-Trigger Headgun (Rank 2)
+					[198939] = 100, -- Blink-Trigger Headgun (Rank 1)
+					[199007] = 100, -- Bolt-Action Headgun (Rank 3)
+					[198993] = 100, -- Bolt-Action Headgun (Rank 2)
+					[198966] = 100, -- Bolt-Action Headgun (Rank 1)
+					[199008] = 100, -- Reinforced Headgun (Rank 3)
+					[198994] = 100, -- Reinforced Headgun (Rank 2)
+					[198967] = 100, -- Reinforced Headgun (Rank 1)
+					[199006] = 100, -- Tactical Headgun (Rank 3)
+					[198992] = 100, -- Tactical Headgun (Rank 2)
+					[198965] = 100, -- Tactical Headgun (Rank 1)
+					-- Combat Tools
+					[199013] = 100, -- Deployable Bullet Dispenser (Rank 3)
+					[198999] = 100, -- Deployable Bullet Dispenser (Rank 2)
+					[198972] = 100, -- Deployable Bullet Dispenser (Rank 1)
+					[199014] = 100, -- Gunpowder Charge (Rank 3)
+					[199000] = 100, -- Gunpowder Charge (Rank 2)
+					[198973] = 100, -- Gunpowder Charge (Rank 1)
+					[199015] = 100, -- Pump-Action Bandage Gun (Rank 3)
+					[199001] = 100, -- Pump-Action Bandage Gun (Rank 2)
+					[198974] = 100, -- Pump-Action Bandage Gun (Rank 1)
+					-- Devices
+					[198981] = 100, -- Trigger
+					[199017] = 100, -- Auto-Hammer (Rank 3)
+					[199003] = 100, -- Auto-Hammer (Rank 2)
+					[198976] = 100, -- Auto-Hammer (Rank 1)
+					[198980] = 100, -- Blingtron's Circuit Design Tutorial
+					[199018] = 100, -- Failure Detection Pylon (Rank 3)
+					[199004] = 100, -- Failure Detection Pylon (Rank 2)
+					[198977] = 100, -- Failure Detection Pylon (Rank 1)
+					[199016] = 100, -- Gunpack (Rank 3)
+					[199002] = 100, -- Gunpack (Rank 2)
+					[198975] = 100, -- Gunpack (Rank 1)
+					[247744] = 100, -- Wormhole Generator: Argus
+					[247717] = 100, -- Gravitational Reduction Slippers
+					[198978] = 100, -- Gunshoes
+					[198979] = 100, -- Intra-Dalaran Wormhole Generator
+					[209645] = 100, -- Leystone Buoy
+					[209646] = 100, -- Mecha-Bond Imprint Matrix
+					-- Relics
+					[209501] = 100, -- "The Felic"
+					[209502] = 100, -- Shockinator
+					-- Robotics
+					[235775] = 100, -- Rechargeable Reaves Battery
+					[198989] = 100, -- Reaves Module: Bling Mode
+					[198985] = 100, -- Reaves Module: Failure Detection Mode
+					[198987] = 100, -- Reaves Module: Fireworks Display Mode
+					[198990] = 100, -- Reaves Module: Piloted Combat Mode
+					[198984] = 100, -- Reaves Module: Repair Mode
+					[198988] = 100, -- Reaves Module: Snack Distribution Mode
+					[198983] = 100, -- Reaves Module: Wormhole Generator Mode
+					[200466] = 100, -- Sonic Environment Enhancer
+					[198982] = 100, -- Reaves Battery
+				-- Draenor Engineering
+					-- Reagents and Research
+					[182120] = 100, -- Primal Welding
+					[169080] = 100, -- Gearspring Parts
+					[177054] = 202, -- Secrets of Draenor Engineering
+					-- Goggles
+					[162195] = 100, -- Cybernetic Mechshades
+					[162196] = 100, -- Night-Vision Mechshades
+					[162197] = 100, -- Plasma Mechshades
+					[162198] = 100, -- Razorguard Mechshades
+					-- Devices
+					[187496] = 100, -- Advanced Muzzlesprocket
+					[187497] = 100, -- Bi-Directional Fizzle Reducer
+					[169078] = 100, -- Didi's Delicate Assembly
+					[162205] = 100, -- Findle's Loot-a-Rang
+					[173289] = 100, -- Hemets Heartseeker
+					[187521] = 100, -- Infrablue-Blocker Lenses
+					[463878] = 100, -- Linkgrease Locksprocket
+					[162203] = 100, -- Megawatt Filament
+					[162202] = 100, -- Oglethorpe's Missile Splitter
+					[162214] = 100, -- Personal Hologram
+					[162199] = 100, -- Shrediron's Shredder
+					[162217] = 100, -- Swapblaster
+					[187520] = 100, -- Taladite Firing Pin
+					[177363] = 100, -- True Iron Trigger
+					[162208] = 100, -- Ultimate Gnomish Army Knife (Uncommon)
+					[169140] = 100, -- Ultimate Gnomish Army Knife (Rare)
+					[162206] = 100, -- World Shrinker
+					[162216] = 100, -- Wormhole Centrifuge
+					[162204] = 100, -- Goblin Glider Kit
+					[173308] = 100, -- Mecha-Blast Rocket
+					[173309] = 100, -- Shieldtronic Shield
+					[162207] = 100, -- Stealthman 54
+					-- Robotics
+					[162218] = 100, -- Blingtron 5000
+					[162210] = 100, -- Lifelike Mechanical Frostboar
+					[162209] = 100, -- Mechanical Axebeak
+					[176732] = 100, -- Mechanical Scorpid
+					-- Fireworks
+					[171072] = 814, -- Alliance Firework
+					[171073] = 818, -- Horde Firework
+					[171074] = 819, -- Snake Firework
+				-- Pandaria Engineering
+					-- Schematic
+					[143743] = 202, -- Schematic: Chief Engineer Jard's Journal
+					-- Explosives
+					[127128] = 100, -- Goblin Dragon Gun, Mark II
+					[127127] = 100, -- G91 Landshark
+					[127124] = 100, -- Locksmith's Powderkeg
+					-- Fireworks
+					[131256] = 817, -- Autumn Flower Firework
+					[128260] = 817, -- Celestial Firework
+					[128261] = 812, -- Grand Celebration Firework
+					[131258] = 815, -- Jade Blossom Firework
+					[131353] = 100, -- Pandaria Fireworks
+					[128262] = 815, -- Serpent's Heart Firework
+					-- Devices
+					[139197] = 100, -- Advanced Refrigeration Unit
+					[139196] = 100, -- Pierre
+					[143714] = 100, -- Rascal-Bot
+					[127129] = 100, -- Blingtron 4000
+					[127135] = 100, -- Mechanical Pandaren Dragonling
+					[127132] = 100, -- Wormhole Generator: Pandaria
+					[127134] = 100, -- Ghost Iron Dragonling
+					[127131] = 100, -- Thermal Anvil
+					[126392] = 100, -- Goblin Glider
+					[109099] = 100, -- Watergliding Jets
+					-- Reagents
+					[139176] = 100, -- Jard's Peculiar Energy Source
+					[131563] = 100, -- Tinker's Kit
+					[127113] = 100, -- Ghost Iron Bolts
+					[127114] = 100, -- High-Explosive Gunpowder
+					-- Goggles
+					[127118] = 100, -- Agile Retinal Armor
+					[127119] = 100, -- Camouflage Retinal Armor
+					[127120] = 100, -- Deadly Retinal Armor
+					[127121] = 100, -- Energized Retinal Armor
+					[127117] = 100, -- Lightweight Retinal Armor
+					[127130] = 100, -- Mist-Piercing Goggles
+					[127123] = 100, -- Reinforced Retinal Armor
+					[127122] = 100, -- Specialized Retinal Armor
+					-- Guns
+					[127137] = 100, -- Long-Range Trillium Sniper
+					[127136] = 100, -- Big Game Hunter
+					-- Scopes
+					[127115] = 100, -- Lord Blastington's Scope of Doom
+					[127116] = 100, -- Mirror Scope
+					-- Mounts
+					[139192] = 100, -- Sky Golem
+					[127138] = 100, -- Depleted-Kyparium Rocket
+					[127139] = 100, -- Geosynchronous World Spinner
+					-- Cogwheels
+					[131211] = 100, -- Flashing Tinker's Gear
+					[131212] = 100, -- Fractured Tinker's Gear
+					[131213] = 100, -- Precise Tinker's Gear
+					[131214] = 100, -- Quick Tinker's Gear
+					[131215] = 100, -- Rigid Tinker's Gear
+					[131216] = 100, -- Smooth Tinker's Gear
+					[131217] = 100, -- Sparkling Tinker's Gear
+					[131218] = 100, -- Subtle Tinker's Gear
+				-- Cataclysm Engineering
+					-- Tinkers
+					[84425] = 100, -- Cardboard Assassin
+					[84427] = 100, -- Grounded Plasma Shield
+					[84424] = 100, -- Invisibility Field
+					[82200] = 100, -- Spinal Healing Injector
+					-- Reagents
+					[94748] = 800, -- Electrified Ether
+					[84403] = 100, -- Handful of Obsidium Bolts
+					-- Explosives
+					[95707] = 100, -- Big Daddy
+					[84409] = 100, -- Volatile Seaforium Blastpack
+					-- Goggles
+					[81722] = 100, -- Agile Bio-Optic Killshades
+					[81724] = 100, -- Camouflage Bio-Optic Killshades
+					[81716] = 100, -- Deadly Bio-Optic Killshades
+					[81720] = 100, -- Energized Bio-Optic Killshades
+					[81725] = 100, -- Lightweight Bio-Optic Killshades
+					[81714] = 100, -- Reinforced Bio-Optic Killshades
+					[81715] = 100, -- Specialized Bio-Optic Killshades
+					[84406] = 100, -- Authentic Jr. Engineer Goggles
+					-- Devices
+					[84418] = 100, -- Elementium Dragonling
+					[84416] = 100, -- Elementium Toolbox
+					[95705] = 100, -- Gnomish Gravity Well
+					[84421] = 100, -- Loot-a-Rang
+					[84429] = 100, -- Goblin Barbecue
+					[84430] = 100, -- Heat-Treated Spinning Lure
+					[84413] = 100, -- De-Weaponized Mechanical Companion
+					[84412] = 100, -- Personal World Destroyer
+					[84415] = 100, -- Lure Master Tackle Box
+					[95703] = 100, -- Electrostatic Condenser
+					-- Weapons
+					[100687] = 100, -- Extreme-Impact Hole Puncher
+					[84420] = 100, -- Finely-Tuned Throat Needler
+					[84432] = 100, -- Kickback 5000
+					[84431] = 100, -- Overpowered Chicken Splitter
+					[84417] = 100, -- Volatile Thunderstick
+					[84411] = 100, -- High-Powered Bolt Gun
+					-- Scopes
+					[100587] = 100, -- Flintlocke's Woodchucker
+					[84428] = 100, -- Gnomish X-Ray Scope
+					[84408] = 100, -- R19 Threatfinder
+					[84410] = 100, -- Safety Catch Removal Kit
+				-- Northrend Engineering
+					-- Tinkers
+					[67839] = 100, -- Mind Amplification Dish
+					[55016] = 100, -- Nitro Boosts
+					[54736] = 100, -- EMP Generator
+					[55002] = 100, -- Flexweave Underlay
+					[54793] = 100, -- Frag Belt
+					-- Reagents
+					[56471] = 100, -- Froststeel Tube
+					[56464] = 100, -- Overcharged Capacitor
+					[53281] = 100, -- Volatile Blasting Trigger
+					[56349] = 100, -- Handful of Cobalt Bolts
+					-- Explosives
+					[56514] = 100, -- Global Thermal Sapper Charge
+					[56468] = 100, -- Box of Bombs
+					[56463] = 100, -- Explosive Decoy
+					[56460] = 100, -- Cobalt Frag Bomb
+					-- Goggles
+					[56480] = 100, -- Armored Titanium Goggles
+					[56483] = 100, -- Charged Titanium Specs
+					[56487] = 100, -- Electroflux Sight Enhancers
+					[56486] = 100, -- Greensight Gogs
+					[56574] = 100, -- Truesight Ice Blinders
+					[62271] = 100, -- Unbreakable Healing Amplifiers
+					[56484] = 100, -- Visage Liquification Goggles
+					[56481] = 100, -- Weakness Spectralizers
+					[61482] = 100, -- Mechanized Snow Goggles (Mail)
+					[61483] = 100, -- Mechanized Snow Goggles (Plate)
+					[56465] = 100, -- Mechanized Snow Goggles (Cloth)
+					[61481] = 100, -- Mechanized Snow Goggles (Leather)
+					[56473] = 100, -- Gnomish X-Ray Specs
+					-- Devices
+					[68067] = 100, -- Jeeves
+					[67920] = 100, -- Wormhole Generator: Northrend
+					[56462] = 100, -- Gnomish Army Knife
+					[56467] = 100, -- Noise Machine
+					[56466] = 100, -- Sonic Booster
+					[56469] = 100, -- Gnomish Lightning Generator
+					[30349] = 100, -- Titanium Toolbox
+					[56472] = 100, -- MOLL-E
+					[56477] = 100, -- Mana Injector Kit
+					[67326] = 100, -- Goblin Beam Welder
+					[56476] = 100, -- Healing Injector Kit
+					[55252] = 100, -- Scapbot Construction Kit
+					[56459] = 100, -- Hammer Pick
+					[56461] = 100, -- Bladed Pickaxe
+					-- Weapons
+					[56479] = 100, -- Armor Plated Combat Shotgun
+					[60874] = 100, -- Nesingwary 4000
+					[54353] = 100, -- Mark "S" Boomstick
+					-- Mounts
+					[60866] = 100, -- Mechano-Hog (Horde)
+					[60867] = 100, -- Mekgineer's Chopper (Alliance)
+					-- Scopes
+					[56478] = 100, -- Heartseeker Scope
+					[56470] = 100, -- Sun Scope
+					[61471] = 100, -- Diamond-cut Refractor Scope
+				-- Outland Engineering
+					-- Reagents
+					[30309] = 100, -- Felsteel Stabilizer
+					[30307] = 100, -- Hardened Adamantite Tube
+					[30308] = 100, -- Khorium Power Core
+					[39971] = 100, -- Icy Blasting Primers
+					[30306] = 100, -- Adamantite Frame
+					[30303] = 100, -- Elemental Blasting Powder
+					[30304] = 100, -- Fel Iron Casing
+					[30305] = 100, -- Handful or Fel Iron Bolts
+					-- Explosives
+					[39973] = 100, -- Frost Grenade
+					[30547] = 100, -- Elemental Seaforium Charge
+					[30560] = 100, -- Super Sapper Charge
+					[30311] = 100, -- Adamantite Grenade
+					[30558] = 100, -- The Bigger One
+					[30310] = 100, -- Fel Iron Bomb
+					-- Goggles
+					[46111] = 100, -- Annihilator Holo-Gogs
+					[46115] = 100, -- Hard Khorium Goggles
+					[46109] = 100, -- Hyper-Magnified Moon Specs
+					[46107] = 100, -- Justicebringer 3000 Specs
+					[46112] = 100, -- Lightning Etched Specs
+					[46114] = 100, -- Mayhem Projection Goggles
+					[46108] = 100, -- Powerheal 9000 Lens
+					[46110] = 100, -- Primal-Attuned Goggles
+					[46116] = 100, -- Quad Deathblow X44 Goggles
+					[46106] = 100, -- Wonderheal XT68 Shades
+					[41317] = 100, -- Deathblow X11 Goggles
+					[41320] = 100, -- Destruction Holo-gogs
+					[40274] = 100, -- Furious Gizmatic Goggles
+					[41315] = 100, -- Gadgetstorm Goggles
+					[41311] = 100, -- Justicebringer 2000 Specs
+					[41316] = 100, -- Living Replicator Specs
+					[41319] = 100, -- Magnified Moon Specs
+					[41321] = 100, -- Powerheal 4000 Lens
+					[41314] = 100, -- Surestrike Goggles v2.0
+					[41312] = 100, -- Tankatronic Goggles
+					[41318] = 100, -- Wonderheal XT40 Shades
+					[30325] = 100, -- Hyper-Vision Goggles
+					[30575] = 100, -- Gnomish Battle Goggles
+					[30574] = 100, -- Gnomish Power Goggles
+					[30318] = 100, -- Ultra-Spectropic Detection Goggles
+					[30316] = 100, -- Cogspinner Goggles
+					[30317] = 100, -- Power Amplification Goggles
+					[46113] = 100, -- Surestrike Goggles v3.0
+					-- Devices
+					[44391] = 100, -- Field Repair Bot 110G
+					[30565] = 100, -- Foreman's Enchanted Helmet
+					[30566] = 100, -- Foreman's Reinforced Helmet
+					[30556] = 100, -- Rocket Boots Xtreme
+					[46697] = 100, -- Rocket Boots Xtreme Lite
+					[30570] = 100, -- Nigh-Invulnerability Belt
+					[36954] = 100, -- Dimensional Ripper - Area 52
+					[36955] = 100, -- Ultrasafe Transporter - Toshley's Station
+					[30569] = 100, -- Gnomish Pultryizer
+					[30563] = 100, -- Goblin Rocket Launcher
+					[30552] = 100, -- Mana Potion Injector
+					[30568] = 100, -- Gnomish Flame Turret
+					[30337] = 100, -- Crashin' Thrashin' Robot
+					[30551] = 100, -- Healing Potion Injector
+					[30348] = 100, -- Fel Iron Toolbox
+					[30548] = 100, -- Zapthrottle Mote Extractor
+					-- Weapons
+					[30315] = 100, -- Ornate Khorium Rifle
+					[30314] = 100, -- Felsteel Boomstick
+					[41307] = 100, -- Gyro-balanced Khorium Destroyer
+					[30313] = 100, -- Adamantite Rifle
+					[30312] = 100, -- Fel Iron Musket
+					-- Scopes
+					[30334] = 100, -- Stabilized Eternium Scope
+					[30332] = 100, -- Khorium Scope
+					[30329] = 100, -- Adamantite Scope
+					-- Mounts
+					[44157] = 100, -- Turbo-Charged Flying Machine
+					[44155] = 100, -- Flying Machine
+					-- Fireworks
+					[30344] = 815, -- Green Smoke Flare
+					[32814] = 813, -- Purple Smoke Flare
+					[30341] = 812, -- White Smoke Flare
+				-- Engineering
+					-- Parts
+					[19815] = 100, -- Delicate Arcanite Converter
+					[19791] = 100, -- Thorium Widget
+					[19795] = 100, -- Thorium Tube
+					[39895] = 100, -- Fused Wiring
+					[23071] = 100, -- Truesilver Transformer
+					[133587] = 100, -- Dense Blasting Powder
+					[12599] = 100, -- Mithril Casing
+					[12591] = 100, -- Unstable Trigger
+					[12589] = 100, -- Mithril Tube
+					[3961] = 100, -- Gyrochronatom
+					[12715] = 100, -- Goblin Rocket Fuel Recipe
+					[12895] = 100, -- Inlaid Mithril Cylinder Plans
+					[12585] = 100, -- Solid Blasting Powder
+					[3953] = 100, -- Bronze Framework
+					[12584] = 100, -- Gold Power Core
+					[3952] = 100, -- Minor Recombobulator
+					[3958] = 100, -- Iron Strut
+					[3942] = 100, -- Whirring Bronze Gizmo
+					[3938] = 100, -- Bronze Tube
+					[3945] = 100, -- Heavy Blasting Powder
+					[3973] = 100, -- Silver Contact
+					[3929] = 100, -- Coarse Blasting Powder
+					[3922] = 100, -- Handful of Copper Bolts
+					[3918] = 100, -- Rough Blasting Powder
+					-- Explosives
+					[19831] = 100, -- Arcane Bomb
+					[19799] = 100, -- Dark Iron Bomb
+					[19790] = 100, -- Thorium Grenade
+					[23080] = 100, -- Powerful Seaforium Charge
+					[12908] = 100, -- Goblin Dragon Gun
+					[12619] = 100, -- Hi-Explosive Bomb
+					[12754] = 100, -- The Big One
+					[12755] = 100, -- Goblin Bomb Dispenser
+					[23070] = 100, -- Dense Dynamite
+					[12603] = 100, -- Mithril Frag Bomb
+					[12716] = 100, -- Goblin Mortar
+					[12760] = 100, -- Goblin Sapper Charge
+					[3972] = 100, -- Large Seaforium Charge
+					[3968] = 100, -- Goblin Land Mine
+					[3967] = 100, -- Big Iron Bomb
+					[8243] = 100, -- Flash Bomb
+					[23069] = 100, -- EZ-Thro Dynamite II
+					[3962] = 100, -- Iron Grenade
+					[3960] = 100, -- Portable Bronze Mortar
+					[3955] = 100, -- Explosive Sheep
+					[12586] = 100, -- Solid Dynamite
+					[3950] = 100, -- Big Bronze Bomb
+					[3941] = 100, -- Small Bronze Bomb
+					[3933] = 100, -- Small Seaforium Charge
+					[3937] = 100, -- Large Copper Bomb
+					[3946] = 100, -- Heavy Dynamite
+					[8339] = 100, -- EZ-Thro Dynamite
+					[3931] = 100, -- Coarse Dynamite
+					[3923] = 100, -- Rough Copper Bomb
+					[3919] = 100, -- Rough Dynamite
+					-- Goggles
+					[24356] = 100, -- Bloodvine Goggles
+					[24357] = 100, -- Bloodvine Lens
+					[19825] = 100, -- Master Engineer's Goggles
+					[19794] = 100, -- Spellpower Goggles Xtreme Plus
+					[12622] = 100, -- Green Lens
+					[12618] = 100, -- Rose Colored Goggles
+					[12615] = 100, -- Spellpower Goggles Xtreme
+					[12607] = 100, -- Catseye Ultra Goggles
+					[12897] = 100, -- Gnomish Goggles
+					[12594] = 100, -- Fire Goggles
+					[3966] = 100, -- Craftsman's Monocle
+					[12587] = 100, -- Bright-Eye Goggles
+					[3956] = 100, -- Green Tinted Goggles
+					[3940] = 100, -- Shadow Goggles
+					[3934] = 100, -- Flying Tiger Goggles
+					-- Devices
+					[23486] = 100, -- Dimensional Ripper - Everlook
+					[22704] = 100, -- Field Repair Bot 74A
+					[23489] = 100, -- Ultrasafe Transporter - Gadgetzan
+					[19830] = 100, -- Arcanite Dragonling
+					[22797] = 100, -- Force Reactive Disk
+					[23081] = 100, -- Hyper-Radiant Flame Reflector
+					[23082] = 100, -- Ultra-Flash Shadow Reflector
+					[19819] = 100, -- Voice Amplification Modulator
+					[19814] = 100, -- Masterwork Target Dummy
+					[23078] = 100, -- Goblin Jumper Cables XL
+					[23077] = 100, -- Gyrofreeze Ice Reflector
+					[19793] = 100, -- Lifelike Mechanical Toad
+					[26011] = 100, -- Tranquil Mechanical Yeti
+					[23079] = 100, -- Major Recombobulator
+					[63750] = 100, -- High-powered Flashlight
+					[12624] = 100, -- Mithril Mechanical Dragonling
+					[28327] = 100, -- Steam Tonk Controller
+					[23096] = 100, -- Gnomish Alarm-o-Bot
+					[12758] = 100, -- Goblin Rocket Helmet
+					[12759] = 100, -- Gnomish Death Ray
+					[12907] = 100, -- Gnomish Mind Control Cap
+					[12617] = 100, -- Deepdive Helmet
+					[12906] = 100, -- Gnomish Battle Chicken
+					[23129] = 100, -- World Enlarger
+					[12905] = 100, -- Gnomish Rocket Boots
+					[8895] = 100, -- Goblin Rocket Boots
+					[12616] = 100, -- Parachute Cloak
+					[12903] = 100, -- Gnomish Harm Prevention Belt
+					[12902] = 100, -- Gnomish Net-o-Matic Projector
+					[12899] = 100, -- Gnomish Shrink Ray
+					[12718] = 100, -- Goblin Construction Helmet
+					[12717] = 100, -- Goblin Mining Helmet
+					[3971] = 100, -- Gnomish Cloaking Device
+					[3969] = 100, -- Mechanical Dragonling
+					[15255] = 100, -- Mechanical Repair Kit
+					[21940] = 100, -- Snowmaster 9000
+					[3965] = 100, -- Advanced Target Dummy
+					[3963] = 100, -- Compact Harvest Reaper Kit
+					[15633] = 100, -- Lil' Smoky
+					[15628] = 100, -- Pet Bombling
+					[9273] = 100, -- Goblin Jumper Cables
+					[3959] = 100, -- Discombobulator Ray
+					[3957] = 100, -- Ice Deflector
+					[6458] = 100, -- Ornate Spyglass
+					[3944] = 100, -- Flame Deflector
+					[9269] = 100, -- Gnomish Universal Remote
+					[9271] = 100, -- Aquadynamic Fish Attractor
+					[3932] = 100, -- Target Dummy
+					[3928] = 100, -- Mechanical Squirrel Box
+					[8334] = 100, -- Clockwork Box
+					-- Guns & Bows
+					[22795] = 100, -- Core Marksman Rifle
+					[19833] = 100, -- Flawless Arcanite Rifle
+					[19796] = 100, -- Dark Iron Rifle
+					[19792] = 100, -- Thorium Rifle
+					[12614] = 100, -- Mithril Heavy-bore Rifle
+					[12595] = 100, -- Mithril Blunderbuss
+					[3954] = 100, -- Moonsight Rifle
+					[3949] = 100, -- Silver-plated Shotgun
+					[3939] = 100, -- Lovingly Crafted Boomstick
+					[3936] = 100, -- Deadly Blunderbuss
+					[3925] = 100, -- Rough Boomstick
+					-- Scopes
+					[22793] = 100, -- Biznicks 247x128 Accurascope
+					[12620] = 100, -- Sniper Scope
+					[12597] = 100, -- Deadly Scope
+					[3979] = 100, -- Accurate Scope
+					[3978] = 100, -- Standard Scope
+					[3977] = 100, -- Crude Scope
+					-- Fireworks
+					[26443] = 100, -- Cluster Launcher
+					[26426] = 814, -- Large Blue Rocket Cluster
+					[26427] = 815, -- Large Green Rocket Cluster
+					[26428] = 818, -- Large Red Rocket Cluster
+					[23507] = 816, -- Snake Burst Firework
+					[26442] = 100, -- Firework Launcher
+					[26423] = 814, -- Blue Rocket Cluster
+					[26424] = 815, -- Green Rocket Cluster
+					[26425] = 818, -- Red Rocket Cluster
+					[26420] = 814, -- Large Blue Rocket
+					[26421] = 815, -- Large Green Rocket
+					[26422] = 818, -- Large Red Rocket
+					[23067] = 814, -- Blue Firework
+					[23068] = 815, -- Green Firework
+					[23066] = 818, -- Red Fireworks
+					[26416] = 814, -- Small Blue Rocket
+					[26417] = 815, -- Small Green Rocket
+					[26418] = 818, -- Small Red Rocket
+					-- Tools
+					[12590] = 100, -- Gyromatic Micro-Adjustor
+					[7430] = 100, -- Arclight Spanner
 
-			-- Jewelcrafting
+			--# Jewelcrafting
 				-- Shadowlands Designs
 					-- Quest Recipes
 					[338248] = 818, -- Brilliant Bauble
@@ -6844,12 +7569,9 @@ local function updateData()
 					[334548] = 812, -- Crown of the Righteous
 		}
 
-		-- !aura
-		ZA.AuraSchoolByName = ZA.CastSchoolByName
-
-		ZA.AuraSchoolBySpellID = ZA.CastSchoolBySpellID
-
-		ZA.ClassIcons = {
+		-- Icons
+		ZA.Icons = {
+			-- Classes
 			["DEATHKNIGHT"] = 625998,
 			["DEMONHUNTER"] = 1260827,
 			["DRUID"] = 625999,
@@ -6862,11 +7584,7 @@ local function updateData()
 			["SHAMAN"] = 626006,
 			["WARLOCK"] = 626007,
 			["WARRIOR"] = 626008,
-		}
-
-		ZA.CastIconByName = {
-			-- Class
-			["Activating Specialization"] = ZA.ClassIcons[class] or 0,
+			
 			-- Minor
 			["Attacking"] = 0,
 			["Opening"] = 0,
@@ -6882,12 +7600,28 @@ local function updateData()
 			["Collecting"] = 0,
 			["Unlocking"] = 0,
 			["Looting"] = 0,
+			["Gathering"] = 0,
 			["Loot-A-Rang"] = 0,
 			["Destroying"] = 0,
 			["Freeing"] = 0,
 			["Petting"] = 0,
 			["Jump to Skyhold"] = 0,
 			["Grappling Hook"] = 0,
+			["Herbalism"] = 0,
+			["Herb Gathering"] = 0,
+			["Skinning"] = 0,
+			["Mining"] = 0,
+			["Engineering"] = 0,
+			["Fishing"] = 0,
+			["Compressed Ocean Fishing"] = 0,
+			["Survey"] = 0,
+			-- Create Item
+			["Create Belt"] = 0,
+			["Create Bracer"] = 0,
+			["Create Boots"] = 0,
+			["Create Leggings"] = 0,
+			["Create Curio"] = 0,
+			["Create Lavalliere"] = 0,
 			-- Learning
 			["A Compendium of the Herbs of Draenor"] = 0,
 			["A Guide to Skinning in Draenor"] = 0,
@@ -6908,7 +7642,7 @@ local function updateData()
 			["Walking Kalimdor with the Earthmother"] = 237388,
 			-- Teleports
 			["Dreamwalk"] = 1396974,
-			["Holographic Digitalization Hearthstone"] = 2491049,
+			["Holographic Digitalization Hearthstone"] = 896468,
 			-- Misc
 			["Empower Ashjra'kamas"] = 132886,
 			["Tinkering"] = 2915722,
@@ -6921,10 +7655,9 @@ local function updateData()
 			["Crimson Cloud Serpent"] = 648627,
 			["Mountain Horse"] = 2143066,
 			["Swift Mountain Horse"] = 2143065,
-		}
 
-		ZA.CastIconBySpellID = {
-			-- § Quest
+
+			--§ Quest
 			[79450] = 237329,
 			[21050] = 133942,
 			[93773] = 133015,
@@ -7204,17 +7937,21 @@ local function updateData()
 			[194479] = 0,
 			[188432] = 0,
 			[211546] = 979574,
+			[354222] = 0,
+			[356615] = 0,
+			[339329] = 0,
+			[353963] = 0,
 			--qqi
 
 
-			-- § Spells
+			--§ Spells
 			[164862] = 0, -- Flap
 			[337344] = 132868, -- Mystic Bolt (missing icon)
 			[337346] = 135731, -- Arcane Bolt (missing icon)
 			[80066] = 511543, -- Tornado (Cataclysm air elementals, wrong icon)
 			[355456] = 3528298, -- Damnation (transparent icon)
 
-			-- § Ascension Crafting
+			--§ Ascension Crafting
 				-- Lures
 				[328321] = 465875, -- Overcharged Goliath Core
 				[328680] = 132878, -- Soul Mirror
@@ -7252,7 +7989,7 @@ local function updateData()
 				[333374] = 3079436, -- Spiritforged Aegis
 				[345978] = 1408456, -- Ring of Warding
 
-			-- § Abominable Stitching
+			--§ Abominable Stitching
 			[325284] = 3622121, -- Construct Body: "Chordy"
 			[325454] = 3622122, -- Construct Body: "Atticus"
 			[325452] = 3601552, -- Construct Body: "Marz"
@@ -7281,7 +8018,7 @@ local function updateData()
 			[340340] = 3601552, -- Call Iron Phillip
 			[340841] = 3622121, -- Call Naxx
 
-			-- § Alchemy
+			--§ Alchemy
 				-- Shadowlands Alchemy
 					-- Quest Recipes
 					[338204] = 1029738, -- Bramblethorn Juice
@@ -7419,7 +8156,7 @@ local function updateData()
 					-- Oils
 					-- Anti-Venoms
 
-			-- § Blacksmithing
+			--§ Blacksmithing
 				-- Shadowlands Plans
 					-- Armor
 					-- Optional Reagents
@@ -7504,7 +8241,7 @@ local function updateData()
 					-- Weapons
 					-- Skeleton Keys
 
-			-- § Enchanting
+			--§ Enchanting
 				-- Shadowlands Enchanting
 					-- Boot Enchantments
 					-- Bracer Enchantments
@@ -7596,7 +8333,7 @@ local function updateData()
 					-- Oils
 					-- Trinket
 
-			-- § Engineering
+			--§ Engineering
 				-- Shadowlands Engineering
 					-- Belt Attachments
 					[310496] = 136243, -- Electro-Jump
@@ -8329,7 +9066,7 @@ local function updateData()
 					[12590] = 134429, -- Gyromatic Micro-Adjustor
 					[7430] = 134520, -- Arclight Spanner
 
-			-- § Inscription
+			--§ Inscription
 				-- Shadowlands Inscription
 					-- Ink
 					-- Optional Reagents
@@ -8416,7 +9153,7 @@ local function updateData()
 					-- Glyphs
 					-- Other
 
-			-- § Jewelcrafting
+			--§ Jewelcrafting
 				-- Shadowlands Designs
 					-- Quest Recipes
 					[338248] = 1033177, -- Brilliant Bauble
@@ -8571,7 +9308,7 @@ local function updateData()
 					-- Fist Weapons
 					-- Statues
 
-			-- § Leatherworking
+			--§ Leatherworking
 				-- Shadowlands Patterns
 					-- Materials
 					-- Optional Reagents
@@ -8684,7 +9421,7 @@ local function updateData()
 					-- Boots
 					-- Cloaks
 
-			-- § Mining
+			--§ Mining
 				-- Pandaria Mining
 					-- Smelting
 					[102167] = 612063, -- Smelt Trillium
@@ -8729,7 +9466,7 @@ local function updateData()
 					[3304] = 133219, -- Smelt Tin
 					[2657] = 133216, -- Smelt Copper
 
-			-- § Tailoring
+			--§ Tailoring
 				-- Shadowlands Patterns
 					-- Quest Recipes
 					[338270] = 132901, -- Ardensilk Cloth
@@ -9198,7 +9935,7 @@ local function updateData()
 					-- Shirts
 					-- Bandages
 
-			-- § Cooking
+			--§ Cooking
 				-- Shadowlands Cuisine
 					-- Feasts
 					[308402] = 3760524, -- Surprisingly Palatable Feast
@@ -9207,7 +9944,7 @@ local function updateData()
 					[308400] = 3671897, -- Spinefin Souffle and Fries
 					[308413] = 3671891, -- Iridescent Ravioli with Apple Sauce
 					[308405] = 3671905, -- Tenebrous Crown Roast Aspic
-					[308426] = 3671904, -- Steal a la Mode
+					[308426] = 3671904, -- Steak a la Mode
 					[308411] = 3671889, -- Candied Amberjack Cakes
 					[308415] = 3671886, -- Banana Beaf Pudding
 					-- Light Meals
@@ -9536,6 +10273,8 @@ local function updateData()
 					-- Lures
 					[88017] = 135992, -- Feathered Lure
 				-- Recipes of the Cold North
+					-- Quest Recipes
+					[57729] = 1387659, -- Wine and Cheese Platter
 					-- Everyday Cooking
 					[57423] = 237303, -- Fish Feast
 					[58528] = 132184, -- Small Feast
@@ -9720,24 +10459,25 @@ local function updateData()
 					[8238] = 134302, -- Savory Deviate Delight
 					[9513] = 132819, -- Thistle Tea
 					[45695] = 132790, -- Captain Rumsey's Lager
-
-			-- §
 		}
+
+		-- Dynamic Icons
+		ZA.Icons["Activating Specialization"] = ZA.Icons[class] or 0
 	end
 end
 
 
 local function eventHandler(self, event, ...)
 	if event == "COMBAT_LOG_EVENT_UNFILTERED" then
-		if ZA and ZA.CastSchoolByNameAuto then
+		if ZA and ZA.AutoSpells then
 			local timestamp, subEvent, _, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName, spellSchool = CombatLogGetCurrentEventInfo()
 
 			if subEvent == "SPELL_CAST_START" or subEvent == "SPELLCAST_SUCCESS" then
 				if spellId then
 					_, _, icon = GetSpellInfo(spellId)
-					ZA.CastSchoolByNameAuto[spellName..":"..(icon or 0)] = spellSchool or 0
+					ZA.AutoSpells[spellName .. (icon and ":" .. icon or "")] = spellSchool or 0
 				elseif spellName then
-					ZA.CastSchoolByNameAuto[spellName] = spellSchool or 0
+					ZA.AutoSpells[spellName] = spellSchool or 0
 				end
 			end
 		end
