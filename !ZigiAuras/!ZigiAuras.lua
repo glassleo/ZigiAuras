@@ -10,500 +10,6 @@ frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
 
-
--- Map IDs
--- https://wowpedia.fandom.com/wiki/UiMapID
-
---------------------------------------------------
-
-
--- ! Shadowlands
---  -------------
-
--- Oribos: g411
-	-- Shadowlands (in-between): 1550
--- Bastion: 1533,1569,1813,1690,1713,1714
-	-- Elysian Hold: g418,2018
-	-- Path of Ascension: 1711
--- Maldraxxus: 1536,1689,1741,1814,1649,1650,1651,1652,1724,1725
-	-- Seat of the Primus: 1698
--- Ardenweald: 1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829
-	-- Heart of the Forest: g417
-	-- Queen's Conservatory: 1662
--- Revendreth: 1525,1688
-	-- Sinfall: g416
-	-- Ember Court: 1644
--- The Maw: 1543,1648
--- Korthia: 1961,2006,2007,2008
-
--- All Zones: 2018,1961,2006,2007,1550,g411,1533,1569,1813,1690,1711,1713,1714,g418,1536,1689,1741,1814,1649,1650,1651,1652,1724,1725,1698,1565,1603,1643,1709,1739,1740,1816,1818,1819,1824,1825,1826,1827,1829,g417,1662,1525,1688,g416,1644,1543,1648
-
-
--- Dungeons: g413,g409,1669,g415,g412,g419,g423,g410,g414
-	-- De Other Side: g413
-	-- Halls of Atonement: g409
-	-- Mists of Tirna Scithe: 1669
-	-- Plaguefall: g415
-	-- Sanguine Depths: g412
-	-- Spires of Ascension: g419
-	-- Tazavesh, the Veiled Market: g423
-	-- The Necrotic Wake: g410
-	-- Theater of Pain: g414
--- Raids: 
-	-- Castle Nathria: 
-	-- Sanctum of Domination: 
--- All Instances: 
-
---------------------------------------------------
-
-
--- ! Battle for Azeroth
---  --------------------
-
--- Chamber of Heart: 
--- Boralus: 1161
--- Dazar'alor: 1163,1164,1165
-
--- Kul Tiras: 876
--- Tiragarde Sound: 895,974,1171,1172,1184,1185
--- Drustvar: 896,1045
--- Stormsong Valley: 942,1179,1180,1182,1183
--- Mechagon Island: 1462
-
--- Zandalar: 875
--- Zuldazar: 862,1173,1174,1176,1177
--- Nazmir: 863
--- Vol'dun: 
-
--- THe Great Sea: 1156,1157
--- Nazjatar: 1504,1355,1499,1500,1524,1528
-
--- All Zones: 
-
--- Dungeons:
-	-- Atal'Dazar: 
-	-- Freehold: 
-	-- King's Rest: 
-	-- Operation: Mechagon: 
-	-- Shrine of the Storm: 
-	-- Siege of Boralus: 
-	-- Temple of Sethraliss: 
-	-- The MOTHERLODE!!: 
-	-- The Underrot: 
-	-- Tol Dagor: 
-	-- Waycrest Manor: 
--- Raids:
-	-- Uldir: 
-	-- Battle of Dazar'alor: 
-	-- Crucible of Storms: 
-	-- The Eternal Palace: 
-	-- Ny'alotha, the Waking City: 
--- All Instances:
-
-
---------------------------------------------------
-
-
--- ! Legion
---  --------
-
--- Dalaran: g227
--- Order Halls: ?
-	-- Acherus, the Ebon Hold: 647,648
-	-- Mardum, the Shattered Abyss: 672,673,674,675,719,720,721,861,879,880
-	-- The Dreamgrove: 747
-		-- Emerald Dreamway: 715
-	-- Trueshot Lodge: 739
-	-- Hall of the Guardian: 734,735
-	-- The Wandering Isle: 709
-	-- Sanctum of Light: 24
-	-- Netherlight Temple: 702
-	-- The Hall of Shadows: 626 (might be part of Dalaran g227?)
-	-- The Maelstrom: 725,726
-	-- Dreadscar Rift: 717,718
-	-- Skyhold: 695
-
--- Broken Isles: 619
--- Azsuna: 630,631,632,633,713
--- Val'sharah: 641,642,643,644
--- Highmountain: 650,651,652,653,654,655,656,657,658,659,660,750
--- Stormheim: 634,635,636,637,638,639,640,649
--- Suramar: 680,681,682,683,684,685,686,687,688,689,690,691,692,693
--- Niskara: 714,748
--- Broken Shore: 646,676,758,1192
-
--- Argus: 905
-	-- The Vindicaar: 886,887,831,832,940,941,883,884
-	-- Antoran Wastes: 885
-	-- Krokuun: 830,833
-	-- Eredath: 882
-	-- Invasion Points: 921,922,923,924,925,926,927,928,929,930,931,932
-
--- All Zones: 921,922,923,924,925,926,927,928,929,930,931,932,830,833,882,885,886,887,831,832,940,941,883,884,619,645,993,905,994,672,673,674,675,719,720,721,861,879,880,647,648,646,676,758,1192,714,748,740,741,680,681,682,683,684,685,686,687,688,689,690,691,692,693,1191,695,634,635,636,637,638,639,640,696,1190,649,671,694,1190,739,g227,702,709,717,718,725,726,630,631,632,633,713,1187,641,642,643,644,733,758,793,1188,747,1468,1475,715,1471,650,651,652,653,654,655,656,657,658,659,660,731,750,1189
-
-
--- Dungeons: 
-	-- Assault on Violet Hold: 
-	-- Black Rook Hold: 
-	-- Cathedral of Eternal Night: 
-	-- Court of Stars: 
-	-- Darkheart Thicket: 
-	-- Eye of Azshara: 
-	-- Halls of Valor: 
-	-- Maw of Souls: 
-	-- Neltharion's Lair: 
-	-- Return to Karazhan: 
-	-- Seat of the Triumvirate: 
-	-- The Arcway: 
-	-- Vault of the Wardens: 
--- Raids: 
-	-- The Emerald Nightmare: 
-	-- Trial of Valor: 
-	-- The Nighthold: 
-	-- Tomb of Sargeras: 
-	-- Antorus, the Burning Throne: 
--- All Instances: 
-
-
---------------------------------------------------
-
-
--- ! Warlords of Draenor
---  ---------------------
-
--- Garrison: 1152,1330,1153,1158,1331,1159
-
--- Draenor: 572
--- All Zones: 
-
--- Dungeons: 
-	-- Auchindoun: 
-	-- Bloodmaul Slag Mines: 
-	-- Grimrail Depot: 
-	-- Iron Docks: 
-	-- Shadowmoon Burial Grounds: 
-	-- Skyreach: 
-	-- The Everbloom: 
-	-- Upper Blackrock Spire: 
--- Raids: 
-	-- Highmaul: 
-	-- Blackrock Foundry: 
-	-- Hellfire Citadel: 
--- All Instances: 
-
-
---------------------------------------------------
-
-
--- ! Mists of Pandaria
---  -------------------
-
--- Shrine of Two Moons: 391,392
--- Shrine of Seven Stars: 393,394
-
--- Pandaria: 424
--- The Jade Forest: 371,372,373,374,375
--- Valley of the Four Winds: 376,377
--- The Veiled Stair: 433,434
--- Krasarang Wilds: 418,419,420,421
--- Kun-Lai Summit: 379,380,381,382,383,384,385,386,387
--- Townlong Steppes: 388,389
--- Dread Wastes: 422
--- Vale of Eternal Blossoms: 390,395,396
--- Isle of Giants: 507
--- Isle of Thunder: 504,505,506,516,517,518
--- Timeless Isle: 554,555
-
--- All Zones: 
-
-
--- Dungeons: 
-	-- Gate of the Setting Sun: 
-	-- Mogu'shan Palace: 
-	-- Scarlet Halls (Heroic): 
-	-- Scarlet Monastery (Heroic): 
-	-- Scholomance (Heroic): 
-	-- Shado-Pan Monastery: 
-	-- Siege of Niuzao Temple: 
-	-- Stormstout Brewery: 
-	-- Temple of the Jade Serpent: 
--- Raids: 
-	-- Mogu'shan Vaults: 
-	-- Heart of Fear: 
-	-- Terrace of Endless Spring: 
-	-- Throne of Thunder: 
-	-- Siege of Orgrimmar: 
--- Scenarios: 
-	-- Celestial Tournament: 571
-
--- All Instances: 
-
-
---------------------------------------------------
-
-
--- ! Cataclysm
---  -----------
-
--- The Maelstrom: 948
--- Tol Barad: 244,245
--- Mount Hyjal: 198
-	-- Molten Front: 338
--- Vashj'ir: 201,203,204,205
--- Deepholm: 207,208,209
--- Uldum: 249
--- Twilight Highlands: 241
-
--- All Zones: 948,244,245,198,338,201,203,204,205,207,208,209,249,241
-
-
--- Dungeons: 
-	-- Blackrock Caverns: 
-	-- Deadmines (Heroic): 
-	-- End Time: 
-	-- Grim Batol: 
-	-- Halls of Origination: 
-	-- Hour of Twilight: 
-	-- Lost City of the Tol'vir: 
-	-- Shadowfang Keep (Heroic): 
-	-- The StoneCore: 
-	-- The Vortex Pinnacle: 
-	-- Throne of the Tides: 
-	-- Well of Eternity: 
-	-- Zul'Aman: 
-	-- Zul'Gurub: 
--- Raids: 
-	-- Baradin Hold: 
-	-- Blackwing Descent: 
-	-- The Bastion of Twilight:
-	-- Throne of the Four Winds: 
-	-- Firelands: g191
-	-- Dragon Soul: 
--- All Instances: 
-
-
---------------------------------------------------
-
-
--- ! Wrath of the Lich King
---  ------------------------
-
--- Dalaran: g170
-
--- Northrend: 113
--- Borean Tundra: 114
--- Howling Fjord: 117
--- Dragonblight: 115
--- Grizzly Hills: 116
--- Zul'Drak: 121
--- Sholazar Basin: 119
--- The Storm Peaks: 120
--- Icecrown: 118
--- Hrothgar's Landing: 170
--- Wintergrasp: 123
--- Crystalsong Forest: 127
-
--- All Zones: g170,113,114,117,115,116,121,119,120,118,170,123,127
-
-
--- Dungeons: 
-	-- Ahn'kahet: The Old Kingdom: 
-	-- Azjol-Nerub: 
-	-- Drak'Tharon Keep: 
-	-- Gundrak: 
-	-- Halls of Lightning: 
-	-- Halls of Reflection: 
-	-- Halls of Stone: 
-	-- Pit of Saron: 
-	-- The Culling of Stratholme: 
-	-- The Forge of Souls: 
-	-- The Nexus: 
-	-- THe Oculus: 
-	-- The Violet Hold: 
-	-- Trial of the Champion: 
-	-- Utgarde Keep: 
-	-- Utgarde Pinnacle: 
--- Raids: 
-	-- Vault of Archavon: 
-	-- Naxxramas: 
-	-- The Obsidian Sanctum: 
-	-- The Eye of Eternity: 
-	-- Ulduar: 
-	-- Trial of the Crusader: 
-	-- Onyxia's Lair: 
-	-- Icecrown Citadel: 
-	-- The Ruby Sanctum: 
--- All Instances: 
-
-
---------------------------------------------------
-
-
--- ! Burning Crusade
---  -----------------
-
--- Shattrath: 
-
--- Outland: 101
--- All Zones: 
-
-
--- Dungeons: 
-	-- Auchenai Crypts: 
-	-- Hellfire Ramparts: 
-	-- Magister's Terrace: 
-	-- Mana-Tombs: 
-	-- Old Hillsbrad Foothills: 
-	-- Sethekk Halls: 
-	-- Shadow Labyrinth: 
-	-- The Arcatraz: 
-	-- The Black Morass: 
-	-- THe Blood Furnace: 
-	-- The Botanica: 
-	-- The Mechanaar: 
-	-- The Shattered Halls: 
-	-- The Slave Pens: 
-	-- The Steamvault: 
-	-- The Underbog: 
--- Raids: 
-	-- Karazhan: 
-	-- Gruul's Lair: 
-	-- Magtheridon's Lair: 
-	-- Serpentshrine Cavern: 
-	-- The Eye: 
-	-- The Battle for Mount Hyjal: 
-	-- Black Temple: 
-	-- Sunwell Plateau: 
--- All Instances: 
-
-
---------------------------------------------------
-
-
--- ! Classic
---  ---------
-
--- Eastern Kingdoms: 13
--- Stormwind City: 84
-	-- Deeprun Tram: 499
-	-- Bizmos's Brawlpub: 500
--- Ironforge: 87
--- Darnassus: 89
--- The Exodar: 103
-
--- Orgrimmar: 85,86
-	-- Brawl'gar Arena: 503
--- Thunder Bluff: 88
--- Undercity: 90
--- Silvermoon City: 110
-
--- Eversong Woods: 94,467
--- Ghostlands: 95,96
--- Tirisfal Glades: 18,19,465,466
--- Western Plaguelands: 22
--- Eastern Plaguelands: 23
--- Silverpine Forest: 21
--- Hillsbrad Foothills: 25
--- The Hinterlands: 26
--- Ruins of Gilneas: 217,218,1030
--- Arathi Highlands: 14
--- Wetlands: 56
--- Dun Morogh: 27,28,29,30,31
-	-- Coldridge Valley: 427,428
-	-- New Tinkertown: 469,470
--- Loch Modan: 48
--- Searing Gorge: 32
--- Badlands: 15,16
--- Burning Steppes: 36
-	-- Blackrock Mountain: 33,34,35
--- Elwynn Forest: 37,38,39,40,425,426
--- Redridge Mountains: 49
--- Westfall: 52,53,54,55
--- Duskwood: 47
--- Deadwind Pass: 42,43,44,45,46
--- Swamp of Sorrows: 51
--- Stranglethorn Vale: 224
-	-- Northern Stranglethorn: 50
-	-- The Cape of Stranglethorn: 210
--- Blasted Lands: 17
-
-
--- Kalimdor: 12
--- Teldrassil: 57,58,59,60,61,460
--- Azuremyst Isle: 97,98,99,468
--- Bloodmyst Isle: 106
--- Darkshore: 62
--- Moonglade: 80
--- Winterspring: 83
--- Felwood: 77
--- Azshara: 76
--- Ashenvale: 63
--- Stonetalon Mountains: 65
--- Northern Barrens: 10,11
--- Durotar: 1,2,3,4,5,6
-	-- Valley of Trials: 461
-	-- Echo Isles: 463,464
--- Desolace: 66,67,68
--- Mulgore: 7,8,9,462
--- Southern Barrens: 199
--- Dustwallow Marsh: 70
--- Feralas: 69
--- Thousand Needles: 64
--- Silithus: 81,82
-	-- Ahn'Qiraj: 
--- Un'Goro Crater: 78,79
--- Tanaris: 71,72,73
-	-- Caverns of Time: 74,75
-
-
--- Dungeons: 
-	-- Blackfathom Deeps: 
-	-- Blackrock Depths: 
-	-- Deadmines (Normal):
-	-- Dire Maul: 
-		-- 3 wings
-	-- Gnomeregan: 
-	-- Lower Blackrock Spire: 
-	-- Maraudon: 
-	-- Ragefire Chasm: 
-	-- Razorfen Downs: 
-	-- Razorfen Kraul: 
-	-- Scarlet Halls (Normal): 
-	-- Scarlet Monastery (Normal): 
-	-- Scholomance (Normal): 
-	-- Shadowfang Keep (Normal): 
-	-- Stratholme: 
-		-- 2 wings
-	-- The Stockade: 
-	-- The Temple of Atal'hakkar: 
-	-- Uldaman: 
-	-- Wailing Caverns: 
-	-- Zul'Farrak: 
--- Raids: 
-	-- Molten Core: 
-	-- Blackwing Lair: 
-	-- Ruins of Ahn'Qiraj: 
-	-- Temple of Ahn'Qiraj: 
-
-
---------------------------------------------------
-
-
--- Calendar Event IDs
-
--- /run local c=C_Calendar.GetDayEvent(0, 20, 1) print(c.eventID, c.title)
-
--- Timewalking
-	-- Burning Crusade: 622
-	-- Wrath of the Lich King: 616
-	-- Cataclysm: 628
-	-- Mists of Pandaria: 652
-	-- Warlords of Draenor: 1063
-
-
---------------------------------------------------
-
-
 local function updateData()
 	local name, realm = UnitFullName("player")
 	local _, class, _ = UnitClass("player")
@@ -668,57 +174,39 @@ local function updateData()
 			end
 		end
 
-		-- Pet Icons
-		ZA.PetIcons = {
-			-- Class Pets
-			["Chi-Ji"] = 877514,
-			["Niuzao"] = 627607,
-			["Xuen"] = 620832,
-			["Yu'lon"] = 877408,
-			["Primal Earth Elemental"] = 136024,
-			["Primal Fire Elemental"] = 651081,
-			["Primal Storm Elemental"] = 2065626,
-			["Water Elemental"] = 135862,
+		-- Custom Icon Colors (OpieUI.lua:getSliceColor)
+		--.........
+		--local li = col[icon] or -3
+		--
+		---- fisk
+		--if ZA and ZA.IconColors and ZA.IconColors[icon] then
+		--	local hex = strsplit(":", IconColors[icon])
+	    --    local r, g, b = tonumber(string.sub(hex, 1, 2), 16), tonumber(string.sub(hex, 3, 4), 16), tonumber(string.sub(hex, 5), 16)
+		--	return r/255, g/255, b/255
+		--end
+		--
+		--return pal[li] or 0.7, pal[li+1] or 1, pal[li+2] or 0.6
+		
+		-- ! OPie
+		ZA.IconColors = {
+			-- Blizzard Icons
+			[132320] = "4f6986", -- ability_stealth
+			-- World Markers
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerSquare"] = "0070dd",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerTriangle"] = "1eff00",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerDiamond"] = "a334ee",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerCross"] = "ff2020",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerStar"] = "ffff00",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerCircle"] = "ff7f3f",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerMoon"] = "aaaadd",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerSkull"] = "dedede",
+			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerClear"] = "404040",
+			-- Pets
+			["Interface/AddOns/Media_Newsom/Pets/CoreHoundPurple"] = "972eba",
+			["Interface/AddOns/Media_Newsom/Pets/CoreHoundYellow"] = "b8ff1b",
+			["Interface/AddOns/Media_Newsom/Pets/ManasaberBlue"] = "c170ff",
+			["Interface/AddOns/Media_Newsom/Pets/WaterElementalStormsWake"] = "67aeb0",
 		}
-
-		-- Custom Hunter Pet Icons
-		if name == "Appi" then
-			ZA.PetIcons["Andy"] = 1504874
-			ZA.PetIcons["Blep"] = 1390637
-			ZA.PetIcons["Frank"] = 464160
-			ZA.PetIcons["Toothpaste"] = 1570766
-			ZA.PetIcons["Ravioli"] = 377270
-		elseif name == "Gizzard" then
-			ZA.PetIcons["Infinity"] = 236177
-			ZA.PetIcons["Wah"] = 1819857
-			ZA.PetIcons["Crookedile"] = 1387705
-		elseif name == "Apera" then
-			ZA.PetIcons["Anna"] = 1392564
-		elseif name == "Anna" then
-			ZA.PetIcons["Apera"] = 132172
-		elseif name == "Syrah" then
-			ZA.PetIcons["Escoutatz"] = 1096090
-		elseif name == "Karin" then
-			ZA.PetIcons["Biscuit"] = 612362
-		elseif name == "Zorp" then
-			ZA.PetIcons["Glurg"] = 1508491
-			ZA.PetIcons["Tiffany"] = 2027901
-		elseif name == "Viktor" then
-			ZA.PetIcons["Vanessa"] = 2027950
-		elseif name == "Betty" then
-			ZA.PetIcons["Bork"] = 2958711
-		elseif name == "Linda" then
-			ZA.PetIcons["Mondays"] = 2027886
-		elseif name == "Leslie" then
-			ZA.PetIcons["Ann"] = 1929247
-			ZA.PetIcons["Jerry"] = 2399272
-		elseif name == "Tim" then
-			ZA.PetIcons["Boop"] = 2399272
-		elseif name == "Aldous" then
-			ZA.PetIcons["Zoey"] = 1861689
-		elseif name == "Claire" then
-			ZA.PetIcons["Daisy"] = 2027853
-		end
 
 
 		-- Color Gradients
@@ -726,25 +214,27 @@ local function updateData()
 			[0]   = "8e8981:c6c2b9", -- Unknown
 
 			-- Spell Schools
-			[999] = "3b3b3b:6e6d59", -- Fatigue
 
 			--ccc
 			-- Physical
 			[1]   = "8e8981:c6c2b9", -- Physical | Unknown
-			[100] = "6f9cd4:8fe6ff", -- Mechanical | Engineering
 			[112] = "d67070:ffbdbd", -- Physical Red
 			[107] = "d5985c:ffecc6", -- Physical Orange
 			[108] = "ffdd53:ffd483", -- Physical Yellow
 			[109] = "91c652:e9ffb3", -- Physical Green
-			[110] = "8b9fc3:d4e1fa", -- Physical Blue | Armor
+			[110] = "7997cc:d4e1fa", -- Physical Blue | Armor
 			[113] = "977fb9:c8b7df", -- Physical Purple | Tailoring
+			[100] = "6f9cd4:8fe6ff", -- Mechanical | Engineering
 			[101] = "bc434c:de726b", -- Bleed | Skinning
 			[102] = "802d2d:c73c33", -- Heavy Bleed
-			[106] = "b05642:dda082", -- Strength
-			[104] = "edc716:fef972", -- Alacrity | Speed
+			[106] = "c65c2d:efb073", -- Strength
+			[115] = "86b819:e2ff95", -- Agility | Evasion
+			[104] = "ffeb64:f2ffbf", -- Alacrity | Speed
 			[111] = "efff65:dcffeb", -- Sonic | Sound
-			[103] = "ffa894:ff7225", -- Enrage
+			[103] = "ff9178:ff5d32", -- Enrage
 			[105] = "c80034:ff8258", -- Bloodlust
+			[114] = "b8a889:e6d8b3", -- Paper | Writing | Learning | Inscription
+			[999] = "3b3b3b:6e6d59", -- Fatigue
 
 			-- Fire
 			[4]   = "ff3600:ffc000", -- Fire | Cooking
@@ -755,9 +245,9 @@ local function updateData()
 			[68]  = "ff3883:ffba00", -- Spellfire | Phoenixfire
 			
 			-- Fel
+			[127] = "00654e:a6ff1a", -- Chaos
 			[401] = "3dec00:fff94f", -- Felfire
-			[127] = "00575a:96ff30", -- Chaos
-			[427] = "355859:73a640", -- Felstrike
+			[427] = "bac53e:9795a5", -- Felstrike
 
 			-- Holy
 			[2]   = "ffc539:ffffcb", -- Holy
@@ -766,7 +256,7 @@ local function updateData()
 			[6]   = "ff6c00:ffd42a", -- Holy Fire | Solar
 			[201] = "00baff:fff9de", -- Ethereal | Kyrian
 			[600] = "134cff:00baff", -- Ethereal Flame
-			[202] = "ce958c:fff1d6", -- Discipline | Bandage | Brewing | Inscription
+			[202] = "ce958c:fff1d6", -- Discipline | Bandage | Brewing
 			[203] = "ffffff:b1c5ca", -- Hyperlight | Hallow | Broker
 			[204] = "0090ff:f8ff66", -- Azerite
 
@@ -799,8 +289,8 @@ local function updateData()
 			[906] = "1d7211:55bf38", -- Poisonstrike
 
 			-- Air
-			[811] = "90a3ab:f8ffff", -- Wind | Air
-			[911] = "5d6a8c:ccdbdb", -- Storm
+			[811] = "bfa1f6:f8ffff", -- Wind | Air
+			[911] = "6670a3:d9e8e8", -- Storm
 			[800] = "4f64ff:a6f2ff", -- Lightning | Thunder
 			[9]   = "8972ff:c0e8ff", -- Stormstrike
 
@@ -834,19 +324,21 @@ local function updateData()
 			[819] = "382c44:5f6e5b", -- Onyx | Obsidian | Black
 
 			-- Arcane
-			[64]  = "6ec3ff:dd40ff", -- Arcane
-			[65]  = "7c6ecf:c48fe0", -- Spellstrike
+			[64]  = "8cd0ff:dd41ff", -- Arcane
+			[640] = "d28aff:766fff", -- Lunar
+			[65]  = "7c6ecf:c48fe0", -- Spellstrike | Spell Reflection
 			[126] = "d830f1:d8b5ff", -- Magic
-			[646] = "a4feff:8fb7ff", -- Conjuration | Teleport | Enchanting
+			[646] = "a4feff:8fb7ff", -- Conjuration | Teleport | Enchanting | Transmutation
 			[124] = "52ffb8:ff70cb", -- Chromatic
-			[640] = "f2e199:ffa019", -- Temporal
+			[641] = "f2e199:ffa019", -- Temporal
 
 			-- Astral
-			[72]  = "62ebff:ffa5f3", -- Astral
+			[72]  = "ffb0ff:6fa2ff", -- Astral
 			[720] = "7178d0:76ffba", -- Spectral
 
 			-- Decay
-			[414] = "618400:b4e54e", -- Unholy | Bone
+			[414] = "618400:b4e54e", -- Unholy
+			[415] = "bfc483:bfbe73", -- Bone | Stagnant
 			[40]  = "967213:b7e751", -- Plague
 			[410] = "6a6009:f1b33b", -- Disease | Rot
 			[412] = "5d243a:ff273b", -- Nightmare
@@ -894,18 +386,16 @@ local function updateData()
 			["Soul Shards"] = "9b19cc:b670e9",
 			["Runes"] = "615da1:876191",
 
-			-- Anima - Dynamic depending on covenant
-
 			-- Reputation/Reaction
-			["Paragon"] = "3fbeff:9ff0ff", -- Solid: 4cc2ff
-			["Exalted"] = "3fbeff:9ff0ff", -- Solid: 4cc2ff
-			["Revered"] = "00d5aa:89ffe7", -- Solid: 00ffcc
-			["Honored"] = "00a95a:5bffb2", -- Solid: 00ff88
-			["Friendly"] = "33991a:6ed854", -- Solid: 00ff00
-			["Neutral"] = "ecbd00:ffd632", -- Solid: ffff00
-			["Unfriendly"] = "d0591e:f47c23", -- Solid: cc2222
-			["Hostile"] = "b3331a:b3331a", -- Solid: ff0000
-			["Hated"] = "770000:ae0000", -- Solid: cc2222
+			["Paragon"] = "3fbeff:9ff0ff",
+			["Exalted"] = "3fbeff:9ff0ff",
+			["Revered"] = "00d5aa:89ffe7",
+			["Honored"] = "00a95a:5bffb2",
+			["Friendly"] = "33991a:6ed854",
+			["Neutral"] = "ecbd00:ffd632",
+			["Unfriendly"] = "d0591e:f47c23",
+			["Hostile"] = "b3331a:b3331a",
+			["Hated"] = "770000:ae0000",
 			["Tapped"] = "808080:9b9b9b",
 
 			-- Classes
@@ -923,47 +413,52 @@ local function updateData()
 			["WARRIOR"] = "a97c54:c9a074",
 		}
 
-
+		-- Dynamic Gradients
 		ZA.Gradients["Anima"] = (covenant == 1) and ZA.Gradients[201] or (covenant == 2) and ZA.Gradients[321] or (covenant == 3) and ZA.Gradients[805] or (covenant == 4) and ZA.Gradients[326] or ZA.Gradients[203]
 
 
-		-- Vehicles
+		-- ! Vehicles
 		ZA.Vehicles = {
+			["Flying Machine"] = 100,
+			["Huln Highmountain"] = "HUNTER",
+			["Murky"] = 900,
 			["Prince Farondis"] = "MAGE",
+			["The Etymidian"] = 809,
 		}
 
+
+		-- Hearthstones
 		ZA.Hearthstones = {
-			-- Hearthstones
-			["Hearthstone"] = "Hearthstone",
+			["Ardenweald Hearthstone"] = "Hearthstone",
+			["Astral Recall"] = "Astral Recall",
 			["Brewfest Reveler's Hearthstone"] = "Hearthstone",
+			["Dark Portal"] = "Dark Portal",
 			["Eternal Traveler's Hearthstone"] = "Hearthstone",
+			["Ethereal Portal"] = "Ethereal Portal",
 			["Fire Eater's Hearthstone"] = "Hearthstone",
 			["Greatfather Winter's Hearthstone"] = "Hearthstone",
 			["Headless Horseman's Hearthstone"] = "Hearthstone",
+			["Hearthstone"] = "Hearthstone",
 			["Holographic Digitalization Hearthstone"] = "Hearthstone",
 			["Kyrian Hearthstone"] = "Hearthstone",
 			["Lunar Elder's Hearthstone"] = "Hearthstone",
 			["Mountebank's Colorful Cloak"] = "Hearthstone",
 			["Necrolord Hearthstone"] = "Hearthstone",
 			["Night Fae Hearthstone"] = "Hearthstone",
-			["Ardenweald Hearthstone"] = "Hearthstone",
 			["Noble Gardener's Hearthstone"] = "Hearthstone",
 			["Peddlefeet's Lovely Hearthstone"] = "Hearthstone",
-			["The Innkeeper's Daughter"] = "Hearthstone",
-			["Venthyr Sinstone"] = "Hearthstone",
-			-- Special Hearthstones
-			["Astral Recall"] = "Astral Recall",
-			["Dark Portal"] = "Dark Portal",
-			["Ethereal Portal"] = "Ethereal Portal",
 			["Ruby Slippers"] = "Ruby Slippers",
+			["The Innkeeper's Daughter"] = "Hearthstone",
 			["Town Portal"] = "Town Portal",
+			["Venthyr Sinstone"] = "Hearthstone",
 		}
 
+
+		-- Spells
 		if not ZA.AutoSpells then
 			ZA.AutoSpells = {}
 		end
-
-		-- Spells
+		
 		-- Match priority: ID > Name:Icon > *:Icon > Name
 		ZA.Spells = {
 			--! Dynamic
@@ -976,6 +471,13 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Planting Trap"] = 100,
+			["Placing Trap"] = 100,
+			["Placing Trap..."] = 100,
+			["Spyglass Sight"] = 100,
+			["Ticking Bomb"] = 100,
+			["Chainsaw Blade"] = 100,
+			["Defense Matrix"] = 100,
 			["Shoot RJR"] = 100,
 			["Shot"] = 100,
 			["Shoot"] = 100,
@@ -1046,6 +548,11 @@ local function updateData()
 			["Unlocking"] = 100,
 
 			--! Physical Red
+			["Super Swipe"] = 112,
+			["Felstorm:236303"] = 112,
+			["Lashing Flurry"] = 112,
+			["Devastating Arc"] = 112,
+			["Shambling Strike"] = 112,
 			["Precise Shots"] = 112,
 			["Rapid Fire"] = 112,
 			["Bloody Blades"] = 112,
@@ -1063,7 +570,6 @@ local function updateData()
 			["Piercing Thrust"] = 112,
 			["Grinding Crunch"] = 112,
 			["Vicious Warbanner"] = 112,
-			["Whirling Strike"] = 112,
 			["Misdirection"] = 112,
 			["Tricks of the Trade"] = 112,
 			["Gladiator's Warbanner"] = 112,
@@ -1080,8 +586,14 @@ local function updateData()
 			["Hack Tendon"] = 112,
 			["Claw Strike"] = 112,
 			["Devour"] = 112,
+			["Beast Cleave"] = 112,
+			["Grand Melee"] = 112,
 
 			--! Physical Orange
+			["Direbrew's Disarm"] = 107,
+			["Bash"] = 107,
+			["Reaving Claws"] = 107,
+			["Decapitating Strike"] = 107,
 			["Stampede"] = 107,
 			["Furious Assault"] = 107,
 			["Hew"] = 107,
@@ -1121,16 +633,15 @@ local function updateData()
 			["Whirlwind"] = 107,
 
 			--! Physical Yellow
+			["Take Your Cut"] = 108,
 			["Rain of Arrows"] = 108,
 			["Double Tap"] = 108,
-			["Evasion"] = 108,
 			["Steady Focus"] = 108,
 			["Steady Shot"] = 108,
 			["Barrage"] = 108,
 			["Drop Prey"] = 108,
 			["Gorge Bite"] = 108,
 			["Snatch Armor"] = 108,
-			["Double Claw"] = 108,
 			["Pulverize"] = 108,
 			["Claw Swipe"] = 108,
 			["Swipe"] = 108,
@@ -1139,12 +650,10 @@ local function updateData()
 			["Spinning Blade"] = 108,
 			["Hunting Talons"] = 108,
 			["Snap and Toss"] = 108,
-			["Huddle"] = 108,
 			["Hampering Blow"] = 108,
 			["Hamstring"] = 108,
 			["Picking Pocket"] = 108,
 			["Stealing Egg"] = 108,
-			["Beast Cleave"] = 108,
 			["Throw Hammer:3084396"] = 108,
 			["Looting"] = 108,
 			["Pillage"] = 108,
@@ -1160,6 +669,7 @@ local function updateData()
 			["Haymaker"] = 108,
 
 			--! Physical Green
+			["Whirling Mist"] = 109,
 			["Hulking Kick"] = 109,
 			["Night Glaive"] = 109,
 			["Gieger Smash"] = 109,
@@ -1176,9 +686,10 @@ local function updateData()
 			["Glaive Toss"] = 109,
 			["Rebounding Blades"] = 109,
 			["Shell Spin"] = 109,
-			["Grand Melee"] = 109,
 
-			--! Physical Blue  ! Armor
+			--! Physical Blue  ! Armor  ! Tailoring
+			["Devotion Aura"] = 110,
+			["Flurry of Steel"] = 110,
 			["Overwhelming Slam:136170"] = 110,
 			["Throw Witchalok Blade"] = 110,
 			["Face Kick"] = 110,
@@ -1199,7 +710,7 @@ local function updateData()
 			["Mortal Strike"] = 110,
 			["Ruthless Precision"] = 110,
 
-			--! Physical Purple  ! Tailoring
+			--! Physical Purple
 			["Overwhelm"] = 113,
 			["Backhand"] = 113,
 			["Champion's Honor:135884"] = 113,
@@ -1207,10 +718,17 @@ local function updateData()
 			["Wicked Smash"] = 113,
 			["Soulsunder"] = 113,
 			["Blessing of Protection"] = 113,
-			["Skull and Crossbones"] = 113,
 			["Shield Wall"] = 113,
 
 			--! Bleed  ! Skinning
+			["Gutripper"] = 101,
+			["Bloody Hack"] = 101,
+			["Skinning"] = 101,
+			["Bloodletting Slash"] = 101,
+			["A Feast of Eyes"] = 101,
+			["Cruel Slice"] = 101,
+			["Whirling Strike"] = 101,
+			["Barbed Shot"] = 101,
 			["Vicious Throw"] = 101,
 			["Cut to the Bone"] = 101,
 			["Cut To The Bone"] = 101,
@@ -1272,6 +790,7 @@ local function updateData()
 			["Rip"] = 102,
 
 			--! Strength
+			["Hateful Smash"] = 106,
 			["Torturous Might"] = 106,
 			["Kill Command"] = 106,
 			["Survival Instincts"] = 106,
@@ -1287,31 +806,51 @@ local function updateData()
 			["Rallying Cry"] = 106,
 			["Demonbane"] = 106,
 			["Carrying the Wounded"] = 106,
-			["Bestial Wrath"] = 106,
 			["Colossus Smash"] = 106,
 			["Colossal Strike"] = 106,
 			["Coordinated Assault"] = 106,
 			["Crushing Slam"] = 106,
-			["Obliterate"] = 106,
 			["Holy Strength"] = 106,
 			["Unholy Strength"] = 106,
 
+			--! Agility  ! Evasion
+			["Disengage"] = 115,
+			["Acrobatic Strike"] = 115,
+			["Acrobatic Strikes"] = 115,
+			["Huddle"] = 115,
+			["Evasion"] = 115,
+			["Agility"] = 115,
+			["Primal Agility"] = 115,
+			["Agile Reflexes"] = 115,
+			["Winged Agility"] = 115,
+			["Serpent's Swiftness"] = 115,
+			["Feather Flurry"] = 115,
+			["Catlike Reflexes"] = 115,
+			["Fleethoof"] = 115,
+			["Wily Wits"] = 115,
+			["Shuffle"] = 115,
+			["Dragon's Guile"] = 115,
+			["Empyreal Reflexes"] = 115,
+			["Evasive Lunge"] = 115,
+			["Murmuring Shawl"] = 115,
+			["Draenic Living Action Potion"] = 115,
+			["Free Action"] = 115,
+			["Living Free Action"] = 115,
+
 			--! Alacrity  ! Speed
+			["Bull Rush"] = 104,
+			["Tricky Treat"] = 104,
+			["Frenzy"] = 104,
 			["Swift Paws"] = 104,
 			["Pounce"] = 104,
 			["Gore Charge"] = 104,
-			["Disengage"] = 104,
-			["Acrobatic Strike"] = 104,
-			["Acrobatic Strikes"] = 104,
 			["Boar Charge"] = 104,
 			["Deadly Pounce"] = 104,
 			["Barbarian"] = 104,
 			["Quilboar Rush"] = 104,
-			["Wily Wits"] = 104,
 			["Wild Charge"] = 104,
 			["Shoulder Charge"] = 104,
 			["Trampling Charge"] = 104,
-			["Shuffle"] = 104,
 			["Rolling Charge"] = 104,
 			["Stampeding Charge"] = 104,
 			["Deadeye Charge"] = 104,
@@ -1332,24 +871,17 @@ local function updateData()
 			["Goring Charge"] = 104,
 			["Heirmir's Arsenal: Gorestompers"] = 104,
 			["Skirmishing Pounce"] = 104,
-			["Empyreal Reflexes"] = 104,
-			["Evasive Lunge"] = 104,
 			["Hypertune Anima"] = 104,
 			["Revenge!"] = 104,
 			["War Machine"] = 104,
-			["Murmuring Shawl"] = 104,
 			["Acceleration Rune"] = 104,
 			["Alacrity"] = 104,
 			["Aspect of the Cheetah"] = 104,
 			["Body and Soul"] = 104,
 			["Dash"] = 104,
-			["Draenic Living Action Potion"] = 104,
 			["Draenic Swiftness Potion"] = 104,
 			["Egg Rush!"] = 104,
-			["Empyreal Reflexs"] = 104,
-			["Free Action"] = 104,
 			["Haste"] = 104,
-			["Living Free Action"] = 104,
 			["March of the Highlord"] = 104,
 			["Onslaught"] = 104,
 			["Posthaste"] = 104,
@@ -1366,6 +898,12 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Inspire Crew"] = 111,
+			["Captain's Call"] = 111,
+			["Roar of the Drake"] = 111,
+			["Call of Death:538559"] = 111,
+			["Crippling Howl"] = 111,
+			["Summon Broodlings:236197"] = 111,
 			["Aural Fracture"] = 111,
 			["Playing Music"] = 111,
 			["Deathsong"] = 111,
@@ -1427,6 +965,7 @@ local function updateData()
 			["Primal Roar"] = 111,
 
 			--! Enrage
+			["Bestial Wrath"] = 103,
 			["Mongoose Fury"] = 103,
 			["Death Wish"] = 103,
 			["Blood Rage"] = 103,
@@ -1457,12 +996,12 @@ local function updateData()
 			["Rampage"] = 103,
 			["Adrenaline Rush"] = 103,
 			["Berserker Rage"] = 103,
+			["The Beast Within"] = 103,
 			["Berserking"] = 103,
 			["Blood Fury"] = 103,
 			["Death Sweep"] = 103,
 			["Endless Rage"] = 103,
 			["Enrage"] = 103,
-			["Frenzy"] = 103,
 			["Furious Swipes:1396978"] = 103,
 			["Growing Anger"] = 103,
 			["Killing Spree"] = 103,
@@ -1473,6 +1012,8 @@ local function updateData()
 			["Violent Eruption:136215"] = 103,
 
 			--! Bloodlust
+			["Feast:132278"] = 105,
+			["Recklessness"] = 105,
 			["Voracious Haste"] = 105,
 			["Voracious"] = 105,
 			["Blood Frenzy"] = 105,
@@ -1509,12 +1050,31 @@ local function updateData()
 			["Quick Bloodlust"] = 105,
 			["Chant of Fury"] = 105,
 
+			--! Paper  ! Writing  ! Learning  ! Inscription
+			["Reading"] = 114,
+			["Read"] = 114,
+			["Read Book"] = 114,
+			["Writing"] = 114,
+			["A Compendium of the Herbs of Draenor"] = 114,
+			["A Guide to Skinning in Draenor"] = 114,
+			["A Treatise on Mining in Draenor"] = 114,
+			["A Treatise on the Alchemy of Draenor"] = 114,
+			["A Treatise on the Inscription of Draenor"] = 114,
+			["Draenor Blacksmithing"] = 114,
+			["Draenor Jewelcrafting"] = 114,
+			["Draenor Leatherworking"] = 114,
+			["Draenor Tailoring"] = 114,
+			["Fishing Guide to Draenor"] = 114,
+			["Introduction to Cooking in Draenor"] = 114,
+			["Learning"] = 114,
+
 
 			--: Fire
 			-------------------------
 			--! Fire  ! Cooking
+			["Flame Whirl"] = 4,
 			["Flame Spit"] = 4,
-			["Light's Out"] = 4,
+			["Lights Out"] = 4,
 			["Explosive Shot"] = 4,
 			["Smoldering Inertia"] = 4,
 			["Fiery Blast"] = 4,
@@ -1572,7 +1132,8 @@ local function updateData()
 			["Sear"] = 4,
 
 			--! Flamestrike  ! Cannonfire  ! Smelting
-			["Ticking Bomb"] = 5,
+			["Burning Smash"] = 5,
+			["Whirling Flame"] = 5,
 			["Exploding Oil Barrel"] = 5,
 			["Signal Flare"] = 5,
 			["Flare"] = 5,
@@ -1604,6 +1165,8 @@ local function updateData()
 			["Fire Support: Blackest Skies"] = 5,
 
 			--! Magma  ! Lava  ! Meteor
+			["Molten Fists"] = 12,
+			["Lava Extrusion"] = 12,
 			["Obsidian Skin"] = 12,
 			["Burning Slag"] = 12,
 			["Call Meteor"] = 12,
@@ -1709,6 +1272,8 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
+			["Call Infernal"] = 401,
+			["Immolation Orb:841218"] = 401,
 			["Foul Blast:135804"] = 401,
 			["Hellfire and Brimstone:135801"] = 401,
 			["Devour Soul:841221"] = 401,
@@ -1891,8 +1456,6 @@ local function updateData()
 			["Soul Fissure:135794"] = 401,
 			["Spectral Sight"] = 401,
 			["Summon Fel Imp"] = 401,
-			["Summon Felguard"] = 401,
-			["Summon Imp"] = 401,
 			["Summon Infernal"] = 401,
 			["Summon Overfiend"] = 401,
 			["Summon Phantomflame Infernal"] = 401,
@@ -1905,6 +1468,8 @@ local function updateData()
 			["Felborne Rage"] = 401,
 
 			--! Chaos
+			["Summon Felguard"] = 127,
+			["Summon Imp"] = 127,
 			["Chaos Meteor"] = 127,
 			["Annihilation"] = 127,
 			["Bang, Bang, Bang"] = 127,
@@ -1932,6 +1497,7 @@ local function updateData()
 			["Rain of Chaos"] = 127,
 
 			--! Felstrike
+			["Mo'arg Smash"] = 427,
 			["Empowered Slice:1109118"] = 427,
 			["Fel Whirlwind"] = 427,
 			["Call Fel Lord"] = 427,
@@ -1945,7 +1511,6 @@ local function updateData()
 			["Glaive Tempest"] = 427,
 			["Fel Slicer"] = 427,
 			["Mo'arg Strike"] = 427,
-			["Felstorm:236303"] = 427,
 			["Felstorm:132369"] = 427,
 			["Felstorm:841309"] = 427,
 			["Fel Arcing Smash"] = 427,
@@ -1968,12 +1533,11 @@ local function updateData()
 			--: Holy
 			-------------------------
 			--! Holy
+			["Hymn of Battle"] = 2,
 			["Perseverance of the Gods"] = 2,
-			["Blessing of Freedom"] = 2,
 			["Holy Light"] = 2,
 			["Light's Speed"] = 2,
 			["Solar Heal"] = 2,
-			["Divine Steed"] = 2,
 			["Angelic Feather"] = 2,
 			["Holy Smite"] = 2,
 			["Blessing of K'ara"] = 2,
@@ -2015,6 +1579,8 @@ local function updateData()
 			["Guardian of Ancient Queens"] = 200,
 
 			--! Holystrike  ! Flash  ! Titan
+			["Crusader Aura"] = 3,
+			["Divine Steed"] = 3,
 			["Shielding Words"] = 3,
 			["Blessing of the Silver Crescent"] = 3,
 			["Blessed Armor of the Fallen"] = 3,
@@ -2039,6 +1605,8 @@ local function updateData()
 			["Stellar Pylon:253400"] = 3,
 
 			--! Holy Fire  ! Solar
+			["Retribution Aura"] = 6,
+			["Blessing of Freedom"] = 6,
 			["Flame Reborn"] = 6,
 			["Nature's Wrath:535045"] = 6,
 			["Excite:574795"] = 6,
@@ -2170,7 +1738,10 @@ local function updateData()
 			["Valiant Bolt"] = 600,
 			["Valiant Flame"] = 600,
 
-			--! Discipline  ! Bandage  ! Brewing  ! Inscription
+			--! Discipline  ! Bandage  ! Brewing
+			["Brewing"] = 202,
+			["Chuck Mug"] = 202,
+			["Checking for Pulse"] = 202,
 			["Eating"] = 202,
 			["Waking"] = 202,
 			["Unbinding"] = 202,
@@ -2183,7 +1754,6 @@ local function updateData()
 			["Keg Smash"] = 202,
 			["Celestial Brew"] = 202,
 			["Serve Tea"] = 202,
-			["Reading"] = 202,
 			["Freeing Critter"] = 202,
 			["Scripture of Elune"] = 202,
 			["Dampen Harm"] = 202,
@@ -2194,8 +1764,6 @@ local function updateData()
 			["Releasing"] = 202,
 			["Dizzy"] = 202,
 			["Wandering Keg"] = 202,
-			["Mixing Pigment"] = 202,
-			["Mixing Pigments"] = 202,
 			["Dismiss Pet"] = 202,
 			["Safe Fall"] = 202,
 			["Rescue"] = 202,
@@ -2235,9 +1803,7 @@ local function updateData()
 			["Sanctum"] = 202,
 			["Saving"] = 202,
 			["Secret Infusion"] = 202,
-			["Shell Shield"] = 202,
 			["Shield of the Righteous"] = 202,
-			["Slow Fall"] = 202,
 			["Soothing"] = 202,
 			["Unspoken Gratitude"] = 202,
 
@@ -2454,6 +2020,7 @@ local function updateData()
 			["Froststorm Breath"] = 24,
 
 			--! Spellfrost
+			["Concentration Aura"] = 80,
 			["Breath of Sindragosa"] = 80,
 			["Frost Armor"] = 80,
 			["Crystal Eruption:132783"] = 80,
@@ -2481,6 +2048,10 @@ local function updateData()
 			["Astral Recall"] = 280,
 
 			--! Chemical  ! Alchemy
+			["Brewing Potion"] = 281,
+			["Brewing:136240"] = 281,
+			["Healing Brew"] = 281,
+			["Strange Brew"] = 281,
 			["Gaseous Bubbles"] = 281,
 			["Rejuvenating Serum"] = 281,
 			["Healing Balm"] = 281,
@@ -2522,10 +2093,22 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Mixing Pigment"] = 900,
+			["Mixing Pigments"] = 900,
+			["Niuzao's Fortitude"] = 900,
+			["Harden Carapace"] = 900,
+			["Silverback"] = 900,
+			["Thick Fur"] = 900,
+			["Thick Hide"] = 900,
+			["Ancient Hide"] = 900,
+			["Bristle"] = 900,
+			["Gruff"] = 900,
+			["Hardy"] = 900,
 			["Reflective Shell"] = 900,
 			["Tangled Webs"] = 900,
 			["Hibernate"] = 900,
 			["Deep Slumber"] = 900,
+			["Bulwark:134964"] = 900,
 			["Give Silk"] = 900,
 			["Lashing Flurry:134218"] = 900,
 			["Spider Swarm"] = 900,
@@ -2564,15 +2147,10 @@ local function updateData()
 			["Cenarion Ward"] = 10,
 			["Efflorescence"] = 10,
 			["Tranquility"] = 10,
-			["Grow Tree"] = 10,
 			["Rejuvenating Wind"] = 10,
 
 			--! Fey  ! Night Fae
 			["Glimmering Illusion"] = 805,
-			["Eyes of Elune"] = 805,
-			["Convocation of Elune"] = 805,
-			["Nightfire"] = 805,
-			["Elune's Wrath"] = 805,
 			["Bewildering Slam"] = 805,
 			["Bewildering Pollen"] = 805,
 			["Fae Transfusion"] = 805,
@@ -2585,7 +2163,6 @@ local function updateData()
 			["Fae Guardians"] = 805,
 			["Ancient Aftershock"] = 805,
 			["The Hunt"] = 805,
-			["Fury of Elune"] = 805,
 			["Shifting Power"] = 805,
 			["Faerie Fire"] = 805,
 			["Radiant Breath:3528278"] = 805,
@@ -2735,6 +2312,9 @@ local function updateData()
 			--: Air
 			-------------------------
 			--! Wind  ! Air
+			["Windsong"] = 811,
+			["Slow Fall"] = 811,
+			["Updraft"] = 811,
 			["Flap Wings"] = 811,
 			["Gale Slash"] = 811,
 			["Wing Buffet"] = 811,
@@ -2753,7 +2333,7 @@ local function updateData()
 			["Flurry of Feathers"] = 811,
 			["Air Blast"] = 811,
 			["Aspect of the Eagle"] = 811,
-			["Aviana's Blessing"] = 10,
+			["Aviana's Blessing"] = 811,
 			["Azurethos' Fury"] = 811,
 			["Blow Bubble"] = 811,
 			["Burst of Air"] = 811,
@@ -2807,9 +2387,13 @@ local function updateData()
 			["Stormclouds"] = 911,
 			["Wind Rush Totem"] = 911,
 			["Windrush"] = 911,
+			["Feather Dance"] = 911,
 			["Localized Storm"] = 911,
 
 			--! Lightning  ! Thunder  ! Electric
+			["Thunder's Bite"] = 800,
+			["Unleash Storm's Fury"] = 800,
+			["Electrocute"] = 800,
 			["Blister"] = 800,
 			["Defibrillate"] = 800,
 			["Electric Shock"] = 800,
@@ -2871,6 +2455,7 @@ local function updateData()
 			["Lightning Blast"] = 800,
 			["Lightning Bolt"] = 800,
 			["Lightning Breath"] = 800,
+			["Crackling Energy"] = 800,
 			["Lightning Cloud"] = 800,
 			["Lightning Discharge"] = 800,
 			["Lightning Lasso"] = 800,
@@ -2902,6 +2487,7 @@ local function updateData()
 			["Zot!"] = 800,
 
 			--! Stormstrike
+			["Dragonstomp:134294"] = 9,
 			["Thunderclap"] = 9,
 			["Thunder Clap"] = 9,
 			["Crashing Storm"] = 9,
@@ -2921,6 +2507,10 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water  ! Sea  ! Fishing
+			["Crashing Tides"] = 801,
+			["Briny Swell"] = 801,
+			["Safety Bubble"] = 801,
+			["Depth Charge"] = 801,
 			["Compressed Ocean Fishing"] = 801,
 			["Watery Splash"] = 801,
 			["Summon Water Elemental"] = 801,
@@ -2994,6 +2584,8 @@ local function updateData()
 			["Tide Crush"] = 901,
 
 			--! Mist
+			["Mending Swell"] = 802,
+			["Healing Mists"] = 802,
 			["Soothing Breath"] = 802,
 			["Dance of Chi-Ji"] = 802,
 			["Summon Cloud Serpent"] = 802,
@@ -3053,6 +2645,8 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth  ! Mud
+			["Severing Blow"] = 803,
+			["Dargrul's Escape"] = 803,
 			["Digging"] = 803,
 			["Meteoric Earthspire"] = 803,
 			["Pulverizing Meteor:2101174"] = 803,
@@ -3106,7 +2700,12 @@ local function updateData()
 			["Hardened Muck"] = 803,
 
 			--! Earthstrike  ! Skinning  ! Leatherworking
-			["Skinning"] = 903,
+			["Obliterate"] = 903,
+			["Devastating Leap"] = 903,
+			["Log Smash"] = 903,
+			["Stone Breach"] = 903,
+			["Colossal Strike"] = 903,
+			["Massive Crush"] = 903,
 			["Ground Stomp"] = 903,
 			["Colossal Smash"] = 903,
 			["Shattering Smash"] = 903,
@@ -3147,8 +2746,15 @@ local function updateData()
 			["Ground Slam"] = 903,
 			["Harden Skin"] = 903,
 			["Harden"] = 903,
+			["Stone Breaker"] = 903,
+			["Stonebreaker"] = 903,
+			["Brulbash"] = 903,
 
 			--! Stone  ! Rock
+			["Hardened"] = 809,
+			["Throw Rock"] = 809,
+			["Stone Armor"] = 809,
+			["Solid Shell:134455"] = 809,
 			["Restore Stone"] = 809,
 			["Rock Bash"] = 809,
 			["Cave-in"] = 809,
@@ -3169,19 +2775,17 @@ local function updateData()
 			["Hurl Boulders"] = 809,
 			["Ironfur"] = 809,
 			["Petrifying Breath"] = 809,
-			["Petrifying Gaze"] = 809,
 			["Petrifying Howl"] = 809,
 			["Rock Lance"] = 809,
+			["Rock Lob"] = 809,
 			["Rolling Stone"] = 809,
 			["Shale Spit"] = 809,
-			["Shatter:132358"] = 809,
 			["Stone Bolt"] = 809,
 			["Stone Breath"] = 809,
 			["Stone Disc"] = 809,
 			["Stone Eruption"] = 809,
 			["Stone Fist"] = 809,
 			["Stone Form"] = 809,
-			["Stone Gaze"] = 809,
 			["Stone Shell Detonation"] = 809,
 			["Stone Smash"] = 809,
 			["Stone Spike"] = 809,
@@ -3190,17 +2794,15 @@ local function updateData()
 			["Stoneshape"] = 809,
 			["Stoneskin"] = 809,
 			["Swamp Breath"] = 809,
+			["Stone Throw"] = 809,
 
-			--! Stonestrike  ! Metal  ! Salt  ! Blacksmithing  ! Mining
+			--! Metal  ! Salt  ! Blacksmithing  ! Mining
 			["Binding Chains"] = 909,
 			["Scourge Hook"] = 909,
 			["Shield Spike"] = 909,
-			["Stone Breaker"] = 909,
-			["Stonebreaker"] = 909,
-			["Stone Throw"] = 909,
-			["Brulbash"] = 909,
 			["Salt Spray"] = 909,
 			["Mining"] = 909,
+			["Flurry of Steel"] = 909,
 			["Shackles"] = 909,
 			["Iron Shackles"] = 909,
 			["Lockdown"] = 909,
@@ -3222,6 +2824,7 @@ local function updateData()
 			["Eruption:236758"] = 804,
 
 			--! Amber
+			["Sting of the Corpse-Reaver"] = 810,
 			["Explosive Bombardment:892832"] = 810,
 			["Splintered Elemental Rod"] = 810,
 			["Amber Blast"] = 810,
@@ -3251,7 +2854,6 @@ local function updateData()
 			["Crystal Barbs:237196"] = 810,
 			["Crystal Bolt:1003593"] = 810,
 			["Crystal Call:132780"] = 810,
-			["Crystal Shards:629524"] = 810,
 			["Crystal Spike:1003593"] = 810,
 			["Crystal Spikes:132780"] = 810,
 			["Crystal Storm:1003593"] = 810,
@@ -3292,6 +2894,8 @@ local function updateData()
 			["Crystal Spikes"] = 808,
 			["Crystal Storm"] = 808,
 			["Crystal Trap"] = 808,
+			["Stone Gaze"] = 808,
+			["Petrifying Gaze"] = 808,
 			["Crystal"] = 808,
 			["Crystalize"] = 808,
 			["Crystalline Assault"] = 808,
@@ -3338,7 +2942,7 @@ local function updateData()
 			-- 816
 
 			--! Topaz  ! Orange
-			-- 817
+			["Crystal Shards:629524"] = 817,
 
 			--! Ruby  ! Red  ! Horde
 			["Shattering Ruby"] = 818,
@@ -3350,6 +2954,7 @@ local function updateData()
 			--: Arcane
 			-------------------------
 			--! Arcane
+			["Leyflame Burner"] = 64,
 			["Prismatic Barrier"] = 64,
 			["Arcane Meteor"] = 64,
 			["Star Gate:610471"] = 64,
@@ -3358,9 +2963,7 @@ local function updateData()
 			["Arcane Bolts"] = 64,
 			["Sear:135731"] = 64,
 			["Arcane Wall"] = 64,
-			["Eclipse (Lunar)"] = 64,
 			["Portal: Dalaran"] = 64,
-			["Moonfire"] = 64,
 			["Arcane Bombardment"] = 64,
 			["Arcane Bomb"] = 64,
 			["Rune of Unmaking"] = 64,
@@ -3371,36 +2974,31 @@ local function updateData()
 			["Arcane Burst"] = 64,
 			["Arcane Power"] = 64,
 			["Empower Golem"] = 64,
-			["Ethereal Portal"] = 64,
 			["Focused Blast"] = 64,
-			["Lunar Elder's Hearthstone"] = 64,
-			["Polymorph"] = 64,
-			["Portal"] = 64,
 			["Power Crystal"] = 64,
 			["Power Crystals"] = 64,
-			["Ruby Slippers"] = 64,
 			["Scrying"] = 64,
 			["Summon Power Crystal"] = 64,
 			["Summon Power Crystals"] = 64,
 			["Arcane Explosion"] = 64,
 			["Arcane Missiles"] = 64,
 
-			--! Spellstrike
+			--! Lunar
+			["Starfire"] = 640,
+			["Eyes of Elune"] = 640,
+			["Convocation of Elune"] = 640,
+			["Nightfire"] = 640,
+			["Elune's Wrath"] = 640,
+			["Fury of Elune"] = 640,
+			["Lunar Strike"] = 640,
+			["Eclipse (Lunar)"] = 640,
+			["Moonfire"] = 640,
+			["Lunar Elder's Hearthstone"] = 640,
+			["Siphon Nightwell"] = 640,
+
+			--! Spellstrike  ! Spell Reflection
 			["Binding Shot"] = 65,
 			["Umbral Glaive Storm"] = 65,
-			["A Compendium of the Herbs of Draenor"] = 65,
-			["A Guide to Skinning in Draenor"] = 65,
-			["A Treatise on Mining in Draenor"] = 65,
-			["A Treatise on the Alchemy of Draenor"] = 65,
-			["A Treatise on the Inscription of Draenor"] = 65,
-			["Draenor Blacksmithing"] = 65,
-			["Draenor Jewelcrafting"] = 65,
-			["Draenor Leatherworking"] = 65,
-			["Draenor Tailoring"] = 65,
-			["Fishing Guide to Draenor"] = 65,
-			["Introduction to Cooking in Draenor"] = 65,
-			["Learning"] = 65,
-			["Mana Rage"] = 65,
 			["Glowing Rune Axe"] = 65,
 			["Runic Strike"] = 65,
 			["Shattering Throw"] = 65,
@@ -3413,6 +3011,7 @@ local function updateData()
 			["Spell Reflection"] = 65,
 
 			--! Magic
+			["Energy Expulsion:237510"] = 126,
 			["Summon Doomskull"] = 126,
 			["Touch of the Magi"] = 126,
 			["Focused Bursts:136050"] = 126,
@@ -3423,7 +3022,12 @@ local function updateData()
 			["Energy Drain"] = 126,
 			["Conjure Mana Gem"] = 126,
 
-			--! Conjuration  ! Teleport  ! Enchanting
+			--! Conjuration  ! Teleport  ! Enchanting  ! Transmutation
+			["Ancient Magic"] = 646,
+			["Polymorph"] = 646,
+			["Ruby Slippers"] = 646,
+			["Portal"] = 646,
+			["Ethereal Portal"] = 646,
 			["Trueshot"] = 646,
 			["Create Belt"] = 646,
 			["Create Bracer"] = 646,
@@ -3431,6 +3035,8 @@ local function updateData()
 			["Create Leggings"] = 646,
 			["Create Curio"] = 646,
 			["Create Lavalliere"] = 646,
+			["Create Ring"] = 646,
+			["Create Glove"] = 646,
 			["Wormhole Teleport"] = 646,
 			["Wormhole"] = 646,
 			["Wormhole: Pandaria"] = 646,
@@ -3516,21 +3122,23 @@ local function updateData()
 			["Mindmeld"] = 124,
 
 			--! Temporal  ! Time
-			["Time Stop"] = 640,
-			["Temporal Blast"] = 640,
-			["Accelerated Mending"] = 640,
-			["Chrono Shift"] = 640,
-			["True Bearing"] = 640,
-			["Slow"] = 640,
-			["Mass Slow"] = 640,
-			["Time Warp"] = 640,
-			["Alter Time"] = 640,
+			["Time Stop"] = 641,
+			["Temporal Blast"] = 641,
+			["Accelerated Mending"] = 641,
+			["Chrono Shift"] = 641,
+			["True Bearing"] = 641,
+			["Slow"] = 641,
+			["Mass Slow"] = 641,
+			["Time Warp"] = 641,
+			["Alter Time"] = 641,
 
 
 
 			--: Astral
 			-------------------------
 			--! Astral
+			["Galactic Guardian"] = 72,
+			["Starsurge"] = 72,
 			["Glitter Burst"] = 72,
 			["Constellation Shield"] = 72,
 			["Starfall"] = 72,
@@ -3542,7 +3150,6 @@ local function updateData()
 			["Call to the Stars"] = 72,
 			["Faerie Dust"] = 72,
 			["Far Sight"] = 72,
-			["Siphon Nightwell"] = 72,
 
 			--! Spectral
 			["Feral Spirit"] = 720,
@@ -3574,13 +3181,9 @@ local function updateData()
 
 			--: Decay
 			-------------------------
-			--! Unholy  ! Bone
-			["Bone Saw"] = 414,
+			--! Unholy
 			["Devour Humanoid"] = 414,
 			["Bind to the Bones"] = 414,
-			["Helya's Boon"] = 414,
-			["Foul Smash"] = 414,
-			["Bone Splinter"] = 414,
 			["Exhume the Crypts"] = 414,
 			["Apocalypse"] = 414,
 			["Ectoplasm"] = 414,
@@ -3588,37 +3191,50 @@ local function updateData()
 			["Dark Transformation"] = 414,
 			["Lichborne"] = 414,
 			["Army of the Dead"] = 414,
-			["Bony Strike"] = 414,
-			["Bone Spike Graveyard"] = 414,
-			["Bone Spike"] = 414,
-			["Bone Spear"] = 414,
-			["Bone Toss"] = 414,
-			["Grave Spike"] = 414,
-			["Shambling Rush"] = 414,
-			["Jagged Spines"] = 414,
 			["Raise Dead"] = 414,
-			["Bone Cleave"] = 414,
-			["Spine Crawl"] = 414,
 			["Unholy Bulwark"] = 414,
 			["Devour Magic"] = 414,
 			["Unraveling Horror"] = 414,
 			["Decimate:135797"] = 414,
 			["Rune of Suffering"] = 414,
 			["Anti-Magic Shell"] = 414,
-			["Bone Armor"] = 414,
-			["Bone Shield"] = 414,
-			["Brackish Bolt"] = 414,
-			["Strange Brew"] = 414,
 			["Cauldron Catalyst"] = 414,
-			["Decaying Strike"] = 414,
-			["Plague-Tipped Arrows"] = 414,
-			["Plague-Dipped Arrows"] = 414,
 			["Plagued Broadside"] = 414,
-			["Stagnant Blast"] = 414,
 			["Volatile Concoction"] = 414,
-			["Whirling Mist"] = 414,
+
+			--! Bone  ! Stagnant
+			["Soul of Mist"] = 415,
+			["Helya's Boon"] = 415,
+			["Communing with Helya"] = 415,
+			["Choking Mist"] = 415,
+			["Choking Mists"] = 415,
+			["Foul Slash"] = 415,
+			["Razor's Edge:1060569"] = 415,
+			["Skull and Crossbones"] = 415,
+			["Foul Smash"] = 415,
+			["Bone Armor"] = 415,
+			["Bone Cleave"] = 415,
+			["Bone Saw"] = 415,
+			["Bone Shield"] = 415,
+			["Bone Spear"] = 415,
+			["Bone Spike Graveyard"] = 415,
+			["Bone Spike"] = 415,
+			["Bone Splinter"] = 415,
+			["Bone Toss"] = 415,
+			["Bony Strike"] = 415,
+			["Brackish Bolt"] = 415,
+			["Decaying Strike"] = 415,
+			["Grave Spike"] = 415,
+			["Jagged Spines"] = 415,
+			["Shambling Rush"] = 415,
+			["Spine Crawl"] = 415,
+			["Stagnant Blast"] = 415,
 
 			--! Plague
+			["Wandering Plague"] = 40,
+			["Plague-Tipped Arrows"] = 40,
+			["Plague-Dipped Arrows"] = 40,
+			["Swarm of Flies"] = 40,
 			["Wretched Belch"] = 40,
 			["Carrion Slam"] = 40,
 			["Infected Thorn"] = 40,
@@ -3666,6 +3282,9 @@ local function updateData()
 			["Retch"] = 40,
 
 			--! Disease  ! Rot
+			["Rotting Bite"] = 410,
+			["Decaying Strike:538559"] = 410,
+			["Black Bile"] = 410,
 			["Rats!"] = 410,
 			["Diseased Spit"] = 410,
 			["Rotten to the Core"] = 410,
@@ -3693,6 +3312,8 @@ local function updateData()
 			["Clinging Infestation"] = 410,
 
 			--! Nightmare
+			["Sprouting:136064"] = 412,
+			["Nightmare Serum"] = 412,
 			["Corrupt the Wild:1357812"] = 412,
 			["Nightmare Blast"] = 412,
 			["Nightmare Nova"] = 412,
@@ -3727,6 +3348,8 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Touch of Death"] = 411,
+			["Deathbolt"] = 411,
 			["Surge of Pain:3528302"] = 411,
 			["Phase Shift:3528299"] = 411,
 			["Wailing Blast:3528302"] = 411,
@@ -3827,7 +3450,6 @@ local function updateData()
 			["Wave of Agony:3528300"] = 411,
 			["Touch of Anguish"] = 411,
 			["Pain Spike:3528302"] = 411,
-			["Call of Death"] = 411,
 			["Call to Chaos"] = 411,
 			["Cone of Death"] = 411,
 			["Dark Bolt"] = 411,
@@ -3903,6 +3525,8 @@ local function updateData()
 			["Nightfall"] = 32,
 
 			--! Psychic  ! Mind Control
+			["Dominate Mind"] = 328,
+			["Enslave Demon"] = 328,
 			["Bindings of Submission"] = 328,
 			["Mind Rend"] = 328,
 			["Cripple"] = 328,
@@ -3970,7 +3594,8 @@ local function updateData()
 			["Torment"] = 322,
 
 			--! Haunt  ! Nether
-			["A Feast of Eyes"] = 323,
+			["Phantasm"] = 323,
+			["Stolen Breath"] = 323,
 			["A Murder of Crows"] = 323,
 			["Unleashed Suffering"] = 323,
 			["Cries of Anguish"] = 323,
@@ -3987,7 +3612,6 @@ local function updateData()
 			["Soul Vessel"] = 323,
 			["Banshee Wail"] = 323,
 			["Phantom Lance"] = 323,
-			["Demon Soul"] = 323,
 			["Obsidian Claw"] = 323,
 			["Nathrian Hymn: Gloomveil"] = 323,
 			["Rip Soul:1378703"] = 323,
@@ -4059,23 +3683,16 @@ local function updateData()
 			["Unstable Gloom"] = 324,
 			["Wither"] = 324,
 
-			--! Spellshadow  ! Runic  ! Harpy
-			["Shadow Bond:611425"] = 96,
-			["Vicious Storm:649816"] = 96,
-			["Foul Blast:425959"] = 96,
-			["Ritual of the Berserker"] = 96,
+			--! Spellshadow  ! Runic
 			["Shadow Prison"] = 96,
 			["Etch:136202"] = 96,
 			["Surging Fist:877699"] = 96,
 			["Shadowdelving"] = 96,
-			["Frailty"] = 96,
 			["Shattered Resolve:136201"] = 96,
 			["Detecting Life"] = 96,
 			["Soulshift"] = 96,
 			["Shadow Rip"] = 96,
 			["Rune-Etched Axe"] = 96,
-			["Dark Pact"] = 96,
-			["Enslave Demon"] = 96,
 			["Assassin's Soulcloak"] = 96,
 			["Detect Anima"] = 96,
 			["Soul Shroud"] = 96,
@@ -4138,6 +3755,10 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Shadow Bond:611425"] = 320,
+			["Vicious Storm:649816"] = 320,
+			["Foul Blast:425959"] = 320,
+			["Voidcloud"] = 320,
 			["Psychic Blast"] = 320,
 			["Phantom Singularity"] = 320,
 			["Unravel:236296"] = 320,
@@ -4261,6 +3882,7 @@ local function updateData()
 			["Twlight Flames"] = 34, -- [sic]
 
 			--! Blood  ! Venthyr
+			["Ritual of the Berserker"] = 321,
 			["Blood Call"] = 321,
 			["Bewitch:132096"] = 321,
 			["Sanguine Fury"] = 321,
@@ -4407,6 +4029,8 @@ local function updateData()
 			["Mindgames:3565723"] = 321,
 
 			--! Necromancy  ! Necrolord
+			["Call of the Dead"] = 326,
+			["Touch of Death:136230"] = 326,
 			["Infuse Death"] = 326,
 			["Consume Life"] = 326,
 			["Soul Fracture:2576087"] = 326,
@@ -4515,6 +4139,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse
+			["Curse of the Depths"] = 325,
 			["Touch of the Occult"] = 325,
 			["Arugal's Gift"] = 325,
 			["Banish"] = 325,
@@ -4547,6 +4172,8 @@ local function updateData()
 			["Weeping Burden"] = 325,
 
 			--! Dread  ! Fear  ! Sha
+			["Presence of Death"] = 327,
+			["Call of Death:136131"] = 327,
 			["Devour Phantasma"] = 327,
 			["Terrify"] = 327,
 			["Cry of Desolation"] = 327,
@@ -4625,6 +4252,7 @@ local function updateData()
 			["Rejection:651096"] = 327,
 
 			--! Shadowflame
+			["Summon Flaming Heads"] = 36,
 			["Shadow Meteor"] = 36,
 			["Accursed Strength"] = 36,
 			["Eradicate:460698"] = 36,
@@ -4640,6 +4268,12 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic
+			["Dark Pact"] = 360,
+			["Demon Soul"] = 360,
+			["Lash of Pain"] = 360,
+			["Call Observer"] = 360,
+			["Observer"] = 360,
+			["Soul Barrier"] = 360,
 			["Dark Soul"] = 360,
 			["Dark Soul: Misery"] = 360,
 			["Rapid Contagion:237557"] = 360,
@@ -4690,7 +4324,6 @@ local function updateData()
 			["Ritual of Summoning"] = 360,
 			["Malefic Rapture"] = 360,
 			["Twilight Immolate"] = 360,
-			["Leyflame Burner"] = 360,
 			["Demonic Calling"] = 360,
 			["Summon Succubus"] = 360,
 			["Summon Felhunter"] = 360,
@@ -4703,6 +4336,7 @@ local function updateData()
 			["Call Dreadstalkers"] = 360,
 
 			--! Shadowfelflame
+			["Frailty"] = 361,
 			["Demon Spit"] = 361,
 			["Agent of the All-Seer"] = 361,
 			["Create Healthstone"] = 361,
@@ -4717,6 +4351,7 @@ local function updateData()
 			--: Resources
 			-------------------------
 			--! Mana
+			["Mana Rage"] = "Mana",
 			["Excess Mana"] = "Mana",
 			["Titanic Surge:136075"] = "Mana",
 			["Mana Thirst"] = "Mana",
@@ -4752,12 +4387,15 @@ local function updateData()
 			["Exhaustion"] = 999,
 			["Sated"] = 999,
 			["Fatigued"] = 999,
+			["Last Resort"] = 999,
 			["Temporal Displacement:458224"] = 999,
 
 			
 
 			-------------------------
 			--! Mounts
+			["Sunwarmed Furline"] = 6,
+			["Sarge's Tale"] = 646,
 			["Ardenweald Wilderling"] = 805,
 			["Autumnal Wilderling"] = 66,
 			["Summer Wilderling"] = 280,
@@ -4832,7 +4470,7 @@ local function updateData()
 			["Beryl Ruinstrider"] = 903,
 			["Beryl Shardhide"] = 903,
 			["Big Blizzard Bear"] = 903,
-			["Big Love Rocket"] = 661,
+			["X-45 Heartbreaker"] = 661,
 			["Biletooth Gnasher"] = 806,
 			["Black Battlestrider"] = 100,
 			["Black Dragon Turtle"] = 900,
@@ -4890,7 +4528,7 @@ local function updateData()
 			["Brinedeep Bottom-Feeder"] = 801,
 			["Bristling Hellboar"] = 101,
 			["Broken Highland Mustang"] = 903,
-			["Bronze Drake"] = 640,
+			["Bronze Drake"] = 641,
 			["Brown Dragon Turtle"] = 900,
 			["Brown Elekk"] = 903,
 			["Brown Horse"] = 903,
@@ -5124,7 +4762,7 @@ local function updateData()
 			["Highmountain Elderhorn"] = 903,
 			["Highmountain Thunderhoof"] = 903,
 			["Highwind Darkmane"] = 811,
-			["Hogrus, Swine of Good Fortune"] = 902,
+			["Hogrus, Swine of Good Fortune"] = 200,
 			["Honeyback Harvester"] = 8,
 			["Hopecrusher Gargon"] = 903,
 			["Horrid Dredwing"] = 321,
@@ -5211,7 +4849,7 @@ local function updateData()
 			["Netherlord's Accursed Wrathsteed"] = 320,
 			["Netherlord's Brimstone Wrathsteed"] = 400,
 			["Netherlord's Chaotic Wrathsteed"] = 127,
-			["Nightborne Manasaber"] = 126,
+			["Nightborne Manasaber"] = 640,
 			["Ny'alotha Allseer"] = 324,
 			["Obsidian Krolusk"] = 819,
 			["Obsidian Nightwing"] = 819,
@@ -5454,7 +5092,7 @@ local function updateData()
 			["Thundering Onyx Cloud Serpent"] = 819,
 			["Thundering Ruby Cloud Serpent"] = 5,
 			["Timber Wolf"] = 903,
-			["Time-Lost Proto-Drake"] = 640,
+			["Time-Lost Proto-Drake"] = 641,
 			["Tomb Stalker"] = 414,
 			["Trained Icehoof"] = 903,
 			["Trained Meadowstomper"] = 903,
@@ -5487,7 +5125,7 @@ local function updateData()
 			["Venomhide Ravasaur"] = 903,
 			["Veridian Netherwing Drake"] = 323,
 			["Vibrant Flutterwing"] = 805,
-			["Vibrant Mana Ray"] = 328,
+			["Vibrant Mana Ray"] = 96,
 			["Vicious Black Bonesteed"] = 36,
 			["Vicious Black Warsaber"] = 903,
 			["Vicious Gilnean Warhorse"] = 903,
@@ -5555,7 +5193,7 @@ local function updateData()
 			["Winged Steed of the Ebon Blade"] = 411,
 			["Winterborn Runestag"] = 805,
 			["Winterspring Frostsaber"] = 903,
-			["Witherbark Direwing"] = 101,
+			["Witherbark Direwing"] = 111,
 			["Witherhide Cliffstomper"] = 903,
 			["Wonderwing 2.0"] = 100,
 			["Wooly Mammoth"] = 903,
@@ -5578,7 +5216,7 @@ local function updateData()
 			[179071] = 110,
 			[180720] = 202,
 			[180737] = 800,
-			[180935] = 10,
+			[180935] = 202,
 			[182592] = 321,
 			[183124] = 2,
 			[185071] = 202,
@@ -5586,7 +5224,7 @@ local function updateData()
 			[186608] = 803,
 			[188432] = 202,
 			[192535] = 100,
-			[192924] = 202,
+			[192924] = 114,
 			[192952] = 107,
 			[193017] = 803,
 			[193269] = 126,
@@ -5596,9 +5234,9 @@ local function updateData()
 			[198335] = 323,
 			[198424] = 323,
 			[198444] = 323,
-			[199336] = 96,
+			[199336] = 328,
 			[200228] = 401,
-			[203156] = "HUNTER",
+			[203156] = 114,
 			[204542] = 8,
 			[207493] = 34,
 			[207501] = 107,
@@ -5621,7 +5259,7 @@ local function updateData()
 			[243833] = 321,
 			[245030] = 4,
 			[248345] = 2,
-			[248906] = 202,
+			[248906] = 810,
 			[251746] = 800,
 			[252295] = 2,
 			[255460] = 2,
@@ -5803,9 +5441,9 @@ local function updateData()
 			[86264] = 100,
 			[93773] = 100,
 			[205446] = 8,
-			[245988] = 65,
+			[245988] = 114,
 			[210519] = 202,
-			[189038] = 112,
+			[189038] = 100,
 			[219181] = 900,
 			[219297] = 4,
 			[213293] = 4,
@@ -5825,7 +5463,7 @@ local function updateData()
 			[319538] = 805,
 			[313558] = 4,
 			[321587] = 805,
-			[343890] = 65,
+			[343890] = 114,
 			[324346] = 411,
 			[330596] = 411,
 			[330012] = 202,
@@ -5922,9 +5560,8 @@ local function updateData()
 			[353135] = 202,
 			[351205] = 203,
 			[355862] = 202,
-			[352230] = 65,
+			[352230] = 114,
 			[254667] = 401,
-			[168103] = 65,
 			[351138] = 201,
 			[351245] = 202,
 			[352413] = 100,
@@ -5932,7 +5569,6 @@ local function updateData()
 			[357963] = 203,
 			[357983] = 203,
 			[352820] = 660,
-			[168115] = 65,
 			[79450] = 202,
 			[312443] = 201,
 			[324937] = 804,
@@ -6022,7 +5658,7 @@ local function updateData()
 			[150029] = 202,
 			[336250] = 202,
 			[181456] = 202,
-			[186052] = 5,
+			[186052] = 112,
 			[226373] = 201,
 			[248062] = 204,
 			[199728] = 100,
@@ -6057,24 +5693,50 @@ local function updateData()
 			[235570] = 901,
 			[236525] = 202,
 			[169758] = 202,
-			[169973] = 640,
+			[169973] = 641,
 			[356266] = 326,
 			[214669] = 326,
 			[356593] = 203,
 			[203675] = 646,
-			[354222] = 65,
+			[354222] = 114,
 			[356615] = 660,
 			[339329] = 201,
 			[341641] = 202,
 			[353963] = 201,
 			[51962] = 202,
-			[51210] = 580,
+			[51210] = 280,
 			[51845] = 280,
 			[53038] = 111,
 			[52333] = 808,
 			[51659] = 100,
 			[52066] = 66,
+			[222728] = 805,
+			[220497] = 111,
+			[51319] = 900,
+			[193724] = 807,
+			[213633] = 326,
+			[42436] = 202,
+			[191273] = 202,
+			[182021] = 281,
+			[182139] = 281,
+			[212363] = 646,
+			[212360] = 646,
+			[212392] = 646,
+			[212315] = 646,
+			[212372] = 646,
+			[212374] = 646,
+			[181547] = 202,
+			[192171] = 101,
+			[229547] = 202,
+			[191993] = 203,
+			[193576] = 101,
 			--qqq
+
+			--# Toys
+			[288601] = 114,
+			[247129] = 114,
+			[247191] = 114,
+			[247212] = 114,
 
 			--# NPC spells
 			[319294] = 326, -- Spirit Bolt (Exile's Reach)
@@ -6140,38 +5802,42 @@ local function updateData()
 			[113942] = 999, -- Demonic Gateway (Debuff)
 
 			--# Ascension Crafting
-			[328321] = 201, -- Overcharged Goliath Core
-			[328680] = 201, -- Soul Mirror
-			[333209] = 201, -- Herald's Footpads
-			[333220] = 201, -- Charm of Fortitude
-			[333230] = 201, -- Deep Echo Trident
-			[333362] = 201, -- Vial of Lichfrost
-			[333372] = 201, -- Phial of Serenity
-			[333374] = 201, -- Spiritforged Aegis
-			[333530] = 201, -- Anointment Oil
-			[333533] = 201, -- Heartpiercer Javelin
-			[333535] = 201, -- Fountain of Rejuvenation
-			[333545] = 201, -- Catalyst of Creation
-			[333546] = 201, -- Praetor Resonance Beacon
-			[333547] = 201, -- Soulseeker Crystal
-			[333548] = 201, -- Ashfallen Key
-			[333549] = 201, -- Humility's Guard
-			[335596] = 201, -- Charm of Alacrity
-			[335603] = 201, -- Charm of Persistence
-			[335619] = 201, -- Charm of Discord
-			[335626] = 201, -- Charm of Focus
-			[335705] = 201, -- Sigil of Haunting Memories
-			[335849] = 201, -- Charm of Energizing (Unused?)
-			[338384] = 201, -- Charm of Quickness
-			[342503] = 201, -- Skystrider Glider
-			[342521] = 201, -- Empyrean Refreshment
-			[345713] = 201, -- Kyrian Smith's Kit
-			[345757] = 201, -- Steward Mail Pouch
-			[345760] = 201, -- Gilded Abacus
-			[345786] = 201, -- Artisan Tool Belt
-			[345894] = 201, -- Medallion of Service
-			[345916] = 201, -- Vesper of Calling
-			[345978] = 201, -- Ring of Warding
+				-- Lures
+				[328321] = 201, -- Overcharged Goliath Core
+				[328680] = 201, -- Soul Mirror
+				[333530] = 201, -- Anointment Oil
+				[333533] = 201, -- Heartpiercer Javelin
+				[333535] = 201, -- Fountain of Rejuvenation
+				[333545] = 201, -- Catalyst of Creation
+				[333546] = 201, -- Praetor Resonance Beacon
+				[333547] = 201, -- Soulseeker Crystal
+				[333548] = 201, -- Ashfallen Key
+				[333549] = 201, -- Humility's Guard
+				-- Boons
+				[335705] = 201, -- Sigil of Haunting Memories
+				[342503] = 201, -- Skystrider Glider
+				[342521] = 201, -- Empyrean Refreshment
+				[345713] = 201, -- Kyrian Smith's Kit
+				[345757] = 201, -- Steward Mail Pouch
+				[345760] = 201, -- Gilded Abacus
+				[345786] = 201, -- Artisan Tool Belt
+				[345894] = 201, -- Medallion of Service
+				[345916] = 201, -- Vesper of Calling
+				-- Charms
+				[333220] = 201, -- Charm of Fortitude
+				[335596] = 201, -- Charm of Alacrity
+				[335603] = 201, -- Charm of Persistence
+				[335619] = 201, -- Charm of Discord
+				[335626] = 201, -- Charm of Focus
+				[335849] = 201, -- Charm of Energizing (Unused?)
+				[338384] = 201, -- Charm of Quickness
+				-- Equipment
+				[333209] = 201, -- Herald's Footpads
+				[333230] = 201, -- Deep Echo Trident
+				[333362] = 201, -- Vial of Lichfrost
+				[333372] = 201, -- Phial of Serenity
+				[333374] = 201, -- Spiritforged Aegis
+				[345978] = 201, -- Ring of Warding
 
 
 			--# Abominable Stitching
@@ -6203,39 +5869,2347 @@ local function updateData()
 			[340340] = 326, -- Call Iron Phillip
 			[340841] = 326, -- Call Naxx
 
+			--# Alchemy
+				-- Shadowlands Alchemy
+					-- Quest Recipes
+					[338204] = 281, -- Bramblethorn Juice
+					[338199] = 281, -- Brutal Oil
+					[338200] = 900, -- Crushed Bones
+					[338195] = 281, -- Distilled Resolve
+					[338198] = 281, -- Draught of Grotesque Strength
+					[338202] = 281, -- Elixir of Humility
+					[338194] = 281, -- Flask of Measured Discipline
+					[338191] = 281, -- Liquid Sleep
+					[338190] = 281, -- Potion of Hibernal Rest
+					[338192] = 900, -- Powdered Dreamroot
+					[338196] = 900, -- Pulverized Breezebloom
+					[338203] = 281, -- Refined Submission
+					-- Anti-Venoms
+					[307100] = 281, -- Spiritual Anti-Venom
+					-- Cauldrons
+					[307087] = 281, -- Eternal Cauldron
+					-- Combat Potions
+					[307093] = 281, -- Potion of Spectral Agility
+					[307096] = 281, -- Potion of Spectral Intellect
+					[307097] = 281, -- Potion of Spectral Stamina
+					[307098] = 281, -- Potion of Spectral Strength
+					[307384] = 281, -- Potion of Deathly Fixation
+					[307381] = 281, -- Potion of Empowered Exorcisms
+					[307383] = 281, -- Potion of Divine Awakening
+					[307382] = 281, -- Potion of Phantom Fire
+					[322301] = 281, -- Potion of Sacrificial Anima
+					[307094] = 281, -- Potion of Hardened Shadows
+					[307095] = 281, -- Potion of Spiritual Clarity
+					[261423] = 281, -- Spiritual Rejuvenation Potion
+					[301578] = 281, -- Spiritual Healing Potion
+					[301683] = 281, -- Spiritual Mana Potion
+					-- Flasks
+					[307101] = 281, -- Spectral Flask of Power
+					[307103] = 281, -- Spectral Flask of Stamina
+					-- Optional Reagents
+					[343676] = 114, -- Crafter's Mark of the Chained Isle
+					[343677] = 114, -- Crafter's Mark III
+					[343678] = 114, -- Crafter's Mark II
+					[343679] = 114, -- Crafter's Mark I
+					[343675] = 114, -- Novice Crafter's Mark
+					-- Oils and Extracts
+					[307122] = 900, -- Ground Widowbloom
+					[307121] = 900, -- Ground Vigil's Torch
+					[307125] = 900, -- Ground Nightshade
+					[307123] = 900, -- Ground Marrowroot
+					[307124] = 900, -- Ground Rising Glory
+					[307120] = 900, -- Ground Death Blossom
+					[307119] = 281, -- Embalmer's Oil
+					[307118] = 281, -- Shadowcore Oil
+					-- Transmutation
+					[307143] = 646, -- Shadestone
+					[307142] = 646, -- Shadowghast Ingot
+					[307144] = 646, -- Stones to Ore
+					-- Trinkets
+					[307200] = 646, -- Spiritual Alchemy Stone
+					-- Utility Potions
+					[344316] = 281, -- Potion of the Psychopomp's Speed
+					[256133] = 281, -- Potion of Specter Swiftness
+					[256134] = 281, -- Potion of Soul Purity
+					[342887] = 281, -- Potion of Unhindered Passing
+					[295084] = 281, -- Potion of Shaded Sight
+					[261424] = 281, -- Potion of the Hidden Spirit
+					-- Other
+					[354885] = 815, -- Blossom Burst
+					[354881] = 816, -- Glory Burst
+					[354880] = 819, -- Marrow Burst
+					[354884] = 817, -- Torch Burst
+					[354882] = 813, -- Widow Burst
+					[334413] = 810, -- Red Noggin Candle
+				-- Kul Tiran Alchemy & Zandalari Alchemy
+					-- Cauldrons
+					-- Combat Potions
+					-- Utility Potions
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Alchemy of the Broken Isles
+					-- Cauldrons
+					[188351] = 281, -- Spirit Cauldron (Rank 3)
+					[188350] = 281, -- Spirit Cauldron (Rank 2)
+					[188349] = 281, -- Spirit Cauldron (Rank 1)
+					-- Combat Potions
+					[188300] = 321, -- Ancient Healing Potion (Rank 3)
+					[188299] = 321, -- Ancient Healing Potion (Rank 2)
+					[188297] = 321, -- Ancient Healing Potion (Rank 1)
+					[188303] = "Mana", -- Ancient Mana Potion (Rank 3)
+					[188302] = "Mana", -- Ancient Mana Potion (Rank 2)
+					[188301] = "Mana", -- Ancient Mana Potion (Rank 1)
+					[188306] = 126, -- Ancient Rejuvenation Potion (Rank 3)
+					[188305] = 126, -- Ancient Rejuvenation Potion (Rank 2)
+					[188304] = 126, -- Ancient Rejuvenation Potion (Rank 1)
+					[251658] = 321, -- Astral Healing Potion (Rank 3)
+					[251651] = 321, -- Astral Healing Potion (Rank 2)
+					[251646] = 321, -- Astral Healing Potion (Rank 1)
+					[188336] = 281, -- Leytorrent Potion (Rank 3)
+					[188335] = 281, -- Leytorrent Potion (Rank 2)
+					[188334] = 281, -- Leytorrent Potion (Rank 1)
+					[247622] = 281, -- Lightblood Elixir (Rank 3)
+					[247620] = 281, -- Lightblood Elixir (Rank 2)
+					[247619] = 281, -- Lightblood Elixir (Rank 1)
+					[188327] = 281, -- Potion of Deadly Grace (Rank 3)
+					[188326] = 281, -- Potion of Deadly Grace (Rank 2)
+					[188325] = 281, -- Potion of Deadly Grace (Rank 1)
+					[229220] = 281, -- Potion of Prolonged Power (Rank 3)
+					[229218] = 281, -- Potion of Prolonged Power (Rank 2)
+					[229217] = 281, -- Potion of Prolonged Power (Rank 1)
+					[188330] = 281, -- Potion of the Old War (Rank 3)
+					[188329] = 281, -- Potion of the Old War (Rank 2)
+					[188328] = 281, -- Potion of the Old War (Rank 1)
+					[188333] = 281, -- Unbending Potion (Rank 3)
+					[188332] = 281, -- Unbending Potion (Rank 2)
+					[188331] = 281, -- Unbending Potion (Rank 1)
+					-- Flasks
+					[188348] = 281, -- Flask of Ten Thousand Scars (Rank 3)
+					[188347] = 281, -- Flask of Ten Thousand Scars (Rank 2)
+					[188346] = 281, -- Flask of Ten Thousand Scars (Rank 1)
+					[188345] = 281, -- Flask of the Countless Armies (Rank 3)
+					[188344] = 281, -- Flask of the Countless Armies (Rank 2)
+					[188343] = 281, -- Flask of the Countless Armies (Rank 1)
+					[188342] = 281, -- Flask of the Seventh Demon (Rank 3)
+					[188341] = 281, -- Flask of the Seventh Demon (Rank 2)
+					[188340] = 281, -- Flask of the Seventh Demon (Rank 1)
+					[188339] = 281, -- Flask of the Whispered Pact (Rank 3)
+					[188338] = 281, -- Flask of the Whispered Pact (Rank 2)
+					[188337] = 281, -- Flask of the Whispered Pact (Rank 1)
+					-- Transmutation
+					[213257] = 646, -- Transmute: Blood of Sargeras
+					[213252] = 646, -- Transmute: Cloth to Herbs
+					[213249] = 646, -- Transmute: Cloth to Skins
+					[213254] = 646, -- Transmute: Fish to Gems
+					[213255] = 646, -- Transmute: Meat to Pants
+					[213256] = 646, -- Transmute: Meat to Pet
+					[213248] = 646, -- Transmute: Ore to Cloth
+					[213251] = 646, -- Transmute: Ore to Herbs
+					[247701] = 646, -- Transmute: Primal Sargerite
+					[213253] = 646, -- Transmute: Skins to Herbs
+					[213250] = 646, -- Transmute: Skins to Ore
+					[188802] = 646, -- Wild Transmutation (Rank 3)
+					[188801] = 646, -- Wild Transmutation (Rank 2)
+					[188800] = 646, -- Wild Transmutation (Rank 1)
+					-- Trinkets
+					[247696] = 646, -- Astral Alchemist Stone (Rank 3)
+					[247695] = 646, -- Astral Alchemist Stone (Rank 2)
+					[247694] = 646, -- Astral Alchemist Stone (Rank 1)
+					[188324] = 646, -- Infernal Alchemist Stone (Rank 3)
+					[188323] = 646, -- Infernal Alchemist Stone (Rank 2)
+					[188322] = 646, -- Infernal Alchemist Stone (Rank 1)
+					-- Utility Potions
+					[188315] = 281, -- Avalanche Elixir (Rank 3)
+					[188314] = 281, -- Avalanche Elixir (Rank 2)
+					[188313] = 281, -- Avalanche Elixir (Rank 1)
+					[188309] = 281, -- Draught of Raw Magic (Rank 3)
+					[188308] = 281, -- Draught of Raw Magic (Rank 2)
+					[188307] = 281, -- Draught of Raw Magic (Rank 1)
+					[221690] = 281, -- Silvery Salve
+					[188318] = 281, -- Skaggldrynk (Rank 3)
+					[188317] = 281, -- Skaggldrynk (Rank 2)
+					[188316] = 281, -- Skaggldrynk (Rank 1)
+					[188321] = 281, -- Skystep Potion (Rank 3)
+					[188320] = 281, -- Skystep Potion (Rank 2)
+					[188319] = 281, -- Skystep Potion (Rank 1)
+					[188312] = 281, -- Sylvan Elixir (Rank 3)
+					[188311] = 281, -- Sylvan Elixir (Rank 2)
+					[188310] = 281, -- Sylvan Elixir (Rank 1)
+					[247691] = 281, -- Tears of the Naaru (Rank 3)
+					[247690] = 281, -- Tears of the Naaru (Rank 2)
+					[247688] = 281, -- Tears of the Naaru (Rank 1)
+				-- Alchemy of Draenor
+					-- Cures & Tonics
+					-- Reagents and Research
+					-- Flasks
+					-- Transmutation
+					-- Potions and Elixirs
+					-- Trinkets and Trinket Upgrades
+				-- Alchemy of Pandaria
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+				-- Alchemy of the Cataclysm
+					-- Cauldrons
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+					-- Mounts
+				-- Alchemy of Northrend
+					-- Research
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+				-- Alchemy of Outland
+					-- Cauldrons
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+				-- Alchemy
+					-- Materials
+					-- Potions
+					-- Elixirs
+					-- Flasks
+					-- Transmutation
+					-- Trinkets
+					-- Oils
+					-- Anti-Venoms
+
+			--# Blacksmithing
+				-- Shadowlands Plans
+					-- Armor
+					-- Optional Reagents
+					-- Other
+					-- Shields
+					-- Reagents
+					-- Specialized Armor
+					-- Weapons
+					-- Weapons Mods
+				-- Kul Tiran Plans & Zandalari Plans
+					-- Optional Reagents
+					-- Armor
+					-- Weapons
+					-- Other
+					-- Mount Equipment
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Plans
+					-- Optional Reagents
+					-- Reagents
+					-- Relics
+					-- Armor
+					-- Other
+				-- Draenor Plans
+					-- Optional Reagents
+					-- Reagents and Research
+					-- Item Enhancers
+					-- Armor
+					-- Weapons and Shields
+					-- Other
+				-- Pandaren Plans
+					-- Optional Reagents
+					-- Materials
+					-- Equipment Mods
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Gauntlets
+					-- Bracers
+					-- Belts
+					-- Legs
+					-- Boots
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+				-- Cataclysm Plans
+					-- Optional Reagents
+					-- Materials
+					-- Equipment Mods
+					-- Armor
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+				-- Northrend Plans
+					-- Optional Reagents
+					-- Equipment Mods
+					-- Armor
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+				-- Outland Plans
+					-- Optional Reagents
+					-- Equipment Mods
+					-- Armor
+					-- Weapons
+				-- Blacksmithing Plans
+					-- Optional Reagents
+					-- Materials
+					-- Weapon Mods
+					-- Armor Mods
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Gauntlets
+					-- Bracers
+					-- Belts
+					-- Legs
+					-- Boots
+					-- Shields
+					-- Weapons
+					-- Skeleton Keys
+
+			--# Enchanting
+				-- Shadowlands Enchanting
+					-- Quest Recipes
+					[346026] = 646, -- Boundless Basket
+					[338125] = 646, -- Everburning Brand
+					[338121] = 646, -- True Aim Spear
+					[338123] = 646, -- Unbreakable Crystal
+					-- Boot Enchantments
+					[323609] = 646, -- Soul Treads
+					[309532] = 646, -- Agile Soulwalker
+					[309534] = 646, -- Eternal Agility
+					-- Bracer Enchantments
+					[309610] = 646, -- Shaded Hearthing
+					[309608] = 646, -- Illuminated Soul
+					[309609] = 646, -- Eternal Intellect
+					-- Chest Enchantments
+					[323762] = 646, -- Sacred Stats
+					[309535] = 646, -- Eternal Bulwark
+					[342316] = 646, -- Eternal Insight
+					[324773] = 646, -- Eternal Stats
+					-- Cloak Enchantments
+					[309530] = 646, -- Fortified Avoidance
+					[309531] = 646, -- Fortified Leech
+					[309528] = 646, -- Fortified Speed
+					[323755] = 646, -- Soul Vitality
+					[323761] = 646, -- Eternal Bounds
+					[323760] = 646, -- Eternal Skirmish
+					-- Glove Enchantments
+					[309524] = 646, -- Shadowlands Gathering
+					[309525] = 646, -- Strength of Soul
+					[309526] = 646, -- Eternal Strength
+					-- Optional Reagents
+					[343680] = 114, -- Novice Crafter's Mark
+					[343684] = 114, -- Crafter's Mark I
+					[343683] = 114, -- Crafter's Mark II
+					-- Reagents
+					[309636] = 646, -- Enchanted Elethium Bar
+					[309637] = 646, -- Enchanted Heavy Callous Hide
+					[309638] = 646, -- Enchanted Lightless Silk
+					-- Ring Enchantments
+					[309612] = 646, -- Bargain of Critical Strike
+					[309613] = 646, -- Bargain of Haste
+					[309614] = 646, -- Bargain of Mastery
+					[309615] = 646, -- Bargain of Versatility
+					[309616] = 646, -- Tenet of Critical Strike
+					[309617] = 646, -- Tenet of Haste
+					[309618] = 646, -- Tenet of Mastery
+					[309619] = 646, -- Tenet of Versatility
+					-- Shatters
+					[309645] = 646, -- Eternal Crystal
+					[309644] = 646, -- Sacred Shard
+					-- Wands
+					[265105] = 646, -- Enchanted Twilight Wand
+					-- Weapon Enchantments
+					[309627] = 646, -- Celestial Guidance
+					[309622] = 646, -- Ascended Vigor
+					[309621] = 646, -- Eternal Grace
+					[309620] = 646, -- Lightless Force
+					[309623] = 646, -- Sinful Revelation
+					-- Other
+					[355184] = 646, -- Anima-ted Leash
+				-- Kul Tiran Enchanting & Zandalari Enchanting
+					-- Glove Enchantments
+					-- Ring Enchantments
+					-- Weapon Enchantments
+					-- Wrist Enchantments
+					-- Wands
+					-- Pets
+					-- Conversions
+					-- Mount Equipment
+					-- Disenchants
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Enchanting
+					-- Disenchant
+					-- Ring Enchantments
+					-- Cloak Enchantments
+					-- Neck Enchantments
+					-- Shoulder Enchantments
+					-- Glove Enchantments
+					-- Relics
+					-- Toys, Pets, and Mounts
+				-- Draenor Enchanting
+					-- Reagents and Research
+					[177043] = 114, -- Secrets of Draenor Enchanting
+					[169092] = 646, -- Temporal Crystal
+					[169091] = 646, -- Luminous Shard
+					[182129] = 646, -- Temporal Binding
+					-- Illusions
+					[217655] = 646, -- Tome of Illusions: Draenor
+					-- Weapon
+					[159674] = 646, -- Mark of Blackrock
+					[173323] = 646, -- Mark of Bleeding Hollow
+					[159673] = 646, -- Mark of Shadowmoon
+					[159672] = 646, -- Mark of the Frostwolf
+					[159236] = 646, -- Mark of the Shattered Hand
+					[159235] = 646, -- Mark of the Thunderlord
+					[159671] = 646, -- Mark of Warsong
+					-- Cloak
+					[158877] = 646, -- Breath of Critical Strike
+					[158878] = 646, -- Breath of Haste
+					[158879] = 646, -- Breath of Mastery
+					[158881] = 646, -- Breath of Versatility
+					[158884] = 646, -- Gift of Critical Strike
+					[158885] = 646, -- Gift of Haste
+					[158886] = 646, -- Gift of Mastery
+					[158889] = 646, -- Gift of Versatility
+					-- Neck
+					[158892] = 646, -- Breath of Critical Strike
+					[158893] = 646, -- Breath of Haste
+					[158894] = 646, -- Breath of Mastery
+					[158896] = 646, -- Breath of Versatility
+					[158899] = 646, -- Gift of Critical Strike
+					[158900] = 646, -- Gift of Haste
+					[158901] = 646, -- Gift of Mastery
+					[158903] = 646, -- Gift of Versatility
+					-- Ring
+					[158907] = 646, -- Breath of Critical Strike
+					[158908] = 646, -- Breath of Haste
+					[158909] = 646, -- Breath of Mastery
+					[158911] = 646, -- Breath of Versatility
+					[158914] = 646, -- Gift of Critical Strike
+					[158915] = 646, -- Gift of Haste
+					[158916] = 646, -- Gift of Mastery
+					[158918] = 646, -- Gift of Versatility
+					-- Other
+					[162948] = 646, -- Enchanted Dust
+				-- Pandaria Enchanting
+					-- Illusions
+					-- Reagents
+					-- Armor Enchantments
+					-- Weapon Enchantments
+					-- Shield and Off-Hand Enchantments
+				-- Cataclysm Enchanting
+					-- Illusions
+					-- Reagents
+					-- Armor Enchantments
+					-- Weapon Enchantments
+					-- Shield and Off-Hand Enchantments
+					-- Pets
+				-- Northrend Enchanting
+					-- Illusions
+					-- Reagents
+					-- Boot Enchantments
+					-- Glove Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Bracer Enchantments
+					-- Weapon Enchantments
+					-- Shield Enchantments
+				-- Outland Enchanting
+					-- Illusions
+					-- Reagents
+					-- Boot Enchantments
+					-- Bracer Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Glove Enchantments
+					-- Weapon Enchantments
+					-- Shield Enchantments
+					-- Oils
+					-- Other
+				-- Enchanting
+					-- Illusions
+					-- Reagents
+					-- Boot Enchantments
+					-- Bracer Enchantments
+					-- Chest Enchantments
+					-- Cloak Enchantments
+					-- Glove Enchantments
+					-- Weapon Enchantments
+					-- Shield Enchantments
+					-- Wands
+					-- Oils
+					-- Trinket
+
+			--# Engineering
+				-- Shadowlands Engineering
+					-- Belt Attachments
+					[310496] = 100, -- Electro-Jump
+					[310495] = 100, -- Dimensional Shifter
+					[310497] = 100, -- Damage Retaliator
+					-- Bombs
+					[310486] = 100, -- Bomb Bola Launcher
+					[310485] = 100, -- Shadow Land Mine
+					[310484] = 100, -- Nutcracker Grenade
+					-- Devices
+					[310535] = 100, -- Wormhole Generator: Shadowlands
+					[310490] = 100, -- Momentum Redistributor Boots
+					[310492] = 100, -- Gravimetric Scrambler Cannon
+					[345179] = 100, -- Disposable Spectrophasic Reanimator
+					[310493] = 100, -- 50UL-TR4P
+					-- Goggles
+					[310509] = 100, -- Reinforced Ectoplasmic Specs
+					[310504] = 100, -- Grounded Ectoplasmic Specs
+					[310501] = 100, -- Flexible Ectoplasmic Specs
+					[310507] = 100, -- Articulated Ectoplasmic Specs
+					-- Optional Reagents
+					[343103] = 114, -- Crafter's Mark of the Chained Isle
+					[343102] = 114, -- Crafter's Mark III
+					[343100] = 114, -- Crafter's Mark II
+					[343099] = 114, -- Crafter's Mark I
+					[343661] = 114, -- Novice Crafter's Mark
+					-- Parts
+					[310526] = 100, -- Wormfed Gear Assembly
+					[310525] = 100, -- Mortal Coiled Spring
+					[310524] = 100, -- Porous Polishing Abrasive
+					[310522] = 100, -- Handful of Laestrite Bolts
+					-- Robotics
+					[331007] = 100, -- PHA7-YNX
+					-- Scopes
+					[310533] = 100, -- Optical Target Embiggener
+					[310534] = 100, -- Infra-green Reflex Sight
+					-- Weapons
+					[310536] = 100, -- Precision Lifeforce Inverter
+					-- Quest Recipes
+					[338218] = 100, -- Bone Reinforced Oxxein Tubing
+					[338217] = 100, -- Boneclad Stake Launcher
+					[338119] = 100, -- Bug Zapifier
+					[338220] = 100, -- Duelist's Pistol
+					[338212] = 100, -- Electro Cable
+					[338210] = 100, -- Energized Battery
+					[338219] = 100, -- Handful of Oxxein Bolts
+					[338216] = 100, -- Hardened Bolts
+					[338214] = 100, -- Piston Assembly
+					[338213] = 100, -- Power Hammer
+					[338222] = 100, -- Sinvyr Barrel
+					[338223] = 100, -- Sinvyr Trigger Mechanism
+				-- Kul Tiran Engineering & Zandalari Engineering
+					-- Belt Attachments
+					[255936] = 100, -- Belt Enchant: Holographic Horror Projector
+					[269123] = 100, -- Belt Enchant: Miniaturized Plasma Shield
+					[255940] = 100, -- Belt Enchant: Personal Space Amplifier
+					-- Bombs
+					[255394] = 100, -- F.R.I.E.D. (Rank 3)
+					[255393] = 100, -- F.R.I.E.D. (Rank 2)
+					[255392] = 100, -- F.R.I.E.D. (Rank 1)
+					[255409] = 100, -- Organic Discombobulation Grenade (Rank 3)
+					[255408] = 100, -- Organic Discombobulation Grenade (Rank 2)
+					[255407] = 100, -- Organic Discombobulation Grenade (Rank 1)
+					[255397] = 100, -- Thermo-Accelerated Plague Spreader (Rank 3)
+					[255396] = 100, -- Thermo-Accelerated Plague Spreader (Rank 2)
+					[255395] = 100, -- Thermo-Accelerated Plague Spreader (Rank 1)
+					-- Devices
+					[298930] = 100, -- Blingtron 7000
+					[299105] = 100, -- Wormhole Generator: Kul Tiras
+					[299106] = 100, -- Wormhole Generator: Zandalar
+					[283916] = 100, -- Unstable Temporal Time Shifter (Rank 3)
+					[283915] = 100, -- Unstable Temporal Time Shifter (Rank 2)
+					[283914] = 100, -- Unstable Temporal Time Shifter (Rank 1)
+					[256156] = 100, -- Deployable Attire Rearranger (Rank 3)
+					[256155] = 100, -- Deployable Attire Rearranger (Rank 2)
+					[256154] = 100, -- Deployable Attire Rearranger (Rank 1)
+					[256072] = 100, -- Electroshock Mount Motivator (Rank 3)
+					[256071] = 100, -- Electroshock Mount Motivator (Rank 2)
+					[256070] = 100, -- Electroshock Mount Motivator (Rank 1)
+					[256084] = 100, -- Interdimensional Companion Repository (Rank 3)
+					[256082] = 100, -- Interdimensional Companion Repository (Rank 2)
+					[256080] = 100, -- Interdimensional Companion Repository (Rank 1)
+					[256075] = 100, -- XA-1000 Surface Skimmer (Rank 3)
+					[256074] = 100, -- XA-1000 Surface Skimmer (Rank 2)
+					[256073] = 100, -- XA-1000 Surface Skimmer (Rank 1)
+					[280734] = 100, -- Magical Intrusion Dampener (Rank 3)
+					[280733] = 100, -- Magical Intrusion Dampener (Rank 2)
+					[280732] = 100, -- Magical Intrusion Dampener (Rank 1)
+					-- Cloth Goggles
+					[305945] = 100, -- A-N0M-A-L0U5 Synthetic Specs
+					[299005] = 100, -- A5C-3N-D3D Synthetic Specs
+					[299004] = 100, -- Abyssal Synthetic Specs
+					[299006] = 100, -- Charged A5C-3N-D3D Synthetic Specs
+					[305943] = 100, -- Paramount Synthetic Specs
+					[305944] = 100, -- Superior Synthetic Specs
+					[272058] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 3)
+					[272057] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 2)
+					[272056] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 1)
+					[286875] = 100, -- Charged SP1-R1-73D Synthetic Specs
+					[286874] = 100, -- SP1-R1-73D Synthetic Specs
+					[286873] = 100, -- Surging Synthetic Specs
+					[291090] = 100, -- Emblazoned Synthetic Specs
+					[291089] = 100, -- Imbued Synthetic Specs
+					-- Leather Goggles
+					[305942] = 100, -- A-N0M-A-L0U5 Gearspun Goggles
+					[299008] = 100, -- A5C-3N-D3D Gearspun Goggles
+					[299007] = 100, -- Abyssal Gearspun Goggles
+					[299009] = 100, -- Charged A5C-3N-D3D Gearspun Goggles
+					[305940] = 100, -- Paramount Gearspun Goggles
+					[305941] = 100, -- Superior Gearspun Goggles
+					[272061] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 3)
+					[272060] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 2)
+					[272059] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 1)
+					[286869] = 100, -- Charged SP1-R1-73D Gearspun Goggles
+					[286868] = 100, -- SP1-R1-73D Gearspun Goggles
+					[286867] = 100, -- Surging Gearspun Goggles
+					[291092] = 100, -- Emblazoned Gearspun Goggles
+					[291091] = 100, -- Imbued Gearspun Goggles
+					-- Mail Goggles
+					[305951] = 100, -- A-N0M-A-L0U5 Bionic Bifocals
+					[299011] = 100, -- A5C-3N-D3D Bionic Bifocals
+					[299010] = 100, -- Abyssal Bionic Bifocals
+					[299012] = 100, -- Charged A5C-3N-D3D Bionic Bifocals
+					[305949] = 100, -- Paramount Bionic Bifocals
+					[305950] = 100, -- Superior Bionic Bifocals
+					[272064] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 3)
+					[272063] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 2)
+					[272062] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 1)
+					[286866] = 100, -- Charged SP1-R1-73D Bionic Bifocals
+					[286865] = 100, -- SP1-R1-73D Bionic Bifocals
+					[286864] = 100, -- Surging Bionic Bifocals
+					[291094] = 100, -- Emblazoned Bionic Bifocals
+					[291093] = 100, -- Imbued Bionic Bifocals
+					-- Plate Goggles
+					[305948] = 100, -- A-N0M-A-L0U5 Orthogonal Optics
+					[299014] = 100, -- A5C-3N-D3D Orthogonal Optics
+					[299013] = 100, -- Abyssal Orthogonal Optics
+					[299015] = 100, -- Charged A5C-3N-D3D Orthogonal Optics
+					[305946] = 100, -- Paramount Orthogonal Optics
+					[305947] = 100, -- Superior Orthogonal Optics
+					[272067] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 3)
+					[272066] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 2)
+					[272065] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 1)
+					[286872] = 100, -- Charged SP1-R1-73D Orthogonal Optics
+					[286871] = 100, -- SP1-R1-73D Orthogonal Optics
+					[286870] = 100, -- Surging Orthogonal Optics
+					[291096] = 100, -- Emblazoned Orthogonal Optics
+					[291095] = 100, -- Imbued Orthogonal Optics
+					-- Weapons
+					[294786] = 100, -- Notorious Combatant's Discombobulator (Rank 3)
+					[294785] = 100, -- Notorious Combatant's Discombobulator (Rank 2)
+					[294784] = 100, -- Notorious Combatant's Discombobulator (Rank 1)
+					[294789] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 3)
+					[294788] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 2)
+					[294787] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 1)
+					[305861] = 100, -- Uncanny Combatant's Discombobulator (Rank 3)
+					[305862] = 100, -- Uncanny Combatant's Discombobulator (Rank 2)
+					[305863] = 100, -- Uncanny Combatant's Discombobulator (Rank 1)
+					[305858] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 3)
+					[305859] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 2)
+					[305860] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 1)
+					[255459] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 3)
+					[255458] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 2)
+					[255457] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 1)
+					[253152] = 100, -- Precision Attitude Adjuster (Rank 3)
+					[253151] = 100, -- Precision Attitude Adjuster (Rank 2)
+					[253150] = 100, -- Precision Attitude Adjuster (Rank 1)
+					[282808] = 100, -- Sinister Combatant's Discombobulator (Rank 3)
+					[282807] = 100, -- Sinister Combatant's Discombobulator (Rank 2)
+					[282806] = 100, -- Sinister Combatant's Discombobulator (Rank 1)
+					[282811] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 3)
+					[282810] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 2)
+					[282809] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 1)
+					[269726] = 100, -- Honorable Combatant's Discombobulator (Rank 3)
+					[269725] = 100, -- Honorable Combatant's Discombobulator (Rank 2)
+					[269724] = 100, -- Honorable Combatant's Discombobulator (Rank 1)
+					[269729] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 3)
+					[269728] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 2)
+					[269727] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 1)
+					[253122] = 100, -- Magnetic Discombobulator
+					-- Scopes & Ammo
+					[264962] = 100, -- Crow's Nest Scope (Rank 3)
+					[264961] = 100, -- Crow's Nest Scope (Rank 2)
+					[264960] = 100, -- Crow's Nest Scope (Rank 1)
+					[265102] = 100, -- Frost-Laced Ammunition (Rank 3)
+					[265101] = 100, -- Frost-Laced Ammunition (Rank 2)
+					[265100] = 100, -- Frost-Laced Ammunition (Rank 1)
+					[265099] = 100, -- Incendiary Ammunition (Rank 3)
+					[265098] = 100, -- Incendiary Ammunition (Rank 2)
+					[265097] = 100, -- Incendiary Ammunition (Rank 1)
+					[264967] = 100, -- Monelite Scope of Alacrity (Rank 3)
+					[264966] = 100, -- Monelite Scope of Alacrity (Rank 2)
+					[264964] = 100, -- Monelite Scope of Alacrity (Rank 1)
+					-- Mounts & Pets
+					[256132] = 100, -- Super-Charged Engine
+					[274621] = 100, -- Mecha-Mogul Mk2
+					[286478] = 100, -- Mechantula
+					-- Conversions
+					[287279] = 801, -- Aqueous Thermo-Degradation
+					[286647] = 321, -- Sanguinated Thermo-Degradation
+					-- Follower Equipment
+					[278411] = 100, -- Makeshift Azerite Detector
+					[278413] = 100, -- Monelite Fish Finder
+					-- Focus
+					[307220] = 321, -- Void Focus
+					-- Tools of the Trade
+					[298255] = 100, -- Ub3r-Module: P.O.G.O.
+					[298256] = 100, -- Ub3r-Module: Scrap Cannon
+					[298257] = 100, -- Ub3r-Module: Ub3r-Coil
+					[282975] = 100, -- The Ub3r-SPanner
+					[283399] = 100, -- Ub3r-Module: Short-Fused Bomb Bots
+					[283401] = 100, -- Ub3r-Module: Ub3r S3ntry Mk. X8.0
+					[283403] = 100, -- Ub3r-Module: Ub3r-Improved Target Dummy
+				-- Legion Engineering
+					-- Goggles
+					[235755] = 100, -- Chain Skullblasters
+					[199011] = 100, -- Double-Barreled Cranial Cannon (Rank 3)
+					[198997] = 100, -- Double-Barreled Cranial Cannon (Rank 2)
+					[198970] = 100, -- Double-Barreled Cranial Cannon (Rank 1)
+					[235756] = 100, -- Heavy Skullblasters
+					[199012] = 100, -- Ironsight Cranial Cannon (Rank 3)
+					[198998] = 100, -- Ironsight Cranial Cannon (Rank 2)
+					[198971] = 100, -- Ironsight Cranial Cannon (Rank 1)
+					[235754] = 100, -- Rugged Skullblasters
+					[199010] = 100, -- Sawed-Off Cranial Cannon (Rank 3)
+					[198996] = 100, -- Sawed-Off Cranial Cannon (Rank 2)
+					[198969] = 100, -- Sawed-Off Cranial Cannon (Rank 1)
+					[199009] = 100, -- Semi-Automagic Cranial Cannon (Rank 3)
+					[198995] = 100, -- Semi-Automagic Cranial Cannon (Rank 2)
+					[198968] = 100, -- Semi-Automagic Cranial Cannon (Rank 1)
+					[235753] = 100, -- Tailored Skullblasters
+					[199005] = 100, -- Blink-Trigger Headgun (Rank 3)
+					[198991] = 100, -- Blink-Trigger Headgun (Rank 2)
+					[198939] = 100, -- Blink-Trigger Headgun (Rank 1)
+					[199007] = 100, -- Bolt-Action Headgun (Rank 3)
+					[198993] = 100, -- Bolt-Action Headgun (Rank 2)
+					[198966] = 100, -- Bolt-Action Headgun (Rank 1)
+					[199008] = 100, -- Reinforced Headgun (Rank 3)
+					[198994] = 100, -- Reinforced Headgun (Rank 2)
+					[198967] = 100, -- Reinforced Headgun (Rank 1)
+					[199006] = 100, -- Tactical Headgun (Rank 3)
+					[198992] = 100, -- Tactical Headgun (Rank 2)
+					[198965] = 100, -- Tactical Headgun (Rank 1)
+					-- Combat Tools
+					[199013] = 100, -- Deployable Bullet Dispenser (Rank 3)
+					[198999] = 100, -- Deployable Bullet Dispenser (Rank 2)
+					[198972] = 100, -- Deployable Bullet Dispenser (Rank 1)
+					[199014] = 100, -- Gunpowder Charge (Rank 3)
+					[199000] = 100, -- Gunpowder Charge (Rank 2)
+					[198973] = 100, -- Gunpowder Charge (Rank 1)
+					[199015] = 100, -- Pump-Action Bandage Gun (Rank 3)
+					[199001] = 100, -- Pump-Action Bandage Gun (Rank 2)
+					[198974] = 100, -- Pump-Action Bandage Gun (Rank 1)
+					-- Devices
+					[198981] = 100, -- Trigger
+					[199017] = 100, -- Auto-Hammer (Rank 3)
+					[199003] = 100, -- Auto-Hammer (Rank 2)
+					[198976] = 100, -- Auto-Hammer (Rank 1)
+					[198980] = 100, -- Blingtron's Circuit Design Tutorial
+					[199018] = 100, -- Failure Detection Pylon (Rank 3)
+					[199004] = 100, -- Failure Detection Pylon (Rank 2)
+					[198977] = 100, -- Failure Detection Pylon (Rank 1)
+					[199016] = 100, -- Gunpack (Rank 3)
+					[199002] = 100, -- Gunpack (Rank 2)
+					[198975] = 100, -- Gunpack (Rank 1)
+					[247744] = 100, -- Wormhole Generator: Argus
+					[247717] = 100, -- Gravitational Reduction Slippers
+					[198978] = 100, -- Gunshoes
+					[198979] = 100, -- Intra-Dalaran Wormhole Generator
+					[209645] = 100, -- Leystone Buoy
+					[209646] = 100, -- Mecha-Bond Imprint Matrix
+					-- Relics
+					[209501] = 100, -- "The Felic"
+					[209502] = 100, -- Shockinator
+					-- Robotics
+					[235775] = 100, -- Rechargeable Reaves Battery
+					[198989] = 100, -- Reaves Module: Bling Mode
+					[198985] = 100, -- Reaves Module: Failure Detection Mode
+					[198987] = 100, -- Reaves Module: Fireworks Display Mode
+					[198990] = 100, -- Reaves Module: Piloted Combat Mode
+					[198984] = 100, -- Reaves Module: Repair Mode
+					[198988] = 100, -- Reaves Module: Snack Distribution Mode
+					[198983] = 100, -- Reaves Module: Wormhole Generator Mode
+					[200466] = 100, -- Sonic Environment Enhancer
+					[198982] = 100, -- Reaves Battery
+				-- Draenor Engineering
+					-- Reagents and Research
+					[182120] = 100, -- Primal Welding
+					[169080] = 100, -- Gearspring Parts
+					[177054] = 114, -- Secrets of Draenor Engineering
+					-- Goggles
+					[162195] = 100, -- Cybernetic Mechshades
+					[162196] = 100, -- Night-Vision Mechshades
+					[162197] = 100, -- Plasma Mechshades
+					[162198] = 100, -- Razorguard Mechshades
+					-- Devices
+					[187496] = 100, -- Advanced Muzzlesprocket
+					[187497] = 100, -- Bi-Directional Fizzle Reducer
+					[169078] = 100, -- Didi's Delicate Assembly
+					[162205] = 100, -- Findle's Loot-a-Rang
+					[173289] = 100, -- Hemets Heartseeker
+					[187521] = 100, -- Infrablue-Blocker Lenses
+					[463878] = 100, -- Linkgrease Locksprocket
+					[162203] = 100, -- Megawatt Filament
+					[162202] = 100, -- Oglethorpe's Missile Splitter
+					[162214] = 100, -- Personal Hologram
+					[162199] = 100, -- Shrediron's Shredder
+					[162217] = 100, -- Swapblaster
+					[187520] = 100, -- Taladite Firing Pin
+					[177363] = 100, -- True Iron Trigger
+					[162208] = 100, -- Ultimate Gnomish Army Knife (Uncommon)
+					[169140] = 100, -- Ultimate Gnomish Army Knife (Rare)
+					[162206] = 100, -- World Shrinker
+					[162216] = 100, -- Wormhole Centrifuge
+					[162204] = 100, -- Goblin Glider Kit
+					[173308] = 100, -- Mecha-Blast Rocket
+					[173309] = 100, -- Shieldtronic Shield
+					[162207] = 100, -- Stealthman 54
+					-- Robotics
+					[162218] = 100, -- Blingtron 5000
+					[162210] = 100, -- Lifelike Mechanical Frostboar
+					[162209] = 100, -- Mechanical Axebeak
+					[176732] = 100, -- Mechanical Scorpid
+					-- Fireworks
+					[171072] = 814, -- Alliance Firework
+					[171073] = 818, -- Horde Firework
+					[171074] = 819, -- Snake Firework
+				-- Pandaria Engineering
+					-- Schematic
+					[143743] = 114, -- Schematic: Chief Engineer Jard's Journal
+					-- Explosives
+					[127128] = 100, -- Goblin Dragon Gun, Mark II
+					[127127] = 100, -- G91 Landshark
+					[127124] = 100, -- Locksmith's Powderkeg
+					-- Fireworks
+					[131256] = 817, -- Autumn Flower Firework
+					[128260] = 817, -- Celestial Firework
+					[128261] = 812, -- Grand Celebration Firework
+					[131258] = 815, -- Jade Blossom Firework
+					[131353] = 100, -- Pandaria Fireworks
+					[128262] = 815, -- Serpent's Heart Firework
+					-- Devices
+					[139197] = 100, -- Advanced Refrigeration Unit
+					[139196] = 100, -- Pierre
+					[143714] = 100, -- Rascal-Bot
+					[127129] = 100, -- Blingtron 4000
+					[127135] = 100, -- Mechanical Pandaren Dragonling
+					[127132] = 100, -- Wormhole Generator: Pandaria
+					[127134] = 100, -- Ghost Iron Dragonling
+					[127131] = 100, -- Thermal Anvil
+					[126392] = 100, -- Goblin Glider
+					[109099] = 100, -- Watergliding Jets
+					-- Reagents
+					[139176] = 100, -- Jard's Peculiar Energy Source
+					[131563] = 100, -- Tinker's Kit
+					[127113] = 100, -- Ghost Iron Bolts
+					[127114] = 100, -- High-Explosive Gunpowder
+					-- Goggles
+					[127118] = 100, -- Agile Retinal Armor
+					[127119] = 100, -- Camouflage Retinal Armor
+					[127120] = 100, -- Deadly Retinal Armor
+					[127121] = 100, -- Energized Retinal Armor
+					[127117] = 100, -- Lightweight Retinal Armor
+					[127130] = 100, -- Mist-Piercing Goggles
+					[127123] = 100, -- Reinforced Retinal Armor
+					[127122] = 100, -- Specialized Retinal Armor
+					-- Guns
+					[127137] = 100, -- Long-Range Trillium Sniper
+					[127136] = 100, -- Big Game Hunter
+					-- Scopes
+					[127115] = 100, -- Lord Blastington's Scope of Doom
+					[127116] = 100, -- Mirror Scope
+					-- Mounts
+					[139192] = 100, -- Sky Golem
+					[127138] = 100, -- Depleted-Kyparium Rocket
+					[127139] = 100, -- Geosynchronous World Spinner
+					-- Cogwheels
+					[131211] = 100, -- Flashing Tinker's Gear
+					[131212] = 100, -- Fractured Tinker's Gear
+					[131213] = 100, -- Precise Tinker's Gear
+					[131214] = 100, -- Quick Tinker's Gear
+					[131215] = 100, -- Rigid Tinker's Gear
+					[131216] = 100, -- Smooth Tinker's Gear
+					[131217] = 100, -- Sparkling Tinker's Gear
+					[131218] = 100, -- Subtle Tinker's Gear
+				-- Cataclysm Engineering
+					-- Tinkers
+					[84425] = 100, -- Cardboard Assassin
+					[84427] = 100, -- Grounded Plasma Shield
+					[84424] = 100, -- Invisibility Field
+					[82200] = 100, -- Spinal Healing Injector
+					-- Reagents
+					[94748] = 800, -- Electrified Ether
+					[84403] = 100, -- Handful of Obsidium Bolts
+					-- Explosives
+					[95707] = 100, -- Big Daddy
+					[84409] = 100, -- Volatile Seaforium Blastpack
+					-- Goggles
+					[81722] = 100, -- Agile Bio-Optic Killshades
+					[81724] = 100, -- Camouflage Bio-Optic Killshades
+					[81716] = 100, -- Deadly Bio-Optic Killshades
+					[81720] = 100, -- Energized Bio-Optic Killshades
+					[81725] = 100, -- Lightweight Bio-Optic Killshades
+					[81714] = 100, -- Reinforced Bio-Optic Killshades
+					[81715] = 100, -- Specialized Bio-Optic Killshades
+					[84406] = 100, -- Authentic Jr. Engineer Goggles
+					-- Devices
+					[84418] = 100, -- Elementium Dragonling
+					[84416] = 100, -- Elementium Toolbox
+					[95705] = 100, -- Gnomish Gravity Well
+					[84421] = 100, -- Loot-a-Rang
+					[84429] = 100, -- Goblin Barbecue
+					[84430] = 100, -- Heat-Treated Spinning Lure
+					[84413] = 100, -- De-Weaponized Mechanical Companion
+					[84412] = 100, -- Personal World Destroyer
+					[84415] = 100, -- Lure Master Tackle Box
+					[95703] = 100, -- Electrostatic Condenser
+					-- Weapons
+					[100687] = 100, -- Extreme-Impact Hole Puncher
+					[84420] = 100, -- Finely-Tuned Throat Needler
+					[84432] = 100, -- Kickback 5000
+					[84431] = 100, -- Overpowered Chicken Splitter
+					[84417] = 100, -- Volatile Thunderstick
+					[84411] = 100, -- High-Powered Bolt Gun
+					-- Scopes
+					[100587] = 100, -- Flintlocke's Woodchucker
+					[84428] = 100, -- Gnomish X-Ray Scope
+					[84408] = 100, -- R19 Threatfinder
+					[84410] = 100, -- Safety Catch Removal Kit
+				-- Northrend Engineering
+					-- Tinkers
+					[67839] = 100, -- Mind Amplification Dish
+					[55016] = 100, -- Nitro Boosts
+					[54736] = 100, -- EMP Generator
+					[55002] = 100, -- Flexweave Underlay
+					[54793] = 100, -- Frag Belt
+					-- Reagents
+					[56471] = 100, -- Froststeel Tube
+					[56464] = 100, -- Overcharged Capacitor
+					[53281] = 100, -- Volatile Blasting Trigger
+					[56349] = 100, -- Handful of Cobalt Bolts
+					-- Explosives
+					[56514] = 100, -- Global Thermal Sapper Charge
+					[56468] = 100, -- Box of Bombs
+					[56463] = 100, -- Explosive Decoy
+					[56460] = 100, -- Cobalt Frag Bomb
+					-- Goggles
+					[56480] = 100, -- Armored Titanium Goggles
+					[56483] = 100, -- Charged Titanium Specs
+					[56487] = 100, -- Electroflux Sight Enhancers
+					[56486] = 100, -- Greensight Gogs
+					[56574] = 100, -- Truesight Ice Blinders
+					[62271] = 100, -- Unbreakable Healing Amplifiers
+					[56484] = 100, -- Visage Liquification Goggles
+					[56481] = 100, -- Weakness Spectralizers
+					[61482] = 100, -- Mechanized Snow Goggles (Mail)
+					[61483] = 100, -- Mechanized Snow Goggles (Plate)
+					[56465] = 100, -- Mechanized Snow Goggles (Cloth)
+					[61481] = 100, -- Mechanized Snow Goggles (Leather)
+					[56473] = 100, -- Gnomish X-Ray Specs
+					-- Devices
+					[68067] = 100, -- Jeeves
+					[67920] = 100, -- Wormhole Generator: Northrend
+					[56462] = 100, -- Gnomish Army Knife
+					[56467] = 100, -- Noise Machine
+					[56466] = 100, -- Sonic Booster
+					[56469] = 100, -- Gnomish Lightning Generator
+					[30349] = 100, -- Titanium Toolbox
+					[56472] = 100, -- MOLL-E
+					[56477] = 100, -- Mana Injector Kit
+					[67326] = 100, -- Goblin Beam Welder
+					[56476] = 100, -- Healing Injector Kit
+					[55252] = 100, -- Scapbot Construction Kit
+					[56459] = 100, -- Hammer Pick
+					[56461] = 100, -- Bladed Pickaxe
+					-- Weapons
+					[56479] = 100, -- Armor Plated Combat Shotgun
+					[60874] = 100, -- Nesingwary 4000
+					[54353] = 100, -- Mark "S" Boomstick
+					-- Mounts
+					[60866] = 100, -- Mechano-Hog (Horde)
+					[60867] = 100, -- Mekgineer's Chopper (Alliance)
+					-- Scopes
+					[56478] = 100, -- Heartseeker Scope
+					[56470] = 100, -- Sun Scope
+					[61471] = 100, -- Diamond-cut Refractor Scope
+				-- Outland Engineering
+					-- Reagents
+					[30309] = 100, -- Felsteel Stabilizer
+					[30307] = 100, -- Hardened Adamantite Tube
+					[30308] = 100, -- Khorium Power Core
+					[39971] = 100, -- Icy Blasting Primers
+					[30306] = 100, -- Adamantite Frame
+					[30303] = 100, -- Elemental Blasting Powder
+					[30304] = 100, -- Fel Iron Casing
+					[30305] = 100, -- Handful or Fel Iron Bolts
+					-- Explosives
+					[39973] = 100, -- Frost Grenade
+					[30547] = 100, -- Elemental Seaforium Charge
+					[30560] = 100, -- Super Sapper Charge
+					[30311] = 100, -- Adamantite Grenade
+					[30558] = 100, -- The Bigger One
+					[30310] = 100, -- Fel Iron Bomb
+					-- Goggles
+					[46111] = 100, -- Annihilator Holo-Gogs
+					[46115] = 100, -- Hard Khorium Goggles
+					[46109] = 100, -- Hyper-Magnified Moon Specs
+					[46107] = 100, -- Justicebringer 3000 Specs
+					[46112] = 100, -- Lightning Etched Specs
+					[46114] = 100, -- Mayhem Projection Goggles
+					[46108] = 100, -- Powerheal 9000 Lens
+					[46110] = 100, -- Primal-Attuned Goggles
+					[46116] = 100, -- Quad Deathblow X44 Goggles
+					[46106] = 100, -- Wonderheal XT68 Shades
+					[41317] = 100, -- Deathblow X11 Goggles
+					[41320] = 100, -- Destruction Holo-gogs
+					[40274] = 100, -- Furious Gizmatic Goggles
+					[41315] = 100, -- Gadgetstorm Goggles
+					[41311] = 100, -- Justicebringer 2000 Specs
+					[41316] = 100, -- Living Replicator Specs
+					[41319] = 100, -- Magnified Moon Specs
+					[41321] = 100, -- Powerheal 4000 Lens
+					[41314] = 100, -- Surestrike Goggles v2.0
+					[41312] = 100, -- Tankatronic Goggles
+					[41318] = 100, -- Wonderheal XT40 Shades
+					[30325] = 100, -- Hyper-Vision Goggles
+					[30575] = 100, -- Gnomish Battle Goggles
+					[30574] = 100, -- Gnomish Power Goggles
+					[30318] = 100, -- Ultra-Spectropic Detection Goggles
+					[30316] = 100, -- Cogspinner Goggles
+					[30317] = 100, -- Power Amplification Goggles
+					[46113] = 100, -- Surestrike Goggles v3.0
+					-- Devices
+					[44391] = 100, -- Field Repair Bot 110G
+					[30565] = 100, -- Foreman's Enchanted Helmet
+					[30566] = 100, -- Foreman's Reinforced Helmet
+					[30556] = 100, -- Rocket Boots Xtreme
+					[46697] = 100, -- Rocket Boots Xtreme Lite
+					[30570] = 100, -- Nigh-Invulnerability Belt
+					[36954] = 100, -- Dimensional Ripper - Area 52
+					[36955] = 100, -- Ultrasafe Transporter - Toshley's Station
+					[30569] = 100, -- Gnomish Pultryizer
+					[30563] = 100, -- Goblin Rocket Launcher
+					[30552] = 100, -- Mana Potion Injector
+					[30568] = 100, -- Gnomish Flame Turret
+					[30337] = 100, -- Crashin' Thrashin' Robot
+					[30551] = 100, -- Healing Potion Injector
+					[30348] = 100, -- Fel Iron Toolbox
+					[30548] = 100, -- Zapthrottle Mote Extractor
+					-- Weapons
+					[30315] = 100, -- Ornate Khorium Rifle
+					[30314] = 100, -- Felsteel Boomstick
+					[41307] = 100, -- Gyro-balanced Khorium Destroyer
+					[30313] = 100, -- Adamantite Rifle
+					[30312] = 100, -- Fel Iron Musket
+					-- Scopes
+					[30334] = 100, -- Stabilized Eternium Scope
+					[30332] = 100, -- Khorium Scope
+					[30329] = 100, -- Adamantite Scope
+					-- Mounts
+					[44157] = 100, -- Turbo-Charged Flying Machine
+					[44155] = 100, -- Flying Machine
+					-- Fireworks
+					[30344] = 815, -- Green Smoke Flare
+					[32814] = 813, -- Purple Smoke Flare
+					[30341] = 812, -- White Smoke Flare
+				-- Engineering
+					-- Parts
+					[19815] = 100, -- Delicate Arcanite Converter
+					[19791] = 100, -- Thorium Widget
+					[19795] = 100, -- Thorium Tube
+					[39895] = 100, -- Fused Wiring
+					[23071] = 100, -- Truesilver Transformer
+					[133587] = 100, -- Dense Blasting Powder
+					[12599] = 100, -- Mithril Casing
+					[12591] = 100, -- Unstable Trigger
+					[12589] = 100, -- Mithril Tube
+					[3961] = 100, -- Gyrochronatom
+					[12715] = 114, -- Goblin Rocket Fuel Recipe
+					[12895] = 100, -- Inlaid Mithril Cylinder Plans
+					[12585] = 100, -- Solid Blasting Powder
+					[3953] = 100, -- Bronze Framework
+					[12584] = 100, -- Gold Power Core
+					[3952] = 100, -- Minor Recombobulator
+					[3958] = 100, -- Iron Strut
+					[3942] = 100, -- Whirring Bronze Gizmo
+					[3938] = 100, -- Bronze Tube
+					[3945] = 100, -- Heavy Blasting Powder
+					[3973] = 100, -- Silver Contact
+					[3929] = 100, -- Coarse Blasting Powder
+					[3922] = 100, -- Handful of Copper Bolts
+					[3918] = 100, -- Rough Blasting Powder
+					-- Explosives
+					[19831] = 100, -- Arcane Bomb
+					[19799] = 100, -- Dark Iron Bomb
+					[19790] = 100, -- Thorium Grenade
+					[23080] = 100, -- Powerful Seaforium Charge
+					[12908] = 100, -- Goblin Dragon Gun
+					[12619] = 100, -- Hi-Explosive Bomb
+					[12754] = 100, -- The Big One
+					[12755] = 100, -- Goblin Bomb Dispenser
+					[23070] = 100, -- Dense Dynamite
+					[12603] = 100, -- Mithril Frag Bomb
+					[12716] = 100, -- Goblin Mortar
+					[12760] = 100, -- Goblin Sapper Charge
+					[3972] = 100, -- Large Seaforium Charge
+					[3968] = 100, -- Goblin Land Mine
+					[3967] = 100, -- Big Iron Bomb
+					[8243] = 100, -- Flash Bomb
+					[23069] = 100, -- EZ-Thro Dynamite II
+					[3962] = 100, -- Iron Grenade
+					[3960] = 100, -- Portable Bronze Mortar
+					[3955] = 100, -- Explosive Sheep
+					[12586] = 100, -- Solid Dynamite
+					[3950] = 100, -- Big Bronze Bomb
+					[3941] = 100, -- Small Bronze Bomb
+					[3933] = 100, -- Small Seaforium Charge
+					[3937] = 100, -- Large Copper Bomb
+					[3946] = 100, -- Heavy Dynamite
+					[8339] = 100, -- EZ-Thro Dynamite
+					[3931] = 100, -- Coarse Dynamite
+					[3923] = 100, -- Rough Copper Bomb
+					[3919] = 100, -- Rough Dynamite
+					-- Goggles
+					[24356] = 100, -- Bloodvine Goggles
+					[24357] = 100, -- Bloodvine Lens
+					[19825] = 100, -- Master Engineer's Goggles
+					[19794] = 100, -- Spellpower Goggles Xtreme Plus
+					[12622] = 100, -- Green Lens
+					[12618] = 100, -- Rose Colored Goggles
+					[12615] = 100, -- Spellpower Goggles Xtreme
+					[12607] = 100, -- Catseye Ultra Goggles
+					[12897] = 100, -- Gnomish Goggles
+					[12594] = 100, -- Fire Goggles
+					[3966] = 100, -- Craftsman's Monocle
+					[12587] = 100, -- Bright-Eye Goggles
+					[3956] = 100, -- Green Tinted Goggles
+					[3940] = 100, -- Shadow Goggles
+					[3934] = 100, -- Flying Tiger Goggles
+					-- Devices
+					[23486] = 100, -- Dimensional Ripper - Everlook
+					[22704] = 100, -- Field Repair Bot 74A
+					[23489] = 100, -- Ultrasafe Transporter - Gadgetzan
+					[19830] = 100, -- Arcanite Dragonling
+					[22797] = 100, -- Force Reactive Disk
+					[23081] = 100, -- Hyper-Radiant Flame Reflector
+					[23082] = 100, -- Ultra-Flash Shadow Reflector
+					[19819] = 100, -- Voice Amplification Modulator
+					[19814] = 100, -- Masterwork Target Dummy
+					[23078] = 100, -- Goblin Jumper Cables XL
+					[23077] = 100, -- Gyrofreeze Ice Reflector
+					[19793] = 100, -- Lifelike Mechanical Toad
+					[26011] = 100, -- Tranquil Mechanical Yeti
+					[23079] = 100, -- Major Recombobulator
+					[63750] = 100, -- High-powered Flashlight
+					[12624] = 100, -- Mithril Mechanical Dragonling
+					[28327] = 100, -- Steam Tonk Controller
+					[23096] = 100, -- Gnomish Alarm-o-Bot
+					[12758] = 100, -- Goblin Rocket Helmet
+					[12759] = 100, -- Gnomish Death Ray
+					[12907] = 100, -- Gnomish Mind Control Cap
+					[12617] = 100, -- Deepdive Helmet
+					[12906] = 100, -- Gnomish Battle Chicken
+					[23129] = 100, -- World Enlarger
+					[12905] = 100, -- Gnomish Rocket Boots
+					[8895] = 100, -- Goblin Rocket Boots
+					[12616] = 100, -- Parachute Cloak
+					[12903] = 100, -- Gnomish Harm Prevention Belt
+					[12902] = 100, -- Gnomish Net-o-Matic Projector
+					[12899] = 100, -- Gnomish Shrink Ray
+					[12718] = 100, -- Goblin Construction Helmet
+					[12717] = 100, -- Goblin Mining Helmet
+					[3971] = 100, -- Gnomish Cloaking Device
+					[3969] = 100, -- Mechanical Dragonling
+					[15255] = 100, -- Mechanical Repair Kit
+					[21940] = 100, -- Snowmaster 9000
+					[3965] = 100, -- Advanced Target Dummy
+					[3963] = 100, -- Compact Harvest Reaper Kit
+					[15633] = 100, -- Lil' Smoky
+					[15628] = 100, -- Pet Bombling
+					[9273] = 100, -- Goblin Jumper Cables
+					[3959] = 100, -- Discombobulator Ray
+					[3957] = 100, -- Ice Deflector
+					[6458] = 100, -- Ornate Spyglass
+					[3944] = 100, -- Flame Deflector
+					[9269] = 100, -- Gnomish Universal Remote
+					[9271] = 100, -- Aquadynamic Fish Attractor
+					[3932] = 100, -- Target Dummy
+					[3928] = 100, -- Mechanical Squirrel Box
+					[8334] = 100, -- Clockwork Box
+					-- Guns & Bows
+					[22795] = 100, -- Core Marksman Rifle
+					[19833] = 100, -- Flawless Arcanite Rifle
+					[19796] = 100, -- Dark Iron Rifle
+					[19792] = 100, -- Thorium Rifle
+					[12614] = 100, -- Mithril Heavy-bore Rifle
+					[12595] = 100, -- Mithril Blunderbuss
+					[3954] = 100, -- Moonsight Rifle
+					[3949] = 100, -- Silver-plated Shotgun
+					[3939] = 100, -- Lovingly Crafted Boomstick
+					[3936] = 100, -- Deadly Blunderbuss
+					[3925] = 100, -- Rough Boomstick
+					-- Scopes
+					[22793] = 100, -- Biznicks 247x128 Accurascope
+					[12620] = 100, -- Sniper Scope
+					[12597] = 100, -- Deadly Scope
+					[3979] = 100, -- Accurate Scope
+					[3978] = 100, -- Standard Scope
+					[3977] = 100, -- Crude Scope
+					-- Fireworks
+					[26443] = 100, -- Cluster Launcher
+					[26426] = 814, -- Large Blue Rocket Cluster
+					[26427] = 815, -- Large Green Rocket Cluster
+					[26428] = 818, -- Large Red Rocket Cluster
+					[23507] = 816, -- Snake Burst Firework
+					[26442] = 100, -- Firework Launcher
+					[26423] = 814, -- Blue Rocket Cluster
+					[26424] = 815, -- Green Rocket Cluster
+					[26425] = 818, -- Red Rocket Cluster
+					[26420] = 814, -- Large Blue Rocket
+					[26421] = 815, -- Large Green Rocket
+					[26422] = 818, -- Large Red Rocket
+					[23067] = 814, -- Blue Firework
+					[23068] = 815, -- Green Firework
+					[23066] = 818, -- Red Fireworks
+					[26416] = 814, -- Small Blue Rocket
+					[26417] = 815, -- Small Green Rocket
+					[26418] = 818, -- Small Red Rocket
+					-- Tools
+					[12590] = 100, -- Gyromatic Micro-Adjustor
+					[7430] = 100, -- Arclight Spanner
+
+			--# Inscription
+				-- Shadowlands Inscription
+					-- Ink
+					-- Optional Reagents
+					-- Books & Scrolls
+					-- Contracts
+					-- Cards
+					-- Vantus Runes
+					-- Staves
+					-- Off-Hands
+					-- Mass Milling
+					-- Hats
+				-- Kul Tiran Inscription & Zandalari Inscription
+					-- Inks
+					[298929] = 817, -- Maroon Ink
+					[264777] = 818, -- Crimson Ink
+					[264776] = 814, -- Ultramarine Ink
+					[264778] = 815, -- Viridescent Ink
+					-- Books & Scrolls
+					-- Contracts
+					-- Trinkets
+					-- Off-Hands
+					-- Mass Milling
+					-- Vantus Runes
+					-- Glyphs
+					-- Conversions
+					-- Blood Contracts
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Inscription
+					-- Cards
+					-- Mass Milling
+					-- Glyphs
+					-- Vantus Runes
+					-- Books & Scrolls
+					-- Relics
+				-- Draenor Inscription
+					-- Reagents and Research
+					-- Tools
+					-- Mass Milling
+					-- Glyphs
+					-- Item Enhancers
+					-- Card
+					-- Staves & Wands
+					-- Off-Hand
+				-- Pandaria Inscription
+					-- Inks
+					-- Glyphs
+					-- Staves & Off-Hands
+					-- Trinkets
+					-- Cards
+					-- Scrolls & Research
+					-- Shoulder Inscription
+					-- Quest
+					-- Toys & Pets
+				-- Cataclysm Inscription
+					-- Inks
+					-- Glyphs
+					-- Scrolls & Research
+					-- Cards
+					-- Shoulder Inscription
+					-- Weapons & Off-Hands
+					-- Quest
+					-- Toys
+				-- Northrend Inscription
+					-- Inks
+					-- Glyphs
+					-- Scrolls & Research
+					-- Cards
+					-- Off-Hands
+					-- Shoulder Inscription
+				-- Outland Inscription
+					-- Inks
+					-- Glyphs
+					-- Cards
+					-- Scrolls & Research
+					-- Off-Hands
+				-- Inscription
+					-- Research
+					-- Ink
+					-- Card
+					-- Off-Hand
+					-- Scrolls
+					-- Clear Mind
+					-- Glyphs
+					-- Other
+
+			--# Jewelcrafting
+				-- Shadowlands Designs
+					-- Quest Recipes
+					[338248] = 818, -- Brilliant Bauble
+					[338244] = 808, -- Carved Crystal Ring
+					[338239] = 909, -- Engraved Phaedrum Band
+					[338246] = 808, -- Faceted Crystal
+					[338249] = 909, -- Fine Sinvyr Chain
+					[338238] = 808, -- Gem Studded Bangle
+					[338241] = 814, -- Gleaming Kyranite Necklace
+					[338245] = 808, -- Hollowed Crystal
+					[338242] = 808, -- Kyranite Dangle
+					[338240] = 808, -- Polished Gemstones
+					[338247] = 818, -- Sinister Choker
+					[338243] = 909, -- Solenium Wire
+					-- Gems
+					[311867] = 815, -- Straddling Jewel Doublet
+					[311866] = 814, -- Versatile Jewel Doublet
+					[311868] = 817, -- Deadly Jewel Doublet
+					[311869] = 813, -- Masterful Jewel Doublet
+					[311871] = 816, -- Quick Jewel Doublet
+					[311870] = 818, -- Revitalizing Jewel Doublet
+					[311863] = 817, -- Deadly Jewel Cluster
+					[311859] = 814, -- Versatile Jewel Cluster
+					[311864] = 813, -- Masterful Jewel Cluster
+					[311865] = 816, -- Quick Jewel Cluster
+					-- Mass Prospecting
+					[311948] = 808, -- Mass Prospect Laestrite
+					[311950] = 808, -- Mass Prospect Oxxein
+					[311951] = 808, -- Mass Prospect Phaedrum
+					[311952] = 808, -- Mass Prospect Sinvyr
+					[311949] = 808, -- Mass Prospect Solenium
+					[311953] = 808, -- Mass Prospect Elethium
+					-- Optional Reagents
+					[343693] = 114, -- Novice Crafter's Mark
+					[343697] = 114, -- Crafter's Mark I
+					[343696] = 114, -- Crafter's Mark II
+					[343695] = 114, -- Crafter's Mark III
+					[352443] = 660, -- Vestige of Origins
+					[343694] = 114, -- Crafter's Mark of the Chained Isle
+					-- Necklaces
+					[311902] = 817, -- Deadly Laestrite Choker
+					[311904] = 813, -- Masterful Laestrite Choker
+					[311903] = 816, -- Quick Laestrite Choker
+					[311905] = 814, -- Versatile Laestrite Choker
+					[311906] = 817, -- Deadly Sinvyr Necklace
+					[311908] = 813, -- Masterful Phaedrum Necklace
+					[311907] = 816, -- Quick Oxxein Necklace
+					[311909] = 814, -- Versatile Solenium Necklace
+					-- Rings
+					[311880] = 817, -- Deadly Laestrite Band
+					[311882] = 813, -- Masterful Laestrite Band
+					[311881] = 816, -- Quick Laestrite Band
+					[311883] = 814, -- Versatile Laestrite Band
+					[311884] = 817, -- Deadly Sinvyr Ring
+					[311886] = 813, -- Masterful Phaedrum Ring
+					[311885] = 816, -- Quick Oxxein Ring
+					[311887] = 814, -- Versatile Solenium Ring
+					-- Specialized Jewelry
+					[327921] = 818, -- Shadowghast Necklace (Rank 1)
+					[332040] = 818, -- Shadowghast Necklace (Rank 2)
+					[332075] = 818, -- Shadowghast Necklace (Rank 3)
+					[338977] = 818, -- Shadowghast Necklace (Rank 4)
+					[327920] = 818, -- Shadowghast Ring (Rank 1)
+					[332039] = 818, -- Shadowghast Ring (Rank 2)
+					[332074] = 818, -- Shadowghast Ring (Rank 3)
+					[338978] = 818, -- Shadowghast Ring (Rank 4)
+					-- Statues
+					[355187] = 809, -- Porous Stone Statue
+					[355189] = 809, -- Shaded Stone Statue
+					-- Hats
+					[334548] = 812, -- Crown of the Righteous
+				-- Kul Tiran Designs & Zandalari Designs
+					-- Gems
+					-- Mass Prospecting
+					-- Rings
+					-- Weapons
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Designs
+					-- Rings
+					-- Necklaces
+					-- Gems
+					-- Crowns
+					-- Other
+					-- Mass Prospecting
+				-- Draenor Designs
+					-- Reagents and Research
+					[182127] = 808, -- Primal Gemcutting
+					[176087] = 114, -- Secrets of Draenor Jewelcrafting
+					[170700] = 808, -- Taladite Crystal
+					-- Jewelry Enhancers
+					[170701] = 808, -- Taladite Recrystalizer
+					-- Jewelry
+					[170716] = 818, -- Glowing Taladite Pendant
+					[170713] = 818, -- Glowing Taladite Ring
+					[170717] = 816, -- Shifting Taladite Pendant
+					[170714] = 815, -- Shifting Taladite Ring
+					[170718] = 814, -- Whispering Taladite Pendant
+					[170715] = 813, -- Whispering Taladite Ring
+					[170710] = 909, -- Glowing Blackrock Band
+					[170704] = 909, -- Glowing Iron Band
+					[170707] = 909, -- Glowing Iron Choker
+					[170711] = 909, -- Shifting Blackrock Band
+					[170705] = 909, -- Shifting Iron Band
+					[170708] = 909, -- Shifting Iron Choker
+					[170712] = 909, -- Whispering Blackrock Band
+					[170706] = 909, -- Whispering Iron Band
+					[170709] = 909, -- Whispering Iron Choker
+					-- Gems
+					[187634] = 816, -- Immaculate Critical Strike Taladite
+					[187635] = 814, -- Immaculate Haste Taladite
+					[187636] = 813, -- Immaculate Mastery Taladite
+					[187640] = 818, -- Immaculate Stamina Taladite
+					[187639] = 815, -- Immaculate Versatility Taladite
+					[170725] = 816, -- Greater Critical Strike Taladite
+					[170726] = 814, -- Greater Haste Taladite
+					[170727] = 813, -- Greater Mastery Taladite
+					[170730] = 818, -- Greater Stamina Taladite
+					[170729] = 815, -- Greater Versatility Taladite
+					[170719] = 816, -- Critical Strike Taladite
+					[170720] = 814, -- Haste Taladite
+					[170721] = 813, -- Mastery Taladite
+					[170724] = 818, -- Stamina Taladite
+					[170723] = 815, -- Versatility Taladite
+					-- Other
+					[170732] = 812, -- Prismatic Focusing Lens
+					[170731] = 812, -- Reflecting Prism
+				-- Pandaria Designs
+					-- Research
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Necklaces
+					-- Rings
+					-- Mounts
+					-- Toys & Pets
+				-- Cataclysm Designs
+					-- Blue Gems
+					[101735] = 814, -- Rigid Deepholm Iolite
+					[101742] = 814, -- Solid Deepholm Iolite
+					[101741] = 814, -- Sparkling Deepholm Iolite
+					[101740] = 814, -- Stormy Deepholm Iolite
+					[73404] = 814, -- Rigid Chimera's Eye
+					[73401] = 814, -- Solid Chimera's Eye
+					[73402] = 814, -- Sparkling Chimera's Eye
+					[73403] = 814, -- Stormy Chimera's Eye
+					[73344] = 814, -- Rigid Ocean Sapphire
+					[73340] = 814, -- Solid Ocean Sapphire
+					[73341] = 814, -- Sparkling Ocean Sapphire
+					[73343] = 814, -- Stormy Ocean Sapphire
+					[73230] = 814, -- Rigid Zephyrite
+					[73227] = 814, -- Solid Zephyrite
+					[73228] = 814, -- Sparkling Zephyrite
+					[73229] = 814, -- Stormy Zephyrite
+					-- Green Gems
+					[101749] = 815, -- Balanced Elven Peridot
+					[101754] = 815, -- Energized Elven Peridot
+					[101757] = 815, -- Forceful Elven Peridot
+					[101747] = 815, -- Infused Elven Peridot
+					[101755] = 815, -- Jagged Elven Peridot
+					[101745] = 815, -- Lightning Elven Peridot
+					[101743] = 815, -- Misty Elven Peridot
+					[101758] = 815, -- Nimble Elven Peridot
+					[101744] = 815, -- Piercing Elven Peridot
+					[101759] = 815, -- Puissant Elven Peridot
+					[101752] = 815, -- Radiant Elven Peridot
+					[101756] = 815, -- Regal Elven Peridot
+					[101746] = 815, -- Sensei's Elven Peridot
+					[101753] = 815, -- Shattered Elven Peridot
+					[101760] = 815, -- Steady Elven Peridot
+					[101751] = 815, -- Turbid Elven Peridot
+					[101750] = 815, -- Vivid Elven Peridot
+					[101748] = 815, -- Zen Elven Peridot
+					[73380] = 815, -- Forceful Dream Emerald
+					[73377] = 815, -- Jagged Dream Emerald
+					[73381] = 815, -- Lightning Dream Emerald
+					[73376] = 815, -- Nimble Dream Emerald
+					[73378] = 815, -- Piercing Dream Emerald
+					[73382] = 815, -- Puissant Dream Emerald
+					[73375] = 815, -- Regal Dream Emerald
+					[73384] = 815, -- Sensei's Dream Emerald
+					[73379] = 815, -- Steady Dream Emerald
+					[96226] = 815, -- Vivid Dream Emerald
+					[73383] = 815, -- Zen Dream Emerald
+					[73277] = 815, -- Forceful Jasper
+					[73274] = 815, -- Jagged Jasper
+					[73278] = 815, -- Lightning Jasper
+					[73273] = 815, -- Nimble Jasper
+					[73275] = 815, -- Piercing Jasper
+					[73279] = 815, -- Puissant Jasper
+					[73272] = 815, -- Regal Jasper
+					[73281] = 815, -- Sensei's Jasper
+					[73276] = 815, -- Steady Jasper
+					[73280] = 815, -- Zen Jasper
+					-- Orange Gems
+					[101773] = 817, -- Adept Lava Coral
+					[101775] = 817, -- Artful Lava Coral
+					[101768] = 817, -- Champion's Lava Coral
+					[101762] = 817, -- Crafty Lava Coral
+					[101761] = 817, -- Deadly Lava Coral
+					[101769] = 817, -- Deft Lava Coral
+					[101772] = 817, -- Fierce Lava Coral
+					[101776] = 817, -- Fine Lava Coral
+					[101764] = 817, -- Inscribed Lava Coral
+					[101774] = 817, -- Keen Lava Coral
+					[101778] = 817, -- Lucent Lava Coral
+					[101765] = 817, -- Polished Lava Coral
+					[101763] = 817, -- Potent Lava Coral
+					[101771] = 817, -- Reckless Lava Coral
+					[101766] = 817, -- Resolute Lava Coral
+					[101782] = 817, -- Resplendent Lava Coral
+					[101777] = 817, -- Skillful Lava Coral
+					[101781] = 817, -- Splendid Lava Coral
+					[101767] = 817, -- Stalwart Lava Coral
+					[101779] = 817, -- Tenuous Lava Coral
+					[101770] = 817, -- Wicked Lava Coral
+					[101780] = 817, -- Willful Lava Coral
+					[73371] = 817, -- Adept Emper Topaz
+					[73373] = 817, -- Artful Emper Topaz
+					[73365] = 817, -- Deadly Emper Topaz
+					[73368] = 817, -- Deft Emper Topaz
+					[73367] = 817, -- Fierce Emper Topaz
+					[73372] = 817, -- Fine Emper Topaz
+					[73364] = 817, -- Inscribed Emper Topaz
+					[73374] = 817, -- Keen Emper Topaz
+					[95755] = 817, -- Lucent Emper Topaz
+					[73361] = 817, -- Polished Emper Topaz
+					[73366] = 817, -- Potent Emper Topaz
+					[73369] = 817, -- Reckless Emper Topaz
+					[73362] = 817, -- Resolute Emper Topaz
+					[95756] = 817, -- Resplendent Emper Topaz
+					[73370] = 817, -- Skillful Emper Topaz
+					[95754] = 817, -- Willful Emper Topaz
+					[73268] = 817, -- Adept Hessonite
+					[73270] = 817, -- Artful Hessonite
+					[73262] = 817, -- Deadly Hessonite
+					[73265] = 817, -- Deft Hessonite
+					[73264] = 817, -- Fierce Hessonite
+					[73269] = 817, -- Fine Hessonite
+					[73260] = 817, -- Inscribed Hessonite
+					[73271] = 817, -- Keen Hessonite
+					[73258] = 817, -- Polished Hessonite
+					[73263] = 817, -- Potent Hessonite
+					[73266] = 817, -- Reckless Hessonite
+					[73267] = 817, -- Skillful Hessonite
+					-- Purple Gems
+					[101784] = 813, -- Accurate Shadow Spinel
+					[101793] = 813, -- Defender's Shadow Spinel
+					[101787] = 813, -- Etched Shadow Spinel
+					[101783] = 813, -- Glinting Shadow Spinel
+					[101791] = 813, -- Guardian's Shadow Spinel
+					[101788] = 813, -- Mysterious Shadow Spinel
+					[101789] = 813, -- Purified Shadow Spinel
+					[101786] = 813, -- Retaliating Shadow Spinel
+					[101790] = 813, -- Shifting Shadow Spinel
+					[101794] = 813, -- Sovereign Shadow Spinel
+					[101792] = 813, -- Timeless Shadow Spinel
+					[101785] = 813, -- Veiled Shadow Spinel
+					[73360] = 813, -- Accurate Demonseye
+					[73352] = 813, -- Defender's Demonseye
+					[73356] = 813, -- Etched Demonseye
+					[73357] = 813, -- Glinting Demonseye
+					[73354] = 813, -- Guardian's Demonseye
+					[73355] = 813, -- Purified Demonseye
+					[73358] = 813, -- Retaliating Demonseye
+					[73351] = 813, -- Shifting Demonseye
+					[73350] = 813, -- Sovereign Demonseye
+					[73353] = 813, -- Timeless Demonseye
+					[73359] = 813, -- Veiled Demonseye
+					[73250] = 813, -- Accurate Nightstone
+					[73242] = 813, -- Defender's Nightstone
+					[73246] = 813, -- Etched Nightstone
+					[73247] = 813, -- Glinting Nightstone
+					[73244] = 813, -- Guardian's Nightstone
+					[73245] = 813, -- Purified Nightstone
+					[73248] = 813, -- Retaliating Nightstone
+					[73241] = 813, -- Shifting Nightstone
+					[73240] = 813, -- Sovereign Nightstone
+					[73243] = 813, -- Timeless Nightstone
+					[73249] = 813, -- Veiled Nightstone
+					-- Red Gems
+					[101799] = 818, -- Bold Queen's Garnet
+					[101797] = 818, -- Brilliant Queen's Garnet
+					[101795] = 818, -- Delicate Queen's Garnet
+					[101798] = 818, -- Flashing Queen's Garnet
+					[101796] = 818, -- Precise Queen's Garnet
+					[73396] = 818, -- Bold Chimera's Eye
+					[73399] = 818, -- Brilliant Chimera's Eye
+					[73397] = 818, -- Delicate Chimera's Eye
+					[73398] = 818, -- Flashing Chimera's Eye
+					[73400] = 818, -- Precise Chimera's Eye
+					[73335] = 818, -- Bold Inferno Ruby
+					[73338] = 818, -- Brilliant Inferno Ruby
+					[73336] = 818, -- Delicate Inferno Ruby
+					[73337] = 818, -- Flashing Inferno Ruby
+					[73339] = 818, -- Precise Inferno Ruby
+					[73222] = 818, -- Bold Carnelian
+					[73225] = 818, -- Brilliant Carnelian
+					[73223] = 818, -- Delicate Carnelian
+					[73224] = 818, -- Flashing Carnelian
+					[73226] = 818, -- Precise Carnelian
+					-- Yellow Gems
+					[101803] = 816, -- Fractured Lightstone
+					[101804] = 816, -- Mystic Lightstone
+					[101802] = 816, -- Quick Lightstone
+					[101800] = 816, -- Smooth Lightstone
+					[101801] = 816, -- Subtle Lightstone
+					[73409] = 816, -- Fractured Chimera's Eye
+					[73407] = 816, -- Mystic Chimera's Eye
+					[73408] = 816, -- Quick Chimera's Eye
+					[73406] = 816, -- Smooth Chimera's Eye
+					[73405] = 816, -- Subtle Chimera's Eye
+					[73349] = 816, -- Fractured Amberjewel
+					[73347] = 816, -- Mystic Amberjewel
+					[73348] = 816, -- Quick Amberjewel
+					[73346] = 816, -- Smooth Amberjewel
+					[73345] = 816, -- Subtle Amberjewel
+					[73239] = 816, -- Fractured Alicite
+					[73234] = 816, -- Quick Alicite
+					[73232] = 816, -- Smooth Alicite
+					[73231] = 816, -- Subtle Alicite
+					-- Meta Gems
+					[96255] = 812, -- Agile Shadowspirit Diamond
+					[73468] = 812, -- Austere Shadowspirit Diamond
+					[73466] = 812, -- Bracing Shadowspirit Diamond
+					[96257] = 812, -- Burning Shadowspirit Diamond
+					[73465] = 812, -- Chaotic Shadowspirit Diamond
+					[73472] = 812, -- Destructive Shadowspirit Diamond
+					[73469] = 812, -- Effulgent Shadowspirit Diamond
+					[73470] = 812, -- Ember Shadowspirit Diamond
+					[73474] = 812, -- Enigmatic Shadowspirit Diamond
+					[73467] = 812, -- Eternal Shadowspirit Diamond
+					[73464] = 812, -- Fleet Shadowspirit Diamond
+					[73476] = 812, -- Forlorn Shadowspirit Diamond
+					[73475] = 812, -- Impassive Shadowspirit Diamond
+					[73473] = 812, -- Powerful Shadowspirit Diamond
+					[96256] = 812, -- Reverberating Shadowspirit Diamond
+					[73471] = 812, -- Revitalizing Shadowspirit Diamond
+					-- Necklaces
+					[73521] = 816, -- Brazen Elementium Medallion
+					[73506] = 814, -- Elementium Guardian
+					[73504] = 816, -- Entwined Elementium Choker
+					[73505] = 818, -- Eye of Many Deaths
+					[99543] = 816, -- Vicious Amberjewel Pendant
+					[99544] = 818, -- Vicious Ruby Pendant
+					[99542] = 814, -- Vicious Sapphire Pendant
+					[73497] = 813, -- Nightstone Choker
+					[73496] = 816, -- Alicite Pendant
+					-- Rings
+					[73498] = 813, -- Band of Blades
+					[73520] = 813, -- Elementium Destroyer's Ring
+					[73503] = 815, -- Elementium Moebius Band
+					[98921] = 816, -- Punisher's Band
+					[73502] = 817, -- Ring of Warring Elements
+					[99540] = 816, -- Vicious Amberjewel Band
+					[99541] = 818, -- Vicious Ruby Signet
+					[99539] = 814, -- Vicious Sapphire Ring
+					[73495] = 817, -- Hessonite Band
+					[73494] = 815, -- Jasper Ring
+					-- Crowns
+					[73623] = 808, -- Rhinestone Sunglasses
+					[73627] = 816, -- Jeweler's Amber Monocle
+					[73626] = 814, -- Jeweler's Sapphire Monocle
+					[73625] = 818, -- Jeweler's Ruby Monocle
+					-- Fist Weapons
+					[73621] = 808, -- The Perforator
+					[73620] = 818, -- Carnelian Spikes
+					-- Toys & Prisms
+					[73478] = 812, -- Fire Prism
+					[73622] = 808, -- Stardust
+				-- Northrend Designs
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Prismatic Gems
+					-- Necklaces
+					-- Rings
+					-- Pets and Projects
+				-- Outland Designs
+					-- Reagents
+					-- Blue Gems
+					-- Green Gems
+					-- Orange Gems
+					-- Purple Gems
+					-- Red Gems
+					-- Yellow Gems
+					-- Meta Gems
+					-- Necklaces
+					-- Rings
+					-- Crowns
+					-- Trinkets
+					-- Prisms & Statues
+				-- Jewelcrafting Designs
+					-- Rings
+					-- Necklaces
+					-- Materials
+					-- Crowns
+					-- Trinkets
+					-- Fist Weapons
+					-- Statues
+
+			--# Leatherworking
+				-- Shadowlands Patterns
+					-- Materials
+					-- Optional Reagents
+					-- Armor Kits
+					-- Other
+					-- Specialized Armor
+					-- Leather Armor
+					-- Mail Armor
+					-- Weapons
+					-- Mount Equipment
+				-- Kul Tiran Patterns & Zandalari Patterns
+					-- Optional Reagents
+					-- Leather Armor
+					-- Mail Armor
+					-- Weapons
+					-- Mount Equipment
+					-- Other
+					-- Conversions
+					-- Focus
+					-- Follower Equipment
+					-- Tool of the Trade
+				-- Legion Patterns
+					-- Optional Reagents
+					-- Leather Armor
+					-- Mail Armor
+					-- Other
+				-- Draenor Patterns
+					-- Optional Reagents
+					-- Reagents and Research
+					-- Bags
+					-- Armor Enhancers
+					-- Leather Armor
+					-- Mail Armor
+					-- Cloaks
+					-- Other
+				-- Pandaria Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Embossments
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Drums
+					-- Research
+				-- Cataclysm Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+				-- Northrend Patterns
+					-- Optional Research
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Drums
+				-- Outland Patterns
+					-- Optional Research
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Special
+					-- Drums
+				-- Leatherworking Patterns
+					-- Optional Research
+					-- Materials
+					-- Armor Kits
+					-- Bags
+					-- Helms
+					-- Shoulders
+					-- Chest
+					-- Bracers
+					-- Gloves
+					-- Belts
+					-- Pants
+					-- Boots
+					-- Cloaks
+
 			--# Mining
-			[102167] = 5, -- Smelt Trillium
-			[102165] = 5, -- Smelt Ghost Iron
-			[74529] = 5, -- Smelt Pyrite
-			[74537] = 5, -- Smelt Hardened Elementium
-			[74530] = 5, -- Smelt Elementium
-			[84038] = 5, -- Smelt Obsidium
-			[49258] = 5, -- Smelt Saronite
-			[55211] = 5, -- Smelt Titanium
-			[55208] = 5, -- Smelt Titansteel
-			[49252] = 5, -- Smelt Cobalt
-			[35750] = 803, -- Earth Sunder
-			[35751] = 4, -- Fire Sunder
-			[46353] = 5, -- Smelt Hardened Khorium
-			[29361] = 5, -- Smelt Khorium
-			[29686] = 5, -- Smelt Hardened Adamantite
-			[29360] = 5, -- Smelt Felsteel
-			[29359] = 5, -- Smelt Eternium
-			[29358] = 5, -- Smelt Adamantite
-			[29356] = 5, -- Smelt Fel Iron
-			[14891] = 5, -- Smelt Dark Iron
-			[22967] = 5, -- Smelt Enchanted Elementium
-			[70524] = 5, -- Enchanted Thorium Bar
-			[16153] = 5, -- Smelt Thorium
-			[10098] = 5, -- Smelt Truesilver
-			[10097] = 5, -- Smelt Mithril
-			[3308] = 5, -- Smelt Gold
-			[3307] = 5, -- Smelt Iron
-			[3569] = 5, -- Smelt Steel
-			[2659] = 5, -- Smelt Bronze
-			[2658] = 5, -- Smelt Silver
-			[3304] = 5, -- Smelt Tin
-			[2657] = 5, -- Smelt Copper
+				-- Pandaria Mining
+					-- Smelting
+					[102167] = 5, -- Smelt Trillium
+					[102165] = 5, -- Smelt Ghost Iron
+				-- Cataclysm Mining
+					-- Smelting
+					[74529] = 5, -- Smelt Pyrite
+					[74537] = 5, -- Smelt Hardened Elementium
+					[74530] = 5, -- Smelt Elementium
+					[84038] = 5, -- Smelt Obsidium
+				-- Northrend Mining
+					-- Smelting
+					[49258] = 5, -- Smelt Saronite
+					[55211] = 5, -- Smelt Titanium
+					[55208] = 5, -- Smelt Titansteel
+					[49252] = 5, -- Smelt Cobalt
+				-- Outland Mining
+					-- Elemental
+					[35750] = 803, -- Earth Sunder
+					[35751] = 4, -- Fire Sunder
+					-- Smelting
+					[46353] = 5, -- Smelt Hardened Khorium
+					[29361] = 5, -- Smelt Khorium
+					[29686] = 5, -- Smelt Hardened Adamantite
+					[29360] = 5, -- Smelt Felsteel
+					[29359] = 5, -- Smelt Eternium
+					[29358] = 5, -- Smelt Adamantite
+					[29356] = 5, -- Smelt Fel Iron
+				-- Mining
+					-- Smelting
+					[14891] = 5, -- Smelt Dark Iron
+					[22967] = 5, -- Smelt Enchanted Elementium
+					[70524] = 5, -- Enchanted Thorium Bar
+					[16153] = 5, -- Smelt Thorium
+					[10098] = 5, -- Smelt Truesilver
+					[10097] = 5, -- Smelt Mithril
+					[3308] = 5, -- Smelt Gold
+					[3307] = 5, -- Smelt Iron
+					[3569] = 5, -- Smelt Steel
+					[2659] = 5, -- Smelt Bronze
+					[2658] = 5, -- Smelt Silver
+					[3304] = 5, -- Smelt Tin
+					[2657] = 5, -- Smelt Copper
+
+			--# Tailoring
+				-- Shadowlands Patterns
+					-- Quest Recipes
+					[338270] = 110, -- Ardensilk Cloth
+					[338277] = 110, -- Bleakcloth
+					[338269] = 110, -- Bolt of Ardensilk Cloth
+					[338276] = 110, -- Bolt of Bleakcloth
+					[338279] = 110, -- Bolt of Prideweave
+					[338272] = 110, -- Bolt of Woven Gossamer
+					[338267] = 110, -- Cloak of Camouflage
+					[338273] = 110, -- Gossamer Cloth
+					[338275] = 110, -- Haunting Hood
+					[338278] = 110, -- Looming Tapestry
+					[338280] = 110, -- Pridewing Cloth
+					[338271] = 110, -- Woven Gossamer Tunic
+					-- Optional Reagents
+					[352445] = 660, -- Vestige of Origins
+					[343200] = 114, -- Crafter's Mark of the Chained Isle
+					[343201] = 114, -- Crafter's Mark III
+					[343202] = 114, -- Crafter's Mark II
+					[343204] = 114, -- Crafter's Mark I
+					[343659] = 114, -- Novice Crafter's Mark
+					-- Bags
+					[345986] = 110, -- Lightless Silk Pouch
+					[3528454] = 110, -- Shrouded Cloth Bag
+					-- Specialized Armor
+					[310885] = 110, -- Grim-Veiled Belt
+					[332037] = 110, -- Grim-Veiled Belt
+					[332072] = 110, -- Grim-Veiled Belt
+					[339003] = 110, -- Grim-Veiled Belt
+					[310886] = 110, -- Grim-Veiled Bracers
+					[332038] = 110, -- Grim-Veiled Bracers
+					[332073] = 110, -- Grim-Veiled Bracers
+					[339004] = 110, -- Grim-Veiled Bracers
+					[310880] = 110, -- Grim-Veiled Cape
+					[332032] = 110, -- Grim-Veiled Cape
+					[332067] = 110, -- Grim-Veiled Cape
+					[338995] = 110, -- Grim-Veiled Cape
+					[310882] = 110, -- Grim-Veiled Hood
+					[332034] = 110, -- Grim-Veiled Hood
+					[332069] = 110, -- Grim-Veiled Hood
+					[339000] = 110, -- Grim-Veiled Hood
+					[310881] = 110, -- Grim-Veiled Mittens
+					[332033] = 110, -- Grim-Veiled Mittens
+					[332068] = 110, -- Grim-Veiled Mittens
+					[338998] = 110, -- Grim-Veiled Mittens
+					[310883] = 110, -- Grim-Veiled Pants
+					[332035] = 110, -- Grim-Veiled Pants
+					[332070] = 110, -- Grim-Veiled Pants
+					[339001] = 110, -- Grim-Veiled Pants
+					[310879] = 110, -- Grim-Veiled Robe
+					[332031] = 110, -- Grim-Veiled Robe
+					[332066] = 110, -- Grim-Veiled Robe
+					[338996] = 110, -- Grim-Veiled Robe
+					[310878] = 110, -- Grim-Veiled Sandals
+					[332030] = 110, -- Grim-Veiled Sandals
+					[332065] = 110, -- Grim-Veiled Sandals
+					[338997] = 110, -- Grim-Veiled Sandals
+					[310884] = 110, -- Grim-Veiled Spaulders
+					[332036] = 110, -- Grim-Veiled Spaulders
+					[332071] = 110, -- Grim-Veiled Spaulders
+					[339002] = 110, -- Grim-Veiled Spaulders
+					-- Armor
+					[310901] = 110, -- Shadowlace Trousers
+					[310902] = 110, -- Shadowlace Mantle
+					[310897] = 110, -- Shadowlace Tunic
+					[310900] = 110, -- Shadowlace Cowl
+					[310898] = 110, -- Shadowlace Cloak
+					[310899] = 110, -- Shadowlace Handwraps
+					[310903] = 110, -- Shadowlace Cord
+					[310896] = 110, -- Shadowlace Footwraps
+					[310904] = 110, -- Shadowlace Cuffs
+					[310875] = 110, -- Shrouded Cloth Spaulders
+					[310874] = 110, -- Shrouded Cloth Pants
+					[310870] = 110, -- Shrouded Cloth Robe
+					[310873] = 110, -- Shrouded Cloth Hood
+					[310871] = 110, -- Shrouded Cloth Cape
+					[310872] = 110, -- Shrouded Cloth Mittens
+					[310876] = 110, -- Shrouded Cloth Belt
+					[310869] = 110, -- Shrouded Cloth Sandals
+					[310877] = 110, -- Shrouded Cloth Bracers
+					-- Hats & Accessories
+					[355183] = 110, -- Shrouded Hand Towel
+					[334499] = 110, -- Pink Party Hat
+					-- Bandages
+					[310923] = 202, -- Heavy Shrouded Cloth Bandage
+					[310924] = 202, -- Shrouded Cloth Bandage
+				-- Kul Tiran Patterns & Zandalari Patterns
+					-- Embroidery
+					[272440] = 110, -- Embroidered Deep Sea Satin
+					[279183] = 646, -- Discreet Spellthread
+					[279184] = 646, -- Feathery Spellthread
+					[279182] = 646, -- Resilient Spellthread
+					-- Optional Reagents
+					[330257] = 809, -- Relic of the Past I
+					[330258] = 816, -- Relic of the Past II
+					[330259] = 815, -- Relic of the Past III
+					[330260] = 813, -- Relic of the Past IV
+					[330261] = 818, -- Relic of the Past V
+					-- Bags
+					[257130] = 110, -- Embroidered Deep Sea Bag (Rank 3)
+					[257129] = 110, -- Embroidered Deep Sea Bag (Rank 2)
+					[257128] = 110, -- Embroidered Deep Sea Bag (Rank 1)
+					[257127] = 110, -- Deep Sea Bag (Rank 3)
+					[257126] = 110, -- Deep Sea Bag (Rank 2)
+					[257125] = 110, -- Deep Sea Bag (Rank 1)
+					-- Armor
+					[304564] = 110, -- Eldritch Seaweave Breeches
+					[304561] = 110, -- Eldritch Seaweave Gloves
+					[304563] = 110, -- Maddening Seaweave Breeches
+					[304560] = 110, -- Maddening Seaweave Gloves
+					[304562] = 110, -- Unsettling Seaweave Breeches
+					[304559] = 110, -- Unsettling Seaweave Gloves
+					[299036] = 110, -- Banded Seaweave Breeches
+					[299033] = 110, -- Banded Seaweave Gloves
+					[299035] = 110, -- Reinforced Seaweave Breeches
+					[299032] = 110, -- Reinforced Seaweave Gloves
+					[299034] = 110, -- Gilded Seaweave Breeches
+					[299031] = 110, -- Gilded Seaweave Gloves
+					[285093] = 110, -- Tempered Deep Sea Breeches
+					[285094] = 110, -- Tempered Deep Sea Gloves
+					[285085] = 110, -- Fortified Deep Sea Breeches
+					[285086] = 110, -- Fortified Deep Sea Gloves
+					[285077] = 110, -- Enhanced Deep Sea Breeches
+					[285078] = 110, -- Enhanced Deep Sea Gloves
+					[257124] = 110, -- Emblazoned Deep Sea Breeches
+					[257121] = 110, -- Emblazoned Deep Sea Gloves
+					[257123] = 110, -- Imbued Deep Sea Breeches
+					[257120] = 110, -- Imbued Deep Sea Gloves
+					[257122] = 110, -- Embroidered Deep Sea Breeches
+					[257118] = 110, -- Embroidered Deep Sea Gloves
+					[294843] = 110, -- Notorious Combatant's Satin Belt (Rank 3)
+					[294842] = 110, -- Notorious Combatant's Satin Belt (Rank 2)
+					[294841] = 110, -- Notorious Combatant's Satin Belt (Rank 1)
+					[294834] = 110, -- Notorious Combatant's Satin Boots (Rank 3)
+					[294833] = 110, -- Notorious Combatant's Satin Boots (Rank 2)
+					[294832] = 110, -- Notorious Combatant's Satin Boots (Rank 1)
+					[294846] = 110, -- Notorious Combatant's Satin Bracers (Rank 3)
+					[294845] = 110, -- Notorious Combatant's Satin Bracers (Rank 2)
+					[294844] = 110, -- Notorious Combatant's Satin Bracers (Rank 1)
+					[294831] = 110, -- Notorious Combatant's Satin Cloak (Rank 3)
+					[294830] = 110, -- Notorious Combatant's Satin Cloak (Rank 2)
+					[294829] = 110, -- Notorious Combatant's Satin Cloak (Rank 1)
+					[294837] = 110, -- Notorious Combatant's Satin Mittens (Rank 3)
+					[294836] = 110, -- Notorious Combatant's Satin Mittens (Rank 2)
+					[294835] = 110, -- Notorious Combatant's Satin Mittens (Rank 1)
+					[294840] = 110, -- Notorious Combatant's Satin Pants (Rank 3)
+					[294839] = 110, -- Notorious Combatant's Satin Pants (Rank 2)
+					[294838] = 110, -- Notorious Combatant's Satin Pants (Rank 1)
+					[304579] = 110, -- Uncanny Combatant's Satin Belt (Rank 3)
+					[304578] = 110, -- Uncanny Combatant's Satin Belt (Rank 2)
+					[304577] = 110, -- Uncanny Combatant's Satin Belt (Rank 1)
+					[304570] = 110, -- Uncanny Combatant's Satin Boots (Rank 3)
+					[304569] = 110, -- Uncanny Combatant's Satin Boots (Rank 2)
+					[304568] = 110, -- Uncanny Combatant's Satin Boots (Rank 1)
+					[304582] = 110, -- Uncanny Combatant's Satin Bracers (Rank 3)
+					[304581] = 110, -- Uncanny Combatant's Satin Bracers (Rank 2)
+					[304580] = 110, -- Uncanny Combatant's Satin Bracers (Rank 1)
+					[304567] = 110, -- Uncanny Combatant's Satin Cloak (Rank 3)
+					[304566] = 110, -- Uncanny Combatant's Satin Cloak (Rank 2)
+					[304565] = 110, -- Uncanny Combatant's Satin Cloak (Rank 1)
+					[304573] = 110, -- Uncanny Combatant's Satin Mittens (Rank 3)
+					[304572] = 110, -- Uncanny Combatant's Satin Mittens (Rank 2)
+					[304571] = 110, -- Uncanny Combatant's Satin Mittens (Rank 1)
+					[304576] = 110, -- Uncanny Combatant's Satin Pants (Rank 3)
+					[304575] = 110, -- Uncanny Combatant's Satin Pants (Rank 2)
+					[304574] = 110, -- Uncanny Combatant's Satin Pants (Rank 1)
+					[257116] = 110, -- Embroidered Deep Sea Cloak (Rank 3)
+					[257115] = 110, -- Embroidered Deep Sea Cloak (Rank 2)
+					[257114] = 110, -- Embroidered Deep Sea Cloak (Rank 1)
+					[282170] = 110, -- Sinister Combatant's Satin Belt (Rank 3)
+					[282169] = 110, -- Sinister Combatant's Satin Belt (Rank 2)
+					[282168] = 110, -- Sinister Combatant's Satin Belt (Rank 1)
+					[282196] = 110, -- Sinister Combatant's Satin Boots (Rank 3)
+					[282195] = 110, -- Sinister Combatant's Satin Boots (Rank 2)
+					[282194] = 110, -- Sinister Combatant's Satin Boots (Rank 1)
+					[282166] = 110, -- Sinister Combatant's Satin Bracers (Rank 3)
+					[282165] = 110, -- Sinister Combatant's Satin Bracers (Rank 2)
+					[282164] = 110, -- Sinister Combatant's Satin Bracers (Rank 1)
+					[282276] = 110, -- Sinister Combatant's Satin Cloak (Rank 3)
+					[282275] = 110, -- Sinister Combatant's Satin Cloak (Rank 2)
+					[282204] = 110, -- Sinister Combatant's Satin Cloak (Rank 1)
+					[282193] = 110, -- Sinister Combatant's Satin Mittens (Rank 3)
+					[282192] = 110, -- Sinister Combatant's Satin Mittens (Rank 2)
+					[282191] = 110, -- Sinister Combatant's Satin Mittens (Rank 1)
+					[282177] = 110, -- Sinister Combatant's Satin Pants (Rank 3)
+					[282176] = 110, -- Sinister Combatant's Satin Pants (Rank 2)
+					[282175] = 110, -- Sinister Combatant's Satin Pants (Rank 1)
+					[269610] = 110, -- Honorable Combatant's Satin Belt (Rank 3)
+					[269609] = 110, -- Honorable Combatant's Satin Belt (Rank 2)
+					[269608] = 110, -- Honorable Combatant's Satin Belt (Rank 1)
+					[269601] = 110, -- Honorable Combatant's Satin Boots (Rank 3)
+					[269600] = 110, -- Honorable Combatant's Satin Boots (Rank 2)
+					[269599] = 110, -- Honorable Combatant's Satin Boots (Rank 1)
+					[269613] = 110, -- Honorable Combatant's Satin Bracers (Rank 3)
+					[269612] = 110, -- Honorable Combatant's Satin Bracers (Rank 2)
+					[269611] = 110, -- Honorable Combatant's Satin Bracers (Rank 1)
+					[269598] = 110, -- Honorable Combatant's Satin Cloak (Rank 3)
+					[269597] = 110, -- Honorable Combatant's Satin Cloak (Rank 2)
+					[269596] = 110, -- Honorable Combatant's Satin Cloak (Rank 1)
+					[269604] = 110, -- Honorable Combatant's Satin Mittens (Rank 3)
+					[269603] = 110, -- Honorable Combatant's Satin Mittens (Rank 2)
+					[269602] = 110, -- Honorable Combatant's Satin Mittens (Rank 1)
+					[269607] = 110, -- Honorable Combatant's Satin Pants (Rank 3)
+					[269606] = 110, -- Honorable Combatant's Satin Pants (Rank 2)
+					[269605] = 110, -- Honorable Combatant's Satin Pants (Rank 1)
+					[257104] = 110, -- Tidespray Linen Robe
+					[257107] = 110, -- Tidespray Linen Cloak
+					[257097] = 110, -- Tidespray Linen Hood
+					[257101] = 110, -- Tidespray Linen Spaulders
+					[257099] = 110, -- Tidespray Linen Pants
+					[257102] = 110, -- Tidespray Linen Belt
+					[257096] = 110, -- Tidespray Linen Mittens
+					[257095] = 110, -- Tidespray Linen Sandals
+					[257103] = 110, -- Tidespray Linen Bracers
+					-- Battle Flags
+					[257136] = 110, -- Battle Flag: Phalanx Defense (Rank 3)
+					[257135] = 110, -- Battle Flag: Phalanx Defense (Rank 2)
+					[257134] = 110, -- Battle Flag: Phalanx Defense (Rank 1)
+					[257139] = 110, -- Battle Flag: Rallying Swiftness (Rank 3)
+					[257138] = 110, -- Battle Flag: Rallying Swiftness (Rank 2)
+					[257137] = 110, -- Battle Flag: Rallying Swiftness (Rank 1)
+					[257133] = 110, -- Battle Flag: Spirit of Freedom (Rank 3)
+					[257132] = 110, -- Battle Flag: Spirit of Freedom (Rank 2)
+					[257131] = 110, -- Battle Flag: Spirit of Freedom (Rank 1)
+					-- Other
+					[268983] = 110, -- Hooked Deep Sea Net
+					[268982] = 110, -- Tidespray Linen Net
+					-- Bandages
+					[267202] = 202, -- Deep Sea Bandage
+					[267201] = 202, -- Tidespray Linen Bandage
+					-- Conversions
+					[287274] = 801, -- Aqueous Alteration
+					[286654] = 321, -- Sanguinated Alteration
+					-- Mount Equipment
+					[301409] = 110, -- Saddlechute
+					[301403] = 110, -- Seabreeze Saddle Blanket
+					-- Focus
+					[307175] = 321, -- Void Focus
+					-- Follower Equipment
+					[278414] = 110, -- Rough-hooked Tidespray Linen
+					-- Tool of the Trade
+					[292946] = 641, -- Synchronous Thread
+				-- Legion Patterns
+					-- Trainnig
+					[186799] = 110, -- Basic Silkweave Robe
+					[186801] = 110, -- Embroidered Silkweave Robe
+					[186803] = 110, -- Handcrafted Silkweave Bag
+					[187060] = 110, -- Handcrafted Silkweave Hood
+					[186738] = 110, -- Handcrafted Silkweave Robe
+					[187066] = 110, -- Masterwork Silkweave Bracers
+					[186764] = 110, -- Rune-Threaded Silkweave Bracers
+					[186763] = 110, -- Rune-Threaded Silkweave Robe
+					[187064] = 110, -- Silkweave Bracer Lining
+					[187065] = 110, -- Silkweave Bracer: Outer Layer
+					[187058] = 110, -- Silkweave Hood Lining
+					[187059] = 110, -- Silkweave Hood: Outer Layer
+					-- Optional Reagents
+					[330252] = 809, -- Relic of the Past I
+					[330253] = 816, -- Relic of the Past II
+					[330254] = 815, -- Relic of the Past III
+					[330255] = 813, -- Relic of the Past IV
+					[330256] = 818, -- Relic of the Past V
+					-- Reagents
+					[185962] = 110, -- Imbued Silkweave
+					-- Cloth Armor
+					[239412] = 660, -- Celumbra, the Night's Dichotomy
+					[185954] = 110, -- Imbued Silkweave Bracers (Rank 3)
+					[185946] = 110, -- Imbued Silkweave Bracers (Rank 2)
+					[185926] = 110, -- Imbued Silkweave Bracers (Rank 1)
+					[185955] = 110, -- Imbued Silkweave Cinch (Rank 3)
+					[185947] = 110, -- Imbued Silkweave Cinch (Rank 2)
+					[185927] = 110, -- Imbued Silkweave Cinch (Rank 1)
+					[185956] = 110, -- Imbued Silkweave Epaulets (Rank 3)
+					[185948] = 110, -- Imbued Silkweave Epaulets (Rank 2)
+					[185928] = 110, -- Imbued Silkweave Epaulets (Rank 1)
+					[185959] = 110, -- Imbued Silkweave Gloves (Rank 3)
+					[185951] = 110, -- Imbued Silkweave Gloves (Rank 2)
+					[185931] = 110, -- Imbued Silkweave Gloves (Rank 1)
+					[185958] = 110, -- Imbued Silkweave Hood (Rank 3)
+					[185950] = 110, -- Imbued Silkweave Hood (Rank 2)
+					[185930] = 110, -- Imbued Silkweave Hood (Rank 1)
+					[185957] = 110, -- Imbued Silkweave Pantaloons (Rank 3)
+					[185949] = 110, -- Imbued Silkweave Pantaloons (Rank 2)
+					[185929] = 110, -- Imbued Silkweave Pantaloons (Rank 1)
+					[185961] = 110, -- Imbued Silkweave Robe (Rank 3)
+					[185953] = 110, -- Imbued Silkweave Robe (Rank 2)
+					[185933] = 110, -- Imbued Silkweave Robe (Rank 1)
+					[185960] = 110, -- Imbued Silkweave Slippers (Rank 3)
+					[185952] = 110, -- Imbued Silkweave Slippers (Rank 2)
+					[185932] = 110, -- Imbued Silkweave Slippers (Rank 1)
+					[247809] = 110, -- Lightweave Breeches (Rank 3)
+					[247808] = 110, -- Lightweave Breeches (Rank 2)
+					[247807] = 110, -- Lightweave Breeches (Rank 1)
+					[185942] = 110, -- Silkweave Bracers (Rank 3)
+					[185934] = 110, -- Silkweave Bracers (Rank 2)
+					[185918] = 110, -- Silkweave Bracers (Rank 1)
+					[185943] = 110, -- Silkweave Cinch (Rank 3)
+					[185935] = 110, -- Silkweave Cinch (Rank 2)
+					[185919] = 110, -- Silkweave Cinch (Rank 1)
+					[185944] = 110, -- Silkweave Epaulets (Rank 3)
+					[185936] = 110, -- Silkweave Epaulets (Rank 2)
+					[185920] = 110, -- Silkweave Epaulets (Rank 1)
+					[208350] = 110, -- Silkweave Gloves (Rank 3)
+					[185939] = 110, -- Silkweave Gloves (Rank 2)
+					[185923] = 110, -- Silkweave Gloves (Rank 1)
+					[208351] = 110, -- Silkweave Hood (Rank 3)
+					[185938] = 110, -- Silkweave Hood (Rank 2)
+					[185922] = 110, -- Silkweave Hood (Rank 1)
+					[208353] = 110, -- Silkweave Pantaloons (Rank 3)
+					[185937] = 110, -- Silkweave Pantaloons (Rank 2)
+					[185921] = 110, -- Silkweave Pantaloons (Rank 1)
+					[185945] = 110, -- Silkweave Robe (Rank 3)
+					[185941] = 110, -- Silkweave Robe (Rank 2)
+					[185925] = 110, -- Silkweave Robe (Rank 1)
+					[208352] = 110, -- Silkweave Slippers (Rank 3)
+					[185940] = 110, -- Silkweave Slippers (Rank 2)
+					[185924] = 110, -- Silkweave Slippers (Rank 1)
+					-- Cloaks
+					[186114] = 110, -- Imbued Silkweave Cover (Rank 3)
+					[186113] = 110, -- Imbued Silkweave Cover (Rank 2)
+					[186112] = 110, -- Imbued Silkweave Cover (Rank 1)
+					[186117] = 110, -- Imbued Silkweave Drape (Rank 3)
+					[186116] = 110, -- Imbued Silkweave Drape (Rank 2)
+					[186115] = 110, -- Imbued Silkweave Drape (Rank 1)
+					[186111] = 110, -- Imbued Silkweave Flourish (Rank 3)
+					[186110] = 110, -- Imbued Silkweave Flourish (Rank 2)
+					[186109] = 110, -- Imbued Silkweave Flourish (Rank 1)
+					[186108] = 110, -- Imbued Silkweave Shade (Rank 3)
+					[186107] = 110, -- Imbued Silkweave Shade (Rank 2)
+					[186106] = 110, -- Imbued Silkweave Shade (Rank 1)
+					[186097] = 110, -- Silkweave Cover
+					[186100] = 110, -- Silkweave Drape
+					[186094] = 110, -- Silkweave Flourish
+					[186091] = 110, -- Silkweave Shade
+					-- Other
+					[229045] = 110, -- Imbued Silkweave Bag (Rank 3)
+					[229043] = 110, -- Imbued Silkweave Bag (Rank 2)
+					[229041] = 110, -- Imbued Silkweave Bag (Rank 1)
+					[220511] = 110, -- Bloodtotem Saddle Blanket
+					[213035] = 110, -- Clothes Chest: Dalaran Citizens
+					[213036] = 110, -- Clothes Chest: Karazhan Opera House
+					[213037] = 110, -- Clothes Chest: Molten Core
+					[186388] = 110, -- Silkweave Satchel
+					-- Cures of the Broken Isles
+					[202854] = 202, -- Silkweave Splint
+					[230047] = 202, -- Feathered Luffa
+					[202853] = 202, -- Silkweave Bandage
+				-- Draenor Patterns
+					-- Optional Reagents
+					[330247] = 809, -- Relic of the Past I
+					[330248] = 816, -- Relic of the Past II
+					[330249] = 815, -- Relic of the Past III
+					[330250] = 813, -- Relic of the Past IV
+					[330251] = 818, -- Relic of the Past V
+					-- Reagents and Research
+					[182123] = 110, -- Primal Weaving
+					[168835] = 110, -- Hexweave Cloth
+					[176058] = 114, -- Secrets of Draenor Tailoring
+					-- Dyes and Thread
+					[168836] = 110, -- Hexweave Embroidery
+					-- Armor
+					[168847] = 110, -- Brilliant Hexweave Cloak
+					[168844] = 110, -- Hexweave Belt
+					[168842] = 110, -- Hexweave Bracers
+					[168838] = 110, -- Hexweave Cowl
+					[168840] = 110, -- Hexweave Gloves
+					[168839] = 110, -- Hexweave Leggings
+					[168837] = 110, -- Hexweave Mantle
+					[168841] = 110, -- Hexweave Robe
+					[168843] = 110, -- Hexweave Slippers
+					[168846] = 110, -- Nimble Hexweave Cloak
+					[168845] = 110, -- Powerful Hexweave Cloak
+					[168852] = 110, -- Sumptuous Cowl
+					[168854] = 110, -- Sumptuous Leggings
+					[168853] = 110, -- Sumptuous Robes
+					-- Battle Standards
+					[176314] = 110, -- Fearsome Battle Standard (Alliance)
+					[176316] = 110, -- Fearsome Battle Standard (Horde)
+					[176313] = 110, -- Inspiring Battle Standard (Alliance)
+					[176315] = 110, -- Inspiring Battle Standard (Horde)
+					-- Other
+					[168850] = 110, -- Creeping Carpet
+					[168849] = 110, -- Elekk Plushie
+					[168848] = 110, -- Hexweave Bag
+					-- Cures of Draenor
+					[172539] = 202, -- Antiseptic Bandage
+				-- Pandaria Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Embroidery
+					-- Spellthreads
+					-- Bags
+					-- Hats & Hoods
+					-- Shoulders
+					-- Robes & Tunics
+					-- Bracers
+					-- Belts
+					-- Gloves
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Bandages
+				-- Cataclysm Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Spellthreads
+					-- Bags
+					-- Hats & Hoods
+					-- Shoulders
+					-- Robes & Tunics
+					-- Bracers
+					-- Belts
+					-- Gloves
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Nets
+					-- Bandages
+				-- Northrend Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Spellthread
+					-- Bags
+					-- Hats & Hoods
+					-- Shoulders
+					-- Robes & Tunics
+					-- Bracers
+					-- Belts
+					-- Gloves
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Shirts
+					-- Mounts
+					-- Nets
+					-- Bandages
+				-- Outland Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Spellthreads
+					-- Bags
+					-- Hats & Hoods
+					-- Shoulders
+					-- Robes & Tunics
+					-- Bracers
+					-- Belts
+					-- Gloves
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Nets
+					-- Bandages
+				-- Tailoring Patterns
+					-- Optional Reagents
+					-- Materials
+					-- Bags
+					-- Hats & Hoods
+					-- Shoulders
+					-- Robes & Tunics
+					-- Bracers
+					-- Belts
+					-- Gloves
+					-- Pants
+					-- Boots
+					-- Cloaks
+					-- Shirts
+					-- Bandages
 
 			--# Cooking 
 				-- Shadowlands Cuisine
@@ -6761,812 +8735,6 @@ local function updateData()
 					[8238] = 4, -- Savory Deviate Delight
 					[9513] = 202, -- Thistle Tea
 					[45695] = 202, -- Captain Rumsey's Lager
-
-			--# Engineering
-				-- Shadowlands Engineering
-					-- Belt Attachments
-					[310496] = 100, -- Electro-Jump
-					[310495] = 100, -- Dimensional Shifter
-					[310497] = 100, -- Damage Retaliator
-					-- Bombs
-					[310486] = 100, -- Bomb Bola Launcher
-					[310485] = 100, -- Shadow Land Mine
-					[310484] = 100, -- Nutcracker Grenade
-					-- Devices
-					[310535] = 100, -- Wormhole Generator: Shadowlands
-					[310490] = 100, -- Momentum Redistributor Boots
-					[310492] = 100, -- Gravimetric Scrambler Cannon
-					[345179] = 100, -- Disposable Spectrophasic Reanimator
-					[310493] = 100, -- 50UL-TR4P
-					-- Goggles
-					[310509] = 100, -- Reinforced Ectoplasmic Specs
-					[310504] = 100, -- Grounded Ectoplasmic Specs
-					[310501] = 100, -- Flexible Ectoplasmic Specs
-					[310507] = 100, -- Articulated Ectoplasmic Specs
-					-- Optional Reagents
-					[343103] = 202, -- Crafter's Mark of the Chained Isle
-					[343102] = 202, -- Crafter's Mark III
-					[343100] = 202, -- Crafter's Mark II
-					[343099] = 202, -- Crafter's Mark I
-					[343661] = 202, -- Novice Crafter's Mark
-					-- Parts
-					[310526] = 100, -- Wormfed Gear Assembly
-					[310525] = 100, -- Mortal Coiled Spring
-					[310524] = 100, -- Porous Polishing Abrasive
-					[310522] = 100, -- Handful of Laestrite Bolts
-					-- Robotics
-					[331007] = 100, -- PHA7-YNX
-					-- Scopes
-					[310533] = 100, -- Optical Target Embiggener
-					[310534] = 100, -- Infra-green Reflex Sight
-					-- Weapons
-					[310536] = 100, -- Precision Lifeforce Inverter
-					-- Quest Recipes
-					[338218] = 100, -- Bone Reinforced Oxxein Tubing
-					[338217] = 100, -- Boneclad Stake Launcher
-					[338119] = 100, -- Bug Zapifier
-					[338220] = 100, -- Duelist's Pistol
-					[338212] = 100, -- Electro Cable
-					[338210] = 100, -- Energized Battery
-					[338219] = 100, -- Handful of Oxxein Bolts
-					[338216] = 100, -- Hardened Bolts
-					[338214] = 100, -- Piston Assembly
-					[338213] = 100, -- Power Hammer
-					[338222] = 100, -- Sinvyr Barrel
-					[338223] = 100, -- Sinvyr Trigger Mechanism
-				-- Kul Tiran Engineering & Zandalari Engineering
-					-- Belt Attachments
-					[255936] = 100, -- Belt Enchant: Holographic Horror Projector
-					[269123] = 100, -- Belt Enchant: Miniaturized Plasma Shield
-					[255940] = 100, -- Belt Enchant: Personal Space Amplifier
-					-- Bombs
-					[255394] = 100, -- F.R.I.E.D. (Rank 3)
-					[255393] = 100, -- F.R.I.E.D. (Rank 2)
-					[255392] = 100, -- F.R.I.E.D. (Rank 1)
-					[255409] = 100, -- Organic Discombobulation Grenade (Rank 3)
-					[255408] = 100, -- Organic Discombobulation Grenade (Rank 2)
-					[255407] = 100, -- Organic Discombobulation Grenade (Rank 1)
-					[255397] = 100, -- Thermo-Accelerated Plague Spreader (Rank 3)
-					[255396] = 100, -- Thermo-Accelerated Plague Spreader (Rank 2)
-					[255395] = 100, -- Thermo-Accelerated Plague Spreader (Rank 1)
-					-- Devices
-					[298930] = 100, -- Blingtron 7000
-					[299105] = 100, -- Wormhole Generator: Kul Tiras
-					[299106] = 100, -- Wormhole Generator: Zandalar
-					[283916] = 100, -- Unstable Temporal Time Shifter (Rank 3)
-					[283915] = 100, -- Unstable Temporal Time Shifter (Rank 2)
-					[283914] = 100, -- Unstable Temporal Time Shifter (Rank 1)
-					[256156] = 100, -- Deployable Attire Rearranger (Rank 3)
-					[256155] = 100, -- Deployable Attire Rearranger (Rank 2)
-					[256154] = 100, -- Deployable Attire Rearranger (Rank 1)
-					[256072] = 100, -- Electroshock Mount Motivator (Rank 3)
-					[256071] = 100, -- Electroshock Mount Motivator (Rank 2)
-					[256070] = 100, -- Electroshock Mount Motivator (Rank 1)
-					[256084] = 100, -- Interdimensional Companion Repository (Rank 3)
-					[256082] = 100, -- Interdimensional Companion Repository (Rank 2)
-					[256080] = 100, -- Interdimensional Companion Repository (Rank 1)
-					[256075] = 100, -- XA-1000 Surface Skimmer (Rank 3)
-					[256074] = 100, -- XA-1000 Surface Skimmer (Rank 2)
-					[256073] = 100, -- XA-1000 Surface Skimmer (Rank 1)
-					[280734] = 100, -- Magical Intrusion Dampener (Rank 3)
-					[280733] = 100, -- Magical Intrusion Dampener (Rank 2)
-					[280732] = 100, -- Magical Intrusion Dampener (Rank 1)
-					-- Cloth Goggles
-					[305945] = 100, -- A-N0M-A-L0U5 Synthetic Specs
-					[299005] = 100, -- A5C-3N-D3D Synthetic Specs
-					[299004] = 100, -- Abyssal Synthetic Specs
-					[299006] = 100, -- Charged A5C-3N-D3D Synthetic Specs
-					[305943] = 100, -- Paramount Synthetic Specs
-					[305944] = 100, -- Superior Synthetic Specs
-					[272058] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 3)
-					[272057] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 2)
-					[272056] = 100, -- AZ3-R1-T3 Synthetic Specs (Rank 1)
-					[286875] = 100, -- Charged SP1-R1-73D Synthetic Specs
-					[286874] = 100, -- SP1-R1-73D Synthetic Specs
-					[286873] = 100, -- Surging Synthetic Specs
-					[291090] = 100, -- Emblazoned Synthetic Specs
-					[291089] = 100, -- Imbued Synthetic Specs
-					-- Leather Goggles
-					[305942] = 100, -- A-N0M-A-L0U5 Gearspun Goggles
-					[299008] = 100, -- A5C-3N-D3D Gearspun Goggles
-					[299007] = 100, -- Abyssal Gearspun Goggles
-					[299009] = 100, -- Charged A5C-3N-D3D Gearspun Goggles
-					[305940] = 100, -- Paramount Gearspun Goggles
-					[305941] = 100, -- Superior Gearspun Goggles
-					[272061] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 3)
-					[272060] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 2)
-					[272059] = 100, -- AZ3-R1-T3 Gearspun Goggles (Rank 1)
-					[286869] = 100, -- Charged SP1-R1-73D Gearspun Goggles
-					[286868] = 100, -- SP1-R1-73D Gearspun Goggles
-					[286867] = 100, -- Surging Gearspun Goggles
-					[291092] = 100, -- Emblazoned Gearspun Goggles
-					[291091] = 100, -- Imbued Gearspun Goggles
-					-- Mail Goggles
-					[305951] = 100, -- A-N0M-A-L0U5 Bionic Bifocals
-					[299011] = 100, -- A5C-3N-D3D Bionic Bifocals
-					[299010] = 100, -- Abyssal Bionic Bifocals
-					[299012] = 100, -- Charged A5C-3N-D3D Bionic Bifocals
-					[305949] = 100, -- Paramount Bionic Bifocals
-					[305950] = 100, -- Superior Bionic Bifocals
-					[272064] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 3)
-					[272063] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 2)
-					[272062] = 100, -- AZ3-R1-T3 Bionic Bifocals (Rank 1)
-					[286866] = 100, -- Charged SP1-R1-73D Bionic Bifocals
-					[286865] = 100, -- SP1-R1-73D Bionic Bifocals
-					[286864] = 100, -- Surging Bionic Bifocals
-					[291094] = 100, -- Emblazoned Bionic Bifocals
-					[291093] = 100, -- Imbued Bionic Bifocals
-					-- Plate Goggles
-					[305948] = 100, -- A-N0M-A-L0U5 Orthogonal Optics
-					[299014] = 100, -- A5C-3N-D3D Orthogonal Optics
-					[299013] = 100, -- Abyssal Orthogonal Optics
-					[299015] = 100, -- Charged A5C-3N-D3D Orthogonal Optics
-					[305946] = 100, -- Paramount Orthogonal Optics
-					[305947] = 100, -- Superior Orthogonal Optics
-					[272067] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 3)
-					[272066] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 2)
-					[272065] = 100, -- AZ3-R1-T3 Orthogonal Optics (Rank 1)
-					[286872] = 100, -- Charged SP1-R1-73D Orthogonal Optics
-					[286871] = 100, -- SP1-R1-73D Orthogonal Optics
-					[286870] = 100, -- Surging Orthogonal Optics
-					[291096] = 100, -- Emblazoned Orthogonal Optics
-					[291095] = 100, -- Imbued Orthogonal Optics
-					-- Weapons
-					[294786] = 100, -- Notorious Combatant's Discombobulator (Rank 3)
-					[294785] = 100, -- Notorious Combatant's Discombobulator (Rank 2)
-					[294784] = 100, -- Notorious Combatant's Discombobulator (Rank 1)
-					[294789] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 3)
-					[294788] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 2)
-					[294787] = 100, -- Notorious Combatant's Stormsteel Destroyer (Rank 1)
-					[305861] = 100, -- Uncanny Combatant's Discombobulator (Rank 3)
-					[305862] = 100, -- Uncanny Combatant's Discombobulator (Rank 2)
-					[305863] = 100, -- Uncanny Combatant's Discombobulator (Rank 1)
-					[305858] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 3)
-					[305859] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 2)
-					[305860] = 100, -- Uncanny Combatant's Stormsteel Destroyer (Rank 1)
-					[255459] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 3)
-					[255458] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 2)
-					[255457] = 100, -- Finely-Tuned Stormsteel Destroyer (Rank 1)
-					[253152] = 100, -- Precision Attitude Adjuster (Rank 3)
-					[253151] = 100, -- Precision Attitude Adjuster (Rank 2)
-					[253150] = 100, -- Precision Attitude Adjuster (Rank 1)
-					[282808] = 100, -- Sinister Combatant's Discombobulator (Rank 3)
-					[282807] = 100, -- Sinister Combatant's Discombobulator (Rank 2)
-					[282806] = 100, -- Sinister Combatant's Discombobulator (Rank 1)
-					[282811] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 3)
-					[282810] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 2)
-					[282809] = 100, -- Sinister Combatant's Stormsteel Destroyer (Rank 1)
-					[269726] = 100, -- Honorable Combatant's Discombobulator (Rank 3)
-					[269725] = 100, -- Honorable Combatant's Discombobulator (Rank 2)
-					[269724] = 100, -- Honorable Combatant's Discombobulator (Rank 1)
-					[269729] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 3)
-					[269728] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 2)
-					[269727] = 100, -- Honorable Combatant's Stormsteel Destroyer (Rank 1)
-					[253122] = 100, -- Magnetic Discombobulator
-					-- Scopes & Ammo
-					[264962] = 100, -- Crow's Nest Scope (Rank 3)
-					[264961] = 100, -- Crow's Nest Scope (Rank 2)
-					[264960] = 100, -- Crow's Nest Scope (Rank 1)
-					[265102] = 100, -- Frost-Laced Ammunition (Rank 3)
-					[265101] = 100, -- Frost-Laced Ammunition (Rank 2)
-					[265100] = 100, -- Frost-Laced Ammunition (Rank 1)
-					[265099] = 100, -- Incendiary Ammunition (Rank 3)
-					[265098] = 100, -- Incendiary Ammunition (Rank 2)
-					[265097] = 100, -- Incendiary Ammunition (Rank 1)
-					[264967] = 100, -- Monelite Scope of Alacrity (Rank 3)
-					[264966] = 100, -- Monelite Scope of Alacrity (Rank 2)
-					[264964] = 100, -- Monelite Scope of Alacrity (Rank 1)
-					-- Mounts & Pets
-					[256132] = 100, -- Super-Charged Engine
-					[274621] = 100, -- Mecha-Mogul Mk2
-					[286478] = 100, -- Mechantula
-					-- Conversions
-					[287279] = 801, -- Aqueous Thermo-Degradation
-					[286647] = 321, -- Sanguinated Thermo-Degradation
-					-- Follower Equipment
-					[278411] = 100, -- Makeshift Azerite Detector
-					[278413] = 100, -- Monelite Fish Finder
-					-- Focus
-					[307220] = 321, -- Void Focus
-					-- Tools of the Trade
-					[298255] = 100, -- Ub3r-Module: P.O.G.O.
-					[298256] = 100, -- Ub3r-Module: Scrap Cannon
-					[298257] = 100, -- Ub3r-Module: Ub3r-Coil
-					[282975] = 100, -- The Ub3r-SPanner
-					[283399] = 100, -- Ub3r-Module: Short-Fused Bomb Bots
-					[283401] = 100, -- Ub3r-Module: Ub3r S3ntry Mk. X8.0
-					[283403] = 100, -- Ub3r-Module: Ub3r-Improved Target Dummy
-				-- Legion Engineering
-					-- Goggles
-					[235755] = 100, -- Chain Skullblasters
-					[199011] = 100, -- Double-Barreled Cranial Cannon (Rank 3)
-					[198997] = 100, -- Double-Barreled Cranial Cannon (Rank 2)
-					[198970] = 100, -- Double-Barreled Cranial Cannon (Rank 1)
-					[235756] = 100, -- Heavy Skullblasters
-					[199012] = 100, -- Ironsight Cranial Cannon (Rank 3)
-					[198998] = 100, -- Ironsight Cranial Cannon (Rank 2)
-					[198971] = 100, -- Ironsight Cranial Cannon (Rank 1)
-					[235754] = 100, -- Rugged Skullblasters
-					[199010] = 100, -- Sawed-Off Cranial Cannon (Rank 3)
-					[198996] = 100, -- Sawed-Off Cranial Cannon (Rank 2)
-					[198969] = 100, -- Sawed-Off Cranial Cannon (Rank 1)
-					[199009] = 100, -- Semi-Automagic Cranial Cannon (Rank 3)
-					[198995] = 100, -- Semi-Automagic Cranial Cannon (Rank 2)
-					[198968] = 100, -- Semi-Automagic Cranial Cannon (Rank 1)
-					[235753] = 100, -- Tailored Skullblasters
-					[199005] = 100, -- Blink-Trigger Headgun (Rank 3)
-					[198991] = 100, -- Blink-Trigger Headgun (Rank 2)
-					[198939] = 100, -- Blink-Trigger Headgun (Rank 1)
-					[199007] = 100, -- Bolt-Action Headgun (Rank 3)
-					[198993] = 100, -- Bolt-Action Headgun (Rank 2)
-					[198966] = 100, -- Bolt-Action Headgun (Rank 1)
-					[199008] = 100, -- Reinforced Headgun (Rank 3)
-					[198994] = 100, -- Reinforced Headgun (Rank 2)
-					[198967] = 100, -- Reinforced Headgun (Rank 1)
-					[199006] = 100, -- Tactical Headgun (Rank 3)
-					[198992] = 100, -- Tactical Headgun (Rank 2)
-					[198965] = 100, -- Tactical Headgun (Rank 1)
-					-- Combat Tools
-					[199013] = 100, -- Deployable Bullet Dispenser (Rank 3)
-					[198999] = 100, -- Deployable Bullet Dispenser (Rank 2)
-					[198972] = 100, -- Deployable Bullet Dispenser (Rank 1)
-					[199014] = 100, -- Gunpowder Charge (Rank 3)
-					[199000] = 100, -- Gunpowder Charge (Rank 2)
-					[198973] = 100, -- Gunpowder Charge (Rank 1)
-					[199015] = 100, -- Pump-Action Bandage Gun (Rank 3)
-					[199001] = 100, -- Pump-Action Bandage Gun (Rank 2)
-					[198974] = 100, -- Pump-Action Bandage Gun (Rank 1)
-					-- Devices
-					[198981] = 100, -- Trigger
-					[199017] = 100, -- Auto-Hammer (Rank 3)
-					[199003] = 100, -- Auto-Hammer (Rank 2)
-					[198976] = 100, -- Auto-Hammer (Rank 1)
-					[198980] = 100, -- Blingtron's Circuit Design Tutorial
-					[199018] = 100, -- Failure Detection Pylon (Rank 3)
-					[199004] = 100, -- Failure Detection Pylon (Rank 2)
-					[198977] = 100, -- Failure Detection Pylon (Rank 1)
-					[199016] = 100, -- Gunpack (Rank 3)
-					[199002] = 100, -- Gunpack (Rank 2)
-					[198975] = 100, -- Gunpack (Rank 1)
-					[247744] = 100, -- Wormhole Generator: Argus
-					[247717] = 100, -- Gravitational Reduction Slippers
-					[198978] = 100, -- Gunshoes
-					[198979] = 100, -- Intra-Dalaran Wormhole Generator
-					[209645] = 100, -- Leystone Buoy
-					[209646] = 100, -- Mecha-Bond Imprint Matrix
-					-- Relics
-					[209501] = 100, -- "The Felic"
-					[209502] = 100, -- Shockinator
-					-- Robotics
-					[235775] = 100, -- Rechargeable Reaves Battery
-					[198989] = 100, -- Reaves Module: Bling Mode
-					[198985] = 100, -- Reaves Module: Failure Detection Mode
-					[198987] = 100, -- Reaves Module: Fireworks Display Mode
-					[198990] = 100, -- Reaves Module: Piloted Combat Mode
-					[198984] = 100, -- Reaves Module: Repair Mode
-					[198988] = 100, -- Reaves Module: Snack Distribution Mode
-					[198983] = 100, -- Reaves Module: Wormhole Generator Mode
-					[200466] = 100, -- Sonic Environment Enhancer
-					[198982] = 100, -- Reaves Battery
-				-- Draenor Engineering
-					-- Reagents and Research
-					[182120] = 100, -- Primal Welding
-					[169080] = 100, -- Gearspring Parts
-					[177054] = 202, -- Secrets of Draenor Engineering
-					-- Goggles
-					[162195] = 100, -- Cybernetic Mechshades
-					[162196] = 100, -- Night-Vision Mechshades
-					[162197] = 100, -- Plasma Mechshades
-					[162198] = 100, -- Razorguard Mechshades
-					-- Devices
-					[187496] = 100, -- Advanced Muzzlesprocket
-					[187497] = 100, -- Bi-Directional Fizzle Reducer
-					[169078] = 100, -- Didi's Delicate Assembly
-					[162205] = 100, -- Findle's Loot-a-Rang
-					[173289] = 100, -- Hemets Heartseeker
-					[187521] = 100, -- Infrablue-Blocker Lenses
-					[463878] = 100, -- Linkgrease Locksprocket
-					[162203] = 100, -- Megawatt Filament
-					[162202] = 100, -- Oglethorpe's Missile Splitter
-					[162214] = 100, -- Personal Hologram
-					[162199] = 100, -- Shrediron's Shredder
-					[162217] = 100, -- Swapblaster
-					[187520] = 100, -- Taladite Firing Pin
-					[177363] = 100, -- True Iron Trigger
-					[162208] = 100, -- Ultimate Gnomish Army Knife (Uncommon)
-					[169140] = 100, -- Ultimate Gnomish Army Knife (Rare)
-					[162206] = 100, -- World Shrinker
-					[162216] = 100, -- Wormhole Centrifuge
-					[162204] = 100, -- Goblin Glider Kit
-					[173308] = 100, -- Mecha-Blast Rocket
-					[173309] = 100, -- Shieldtronic Shield
-					[162207] = 100, -- Stealthman 54
-					-- Robotics
-					[162218] = 100, -- Blingtron 5000
-					[162210] = 100, -- Lifelike Mechanical Frostboar
-					[162209] = 100, -- Mechanical Axebeak
-					[176732] = 100, -- Mechanical Scorpid
-					-- Fireworks
-					[171072] = 814, -- Alliance Firework
-					[171073] = 818, -- Horde Firework
-					[171074] = 819, -- Snake Firework
-				-- Pandaria Engineering
-					-- Schematic
-					[143743] = 202, -- Schematic: Chief Engineer Jard's Journal
-					-- Explosives
-					[127128] = 100, -- Goblin Dragon Gun, Mark II
-					[127127] = 100, -- G91 Landshark
-					[127124] = 100, -- Locksmith's Powderkeg
-					-- Fireworks
-					[131256] = 817, -- Autumn Flower Firework
-					[128260] = 817, -- Celestial Firework
-					[128261] = 812, -- Grand Celebration Firework
-					[131258] = 815, -- Jade Blossom Firework
-					[131353] = 100, -- Pandaria Fireworks
-					[128262] = 815, -- Serpent's Heart Firework
-					-- Devices
-					[139197] = 100, -- Advanced Refrigeration Unit
-					[139196] = 100, -- Pierre
-					[143714] = 100, -- Rascal-Bot
-					[127129] = 100, -- Blingtron 4000
-					[127135] = 100, -- Mechanical Pandaren Dragonling
-					[127132] = 100, -- Wormhole Generator: Pandaria
-					[127134] = 100, -- Ghost Iron Dragonling
-					[127131] = 100, -- Thermal Anvil
-					[126392] = 100, -- Goblin Glider
-					[109099] = 100, -- Watergliding Jets
-					-- Reagents
-					[139176] = 100, -- Jard's Peculiar Energy Source
-					[131563] = 100, -- Tinker's Kit
-					[127113] = 100, -- Ghost Iron Bolts
-					[127114] = 100, -- High-Explosive Gunpowder
-					-- Goggles
-					[127118] = 100, -- Agile Retinal Armor
-					[127119] = 100, -- Camouflage Retinal Armor
-					[127120] = 100, -- Deadly Retinal Armor
-					[127121] = 100, -- Energized Retinal Armor
-					[127117] = 100, -- Lightweight Retinal Armor
-					[127130] = 100, -- Mist-Piercing Goggles
-					[127123] = 100, -- Reinforced Retinal Armor
-					[127122] = 100, -- Specialized Retinal Armor
-					-- Guns
-					[127137] = 100, -- Long-Range Trillium Sniper
-					[127136] = 100, -- Big Game Hunter
-					-- Scopes
-					[127115] = 100, -- Lord Blastington's Scope of Doom
-					[127116] = 100, -- Mirror Scope
-					-- Mounts
-					[139192] = 100, -- Sky Golem
-					[127138] = 100, -- Depleted-Kyparium Rocket
-					[127139] = 100, -- Geosynchronous World Spinner
-					-- Cogwheels
-					[131211] = 100, -- Flashing Tinker's Gear
-					[131212] = 100, -- Fractured Tinker's Gear
-					[131213] = 100, -- Precise Tinker's Gear
-					[131214] = 100, -- Quick Tinker's Gear
-					[131215] = 100, -- Rigid Tinker's Gear
-					[131216] = 100, -- Smooth Tinker's Gear
-					[131217] = 100, -- Sparkling Tinker's Gear
-					[131218] = 100, -- Subtle Tinker's Gear
-				-- Cataclysm Engineering
-					-- Tinkers
-					[84425] = 100, -- Cardboard Assassin
-					[84427] = 100, -- Grounded Plasma Shield
-					[84424] = 100, -- Invisibility Field
-					[82200] = 100, -- Spinal Healing Injector
-					-- Reagents
-					[94748] = 800, -- Electrified Ether
-					[84403] = 100, -- Handful of Obsidium Bolts
-					-- Explosives
-					[95707] = 100, -- Big Daddy
-					[84409] = 100, -- Volatile Seaforium Blastpack
-					-- Goggles
-					[81722] = 100, -- Agile Bio-Optic Killshades
-					[81724] = 100, -- Camouflage Bio-Optic Killshades
-					[81716] = 100, -- Deadly Bio-Optic Killshades
-					[81720] = 100, -- Energized Bio-Optic Killshades
-					[81725] = 100, -- Lightweight Bio-Optic Killshades
-					[81714] = 100, -- Reinforced Bio-Optic Killshades
-					[81715] = 100, -- Specialized Bio-Optic Killshades
-					[84406] = 100, -- Authentic Jr. Engineer Goggles
-					-- Devices
-					[84418] = 100, -- Elementium Dragonling
-					[84416] = 100, -- Elementium Toolbox
-					[95705] = 100, -- Gnomish Gravity Well
-					[84421] = 100, -- Loot-a-Rang
-					[84429] = 100, -- Goblin Barbecue
-					[84430] = 100, -- Heat-Treated Spinning Lure
-					[84413] = 100, -- De-Weaponized Mechanical Companion
-					[84412] = 100, -- Personal World Destroyer
-					[84415] = 100, -- Lure Master Tackle Box
-					[95703] = 100, -- Electrostatic Condenser
-					-- Weapons
-					[100687] = 100, -- Extreme-Impact Hole Puncher
-					[84420] = 100, -- Finely-Tuned Throat Needler
-					[84432] = 100, -- Kickback 5000
-					[84431] = 100, -- Overpowered Chicken Splitter
-					[84417] = 100, -- Volatile Thunderstick
-					[84411] = 100, -- High-Powered Bolt Gun
-					-- Scopes
-					[100587] = 100, -- Flintlocke's Woodchucker
-					[84428] = 100, -- Gnomish X-Ray Scope
-					[84408] = 100, -- R19 Threatfinder
-					[84410] = 100, -- Safety Catch Removal Kit
-				-- Northrend Engineering
-					-- Tinkers
-					[67839] = 100, -- Mind Amplification Dish
-					[55016] = 100, -- Nitro Boosts
-					[54736] = 100, -- EMP Generator
-					[55002] = 100, -- Flexweave Underlay
-					[54793] = 100, -- Frag Belt
-					-- Reagents
-					[56471] = 100, -- Froststeel Tube
-					[56464] = 100, -- Overcharged Capacitor
-					[53281] = 100, -- Volatile Blasting Trigger
-					[56349] = 100, -- Handful of Cobalt Bolts
-					-- Explosives
-					[56514] = 100, -- Global Thermal Sapper Charge
-					[56468] = 100, -- Box of Bombs
-					[56463] = 100, -- Explosive Decoy
-					[56460] = 100, -- Cobalt Frag Bomb
-					-- Goggles
-					[56480] = 100, -- Armored Titanium Goggles
-					[56483] = 100, -- Charged Titanium Specs
-					[56487] = 100, -- Electroflux Sight Enhancers
-					[56486] = 100, -- Greensight Gogs
-					[56574] = 100, -- Truesight Ice Blinders
-					[62271] = 100, -- Unbreakable Healing Amplifiers
-					[56484] = 100, -- Visage Liquification Goggles
-					[56481] = 100, -- Weakness Spectralizers
-					[61482] = 100, -- Mechanized Snow Goggles (Mail)
-					[61483] = 100, -- Mechanized Snow Goggles (Plate)
-					[56465] = 100, -- Mechanized Snow Goggles (Cloth)
-					[61481] = 100, -- Mechanized Snow Goggles (Leather)
-					[56473] = 100, -- Gnomish X-Ray Specs
-					-- Devices
-					[68067] = 100, -- Jeeves
-					[67920] = 100, -- Wormhole Generator: Northrend
-					[56462] = 100, -- Gnomish Army Knife
-					[56467] = 100, -- Noise Machine
-					[56466] = 100, -- Sonic Booster
-					[56469] = 100, -- Gnomish Lightning Generator
-					[30349] = 100, -- Titanium Toolbox
-					[56472] = 100, -- MOLL-E
-					[56477] = 100, -- Mana Injector Kit
-					[67326] = 100, -- Goblin Beam Welder
-					[56476] = 100, -- Healing Injector Kit
-					[55252] = 100, -- Scapbot Construction Kit
-					[56459] = 100, -- Hammer Pick
-					[56461] = 100, -- Bladed Pickaxe
-					-- Weapons
-					[56479] = 100, -- Armor Plated Combat Shotgun
-					[60874] = 100, -- Nesingwary 4000
-					[54353] = 100, -- Mark "S" Boomstick
-					-- Mounts
-					[60866] = 100, -- Mechano-Hog (Horde)
-					[60867] = 100, -- Mekgineer's Chopper (Alliance)
-					-- Scopes
-					[56478] = 100, -- Heartseeker Scope
-					[56470] = 100, -- Sun Scope
-					[61471] = 100, -- Diamond-cut Refractor Scope
-				-- Outland Engineering
-					-- Reagents
-					[30309] = 100, -- Felsteel Stabilizer
-					[30307] = 100, -- Hardened Adamantite Tube
-					[30308] = 100, -- Khorium Power Core
-					[39971] = 100, -- Icy Blasting Primers
-					[30306] = 100, -- Adamantite Frame
-					[30303] = 100, -- Elemental Blasting Powder
-					[30304] = 100, -- Fel Iron Casing
-					[30305] = 100, -- Handful or Fel Iron Bolts
-					-- Explosives
-					[39973] = 100, -- Frost Grenade
-					[30547] = 100, -- Elemental Seaforium Charge
-					[30560] = 100, -- Super Sapper Charge
-					[30311] = 100, -- Adamantite Grenade
-					[30558] = 100, -- The Bigger One
-					[30310] = 100, -- Fel Iron Bomb
-					-- Goggles
-					[46111] = 100, -- Annihilator Holo-Gogs
-					[46115] = 100, -- Hard Khorium Goggles
-					[46109] = 100, -- Hyper-Magnified Moon Specs
-					[46107] = 100, -- Justicebringer 3000 Specs
-					[46112] = 100, -- Lightning Etched Specs
-					[46114] = 100, -- Mayhem Projection Goggles
-					[46108] = 100, -- Powerheal 9000 Lens
-					[46110] = 100, -- Primal-Attuned Goggles
-					[46116] = 100, -- Quad Deathblow X44 Goggles
-					[46106] = 100, -- Wonderheal XT68 Shades
-					[41317] = 100, -- Deathblow X11 Goggles
-					[41320] = 100, -- Destruction Holo-gogs
-					[40274] = 100, -- Furious Gizmatic Goggles
-					[41315] = 100, -- Gadgetstorm Goggles
-					[41311] = 100, -- Justicebringer 2000 Specs
-					[41316] = 100, -- Living Replicator Specs
-					[41319] = 100, -- Magnified Moon Specs
-					[41321] = 100, -- Powerheal 4000 Lens
-					[41314] = 100, -- Surestrike Goggles v2.0
-					[41312] = 100, -- Tankatronic Goggles
-					[41318] = 100, -- Wonderheal XT40 Shades
-					[30325] = 100, -- Hyper-Vision Goggles
-					[30575] = 100, -- Gnomish Battle Goggles
-					[30574] = 100, -- Gnomish Power Goggles
-					[30318] = 100, -- Ultra-Spectropic Detection Goggles
-					[30316] = 100, -- Cogspinner Goggles
-					[30317] = 100, -- Power Amplification Goggles
-					[46113] = 100, -- Surestrike Goggles v3.0
-					-- Devices
-					[44391] = 100, -- Field Repair Bot 110G
-					[30565] = 100, -- Foreman's Enchanted Helmet
-					[30566] = 100, -- Foreman's Reinforced Helmet
-					[30556] = 100, -- Rocket Boots Xtreme
-					[46697] = 100, -- Rocket Boots Xtreme Lite
-					[30570] = 100, -- Nigh-Invulnerability Belt
-					[36954] = 100, -- Dimensional Ripper - Area 52
-					[36955] = 100, -- Ultrasafe Transporter - Toshley's Station
-					[30569] = 100, -- Gnomish Pultryizer
-					[30563] = 100, -- Goblin Rocket Launcher
-					[30552] = 100, -- Mana Potion Injector
-					[30568] = 100, -- Gnomish Flame Turret
-					[30337] = 100, -- Crashin' Thrashin' Robot
-					[30551] = 100, -- Healing Potion Injector
-					[30348] = 100, -- Fel Iron Toolbox
-					[30548] = 100, -- Zapthrottle Mote Extractor
-					-- Weapons
-					[30315] = 100, -- Ornate Khorium Rifle
-					[30314] = 100, -- Felsteel Boomstick
-					[41307] = 100, -- Gyro-balanced Khorium Destroyer
-					[30313] = 100, -- Adamantite Rifle
-					[30312] = 100, -- Fel Iron Musket
-					-- Scopes
-					[30334] = 100, -- Stabilized Eternium Scope
-					[30332] = 100, -- Khorium Scope
-					[30329] = 100, -- Adamantite Scope
-					-- Mounts
-					[44157] = 100, -- Turbo-Charged Flying Machine
-					[44155] = 100, -- Flying Machine
-					-- Fireworks
-					[30344] = 815, -- Green Smoke Flare
-					[32814] = 813, -- Purple Smoke Flare
-					[30341] = 812, -- White Smoke Flare
-				-- Engineering
-					-- Parts
-					[19815] = 100, -- Delicate Arcanite Converter
-					[19791] = 100, -- Thorium Widget
-					[19795] = 100, -- Thorium Tube
-					[39895] = 100, -- Fused Wiring
-					[23071] = 100, -- Truesilver Transformer
-					[133587] = 100, -- Dense Blasting Powder
-					[12599] = 100, -- Mithril Casing
-					[12591] = 100, -- Unstable Trigger
-					[12589] = 100, -- Mithril Tube
-					[3961] = 100, -- Gyrochronatom
-					[12715] = 100, -- Goblin Rocket Fuel Recipe
-					[12895] = 100, -- Inlaid Mithril Cylinder Plans
-					[12585] = 100, -- Solid Blasting Powder
-					[3953] = 100, -- Bronze Framework
-					[12584] = 100, -- Gold Power Core
-					[3952] = 100, -- Minor Recombobulator
-					[3958] = 100, -- Iron Strut
-					[3942] = 100, -- Whirring Bronze Gizmo
-					[3938] = 100, -- Bronze Tube
-					[3945] = 100, -- Heavy Blasting Powder
-					[3973] = 100, -- Silver Contact
-					[3929] = 100, -- Coarse Blasting Powder
-					[3922] = 100, -- Handful of Copper Bolts
-					[3918] = 100, -- Rough Blasting Powder
-					-- Explosives
-					[19831] = 100, -- Arcane Bomb
-					[19799] = 100, -- Dark Iron Bomb
-					[19790] = 100, -- Thorium Grenade
-					[23080] = 100, -- Powerful Seaforium Charge
-					[12908] = 100, -- Goblin Dragon Gun
-					[12619] = 100, -- Hi-Explosive Bomb
-					[12754] = 100, -- The Big One
-					[12755] = 100, -- Goblin Bomb Dispenser
-					[23070] = 100, -- Dense Dynamite
-					[12603] = 100, -- Mithril Frag Bomb
-					[12716] = 100, -- Goblin Mortar
-					[12760] = 100, -- Goblin Sapper Charge
-					[3972] = 100, -- Large Seaforium Charge
-					[3968] = 100, -- Goblin Land Mine
-					[3967] = 100, -- Big Iron Bomb
-					[8243] = 100, -- Flash Bomb
-					[23069] = 100, -- EZ-Thro Dynamite II
-					[3962] = 100, -- Iron Grenade
-					[3960] = 100, -- Portable Bronze Mortar
-					[3955] = 100, -- Explosive Sheep
-					[12586] = 100, -- Solid Dynamite
-					[3950] = 100, -- Big Bronze Bomb
-					[3941] = 100, -- Small Bronze Bomb
-					[3933] = 100, -- Small Seaforium Charge
-					[3937] = 100, -- Large Copper Bomb
-					[3946] = 100, -- Heavy Dynamite
-					[8339] = 100, -- EZ-Thro Dynamite
-					[3931] = 100, -- Coarse Dynamite
-					[3923] = 100, -- Rough Copper Bomb
-					[3919] = 100, -- Rough Dynamite
-					-- Goggles
-					[24356] = 100, -- Bloodvine Goggles
-					[24357] = 100, -- Bloodvine Lens
-					[19825] = 100, -- Master Engineer's Goggles
-					[19794] = 100, -- Spellpower Goggles Xtreme Plus
-					[12622] = 100, -- Green Lens
-					[12618] = 100, -- Rose Colored Goggles
-					[12615] = 100, -- Spellpower Goggles Xtreme
-					[12607] = 100, -- Catseye Ultra Goggles
-					[12897] = 100, -- Gnomish Goggles
-					[12594] = 100, -- Fire Goggles
-					[3966] = 100, -- Craftsman's Monocle
-					[12587] = 100, -- Bright-Eye Goggles
-					[3956] = 100, -- Green Tinted Goggles
-					[3940] = 100, -- Shadow Goggles
-					[3934] = 100, -- Flying Tiger Goggles
-					-- Devices
-					[23486] = 100, -- Dimensional Ripper - Everlook
-					[22704] = 100, -- Field Repair Bot 74A
-					[23489] = 100, -- Ultrasafe Transporter - Gadgetzan
-					[19830] = 100, -- Arcanite Dragonling
-					[22797] = 100, -- Force Reactive Disk
-					[23081] = 100, -- Hyper-Radiant Flame Reflector
-					[23082] = 100, -- Ultra-Flash Shadow Reflector
-					[19819] = 100, -- Voice Amplification Modulator
-					[19814] = 100, -- Masterwork Target Dummy
-					[23078] = 100, -- Goblin Jumper Cables XL
-					[23077] = 100, -- Gyrofreeze Ice Reflector
-					[19793] = 100, -- Lifelike Mechanical Toad
-					[26011] = 100, -- Tranquil Mechanical Yeti
-					[23079] = 100, -- Major Recombobulator
-					[63750] = 100, -- High-powered Flashlight
-					[12624] = 100, -- Mithril Mechanical Dragonling
-					[28327] = 100, -- Steam Tonk Controller
-					[23096] = 100, -- Gnomish Alarm-o-Bot
-					[12758] = 100, -- Goblin Rocket Helmet
-					[12759] = 100, -- Gnomish Death Ray
-					[12907] = 100, -- Gnomish Mind Control Cap
-					[12617] = 100, -- Deepdive Helmet
-					[12906] = 100, -- Gnomish Battle Chicken
-					[23129] = 100, -- World Enlarger
-					[12905] = 100, -- Gnomish Rocket Boots
-					[8895] = 100, -- Goblin Rocket Boots
-					[12616] = 100, -- Parachute Cloak
-					[12903] = 100, -- Gnomish Harm Prevention Belt
-					[12902] = 100, -- Gnomish Net-o-Matic Projector
-					[12899] = 100, -- Gnomish Shrink Ray
-					[12718] = 100, -- Goblin Construction Helmet
-					[12717] = 100, -- Goblin Mining Helmet
-					[3971] = 100, -- Gnomish Cloaking Device
-					[3969] = 100, -- Mechanical Dragonling
-					[15255] = 100, -- Mechanical Repair Kit
-					[21940] = 100, -- Snowmaster 9000
-					[3965] = 100, -- Advanced Target Dummy
-					[3963] = 100, -- Compact Harvest Reaper Kit
-					[15633] = 100, -- Lil' Smoky
-					[15628] = 100, -- Pet Bombling
-					[9273] = 100, -- Goblin Jumper Cables
-					[3959] = 100, -- Discombobulator Ray
-					[3957] = 100, -- Ice Deflector
-					[6458] = 100, -- Ornate Spyglass
-					[3944] = 100, -- Flame Deflector
-					[9269] = 100, -- Gnomish Universal Remote
-					[9271] = 100, -- Aquadynamic Fish Attractor
-					[3932] = 100, -- Target Dummy
-					[3928] = 100, -- Mechanical Squirrel Box
-					[8334] = 100, -- Clockwork Box
-					-- Guns & Bows
-					[22795] = 100, -- Core Marksman Rifle
-					[19833] = 100, -- Flawless Arcanite Rifle
-					[19796] = 100, -- Dark Iron Rifle
-					[19792] = 100, -- Thorium Rifle
-					[12614] = 100, -- Mithril Heavy-bore Rifle
-					[12595] = 100, -- Mithril Blunderbuss
-					[3954] = 100, -- Moonsight Rifle
-					[3949] = 100, -- Silver-plated Shotgun
-					[3939] = 100, -- Lovingly Crafted Boomstick
-					[3936] = 100, -- Deadly Blunderbuss
-					[3925] = 100, -- Rough Boomstick
-					-- Scopes
-					[22793] = 100, -- Biznicks 247x128 Accurascope
-					[12620] = 100, -- Sniper Scope
-					[12597] = 100, -- Deadly Scope
-					[3979] = 100, -- Accurate Scope
-					[3978] = 100, -- Standard Scope
-					[3977] = 100, -- Crude Scope
-					-- Fireworks
-					[26443] = 100, -- Cluster Launcher
-					[26426] = 814, -- Large Blue Rocket Cluster
-					[26427] = 815, -- Large Green Rocket Cluster
-					[26428] = 818, -- Large Red Rocket Cluster
-					[23507] = 816, -- Snake Burst Firework
-					[26442] = 100, -- Firework Launcher
-					[26423] = 814, -- Blue Rocket Cluster
-					[26424] = 815, -- Green Rocket Cluster
-					[26425] = 818, -- Red Rocket Cluster
-					[26420] = 814, -- Large Blue Rocket
-					[26421] = 815, -- Large Green Rocket
-					[26422] = 818, -- Large Red Rocket
-					[23067] = 814, -- Blue Firework
-					[23068] = 815, -- Green Firework
-					[23066] = 818, -- Red Fireworks
-					[26416] = 814, -- Small Blue Rocket
-					[26417] = 815, -- Small Green Rocket
-					[26418] = 818, -- Small Red Rocket
-					-- Tools
-					[12590] = 100, -- Gyromatic Micro-Adjustor
-					[7430] = 100, -- Arclight Spanner
-
-			--# Jewelcrafting
-				-- Shadowlands Designs
-					-- Quest Recipes
-					[338248] = 818, -- Brilliant Bauble
-					[338244] = 808, -- Carved Crystal Ring
-					[338239] = 909, -- Engraved Phaedrum Band
-					[338246] = 808, -- Faceted Crystal
-					[338249] = 909, -- Fine Sinvyr Chain
-					[338238] = 808, -- Gem Studded Bangle
-					[338241] = 814, -- Gleaming Kyranite Necklace
-					[338245] = 808, -- Hollowed Crystal
-					[338242] = 808, -- Kyranite Dangle
-					[338240] = 808, -- Polished Gemstones
-					[338247] = 818, -- Sinister Choker
-					[338243] = 909, -- Solenium Wire
-					-- Gems
-					[311867] = 815, -- Straddling Jewel Doublet
-					[311866] = 814, -- Versatile Jewel Doublet
-					[311868] = 817, -- Deadly Jewel Doublet
-					[311869] = 813, -- Masterful Jewel Doublet
-					[311871] = 816, -- Quick Jewel Doublet
-					[311870] = 818, -- Revitalizing Jewel Doublet
-					[311863] = 817, -- Deadly Jewel Cluster
-					[311859] = 814, -- Versatile Jewel Cluster
-					[311864] = 813, -- Masterful Jewel Cluster
-					[311865] = 816, -- Quick Jewel Cluster
-					-- Mass Prospecting
-					[311948] = 808, -- Mass Prospect Laestrite
-					[311950] = 808, -- Mass Prospect Oxxein
-					[311951] = 808, -- Mass Prospect Phaedrum
-					[311952] = 808, -- Mass Prospect Sinvyr
-					[311949] = 808, -- Mass Prospect Solenium
-					[311953] = 808, -- Mass Prospect Elethium
-					-- Optional Reagents
-					[343693] = 202, -- Novice Crafter's Mark
-					[343697] = 202, -- Crafter's Mark I
-					[343696] = 202, -- Crafter's Mark II
-					[343695] = 202, -- Crafter's Mark III
-					[352443] = 660, -- Vestige of Origins
-					[343694] = 202, -- Crafter's Mark of the Chained Isle
-					-- Necklaces
-					[311902] = 817, -- Deadly Laestrite Choker
-					[311904] = 813, -- Masterful Laestrite Choker
-					[311903] = 816, -- Quick Laestrite Choker
-					[311905] = 814, -- Versatile Laestrite Choker
-					[311906] = 817, -- Deadly Sinvyr Necklace
-					[311908] = 813, -- Masterful Phaedrum Necklace
-					[311907] = 816, -- Quick Oxxein Necklace
-					[311909] = 814, -- Versatile Solenium Necklace
-					-- Rings
-					[311880] = 817, -- Deadly Laestrite Band
-					[311882] = 813, -- Masterful Laestrite Band
-					[311881] = 816, -- Quick Laestrite Band
-					[311883] = 814, -- Versatile Laestrite Band
-					[311884] = 817, -- Deadly Sinvyr Ring
-					[311886] = 813, -- Masterful Phaedrum Ring
-					[311885] = 816, -- Quick Oxxein Ring
-					[311887] = 814, -- Versatile Solenium Ring
-					-- Specialized Jewelry
-					[327921] = 818, -- Shadowghast Necklace (Rank 1)
-					[332040] = 818, -- Shadowghast Necklace (Rank 2)
-					[332075] = 818, -- Shadowghast Necklace (Rank 3)
-					[338977] = 818, -- Shadowghast Necklace (Rank 4)
-					[327920] = 818, -- Shadowghast Ring (Rank 1)
-					[332039] = 818, -- Shadowghast Ring (Rank 2)
-					[332074] = 818, -- Shadowghast Ring (Rank 3)
-					[338978] = 818, -- Shadowghast Ring (Rank 4)
-					-- Statues
-					[355187] = 809, -- Porous Stone Statue
-					[355189] = 809, -- Shaded Stone Statue
-					-- Hats
-					[334548] = 812, -- Crown of the Righteous
 		}
 
 		-- Icons
@@ -7635,11 +8803,6 @@ local function updateData()
 			["Fishing Guide to Draenor"] = 0,
 			["Introduction to Cooking in Draenor"] = 0,
 			["Learning"] = 0,
-			-- Flight Path Toy
-			["7th Legion Scouting Map"] = 237387,
-			["Provisioning Azeroth"] = 1064187,
-			["Surviving Kalimdor"] = 237388,
-			["Walking Kalimdor with the Earthmother"] = 237388,
 			-- Teleports
 			["Dreamwalk"] = 1396974,
 			["Holographic Digitalization Hearthstone"] = 896468,
@@ -7936,13 +9099,24 @@ local function updateData()
 			[194477] = 0,
 			[194479] = 0,
 			[188432] = 0,
-			[211546] = 979574,
+			[211546] = 136244,
 			[354222] = 0,
 			[356615] = 0,
 			[339329] = 0,
 			[353963] = 0,
+			[42436] = 132795,
+			[245988] = 0,
+			[210219] = 236229,
+			[229547] = 0,
+			[191993] = 133749,
 			--qqi
 
+
+			--§ Toys
+			[288601] = 237387,
+			[247129] = 1064187,
+			[247191] = 237388,
+			[247212] = 237388,
 
 			--§ Spells
 			[164862] = 0, -- Flap
@@ -8017,6 +9191,14 @@ local function updateData()
 			[340839] = 3601552, -- Call Guillotine
 			[340340] = 3601552, -- Call Iron Phillip
 			[340841] = 3622121, -- Call Naxx
+
+			-- § Reagents (All Professions)
+				-- Optional Reagents
+				[330247] = 132527, -- Relic of the Past I
+				[330248] = 132528, -- Relic of the Past II
+				[330249] = 132529, -- Relic of the Past III
+				[330250] = 132531, -- Relic of the Past IV
+				[330251] = 132532, -- Relic of the Past V
 
 			--§ Alchemy
 				-- Shadowlands Alchemy
@@ -8103,11 +9285,95 @@ local function updateData()
 					-- Tool of the Trade
 				-- Alchemy of the Broken Isles
 					-- Cauldrons
+					[188351] = 1385153, -- Spirit Cauldron (Rank 3)
+					[188350] = 1385153, -- Spirit Cauldron (Rank 2)
+					[188349] = 1385153, -- Spirit Cauldron (Rank 1)
 					-- Combat Potions
+					[188300] = 1385333, -- Ancient Healing Potion (Rank 3)
+					[188299] = 1385333, -- Ancient Healing Potion (Rank 2)
+					[188297] = 1385333, -- Ancient Healing Potion (Rank 1)
+					[188303] = 1385152, -- Ancient Mana Potion (Rank 3)
+					[188302] = 1385152, -- Ancient Mana Potion (Rank 2)
+					[188301] = 1385152, -- Ancient Mana Potion (Rank 1)
+					[188306] = 1385315, -- Ancient Rejuvenation Potion (Rank 3)
+					[188305] = 1385315, -- Ancient Rejuvenation Potion (Rank 2)
+					[188304] = 1385315, -- Ancient Rejuvenation Potion (Rank 1)
+					[251658] = 134780, -- Astral Healing Potion (Rank 3)
+					[251651] = 134780, -- Astral Healing Potion (Rank 2)
+					[251646] = 134780, -- Astral Healing Potion (Rank 1)
+					[188336] = 1385154, -- Leytorrent Potion (Rank 3)
+					[188335] = 1385154, -- Leytorrent Potion (Rank 2)
+					[188334] = 1385154, -- Leytorrent Potion (Rank 1)
+					[247622] = 1686569, -- Lightblood Elixir (Rank 3)
+					[247620] = 1686569, -- Lightblood Elixir (Rank 2)
+					[247619] = 1686569, -- Lightblood Elixir (Rank 1)
+					[188327] = 1385239, -- Potion of Deadly Grace (Rank 3)
+					[188326] = 1385239, -- Potion of Deadly Grace (Rank 2)
+					[188325] = 1385239, -- Potion of Deadly Grace (Rank 1)
+					[229220] = 967532, -- Potion of Prolonged Power (Rank 3)
+					[229218] = 967532, -- Potion of Prolonged Power (Rank 2)
+					[229217] = 967532, -- Potion of Prolonged Power (Rank 1)
+					[188330] = 1385259, -- Potion of the Old War (Rank 3)
+					[188329] = 1385259, -- Potion of the Old War (Rank 2)
+					[188328] = 1385259, -- Potion of the Old War (Rank 1)
+					[188333] = 1385244, -- Unbending Potion (Rank 3)
+					[188332] = 1385244, -- Unbending Potion (Rank 2)
+					[188331] = 1385244, -- Unbending Potion (Rank 1)
 					-- Flasks
+					[188348] = 1385240, -- Flask of Ten Thousand Scars (Rank 3)
+					[188347] = 1385240, -- Flask of Ten Thousand Scars (Rank 2)
+					[188346] = 1385240, -- Flask of Ten Thousand Scars (Rank 1)
+					[188345] = 1385243, -- Flask of the Countless Armies (Rank 3)
+					[188344] = 1385243, -- Flask of the Countless Armies (Rank 2)
+					[188343] = 1385243, -- Flask of the Countless Armies (Rank 1)
+					[188342] = 1385241, -- Flask of the Seventh Demon (Rank 3)
+					[188341] = 1385241, -- Flask of the Seventh Demon (Rank 2)
+					[188340] = 1385241, -- Flask of the Seventh Demon (Rank 1)
+					[188339] = 1385242, -- Flask of the Whispered Pact (Rank 3)
+					[188338] = 1385242, -- Flask of the Whispered Pact (Rank 2)
+					[188337] = 1385242, -- Flask of the Whispered Pact (Rank 1)
 					-- Transmutation
+					[213257] = 1417744, -- Transmute: Blood of Sargeras
+					[213252] = 413571, -- Transmute: Cloth to Herbs
+					[213249] = 1377086, -- Transmute: Cloth to Skins
+					[213254] = 962049, -- Transmute: Fish to Gems
+					[213255] = 134581, -- Transmute: Meat to Pants
+					[213256] = 237328, -- Transmute: Meat to Pet
+					[213248] = 1379172, -- Transmute: Ore to Cloth
+					[213251] = 413571, -- Transmute: Ore to Herbs
+					[247701] = 1686582, -- Transmute: Primal Sargerite
+					[213253] = 413571, -- Transmute: Skins to Herbs
+					[213250] = 1394960, -- Transmute: Skins to Ore
+					[188802] = 134918, -- Wild Transmutation (Rank 3)
+					[188801] = 134918, -- Wild Transmutation (Rank 2)
+					[188800] = 134918, -- Wild Transmutation (Rank 1)
 					-- Trinkets
+					[247696] = 1686568, -- Astral Alchemist Stone (Rank 3)
+					[247695] = 1686568, -- Astral Alchemist Stone (Rank 2)
+					[247694] = 1686568, -- Astral Alchemist Stone (Rank 1)
+					[188324] = 1385334, -- Infernal Alchemist Stone (Rank 3)
+					[188323] = 1385334, -- Infernal Alchemist Stone (Rank 2)
+					[188322] = 1385334, -- Infernal Alchemist Stone (Rank 1)
 					-- Utility Potions
+					[188315] = 1416158, -- Avalanche Elixir (Rank 3)
+					[188314] = 1416158, -- Avalanche Elixir (Rank 2)
+					[188313] = 1416158, -- Avalanche Elixir (Rank 1)
+					[188309] = 1385294, -- Draught of Raw Magic (Rank 3)
+					[188308] = 1385294, -- Draught of Raw Magic (Rank 2)
+					[188307] = 1385294, -- Draught of Raw Magic (Rank 1)
+					[221690] = 1387609, -- Silvery Salve
+					[188318] = 1416157, -- Skaggldrynk (Rank 3)
+					[188317] = 1416157, -- Skaggldrynk (Rank 2)
+					[188316] = 1416157, -- Skaggldrynk (Rank 1)
+					[188321] = 1416156, -- Skystep Potion (Rank 3)
+					[188320] = 1416156, -- Skystep Potion (Rank 2)
+					[188319] = 1416156, -- Skystep Potion (Rank 1)
+					[188312] = 1385268, -- Sylvan Elixir (Rank 3)
+					[188311] = 1385268, -- Sylvan Elixir (Rank 2)
+					[188310] = 1385268, -- Sylvan Elixir (Rank 1)
+					[247691] = 1686570, -- Tears of the Naaru (Rank 3)
+					[247690] = 1686570, -- Tears of the Naaru (Rank 2)
+					[247688] = 1686570, -- Tears of the Naaru (Rank 1)
 				-- Alchemy of Draenor
 					-- Cures & Tonics
 					-- Reagents and Research
@@ -8243,20 +9509,68 @@ local function updateData()
 
 			--§ Enchanting
 				-- Shadowlands Enchanting
+					-- Quest Recipes
+					[346026] = 237268, -- Boundless Basket
+					[338125] = 135473, -- Everburning Brand
+					[338121] = 136244, -- True Aim Spear
+					[338123] = 135466, -- Unbreakable Crystal
 					-- Boot Enchantments
+					[323609] = 136244, -- Soul Treads
+					[309532] = 136244, -- Agile Soulwalker
+					[309534] = 136244, -- Eternal Agility
 					-- Bracer Enchantments
+					[309610] = 136244, -- Shaded Hearthing
+					[309608] = 136244, -- Illuminated Soul
+					[309609] = 136244, -- Eternal Intellect
 					-- Chest Enchantments
+					[323762] = 136244, -- Sacred Stats
+					[309535] = 136244, -- Eternal Bulwark
+					[342316] = 136244, -- Eternal Insight
+					[324773] = 136244, -- Eternal Stats
 					-- Cloak Enchantments
+					[309530] = 136244, -- Fortified Avoidance
+					[309531] = 136244, -- Fortified Leech
+					[309528] = 136244, -- Fortified Speed
+					[323755] = 136244, -- Soul Vitality
+					[323761] = 136244, -- Eternal Bounds
+					[323760] = 136244, -- Eternal Skirmish
 					-- Glove Enchantments
+					[309524] = 136244, -- Shadowlands Gathering
+					[309525] = 136244, -- Strength of Soul
+					[309526] = 136244, -- Eternal Strength
 					-- Optional Reagents
+					[343680] = 1500861, -- Novice Crafter's Mark
+					[343684] = 1500863, -- Crafter's Mark I
+					[343683] = 1500867, -- Crafter's Mark II
 					-- Reagents
+					[309636] = 3528441, -- Enchanted Elethium Bar
+					[309637] = 3528443, -- Enchanted Heavy Callous Hide
+					[309638] = 3528442, -- Enchanted Lightless Silk
 					-- Ring Enchantments
+					[309612] = 136244, -- Bargain of Critical Strike
+					[309613] = 136244, -- Bargain of Haste
+					[309614] = 136244, -- Bargain of Mastery
+					[309615] = 136244, -- Bargain of Versatility
+					[309616] = 136244, -- Tenet of Critical Strike
+					[309617] = 136244, -- Tenet of Haste
+					[309618] = 136244, -- Tenet of Mastery
+					[309619] = 136244, -- Tenet of Versatility
 					-- Shatters
+					[309645] = 3528446, -- Eternal Crystal
+					[309644] = 3528445, -- Sacred Shard
 					-- Wands
+					[265105] = 3256113, -- Enchanted Twilight Wand
 					-- Weapon Enchantments
+					[309627] = 136244, -- Celestial Guidance
+					[309622] = 136244, -- Ascended Vigor
+					[309621] = 136244, -- Eternal Grace
+					[309620] = 136244, -- Lightless Force
+					[309623] = 136244, -- Sinful Revelation
 					-- Other
+					[355184] = 3528282, -- Anima-ted Leash
 				-- Kul Tiran Enchanting & Zandalari Enchanting
 					-- Glove Enchantments
+					--[1111] = 136244, -- 
 					-- Ring Enchantments
 					-- Weapon Enchantments
 					-- Wrist Enchantments
@@ -8278,12 +9592,49 @@ local function updateData()
 					-- Toys, Pets, and Mounts
 				-- Draenor Enchanting
 					-- Reagents and Research
+					[177043] = 133740, -- Secrets of Draenor Enchanting
+					[169092] = 1003586, -- Temporal Crystal
+					[169091] = 1003593, -- Luminous Shard
+					[182129] = 1003594, -- Temporal Binding
 					-- Illusions
+					[217655] = 953646, -- Tome of Illusions: Draenor
 					-- Weapon
+					[159674] = 136244, -- Mark of Blackrock
+					[173323] = 136244, -- Mark of Bleeding Hollow
+					[159673] = 136244, -- Mark of Shadowmoon
+					[159672] = 136244, -- Mark of the Frostwolf
+					[159236] = 136244, -- Mark of the Shattered Hand
+					[159235] = 136244, -- Mark of the Thunderlord
+					[159671] = 136244, -- Mark of Warsong
 					-- Cloak
+					[158877] = 136244, -- Breath of Critical Strike
+					[158878] = 136244, -- Breath of Haste
+					[158879] = 136244, -- Breath of Mastery
+					[158881] = 136244, -- Breath of Versatility
+					[158884] = 136244, -- Gift of Critical Strike
+					[158885] = 136244, -- Gift of Haste
+					[158886] = 136244, -- Gift of Mastery
+					[158889] = 136244, -- Gift of Versatility
 					-- Neck
+					[158892] = 136244, -- Breath of Critical Strike
+					[158893] = 136244, -- Breath of Haste
+					[158894] = 136244, -- Breath of Mastery
+					[158896] = 136244, -- Breath of Versatility
+					[158899] = 136244, -- Gift of Critical Strike
+					[158900] = 136244, -- Gift of Haste
+					[158901] = 136244, -- Gift of Mastery
+					[158903] = 136244, -- Gift of Versatility
 					-- Ring
+					[158907] = 136244, -- Breath of Critical Strike
+					[158908] = 136244, -- Breath of Haste
+					[158909] = 136244, -- Breath of Mastery
+					[158911] = 136244, -- Breath of Versatility
+					[158914] = 136244, -- Gift of Critical Strike
+					[158915] = 136244, -- Gift of Haste
+					[158916] = 136244, -- Gift of Mastery
+					[158918] = 136244, -- Gift of Versatility
 					-- Other
+					[162948] = 628267, -- Enchanted Dust
 				-- Pandaria Enchanting
 					-- Illusions
 					-- Reagents
@@ -9243,10 +10594,46 @@ local function updateData()
 					-- Mass Prospecting
 				-- Draenor Designs
 					-- Reagents and Research
+					[182127] = 1033183, -- Primal Gemcutting
+					[176087] = 133742, -- Secrets of Draenor Jewelcrafting
+					[170700] = 1033183, -- Taladite Crystal
 					-- Jewelry Enhancers
+					[170701] = 967514, -- Taladite Recrystalizer
 					-- Jewelry
+					[170716] = 1033174, -- Glowing Taladite Pendant
+					[170713] = 1025253, -- Glowing Taladite Ring
+					[170717] = 1033175, -- Shifting Taladite Pendant
+					[170714] = 1025256, -- Shifting Taladite Ring
+					[170718] = 1033173, -- Whispering Taladite Pendant
+					[170715] = 1025255, -- Whispering Taladite Ring
+					[170710] = 1027822, -- Glowing Blackrock Band
+					[170704] = 1027820, -- Glowing Iron Band
+					[170707] = 1027805, -- Glowing Iron Choker
+					[170711] = 1027822, -- Shifting Blackrock Band
+					[170705] = 1027820, -- Shifting Iron Band
+					[170708] = 1027805, -- Shifting Iron Choker
+					[170712] = 1027822, -- Whispering Blackrock Band
+					[170706] = 1027820, -- Whispering Iron Band
+					[170709] = 1027805, -- Whispering Iron Choker
 					-- Gems
+					[187634] = 1137542, -- Immaculate Critical Strike Taladite
+					[187635] = 1137537, -- Immaculate Haste Taladite
+					[187636] = 1137540, -- Immaculate Mastery Taladite
+					[187640] = 1137541, -- Immaculate Stamina Taladite
+					[187639] = 1137538, -- Immaculate Versatility Taladite
+					[170725] = 1033165, -- Greater Critical Strike Taladite
+					[170726] = 1033170, -- Greater Haste Taladite
+					[170727] = 1033169, -- Greater Mastery Taladite
+					[170730] = 1033168, -- Greater Stamina Taladite
+					[170729] = 1033166, -- Greater Versatility Taladite
+					[170719] = 1033159, -- Critical Strike Taladite
+					[170720] = 1033164, -- Haste Taladite
+					[170721] = 1033163, -- Mastery Taladite
+					[170724] = 1033162, -- Stamina Taladite
+					[170723] = 1033160, -- Versatility Taladite
 					-- Other
+					[170732] = 348537, -- Prismatic Focusing Lens
+					[170731] = 1033182, -- Reflecting Prism
 				-- Pandaria Designs
 					-- Research
 					-- Blue Gems
@@ -9262,17 +10649,238 @@ local function updateData()
 					-- Toys & Pets
 				-- Cataclysm Designs
 					-- Blue Gems
+					[101735] = 531772, -- Rigid Deepholm Iolite
+					[101742] = 531772, -- Solid Deepholm Iolite
+					[101741] = 531772, -- Sparkling Deepholm Iolite
+					[101740] = 531772, -- Stormy Deepholm Iolite
+					[73404] = 317243, -- Rigid Chimera's Eye
+					[73401] = 317243, -- Solid Chimera's Eye
+					[73402] = 317243, -- Sparkling Chimera's Eye
+					[73403] = 317243, -- Stormy Chimera's Eye
+					[73344] = 463883, -- Rigid Ocean Sapphire
+					[73340] = 463883, -- Solid Ocean Sapphire
+					[73341] = 463883, -- Sparkling Ocean Sapphire
+					[73343] = 463883, -- Stormy Ocean Sapphire
+					[73230] = 466279, -- Rigid Zephyrite
+					[73227] = 466279, -- Solid Zephyrite
+					[73228] = 466279, -- Sparkling Zephyrite
+					[73229] = 466279, -- Stormy Zephyrite
 					-- Green Gems
+					[101749] = 531776, -- Balanced Elven Peridot
+					[101754] = 531776, -- Energized Elven Peridot
+					[101757] = 531776, -- Forceful Elven Peridot
+					[101747] = 531776, -- Infused Elven Peridot
+					[101755] = 531776, -- Jagged Elven Peridot
+					[101745] = 531776, -- Lightning Elven Peridot
+					[101743] = 531776, -- Misty Elven Peridot
+					[101758] = 531776, -- Nimble Elven Peridot
+					[101744] = 531776, -- Piercing Elven Peridot
+					[101759] = 531776, -- Puissant Elven Peridot
+					[101752] = 531776, -- Radiant Elven Peridot
+					[101756] = 531776, -- Regal Elven Peridot
+					[101746] = 531776, -- Sensei's Elven Peridot
+					[101753] = 531776, -- Shattered Elven Peridot
+					[101760] = 531776, -- Steady Elven Peridot
+					[101751] = 531776, -- Turbid Elven Peridot
+					[101750] = 531776, -- Vivid Elven Peridot
+					[101748] = 531776, -- Zen Elven Peridot
+					[73380] = 463886, -- Forceful Dream Emerald
+					[73377] = 463886, -- Jagged Dream Emerald
+					[73381] = 463886, -- Lightning Dream Emerald
+					[73376] = 463886, -- Nimble Dream Emerald
+					[73378] = 463886, -- Piercing Dream Emerald
+					[73382] = 463886, -- Puissant Dream Emerald
+					[73375] = 463886, -- Regal Dream Emerald
+					[73384] = 463886, -- Sensei's Dream Emerald
+					[73379] = 463886, -- Steady Dream Emerald
+					[96226] = 463886, -- Vivid Dream Emerald
+					[73383] = 463886, -- Zen Dream Emerald
+					[73277] = 466280, -- Forceful Jasper
+					[73274] = 466280, -- Jagged Jasper
+					[73278] = 466280, -- Lightning Jasper
+					[73273] = 466280, -- Nimble Jasper
+					[73275] = 466280, -- Piercing Jasper
+					[73279] = 466280, -- Puissant Jasper
+					[73272] = 466280, -- Regal Jasper
+					[73281] = 466280, -- Sensei's Jasper
+					[73276] = 466280, -- Steady Jasper
+					[73280] = 466280, -- Zen Jasper
 					-- Orange Gems
+					[101773] = 531774, -- Adept Lava Coral
+					[101775] = 531774, -- Artful Lava Coral
+					[101768] = 531774, -- Champion's Lava Coral
+					[101762] = 531774, -- Crafty Lava Coral
+					[101761] = 531774, -- Deadly Lava Coral
+					[101769] = 531774, -- Deft Lava Coral
+					[101772] = 531774, -- Fierce Lava Coral
+					[101776] = 531774, -- Fine Lava Coral
+					[101764] = 531774, -- Inscribed Lava Coral
+					[101774] = 531774, -- Keen Lava Coral
+					[101778] = 531774, -- Lucent Lava Coral
+					[101765] = 531774, -- Polished Lava Coral
+					[101763] = 531774, -- Potent Lava Coral
+					[101771] = 531774, -- Reckless Lava Coral
+					[101766] = 531774, -- Resolute Lava Coral
+					[101782] = 531774, -- Resplendent Lava Coral
+					[101777] = 531774, -- Skillful Lava Coral
+					[101781] = 531774, -- Splendid Lava Coral
+					[101767] = 531774, -- Stalwart Lava Coral
+					[101779] = 531774, -- Tenuous Lava Coral
+					[101770] = 531774, -- Wicked Lava Coral
+					[101780] = 531774, -- Willful Lava Coral
+					[73371] = 463885, -- Adept Emper Topaz
+					[73373] = 463885, -- Artful Emper Topaz
+					[73365] = 463885, -- Deadly Emper Topaz
+					[73368] = 463885, -- Deft Emper Topaz
+					[73367] = 463885, -- Fierce Emper Topaz
+					[73372] = 463885, -- Fine Emper Topaz
+					[73364] = 463885, -- Inscribed Emper Topaz
+					[73374] = 463885, -- Keen Emper Topaz
+					[95755] = 463885, -- Lucent Emper Topaz
+					[73361] = 463885, -- Polished Emper Topaz
+					[73366] = 463885, -- Potent Emper Topaz
+					[73369] = 463885, -- Reckless Emper Topaz
+					[73362] = 463885, -- Resolute Emper Topaz
+					[95756] = 463885, -- Resplendent Emper Topaz
+					[73370] = 463885, -- Skillful Emper Topaz
+					[95754] = 463885, -- Willful Emper Topaz
+					[73268] = 466278, -- Adept Hessonite
+					[73270] = 466278, -- Artful Hessonite
+					[73262] = 466278, -- Deadly Hessonite
+					[73265] = 466278, -- Deft Hessonite
+					[73264] = 466278, -- Fierce Hessonite
+					[73269] = 466278, -- Fine Hessonite
+					[73260] = 466278, -- Inscribed Hessonite
+					[73271] = 466278, -- Keen Hessonite
+					[73258] = 466278, -- Polished Hessonite
+					[73263] = 466278, -- Potent Hessonite
+					[73266] = 466278, -- Reckless Hessonite
+					[73267] = 466278, -- Skillful Hessonite
 					-- Purple Gems
+					[101784] = 531775, -- Accurate Shadow Spinel
+					[101793] = 531775, -- Defender's Shadow Spinel
+					[101787] = 531775, -- Etched Shadow Spinel
+					[101783] = 531775, -- Glinting Shadow Spinel
+					[101791] = 531775, -- Guardian's Shadow Spinel
+					[101788] = 531775, -- Mysterious Shadow Spinel
+					[101789] = 531775, -- Purified Shadow Spinel
+					[101786] = 531775, -- Retaliating Shadow Spinel
+					[101790] = 531775, -- Shifting Shadow Spinel
+					[101794] = 531775, -- Sovereign Shadow Spinel
+					[101792] = 531775, -- Timeless Shadow Spinel
+					[101785] = 531775, -- Veiled Shadow Spinel
+					[73360] = 463884, -- Accurate Demonseye
+					[73352] = 463884, -- Defender's Demonseye
+					[73356] = 463884, -- Etched Demonseye
+					[73357] = 463884, -- Glinting Demonseye
+					[73354] = 463884, -- Guardian's Demonseye
+					[73355] = 463884, -- Purified Demonseye
+					[73358] = 463884, -- Retaliating Demonseye
+					[73351] = 463884, -- Shifting Demonseye
+					[73350] = 463884, -- Sovereign Demonseye
+					[73353] = 463884, -- Timeless Demonseye
+					[73359] = 463884, -- Veiled Demonseye
+					[73250] = 466277, -- Accurate Nightstone
+					[73242] = 466277, -- Defender's Nightstone
+					[73246] = 466277, -- Etched Nightstone
+					[73247] = 466277, -- Glinting Nightstone
+					[73244] = 466277, -- Guardian's Nightstone
+					[73245] = 466277, -- Purified Nightstone
+					[73248] = 466277, -- Retaliating Nightstone
+					[73241] = 466277, -- Shifting Nightstone
+					[73240] = 466277, -- Sovereign Nightstone
+					[73243] = 466277, -- Timeless Nightstone
+					[73249] = 466277, -- Veiled Nightstone
 					-- Red Gems
+					[101799] = 531771, -- Bold Queen's Garnet
+					[101797] = 531771, -- Brilliant Queen's Garnet
+					[101795] = 531771, -- Delicate Queen's Garnet
+					[101798] = 531771, -- Flashing Queen's Garnet
+					[101796] = 531771, -- Precise Queen's Garnet
+					[73396] = 317244, -- Bold Chimera's Eye
+					[73399] = 317244, -- Brilliant Chimera's Eye
+					[73397] = 317244, -- Delicate Chimera's Eye
+					[73398] = 317244, -- Flashing Chimera's Eye
+					[73400] = 317244, -- Precise Chimera's Eye
+					[73335] = 466648, -- Bold Inferno Ruby
+					[73338] = 466648, -- Brilliant Inferno Ruby
+					[73336] = 466648, -- Delicate Inferno Ruby
+					[73337] = 466648, -- Flashing Inferno Ruby
+					[73339] = 466648, -- Precise Inferno Ruby
+					[73222] = 466282, -- Bold Carnelian
+					[73225] = 466282, -- Brilliant Carnelian
+					[73223] = 466282, -- Delicate Carnelian
+					[73224] = 466282, -- Flashing Carnelian
+					[73226] = 466282, -- Precise Carnelian
 					-- Yellow Gems
+					[101803] = 531773, -- Fractured Lightstone
+					[101804] = 531773, -- Mystic Lightstone
+					[101802] = 531773, -- Quick Lightstone
+					[101800] = 531773, -- Smooth Lightstone
+					[101801] = 531773, -- Subtle Lightstone
+					[73409] = 317242, -- Fractured Chimera's Eye
+					[73407] = 317242, -- Mystic Chimera's Eye
+					[73408] = 317242, -- Quick Chimera's Eye
+					[73406] = 317242, -- Smooth Chimera's Eye
+					[73405] = 317242, -- Subtle Chimera's Eye
+					[73349] = 463520, -- Fractured Amberjewel
+					[73347] = 463520, -- Mystic Amberjewel
+					[73348] = 463520, -- Quick Amberjewel
+					[73346] = 463520, -- Smooth Amberjewel
+					[73345] = 463520, -- Subtle Amberjewel
+					[73239] = 466281, -- Fractured Alicite
+					[73234] = 466281, -- Quick Alicite
+					[73232] = 466281, -- Smooth Alicite
+					[73231] = 466281, -- Subtle Alicite
 					-- Meta Gems
+					[96255] = 463466, -- Agile Shadowspirit Diamond
+					[73468] = 463466, -- Austere Shadowspirit Diamond
+					[73466] = 463466, -- Bracing Shadowspirit Diamond
+					[96257] = 463466, -- Burning Shadowspirit Diamond
+					[73465] = 463466, -- Chaotic Shadowspirit Diamond
+					[73472] = 463466, -- Destructive Shadowspirit Diamond
+					[73469] = 463466, -- Effulgent Shadowspirit Diamond
+					[73470] = 463466, -- Ember Shadowspirit Diamond
+					[73474] = 463466, -- Enigmatic Shadowspirit Diamond
+					[73467] = 463466, -- Eternal Shadowspirit Diamond
+					[73464] = 463466, -- Fleet Shadowspirit Diamond
+					[73476] = 463466, -- Forlorn Shadowspirit Diamond
+					[73475] = 463466, -- Impassive Shadowspirit Diamond
+					[73473] = 463466, -- Powerful Shadowspirit Diamond
+					[96256] = 463466, -- Reverberating Shadowspirit Diamond
+					[73471] = 463466, -- Revitalizing Shadowspirit Diamond
 					-- Necklaces
+					[73521] = 337842, -- Brazen Elementium Medallion
+					[73506] = 133323, -- Elementium Guardian
+					[73504] = 415052, -- Entwined Elementium Choker
+					[73505] = 133336, -- Eye of Many Deaths
+					[99543] = 133335, -- Vicious Amberjewel Pendant
+					[99544] = 133335, -- Vicious Ruby Pendant
+					[99542] = 133335, -- Vicious Sapphire Pendant
+					[73497] = 415050, -- Nightstone Choker
+					[73496] = 466971, -- Alicite Pendant
 					-- Rings
+					[73498] = 336783, -- Band of Blades
+					[73520] = 133412, -- Elementium Destroyer's Ring
+					[73503] = 133411, -- Elementium Moebius Band
+					[98921] = 133412, -- Punisher's Band
+					[73502] = 337693, -- Ring of Warring Elements
+					[99540] = 133421, -- Vicious Amberjewel Band
+					[99541] = 133421, -- Vicious Ruby Signet
+					[99539] = 133421, -- Vicious Sapphire Ring
+					[73495] = 414289, -- Hessonite Band
+					[73494] = 414302, -- Jasper Ring
 					-- Crowns
+					[73623] = 357813, -- Rhinestone Sunglasses
+					[73627] = 133146, -- Jeweler's Amber Monocle
+					[73626] = 133146, -- Jeweler's Sapphire Monocle
+					[73625] = 133146, -- Jeweler's Ruby Monocle
 					-- Fist Weapons
+					[73621] = 382329, -- The Perforator
+					[73620] = 389199, -- Carnelian Spikes
 					-- Toys & Prisms
+					[73478] = 134128, -- Fire Prism
+					[73622] = 134387, -- Stardust
 				-- Northrend Designs
 					-- Blue Gems
 					-- Green Gems
@@ -9815,12 +11423,6 @@ local function updateData()
 					[230047] = 132911, -- Feathered Luffa
 					[202853] = 1387610, -- Silkweave Bandage
 				-- Draenor Patterns
-					-- Optional Reagents
-					[330247] = 132527, -- Relic of the Past I
-					[330248] = 132528, -- Relic of the Past II
-					[330249] = 132529, -- Relic of the Past III
-					[330250] = 132531, -- Relic of the Past IV
-					[330251] = 132532, -- Relic of the Past V
 					-- Reagents and Research
 					[182123] = 1029754, -- Primal Weaving
 					[168835] = 1029754, -- Hexweave Cloth
