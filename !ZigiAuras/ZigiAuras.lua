@@ -980,6 +980,7 @@ local function updateData()
 			["The Etymidian"] = 809,
 			["Conjured Wings"] = 805,
 			["Vethir"] = 814,
+			["War Eagle"] = 811,
 		}
 
 		-- ! Vehicle Icons
