@@ -2797,7 +2797,7 @@ local function updateData()
 			--: Frost
 			-------------------------
 			--! Frost
-			["Flurry"] = 16,
+			["Flurry:1506795"] = 16,
 			["Ray of Frost"] = 16,
 			["Arctic Orb"] = 16,
 			["Frost Bomb"] = 16,
