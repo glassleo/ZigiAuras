@@ -3323,6 +3323,8 @@ local function updateData()
 			["Localized Storm"] = 911,
 
 			--! Lightning  ! Thunder  ! Electric
+			["Thunder Peal"] = 800,
+			["Conductive Charge"] = 800,
 			["Stormforged Spear"] = 800,
 			["Crackle"] = 800,
 			["Charged Pulse"] = 800,
@@ -7076,6 +7078,9 @@ local function updateData()
 			[29866] = 110,
 			[30419] = 114,
 			[30406] = 100,
+			[213918] = 401,
+			[214379] = 100,
+			[214642] = 127,
 			--qqq
 
 			--# Toys
