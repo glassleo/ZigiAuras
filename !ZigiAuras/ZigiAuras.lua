@@ -1037,6 +1037,7 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Deploy Drogbar Barricade"] = 100,
 			["Firing"] = 100,
 			["Bear Trap"] = 100,
 			["Snap Shot"] = 100,
@@ -1569,6 +1570,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Bellow of the Deeps"] = 111,
 			["Intimidate:1058933"] = 111,
 			["Call Bombardment"] = 111,
 			["Unruly Yell"] = 111,
@@ -1711,6 +1713,7 @@ local function updateData()
 			["War Cry"] = 103,
 
 			--! Bloodlust
+			["Dark Succor"] = 105,
 			["Furious Charge"] = 105,
 			["Recklessness"] = 105,
 			["In For The Kill"] = 105,
@@ -1905,8 +1908,10 @@ local function updateData()
 			["Fire Support: Blackest Skies"] = 5,
 
 			--! Magma  ! Lava  ! Meteor
+			["Molten Crash"] = 12,
 			["Flame Patch"] = 12,
 			["Volcanic Pressure"] = 12,
+			["Magma Wave"] = 12,
 			["Magma Sculptor"] = 12,
 			["Volcanic Howl"] = 12,
 			["Molten Fists"] = 12,
@@ -2024,6 +2029,7 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
+			["Demonic Insight:136169"] = 401,
 			["Open Gateway:607512"] = 401,
 			["Fel Strike:1115730"] = 401,
 			["Summon Fel Orb"] = 401,
@@ -2233,6 +2239,7 @@ local function updateData()
 			["Felborne Rage"] = 401,
 
 			--! Chaos
+			["Soul Warp:135799"] = 127,
 			["Ragnarok:135799"] = 127,
 			["Ruinous Bulwark"] = 127,
 			["Unbound Chaos"] = 127,
@@ -2265,6 +2272,7 @@ local function updateData()
 			["Rain of Chaos"] = 127,
 
 			--! Felstrike
+			["Fel Strikes"] = 427,
 			["Felshot"] = 427,
 			["Fel Cleave"] = 427,
 			["Felstorm"] = 427,
@@ -2552,6 +2560,7 @@ local function updateData()
 			[312106] = 600, -- Weapons of Order (Debuff)
 
 			--! Discipline  ! Bandage  ! Brew  ! Help
+			["Recuperate"] = 202,
 			["Licking Wounds"] = 202,
 			["Resounding Protection"] = 202,
 			["Power Word: Barrier"] = 202,
@@ -2845,6 +2854,7 @@ local function updateData()
 			["Winds of Northrend"] = 160,
 
 			--! Froststrike
+			["Trol'kalar Cleave"] = 17,
 			["Bone Chilling"] = 17,
 			["Hailstorm"] = 17,
 			["Bitter Slash"] = 17,
@@ -2965,6 +2975,7 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Spiked Tongue:136113"] = 900,
 			["Shell Bounce"] = 900,
 			["Hardened Shell"] = 900,
 			["Web Spray"] = 900,
@@ -3090,6 +3101,9 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Putrid Skies:236271"] = 806,
+			["Rancid Maw:136007"] = 806,
+			["Viscid Bile"] = 806,
 			["Plague Blast"] = 806,
 			["Latent Poison"] = 806,
 			["Toxic Retch"] = 806,
@@ -3647,6 +3661,8 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth  ! Mud  ! Wood
+			["Landslide"] = 803,
+			[198496] = 803, -- Sunder (Ularogg Cragshaper)
 			["Black Ox Statue"] = 803,
 			["Ironbark"] = 803,
 			["Barkskin"] = 803,
@@ -3713,6 +3729,7 @@ local function updateData()
 			["Hardened Muck"] = 803,
 
 			--! Earthstrike
+			["Stone Shatter"] = 903,
 			["Diving Crash:657488"] = 903,
 			["Bonecrushing Stomp"] = 903,
 			["Spineshatter"] = 903,
@@ -3781,6 +3798,7 @@ local function updateData()
 			["Brulbash"] = 903,
 
 			--! Stone  ! Rock
+			["Strike of the Mountain"] = 809,
 			["Jagged Disc"] = 809,
 			["Rocky Spit"] = 809,
 			["Eroded Crust:134385"] = 809,
@@ -4223,6 +4241,7 @@ local function updateData()
 			["Glitter Burst"] = 72,
 			["Shimmer Down"] = 72,
 			["Starfall"] = 72,
+			["Star Shower"] = 72,
 
 			--! Spectral
 			["Spirit Armor"] = 720,
@@ -4316,6 +4335,7 @@ local function updateData()
 			["Six Pound Barrel"] = 415,
 
 			--! Plague
+			["Worm Call:236197"] = 40,
 			["Orb of Corrosion"] = 40,
 			["Bile Breath"] = 40,
 			["Morel Coil"] = 40,
@@ -4410,6 +4430,7 @@ local function updateData()
 			["Clinging Infestation"] = 410,
 
 			--! Nightmare
+			["Darkheart Nova"] = 412,
 			["Corrupting Flames:1357813"] = 412,
 			["Earthshaking Roar:1354169"] = 412,
 			["Decaying Roots:1357816"] = 412,
@@ -4794,6 +4815,7 @@ local function updateData()
 			["Wail"] = 323,
 
 			--! Corruption  ! Old Gods
+			["Growing Paranoia"] = 324,
 			["Tormenting Eye"] = 324,
 			["Corrupting Splash"] = 324,
 			["Insanity"] = 324,
@@ -4837,6 +4859,8 @@ local function updateData()
 			["Wither"] = 324,
 
 			--! Spellshadow  ! Runic
+			["Apocalyptic Darkblade"] = 96,
+			["Cursed Darkblade"] = 96,
 			["Unfurling Darkness"] = 96,
 			["Rune Tap"] = 96,
 			["Anti-Magic Zone"] = 96,
@@ -5105,7 +5129,6 @@ local function updateData()
 			["Crimson Scourge"] = 321,
 			["Dark Communion:3528308"] = 321,
 			["Dark Communion:3528312"] = 321,
-			["Dark Succor"] = 321,
 			["Chain Harvest"] = 321,
 			["Ritual of Woe:237536"] = 321,
 			["Telekinetic Onslaught:135822"] = 321,
@@ -5349,6 +5372,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse  ! Voodoo
+			["Curse of Worms"] = 325,
 			["Curse Soul"] = 325,
 			["Curse of Isolation"] = 325,
 			["Flesh to Stone"] = 325,
@@ -5487,6 +5511,9 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Shadow Pact:537079"] = 360,
+			["Soul Shard"] = 360,
+			["Split Soul"] = 360,
 			[188573] = 360, -- Soul Prison
 			["Essence Break"] = 360,
 			["Nether Portal"] = 360,
@@ -7081,6 +7108,12 @@ local function updateData()
 			[213918] = 401,
 			[214379] = 100,
 			[214642] = 127,
+			[202413] = 414,
+			[214618] = 411,
+			[215174] = 326,
+			[236723] = 202,
+			[217069] = 414,
+			[217691] = 326,
 			--qqq
 
 			--# Toys
@@ -10543,6 +10576,7 @@ local function updateData()
 			[30419] = 133741,
 			[30406] = 0,
 			[190275] = 1305156,
+			[236723] = 0,
 			--qqi
 
 
@@ -10556,6 +10590,7 @@ local function updateData()
 			--§ Teleports
 			[49844] = 1786409, -- Direbrew's Remote
 			[50977] = "Interface/AddOns/Media_Newsom/Icons/DeathGate",
+			["Death Gate:135766"] = "Interface/AddOns/Media_Newsom/Icons/DeathGate",
 			[23453] = "Interface/AddOns/Media_Newsom/Icons/WormholeGadgetzan",
 			[36941] = "Interface/AddOns/Media_Newsom/Icons/WormholeToshleysStation",
 			[23442] = "Interface/AddOns/Media_Newsom/Icons/WormholeEverlook",
