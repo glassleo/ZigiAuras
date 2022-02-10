@@ -1570,6 +1570,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			[200580] = 111, -- Maddening Roar
 			["Bellow of the Deeps"] = 111,
 			["Intimidate:1058933"] = 111,
 			["Call Bombardment"] = 111,
@@ -2918,6 +2919,12 @@ local function updateData()
 			["Astral Recall"] = 280,
 
 			--! Chemical  ! Alchemy
+			["Alluring Perfume"] = 281,
+			["Throw Perfume"] = 281,
+			["Alluring Perfume Spray"] = 281,
+			["Irresistible Cologne"] = 281,
+			["Throw Cologne"] = 281,
+			["Irresistible Cologne Spray"] = 281,
 			["Cauldron Catalyst"] = 281,
 			["Volatile Concoction"] = 281,
 			["Shadowcore Oil"] = 281,
@@ -2928,6 +2935,7 @@ local function updateData()
 			["Rejuvenating Serum"] = 281,
 			["Healing Balm"] = 281,
 			["Alchemy"] = 281,
+			["Chain Reaction:135867"] = 281,
 			
 			
 			--: Nature
@@ -3337,6 +3345,7 @@ local function updateData()
 			["Localized Storm"] = 911,
 
 			--! Lightning  ! Thunder  ! Electric
+			["Lightning Prod"] = 800,
 			["Thunder Peal"] = 800,
 			["Conductive Charge"] = 800,
 			["Stormforged Spear"] = 800,
@@ -4088,6 +4097,7 @@ local function updateData()
 			["Trueshot"] = 65,
 
 			--! Magic
+			["Feed:237566"] = 126,
 			["Focus Magic"] = 126,
 			["Arcane Missiles"] = 126,
 			["Twisted Reflection"] = 126,
@@ -5086,6 +5096,7 @@ local function updateData()
 			["Twlight Flames"] = 34, -- [sic]
 
 			--! Blood  ! Venthyr
+			["Fallen Order:3565721"] = 321,
 			["Rip"] = 321,
 			["Crimson Tempest"] = 321,
 			["Light of the Martyr"] = 321,
@@ -5372,6 +5383,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse  ! Voodoo
+			["Curse of the Witch"] = 325,
 			["Curse of Worms"] = 325,
 			["Curse Soul"] = 325,
 			["Curse of Isolation"] = 325,
