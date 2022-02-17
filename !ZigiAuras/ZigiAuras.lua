@@ -1571,6 +1571,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Cry"] = 111,
 			[200580] = 111, -- Maddening Roar
 			["Bellow of the Deeps"] = 111,
 			["Intimidate:1058933"] = 111,
@@ -3177,7 +3178,6 @@ local function updateData()
 			["Poison Barrage"] = 806,
 			["Poison Bolt"] = 806,
 			["Poison Bomb"] = 806,
-			["Poison Claws"] = 806,
 			["Poison Dart"] = 806,
 			["Poison Nova"] = 806,
 			["Poison Spit"] = 806,
@@ -3225,6 +3225,7 @@ local function updateData()
 			["Wound Poison"] = 806,
 
 			--! Poisonstrike
+			["Poison Claws"] = 906,
 			["Spitting Cobra"] = 906,
 			["Viper's Venom"] = 906,
 			["Poisoned Spear"] = 906,
@@ -7131,6 +7132,8 @@ local function updateData()
 			[169503] = 100,
 			[169515] = 126,
 			[162720] = 202,
+			[169455] = 100,
+			[165551] = 202,
 			--qqq
 
 			--# Toys
@@ -10834,6 +10837,7 @@ local function updateData()
 			[190275] = 1305156,
 			[236723] = 0,
 			[169503] = 0,
+			[165551] = 0,
 			--qqi
 
 
