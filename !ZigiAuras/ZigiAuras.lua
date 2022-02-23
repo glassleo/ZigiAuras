@@ -1005,7 +1005,7 @@ local function updateData()
 			["Greatfather Winter's Hearthstone"] = "Hearthstone",
 			["Headless Horseman's Hearthstone"] = "Hearthstone",
 			["Hearthstone"] = "Hearthstone",
-			["Holographic Digitalization Hearthstone"] = "Hearthstone",
+			["Holographic Digitalization Hearthstone"] = "Transport",
 			["Kyrian Hearthstone"] = "Hearthstone",
 			["Lunar Elder's Hearthstone"] = "Hearthstone",
 			["Mountebank's Colorful Cloak"] = "Hearthstone",
@@ -1037,6 +1037,8 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Overdrive"] = 100,
+			["Make Camp"] = 100,
 			["Crate Restored Artifact"] = 100,
 			["Deploy Drogbar Barricade"] = 100,
 			["Firing"] = 100,
@@ -1148,6 +1150,8 @@ local function updateData()
 			["Unlocking"] = 100,
 
 			--! Physical Red
+			["Frenzied Thrash"] = 112,
+			["Feeding Frenzy"] = 112,
 			["Thrashing Horns"] = 112,
 			["Severing Hew"] = 112,
 			["Severing Strike"] = 112,
@@ -1660,6 +1664,7 @@ local function updateData()
 			["Primal Roar"] = 111,
 
 			--! Enrage
+			["Abyssal Might"] = 103,
 			["Bellowing Rage"] = 103,
 			["Going Bananas"] = 103,
 			["Adrenaline Rush"] = 103,
@@ -1796,6 +1801,7 @@ local function updateData()
 			--: Fire
 			-------------------------
 			--! Fire  ! Cooking
+			["Burning Hands"] = 4,
 			["Ignite"] = 4,
 			["Volatile Bomb"] = 4,
 			["Unstable Flames"] = 4,
@@ -2920,6 +2926,8 @@ local function updateData()
 			["Astral Recall"] = 280,
 
 			--! Chemical  ! Alchemy
+			["Lesser Healing Potion"] = 281,
+			["Healing Potion"] = 281,
 			["Alluring Perfume"] = 281,
 			["Throw Perfume"] = 281,
 			["Alluring Perfume Spray"] = 281,
@@ -2984,6 +2992,7 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Whirl of Thorns"] = 900,
 			["Spiked Tongue:136113"] = 900,
 			["Shell Bounce"] = 900,
 			["Hardened Shell"] = 900,
@@ -3110,6 +3119,9 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Disgusting Slime"] = 806,
+			["Venom Nova"] = 806,
+			["Paralyzing Fang"] = 806,
 			["Putrid Skies:236271"] = 806,
 			["Rancid Maw:136007"] = 806,
 			["Viscid Bile"] = 806,
@@ -3346,6 +3358,9 @@ local function updateData()
 			["Localized Storm"] = 911,
 
 			--! Lightning  ! Thunder  ! Electric
+			["Energize!"] = 800,
+			["Disperse:136111"] = 800,
+			["Megavolt"] = 800,
 			["Lightning Prod"] = 800,
 			["Thunder Peal"] = 800,
 			["Conductive Charge"] = 800,
@@ -3496,6 +3511,7 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water  ! Sea  ! Fishing
+			["Surging Depths"] = 801,
 			["Water Shield"] = 801,
 			[114052] = 801, -- Ascendance (Water)
 			["Crashing Waves"] = 801,
@@ -3586,6 +3602,7 @@ local function updateData()
 			["Whirlpool"] = 801,
 
 			--! Waterstrike
+			["Wavebreaker"] = 901,
 			["Anchor of Binding"] = 901,
 			[277044] = 901, -- Tidal Force
 			["Thrash:893778"] = 901,
@@ -3671,6 +3688,10 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth  ! Mud  ! Wood
+			["Ground Rupture"] = 803,
+			["Earthen Slam"] = 803,
+			["Rumble:136025"] = 803,
+			["Rumble:451165"] = 803,
 			["Landslide"] = 803,
 			[198496] = 803, -- Sunder (Ularogg Cragshaper)
 			["Black Ox Statue"] = 803,
@@ -3739,6 +3760,9 @@ local function updateData()
 			["Hardened Muck"] = 803,
 
 			--! Earthstrike
+			["Rumble:252185"] = 903,
+			["Rumble:1058934"] = 903,
+			["Headcrush"] = 903,
 			["Rampaging Strike"] = 903,
 			["Stone Shatter"] = 903,
 			["Diving Crash:657488"] = 903,
@@ -4117,6 +4141,7 @@ local function updateData()
 			["Conjure Mana Gem"] = 126,
 
 			--! Conjuration  ! Teleport  ! Enchanting  ! Transmutation
+			["Portal: Archmage Vargoth's Retreat"] = 646,
 			["Everlook Transporter"] = 646,
 			["Area 52 Transporter"] = 646,
 			["Scroll of Teleport: Ravenholdt"] = 646,
@@ -4137,6 +4162,8 @@ local function updateData()
 			["Create Lavalliere"] = 646,
 			["Create Ring"] = 646,
 			["Create Glove"] = 646,
+			["Create Weapon"] = 646,
+			["Create Helm"] = 646,
 			["Wormhole Teleport"] = 646,
 			["Wormhole"] = 646,
 			["Wormhole: Pandaria"] = 646,
@@ -4347,6 +4374,9 @@ local function updateData()
 			["Six Pound Barrel"] = 415,
 
 			--! Plague
+			["Fevered Plague"] = 40,
+			["Doom Shroom"] = 40,
+			["Rotten Bolt"] = 40,
 			["Worm Call:236197"] = 40,
 			["Orb of Corrosion"] = 40,
 			["Bile Breath"] = 40,
@@ -4482,6 +4512,7 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			[347037] = 411, -- Sepsis proc
 			["Unholy Reckoning:132094"] = 411,
 			["Cheating Death"] = 411,
 			["Cheat Death"] = 411,
@@ -4625,6 +4656,9 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Devourer
+			["Doom Shroom:134529"] = 413,
+			["Drudge Bolt"] = 413,
+			["Blighted Discharge:651086"] = 413,
 			["Soul Rend:895888"] = 413,
 			["Soul Pillar:1778230"] = 413,
 			["Drust Soulcatcher"] = 413,
@@ -4728,6 +4762,7 @@ local function updateData()
 			["Siphon of Acherus"] = 328,
 
 			--! Shadowstrike
+			["Darkened Fangs"] = 33,
 			["Worgen Transform"] = 33,
 			["Shuriken Storm"] = 33,
 			["Shuriken Tornado"] = 33,
@@ -5176,6 +5211,7 @@ local function updateData()
 			["Blood Ritual"] = 321,
 			["Blood Shroud"] = 321,
 			["Bloodbolt"] = 321,
+			["Bloodstalk"] = 321,
 			["Blooddrinker"] = 321,
 			["Bloodletting"] = 321,
 			["Bloodstone"] = 321,
@@ -5525,6 +5561,7 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Motivate:237554"] = 360,
 			["Shadow Pact:537079"] = 360,
 			["Soul Shard"] = 360,
 			["Split Soul"] = 360,
@@ -5689,6 +5726,8 @@ local function updateData()
 			--: Other
 			-------------------------
 			--! Exhausted  ! Fatigue  ! Disabled  ! Tar  ! Oil
+			["Drudge Bolt:132862"] = 999,
+			["Drudge Bolt Volley:132862"] = 999,
 			["Hypothermia"] = 999,
 			["Cheated Death"] = 999,
 			["Honorless Target"] = 999,
@@ -5826,7 +5865,7 @@ local function updateData()
 			["Bloodfang Widow"] = 101,
 			["Bloodflank Charger"] = 903,
 			["Bloodgorged Crawg"] = 101,
-			["Bloodgorged Hunter"] = 16,
+			["Bloodgorged Hunter"] = 17,
 			["Bloodhoof Bull"] = 903,
 			["Bloodthirsty Dreadwing"] = 101,
 			["Blue Dragon Turtle"] = 900,
@@ -7134,6 +7173,12 @@ local function updateData()
 			[162720] = 202,
 			[169455] = 100,
 			[165551] = 202,
+			[270585] = 8,
+			[271013] = 281,
+			[280608] = 114,
+			[271196] = 323,
+			[280310] = 100,
+			[196505] = 803,
 			--qqq
 
 			--# Toys
@@ -10476,7 +10521,7 @@ local function updateData()
 			["Chi Torpedo"] = 607849,
 			["Dance of Chi-Ji"] = 606543,
 			["Door of Shadows"] = 3586270,
-			["Jump to Skyhold"] = 1530373,
+			["Jump to Skyhold"] = 0,
 			["Dismiss Pet"] = "Interface/AddOns/Media_Newsom/Icons/Cancel",
 			-- Quest
 			["Summoning Voidwalker"] = 136221,
@@ -10800,7 +10845,7 @@ local function updateData()
 			[280595] = 0,
 			[280593] = 0,
 			[273193] = 0,
-			[280310] = 100,
+			[280310] = 2030683,
 			[257831] = 0,
 			[318682] = 0,
 			[268335] = 1869493,
@@ -10838,6 +10883,7 @@ local function updateData()
 			[236723] = 0,
 			[169503] = 0,
 			[165551] = 0,
+			[271196] = 1794517,
 			--qqi
 
 
