@@ -1018,6 +1018,7 @@ local function updateData()
 			["Town Portal"] = "Town Portal",
 			["Venthyr Sinstone"] = "Sinstone",
 			["Broker Translocation Matrix"] = "Hearthstone",
+			["Enlightened Hearthstone"] = "Hearthstone",
 		}
 
 
@@ -2652,6 +2653,7 @@ local function updateData()
 
 			--! Hyperlight  ! Hallow  ! Broker
 			["Broker Translocation Matrix"] = 203,
+			["Enlightened Hearthstone"] = 203,
 			["Incorporeal Weave"] = 203,
 			["Soul Ruin"] = 203,
 			["Steal Essence:636333"] = 203,
