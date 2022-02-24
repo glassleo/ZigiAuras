@@ -1019,6 +1019,7 @@ local function updateData()
 			["Venthyr Sinstone"] = "Sinstone",
 			["Broker Translocation Matrix"] = "Hearthstone",
 			["Enlightened Hearthstone"] = "Hearthstone",
+			["Dominated Hearthstone"] = "Hearthstone",
 		}
 
 
@@ -4316,6 +4317,7 @@ local function updateData()
 			--: Decay
 			-------------------------
 			--! Unholy
+			["Sudden Doom"] = 414,
 			["Tombstone"] = 414,
 			["Risen Ghoul"] = 414,
 			["Apocalypse"] = 414,
@@ -4515,6 +4517,7 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Dominated Hearthstone"] = 411,
 			[347037] = 411, -- Sepsis proc
 			["Unholy Reckoning:132094"] = 411,
 			["Cheating Death"] = 411,
@@ -4709,7 +4712,6 @@ local function updateData()
 			["From the Shadows"] = 32,
 			["Dark Mending"] = 32,
 			["Woven Shadows"] = 32,
-			["Sudden Doom"] = 32,
 			["Death's Advance"] = 32,
 			["Catharstick"] = 32,
 			["Shadow Bulwark"] = 32,
