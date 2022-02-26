@@ -1918,6 +1918,7 @@ local function updateData()
 			["Fire Support: Blackest Skies"] = 5,
 
 			--! Magma  ! Lava  ! Meteor
+			["Slagblast"] = 12,
 			["Molten Crash"] = 12,
 			["Flame Patch"] = 12,
 			["Volcanic Pressure"] = 12,
