@@ -2389,6 +2389,7 @@ local function updateData()
 			["Guardian of Ancient Queens"] = 200,
 
 			--! Holystrike  ! Flash  ! Titan
+			["Dazzling Visage"] = 3,
 			["Eye for an Eye"] = 3,
 			["Crusader Aura"] = 3,
 			["Divine Steed"] = 3,
@@ -3906,6 +3907,7 @@ local function updateData()
 			["In Irons"] = 909,
 
 			--! Sand  ! Ash
+			["Rickety Plank:134962"] = 804,
 			["Sand Trap"] = 804,
 			["Blinding Sand"] = 804,
 			["Scouring Sand"] = 804,
@@ -4334,6 +4336,7 @@ local function updateData()
 			["Unraveling Horror"] = 414,
 			["Decimate:135797"] = 414,
 			["Rune of Suffering"] = 414,
+			["Anti-Magic Shield"] = 414,
 			["Anti-Magic Shell"] = 414,
 			["Plagued Broadside"] = 414,
 			["Exhume the Crypts"] = 414,
