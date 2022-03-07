@@ -1039,6 +1039,7 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Harvest:134427"] = 100,
 			["Overdrive"] = 100,
 			["Make Camp"] = 100,
 			["Crate Restored Artifact"] = 100,
@@ -1577,6 +1578,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic
+			["Sonic Charge"] = 111,
 			["Cry"] = 111,
 			[200580] = 111, -- Maddening Roar
 			["Bellow of the Deeps"] = 111,
@@ -1879,6 +1881,7 @@ local function updateData()
 			["Explosive Rounds"] = 4,
 
 			--! Flamestrike  ! Cannonfire  ! Bomb  ! Smelting
+			["Blazing Fists"] = 5,
 			["Dancing Blade:135408"] = 5,
 			["Dampen Harm"] = 5,
 			["Lashing Flames"] = 5,
@@ -2040,6 +2043,7 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
+			["Felfrost Bolt"] = 401,
 			["Demonic Insight:136169"] = 401,
 			["Open Gateway:607512"] = 401,
 			["Fel Strike:1115730"] = 401,
@@ -3124,6 +3128,7 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Blisterbomb"] = 806,
 			["Disgusting Slime"] = 806,
 			["Venom Nova"] = 806,
 			["Paralyzing Fang"] = 806,
@@ -3446,6 +3451,7 @@ local function updateData()
 			["Call the Storm"] = 800,
 			["Call Thunder"] = 800,
 			["Chain Lightning"] = 800,
+			["Chain Bolt"] = 800,
 			["Charged Bolt"] = 800,
 			["Charged Claw"] = 800,
 			["Crackling Lightning"] = 800,
@@ -3890,6 +3896,7 @@ local function updateData()
 			["Stone Throw"] = 809,
 
 			--! Metal  ! Salt  ! Blacksmithing  ! Mining
+			["Chopping"] = 909,
 			["Die by the Sword"] = 909,
 			["Break Chains"] = 909,
 			["Fan of Knives"] = 909,
@@ -4320,7 +4327,6 @@ local function updateData()
 			--: Decay
 			-------------------------
 			--! Unholy
-			["Sudden Doom"] = 414,
 			["Tombstone"] = 414,
 			["Risen Ghoul"] = 414,
 			["Apocalypse"] = 414,
@@ -4530,6 +4536,7 @@ local function updateData()
 			["Death Pact"] = 411,
 			["Dark Arbiter"] = 411,
 			["Doom"] = 411,
+			["Sudden Doom"] = 411,
 			["Fury of the Maw"] = 411,
 			["Vendetta"] = 411,
 			["Entering the Rift:3528301"] = 411,
@@ -4729,6 +4736,7 @@ local function updateData()
 			["Nightfall"] = 32,
 
 			--! Psychic  ! Mind Control
+			["Domination"] = 328,
 			["Dominate Will"] = 328,
 			["Mind Bomb"] = 328,
 			["Inquisitive Stare"] = 328,
@@ -4807,6 +4815,7 @@ local function updateData()
 			["Chain Cleave"] = 33,
 
 			--! Pain
+			["Intense Pain"] = 322,
 			["Suppress Pain"] = 322,
 			["Surge of Pain"] = 322,
 			["Excruciating Agony"] = 322,
@@ -5430,6 +5439,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse  ! Voodoo
+			["Whispering Curse"] = 325,
 			["Curse of the Witch"] = 325,
 			["Curse of Worms"] = 325,
 			["Curse Soul"] = 325,
@@ -5570,6 +5580,7 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Shadow Storm"] = 360,
 			["Motivate:237554"] = 360,
 			["Shadow Pact:537079"] = 360,
 			["Soul Shard"] = 360,
@@ -6817,7 +6828,6 @@ local function updateData()
 			[245988] = 114,
 			[210519] = 202,
 			[189038] = 100,
-			[219181] = 900,
 			[219297] = 4,
 			[213293] = 4,
 			[218184] = 107,
@@ -7189,6 +7199,9 @@ local function updateData()
 			[280310] = 100,
 			[196505] = 803,
 			[211822] = 100,
+			[209962] = 202,
+			[367326] = 203,
+			[22949] = 8,
 			--qqq
 
 			--# Toys
