@@ -771,7 +771,7 @@ local function updateData()
 			[106] = "c65c2d:efb073", -- Strength
 			[115] = "86b819:e2ff95", -- Agility | Evasion
 			[104] = "ffeb64:f2ffbf", -- Alacrity | Speed
-			[111] = "efff65:dcffeb", -- Sonic | Sound
+			[111] = "d3d280:fffef2", -- Sonic | Sound | Progenitor
 			[103] = "ff9178:ff5d32", -- Enrage
 			[105] = "c80034:ff8258", -- Bloodlust
 			[999] = "3b3b3b:6e6d59", -- Fatigue
@@ -1577,7 +1577,7 @@ local function updateData()
 			["Tiger's Lust"] = 104,
 			["Wild Charge"] = 104,
 
-			--! Sonic
+			--! Sonic  ! Sound  ! Progenitor
 			["Sonic Charge"] = 111,
 			["Cry"] = 111,
 			[200580] = 111, -- Maddening Roar
@@ -1620,6 +1620,8 @@ local function updateData()
 			["Argent War Horn"] = 111,
 			["Call the Pack"] = 111,
 			["Sonic Scream"] = 111,
+			["Sonic Screech"] = 111,
+			["Sonic Field"] = 111,
 			["Screaming Blast"] = 111,
 			["Howling Screech"] = 111,
 			["Ferocious Yell"] = 111,
@@ -1668,6 +1670,7 @@ local function updateData()
 			["Primal Roar"] = 111,
 
 			--! Enrage
+			["Enraged Bite"] = 103,
 			["Abyssal Might"] = 103,
 			["Bellowing Rage"] = 103,
 			["Going Bananas"] = 103,
@@ -2658,7 +2661,10 @@ local function updateData()
 			["Soothing"] = 202,
 			["Unspoken Gratitude"] = 202,
 
-			--! Hyperlight  ! Hallow  ! Broker
+			--! Hyperlight  ! Hallow  ! Broker  ! Cosmic
+			["Hyperlight Strike"] = 203,
+			["Charged Bolt:4038104"] = 203,
+			["Hyperlight Haste"] = 203,
 			["Broker Translocation Matrix"] = 203,
 			["Enlightened Hearthstone"] = 203,
 			["Incorporeal Weave"] = 203,
@@ -3128,6 +3134,7 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Barbed Sting"] = 806,
 			["Blisterbomb"] = 806,
 			["Disgusting Slime"] = 806,
 			["Venom Nova"] = 806,
@@ -3771,6 +3778,7 @@ local function updateData()
 			["Hardened Muck"] = 803,
 
 			--! Earthstrike
+			["Breaking Smash"] = 903,
 			["Rumble:252185"] = 903,
 			["Rumble:1058934"] = 903,
 			["Headcrush"] = 903,
@@ -4527,6 +4535,10 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Consuming Darkness:3528304"] = 411,
+			["Dominating Touch"] = 411,
+			["Imminent Destruction:3528304"] = 411,
+			["Destructive Procedure:3528303"] = 411,
 			["Dominated Hearthstone"] = 411,
 			[347037] = 411, -- Sepsis proc
 			["Unholy Reckoning:132094"] = 411,
@@ -4673,6 +4685,9 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Devourer
+			["Dimension Tear:4067372"] = 413,
+			["Unstable Rift:135729"] = 413,
+			["Essence Barrier:136051"] = 413,
 			["Doom Shroom:134529"] = 413,
 			["Drudge Bolt"] = 413,
 			["Blighted Discharge:651086"] = 413,
@@ -5481,6 +5496,7 @@ local function updateData()
 			["Weeping Burden"] = 325,
 
 			--! Dread  ! Fear  ! Sha
+			["Fear of the Unknown"] = 327,
 			["Bone Chilling Scream"] = 327,
 			["Screams of the Dead"] = 327,
 			["Tremendous Roar"] = 327,
@@ -7202,6 +7218,14 @@ local function updateData()
 			[209962] = 202,
 			[367326] = 203,
 			[22949] = 8,
+			[361481] = 111,
+			[359944] = 111,
+			[364892] = 100,
+			[366214] = 100,
+			[364965] = 203,
+			[364961] = 203,
+			[366402] = 100,
+			[361739] = 100,
 			--qqq
 
 			--# Toys
@@ -10907,6 +10931,12 @@ local function updateData()
 			[169503] = 0,
 			[165551] = 0,
 			[271196] = 1794517,
+			[361223] = 0,
+			[350208] = 0,
+			[361481] = 0,
+			[359944] = 4038104,
+			[366402] = 0,
+			[363254] = 0,
 			--qqi
 
 
