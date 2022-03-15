@@ -1039,6 +1039,8 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Deadeye Aim"] = 100,
+			["Quickshot"] = 100,
 			["Harvest:134427"] = 100,
 			["Overdrive"] = 100,
 			["Make Camp"] = 100,
@@ -1324,6 +1326,7 @@ local function updateData()
 			["Surging Blade:878213"] = 110,
 			["Lumbering Strike"] = 110,
 			["Shield Bash"] = 110,
+			["Bulwark of Juju"] = 110,
 			["Shark Tornado"] = 110,
 			["Devotion Aura"] = 110,
 			["Flurry of Steel"] = 110,
@@ -1451,6 +1454,7 @@ local function updateData()
 			["Rake"] = 102,
 
 			--! Strength
+			["Brutal Backhand"] = 106,
 			["Redoubt"] = 106,
 			["Battle Shout"] = 106,
 			["Pulverize"] = 106,
@@ -1504,6 +1508,7 @@ local function updateData()
 			["Living Free Action"] = 115,
 
 			--! Alacrity  ! Speed
+			["Pursuit"] = 104,
 			["Dead Eye"] = 104,
 			["Trailblazer"] = 104,
 			["Predatory Swiftness"] = 104,
@@ -1578,6 +1583,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic  ! Sound  ! Progenitor
+			["Shattering Bellow"] = 111,
 			["Sonic Charge"] = 111,
 			["Cry"] = 111,
 			[200580] = 111, -- Maddening Roar
@@ -2372,6 +2378,8 @@ local function updateData()
 			["Righteous Verdict"] = 2,
 
 			--! Holy Light  ! Gold
+			["Transfusion:135949"] = 200,
+			["Molten Gold"] = 200,
 			["Radiant Tempest"] = 200,
 			["Aegis of Aggramar"] = 200,
 			["Sanctify"] = 200,
@@ -2396,6 +2404,8 @@ local function updateData()
 			["Guardian of Ancient Queens"] = 200,
 
 			--! Holystrike  ! Flash  ! Titan
+			["Gilded Claws"] = 3,
+			["Flash Concentration"] = 3,
 			["Dazzling Visage"] = 3,
 			["Eye for an Eye"] = 3,
 			["Crusader Aura"] = 3,
@@ -3134,6 +3144,8 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Toxic Leap"] = 806,
+			["Venom Blast"] = 806,
 			["Barbed Sting"] = 806,
 			["Blisterbomb"] = 806,
 			["Disgusting Slime"] = 806,
@@ -3254,6 +3266,8 @@ local function updateData()
 			["Wound Poison"] = 806,
 
 			--! Poisonstrike
+			["Venom-Tipped Blade"] = 906,
+			["Venomfang Strike"] = 906,
 			["Poison Claws"] = 906,
 			["Spitting Cobra"] = 906,
 			["Viper's Venom"] = 906,
@@ -3529,6 +3543,7 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water  ! Sea  ! Fishing
+			["Sea Spout"] = 801,
 			["Surging Depths"] = 801,
 			["Water Shield"] = 801,
 			[114052] = 801, -- Ascendance (Water)
@@ -4397,6 +4412,8 @@ local function updateData()
 			["Six Pound Barrel"] = 415,
 
 			--! Plague
+			["Rotting Decay"] = 40,
+			["Noxious Stench"] = 40,
 			["Fevered Plague"] = 40,
 			["Doom Shroom"] = 40,
 			["Rotten Bolt"] = 40,
@@ -4830,6 +4847,7 @@ local function updateData()
 			["Chain Cleave"] = 33,
 
 			--! Pain
+			["Wracking Pain"] = 322,
 			["Intense Pain"] = 322,
 			["Suppress Pain"] = 322,
 			["Surge of Pain"] = 322,
@@ -5454,6 +5472,7 @@ local function updateData()
 			["Wrath of Zolramus"] = 326,
 
 			--! Curse  ! Voodoo
+			["Unstable Hex"] = 325,
 			["Whispering Curse"] = 325,
 			["Curse of the Witch"] = 325,
 			["Curse of Worms"] = 325,
@@ -5496,6 +5515,7 @@ local function updateData()
 			["Weeping Burden"] = 325,
 
 			--! Dread  ! Fear  ! Sha
+			["Terrifying Visage"] = 327,
 			["Fear of the Unknown"] = 327,
 			["Bone Chilling Scream"] = 327,
 			["Screams of the Dead"] = 327,
@@ -5596,6 +5616,9 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Soul Siphon"] = 360,
+			["Soulrend"] = 360,
+			["Echoes of Shadra"] = 360,
 			["Shadow Storm"] = 360,
 			["Motivate:237554"] = 360,
 			["Shadow Pact:537079"] = 360,
