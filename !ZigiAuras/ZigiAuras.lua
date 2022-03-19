@@ -244,6 +244,7 @@ local function updateData()
 			["Feldanni-ShatteredHand"] = "WARLOCK",
 			["Halp-Bloodfeather"] = "DRUID",
 			["Happyvale-Bloodfeather"] = "MONK",
+			["Kintawa-Bloodfeather"] = "SHAMAN",
 			["Kree-Bloodfeather"] = "WARRIOR",
 			["Milkpeople-Bloodfeather"] = "DRUID",
 			["Nannyvision-ShatteredHand"] = "ROGUE",
@@ -260,7 +261,12 @@ local function updateData()
 			["Srilala-ShatteredHand"] = "SHAMAN",
 			["Voidlisa-Bloodfeather"] = "WARLOCK",
 			["Voidlisa-Ravenholdt"] = "WARLOCK",
+			["Zrow-Bloodfeather"] = "MAGE",
 			-- My Characters
+			["Zigi-Bloodfeather"] = "MONK",
+			["Zigina-Bloodfeather"] = "MONK",
+			["Flop-Ravenholdt"] = "MONK",
+			["Flopping-Ravenholdt"] = "MONK",
 			["Aero-Sporeggar"] = "MONK",
 			["Agata-SteamwheedleCartel"] = "PRIEST",
 			["Agnes-Bloodfeather"] = "WARLOCK",
@@ -3114,6 +3120,7 @@ local function updateData()
 			["Throw Brambles"] = 900,
 
 			--! Life  ! Wild
+			["Ensnaring Moss"] = 10,
 			["Heart of the Wild"] = "DRUID",
 			["Blessing of Spring"] = 10,
 			["Genesis"] = 10,
@@ -5718,8 +5725,10 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Mark of Shadow"] = 360,
 			["Fel Power:136216"] = 360,
 			["Summon Felhound Manastalker"] = 360,
+			["Summon Fiendish Hound"] = 360,
 			["Summon Seductress"] = 360,
 			["Spirit Gale"] = 360,
 			["Summon Empowering Spirits"] = 360,
@@ -11203,6 +11212,7 @@ local function updateData()
 
 			--§ Spells
 			["Summon Felhound Manastalker"] = 136217,
+			["Summon Fiendish Hound"] = 136217,
 			["Summon Seductress"] = 136220,
 			["Summon Pocopoc"] = 4327611,
 			[164862] = 0, -- Flap
