@@ -1090,6 +1090,10 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Assembling"] = 100,
+			["Grabbing"] = 100,
+			["Grabbing..."] = 100,
+			["Salvaging"] = 100,
 			["Emergency Repairs"] = 100,
 			["Barrage:461115"] = 100,
 			["Dark Iron Land Mine"] = 100,
@@ -1567,6 +1571,7 @@ local function updateData()
 			["Living Free Action"] = 115,
 
 			--! Alacrity  ! Speed
+			["Crashing Charge"] = 104,
 			["Furious Charge"] = 104,
 			["Satiated:237554"] = 104,
 			["Pursuit"] = 104,
@@ -1643,7 +1648,8 @@ local function updateData()
 			["Tiger's Lust"] = 104,
 			["Wild Charge"] = 104,
 
-			--! Sonic  ! Sound  ! Progenitor
+			--! Sonic  ! Sound
+			["Fatiguing Roar"] = 111,
 			["Deafening Shout"] = 111,
 			["Raptora Call"] = 111,
 			["Call Workers"] = 111,
@@ -2482,6 +2488,7 @@ local function updateData()
 			["Guardian of Ancient Queens"] = 200,
 
 			--! Holystrike  ! Flash
+			["Reverberating Assault"] = 3,
 			["Expulsion Slam:4038105"] = 3,
 			["Cosmic Web"] = 3,
 			["Charged Strike:4038103"] = 3,
@@ -2900,6 +2907,13 @@ local function updateData()
 			["Blessing of Spellwarding"] = 66,
 
 			--! Cosmic  ! Progenitor
+			["Charged Expulsion:3790062"] = 106,
+			["Cosmic Formations"] = 106,
+			["Stolen Knowledge:4238797"] = 106,
+			["Channeled Obliteration:4038102"] = 106,
+			["Sweeping Blast:4038105"] = 106,
+			["Expel:4038103"] = 106,
+			["Desynchronize:4038101"] = 106,
 			["Power Drain:4038102"] = 106,
 			["Steady Blast:4038104"] = 106,
 			["Controlled Calamity:4038104"] = 106,
@@ -3072,6 +3086,7 @@ local function updateData()
 			--: Nature
 			-------------------------
 			--! Nature  ! Herbalism
+			["Regenerate:236166"] = 8,
 			["Unleash Life"] = 8,
 			["Incarnation: Tree of Life"] = 8,
 			["Earthgrab Totem"] = 8,
@@ -3114,6 +3129,9 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Brood Sacks"] = 900,
+			["Hatch"] = 900,
+			["Tangled Ward"] = 900,
 			["Vine Lash"] = 900,
 			["Whirl of Thorns"] = 900,
 			["Spiked Tongue:136113"] = 900,
@@ -3183,6 +3201,7 @@ local function updateData()
 			["Master's Call"] = 10,
 
 			--! Fey  ! Night Fae
+			["Podtender:656440"] = 805,
 			["Redirected Anima:236160"] = 805,
 			["New Moon"] = 805,
 			["Half Moon"] = 805,
@@ -3243,6 +3262,9 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Sticky Venom"] = 806,
+			["Paralytic Spew"] = 806,
+			["Crippling Slime"] = 806,
 			["Poisonous Cloud"] = 806,
 			["Radiation Bolt"] = 806,
 			["Concentrated Filth"] = 806,
@@ -3835,6 +3857,7 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth  ! Mud  ! Stone  ! Wood
+			["Infused Quake"] = 803,
 			["Harness Stone"] = 803,
 			["Subterranean Eruptions"] = 803,
 			["Rocky Spittle"] = 803,
@@ -3961,6 +3984,8 @@ local function updateData()
 			["Stone Throw"] = 803,
 
 			--! Earthstrike
+			["Scarab Swarm"] = 903,
+			["Lay Eggs"] = 903,
 			["Vomhop!"] = 903,
 			["Brittle"] = 903,
 			["Debilitating Headbutt"] = 903,
@@ -4695,10 +4720,14 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Mawfused Orb"] = 411,
+			["Mawfused Orbs"] = 411,
+			["Mawfocused Orb"] = 411,
+			["Mawfocused Orbs"] = 411,
+			["Drain Hope:3528300"] = 411,
 			["Furious Slam:3995538"] = 411,
 			["Banishment Blast:3528302"] = 411,
 			["Barrage of Doubt"] = 411,
-			["Insidious Anxieties"] = 411,
 			["Piercing Memory:878214"] = 411,
 			[356306] = 411, -- Devastating Smash
 			["Empowered Sight:1405818"] = 411,
@@ -4859,6 +4888,7 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Devourer
+			["Overwhelming Effusion:136201"] = 413,
 			[367108] = 413, -- Unstable Eruption
 			[360767] = 413, -- Expel Essence
 			[360778] = 413, -- Consumption
@@ -4928,7 +4958,6 @@ local function updateData()
 			["Shadowfiend"] = 32,
 			["Breathless Darkness"] = 32,
 			["Corruption Ritual"] = 32,
-			["Shadow Bolt"] = 32,
 			["Shadow Dance"] = 32,
 			["Shadowstep"] = 32,
 			["Nightfall"] = 32,
@@ -5686,6 +5715,7 @@ local function updateData()
 			["Weeping Burden"] = 325,
 
 			--! Dread  ! Fear  ! Sha
+			["Insidious Anxieties"] = 327,
 			["Terrifying Visage"] = 327,
 			["Fear of the Unknown"] = 327,
 			["Bone Chilling Scream"] = 327,
@@ -5716,10 +5746,6 @@ local function updateData()
 			["Touch of the Abyss"] = 327,
 			["Terror Gasp"] = 327,
 			["Bewildering Gaze:136215"] = 327,
-			["Mawfused Orb"] = 327,
-			["Mawfused Orbs"] = 327,
-			["Mawfocused Orb"] = 327,
-			["Mawfocused Orbs"] = 327,
 			["Detonate:3528304"] = 327,
 			["Explosive Mawsphere"] = 327,
 			["Explosive Mawspheres"] = 327,
@@ -5841,7 +5867,7 @@ local function updateData()
 			["Summon Demonic Tyrant"] = 360,
 			["Demonic Tyrant"] = 360,
 			["Shadowfury"] = 360,
-			["Shadow Bolt:136197"] = 360,
+			["Shadow Bolt"] = 360,
 			["Expulse Shadows"] = 360,
 			["Ritual of Shadow"] = 360,
 			["Demonic Strikes"] = 360,
@@ -5967,6 +5993,7 @@ local function updateData()
 			--: Other
 			-------------------------
 			--! Exhausted  ! Fatigue  ! Disabled  ! Tar  ! Oil
+			["Depleted Shell:656440"] = 999,
 			["Drudge Bolt:132862"] = 999,
 			["Drudge Bolt Volley:132862"] = 999,
 			["Hypothermia"] = 999,
@@ -7452,7 +7479,6 @@ local function updateData()
 			[361830] = 411,
 			[361836] = 106,
 			[361081] = 106,
-			[365755] = 100,
 			[367264] = 106,
 			[367260] = 106,
 			[367263] = 106,
@@ -7494,6 +7520,18 @@ local function updateData()
 			[365543] = 106,
 			[365528] = 106,
 			[356248] = "Anima",
+			[365737] = 100,
+			[361493] = 100,
+			[365741] = 100,
+			[365753] = 100,
+			[365755] = 100,
+			[365757] = 100,
+			[365782] = 100,
+			[365787] = 100,
+			[365792] = 100,
+			[363374] = 203,
+			[359977] = 806,
+			[359951] = 806,
 			--qqq
 
 			--# Toys
@@ -11229,11 +11267,24 @@ local function updateData()
 			[361830] = 0,
 			[361836] = 0,
 			[366136] = 0,
-			[365755] = 0,
 			[359453] = 0,
 			[356248] = 0,
 			[359658] = 0,
 			[359657] = 0,
+			[365737] = 0,
+			[361493] = 0,
+			[365741] = 0,
+			[365753] = 0,
+			[365755] = 0,
+			[365757] = 0,
+			[365782] = 0,
+			[365787] = 0,
+			[365792] = 0,
+			[363374] = 135627,
+			[360208] = 0,
+			[360204] = 0,
+			[366956] = 0,
+			[360205] = 0,
 			--qqi
 
 
@@ -11301,6 +11352,7 @@ local function updateData()
 			[256740] = 2026177, -- Drums of the Maelstrom
 			[309658] = 3528453, -- Drums of Deathly Ferocity
 			[91838] = 237533, -- Huddle
+			[357318] = 3931156, -- Spirit of Ka-Sha
 
 
 			--§ Ascension Crafting
