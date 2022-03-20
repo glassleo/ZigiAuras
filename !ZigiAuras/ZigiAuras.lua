@@ -232,6 +232,7 @@ local function updateData()
 			["Mei Francis"] = "HUNTER",
 			["Greatfather Winter"] = "Gold",
 			["Great-father Winter"] = "Gold",
+			["Thaumaturge Vashreen"] = "Heirloom",
 			-- Friends
 			["Bastani-ShatteredHand"] = "HUNTER",
 			["Blackvampkid-Bloodfeather"] = "PALADIN",
@@ -289,7 +290,7 @@ local function updateData()
 			["Ap-TheSha'tar"] = "HUNTER",
 			["Apera-TheSha'tar"] = "HUNTER",
 			["Aponi-SteamwheedleCartel"] = "DEATHKNIGHT",
-			["Appi-TheSha'tar"] = "HUNTER",
+			["Appi-Bloodfeather"] = "HUNTER",
 			["Arnald-Ravenholdt"] = "PALADIN",
 			["Art-TheSha'tar"] = "MAGE",
 			["Asami-Sporeggar"] = "DEATHKNIGHT",
@@ -498,7 +499,7 @@ local function updateData()
 			["Nix-Al'Akir"] = "WARLOCK",
 			["Njord-ShatteredHand"] = "SHAMAN",
 			["No-Executus"] = "ROGUE",
-			["Noicha-TheSha'tar"] = "PRIEST",
+			["Noicha-Bloodfeather"] = "PRIEST",
 			["Nonagon-TheSha'tar"] = "DRUID",
 			["Nora-Skullcrusher"] = "SHAMAN",
 			["Nord-ScarshieldLegion"] = "DEATHKNIGHT",
@@ -562,7 +563,7 @@ local function updateData()
 			["Sonya-Sporeggar"] = "PALADIN",
 			["Sook-Ravenholdt"] = "PRIEST",
 			["Spark-Skullcrusher"] = "SHAMAN",
-			["Spoon-TheSha'tar"] = "SHAMAN",
+			["Spoon-Terokkar"] = "SHAMAN",
 			["Steve-ScarshieldLegion"] = "WARLOCK",
 			["Sun-ScarshieldLegion"] = "MONK",
 			["Suri-TheSha'tar"] = "HUNTER",
@@ -631,9 +632,18 @@ local function updateData()
 
 		-- ! Colors
 		ZA.Colors = {
-			-- UI
-			["Gold"] = "ffd100",
 			["Blizzard"] = "e6cc80",
+			["Guild"] = "40ff40",
+			["Blue"] = "0070dd",
+			["Gold"] = "ffd100",
+			["Green"] = "1eff00",
+			["Orange"] = "ff7f3f",
+			["Purple"] = "a335ee",
+			["Red"] = "ff2020",
+			["Silver"] = "aaaadd",
+			["White"] = "ffffff",
+			["Yellow"] = "ffff00",
+
 			-- Quality
 			["Poor"] = "9d9d9d",
 			["Common"] = "ffffff",
@@ -643,7 +653,8 @@ local function updateData()
 			["Legendary"] = "ff8000",
 			["Artifact"] = "e6cc80",
 			["Heirloom"] = "e6cc80",
-			-- Classes
+
+			-- Class
 			["DEATHKNIGHT"] = "c41e3a",
 			["DEMONHUNTER"] = "a330c9",
 			["DRUID"] = "ff7c0a",
@@ -656,6 +667,33 @@ local function updateData()
 			["SHAMAN"] = "0070dd",
 			["WARLOCK"] = "8788ee",
 			["WARRIOR"] = "c69b6d",
+
+			-- Covenant
+			["Kyrian"] = "46cdff",
+			["Necrolord"] = "20db9e",
+			["Night Fae"] = "8697ff",
+			["Venthyr"] = "f90000",
+
+			-- Status
+			["Curse"] = "9600ff",
+			["Debuff"] = "c80000",
+			["Disease"] = "966400",
+			["Magic"] = "3296ff",
+			["Poison"] = "009600",
+			
+			-- Reaction/Reputation
+			["Sanctuary"] = "69ccf0",
+			["Contested"] = "ffb300",
+			["Arena"] = "ff1a1a",
+			["Tapped"] = "808080",
+			["Paragon"] = "4cc2ff",
+			["Exalted"] = "4cc2ff",
+			["Revered"] = "00ffcc",
+			["Honored"] = "00ff88",
+			["Friendly"] = "1aff1a",
+			["Neutral"] = "ffff00",
+			["Hostile"] = "ff0000",
+			["Hated"] = "cc2222",
 		}
 
 
@@ -971,6 +1009,7 @@ local function updateData()
 
 		-- ! Vehicles
 		ZA.Vehicles = {
+			["Ornate Mirror"] = 808,
 			["Defias Harvester"] = 100,
 			["Eye of Kilrogg"] = 401,
 			["Goblin Gyrocopter"] = 100,
@@ -1051,6 +1090,7 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Emergency Repairs"] = 100,
 			["Barrage:461115"] = 100,
 			["Dark Iron Land Mine"] = 100,
 			["Electrified Net"] = 100,
@@ -1117,8 +1157,6 @@ local function updateData()
 			["Searching"] = 100,
 			["Handing Over"] = 100,
 			["Throw Wyrmtongue Crate"] = 100,
-			["Examining"] = 100,
-			["Investigating"] = 100,
 			["Meteor Impact:369278"] = 100,
 			["Sashj'tar Harpoon"] = 100,
 			["Harpoon Barrage"] = 100,
@@ -1376,6 +1414,8 @@ local function updateData()
 			["Shield Wall"] = 113,
 
 			--! Bleed  ! Skinning
+			["Bloody Peck"] = 101,
+			["Thief's Blade"] = 101,
 			["Puncture"] = 101,
 			["Lacerating Talons"] = 101,
 			["Wicked Blade"] = 101,
@@ -1701,6 +1741,9 @@ local function updateData()
 			["Primal Roar"] = 111,
 
 			--! Enrage
+			["Temper Tantrum"] = 103,
+			["Strength of the Pack"] = 103,
+			["Frenzied Bite"] = 103,
 			["Slaver's Rage"] = 103,
 			["Enraged Bite"] = 103,
 			["Abyssal Might"] = 103,
@@ -1807,6 +1850,9 @@ local function updateData()
 			[345569] = 105, -- Flagellation (Haste Buff)
 
 			--! Paper  ! Writing  ! Learning  ! Inscription
+			["Inspecting"] = 114,
+			["Examining"] = 114,
+			["Investigating"] = 114,
 			["Memorizing"] = 114,
 			["A Compendium of the Herbs of Draenor"] = 114,
 			["A Guide to Skinning in Draenor"] = 114,
@@ -2435,7 +2481,8 @@ local function updateData()
 			["Guardian of Ancient Kings"] = 200,
 			["Guardian of Ancient Queens"] = 200,
 
-			--! Holystrike  ! Glass  ! Flash
+			--! Holystrike  ! Flash
+			["Expulsion Slam:4038105"] = 3,
 			["Cosmic Web"] = 3,
 			["Charged Strike:4038103"] = 3,
 			["Arcing Sweep"] = 3,
@@ -2707,8 +2754,9 @@ local function updateData()
 			["Unspoken Gratitude"] = 202,
 
 			--! Hyperlight  ! Hallow  ! Broker
+			["Hardlight Ambush"] = 203,
 			["Infused Bulwark:3867785"] = 203,
-			["Guardian Bulwark:368457"] = 203,
+			["Guardian Bulwark:3867785"] = 203,
 			["Hyperlight Strike"] = 203,
 			["Hyperlight Haste"] = 203,
 			["Broker Translocation Matrix"] = 203,
@@ -2852,6 +2900,9 @@ local function updateData()
 			["Blessing of Spellwarding"] = 66,
 
 			--! Cosmic  ! Progenitor
+			["Power Drain:4038102"] = 106,
+			["Steady Blast:4038104"] = 106,
+			["Controlled Calamity:4038104"] = 106,
 			["Containment Field:348545"] = 106,
 			["Emergency Barrier:135874"] = 106,
 			["Summon Pocopoc"] = 106,
@@ -3192,6 +3243,7 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Poisonous Cloud"] = 806,
 			["Radiation Bolt"] = 806,
 			["Concentrated Filth"] = 806,
 			["Corrosive Gunk"] = 806,
@@ -3909,6 +3961,7 @@ local function updateData()
 			["Stone Throw"] = 803,
 
 			--! Earthstrike
+			["Vomhop!"] = 903,
 			["Brittle"] = 903,
 			["Debilitating Headbutt"] = 903,
 			["Whirling Smash:132318"] = 903,
@@ -4569,6 +4622,7 @@ local function updateData()
 			["Foul Breath"] = 40,
 
 			--! Disease  ! Rot
+			["Withering Bash:132114"] = 410,
 			["Sickening Retch"] = 410,
 			["Decaying Strike"] = 410,
 			["Diseased Thrash"] = 410,
@@ -4641,6 +4695,8 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Furious Slam:3995538"] = 411,
+			["Banishment Blast:3528302"] = 411,
 			["Barrage of Doubt"] = 411,
 			["Insidious Anxieties"] = 411,
 			["Piercing Memory:878214"] = 411,
@@ -4803,10 +4859,14 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Devourer
-			[360778] = 413, -- Consumption
-			[364833] = 413, -- Devour
-			[364832] = 413, -- Devour
+			[367108] = 413, -- Unstable Eruption
 			[360767] = 413, -- Expel Essence
+			[360778] = 413, -- Consumption
+			[362572] = 413, -- Excessive Spittle
+			[362576] = 413, -- Endless Hunger
+			[364833] = 413, -- Devour
+			["Consume Vitality:1778230"] = 413,
+			["Devour Vitality:1778228"] = 413,
 			["Gluttonous Slam"] = 413,
 			["Dimension Tear:4067372"] = 413,
 			["Unstable Rift:135729"] = 413,
@@ -4917,6 +4977,7 @@ local function updateData()
 			["Siphon of Acherus"] = 328,
 
 			--! Shadowstrike
+			["Deterrent Strike:236255"] = 33,
 			["Edge of Oblivion"] = 33,
 			["Darkened Fangs"] = 33,
 			["Worgen Transform"] = 33,
@@ -7432,6 +7493,7 @@ local function updateData()
 			[365549] = 106,
 			[365543] = 106,
 			[365528] = 106,
+			[356248] = "Anima",
 			--qqq
 
 			--# Toys
@@ -11169,6 +11231,9 @@ local function updateData()
 			[366136] = 0,
 			[365755] = 0,
 			[359453] = 0,
+			[356248] = 0,
+			[359658] = 0,
+			[359657] = 0,
 			--qqi
 
 
