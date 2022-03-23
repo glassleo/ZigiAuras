@@ -727,6 +727,23 @@ local function updateData()
 			end
 		end
 
+		-- GetIcon function
+		function ZA.GetIcon(id, name, icon)
+			local id = tonumber(id or 0)
+			local name = name or ""
+			local icon = tonumber(icon or 0) or 0
+
+			if id > 0 and ZA.Icons[id] then
+				return ZA.Icons[id]
+			elseif ZA.Icons[name..":"..icon] then
+				return ZA.Icons[name..":"..icon]
+			elseif ZA.Icons[name] then
+				return ZA.Icons[name]
+			else
+				return icon
+			end
+		end
+
 		-- Gradient to RGB
 		function ZA.GradientRGB(gradient)
 			local lhex, rhex = strsplit(":", gradient)
@@ -2678,6 +2695,7 @@ local function updateData()
 			[312106] = 600, -- Weapons of Order (Debuff)
 
 			--! Discipline  ! Bandage  ! Brew  ! Help
+			["Play Dead"] = 202,
 			["Recuperate"] = 202,
 			["Licking Wounds"] = 202,
 			["Resounding Protection"] = 202,
@@ -3129,6 +3147,7 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Tongue Lash"] = 900,
 			["Brood Sacks"] = 900,
 			["Hatch"] = 900,
 			["Tangled Ward"] = 900,
@@ -3857,6 +3876,7 @@ local function updateData()
 			--: Earth
 			-------------------------
 			--! Earth  ! Mud  ! Stone  ! Wood
+			["Vital Accretion"] = 803,
 			["Infused Quake"] = 803,
 			["Harness Stone"] = 803,
 			["Subterranean Eruptions"] = 803,
@@ -3984,6 +4004,7 @@ local function updateData()
 			["Stone Throw"] = 803,
 
 			--! Earthstrike
+			["Hop!:3778583"] = 903,
 			["Scarab Swarm"] = 903,
 			["Lay Eggs"] = 903,
 			["Vomhop!"] = 903,
@@ -4324,6 +4345,7 @@ local function updateData()
 			["Conjure Mana Gem"] = 126,
 
 			--! Conjuration  ! Teleport  ! Enchanting  ! Transmutation
+			["Illusory Assault"] = 646,
 			["Teleporting"] = 646,
 			["Portal: Archmage Vargoth's Retreat"] = 646,
 			["Everlook Transporter"] = 646,
@@ -4577,6 +4599,8 @@ local function updateData()
 			["Six Pound Barrel"] = 415,
 
 			--! Plague
+			["Fungal Spores"] = 40,
+			["Foul Spores"] = 40,
 			["Corpse Spew"] = 40,
 			["Lingering Mucus"] = 40,
 			["Rotting Decay"] = 40,
@@ -5550,6 +5574,7 @@ local function updateData()
 			["Mindgames:3565723"] = 321,
 
 			--! Necromancy  ! Necrolord
+			["Forgeborne Reveries"] = 326,
 			["Raise Fallen Crusader"] = 326,
 			["Breath of Dread:988195"] = 326,
 			["Death Chakram"] = 326,
@@ -5993,6 +6018,7 @@ local function updateData()
 			--: Other
 			-------------------------
 			--! Exhausted  ! Fatigue  ! Disabled  ! Tar  ! Oil
+			["Soul Exhaustion"] = 999,
 			["Depleted Shell:656440"] = 999,
 			["Drudge Bolt:132862"] = 999,
 			["Drudge Bolt Volley:132862"] = 999,
@@ -7532,6 +7558,11 @@ local function updateData()
 			[363374] = 203,
 			[359977] = 806,
 			[359951] = 806,
+			[360120] = 100,
+			[360121] = 100,
+			[360122] = 100,
+			[360511] = 106,
+			[360283] = 202,
 			--qqq
 
 			--# Toys
@@ -11285,6 +11316,8 @@ local function updateData()
 			[360204] = 0,
 			[366956] = 0,
 			[360205] = 0,
+			[361386] = 0,
+			[360283] = 0,
 			--qqi
 
 
@@ -11345,6 +11378,7 @@ local function updateData()
 			["Tranquilizing Shot"] = 132323, -- Black Arrow
 			["Mindbender"] = 1386549,
 			[11426] = 135843, -- Ice Barrier
+			[20004] = 136169, -- Life Steal (missing icon)
 
 
 			--§ Auras
