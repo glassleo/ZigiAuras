@@ -632,7 +632,7 @@ local function updateData()
 
 		-- ! Colors
 		ZA.Colors = {
-			["Blizzard"] = "e6cc80",
+			["Blizzard"] = "3facff",
 			["Guild"] = "40ff40",
 			["Blue"] = "0070dd",
 			["Gold"] = "ffd100",
@@ -652,7 +652,7 @@ local function updateData()
 			["Epic"] = "a335ee",
 			["Legendary"] = "ff8000",
 			["Artifact"] = "e6cc80",
-			["Heirloom"] = "e6cc80",
+			["Heirloom"] = "00ccff",
 
 			-- Class
 			["DEATHKNIGHT"] = "c41e3a",
@@ -1048,6 +1048,8 @@ local function updateData()
 			["War Eagle"] = 811,
 			["Nascence Attendant"] = 106,
 			["Pocopoc"] = 106,
+			["Jiro Prime"] = 106,
+			["Kbato"] = 106,
 		}
 
 		-- ! Vehicle Icons
@@ -1107,6 +1109,8 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Push"] = 100,
+			["Pushing"] = 100,
 			["Assembling"] = 100,
 			["Grabbing"] = 100,
 			["Grabbing..."] = 100,
@@ -1315,6 +1319,7 @@ local function updateData()
 			["Sweeping Strikes"] = 107,
 			["Sweeping Strike"] = 107,
 			["Bladestorm"] = 107,
+			["Kbato Kai"] = 107,
 			["Piercing Shot"] = 107,
 			["Puncture Armor"] = 107,
 			["Ravaging Whirl"] = 107,
@@ -1987,6 +1992,7 @@ local function updateData()
 			["Explosive Rounds"] = 4,
 
 			--! Flamestrike  ! Cannonfire  ! Bomb  ! Smelting
+			["Blackrock Bomb"] = 5,
 			["Blazing Fists"] = 5,
 			["Dancing Blade:135408"] = 5,
 			["Dampen Harm"] = 5,
@@ -2925,6 +2931,9 @@ local function updateData()
 			["Blessing of Spellwarding"] = 66,
 
 			--! Cosmic  ! Progenitor
+			["Twin Beams:537468"] = 106,
+			["Twin Beams:4038105"] = 106,
+			["Four-Finger Beam:4038101"] = 106,
 			["Charged Expulsion:3790062"] = 106,
 			["Cosmic Formations"] = 106,
 			["Stolen Knowledge:4238797"] = 106,
@@ -3059,6 +3068,7 @@ local function updateData()
 			--: Elemental
 			-------------------------
 			--! Elemental
+			["Splintered Elements"] = 28,
 			["Echoing Shock"] = 28,
 			["Maelstrom-Powered Elemental Blast"] = 28,
 			["Ascendance"] = 28,
@@ -3513,6 +3523,7 @@ local function updateData()
 			["Primal Storm Elemental"] = 811,
 
 			--! Storm
+			["Scorched Earth:135990"] = 911,
 			["Gathering Storms"] = 911,
 			["Ursol's Vortex"] = 911,
 			["Cloudburst Totem"] = 911,
@@ -3541,6 +3552,8 @@ local function updateData()
 			["Localized Storm"] = 911,
 
 			--! Lightning  ! Thunder  ! Electric
+			["50,000 Volts"] = 800,
+			["Storm Shield"] = 800,
 			["Lightning Strike"] = 800,
 			["Energize!"] = 800,
 			["Disperse:136111"] = 800,
@@ -3696,6 +3709,7 @@ local function updateData()
 			--: Water
 			-------------------------
 			--! Water  ! Sea  ! Fishing
+			["Fishing Portal"] = 801,
 			["Seaswell"] = 801,
 			["Rapid Tide"] = 801,
 			["Sea Spout"] = 801,
@@ -4345,6 +4359,7 @@ local function updateData()
 			["Conjure Mana Gem"] = 126,
 
 			--! Conjuration  ! Teleport  ! Enchanting  ! Transmutation
+			["Scouting Ahead:135745"] = 646,
 			["Illusory Assault"] = 646,
 			["Teleporting"] = 646,
 			["Portal: Archmage Vargoth's Retreat"] = 646,
@@ -4599,6 +4614,7 @@ local function updateData()
 			["Six Pound Barrel"] = 415,
 
 			--! Plague
+			["Infect"] = 40,
 			["Fungal Spores"] = 40,
 			["Foul Spores"] = 40,
 			["Corpse Spew"] = 40,
@@ -4744,6 +4760,10 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Corruption Beam:3528298"] = 411,
+			["Focused Blast:3528302"] = 411,
+			["Wracking Gaze:3729672"] = 411,
+			["Bolt of Ruination:1029009"] = 411,
 			["Mawfused Orb"] = 411,
 			["Mawfused Orbs"] = 411,
 			["Mawfocused Orb"] = 411,
@@ -4911,7 +4931,12 @@ local function updateData()
 			["Vanish"] = 411,
 			["Wave of Suffering"] = 411,
 
-			--! Drust  ! Devourer
+			--! Drust  ! Argus  ! Devourer
+			["Growing Hatred:1778230"] = 413,
+			["Echoes of Destruction:1778228"] = 413,
+			["Unmake:1778226"] = 413,
+			["Echoes of Destruction"] = 413,
+			[364643] = 413, -- Cone of Death
 			["Overwhelming Effusion:136201"] = 413,
 			[367108] = 413, -- Unstable Eruption
 			[360767] = 413, -- Expel Essence
@@ -6018,6 +6043,7 @@ local function updateData()
 			--: Other
 			-------------------------
 			--! Exhausted  ! Fatigue  ! Disabled  ! Tar  ! Oil
+			["Dungeon Deserter"] = 999,
 			["Soul Exhaustion"] = 999,
 			["Depleted Shell:656440"] = 999,
 			["Drudge Bolt:132862"] = 999,
@@ -7563,6 +7589,11 @@ local function updateData()
 			[360122] = 100,
 			[360511] = 106,
 			[360283] = 202,
+			[359037] = 203,
+			[359244] = 106,
+			[360173] = 106,
+			[360777] = 203,
+			[364871] = 203,
 			--qqq
 
 			--# Toys
@@ -11318,6 +11349,11 @@ local function updateData()
 			[360205] = 0,
 			[361386] = 0,
 			[360283] = 0,
+			[359037] = 133015,
+			[359132] = 0,
+			[362166] = 0,
+			[360777] = 0,
+			[364871] = 133015,
 			--qqi
 
 
