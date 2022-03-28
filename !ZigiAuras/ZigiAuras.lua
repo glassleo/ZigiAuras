@@ -1671,6 +1671,7 @@ local function updateData()
 			["Wild Charge"] = 104,
 
 			--! Sonic  ! Sound
+			["Maddening Call"] = 111,
 			["Fatiguing Roar"] = 111,
 			["Deafening Shout"] = 111,
 			["Raptora Call"] = 111,
@@ -4687,6 +4688,7 @@ local function updateData()
 			["Foul Breath"] = 40,
 
 			--! Disease  ! Rot
+			["Itchy Spores"] = 410,
 			["Withering Bash:132114"] = 410,
 			["Sickening Retch"] = 410,
 			["Decaying Strike"] = 410,
