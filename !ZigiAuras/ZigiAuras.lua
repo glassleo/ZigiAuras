@@ -265,7 +265,6 @@ local function updateData()
 			["Zrow-Bloodfeather"] = "MAGE",
 			-- My Characters
 			["Zigi-Bloodfeather"] = "MONK",
-			["Zigina-Bloodfeather"] = "MONK",
 			["Flop-Ravenholdt"] = "MONK",
 			["Flopping-Ravenholdt"] = "MONK",
 			["Aero-Sporeggar"] = "MONK",
