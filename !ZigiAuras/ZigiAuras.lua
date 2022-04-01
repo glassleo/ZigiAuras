@@ -265,7 +265,6 @@ local function updateData()
 			["Zrow-Bloodfeather"] = "MAGE",
 			-- My Characters
 			["Zigi-Bloodfeather"] = "MONK",
-			["Flop-Ravenholdt"] = "MONK",
 			["Flopping-Ravenholdt"] = "MONK",
 			["Aero-Sporeggar"] = "MONK",
 			["Agata-SteamwheedleCartel"] = "PRIEST",
@@ -1029,6 +1028,8 @@ local function updateData()
 			["Defias Harvester"] = 100,
 			["Eye of Kilrogg"] = 401,
 			["Goblin Gyrocopter"] = 100,
+			["Skyfire Gyrocopter"] = 100,
+			["Gyrocopter Turret"] = 100,
 			["Kalecgos"] = 600,
 			["Wisp"] = 805,
 			["Theotar"] = 321,
@@ -1059,6 +1060,7 @@ local function updateData()
 			["Throwing Veggies"] = 134011,
 			["Wisp"] = 1100178,
 			["Pocopoc"] = 4327611,
+			["Gyrocopter Turret"] = 132240,
 		}
 
 
@@ -1108,6 +1110,9 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Bolt of Steel"] = 100,
+			["Powder Shot"] = 100,
+			["Full Autofire"] = 100,
 			["Push"] = 100,
 			["Pushing"] = 100,
 			["Assembling"] = 100,
@@ -1769,6 +1774,7 @@ local function updateData()
 			["Primal Roar"] = 111,
 
 			--! Enrage
+			["Blind Rage"] = 103,
 			["Temper Tantrum"] = 103,
 			["Strength of the Pack"] = 103,
 			["Frenzied Bite"] = 103,
@@ -2156,6 +2162,7 @@ local function updateData()
 			--: Fel
 			-------------------------
 			--! Felfire
+			["Fel Detonation"] = 401,
 			["Fel Power"] = 401,
 			["Corrupted Healing Totem Summon"] = 401,
 			["Felfrost Bolt"] = 401,
@@ -3291,6 +3298,8 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Venom Spray"] = 806,
+			["Lob Poison"] = 806,
 			["Sticky Venom"] = 806,
 			["Paralytic Spew"] = 806,
 			["Crippling Slime"] = 806,
@@ -5094,6 +5103,7 @@ local function updateData()
 			["Chain Cleave"] = 33,
 
 			--! Pain
+			["Painful Motivation"] = 322,
 			["Wracking Pain"] = 322,
 			["Intense Pain"] = 322,
 			["Suppress Pain"] = 322,
@@ -5863,6 +5873,8 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Strengthen Pact - Incubus"] = 360,
+			["Strengthen Pact - Succubus"] = 360,
 			["Mark of Shadow"] = 360,
 			["Fel Power:136216"] = 360,
 			["Summon Felhound Manastalker"] = 360,
@@ -5919,6 +5931,7 @@ local function updateData()
 			["Demonic Tyrant"] = 360,
 			["Shadowfury"] = 360,
 			["Shadow Bolt"] = 360,
+			["Shadow Bolt Volley"] = 360,
 			["Expulse Shadows"] = 360,
 			["Ritual of Shadow"] = 360,
 			["Demonic Strikes"] = 360,
@@ -5959,6 +5972,8 @@ local function updateData()
 			["Twilight Immolate"] = 360,
 			["Demonic Calling"] = 360,
 			["Summon Succubus"] = 360,
+			["Summon Incubus"] = 360,
+			["Summon Sayaad"] = 360,
 			["Summon Felhunter"] = 360,
 			["Summon Observer"] = 360,
 			["Summon Shivarra"] = 360,
