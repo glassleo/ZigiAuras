@@ -678,7 +678,7 @@ local function updateData()
 			["Disease"] = "966400",
 			["Magic"] = "3296ff",
 			["Poison"] = "009600",
-			
+
 			-- Reaction/Reputation
 			["Sanctuary"] = "69ccf0",
 			["Contested"] = "ffb300",
@@ -6092,6 +6092,7 @@ local function updateData()
 
 			-------------------------
 			--! Mounts
+			["Zereth Overseer"] = 106,
 			["Wen Lo, the River's Edge"] = 801,
 			["Sunwarmed Furline"] = 6,
 			["Sarge's Tale"] = 646,
@@ -6333,9 +6334,9 @@ local function updateData()
 			["Emerald Raptor"] = 903,
 			["Enchanted Dreamlight Runestag"] = 805,
 			["Enchanted Fey Dragon"] = 805,
-			["Enchanted Shadeleaf Runestag"] = 805,
-			["Enchanted Wakener's Runestag"] = 805,
-			["Enchanted Winterborn Runestag"] = 805,
+			["Shadeleaf Runestag"] = 805,
+			["Wakener's Runestag"] = 805,
+			["Winterborn Runestag"] = 805,
 			["Endmire Flyer"] = 413,
 			["Ensorcelled Everwyrm"] = 201,
 			["Eternal Phalynx of Courage"] = 201,
@@ -6816,7 +6817,8 @@ local function updateData()
 			["Uncorrupted Voidwing"] = 320,
 			["Undercity Plaguebat"] = 414,
 			["Underrot Crawg"] = 101,
-			["Undying Darkhound"] = 32,
+			["Undying Darkhound"] = 40,
+			["Unsuccessful Prototype Fleetpod"] = 106,
 			["Unpainted Mechanostrider"] = 100,
 			["Unshackled Waveray"] = 901,
 			["Valarjar Stormwing"] = 800,
@@ -6826,12 +6828,14 @@ local function updateData()
 			["Veridian Netherwing Drake"] = 323,
 			["Vibrant Flutterwing"] = 805,
 			["Vibrant Mana Ray"] = 96,
+			["Vespoid Flutterer"] = 106,
 			["Vicious Black Bonesteed"] = 36,
 			["Vicious Black Warsaber"] = 903,
 			["Vicious Gilnean Warhorse"] = 903,
 			["Vicious Kaldorei Warsaber"] = 903,
 			["Vicious Skeletal Warhorse"] = 414,
 			["Vicious War Basilisk"] = 903,
+			["Vicious War Croaker"] = 900,
 			["Vicious War Bear"] = 903,
 			["Vicious War Clefthoof"] = 903,
 			["Vicious War Elekk"] = 903,
@@ -6844,7 +6848,7 @@ local function updateData()
 			["Vicious War Raptor"] = 903,
 			["Vicious War Riverbeast"] = 901,
 			["Vicious War Scorpion"] = 903,
-			["Vicious War Spider"] = ZA.AH(101, 906),
+			["Vicious War Spider"] = ZA.AH(5, 906),
 			["Vicious War Steed"] = 903,
 			["Vicious War Trike"] = 100,
 			["Vicious War Turtle"] = 900,
@@ -6861,7 +6865,7 @@ local function updateData()
 			["Viridian Phase-Hunter"] = 323,
 			["Viridian Sharptalon"] = 8,
 			["Vitreous Stone Drake"] = 808,
-			["Voidtalon of the Dark Star"] = 36,
+			["Voidtalon of the Dark Star"] = 320,
 			["Volcanic Stone Drake"] = 818,
 			["Voldunai Dunescraper"] = 811,
 			["Voracious Gorger"] = 413,
@@ -6906,6 +6910,7 @@ local function updateData()
 			["Yellow Qiraji Battle Tank"] = 324,
 			["Yu'lei, Daughter of Jade"] = 902,
 			["Zandalari Direhorn"] = 903,
+			["Wastewarped Deathwalker"] = 321,
 
 			--# Quest
 			[106872] = 327,
