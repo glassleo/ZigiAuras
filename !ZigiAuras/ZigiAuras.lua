@@ -807,6 +807,7 @@ local function updateData()
 			[145430] = "Teleport: Timeless Isle",
 			[175608] = "Teleport: Karabor",
 			[175604] = "Teleport: Bladespire Citadel",
+			[366333] = "Crystallic Spheroid",
 		}
 
 
@@ -1024,6 +1025,7 @@ local function updateData()
 
 		-- ! Vehicles
 		ZA.Vehicles = {
+			["Bounding Bufonid"] = 106,
 			["Ornate Mirror"] = 808,
 			["Defias Harvester"] = 100,
 			["Eye of Kilrogg"] = 401,
@@ -1884,6 +1886,7 @@ local function updateData()
 			[345569] = 105, -- Flagellation (Haste Buff)
 
 			--! Paper  ! Writing  ! Learning  ! Inscription
+			["Transcribing"] = 114,
 			["Inspecting"] = 114,
 			["Examining"] = 114,
 			["Investigating"] = 114,
@@ -2938,6 +2941,7 @@ local function updateData()
 			["Blessing of Spellwarding"] = 66,
 
 			--! Cosmic  ! Progenitor
+			["Rejected Creations:4038105"] = 106,
 			["Twin Beams:537468"] = 106,
 			["Twin Beams:4038105"] = 106,
 			["Four-Finger Beam:4038101"] = 106,
@@ -3107,7 +3111,6 @@ local function updateData()
 			["Irresistible Cologne Spray"] = 281,
 			["Cauldron Catalyst"] = 281,
 			["Volatile Concoction"] = 281,
-			["Shadowcore Oil"] = 281,
 			["Brewing Potion"] = 281,
 			["Brewing:136240"] = 281,
 			["Healing Brew"] = 281,
@@ -3121,6 +3124,7 @@ local function updateData()
 			--: Nature
 			-------------------------
 			--! Nature  ! Herbalism
+			["Pollinating"] = 8,
 			["Regenerate:236166"] = 8,
 			["Unleash Life"] = 8,
 			["Incarnation: Tree of Life"] = 8,
@@ -3461,6 +3465,7 @@ local function updateData()
 			--: Air
 			-------------------------
 			--! Wind  ! Air
+			["Raging Tempest"] = 811,
 			["Deadly Gust"] = 811,
 			["Elemental Blast: Haste"] = 811,
 			[114051] = 811, -- Ascendance (Air)
@@ -3481,6 +3486,7 @@ local function updateData()
 			["Feathery Onslaught"] = 811,
 			["Windsong"] = 811,
 			["Slow Fall"] = 811,
+			["Frog Fall"] = 811,
 			["Updraft"] = 811,
 			["Flap Wings"] = 811,
 			["Gale Slash"] = 811,
@@ -3630,7 +3636,6 @@ local function updateData()
 			["Short Out"] = 800,
 			["Arcing Zap"] = 800,
 			["Ring of Thunder"] = 800,
-			["Raging Tempest"] = 800,
 			["Thunderbolt"] = 800,
 			["Welding Beam"] = 800,
 			["Arc Bolt"] = 800,
@@ -4770,6 +4775,9 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Aggression Sentry:3528304"] = 411,
+			["Throw Gauntlet:3861531"] = 411,
+			["Soul Dust:134389"] = 411,
 			["Corruption Beam:3528298"] = 411,
 			["Focused Blast:3528302"] = 411,
 			["Wracking Gaze:3729672"] = 411,
@@ -4942,6 +4950,7 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Argus  ! Devourer
+			["Dark Mark:136192"] = 413,
 			["Growing Hatred:1778230"] = 413,
 			["Echoes of Destruction:1778228"] = 413,
 			["Unmake:1778226"] = 413,
@@ -7615,6 +7624,13 @@ local function updateData()
 			[360173] = 106,
 			[360777] = 203,
 			[364871] = 203,
+			[366333] = 106,
+			[365614] = 106,
+			[362450] = 106,
+			[361979] = 106,
+			[364301] = 106,
+			[359128] = 106,
+			[361753] = 106,
 			--qqq
 
 			--# Toys
@@ -7701,6 +7717,10 @@ local function updateData()
 			[244882] = 903, -- Crackling Blow (Troll Hulk)
 			[273664] = 903, -- Crush (Troll Hulk)
 			--nnn
+
+			--# Consumables
+			[320798] = 281, -- Shadowcore Oil
+			[321389] = 281, -- Embalmer's Oil
 
 			--# Ascension Crafting
 				-- Lures
@@ -11375,6 +11395,11 @@ local function updateData()
 			[362166] = 0,
 			[360777] = 0,
 			[364871] = 133015,
+			[365614] = 512902,
+			[361979] = 0,
+			[364301] = 0,
+			[359128] = 0,
+			[361753] = 0,
 			--qqi
 
 
@@ -11436,6 +11461,12 @@ local function updateData()
 			["Mindbender"] = 1386549,
 			[11426] = 135843, -- Ice Barrier
 			[20004] = 136169, -- Life Steal (missing icon)
+			[366333] = 317242, -- Crystallic Spheroid
+
+
+			--§ Consumables
+			[320798] = 463543, -- Shadowcore Oil
+			[321389] = 463544, -- Embalmer's Oil
 
 
 			--§ Auras
