@@ -54,10 +54,6 @@ local function updateData()
 			end
 		end
 
-		function ZA.A(atlas)
-			print( CreateAtlasMarkup(atlas, 24, 24) )
-		end
-
 		-- Transliterate Cyrillic to Latin
 		-- LibTranslit 1.0 by Vardex, modified for ZigiAuras
 		-- https://github.com/Vardex/LibTranslit
@@ -1112,6 +1108,7 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Grappling Hook"] = 100,
 			["Bolt of Steel"] = 100,
 			["Powder Shot"] = 100,
 			["Full Autofire"] = 100,
@@ -2604,6 +2601,10 @@ local function updateData()
 			["Solar Orb"] = 6,
 
 			--! Ethereal  ! Kyrian
+			["Charged Spear:1508065"] = 201,
+			["Charged Spear:838552"] = 201,
+			["Charged Stomp:460957"] = 201,
+			["Archon's Spear"] = 201,
 			["Vitalizing Bolt:613955"] = 201,
 			["Bron"] = 201,
 			["Bron's Call to Action"] = 201,
@@ -2795,6 +2796,7 @@ local function updateData()
 			["Unspoken Gratitude"] = 202,
 
 			--! Hyperlight  ! Hallow  ! Broker
+			["Inscrutable Quantum Device"] = 203,
 			["Hardlight Ambush"] = 203,
 			["Infused Bulwark:3867785"] = 203,
 			["Guardian Bulwark:3867785"] = 203,
@@ -4775,6 +4777,7 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Abyssal Detonation:3528303"] = 411,
 			["Aggression Sentry:3528304"] = 411,
 			["Throw Gauntlet:3861531"] = 411,
 			["Soul Dust:134389"] = 411,
@@ -4950,6 +4953,7 @@ local function updateData()
 			["Wave of Suffering"] = 411,
 
 			--! Drust  ! Argus  ! Devourer
+			["Engulfing Hunger:132111"] = 413,
 			["Dark Mark:136192"] = 413,
 			["Growing Hatred:1778230"] = 413,
 			["Echoes of Destruction:1778228"] = 413,
@@ -5301,6 +5305,7 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Gloom Burst:236296"] = 320,
 			["Tearing the Void"] = 320,
 			["Shadow Covenant"] = 320,
 			["Shadow Crash"] = 320,
@@ -5450,6 +5455,7 @@ local function updateData()
 			["Twlight Flames"] = 34, -- [sic]
 
 			--! Blood  ! Venthyr
+			["Gloom Burst:3528312"] = 321,
 			["Painful Reminder:1394887"] = 321,
 			["Fallen Order:3565721"] = 321,
 			["Rip"] = 321,
@@ -5882,6 +5888,10 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Subjugate Soul"] = 360,
+			["Lesser Subjugate Soul"] = 360,
+			["Subjugate Spirit"] = 360,
+			["Lesser Subjugate Spirit"] = 360,
 			["Strengthen Pact - Incubus"] = 360,
 			["Strengthen Pact - Succubus"] = 360,
 			["Mark of Shadow"] = 360,
@@ -5941,6 +5951,7 @@ local function updateData()
 			["Shadowfury"] = 360,
 			["Shadow Bolt"] = 360,
 			["Shadow Bolt Volley"] = 360,
+			["Shadowbolt Volley"] = 360,
 			["Expulse Shadows"] = 360,
 			["Ritual of Shadow"] = 360,
 			["Demonic Strikes"] = 360,
@@ -7631,6 +7642,7 @@ local function updateData()
 			[364301] = 106,
 			[359128] = 106,
 			[361753] = 106,
+			[363120] = 100,
 			--qqq
 
 			--# Toys
@@ -11400,6 +11412,7 @@ local function updateData()
 			[364301] = 0,
 			[359128] = 0,
 			[361753] = 0,
+			[363120] = 0,
 			--qqi
 
 
@@ -11475,6 +11488,7 @@ local function updateData()
 			[309658] = 3528453, -- Drums of Deathly Ferocity
 			[91838] = 237533, -- Huddle
 			[357318] = 3931156, -- Spirit of Ka-Sha
+			["Goblin Glider"] = 660100,
 
 
 			--§ Ascension Crafting
@@ -14415,6 +14429,44 @@ local function updateData()
 					[45695] = 132790, -- Captain Rumsey's Lager
 		}
 
+		-- Weapon Enchant Icons
+		ZA.EnchantIcons = {
+			-- Imbue
+			[5401] = 462329, -- Windfury Weapon
+			[5400] = 462326, -- Flametongue Weapon
+			-- Oil
+			[6188] = 463543, -- Shadowcore Oil
+			[6190] = 463544, -- Embalmer's Oil
+			[2678] = 134767, -- Superior Wizard Oil
+			[2628] = 134727, -- Brilliant Wizard Oil
+			[3592] = 134806, -- Blessed Wizard Oil
+			[2627] = 134726, -- Wizard Oil
+			[2626] = 134725, -- Lesser Wizard Oil
+			[2623] = 134711, -- Minor Wizard Oil
+			-- Sharpening Stone
+			[6200] = 3528422, -- Sharpened IX (Shaded Sharpening Stone)
+			[6198] = 3528424, -- Sharpened VIII (Porous Sharpening Stone)
+			[2713] = 135254, -- Sharpened VII (Adamantite Sharpening Stone)
+			[2712] = 135253, -- Sharpened VI (Adamantite Sharpening Stone)
+			[2506] = 135228, -- Elemental Sharpening Stone
+			[3593] = 135249, -- Consecrated Sharpening Stone
+			[1643] = 135252, -- Sharpened V (Dense Sharpening Stone)
+			[483] = 135251, -- Sharpened IV (Solid Sharpening Stone)
+			[14] = 135250, -- Sharpened III (Heavy Sharpening Stone)
+			[13] = 135249, -- Sharpened II (Coarse Sharpening Stone)
+			[40] = 135248, -- Sharpened I (Rough Sharpening Stone)
+			-- Weightstone
+			[6201] = 3528423, -- Weighted IX (Shaded Weightstone)
+			[6199] = 3528425, -- Weighted VIII (Porous Weightstone)
+			[2955] = 135261, -- Weighted VII (Adamantite Weightstone)
+			[2954] = 135260, -- Weighted VI (Fel Weightstone)
+			[1703] = 135259, -- Weighted V (Dense Weightstone)
+			[484] = 135258, -- Weighted IV (Solid Weightstone)
+			[21] = 135257, -- Weighted III (Heavy Weightstone)
+			[20] = 135256, -- Weighted II (Coarse Weightstone)
+			[19] = 135255, -- Weighted I (Rough Weightstone)
+		}
+
 		-- Dynamic Icons
 		ZA.Icons["Activating Specialization"] = ZA.Icons[class] or 0
 	end
@@ -14446,16 +14498,47 @@ end
 
 frame:SetScript("OnEvent", eventHandler)
 
-function SlashCmdList.ZIGIAURAS(msg, editbox)
-	if ZA then
+function SlashCmdList.ZIGIAURAS(msg, ...)
+	if not ZA then
+		print(CreateAtlasMarkup("common-icon-redx") .. " |cffff0000ZigiAuras is not initialized|r")
+	end
+
+	if not msg or msg == "" then
 		if not ZA.DebugMode then
 			ZA.DebugMode = true
-			print(CreateAtlasMarkup("groupfinder-icon-greencheckmark") .. " |cff32de00Debug Mode Enabled|r")
+			print(CreateAtlasMarkup("common-icon-checkmark") .. " |cff00ff00Debug Mode Enabled|r")
 		else
 			ZA.DebugMode = false
 			print(CreateAtlasMarkup("LFG-lock") .. " Debug Mode Disabled")
 		end
-	else
-		print("ZA is not initialized")
+	end
+	
+	arg, a, b, c = strsplit(" ", msg)
+	arg = string.lower(arg)
+
+	if arg == "enchant" or arg == "weaponenchant" then
+		local mh, _, _, mhID, oh, _, _, ohID = GetWeaponEnchantInfo()
+
+		print("Main Hand Enchant", (mh and "|cff00ff00" .. mhID .. "|r" or "|cffff0000none|r"))
+		print("Off Hand Enchant", (oh and "|cff00ff00" .. ohID .. "|r" or "|cffff0000none|r"))
+	end
+	if arg == "map" then
+		print("Map", WorldMapFrame:GetMapID() or CreateAtlasMarkup("common-icon-redx") .. " |cffff0000Unknown|r")
+	end
+	if arg == "a" or arg == "atlas" then
+		if not a then
+			print("Usage: /za a name [size]")
+		else
+			b = tonumber(b or 24) or 24
+			print( CreateAtlasMarkup(a, b, b) )
+		end
+	end
+	if arg == "q" or arg == "quest" then
+		local id = tonumber(a or 0) or 0
+		if id > 0 then
+			print("Quest |cffffd100" .. id .. "|r", (C_QuestLog.IsQuestFlaggedCompleted(id) and CreateAtlasMarkup("common-icon-checkmark") .. " |cff00ff00Completed|r" or CreateAtlasMarkup("common-icon-redx") .. " |cffff0000Not completed|r"))
+		else
+			print("Usage: /za q id")
+		end
 	end
 end
