@@ -1108,6 +1108,9 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Looting"] = 100,
+			["Open Chest"] = 100,
+			["Collecting"] = 100,
 			["Grappling Hook"] = 100,
 			["Bolt of Steel"] = 100,
 			["Powder Shot"] = 100,
@@ -1373,10 +1376,7 @@ local function updateData()
 			["Picking Pocket"] = 108,
 			["Stealing Egg"] = 108,
 			["Throw Hammer:3084396"] = 108,
-			["Looting"] = 108,
 			["Pillage"] = 108,
-			["Open Chest"] = 108,
-			["Collecting"] = 108,
 			["Crushing Smash"] = 108,
 			["Brutal Smash"] = 108,
 			["Overhead Smash"] = 108,
@@ -1707,7 +1707,6 @@ local function updateData()
 			["Inspire Crew"] = 111,
 			["Captain's Call"] = 111,
 			["Roar of the Drake"] = 111,
-			["Call of Death:538559"] = 111,
 			["Crippling Howl"] = 111,
 			["Summon Broodlings:236197"] = 111,
 			["Aural Fracture"] = 111,
@@ -5888,6 +5887,7 @@ local function updateData()
 			["Demonic Core"] = 36,
 
 			--! Demonic  ! Soul Shadow
+			["Call of Death:538559"] = 360,
 			["Subjugate Soul"] = 360,
 			["Lesser Subjugate Soul"] = 360,
 			["Subjugate Spirit"] = 360,
