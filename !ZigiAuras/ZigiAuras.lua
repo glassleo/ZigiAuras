@@ -1048,6 +1048,7 @@ local function updateData()
 			["Pocopoc"] = 106,
 			["Jiro Prime"] = 106,
 			["Kbato"] = 106,
+			["Guardian of the Spring"] = 805,
 		}
 
 		-- ! Vehicle Icons
@@ -7822,6 +7823,7 @@ local function updateData()
 					-- Cauldrons
 					[307087] = 281, -- Eternal Cauldron
 					-- Combat Potions
+					[359870] = 321, -- Cosmic Healing Potion
 					[307093] = 281, -- Potion of Spectral Agility
 					[307096] = 281, -- Potion of Spectral Intellect
 					[307097] = 281, -- Potion of Spectral Stamina
@@ -7832,10 +7834,10 @@ local function updateData()
 					[307382] = 281, -- Potion of Phantom Fire
 					[322301] = 281, -- Potion of Sacrificial Anima
 					[307094] = 281, -- Potion of Hardened Shadows
-					[307095] = 281, -- Potion of Spiritual Clarity
-					[261423] = 281, -- Spiritual Rejuvenation Potion
-					[301578] = 281, -- Spiritual Healing Potion
-					[301683] = 281, -- Spiritual Mana Potion
+					[307095] = "Mana", -- Potion of Spiritual Clarity
+					[261423] = 126, -- Spiritual Rejuvenation Potion
+					[301578] = 321, -- Spiritual Healing Potion
+					[301683] = "Mana", -- Spiritual Mana Potion
 					-- Flasks
 					[307101] = 281, -- Spectral Flask of Power
 					[307103] = 281, -- Spectral Flask of Stamina
@@ -7903,9 +7905,9 @@ local function updateData()
 					[251658] = 321, -- Astral Healing Potion (Rank 3)
 					[251651] = 321, -- Astral Healing Potion (Rank 2)
 					[251646] = 321, -- Astral Healing Potion (Rank 1)
-					[188336] = 281, -- Leytorrent Potion (Rank 3)
-					[188335] = 281, -- Leytorrent Potion (Rank 2)
-					[188334] = 281, -- Leytorrent Potion (Rank 1)
+					[188336] = "Mana", -- Leytorrent Potion (Rank 3)
+					[188335] = "Mana", -- Leytorrent Potion (Rank 2)
+					[188334] = "Mana", -- Leytorrent Potion (Rank 1)
 					[247622] = 281, -- Lightblood Elixir (Rank 3)
 					[247620] = 281, -- Lightblood Elixir (Rank 2)
 					[247619] = 281, -- Lightblood Elixir (Rank 1)
@@ -11586,6 +11588,7 @@ local function updateData()
 					-- Cauldrons
 					[307087] = 3620414, -- Eternal Cauldron
 					-- Combat Potions
+					[359870] = 609884, -- Cosmic Healing Potion
 					[307093] = 3566835, -- Potion of Spectral Agility
 					[307096] = 3566836, -- Potion of Spectral Intellect
 					[307097] = 3566837, -- Potion of Spectral Stamina
