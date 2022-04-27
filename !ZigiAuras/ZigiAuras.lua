@@ -652,6 +652,7 @@ local function updateData()
 			["DEATHKNIGHT"] = "c41e3a",
 			["DEMONHUNTER"] = "a330c9",
 			["DRUID"] = "ff7c0a",
+			["EVOKER"] = "33937f",
 			["HUNTER"] = "aad372",
 			["MAGE"] = "3fc7eb",
 			["MONK"] = "00ff98",
@@ -804,6 +805,7 @@ local function updateData()
 			[175608] = "Teleport: Karabor",
 			[175604] = "Teleport: Bladespire Citadel",
 			[366333] = "Crystallic Spheroid",
+			[105518] = "Disassemble Clockwork Box",
 		}
 
 
@@ -1021,34 +1023,38 @@ local function updateData()
 
 		-- ! Vehicles
 		ZA.Vehicles = {
-			["Bounding Bufonid"] = 106,
-			["Ornate Mirror"] = 808,
-			["Defias Harvester"] = 100,
-			["Eye of Kilrogg"] = 401,
-			["Goblin Gyrocopter"] = 100,
-			["Skyfire Gyrocopter"] = 100,
-			["Gyrocopter Turret"] = 100,
-			["Kalecgos"] = 600,
-			["Wisp"] = 805,
-			["Theotar"] = 321,
-			["Dredger Servant"] = 803,
-			["Bootus"] = 803,
-			["Speedy IV"] = 900,
 			["Atleos"] = 201,
+			["Bootus"] = 803,
+			["Bounding Bufonid"] = 106,
 			["Bron"] = 201,
-			["Flying Machine"] = 100,
-			["Huln Highmountain"] = "HUNTER",
-			["Murky"] = 8,
-			["Prince Farondis"] = "MAGE",
-			["The Etymidian"] = 803,
 			["Conjured Wings"] = 805,
+			["Defias Harvester"] = 100,
+			["Demolisher"] = 100,
+			["Backup Shredder"] = 100,
+			["Dredger Servant"] = 803,
+			["Eye of Kilrogg"] = 401,
+			["Flying Machine"] = 100,
+			["Goblin Gyrocopter"] = 100,
+			["Guardian of the Spring"] = 805,
+			["Gyrocopter Turret"] = 100,
+			["Huln Highmountain"] = "HUNTER",
+			["Jiro Prime"] = 106,
+			["Kalecgos"] = 600,
+			["Kbato"] = 106,
+			["Murky"] = 8,
+			["Nascence Attendant"] = 106,
+			["Ornate Mirror"] = 808,
+			["Pocopoc"] = 106,
+			["Prince Farondis"] = "MAGE",
+			["Reprogrammed Shredder"] = 100,
+			["Shredder"] = 100,
+			["Skyfire Gyrocopter"] = 100,
+			["Speedy IV"] = 900,
+			["The Etymidian"] = 803,
+			["Theotar"] = 321,
 			["Vethir"] = 814,
 			["War Eagle"] = 811,
-			["Nascence Attendant"] = 106,
-			["Pocopoc"] = 106,
-			["Jiro Prime"] = 106,
-			["Kbato"] = 106,
-			["Guardian of the Spring"] = 805,
+			["Wisp"] = 805,
 		}
 
 		-- ! Vehicle Icons
@@ -1109,6 +1115,9 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Fling Blade"] = 100,
+			["Grenade Launcher"] = 100,
+			["Buzzsaw"] = 100,
 			["Looting"] = 100,
 			["Open Chest"] = 100,
 			["Collecting"] = 100,
@@ -1555,7 +1564,6 @@ local function updateData()
 			["Gladiator's Badge"] = 117,
 			["Gladiator's Insignia"] = 117,
 			["Fury of the Beast"] = 117,
-			["Sigil of Skoldus"] = 117,
 			["Mighty Slam"] = 117,
 			["Petrified Pet Food"] = 117,
 			["Negative Energy Token"] = 117,
@@ -1655,7 +1663,6 @@ local function updateData()
 			["Body and Soul"] = 104,
 			["Dash"] = 104,
 			["Draenic Swiftness Potion"] = 104,
-			["Egg Rush!"] = 104,
 			["Haste"] = 104,
 			["March of the Highlord"] = 104,
 			["Onslaught"] = 104,
@@ -2974,6 +2981,7 @@ local function updateData()
 			["Steadfast Resolve"] = 660,
 
 			--! Love
+			["Egg Rush!"] = 661,
 			["Pepe"] = 661,
 			["Pet Cub"] = 661,
 			["Pet"] = 661,
@@ -3170,6 +3178,7 @@ local function updateData()
 			["Survival of the Fittest"] = 8,
 
 			--! Naturestrike  ! Web  ! Milling
+			["Furious Ashhide Mushan"] = 900,
 			["Tongue Lash"] = 900,
 			["Brood Sacks"] = 900,
 			["Hatch"] = 900,
@@ -4777,6 +4786,7 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Sigil of Skoldus"] = 411,
 			["Abyssal Detonation:3528303"] = 411,
 			["Aggression Sentry:3528304"] = 411,
 			["Throw Gauntlet:3861531"] = 411,
@@ -7644,6 +7654,10 @@ local function updateData()
 			[359128] = 106,
 			[361753] = 106,
 			[363120] = 100,
+			[126180] = 911,
+			[47939] = 100,
+			[66795] = 100,
+			[105518] = 100,
 			--qqq
 
 			--# Toys
@@ -9134,6 +9148,7 @@ local function updateData()
 					[311864] = 813, -- Masterful Jewel Cluster
 					[311865] = 816, -- Quick Jewel Cluster
 					-- Mass Prospecting
+					[359492] = 808, -- Mass Prospect Progenium
 					[311948] = 808, -- Mass Prospect Laestrite
 					[311950] = 808, -- Mass Prospect Oxxein
 					[311951] = 808, -- Mass Prospect Phaedrum
@@ -11415,6 +11430,8 @@ local function updateData()
 			[359128] = 0,
 			[361753] = 0,
 			[363120] = 0,
+			[47939] = 0,
+			[66795] = 0,
 			--qqi
 
 
@@ -11491,6 +11508,7 @@ local function updateData()
 			[91838] = 237533, -- Huddle
 			[357318] = 3931156, -- Spirit of Ka-Sha
 			["Goblin Glider"] = 660100,
+			[61734] = 2399282, -- Noblegarden Bunny
 
 
 			--§ Ascension Crafting
@@ -12900,6 +12918,7 @@ local function updateData()
 					[311864] = 3743191, -- Masterful Jewel Cluster
 					[311865] = 3743193, -- Quick Jewel Cluster
 					-- Mass Prospecting
+					[359492] = 4182455, -- Mass Prospect Progenium
 					[311948] = 3594132, -- Mass Prospect Laestrite
 					[311950] = 3608331, -- Mass Prospect Oxxein
 					[311951] = 3537032, -- Mass Prospect Phaedrum
