@@ -2608,6 +2608,8 @@ local function updateData()
 			["Solar Orb"] = 6,
 
 			--! Ethereal  ! Kyrian
+			[309005] = 201, -- Anima Bomb
+			["Agthian Spear"] = 201,
 			["Charged Spear:1508065"] = 201,
 			["Charged Spear:838552"] = 201,
 			["Charged Stomp:460957"] = 201,
@@ -4043,6 +4045,7 @@ local function updateData()
 			["Stone Throw"] = 803,
 
 			--! Earthstrike
+			["Stomp"] = 903,
 			["Hop!:3778583"] = 903,
 			["Scarab Swarm"] = 903,
 			["Lay Eggs"] = 903,
@@ -5315,6 +5318,7 @@ local function updateData()
 			--: Darkness
 			-------------------------
 			--! Void
+			["Shadow Shift:633004"] = 320,
 			["Gloom Burst:236296"] = 320,
 			["Tearing the Void"] = 320,
 			["Shadow Covenant"] = 320,
@@ -7658,6 +7662,8 @@ local function updateData()
 			[47939] = 100,
 			[66795] = 100,
 			[105518] = 100,
+			[323998] = 100,
+			[333260] = 100,
 			--qqq
 
 			--# Toys
@@ -11432,6 +11438,7 @@ local function updateData()
 			[363120] = 0,
 			[47939] = 0,
 			[66795] = 0,
+			[324054] = 0,
 			--qqi
 
 
