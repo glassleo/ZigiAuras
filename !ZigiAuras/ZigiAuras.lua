@@ -1023,6 +1023,7 @@ local function updateData()
 
 		-- ! Vehicles
 		ZA.Vehicles = {
+			["Swift Shadowstalker"] = 903,
 			["Atleos"] = 201,
 			["Bootus"] = 803,
 			["Bounding Bufonid"] = 106,
@@ -1115,6 +1116,7 @@ local function updateData()
 			["Slam"] = 1,
 
 			--! Mechanical  ! Engineering
+			["Construct Hasty Barricade"] = 100,
 			["Fling Blade"] = 100,
 			["Grenade Launcher"] = 100,
 			["Buzzsaw"] = 100,
@@ -1605,6 +1607,7 @@ local function updateData()
 			["Living Free Action"] = 115,
 
 			--! Alacrity  ! Speed
+			["Tireless Pursuit"] = 104,
 			["Crashing Charge"] = 104,
 			["Furious Charge"] = 104,
 			["Satiated:237554"] = 104,
@@ -1681,7 +1684,7 @@ local function updateData()
 			["Tiger's Lust"] = 104,
 			["Wild Charge"] = 104,
 
-			--! Sonic  ! Sound
+			--! Sonic  ! Sound  ! Music
 			["Maddening Call"] = 111,
 			["Fatiguing Roar"] = 111,
 			["Deafening Shout"] = 111,
@@ -1842,6 +1845,7 @@ local function updateData()
 			["War Cry"] = 103,
 
 			--! Bloodlust
+			["Killing Frenzy"] = 105,
 			["Bloodbath"] = 105,
 			["Dark Succor"] = 105,
 			["Recklessness"] = 105,
@@ -1894,6 +1898,8 @@ local function updateData()
 			["Inspecting"] = 114,
 			["Examining"] = 114,
 			["Investigating"] = 114,
+			["Investigate"] = 114,
+			["Investigate Body"] = 114,
 			["Memorizing"] = 114,
 			["A Compendium of the Herbs of Draenor"] = 114,
 			["A Guide to Skinning in Draenor"] = 114,
@@ -2952,6 +2958,8 @@ local function updateData()
 			["Blessing of Spellwarding"] = 66,
 
 			--! Cosmic  ! Progenitor
+			["Glorious Purpose"] = 106,
+			["Creation Catalyst Overcharge"] = 106,
 			["Rejected Creations:4038105"] = 106,
 			["Twin Beams:537468"] = 106,
 			["Twin Beams:4038105"] = 106,
@@ -3254,6 +3262,7 @@ local function updateData()
 			["Master's Call"] = 10,
 
 			--! Fey  ! Night Fae
+			["Faerie Dust"] = 805,
 			["Podtender:656440"] = 805,
 			["Redirected Anima:236160"] = 805,
 			["New Moon"] = 805,
@@ -3315,6 +3324,7 @@ local function updateData()
 			--: Poison
 			-------------------------
 			--! Poison  ! Venom  ! Slime
+			["Sticky Mucus"] = 806,
 			["Venom Spray"] = 806,
 			["Lob Poison"] = 806,
 			["Sticky Venom"] = 806,
@@ -3449,6 +3459,7 @@ local function updateData()
 			["Wound Poison"] = 806,
 
 			--! Poisonstrike
+			["Slime Slam"] = 906,
 			["Poison Arrow Volley"] = 906,
 			["Poisoned Arrow Volley"] = 906,
 			["Stinger Flurry"] = 906,
@@ -4045,6 +4056,7 @@ local function updateData()
 			["Stone Throw"] = 803,
 
 			--! Earthstrike
+			["Deterrent Slam"] = 903,
 			["Stomp"] = 903,
 			["Hop!:3778583"] = 903,
 			["Scarab Swarm"] = 903,
@@ -4387,6 +4399,11 @@ local function updateData()
 			["Conjure Mana Gem"] = 126,
 
 			--! Conjuration  ! Teleport  ! Enchanting  ! Transmutation
+			["Lesser Invisibility"] = 646,
+			["Invisibility"] = 646,
+			["Invisible"] = 646,
+			["Mass Invisibility"] = 646,
+			["Greater Invisibility"] = 646,
 			["Scouting Ahead:135745"] = 646,
 			["Illusory Assault"] = 646,
 			["Teleporting"] = 646,
@@ -4542,7 +4559,6 @@ local function updateData()
 			["Call to the Stars"] = 72,
 			["Celestial Alignment"] = 72,
 			["Constellation Shield"] = 72,
-			["Faerie Dust"] = 72,
 			["Galactic Guardian"] = 72,
 			["Glitter Burst"] = 72,
 			["Shimmer Down"] = 72,
@@ -4559,11 +4575,6 @@ local function updateData()
 			["Shadow Pounce"] = 720,
 			["Spectral Swipe"] = 720,
 			["Spirit Stream"] = 720,
-			["Lesser Invisibility"] = 720,
-			["Invisibility"] = 720,
-			["Invisible"] = 720,
-			["Mass Invisibility"] = 720,
-			["Greater Invisibility"] = 720,
 			["Veilwalking"] = 720,
 			["Doom Gaze"] = 720,
 			["Fade"] = 720,
@@ -4789,6 +4800,7 @@ local function updateData()
 			["Unleashed Madness:1357797"] = 412,
 
 			--! Death  ! Mawsworn
+			["Focused Gaze:3528298"] = 411,
 			["Sigil of Skoldus"] = 411,
 			["Abyssal Detonation:3528303"] = 411,
 			["Aggression Sentry:3528304"] = 411,
@@ -6094,6 +6106,7 @@ local function updateData()
 			--: Other
 			-------------------------
 			--! Exhausted  ! Fatigue  ! Disabled  ! Tar  ! Oil
+			[340556] = 999, -- Well-Honed Instincts
 			["Dungeon Deserter"] = 999,
 			["Soul Exhaustion"] = 999,
 			["Depleted Shell:656440"] = 999,
@@ -7325,7 +7338,7 @@ local function updateData()
 			[320718] = 201,
 			[324364] = 202,
 			[324359] = 202,
-			[309678] = 805,
+			[309678] = 111,
 			[309779] = 805,
 			[327844] = 804,
 			[311775] = 321,
@@ -7655,6 +7668,7 @@ local function updateData()
 			[362450] = 106,
 			[361979] = 106,
 			[364301] = 106,
+			[364213] = 106,
 			[359128] = 106,
 			[361753] = 106,
 			[363120] = 100,
@@ -7664,6 +7678,9 @@ local function updateData()
 			[105518] = 100,
 			[323998] = 100,
 			[333260] = 100,
+			[362446] = 203,
+			["Locus Shift"] = 106,
+			[367894] = 203,
 			--qqq
 
 			--# Toys
@@ -11433,12 +11450,17 @@ local function updateData()
 			[365614] = 512902,
 			[361979] = 0,
 			[364301] = 0,
+			[364213] = 0,
 			[359128] = 0,
 			[361753] = 0,
 			[363120] = 0,
 			[47939] = 0,
 			[66795] = 0,
 			[324054] = 0,
+			[344490] = 0,
+			[361898] = 0,
+			["Locus Shift"] = 0,
+			[367894] = 0,
 			--qqi
 
 
@@ -14527,6 +14549,41 @@ end
 
 frame:SetScript("OnEvent", eventHandler)
 
+local function SendGroupMessage(msg)
+	if not IsInGroup() then
+		print(msg)
+	else
+		SendChatMessage(msg, IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and "INSTANCE_CHAT" or IsInRaid() and "RAID" or "PARTY")
+	end
+end
+
+local function TimeLeftAbbrev(seconds)
+	local units = ConvertSecondsToUnits(seconds)
+	local str = ""
+
+	if units.days >= 1 then str = str..units.days .. "d" end
+	if units.days >= 1 and units.hours >= 1 then str = str.." " end
+	if units.hours >= 1 then str = str..units.hours .. "h" end
+	if units.hours >= 1 and units.minutes >= 1 then str = str.." " end
+	if units.minutes >= 1 then str = str..units.minutes .. "m" end
+	if seconds < 60 then str = seconds .. "s" end
+	return str
+end
+
+local function TimeLeft(seconds)
+	local units = ConvertSecondsToUnits(seconds)
+	local str = ""
+
+	if units.days >= 1 then str = str..units.days .. " Day" end
+	if units.days > 1 then str = str.."s" end
+	if units.days >= 1 and units.hours >= 1 then str = str.." " end
+	if units.hours >= 1 then str = str..units.hours .. " Hr" end
+	if units.hours >= 1 and units.minutes >= 1 then str = str.." " end
+	if units.minutes >= 1 then str = str..units.minutes .. " Min" end
+	if seconds < 60 then str = seconds .. " Sec" end
+	return str
+end
+
 function SlashCmdList.ZIGIAURAS(msg, ...)
 	if not ZA then
 		print(CreateAtlasMarkup("common-icon-redx") .. " |cffff0000ZigiAuras is not initialized|r")
@@ -14562,12 +14619,44 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 			print( CreateAtlasMarkup(a, b, b) )
 		end
 	end
-	if arg == "q" or arg == "quest" then
+	if arg == "q" or arg == "quest" or arg == "!q" or arg == "!quest" then
 		local id = tonumber(a or 0) or 0
 		if id > 0 then
-			print("Quest |cffffd100" .. id .. "|r", (C_QuestLog.IsQuestFlaggedCompleted(id) and CreateAtlasMarkup("common-icon-checkmark") .. " |cff00ff00Completed|r" or CreateAtlasMarkup("common-icon-redx") .. " |cffff0000Not completed|r"))
+			if arg == "!q" or arg == "!quest" then
+				SendGroupMessage("Quest #" .. id .. " - " .. (C_QuestLog.IsQuestFlaggedCompleted(id) and "Completed" or "Not completed"))
+			else
+				print("Quest |cffffd100" .. id .. "|r", (C_QuestLog.IsQuestFlaggedCompleted(id) and CreateAtlasMarkup("common-icon-checkmark") .. " |cff00ff00Completed|r" or CreateAtlasMarkup("common-icon-redx") .. " |cffff0000Not completed|r"))
+			end
 		else
 			print("Usage: /za q id")
+		end
+	end
+	if arg == "time" then
+		print("Time until daily reset:", TimeLeft(GetQuestResetTime()))
+	elseif arg == "!time" then
+		SendGroupMessage("Time until daily reset: " .. TimeLeft(GetQuestResetTime()))
+	end
+	if arg == "key" or arg == "!key" or arg == "keyasync" then
+		local key, twkey = nil, nil
+		for bag = 0, NUM_BAG_SLOTS do
+			local bagSlots = GetContainerNumSlots(bag)
+			for slot = 1, bagSlots do
+				local link, _, _, id = select(7, GetContainerItemInfo(bag, slot))
+				if id == 180653 then -- Shadowlands
+					key = link
+				elseif id == 187786 then -- Legion Timewalking
+					twkey = link
+				end
+			end
+		end
+
+		local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0
+		if key or twkey then
+			SendGroupMessage((key and key or "")..(twkey and twkey or "")..((covenant == 1) and " (Kyrian)" or (covenant == 2) and " (Venthyr)" or (covenant == 3) and " (Night Fae)" or (covenant == 4) and " (Necrolord)" or ""))
+		elseif arg == "keyasync" then
+			print("No Keystone found")
+		else
+			C_Timer.After(2, function() SlashCmdList.ZIGIAURAS("keyasync") end)
 		end
 	end
 end
