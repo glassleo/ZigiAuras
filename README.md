@@ -117,11 +117,11 @@ Outputs the temporary weapon enchant IDs that your equipped weapon(s) are enchan
 
 Outputs the current Map ID.
 
-### ``/za a name``
+### ``/za a <atlas>``
 
 Prints the provided named atlas in your chat at size 24x24.
 
-### ``/za q id``
+### ``/za q <id>``
 
 Check if you have completed a quest using its Quest ID.
 
@@ -141,6 +141,6 @@ Links your Mythic Keystone(s) to yourself.
 
 Links your Mythic Keystone(s) to your party if you are in one or yourself if not.
 
-### ``/za research id``
+### ``/za research <id>``
 
 Outputs research info for a GarrTalent ID.
