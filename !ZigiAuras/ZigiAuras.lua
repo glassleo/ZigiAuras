@@ -879,7 +879,7 @@ local function updateData()
 			[999] = "3b3b3b:6e6d59", -- Fatigue
 
 			-- Material
-			[114] = "b8a889:e6d8b3", -- Paper | Writing | Learning | Inscription
+			[114] = "b8a889:e6d8b3", -- Paper | Learning | Inscription
 			[116] = "71583c:b7955d", -- Leather | Leatherworking
 
 			-- Fire
