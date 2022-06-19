@@ -756,6 +756,7 @@ local function updateData()
 			return tonumber(string.sub(hex, 1, 2), 16), tonumber(string.sub(hex, 3, 4), 16), tonumber(string.sub(hex, 5), 16)
 		end
 
+		-- Player Primary Stat
 		function ZA.PlayerPrimaryStat(abbrev)
 			local _,class = UnitClass("player")
 			local spec = GetSpecialization()
