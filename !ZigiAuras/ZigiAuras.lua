@@ -1191,6 +1191,7 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			["Haunted Mask:2101982"] = 805,
 			["Wold Hunt"] = 111,
 			[365850] = 410, -- Reclamation (The Cultivator)
 			["Calamitous Crescendo"] = 32,
@@ -2534,7 +2535,7 @@ local function updateData()
 			["Desperation"] = 323,
 			["Despoiled Power"] = 411,
 			["Despoiling Roots:1357816"] = 412,
-			["Destroying"] = 107,
+			["Destroying"] = 100,
 			["Destructive Procedure:3528303"] = 411,
 			["Destructive Stomp"] = 903,
 			["Desynchronize:4038101"] = 106,
@@ -4644,7 +4645,6 @@ local function updateData()
 			["Rejuvenating Waters"] = 801,
 			["Rejuvenating Wind"] = 10,
 			["Rejuvenation"] = 8,
-			["Releasing Souls"] = 203,
 			["Releasing"] = 202,
 			["Relentless Feeding"] = 413,
 			["Relentless Mauling"] = 112,
@@ -7914,7 +7914,7 @@ local function updateData()
 			[332186] = 900,
 			[332315] = 203,
 			[332533] = 900,
-			[332594] = 326,
+			[332594] = 100,
 			[332851] = 326,
 			[332921] = 805,
 			[333810] = 805,
@@ -8510,6 +8510,24 @@ local function updateData()
 			[89520] = 100,
 			[101054] = 4,
 			[160654] = 646,
+			[362933] = 106,
+			[345276] = 203, -- Releasing Souls
+			[345277] = 203, -- Releasing Souls
+			[345278] = 203, -- Releasing Souls
+			[348836] = 203, -- Releasing Souls
+			[348837] = 203, -- Releasing Souls
+			[348838] = 203, -- Releasing Souls
+			[348839] = 203, -- Releasing Souls
+			[348840] = 203, -- Releasing Souls
+			[348841] = 203, -- Releasing Souls
+			[348842] = 203, -- Releasing Souls
+			[348843] = 203, -- Releasing Souls
+			[348844] = 203, -- Releasing Souls
+			[348845] = 203, -- Releasing Souls
+			[348846] = 203, -- Releasing Souls
+			[348847] = 203, -- Releasing Souls
+			[348848] = 203, -- Releasing Souls
+			[367488] = 106,
 			--qqq
 
 			--! Ascension Crafting
@@ -17438,6 +17456,24 @@ local function updateData()
 			[291234] = 0,
 			[359706] = 0,
 			[101054] = 0,
+			[362933] = 0,
+			[345276] = 0, -- Releasing Souls
+			[345277] = 0, -- Releasing Souls
+			[345278] = 0, -- Releasing Souls
+			[348836] = 0, -- Releasing Souls
+			[348837] = 0, -- Releasing Souls
+			[348838] = 0, -- Releasing Souls
+			[348839] = 0, -- Releasing Souls
+			[348840] = 0, -- Releasing Souls
+			[348841] = 0, -- Releasing Souls
+			[348842] = 0, -- Releasing Souls
+			[348843] = 0, -- Releasing Souls
+			[348844] = 0, -- Releasing Souls
+			[348845] = 0, -- Releasing Souls
+			[348846] = 0, -- Releasing Souls
+			[348847] = 0, -- Releasing Souls
+			[348848] = 0, -- Releasing Souls
+			[367488] = 0,
 			--qqi
 
 
