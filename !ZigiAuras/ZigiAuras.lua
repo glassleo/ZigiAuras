@@ -1157,7 +1157,7 @@ local function updateData()
 			["Ardenweald Hearthstone"] = "Hearthstone",
 			["Astral Recall"] = "Astral Recall",
 			["Brewfest Reveler's Hearthstone"] = "Hearthstone",
-			["Broker Translocation Matrix"] = "Hearthstone",
+			["Broker Translocation Matrix"] = "Translocate",
 			["Dark Portal"] = "Dark Portal",
 			["Dominated Hearthstone"] = "Hearthstone",
 			["Enlightened Hearthstone"] = "Hearthstone",
@@ -1191,6 +1191,25 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			[256388] = 72, -- Initialization Sequence (Reorigination Module)
+			[256396] = 72, -- Reorigination Pulse (Reorigination Module)
+			["Cosmic Ray"] = 72,
+			["Reverberating Strike:135814"] = 402,
+			["Forging Strike:236253"] = 5,
+			["Demolish:136201"] = 32,
+			["Conflagration:135799"] = 401,
+			["Empowered Pulse Grenade:1117883"] = 401,
+			["Pulse Grenade:133009"] = 401,
+			["Sever:878217"] = 101,
+			["Charged Blasts:236216"] = 4,
+			["Empowered Shrapnel Blast:135804"] = 401,
+			["End of All Things:1711335"] = 413,
+			["End of All Things:1386550"] = 320,
+			[253061] = 72, -- Starblast
+			["Cosmic Beacon"] = 106,
+			["Torment of Khaz'goroth"] = 4,
+			["Torment of Golganneth"] = 16,
+			["Torment of Norgannon"] = 32,
 			["Haunted Mask:2101982"] = 805,
 			["Wold Hunt"] = 111,
 			[365850] = 410, -- Reclamation (The Cultivator)
@@ -1367,10 +1386,15 @@ local function updateData()
 			["Arcane Barrage"] = 64,
 			["Arcane Blast"] = 64,
 			["Arcane Bolt"] = 64,
+			["Ablative Pulse"] = 126,
 			["Arcane Bolts"] = 64,
+			[221864] = 64, -- Blast (Recursive Elemental)
 			["Arcane Bomb"] = 64,
+			["Exothermic Release"] = 64,
 			["Arcane Bombardment"] = 64,
 			["Arcane Burst"] = 64,
+			["Arcanetic Ring"] = 64,
+			["Arcanetic Rings"] = 64,
 			["Arcane Explosion"] = 64,
 			["Arcane Infusion"] = 64,
 			["Arcane Infusion:136168"] = 321,
@@ -2822,10 +2846,13 @@ local function updateData()
 			["Emotional Outburst:136184"] = 324,
 			["Empower Ashjra'kamas"] = 660,
 			["Empower Golem"] = 64,
+			["Soulsever"] = 33,
+			["Visions of the Dark Titan"] = 411,
 			["Empower Heart of Azeroth"] = 204,
 			["Empower Heart"] = 204,
 			["Empower Rune Weapon"] = 96,
 			["Empower Runeblade"] = 96,
+			["Will of the Demon Within"] = 32,
 			["Empower Spawning Pool"] = 801,
 			["Empowered Bonds of Fel:1117884"] = 402,
 			["Empowered Defense:236254"] = 202,
@@ -3411,15 +3438,27 @@ local function updateData()
 			["Goring Charge"] = 104,
 			["Goring Swipe"] = 112,
 			["Grabbing"] = 100,
+			[241345] = 106, -- Cleansing Blast (Defensive Countermeasure)
+			["Luminescent Barrier"] = 200,
 			["Grabbing..."] = 100,
 			["Grace of Nature"] = 8,
 			["Grand Consumption:3528279"] = 413,
+			["Chaotic Eruption"] = 401,
+			["Wrath of the Creators:135922"] = 200,
+			["Mass Instability:535593"] = 127,
+			["Titanic Bulwark:135874"] = 200,
+			[235271] = 127, -- Infusion (Maiden of Vigilance)
+			["Hammer of Obliteration:1038844"] = 401,
+			["Hammer of Creation:135875"] = 200,
 			["Grand Melee"] = 104,
 			["Granite Wings"] = 803,
 			["Grapeshot Blast"] = 5,
+			["Obliterating Smash:1038844"] = 401,
 			["Grappling Gun"] = 100,
 			["Grappling Hook"] = 100,
 			["Grasping Spirits"] = 323,
+			["Grasping Darkness"] = 32,
+			["Crush Mind"] = 328,
 			["Grave Spike"] = 415,
 			["Graze"] = 900,
 			["Grease Spray:252178"] = 999,
@@ -4157,13 +4196,15 @@ local function updateData()
 			["Necrotic Volley"] = 326,
 			["Negative Energy Token"] = 117,
 			["Net"] = 100,
+			[205862] = 903, -- Slam (Krosus)
+			[205370] = 127, -- Fel Beam (Krosus)
 			["Nether Meteor"] = 323,
 			["Nether Portal"] = 32,
 			["Nether Precision"] = 323,
 			["Nether Storm"] = 323,
 			["Nether Tempest"] = 64,
 			["Nether Touch"] = 323,
-			["Nether Traversal"] = 32,
+			["Nether Traversal"] = 64,
 			["Netherstomp:135794"] = 401,
 			["Netherwalk"] = 323,
 			["New Moon"] = 805,
@@ -4188,6 +4229,7 @@ local function updateData()
 			["Nightmare Visage:136221"] = 320,
 			["Nightmare"] = 412,
 			["Nightmareburst"] = 412,
+			["Throw Trident"] = 100,
 			["Nightosis:1029591"] = 6,
 			["Nimbus Bolt"] = 811,
 			["Nimbus Bolt:136048"] = 800,
@@ -4237,7 +4279,7 @@ local function updateData()
 			["Orb of Annihilation:132851"] = 320,
 			["Orb of Corrosion"] = 40,
 			["Orb of Corruption"] = 324,
-			["Orb of Destruction:135800"] = 646,
+			["Orb of Destruction:135800"] = 401,
 			["Orb of Translocation"] = 646,
 			["Ossein Summon"] = 326,
 			["Out of Xy'ght"] = 203,
@@ -5014,6 +5056,7 @@ local function updateData()
 			["Shatter Rune"] = 96,
 			["Shatter Runes"] = 96,
 			["Shatter"] = 903,
+			["Bone Shards"] = 415,
 			["Shatter:237507"] = 110,
 			["Shatterbone Shield"] = 415,
 			["Shattered Dominion:1121021"] = 32,
@@ -5053,6 +5096,8 @@ local function updateData()
 			["Shining Light"] = 2,
 			["Shining Radiance"] = 200,
 			["Shiv"] = 906,
+			["Empowered Shock Lance:1115730"] = 427,
+			["Shock Lance:1096201"] = 427,
 			["Shiver Venom"] = 806,
 			["Shock Burst"] = 800,
 			["Shock Grenade:133009"] = 401,
@@ -5075,7 +5120,7 @@ local function updateData()
 			["Shot"] = 100,
 			["Shotgun"] = 100,
 			["Shoulder Charge"] = 104,
-			["Shrapnel Blast"] = 5,
+			["Shrapnel Blast"] = 4,
 			["Shrapnel Bomb"] = 5,
 			["Shred Armor"] = 112,
 			["Shred"] = 101,
@@ -5157,6 +5202,7 @@ local function updateData()
 			["Sling Mud"] = 803,
 			["Slow Fall"] = 811,
 			["Slow"] = 641,
+			["Slop Burst"] = 806,
 			["Sludge Bolt"] = 410,
 			["Smack Down"] = 109,
 			["Smack:458717"] = 109,
@@ -5317,6 +5363,7 @@ local function updateData()
 			["Spinning Slash"] = 107,
 			["Spinning Up"] = 100,
 			["Spiny Strike"] = 415,
+			["Void Rift"] = 320,
 			["Spirit Armor"] = 720,
 			["Spirit Bolt"] = 413,
 			["Spirit Bomb"] = 361,
@@ -5329,7 +5376,7 @@ local function updateData()
 			["Spirit of Redemption"] = 201,
 			["Spirit Shell"] = 66,
 			["Spirit Stream"] = 720,
-			["Spirit Walk"] = 280,
+			["Spirit Walk"] = 721,
 			["Spirit Wolf"] = 720,
 			["Spirit's Swiftness"] = 104,
 			["Spiritwalker's Grace"] = 280,
@@ -5351,6 +5398,7 @@ local function updateData()
 			["Spyglass Sight"] = 100,
 			["Squish 'Em"] = 107,
 			["Staggering Cry"] = 111,
+			[226231] = 640, -- Faint Hope (Astral Farseer, Nighthold)
 			["Staggering Sound"] = 111,
 			["Stagnant Blast"] = 415,
 			["Stampede"] = 107,
@@ -5361,6 +5409,7 @@ local function updateData()
 			["Star Gate:610471"] = 64,
 			["Star Shower"] = 721,
 			["Starfall"] = 721,
+			["Make the Sky Fall:236168"] = 721,
 			["Starfire"] = 640,
 			["Starlance Vigil"] = 720,
 			["Starsurge"] = 64,
@@ -5796,7 +5845,7 @@ local function updateData()
 			["Touch of the Magi"] = 64,
 			["Touch of the Occult"] = 325,
 			["Touch of the Ravenclaw"] = 327,
-			["Town Portal"] = 646,
+			["Town Portal"] = 8,
 			["Toxic Blades"] = 806,
 			["Toxic Breath"] = 806,
 			["Toxic Fumes"] = 806,
@@ -6932,11 +6981,6 @@ local function updateData()
 			[300149] = 910, -- Silent Glider
 			[291538] = 818, -- Unshackled Waveray
 
-			--! Fathom Serpent
-			[232519] = 135, -- Abyss Worm
-			[275623] = 321, -- Nazjatar Blood Serpent
-			[243025] = 137, -- Riddler's Mind-Worm
-
 			--! Felbat
 			[253088] = 4, -- Antoran Charhound
 			[253087] = 32, -- Antoran Gloomhound
@@ -7457,7 +7501,14 @@ local function updateData()
 			["High Priest's Lightsworn Seeker:1518632"] = 18, -- Discipline
 			["High Priest's Lightsworn Seeker:1518634"] = 720, -- Shadow
 
-			--! Serpent of N'Zoth
+			--! Serpent  ! Wyrm
+			-- Fathom Serpent
+			[232519] = 135, -- Abyss Worm
+			[275623] = 321, -- Nazjatar Blood Serpent
+			[243025] = 137, -- Riddler's Mind-Worm
+			-- Mana Wyrm
+			[367676] = 822, -- Nether-Gorged Greatwyrm
+			-- Serpent of N'Zoth
 			[316637] = 324, -- Awakened Mindborer
 			[305182] = 324, -- Black Serpent of N'Zoth
 			[315987] = 324, -- Mail Muncher
@@ -7549,9 +7600,6 @@ local function updateData()
 			[346719] = 133, -- Serenade
 			[359377] = 812, -- Unsuccessful Prototype Fleetpod
 
-			--! Spelltome
-			[359318] = 64, -- Soaring Spelltome
-
 			--! Spider
 			[213115] = 142, -- Bloodfang Widow
 			[327407] = 173, -- Vicious War Spider (Alliance)
@@ -7634,6 +7682,9 @@ local function updateData()
 			[332460] = 415, -- Chosen Tauralus
 			[332456] = 415, -- Plaguerot Tauralus
 			[332455] = 415, -- War-Bred Tauralus
+
+			--! Tome
+			[359318] = 64, -- Soaring Spelltome
 
 			--! Turtle
 			[227956] = 400, -- Arcadian War Turtle
@@ -12296,7 +12347,7 @@ local function updateData()
 			[86646]  = 114, -- Origami Beetle
 			[86645]  = 114, -- Origami Rock
 			[86644]  = 114, -- Origami Slime
-			[165466] = 225, -- Research: Blackfallow Ink
+			[165466] = 114, -- Research: Blackfallow Ink
 			[86652]  = 808, -- Rosethorn Staff
 			[86649]  = 808, -- Runed Staff
 			[85785]  = 114, -- Runescroll of Fortitude II
@@ -13671,7 +13722,7 @@ local function updateData()
 			[308897] = 116, -- Heavy Callous Hide
 			[324088] = 116, -- Heavy Desolate Armor Kit
 			[308899] = 116, -- Heavy Desolate Leather
-			[343660] = 225, -- Novice Crafter's Mark
+			[343660] = 114, -- Novice Crafter's Mark
 			[354800] = 415, -- Pallid Bone Flute
 			[354797] = 415, -- Pallid Oracle Bones
 			[338254] = 116, -- Runestag Leather Strap
@@ -17516,6 +17567,7 @@ local function updateData()
 
 
 			--§ Spells
+			[241345] = 4038102, -- Cleansing Blast
 			["Challenging Shout"] = 4067374, -- Custom icon
 			["Eye of Kilrogg"] = 1719208, -- Custom icon
 			["Goblin Glider"] = 660100,
