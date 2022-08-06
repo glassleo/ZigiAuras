@@ -224,6 +224,7 @@ local function updateData()
 			["Blizzard"] = "Blizzard",
 			["Customer Support"] = "Blizzard",
 			-- NPCs
+			["Shoak"] = "HUNTER",
 			["Breanni"] = "HUNTER",
 			["Mei Francis"] = "HUNTER",
 			["Nat Pagle"] = "HUNTER",
@@ -1094,6 +1095,7 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Darkwing Legionnaire"] = 809,
 			["Abyssal Seahorse"] = 157,
 			["Inert Prototype"] = 106,
 			["Speckled Sea Turtle"] = 119,
@@ -1200,6 +1202,14 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			[364266] = 802, -- Primordial Mending
+			["Sole Slough:236271"] = 806,
+			["Empowered Bulwark:3867785"] = 106,
+			["Homing Shell"] = 5,
+			["Thunder Zone"] = 800,
+			["Slime Blast"] = 806,
+			["Hungerstone:1392546"] = 321,
+			["Demonic Momentum"] = 32,
 			["Bitter Screech"] = 111,
 			["Feed on the Weak:1357796"] = 411,
 			["Soul Tap"] = 326,
@@ -3181,7 +3191,7 @@ local function updateData()
 			["Felfire Bolt"] = 401,
 			["Felfire Brazier"] = 401,
 			["Felfire Fission"] = 401,
-			["Felfire Haste"] = 104,
+			["Felfire Haste"] = 401,
 			["Felfire Missiles"] = 401,
 			["Felfire Portal"] = 401,
 			["Felfire Shock"] = 401,
@@ -8682,6 +8692,11 @@ local function updateData()
 			[302018] = 100,
 			[344041] = 100,
 			[340145] = 100,
+			[266256] = 720,
+			[266245] = 720,
+			[266252] = 720,
+			[266253] = 720,
+			[266257] = 720,
 			--qqq
 
 			--! Ascension Crafting
@@ -17636,6 +17651,12 @@ local function updateData()
 			[207158] = 0,
 			[302018] = 0,
 			[312098] = 0,
+			[266256] = 0,
+			[266245] = 0,
+			[266252] = 0,
+			[266253] = 0,
+			[266257] = 0,
+			[342780] = 3453807,
 			--qqi
 
 
@@ -17678,6 +17699,7 @@ local function updateData()
 
 
 			--§ Spells
+			[364266] = 988193, -- Primordial Mending
 			[347765] = 3591588, -- Demon Soul (Fodder to the Flame)
 			[241345] = 4038102, -- Cleansing Blast
 			["Challenging Shout"] = 4067374, -- Custom icon
@@ -18096,7 +18118,7 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 
 		local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0
 		if key or twkey then
-			SendGroupMessage((key and key or "")..(twkey and twkey or "")..((covenant == 1) and " Kyrian" or (covenant == 2) and " Venthyr" or (covenant == 3) and " Night Fae" or (covenant == 4) and " Necrolord" or ""))
+			SendGroupMessage((key and key or "")..(twkey and twkey or ""))
 		elseif arg == "keyasync" then
 			print("No Keystone found")
 		else
