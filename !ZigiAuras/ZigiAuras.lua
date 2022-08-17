@@ -1202,6 +1202,7 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			["Reprogramming"] = 100,
 			[364266] = 802, -- Primordial Mending
 			["Sole Slough:236271"] = 806,
 			["Empowered Bulwark:3867785"] = 106,
@@ -17657,6 +17658,7 @@ local function updateData()
 			[266253] = 0,
 			[266257] = 0,
 			[342780] = 3453807,
+			[66778] = 0,
 			--qqi
 
 
