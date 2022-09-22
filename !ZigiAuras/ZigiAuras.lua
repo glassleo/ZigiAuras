@@ -213,6 +213,7 @@ local function updateData()
 		ZA.People = {
 			-- Mail Services
 			["Auction House"] = "Gold",
+			["Black Market Auction House"] = "Gold",
 			["Alliance Auction House"] = "Gold",
 			["Horde Auction House"] = "Gold",
 			["Postmaster"] = "Gold",
@@ -883,8 +884,20 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Pelagos"] = 201,
+			["Kleia"] = 201,
+			["Mikanikos"] = 201,
+			["Mushroom Network"] = 805,
+			["Unity"] = 414,
+			["The Professor"] = 414,
+			["Flytrap"] = 414,
+			["Iron Phillip"] = 414,
+			["Overcharged Centurion"] = 201,
+			["Bloodtalon Thrasher"] = 173,
+			["Swiftclaw"] = 819,
 			["Captured Riding Bat"] = 158,
 			["Horse"] = 116,
+			["The Wolf"] = 116,
 			["Swift Mountain Horse"] = 116,
 			["Mountain Horse"] = 116,
 			["Crowley's Horse"] = 116,
@@ -967,6 +980,7 @@ local function updateData()
 
 		--! Vehicle Icons
 		ZA.VehicleIcons = {
+			["Mushroom Network"] = 3854013,
 			["Mechashark X-Steam"] = 294472,
 			["Frostbrood Vanquisher"] = 303868,
 			["Eye of Acherus"] = 512960,
@@ -979,6 +993,8 @@ local function updateData()
 			["Throwing Veggies"] = 134011,
 			["Wisp"] = 1100178,
 			["Acherus Deathcharger"] = 237534,
+			["Swiftclaw"] = 838683,
+			["Bloodtlaon Thrasher"] = 132193,
 		}
 
 		--! Boss Icons
@@ -1028,6 +1044,50 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			["Oppressive Chains"] = 909,
+			["Death Blossom"] = 326,
+			["Sparkling Drift"] = 104,
+			["Resilient Plumage:2103825"] = 909,
+			[346639] = 201, -- Hyperlight Beam (Bron)
+			["Spiritforged Aegis:3079436"] = 200,
+			["Desperate Eradication:3528306"] = 321,
+			["Consume:3528308"] = 321,
+			["Ascendant Barrage"] = 201,
+			["Small Talk"] = 111,
+			["Cleaning Up"] = 100,
+			["Pick Up"] = 100,
+			["Scouring Breath:1045094"] = 411,
+			["Soul Bomb:1413866"] = 411,
+			["Deadly Hunger:2576085"] = 325,
+			["Hurl Javelin"] = 100,
+			["Leaf Cutter:959836"] = 900,
+			["Indomitable Shield"] = 909,
+			["Mindless Strikes:132215"] = 108,
+			["Parchment Storm"] = 108,
+			["Monstrous Effort:135788"] = 104,
+			["Anima Blossom:3528286"] = 201,
+			["Anima Blossom:3528285"] = 201,
+			["Purestep Ascension"] = 201,
+			["Grappling"] = 100,
+			["Mawshade Ritual"] = 411,
+			["Stygic Bolt"] = 411,
+			["Stygic Expulsion"] = 411,
+			["Stygic Call"] = 411,
+			["Stygic Protection"] = 411,
+			["Stygia Shards"] = 822,
+			["Shredding Net"] = 100,
+			["Life Harvest"] = 326,
+			["Dire Bonk"] = 903,
+			["Dream Lash"] = 8,
+			["Demonic Empowerment"] = 32,
+			["Igniting Banner"] = 4,
+			["Treating Wounds"] = 202,
+			["Ghost Walk:135898"] = 2,
+			["Threatening Growl"] = 111,
+			["Wind's Embrace"] = 811,
+			[84146] = 909, -- Razor Edge (Crushcog Battle Suit)
+			["Irradiation Gun"] = 806,
+			[80944] = 806,
 			["Flaming Arrow"] = 4,
 			["Weak Frostbolt"] = 16,
 			["Frostmane Strength"] = 117,
@@ -1348,6 +1408,9 @@ local function updateData()
 			["Archangel"] = 200,
 			["Archon's Grace"] = 2,
 			["Archon's Spear"] = 201,
+			["Archon's Blessing"] = 201,
+			[335435] = 72, -- Archon's Blessing (Kleia)
+			["Keen Insight:1029587"] = 201,
 			["Archonic Resonator"] = 201,
 			["Arcing Bonds:607854"] = 64,
 			["Arcing Current"] = 800,
@@ -1495,7 +1558,7 @@ local function updateData()
 			["Bewitch:132096"] = 321,
 			["Bewitching Eye"] = 413,
 			["Big Bad Voodoo"] = 325,
-			["Big Blue Fist"] = 17,
+			["Big Blue Fist"] = 108,
 			["Big Bop"] = 109,
 			["Big Sharp Nasty Teeth"] = 102,
 			["Big Shot"] = 100,
@@ -2688,6 +2751,9 @@ local function updateData()
 			["Dreamwalk"] = 10,
 			["Drifting Star:4037119"] = 203,
 			["Drink Muck"] = 410,
+			["Drink Potion"] = 281,
+			["Drink Minor Potion"] = 281,
+			["Drink Lesser Potion"] = 281,
 			["Drop Prey"] = 108,
 			["Drops of Void"] = 320,
 			["Drowning Smash"] = 901,
@@ -4077,7 +4143,7 @@ local function updateData()
 			["Mimic:342913"] = 410,
 			["Mind Blast"] = 328,
 			["Mind Bomb"] = 328,
-			["Mind Bomb"] = 328,
+			["Bitter Withdrawal"] = 328,
 			["Mind Control"] = 328,
 			["Mind Flay"] = 328,
 			["Mind Rend"] = 328,
@@ -7368,6 +7434,7 @@ local function updateData()
 			[60002]  = 133, -- Time-Lost Proto-Drake
 			[60024]  = 820, -- Violet Proto-Drake
 			[229388] = 105, -- Battlelord's Bloodthirsty War Wyrm
+			[386452] = 48, -- Frostbrood Proto-Wyrm
 
 			[262027] = 156, -- Corrupted Gladiator's Proto-Drake
 			[262022] = 155, -- Dread Gladiator's Proto-Drake
@@ -7596,7 +7663,7 @@ local function updateData()
 			[346719] = 111, -- Serenade
 			[359377] = 812, -- Unsuccessful Prototype Fleetpod
 
-			--! Spider
+			--ider
 			[213115] = 142, -- Bloodfang Widow
 			[327407] = 173, -- Vicious War Spider (Alliance)
 			[327408] = 806, -- Vicious War Spider (Horde)
@@ -8096,7 +8163,7 @@ local function updateData()
 			[325501] = 805,
 			[151088] = 112,
 			[328685] = 201,
-			[72070] = 112,
+			[72070] = 100,
 			[315165] = 321,
 			[329453] = 100,
 			[311756] = 202,
@@ -8177,7 +8244,7 @@ local function updateData()
 			[310647] = 100,
 			[310687] = 202,
 			[307434] = 201,
-			[77821] = 909,
+			[77821] = 100,
 			[77819] = 202,
 			[78395] = 100,
 			[78628] = 33,
@@ -8294,7 +8361,7 @@ local function updateData()
 			[236525] = 202,
 			[169758] = 202,
 			[169973] = 641,
-			[356266] = 326,
+			[356266] = 100,
 			[214669] = 803,
 			[356593] = 203,
 			[203675] = 646,
@@ -8603,6 +8670,38 @@ local function updateData()
 			[54567] = 415,
 			[53173] = 111,
 			[71914] = 801,
+			[79751] = 5,
+			[79781] = 999,
+			[80101] = 112,
+			[371279] = 415,
+			[371323] = 415,
+			[6609] = 801,
+			[5666] = 8,
+			[10617] = 720,
+			[69453] = 111,
+			[73123] = 100,
+			[73108] = 100,
+			[184227] = 100,
+			[31614] = 100,
+			[350831] = 202,
+			[342222] = 111,
+			[343833] = 100,
+			[339467] = 100,
+			[347226] = 909,
+			[326008] = 111,
+			[337100] = 100,
+			[337276] = 201,
+			[337395] = 201,
+			[337221] = 201,
+			[337383] = 201,
+			[337387] = 201,
+			[316868] = 100,
+			[350637] = 203,
+			[340606] = 321,
+			[318029] = 100,
+			[340181] = 100,
+			[333367] = 321,
+			[321450] = 100,
 			--qqq
 
 			--! Ascension Crafting
@@ -8696,21 +8795,21 @@ local function updateData()
 			[364699] = 106, -- Viperid Menace
 
 			--! Abominable Stitching
-			[325284] = 414, -- Construct Body: "Chordy"
-			[325454] = 414, -- Construct Body: "Atticus"
-			[325452] = 414, -- Construct Body: "Marz"
-			[325451] = 414, -- Construct Body: "Roseboil"
-			[325453] = 414, -- Construct Body: "Flytrap"
-			[326406] = 414, -- Construct Body: "Professor"
-			[338040] = 414, -- Construct Body: "Sabrina"
-			[326407] = 414, -- Construct Body: "Toothpick"
-			[326380] = 414, -- Construct Body: "Gas Bag"
-			[338039] = 414, -- Construct Body: "Guillotine"
-			[338037] = 414, -- Construct Body: "Iron Phillip"
-			[338043] = 414, -- Construct Body: "Naxx"
-			[326408] = 414, -- Construct Body: "Mama Tomalin"
-			[325458] = 414, -- Construct Body: "Miru"
-			[326379] = 414, -- Construct Body: "Neena"
+			[325284] = 326, -- Construct Body: "Chordy"
+			[325454] = 326, -- Construct Body: "Atticus"
+			[325452] = 326, -- Construct Body: "Marz"
+			[325451] = 326, -- Construct Body: "Roseboil"
+			[325453] = 326, -- Construct Body: "Flytrap"
+			[326406] = 326, -- Construct Body: "Professor"
+			[338040] = 326, -- Construct Body: "Sabrina"
+			[326407] = 326, -- Construct Body: "Toothpick"
+			[326380] = 326, -- Construct Body: "Gas Bag"
+			[338039] = 326, -- Construct Body: "Guillotine"
+			[338037] = 326, -- Construct Body: "Iron Phillip"
+			[338043] = 326, -- Construct Body: "Naxx"
+			[326408] = 326, -- Construct Body: "Mama Tomalin"
+			[325458] = 326, -- Construct Body: "Miru"
+			[326379] = 326, -- Construct Body: "Neena"
 			[326525] = 326, -- Call Chordy
 			[327203] = 326, -- Call Atticus
 			[327556] = 326, -- Call Marz
@@ -8723,6 +8822,10 @@ local function updateData()
 			[340839] = 326, -- Call Guillotine
 			[340340] = 326, -- Call Iron Phillip
 			[340841] = 326, -- Call Naxx
+			[326903] = 326, -- Anima-bound Wraps
+			[338052] = 326, -- Bonesewn Fleshroc
+			[327091] = 326, -- Abominable Backup
+			[331403] = 326, -- Lil' Eddie
 
 			--! Junkyard Tinkering
 			[291524] = 100, -- Scrap Trap
@@ -11577,7 +11680,7 @@ local function updateData()
 			[162197] = 813, -- Plasma Mechshades
 			[182120] = 100, -- Primal Welding
 			[162198] = 822, -- Razorguard Mechshades
-			[177054] = 100, -- Secrets of Draenor Engineering
+			[177054] = 114, -- Secrets of Draenor Engineering
 			[173309] = 100, -- Shieldtronic Shield
 			[162199] = 100, -- Shrediron's Shredder
 			[171074] = 5, -- Snake Firework
@@ -12296,6 +12399,7 @@ local function updateData()
 			[190386] = 900, -- Mass Mill Talador Orchid
 			[175389] = 114, -- Ocean Tarot
 			[167950] = 114, -- Research: Warbinder's Ink
+			[167948] = 114, -- Research: Warbinder's Ink
 			[175392] = 114, -- Savage Tarot
 			[177045] = 114, -- Secrets of Draenor Inscription
 			[166363] = 114, -- Shadowtome
@@ -15480,7 +15584,7 @@ local function updateData()
 			[186091] = 113, -- Silkweave Shade
 			[186097] = 113, -- Silkweave Cover
 			-- Draenor
-			[168836] = 156, -- Hexweave Embroidery
+			[168836] = 154, -- Hexweave Embroidery
 			[168850] = 109, -- Creeping Carpet
 			[168848] = 109, -- Hexweave Bag
 			[182123] = 109, -- Primal Weaving
@@ -15496,16 +15600,16 @@ local function updateData()
 			[168844] = 109, -- Hexweave Belt
 			[168837] = 109, -- Hexweave Mantle
 			[168846] = 109, -- Nimble Hexweave Cloak
-			[168853] = 156, -- Sumptuous Robes
-			[168854] = 156, -- Sumptuous Leggings
-			[168852] = 156, -- Sumptuous Cowl
+			[168853] = 154, -- Sumptuous Robes
+			[168854] = 154, -- Sumptuous Leggings
+			[168852] = 154, -- Sumptuous Cowl
 			[176058] = 114, -- Secrets of Draenor Tailoring
 			[168835] = 109, -- Hexweave Cloth
-			[172539] = 156, -- Antiseptic Bandage
-			[176314] = 156, -- Fearsome Battle Standard
-			[176313] = 156, -- Inspiring Battle Standard
-			[176316] = 156, -- Fearsome Battle Standard
-			[176315] = 156, -- Inspiring Battle Standard
+			[172539] = 154, -- Antiseptic Bandage
+			[176314] = 154, -- Fearsome Battle Standard
+			[176313] = 154, -- Inspiring Battle Standard
+			[176316] = 154, -- Fearsome Battle Standard
+			[176315] = 154, -- Inspiring Battle Standard
 			-- Pandaria
 			[143011] = 72, -- Celestial Cloth
 			[130325] = 112, -- Song of Harmony
@@ -17004,6 +17108,7 @@ local function updateData()
 			["Administer Cure-all"] = 0,
 			["Attacking"] = 0,
 			["Opening"] = 0,
+			["Pick Up"] = 0,
 			["Lifting"] = 0,
 			["Burn It!"] = 0,
 			["Return to Entrance"] = 0,
@@ -17573,6 +17678,26 @@ local function updateData()
 			[53061] = 132281,
 			[53173] = 134228,
 			[77314] = 134424,
+			[80101] = 308321,
+			[80199] = 308321,
+			[371323] = 132793,
+			[6609] = 134721,
+			[10617] = 132502,
+			[184227] = 0,
+			[160430] = 0,
+			[26566] = 0,
+			[31614] = 0,
+			[35730] = 0,
+			[25649] = 0,
+			[167948] = 0,
+			[342222] = 0,
+			[343833] = 0,
+			[347226] = 0,
+			[337100] = 0,
+			[337276] = 0,
+			[316868] = 0,
+			[350637] = 0,
+			[321450] = 0,
 			--qqi
 
 
@@ -17615,6 +17740,8 @@ local function updateData()
 
 
 			--§ Spells
+			["Activating Specialization"] = 0,
+			[80944] = 571318, -- Fling Fungus (Rockjaw Fungus-Flinger)
 			[364266] = 988193, -- Primordial Mending
 			[347765] = 3591588, -- Demon Soul (Fodder to the Flame)
 			[241345] = 4038102, -- Cleansing Blast
@@ -17899,9 +18026,6 @@ local function updateData()
 			[20] = 135256, -- Weighted II (Coarse Weightstone)
 			[19] = 135255, -- Weighted I (Rough Weightstone)
 		}
-
-		-- Dynamic Icons
-		ZA.Icons["Activating Specialization"] = ZA.Icons[class] or 0
 	end
 end
 
