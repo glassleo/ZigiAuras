@@ -224,7 +224,7 @@ local function updateData()
 			["The WoW Dev Team"] = "Blizzard",
 			["Blizzard"] = "Blizzard",
 			["Customer Support"] = "Blizzard",
-			-- NPCs
+			--! NPCs
 			["Shoak"] = "HUNTER",
 			["Breanni"] = "HUNTER",
 			["Mei Francis"] = "HUNTER",
@@ -232,8 +232,9 @@ local function updateData()
 			["Greatfather Winter"] = "Gold",
 			["Great-father Winter"] = "Gold",
 			["Dansel Adams"] = "Gold",
-			["Thaumaturge Vashreen"] = "MAGE",
-			-- ! Friends
+			["Thaumaturge Vashreen"] = "Cosmetic",
+			["Minigob Manabonk"] = "MAGE",
+			--! Friends
 			-- Daniel
 			["Hana-Sporeggar"] = "HUNTER",
 			["Oceans-Sporeggar"] = "SHAMAN",
@@ -416,7 +417,7 @@ local function updateData()
 			["Zorp-Moonglade"] = "HUNTER",
 		}
 
-		-- ! Colors
+		--! Solid Colors
 		ZA.Colors = {
 			["Blizzard"] = "3facff",
 			["Guild"] = "40ff40",
@@ -429,6 +430,7 @@ local function updateData()
 			["Silver"] = "aaaadd",
 			["White"] = "ffffff",
 			["Yellow"] = "ffff00",
+			["Cosmetic"] = "ff80ff",
 
 			-- Quality
 			["Poor"] = "9d9d9d",
@@ -884,6 +886,8 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Swiftclaw"] = 819,
+			["Kyrian Ascendant"] = 201,
 			["Pelagos"] = 201,
 			["Kleia"] = 201,
 			["Mikanikos"] = 201,
@@ -976,6 +980,7 @@ local function updateData()
 			["Wild Flayedwing"] = 415,
 			["Winged Soul Eater"] = 411,
 			["Wisp"] = 805,
+			["Tubbins"] = 809,
 		}
 
 		--! Vehicle Icons
@@ -1044,6 +1049,9 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			["Lumbering Charge"] = 104,
+			["Explosive Fungistorm"] = 40,
+			["Throw Bomb"] = 5,
 			["Oppressive Chains"] = 909,
 			["Death Blossom"] = 326,
 			["Sparkling Drift"] = 104,
@@ -1327,6 +1335,7 @@ local function updateData()
 			["Ancient Portal: Dalaran"] = 646,
 			["Ancient Rune:1058940"] = 810,
 			["Ancient Teleport: Dalaran"] = 646,
+			["Scroll of Teleport: Theater of Pain"] = 646,
 			["Angelic Feather"] = 2,
 			["Angry Snort"] = 903,
 			["Anima Barrage:1041233"] = 201,
@@ -2477,7 +2486,7 @@ local function updateData()
 			["Death Tempest:3528305"] = 411,
 			["Death Venom"] = 806,
 			["Death Wail"] = 327,
-			["Death Wave:1778230"] = 203,
+			["Death Wave:1778230"] = 411,
 			["Death Winds:3528295"] = 326,
 			["Death Wish"] = 103,
 			["Death Wish"] = 103,
@@ -8702,6 +8711,9 @@ local function updateData()
 			[340181] = 100,
 			[333367] = 321,
 			[321450] = 100,
+			[356547] = 100,
+			[359493] = 114,
+			[338472] = 100,
 			--qqq
 
 			--! Ascension Crafting
@@ -17698,6 +17710,8 @@ local function updateData()
 			[316868] = 0,
 			[350637] = 0,
 			[321450] = 0,
+			[356547] = 0,
+			[359493] = 0,
 			--qqi
 
 
