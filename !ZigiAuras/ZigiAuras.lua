@@ -886,6 +886,12 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Bravo Company Siege Tank"] = 100,
+			["Overloaded Harvest Golem"] = 100,
+			["Darkwing Aggressor"] = 809,
+			["Salvaged Demolisher"] = 100,
+			["Salvaged Chopper"] = 100,
+			["Salvaged Siege Engine"] = 100,
 			["Swiftclaw"] = 819,
 			["Kyrian Ascendant"] = 201,
 			["Pelagos"] = 201,
@@ -1049,6 +1055,11 @@ local function updateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Spells
+			["Minion of Doane"] = 326,
+			["Chloroform"] = 281,
+			["Tarak's Ritual"] = 32,
+			["Rocket Boost"] = 4,
+			[342886] = 805, -- Twilight Dust (The Slumbering Emperor)
 			["Lumbering Charge"] = 104,
 			["Explosive Fungistorm"] = 40,
 			["Throw Bomb"] = 5,
@@ -8714,6 +8725,8 @@ local function updateData()
 			[356547] = 100,
 			[359493] = 114,
 			[338472] = 100,
+			[81515] = 100,
+			[81776] = 100,
 			--qqq
 
 			--! Ascension Crafting
@@ -17712,6 +17725,8 @@ local function updateData()
 			[321450] = 0,
 			[356547] = 0,
 			[359493] = 0,
+			[81515] = 0,
+			[81776] = 0,
 			--qqi
 
 
