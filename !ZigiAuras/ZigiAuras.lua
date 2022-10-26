@@ -14,27 +14,10 @@ local function updateData()
 	local name, realm = UnitFullName("player")
 	local _, class, _ = UnitClass("player")
 	local faction,_ = UnitFactionGroup("player")
-	local spec = GetSpecialization() or 0
+	local spec = GetSpecialization() or 5
+	local role = GetSpecializationRole(spec) or "DAMAGER" -- "DAMAGER", "TANK" or "HEALER"
 	local level = UnitLevel("player") or 1
-	local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0
-	-- 1 Kyrian
-	-- 2 Venthyr
-	-- 3 Night Fae
-	-- 4 Necrolord
-
-	local role = "dps"
-	if (class == "DEATHKNIGHT" and spec == 1) or (class == "DEMONHUNTER" and spec == 2) or (class == "DRUID" and spec == 3) or (class == "MONK" and spec == 1) or (class == "PALADIN" and spec == 2) or (class == "WARRIOR" and spec == 3) then
-		role = "tank"
-	elseif (class == "DRUID" and spec == 4) or (class == "MONK" and spec == 2) or (class == "PALADIN" and spec == 1) or (class == "PRIEST" and spec ~= 3) or (class == "SHAMAN" and spec == 3) then
-		role = "healer"
-	end
-
-	local primary = "int"
-	if (class == "DEMONHUNTER") or (class == "DRUID" and (spec == 2 or spec == 3)) or (class == "HUNTER") or (class == "MONK" and spec ~= 2) or (class == "ROGUE") or (class == "SHAMAN" and spec == 2) then
-		primary = "agi"
-	elseif (class == "DEATHKNIGHT") or (class == "WARRIOR") or (class == "PALADIN" and spec ~= 1) then
-		primary = "str"
-	end
+	local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0 -- 1 Kyrian  2 Venthyr  3 Night Fae  4 Necrolord
 	
 
 	if ZA then
@@ -53,6 +36,10 @@ local function updateData()
 				return tostring(o)
 			end
 		end
+
+		--! Primary Stats
+		ZA.PrimaryStat = select(6, GetSpecializationInfo(spec)) or 0
+		ZA.PrimaryStatSchool = (ZA.PrimaryStat == 2) and 115 or (ZA.PrimaryStat == 4) and 118 or 117
 
 		-- Transliterate Cyrillic to Latin
 		-- LibTranslit 1.0 by Vardex, modified for ZigiAuras
@@ -189,6 +176,7 @@ local function updateData()
 		ZA.IconColors = {
 			-- Blizzard Icons
 			[132320] = "4f6986", -- ability_stealth
+
 			-- World Markers
 			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerSquare"] = "0070dd",
 			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerTriangle"] = "1eff00",
@@ -199,10 +187,12 @@ local function updateData()
 			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerMoon"] = "aaaadd",
 			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerSkull"] = "dedede",
 			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerClear"] = "404040",
+
 			-- Hunter Pets
 			["Interface/AddOns/Media_Newsom/Pets/CoreHoundPurple"] = "972eba",
 			["Interface/AddOns/Media_Newsom/Pets/CoreHoundYellow"] = "b8ff1b",
 			["Interface/AddOns/Media_Newsom/Pets/ManasaberBlue"] = "c170ff",
+
 			-- Water Elementals
 			["Interface/AddOns/Media_Newsom/Pets/WaterElementalStormsWake"] = "67aeb0",
 			["Interface/AddOns/Media_Newsom/Pets/WaterElementalTheTides"] = "50a8ff",
@@ -234,6 +224,7 @@ local function updateData()
 			["Dansel Adams"] = "Gold",
 			["Thaumaturge Vashreen"] = "Cosmetic",
 			["Minigob Manabonk"] = "MAGE",
+			["Rathan"] = "WARRIOR",
 			--! Friends
 			-- Daniel
 			["Hana-Sporeggar"] = "HUNTER",
@@ -539,53 +530,13 @@ local function updateData()
             local lr, lg, lb = tonumber(string.sub(lhex, 1, 2), 16), tonumber(string.sub(lhex, 3, 4), 16), tonumber(string.sub(lhex, 5), 16)
             local rr, rg, rb = tonumber(string.sub(rhex, 1, 2), 16), tonumber(string.sub(rhex, 3, 4), 16), tonumber(string.sub(rhex, 5), 16)
 
-            return lr/255, lg/255, lb/255, rr/255, rg/255, rb/255
+            return CreateColor(lr/255, lg/255, lb/255, 1), CreateColor(rr/255, rg/255, rb/255, 1)
 		end
 
 		-- Color Hex to RGB
 		function ZA.HexToRGB(hex)
 			if not hex then return 0, 0, 0 end
 			return tonumber(string.sub(hex, 1, 2), 16), tonumber(string.sub(hex, 3, 4), 16), tonumber(string.sub(hex, 5), 16)
-		end
-
-		-- Player Primary Stat
-		function ZA.PlayerPrimaryStat(abbrev)
-			local _,class = UnitClass("player")
-			local spec = GetSpecialization()
-
-			if class == "DEATHKNIGHT" or class == "WARRIOR" then
-				return abbrev and "Str" or "Strength"
-			elseif class == "DEMONHUNTER" or class == "HUNTER" or class == "ROGUE" then
-				return abbrev and "Agi" or "Agility"
-			elseif class == "EVOKER" or class == "MAGE" or class == "PRIEST" or class == "WARLOCK" then
-				return abbrev and "Int" or "Intellect"
-			elseif class == "DRUID" then
-				if spec == 2 or spec == 3 then
-					return abbrev and "Agi" or "Agility"
-				else
-					return abbrev and "Int" or "Intellect"
-				end
-			elseif class == "MONK" then
-				if spec == 2 then
-					return abbrev and "Int" or "Intellect"
-				else
-					return abbrev and "Agi" or "Agility"
-				end
-			elseif class == "PALADIN" then
-				if spec == 1 then
-					return abbrev and "Int" or "Intellect"
-				else
-					return abbrev and "Str" or "Strength"
-				end
-			elseif class == "SHAMAN" then
-				if spec == 2 then
-					return abbrev and "Agi" or "Agility"
-				else
-					return abbrev and "Int" or "Intellect"
-				end
-			end
-
-			return false
 		end
 
 
@@ -623,6 +574,11 @@ local function updateData()
 
 		--! Text
 		ZA.Text = {
+			["Chaos Brand - Arcane"] = "Chaos Brand",
+			["Chaos Brand - Fire"] = "Chaos Brand",
+			["Chaos Brand - Frost"] = "Chaos Brand",
+			["Chaos Brand - Nature"] = "Chaos Brand",
+			["Chaos Brand - Shadow"] = "Chaos Brand",
 			[361952] = "Infusion of Anima",
 			[254545] = "Baruut the Brisk",
 			[49844] = "Mole Machine: Blackrock Depths",
@@ -886,9 +842,13 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Horde Cannon"] = 100,
+			["Forsaken Bat"] = 158,
+			["Avatar of Aliothe"] = 805,
 			["Bravo Company Siege Tank"] = 100,
 			["Overloaded Harvest Golem"] = 100,
 			["Darkwing Aggressor"] = 809,
+			["Defias Watcher"] = 100,
 			["Salvaged Demolisher"] = 100,
 			["Salvaged Chopper"] = 100,
 			["Salvaged Siege Engine"] = 100,
@@ -1047,6 +1007,794 @@ local function updateData()
 		}
 
 
+		--# Trinkets
+		ZA.Trinkets = {
+			[341260] = "Burst of Knowledge", -- Burst of Knowledge (Heirloom Set Bonus)
+
+			-- Shadowlands
+			[328908] = "Combat Meditation", -- Kyrian (Pelagos)
+			[336885] = "Soothing Shade", -- Venthyr (Theotar)
+			[330368] = "Inscrutable Quantum Device", -- Inscrutable Quantum Device
+			[330380] = "Inscrutable Quantum Device", -- Inscrutable Quantum Device
+			[330366] = "Inscrutable Quantum Device", -- Inscrutable Quantum Device
+			[330367] = "Inscrutable Quantum Device", -- Inscrutable Quantum Device
+
+			-- Battle for Azeroth
+			[290032] = "Hymn of Zeal", -- Hymnal of the 7th Legion
+			[298717] = "Hymn of Battle", -- Tome of Thalassian Hymns
+			[298722] = "Tidal Enchantment", -- Tidesages' Warscroll
+			[290028] = "Primal Enchantment", -- Loa-Touched Warscroll
+
+			-- Warlods of Draenor
+			[201410] = "Voidsight", -- Orb of Voidsight
+			[201405] = "Demonbane", -- Gronntooth War Horn
+			--[201408] = "Cleansing Flame", -- Infallible Tracking Charm
+
+			-- Burning Crusade
+			[144073] = "Arcane Energy", -- Ancient Draenei Arcane Relic
+			[144074] = "Ferocity", -- Ancient Draenei War Talisman
+			[234786] = "Flow of Time", -- Scarab of the Infinite Cycle
+			[26551] = "Jade Owl", -- Figurine - Jade Owl
+			[26576] = "Black Pearl Panther", -- Figurine - Black Pearl Panther
+			[26581] = "Truesilver Crab", -- Figurine - Truesilver Crab
+			[26599] = "Ruby Serpent", -- Figurine - Ruby Serpent
+			[26600] = "Emerald Owl", -- Figurine - Emerald Owl
+			[26609] = "Black Diamond Crab", -- Figurine - Black Diamond Crab
+			[26614] = "Dark Iron Scorpid", -- Figurine - Dark Iron Scorpid
+			[31040] = "Living Ruby Serpent", -- Figurine - Living Ruby Serpent
+			[31045] = "Talasite Owl", -- Figurine - Talasite Owl
+			[31047] = "Nightseye Panther", -- Figurine - Nightseye Panther
+			[31794] = "Focused Mind", -- Auslese's Light Channeler
+			[32355] = "Focused Power", -- Ancient Crystal Talisman
+			[32355] = "Focused Power", -- Glowing Crystal Insignia
+			[32362] = "Burning Hatred", -- Ogre Mauler's Badge/Uniting Charm
+			[32367] = "Power of Prayer", -- Oshu'gun Relic
+			[33370] = "Fungal Frenzy", -- Quagmirran's Eye
+			[33400] = "Accelerated Mending", -- Warp-Scarab Brooch
+			[33649] = "Rage of the Unraveller", -- Hourglass of the Unraveller
+			[33662] = "Arcane Energy", -- Vengeance of the Illidari
+			[33667] = "Ferocity", -- Bladefist's Breadth
+			[33807] = "Abacus of Violent Odds", -- Abacus of Violent Odds
+			[34000] = "The Arcanist's Stone", -- Arcanist's Stone
+			[34106] = "Unyielding Courage", -- Icon of Unyielding Courage
+			[34210] = "Endless Blessings", -- Bangle of Endless Blessings
+			[34321] = "Call of the Nexus", -- Shiffar's Nexus-Horn
+			[34747] = "Recurring Power", -- Eye of Magtheridon
+			[34775] = "Dragonspine Flurry", -- Dragonspine Trophy
+			[35095] = "Enlightenment", -- Pendant of the Violet Eye
+			[35163] = "Silver Crescent", -- Icon of the Silver Crescent
+			[35165] = "Essence of the Martyr", -- Essence of the Martyr
+			[35166] = "Lust for Battle", -- Bloodlust Brooch
+			[35337] = "Spell Power", -- Xi'ri's Gift/Scryer's Bloodgem
+			[35733] = "Ancient Power", -- Core of Ar'kelos
+			[36347] = "Spell Power", -- Heavenly Inspiration
+			[36432] = "Spell Power", -- Starkiller's Bauble
+			[37174] = "Perceived Weakness", -- Warp-Spring Coil
+			[37198] = "Blessing of Righteousness", -- Tome of Fiery Redemption
+			[37341] = "Feline Blessing", -- Living Root of the Wildheart
+			[37342] = "Sylvan Blessing", -- Living Root of the Wildheart
+			[37343] = "Lunar Blessing", -- Living Root of the Wildheart
+			[37344] = "Cenarion Blessing", -- Living Root of the Wildheart
+			[37656] = "Wisdom", -- Memento of Tyrande
+			[38332] = "Blessing of Life", -- Ribbon of Sacrifice
+			[38348] = "Unstable Currents", -- Sextant of Unstable Currents
+			[39200] = "Heroism", -- Terokkar Tablet of Precision
+			[39201] = "Spell Power", -- Terokkar Tablet of Vim
+			[39439] = (ZA.PrimaryStat ~= 4) and "Aura of the Crusader" or false, -- Darkmoon Card: Crusade
+			[39441] = (ZA.PrimaryStat == 4) and "Aura of the Crusader" or false, -- Darkmoon Card: Crusade
+			[39443] = "Aura of Wrath", -- Darkmoon Card: Wrath
+			[39511] = "Sociopath", -- Darkmoon Card: Madness
+			[40396] = "Fel Infusion", -- The Skull of Gul'dan
+			[40402] = "Deep Meditation", -- Earring of Soulful Meditation
+			[40440] = "Divine Blessing", -- Ashtongue Talisman of Acumen
+			[40441] = "Divine Wrath", -- Ashtongue Talisman of Acumen
+			[40445] = "Blessing of Remulos", -- Ashtongue Talisman of Equilibrium
+			[40446] = "Blessing of Elune", -- Ashtongue Talisman of Equilibrium
+			[40452] = "Blessing of Cenarius", -- Ashtongue Talisman of Equilibrium
+			[40459] = "Fire Blood", -- Ashtongue Talisman of Valor
+			[40461] = "Exploit Weakness", -- Ashtongue Talisman of Lethality
+			[40466] = "Power Surge", -- Ashtongue Talisman of Vision
+			[40477] = "Forceful Strike", -- Madness of the Betrayer
+			[40480] = "Power of the Ashtongue", -- Ashtongue Talisman of Shadows
+			[40483] = "Insight of the Ashtongue", -- Ashtongue Talisman of Insight
+			[40487] = "Deadly Aim", -- Ashtongue Talisman of Swiftness
+			[40724] = "Valor", -- Crystalforged Trinket
+			[40729] = "Heightened Reflexes", -- Badge of Tenacity
+			[40997] = "Delusional", -- Darkmoon Card: Madness
+			[40998] = "Kleptomania", -- Darkmoon Card: Madness
+			[40999] = "Megalomania", -- Darkmoon Card: Madness
+			[41002] = "Paranoia", -- Darkmoon Card: Madness
+			[41005] = "Manic", -- Darkmoon Card: Madness
+			[41009] = "Narcissism", -- Darkmoon Card: Madness
+			[41261] = "Combat Valor", -- Skyguard Silver Cross
+			[41263] = "Combat Gallantry", -- Airman's Ribbon of Gallantry
+			[41404] = "Dementia", -- Darkmoon Card: Madness
+			[42084] = "Fury of the Crashing Waves", -- Tsunami Talisman
+			[43710] = "Diabolic Remedy", -- Tome of Diabolic Remedy
+			[43712] = "Mojo Madness", -- Hex Shrunken Head
+			[43716] = "Call of the Berserker", -- Berserker's Call
+			[45041] = "Combat Insight", -- Blackened Naaru Sliver
+			[45042] = "Power Circle", -- Shifting Naaru Sliver
+			[45053] = "Disdain", -- Shard of Contempt
+			[46783] = "Crimson Serpent", -- Figurine - Crimson Serpent
+			[46784] = "Shadowsong Panther", -- Figurine - Shadowsong Panther
+			[46785] = "Seaspray Albatross", -- Figurine - Seaspray Albatross
+			[51953] = "Dark Iron Pipeweed", -- Dark Iron Smoking Pipe
+			[51954] = "Hopped Up", -- Direbrew Hops
+			[51955] = "Dire Drunkard", -- Empty Mug of Direbrew
+
+			-- Classic
+			[15604] = "Second Wind", -- Second Wind
+			[15646] = "Burst of Knowledge", -- Burst of Knowledge
+			[17275] = "Heart of the Scale", -- Heart of the Scale
+			[21970] = "Mark of the Chosen", -- Mark of the Chosen
+			[23271] = "Ephemeral Power", -- Talisman of Ephemeral Power
+			[23684] = "Aura of the Blue Dragon", -- Darkmoon Card: Blue Dragon
+			--[23720] = "Blessing of the Black Book", -- The Black Book
+			[23721] = "Arcane Infused", -- Arcane Infused Gem
+			[23723] = "Mind Quickening", -- Mind Quickening Gem
+			[23724] = "Metamorphosis Rune", -- Rune of Metamorphosis
+			[23726] = "Venomous Totem", -- Venomous Totem
+			[23733] = "Blinding Light", -- Scrolls of Blinding Light
+			[23734] = "Nature Aligned", -- Natural Alignment Crystal
+			[24268] = "Mar'li's Brain Boost", -- Mar'li's Eye
+			[24352] = "Devilsaur Fury", -- Devilsaur Eye
+			[24354] = "Blessed Prayer Beads", -- Blessed Prayer Beads
+			[24389] = "Chaos Fire", -- Fire Ruby
+			[24427] = "Diamond Flask", -- Diamond Flask
+			[24498] = "Brilliant Light", -- Gri'lek's Charm of Valor
+			[24499] = "Energized Shield", -- Wushoolay's Charm of Spirits
+			[24531] = "Refocus", -- Renataki's Charm of Beasts
+			[24542] = "Nimble Healing Touch", -- Wushoolay's Charm of Nature
+			[24543] = "Massive Destruction", -- Hazza'rah's Charm of Destruction
+			[24544] = "Arcane Potency", -- Hazza'rah's Charm of Magic
+			[24546] = "Rapid Healing", -- Hazza'rah's Charm of Healing
+			[24610] = "Pagle's Broken Reel", -- Nat Pagle's Broken Reel
+			[24865] = "Sanctified Orb", -- Sanctified Orb
+			[24998] = "Healing of the Ages", -- Hibernation Crystal
+			[25891] = "Earthstrike", -- Earthstrike
+			[26166] = "Obsidian Insight", -- Eye of Moam
+			[26168] = "Chitinous Spikes", -- Fetish of Chitinous Spikes
+			[26481] = "Insight of the Qiraji", -- Badge of the Swarmguard
+			[27675] = "Chromatic Infusion", -- Draconic Infused Emblem
+			[28204] = "Ascendance", -- Talisman of Ascendance
+			[28777] = "Slayer's Crest", -- Slayer's Crest
+			[28779] = "Essence of Sapphiron", -- The Restrained Essence of Sapphiron
+			[28780] = "Eye of the Dead", -- Eye of the Dead
+			[28866] = "Kiss of the Spider", -- Kiss of the Spider
+			[29604] = "Jom Gabbar", -- Jom Gabbar
+			[50708] = "Primal Instinct", -- Devilsaur Tooth
+		}
+
+		ZA.TrinketDebuffs = {
+			-- Burning Crusade
+			[26610] = "Poison", -- Figurine - Dark Iron Scorpid
+
+			-- Classic
+			[12766] = "Poison Cloud", -- Chained Essence of Eranikus
+			[17330] = "Poison", -- Smolderweb's Eye
+		}
+
+		ZA.DefensiveTrinkets = {
+			-- Burning Crusade
+			[40464] = "Protector's Vigor", -- Shadowmoon Insignia
+			[45049] = "Tenacity", -- Steely Naaru Sliver
+			[44055] = "Tremendous Fortitude", -- Battlemaster
+			[43713] = "Hardened Skin", -- Ancient Aqir Artifact
+			[51952] = "Dark Iron Luck", -- Coren's Lucky Coin
+			[31039] = "Dawnstone Crab", -- Figurine - Dawnstone Crab
+			[46780] = "Empyrean Tortoise", -- Figurine - Empyrean Tortoise
+			[33089] = "Vigilance of the Colossus", -- Figurine of the Colossus
+			[38351] = "Displacement", -- Scarab of Displacement
+			[37340] = "Ursine Blessing", -- Living Root of the Wildheart
+			[34519] = "Time's Favor", -- Moroes' Lucky Pocket Watch
+			[45058] = "Evasive Maneuvers", -- Commendation of Kael'thas
+			[40538] = "Tenacity", -- Brooch of the Immortal King
+			[39228] = "Argussian Compass", -- Argussian Compass
+			[33479] = "Adamantine Shell", -- Adamantine Figurine
+			[33668] = "Tenacity", -- Regal Protectorate
+			[32600] = "Avoidance", -- Charm of Alacrity
+			[41011] = "Martyr Complex", -- Darkmoon Card: Madness
+			[36372] = "Phalanx", -- Dabiri's Enigma
+			[84213] = "Gnome Ingenuity", -- Gnomeregan Auto-Dodger 600
+
+			-- Classic
+			[10342] = "Guardian", -- Guardian Talisman
+			[10368] = "Uther's Light", -- Uther's Strength
+			[12733] = "Mithril Insignia", -- Glimmering Mithril Insignia
+			[13744] = "Blazing Emblem", -- Blazing Emblem
+			[15595] = "Force of Will", -- Force of Will
+			[20587] = "Ragged John's Neverending Cup", -- Ragged John's Neverending Cup
+			[23097] = "Fire Reflector", -- Hyper-Radiant Flame Reflector
+			[23131] = "Frost Reflector", -- Gyrofreeze Ice Reflector
+			[23132] = "Shadow Reflector", -- Ultra-Flash Shadow Reflector
+			[23725] = "Gift of Life", -- Lifegiving Gem
+			[23780] = "Aegis of Preservation", -- Aegis of Preservation
+			[26464] = "Mercurial Shield", -- Petrified Scarab
+			[28778] = "Loatheb's Reflection", -- Loatheb's Reflection
+			[84212] = "Glyph of Deflection", -- Glyph of Deflection
+		}
+
+		-- INVIS
+		-- 4079
+
+		-- PET THROUGHPUT
+		-- 23720
+
+		-- RECOVERY
+		-- 38325
+
+		ZA.AbsorbTrinkets = {
+			-- Burning Crusade
+			[31771] = 1, -- Runed Fungalcap
+
+			-- Classic
+			[23991] = 1, -- Defiler's Talisman/Talisman of Arathor
+			[25746] = 1, -- Defiler's Talisman/Talisman of Arathor
+			[25747] = 1, -- Defiler's Talisman/Talisman of Arathor
+			[25750] = 1, -- Defiler's Talisman/Talisman of Arathor
+			[21956] = 1, -- Mark of Resolution
+			[29506] = 1, -- The Burrower's Shell
+			[23506] = 1, -- Arena Grand Master
+		}
+
+
+		--! Buff Filters
+		ZA.Buffs = {
+			---------------------------
+			-- CLASS AND GROUP AURAS --
+			---------------------------
+
+			-- Trinket
+			[345545] = true, -- Bottled Flayedwing Toxin
+			[368512] = true, -- So'leah's Secret Technique
+
+			-- Shadowlands
+			[338041] = true, -- Lone Spirit
+			[326967] = true, -- Kindred Spirits
+			["The Mad Duke's Tea"] = true,
+
+			-- Group Buffs
+			["Power Word: Fortitude"] = true,
+			["Arcane Intellect"] = true,
+			["Battle Shout"] = true,
+			["Blessing of the Bronze"] = true,
+
+			-- Death Knight
+
+			-- Demon Hunter
+
+			-- Druid
+			[289318] = true, -- Mark of the Wild (PvP Talent)
+
+			-- Evoker
+
+			-- Hunter
+			[164273] = true, -- Lone Wolf
+			[264662] = true, -- Endurance Training (Tenacity)
+			[264663] = true, -- Predator's Thirst (Ferocity)
+			[264656] = true, -- Pathfinding (Cunning)
+
+			-- Mage
+			[210126] = true, -- Arcane Familiar
+			[321358] = true, -- Focus Magic
+
+			-- Monk
+			[101643] = true, -- Transcendence
+
+			-- Paladin
+			[32223] = true, -- Crusader Aura
+			[465] = true, -- Devotion Aura
+			[183435] = true, -- Retribution Aura
+			[317920] = true, -- Concentration Aura
+
+			-- Priest
+
+			-- Rogue
+			[315584] = true, -- Instant Poison
+			[2823] = true, -- Deadly Poison
+			[8679] = true, -- Wound Poison
+			[3408] = true, -- Crippling Poison
+			[5761] = true, -- Numbing Poison
+
+			-- Shaman
+			["Maelstrom Weapon"] = true,
+			["Lightning Shield"] = true,
+			["Water Shield"] = true,
+
+			-- Warlock
+			[196099] = true, -- Grimoire of Sacrifice
+			[48018] = true, -- Demonic Circle
+
+			-- Warrior
+
+			-- Torghast
+			[324717] = true, -- Soul Remnant's Blessing
+			[313174] = true, -- Secret Spices
+			[342801] = true, -- Gnarled Key
+			[294720] = true, -- Bottled Enigma
+			[331297] = true, -- Forsworn Feather
+			[320964] = true, -- Horrific Dictionary
+			[321152] = true, -- Vandal's Zeal
+			[321629] = true, -- Seeker's Scroll
+			[350128] = true, -- Phantastic Power
+			[322987] = true, -- Seeker's Rage
+			[332944] = true, -- Rune of Razorice
+			[333119] = true, -- Unending Thirst
+			[333115] = true, -- Rune of Spellwarding
+			[333116] = true, -- Rune of the Apocalypse
+			[333118] = true, -- Stoneskin Gargoyle
+			[333114] = true, -- Rune of Sanguination
+			[333117] = true, -- Fallen Crusader
+			[333113] = true, -- Rune of Hysteria
+
+
+			----------------------
+			-- CONSUMABLE AURAS --
+			----------------------
+
+			["Well Fed"] = true,
+			[20707] = true, -- Soulstone
+
+
+			-------------
+			-- ELIXIRS --
+			-------------
+
+			-- Shadowlands
+			[307185] = "Elixir", -- Spectral Flask of Power
+			[307187] = "Elixir", -- Spectral Stamina Flask
+
+			-- Battle for Azeroth
+			[298837] = "Elixir", -- Greater Flask of Endless Fathoms
+			[298836] = "Elixir", -- Greater Flask of the Currents
+			[298841] = "Elixir", -- Greater Flask of the Undertow
+			[298839] = "Elixir", -- Greater Flask of the Vast Horizon
+			[251837] = "Elixir", -- Flask of Endless Fathoms
+			[251836] = "Elixir", -- Flask of the Currents
+			[251839] = "Elixir", -- Flask of the Undertow
+			[251838] = "Elixir", -- Flask of the Vast Horizon
+
+			-- Legion
+			[188035] = "Elixir", -- Flask of Ten Thousand Scars
+			[188034] = "Elixir", -- Flask of the Countless Armies
+			[188033] = "Elixir", -- Flask of the Seventh Demon
+			[188031] = "Elixir", -- Flask of the Whispered Pact
+			[242551] = "Elixir", -- Repurposed Fel Focuser
+			[193456] = "Elixir", -- Gaze of the Legion
+
+			-- Warlords of Draenor
+			[156064] = "Elixir", -- Greater Draenic Agility Flask
+			[156079] = "Elixir", -- Greater Draenic Intellect Flask
+			[156084] = "Elixir", -- Greater Draenic Stamina Flask
+			[156080] = "Elixir", -- Greater Draenic Strength Flask
+			[156073] = "Elixir", -- Draenic Agility Flask
+			[156070] = "Elixir", -- Draenic Intellect Flask
+			[156077] = "Elixir", -- Draenic Stamina Flask
+			[156071] = "Elixir", -- Draenic Strength Flask
+			[176151] = "Elixir", -- Oralius' Whispering Crystal
+
+			-- Mists of Pandaria
+			[105693] = "Elixir", -- Flask of Falling Leaves
+			[105689] = "Elixir", -- Flask of Spring Blossoms
+			[105694] = "Elixir", -- Flask of the Earth
+			[105691] = "Elixir", -- Flask of the Warm Sun
+			[105696] = "Elixir", -- Flask of Winter's Bite
+			[105687] = "Elixir", -- Elixir of Mirrors
+			[105685] = "Elixir", -- Elixir of Peace
+			[105686] = "Elixir", -- Elixir of Perfection
+			[105684] = "Elixir", -- Elixir of the Rapids
+			[105683] = "Elixir", -- Elixir of Weaponry
+			[105682] = "Elixir", -- Mad Hozen Elixir
+			[105681] = "Elixir", -- Mantid Elixir
+			[105688] = "Elixir", -- Monk's Elixir
+			[127230] = "Elixir", -- Crystal of Insanity
+
+			-- Cataclysm
+			[79472] = "Elixir", -- Flask of Titanic Strength
+			[79471] = "Elixir", -- Flask of the Winds
+			[79470] = "Elixir", -- Flask of the Draconic Mind
+			[94160] = "Elixir", -- Flask of Flowing Water
+			[79469] = "Elixir", -- Flask of Steelskin
+
+			[79480] = "Elixir", -- Elixir of Deep Earth
+			[79481] = "Elixir", -- Elixir of Impossible Accuracy
+			[79632] = "Elixir", -- Elixir of Mighty Speed
+			[79477] = "Elixir", -- Elixir of the Cobra
+			[79635] = "Elixir", -- Elixir of the Master
+			[79474] = "Elixir", -- Elixir of the Naga
+			[79468] = "Elixir", -- Ghost Elixir
+			[134873] = "Elixir", -- Prismatic Elixir
+
+			-- Wrath of the Lich King
+			[53760] = "Elixir", -- Flask of Endless Rage
+			[54212] = "Elixir", -- Flask of Pure Mojo
+			[53758] = "Elixir", -- Flask of Stoneblood
+			[53755] = "Elixir", -- Flask of the Frost Wyrm
+			[53752] = "Elixir", -- Lesser Flask of Toughness
+			[60340] = "Elixir", -- Elixir of Accuracy
+			[80532] = "Elixir", -- Elixir of Armor Piercing
+			[60341] = "Elixir", -- Elixir of Deadly Strikes
+			[60344] = "Elixir", -- Elixir of Expertise
+			[60346] = "Elixir", -- Elixir of Lightning Speed
+			[28497] = "Elixir", -- Elixir of Mighty Agility
+			[60343] = "Elixir", -- Elixir of Mighty Defense
+			[53751] = "Elixir", -- Elixir of Mighty Fortitude
+			[53764] = "Elixir", -- Elixir of Mighty Mageblood
+			[53748] = "Elixir", -- Elixir of Mighty Strength
+			[60347] = "Elixir", -- Elixir of Mighty Thoughts
+			[53763] = "Elixir", -- Elixir of Protection
+			[53747] = "Elixir", -- Elixir of Versatility
+			[53749] = "Elixir", -- Guru's Elixir
+			[33721] = "Elixir", -- Spellpower Elixir
+			[53746] = "Elixir", -- Wrath Elixir
+			[11319] = "Elixir", -- Elixir of Water Walking
+
+			-- Burning Crusade
+			[28521] = "Elixir", -- Flask of Blinding Light
+			[28518] = "Elixir", -- Flask of Fortification
+			[28519] = "Elixir", -- Flask of Mighty Versatility
+			[28540] = "Elixir", -- Flask of Pure Death
+			[28520] = "Elixir", -- Flask of Relentless Assault
+			[54452] = "Elixir", -- Adept's Elixir
+			[39626] = "Elixir", -- Earthen Elixir
+			[39627] = "Elixir", -- Elixir of Draenic Wisdom
+			[134870] = "Elixir", -- Elixir of Empowerment
+			[28491] = "Elixir", -- Elixir of Healing Power
+			[39628] = "Elixir", -- Elixir of Ironskin
+			[54494] = "Elixir", -- Elixir of Major Agility
+			[28502] = "Elixir", -- Elixir of Major Armor
+			[28501] = "Elixir", -- Elixir of Major Firepower
+			[39625] = "Elixir", -- Elixir of Major Fortitude
+			[28493] = "Elixir", -- Elixir of Major Frost Power
+			[28509] = "Elixir", -- Elixir of Major Mageblood
+			[28503] = "Elixir", -- Elixir of Major Shadow Power
+			[28490] = "Elixir", -- Elixir of Major Strength
+			[33726] = "Elixir", -- Elixir of Mastery
+			[38954] = "Elixir", -- Fel Strength Elixir
+			[33720] = "Elixir", -- Onslaught Elixir
+
+			-- Classic
+			--[?] = "Elixir", -- Alchemist's Flask
+			[17626] = "Elixir", -- Flask of the Titans
+			[17627] = "Elixir", -- Flask of Distilled Wisdom
+			[17628] = "Elixir", -- Flask of Supreme Power
+			[11390] = "Elixir", -- Arcane Elixir
+			[11328] = "Elixir", -- Elixir of Agility
+			[17537] = "Elixir", -- Elixir of Brute Force
+			[3220] = "Elixir", -- Elixir of Defense
+			[11406] = "Elixir", -- Elixir Demonslaying
+			[7844] = "Elixir", -- Elixir of Firepower
+			[3593] = "Elixir", -- Elixir of Fortitude
+			[21920] = "Elixir", -- Elixir of Frost Power
+			[8212] = "Elixir", -- Elixir of Giant Growth
+			[11405] = "Elixir", -- Elixir of Giants
+			[11334] = "Elixir", -- Elixir of Greater Agility
+			[11349] = "Elixir", -- Elixir of Greater Defense
+			[26276] = "Elixir", -- Elixir of Greater Firepower
+			[11396] = "Elixir", -- Elixir of Greater Intellect
+			[3160] = "Elixir", -- Elixir of Lesser Agility
+			[2367] = "Elixir", -- Elixir of Lion's Strength
+			[63729] = "Elixir", -- Elixir of Minor Accuracy
+			[2374] = "Elixir", -- Elixir of Minor Agility
+			[673] = "Elixir", -- Elixir of Minor Defense
+			[2378] = "Elixir", -- Elixir of Minor Fortitude
+			[3164] = "Elixir", -- Elixir of Ogre's Strength
+			[11474] = "Elixir", -- Elixir of Shadow Power
+			[11348] = "Elixir", -- Elixir of Superior Defense
+			[17538] = "Elixir", -- Elixir of the Mongoose
+			[17535] = "Elixir", -- Elixir of the Sages
+			[3166] = "Elixir", -- Elixir of Wisdom
+			[11371] = "Elixir", -- Gift of Arthas
+			[17539] = "Elixir", -- Greater Arcane Elixir
+			[24363] = "Elixir", -- Mageblood Elixir
+			[3223] = "Elixir", -- Major Troll's Blood Elixir
+			[24361] = "Elixir", -- Mighty Troll's Blood Elixir
+			[3222] = "Elixir", -- Strong Troll's Blood Elixir
+			[3219] = "Elixir", -- Weak Troll's Blood Elixir
+			[12608] = "Elixir", -- Catseye Elixir
+
+
+			------------------
+			-- AUGMENT RUNE --
+			------------------
+
+			[347901] = "Rune", -- Veiled Augmentation
+
+
+			-----------------
+			-- LOCAL AURAS --
+			-----------------
+
+			["Enlisted"] = true,
+			["Time Travelling"] = true,
+
+			-- Experience/Reputation
+			["Experience Eliminated"] = true,
+			["Winds of Wisdom"] = true,
+			[46668] = true, -- WHEE!
+			[46668] = true, -- Darkmoon Top Hat
+			[95987] = true, -- Unburdened (Hallow's End)
+			[24705] = true, -- Grim Visage (Hallow's End)
+			[289982] = true, -- Draught of Ten Lands
+
+			-- Gathering
+			[191212] = true, -- Fizzy Apple Cider
+			[136583] = true, -- Darkmoon Firewater
+
+
+			----------------
+			-- ZONE STATE --
+			----------------
+
+			-- Zereth Mortis
+			[359513] = "State", -- Helm of Damnation
+			[363749] = "State", -- Helm of Damnation
+			[359691] = "State", -- Helm of Damnation
+			[362784] = "State", -- The Pocopoc Defense
+			[363255] = "State", -- Vombackpack
+			[364354] = "State", -- Tangled Ward
+			[361631] = "State", -- Carrying Mawsteel Shard
+			[359044] = "State", -- Motivated Automa
+			[367499] = "State", -- Syllabic Recall
+
+			-- Torghast
+			[338907] = "State", -- Refuge of the Damned
+			[341602] = "Zone", -- Chorus of Dead Souls
+
+			-- Korthia
+			[354870] = "State", -- Traversing the Rift
+
+			-- The Maw
+			[308270] = "State", -- Cloak of Ve'nari
+			[369379] = "State", -- Lingering Cloak of the Exile
+
+			-- Revendreth
+			[314797] = "State", -- Soulguard
+			[341237] = "State", -- Taskmaster's Trove
+			[333370] = "State", -- House Iremoore Disguise
+			[320559] = "State", -- It's Time to Rock
+			[338740] = "State", -- Promoting the Local Band
+
+			-- Ardenweald
+			[335686] = "State", -- Lady Moonberry's Gift
+			[342337] = "State", -- Foraging for Fungus
+			[334654] = "State", -- High and Dry
+
+			-- Maldraxxus
+			[316323] = "State", -- Wrangled
+
+			-- Island Expeditions
+			[255114] = "State", -- Wanderer's Endurance
+			[248694] = "State", -- Song of the Sea
+			[264666] = "State", -- Heart of the Woods
+			[248667] = "State", -- Light's Zeal
+			[264170] = "State", -- Burned Soul
+			[255012] = "State", -- Siltherskin
+			[243818] = "State", -- Primal Rage
+			[254824] = "State", -- Devouring Souls
+			[264676] = "State", -- Fireseeker
+			[264652] = "State", -- Unleashed Light
+			[255046] = "State", -- Moon Frenzy
+
+			-- Antorus
+			[254239] = "State", -- Boon of the Titans
+
+			-- Argus
+			[251547] = "State", -- Brazier's Warmth
+
+			-- Dreamgrove
+			[206498] = "State", -- Blessing of the Ancients
+
+			-- The Jade Forest
+			[124013] = "State", -- Hozen-Slayer
+
+			-- Mount Hyjal
+			[88334] = "State", -- Make Gar'gol Ogres Friendly
+
+			-- Acherus
+			[51721] = "State", -- Dominion Over Acherus
+
+			-- Loch Modan
+			[82788] = "Zone", -- Clever Plant Disguise
+
+			-- Redridge Mountains
+			[82580] = "State", -- Bravo Company Field Kit
+			[82587] = "State", -- Bravo Company Field Kit
+
+			-- Westfall
+			[79528] = "State", -- Potion of Shrouding
+
+			-- Teldrassil
+			[65602] = "State", -- Vengeance of Elune
+
+			-- Exile's Reach
+			[298241] = "State", -- Ogre Disguise
+
+
+			---------------
+			-- ZONE BUFF --
+			---------------
+
+			-- Anima Conductor
+			[335576] = "Zone", -- Ascendant's Lodestar (Kyrian)
+			[335577] = "Zone", -- Warch of the Wise (Kyrian)
+			[335578] = "Zone", -- Vesper of Clarity (Kyrian)
+			[335042] = "Zone", -- Skeleton Command (Necrolord)
+			[334536] = "Zone", -- Tirnenn Wrath (Night Fae)
+			[334539] = "Zone", -- Vorkai Charge (Night Fae)
+			[334540] = "Zone", -- Trickster's Moves (Night Fae)
+			[335238] = "Zone", -- Mobile Mirror Set (Venthyr)
+			[335241] = "Zone", -- Ashen Urn (Venthyr)
+			[335240] = "Zone", -- Thirst for Anima (Venthyr)
+
+			-- Zereth Mortis
+			[368021] = "Zone", -- Defense Matrix
+			[368622] = "Zone", -- Grace of the First Ones
+			[360511] = "Zone", -- Accelerating Tendons
+			[362574] = "Zone", -- Progenitor Growth
+			[367194] = "Zone", -- Progenitor Bulwark
+			[365545] = "Zone", -- Absorbptialic
+			[361358] = "Zone", -- Alacrialic
+			[365541] = "Zone", -- Constialic
+			[365544] = "Zone", -- Deflectialic
+			[365551] = "Zone", -- Efficialic
+			[365547] = "Zone", -- Extractialic
+			[365524] = "Zone", -- Flexialic
+			[365527] = "Zone", -- Focialic
+			[365548] = "Zone", -- Fortialic
+			[365542] = "Zone", -- Healialic
+			[365539] = "Zone", -- Obscurialic
+			[365522] = "Zone", -- Osmosialic
+			[361356] = "Zone", -- Perceptialic
+			[365540] = "Zone", -- Potentialic
+			[365546] = "Zone", -- Reflectialic
+			[365550] = "Zone", -- Relialic
+			[361357] = "Zone", -- Rigialic
+			[365549] = "Zone", -- Robustialic
+			[365543] = "Zone", -- Toxicialic
+			[365528] = "Zone", -- Velocialic
+			[361917] = "Zone", -- Perceptive Pocopoc
+
+			-- Korthia
+			[357922] = "Zone", -- Swagsnout Gromit
+
+			-- Torghast
+			[355459] = "Zone", -- Reprieve
+
+			-- The Maw
+			[346733] = "Zone", -- Sky Chains
+
+			-- Revendreth
+			[314797] = "Zone", -- Anima Stake
+			[319565] = "Zone", -- Dredger's Hammer
+			[329088] = "Zone", -- Carrying Keg
+			[344428] = "Zone", -- Settling Ash
+			[313064] = "Zone", -- Carrying Remnant of Light
+
+			-- Ardenweald
+			[311058] = "Zone", -- Shimmerdusted
+			[311107] = "Zone", -- Gossamer Laces
+			[311103] = "Zone", -- Minty Fresh Breath
+			[343889] = "Zone", -- Dread Pollen
+
+			-- Maldraxxus
+			[344128] = "Zone", -- Powerful Swiftblade
+			[344148] = "Zone", -- Cleansing Formula
+			[346319] = "Zone", -- Lantern of Force
+			[344671] = "Zone", -- Flask of Unravelling
+
+			-- Island Expeditions
+			[268499] = "Zone", -- Pickaxe
+			[266117] = "Zone", -- Extra-Hot Torch
+			[266066] = "Zone", -- Shovel
+			[268500] = "Zone", -- Runestone
+			[282796] = "Zone", -- Volatile Cure-All
+
+			-- Battle for Azeroth
+			[298761] = "Zone", -- Azerite Energy
+
+			-- Operation: Mechagon
+			[303952] = true, -- Reinforced
+			[303924] = true, -- Greased
+			[304063] = true, -- Conductive
+
+			-- Mechagon
+			[292671] = "Zone", -- Ricket's Special Delivery
+			[303490] = "Zone", -- Junkbrat's Broiler
+			[290587] = "Zone", -- Volatile Blaster
+			[302677] = true, -- Anti-Gravity Pack
+
+			-- Acherus
+			[51915] = "Zone", -- Undying Resolve
+
+			-- Slave Pens
+			[34906] = "Zone", -- Mark of Bite
+
+			-- Redridge Mountains
+			[82577] = "Zone", -- Camouflage
+
+			-- Exile's Reach
+			[306396] = "Zone", -- Light's Speed
+
+			-- Noblegarden
+			[61734] = "Zone", -- Noblegarden Bunny
+		}
+
+
+		--! Debuff Filters
+		ZA.Debuffs = {
+			["Ghost"] = true,
+			["Dungeon Deserter"] = true,
+			["Locus Shift"] = true,
+			["Autorecreation"] = true,
+			["Valiant Strikes"] = true,
+			["Honorless Target"] = true,
+			["Resurrection Sickness"] = true,
+			[361841] = true, -- Resist Domination
+			[362933] = true, -- Pocopoc's Escape
+			[364213] = true, -- Transference
+			[364301] = true, -- Transference
+
+			--------------------
+			-- COMBAT DEBUFFS --
+			--------------------
+
+			[358404] = true, -- Trial of Doubt (Kyrian)
+			[358164] = true, -- Soul Exhaustion (Necrolord)
+			[320227] = true, -- Depleted Shell (Night Fae)
+			[313015] = true, -- Recently Failed (Mechagnome)
+			[113942] = true, -- Demonic Gateway (Warlock)
+			[87024] = true, -- Cauterized (Mage)
+			[41425] = true, -- Hypothermia (Mage)
+			[340556] = true, -- Well-Honed Instincts (Druid)
+			[25771] = true, -- Forbearance (Paladin)
+			[6788] = true, -- Weakened Soul (Priest)
+			[57724] = true, -- Sated (Bloodlust)
+			[57723] = true, -- Exhaustion (Heroism)
+			[80354] = true, -- Temporal Displacement (Time Warp)
+			[264689] = true, -- Fatigued (Ancient Hysteria)
+			[265703] = true, -- Azerite Energy (Island Expeditions)
+
+
+			-----------------
+			-- ZONE DEBUFF --
+			-----------------
+
+			[206151] = "Zone", -- Challenger's Burden
+
+			-- Shadowlands
+			[362517] = "Zone", -- Kodah Overwhelmed (Zereth Mortis)
+			[361663] = "Zone", -- Defending Kodah (Zereth Mortis)
+			[364863] = "Zone", -- Dazzled (Zereth Mortis)
+			[338906] = "Zone", -- The Jailer's Chains (Torghast)
+			[322695] = "Zone", -- Drained (Revendreth)
+			[304510] = "Zone", -- Endmire (Revendreth)
+			[346470] = "Zone", -- Suspicious Activity (Revendreth)
+			[369402] = "Zone", -- Weight of Responsibility (Revendreth)
+			[338237] = "Zone", -- Heightened Tensions (Bastion)
+
+			-- Zandalar
+			["Eternal Curse of Zem'lan"] = "Zone", -- (Vol'dun)
+			[281034] = "Zone", -- Noxious Swamp Gas (Nazmir)
+
+			-- Broken Isles
+			["Legion Invasion"] = "Zone",
+			[218397] = "Zone", -- Nightmare Roots (Val'sharah)
+			["Shoulder Demon"] = "Zone", -- (Aszuna)
+			[225994] = "Zone", -- Removed from the Circle (Skyhold)
+			[223202] = "Zone", -- No Guards (Dalaran)
+			[192221] = "Zone", -- No Guards (Dalaran)
+			[192229] = "Zone", -- Sewer Guards (Dalaran)
+			[223203] = "Zone", -- Sewer Guards (Dalaran)
+
+			-- Cataclysm
+			[79203] = "Zone", -- Smoked Out (Mount Hyjal)
+			[72872] = "Zone", -- Infected Bite (Gilneas)
+			[72870] = "Zone", -- Infected Bite (Gilneas)
+		}
+
+
 		-- Spells
 		if not ZA.AutoSpells then
 			ZA.AutoSpells = {}
@@ -1054,7 +1802,282 @@ local function updateData()
 		
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
+			--! Trinkets
+
+			-- Agility      115
+			-- Intellect    118
+			-- Strength     117
+
+			-- Crit Strike  817
+			-- Haste        816
+			-- Versatility  814
+			-- Mastery      813
+
+			-- Dodge        115
+			-- Parry        909
+			-- Armor        110
+			-- Stamina      112
+			-- Resistance   62
+			-- Reflect      65
+			-- Absorb       202
+
+			[341260] = ZA.PrimaryStatSchool, -- Burst of Knowledge (Heirloom Set Bonus)
+
+			-- Shadowlands
+			[328908] = 813, -- Kyrian (Pelagos)
+			[336885] = 813, -- Venthyr (Theotar)
+			[330368] = 816, -- Inscrutable Quantum Device
+			[330380] = 813, -- Inscrutable Quantum Device
+			[330366] = 817, -- Inscrutable Quantum Device
+			[330367] = 814, -- Inscrutable Quantum Device
+
+			-- Battle for Azeroth
+			[290032] = 816, -- Hymnal of the 7th Legion
+			[298717] = 816, -- Tome of Thalassian Hymns
+			[298722] = 817, -- Tidesages' Warscroll
+			[298722] = 817, -- Loa-Touched Warscroll
+
+			-- Warlods of Draenor
+			[201410] = 320, -- Orb of Voidsight
+			[201405] = 117, -- Gronntooth War Horn
+			[201408] = 5, -- Infallible Tracking Charm
+
+			-- Burning Crusade
+			[144073] = 118, -- Ancient Draenei Arcane Relic
+			[144074] = 117, -- Ancient Draenei War Talisman
+			[234786] = 816, -- Scarab of the Infinite Cycle
+			[26551] = "Mana", -- Figurine - Jade Owl
+			[26576] = 117, -- Figurine - Black Pearl Panther
+			[26581] = 814, -- Figurine - Truesilver Crab
+			[26599] = 118, -- Figurine - Ruby Serpent
+			[26600] = "Mana", -- Figurine - Emerald Owl
+			[26609] = 814, -- Figurine - Black Diamond Crab
+			[26614] = 906, -- Figurine - Dark Iron Scorpid
+			[31039] = 115, -- Figurine - Dawnstone Crab
+			[31040] = 118, -- Figurine - Living Ruby Serpent
+			[31045] = "Mana", -- Figurine - Talasite Owl
+			[31047] = 117, -- Figurine - Nightseye Panther
+			[31771] = 202, -- Runed Fungalcap
+			[31794] = "Mana", -- Auslese's Light Channeler
+			[32355] = 118, -- Ancient Crystal Talisman
+			[32355] = 118, -- Glowing Crystal Insignia
+			[32362] = 117, -- Ogre Mauler's Badge/Uniting Charm
+			[32367] = 118, -- Oshu'gun Relic
+			[32600] = 115, -- Charm of Alacrity
+			[33089] = 3, -- Figurine of the Colossus
+			[33370] = 816, -- Quagmirran's Eye
+			[33400] = 118, -- Warp-Scarab Brooch
+			[33479] = 110, -- Adamantine Figurine
+			[33649] = 117, -- Hourglass of the Unraveller
+			[33662] = 118, -- Vengeance of the Illidari
+			[33667] = 117, -- Bladefist's Breadth
+			[33668] = 112, -- Regal Protectorate
+			[33807] = 816, -- Abacus of Violent Odds
+			[34000] = 118, -- Arcanist's Stone
+			[34106] = 817, -- Icon of Unyielding Courage
+			[34210] = 814, -- Bangle of Endless Blessings
+			[34321] = 118, -- Shiffar's Nexus-Horn
+			[34519] = 115, -- Moroes' Lucky Pocket Watch
+			[34747] = 118, -- Eye of Magtheridon
+			[34775] = 816, -- Dragonspine Trophy
+			[35095] = 814, -- Pendant of the Violet Eye
+			[35163] = 118, -- Icon of the Silver Crescent
+			[35165] = 118, -- Essence of the Martyr
+			[35166] = 117, -- Bloodlust Brooch
+			[35337] = 118, -- Xi'ri's Gift/Scryer's Bloodgem
+			[35733] = 117, -- Core of Ar'kelos
+			[36347] = 118, -- Heavenly Inspiration
+			[36372] = 815, -- Dabiri's Enigma
+			[36432] = 118, -- Starkiller's Bauble
+			[37174] = 817, -- Warp-Spring Coil
+			[37198] = 118, -- Tome of Fiery Redemption
+			[37340] = 110, -- Living Root of the Wildheart
+			[37341] = 115, -- Living Root of the Wildheart
+			[37342] = 118, -- Living Root of the Wildheart
+			[37343] = 118, -- Living Root of the Wildheart
+			[37344] = 10, -- Living Root of the Wildheart
+			[37656] = 814, -- Memento of Tyrande
+			[38325] = 2, -- Spyglass of the Hidden Fleet
+			[38332] = 10, -- Ribbon of Sacrifice
+			[38348] = 118, -- Sextant of Unstable Currents
+			[38351] = 911, -- Scarab of Displacement
+			[39200] = 117, -- Terokkar Tablet of Precision
+			[39201] = 118, -- Terokkar Tablet of Vim
+			[39228] = 202, -- Argussian Compass
+			[39439] = 117, -- Darkmoon Card: Crusade
+			[39441] = 118, -- Darkmoon Card: Crusade
+			[39443] = 817, -- Darkmoon Card: Wrath
+			[39511] = 117, -- Darkmoon Card: Madness
+			[40396] = 401, -- The Skull of Gul'dan
+			[40402] = 814, -- Earring of Soulful Meditation
+			[40440] = 118, -- Ashtongue Talisman of Acumen
+			[40441] = 118, -- Ashtongue Talisman of Acumen
+			[40445] = 118, -- Ashtongue Talisman of Equilibrium
+			[40446] = 119, -- Ashtongue Talisman of Equilibrium
+			[40452] = 115, -- Ashtongue Talisman of Equilibrium
+			[40459] = 117, -- Ashtongue Talisman of Valor
+			[40461] = 817, -- Ashtongue Talisman of Lethality
+			[40464] = 112, -- Shadowmoon Insignia
+			[40466] = 117, -- Ashtongue Talisman of Vision
+			[40477] = 817, -- Madness of the Betrayer
+			[40480] = 118, -- Ashtongue Talisman of Shadows
+			[40483] = 816, -- Ashtongue Talisman of Insight
+			[40487] = 117, -- Ashtongue Talisman of Swiftness
+			[40538] = 112, -- Brooch of the Immortal King
+			[40724] = 117, -- Crystalforged Trinket
+			[40729] = 115, -- Badge of Tenacity
+			[40997] = 117, -- Darkmoon Card: Madness
+			[40998] = 115, -- Darkmoon Card: Madness
+			[40999] = 103, -- Darkmoon Card: Madness
+			[41002] = 817, -- Darkmoon Card: Madness
+			[41005] = 816, -- Darkmoon Card: Madness
+			[41009] = 118, -- Darkmoon Card: Madness
+			[41011] = 112, -- Darkmoon Card: Madness
+			[41261] = 117, -- Skyguard Silver Cross
+			[41263] = 118, -- Airman's Ribbon of Gallantry
+			[41404] = 328, -- Darkmoon Card: Madness
+			[42084] = 117, -- Tsunami Talisman
+			[43710] = 118, -- Tome of Diabolic Remedy
+			[43712] = 118, -- Hex Shrunken Head
+			[43713] = 110, -- Ancient Aqir Artifact
+			[43716] = 117, -- Berserker's Call
+			[44055] = 112, -- Battlemaster
+			[45041] = 117, -- Blackened Naaru Sliver
+			[45042] = 118, -- Shifting Naaru Sliver
+			[45049] = 112, -- Steely Naaru Sliver
+			[45053] = 117, -- Shard of Contempt
+			[45058] = 815, -- Commendation of Kael'thas
+			[46780] = 115, -- Figurine - Empyrean Tortoise
+			[46783] = 118, -- Figurine - Crimson Serpent
+			[46784] = 117, -- Figurine - Shadowsong Panther
+			[46785] = "Mana", -- Figurine - Seaspray Albatross
+			[51952] = 115, -- Coren's Lucky Coin
+			[51953] = 118, -- Dark Iron Smoking Pipe
+			[51954] = 118, -- Direbrew Hops
+			[51955] = 117, -- Empty Mug of Direbrew
+			[84213] = 115, -- Gnomeregan Auto-Dodger 600
+
+			-- Classic
+			[10342] = 110, -- Guardian Talisman
+			[10368] = 202, -- Uther's Strength
+			[12733] = 62, -- Glimmering Mithril Insignia
+			[13744] = 4, -- Blazing Emblem
+			[15595] = 110, -- Force of Will
+			[15604] = "Mana", -- Second Wind
+			[15646] = "Mana", -- Burst of Knowledge
+			[17275] = 4, -- Heart of the Scale
+			[20587] = 282, -- Ragged John's Neverending Cup
+			[21956] = 202, -- Mark of Resolution
+			[21970] = ZA.PrimaryStatSchool, -- Mark of the Chosen
+			[23097] = 4, -- Hyper-Radiant Flame Reflector
+			[23131] = 16, -- Gyrofreeze Ice Reflector
+			[23132] = 32, -- Ultra-Flash Shadow Reflector
+			[23271] = 118, -- Talisman of Ephemeral Power
+			[23506] = 202, -- Arena Grand Master
+			[23684] = "Mana", -- Darkmoon Card: Blue Dragon
+			[23720] = 117, -- The Black Book
+			[23721] = 64, -- Arcane Infused Gem
+			[23723] = 816, -- Mind Quickening Gem
+			[23724] = "Mana", -- Rune of Metamorphosis
+			[23725] = 112, -- Lifegiving Gem
+			[23726] = 906, -- Venomous Totem
+			[23733] = 816, -- Scrolls of Blinding Light
+			[23734] = 118, -- Natural Alignment Crystal
+			[23780] = 3, -- Aegis of Preservation
+			[23991] = 202, -- Defiler's Talisman/Talisman of Arathor
+			[24268] = "Mana", -- Mar'li's Eye
+			[24352] = 117, -- Devilsaur Eye
+			[24354] = 118, -- Blessed Prayer Beads
+			[24389] = 68, -- Fire Ruby
+			[24427] = 117, -- Diamond Flask
+			[24498] = 817, -- Gri'lek's Charm of Valor
+			[24499] = 800, -- Wushoolay's Charm of Spirits
+			[24531] = 151, -- Renataki's Charm of Beasts
+			[24542] = 816, -- Wushoolay's Charm of Nature
+			[24543] = 817, -- Hazza'rah's Charm of Destruction
+			[24544] = 64, -- Hazza'rah's Charm of Magic
+			[24546] = 816, -- Hazza'rah's Charm of Healing
+			[24610] = 817, -- Nat Pagle's Broken Reel
+			[24865] = 817, -- Sanctified Orb
+			[24998] = 118, -- Hibernation Crystal
+			[25746] = 202, -- Defiler's Talisman/Talisman of Arathor
+			[25747] = 202, -- Defiler's Talisman/Talisman of Arathor
+			[25750] = 202, -- Defiler's Talisman/Talisman of Arathor
+			[25891] = 117, -- Earthstrike
+			[26166] = 118, -- Eye of Moam
+			[26168] = 900, -- Fetish of Chitinous Spikes
+			[26464] = 62, -- Petrified Scarab
+			[26481] = 817, -- Badge of the Swarmguard
+			[27675] = 118, -- Draconic Infused Emblem
+			[28204] = 118, -- Talisman of Ascendance
+			[28777] = 117, -- Slayer's Crest
+			[28778] = 62, -- Loatheb's Reflection
+			[28779] = 118, -- The Restrained Essence of Sapphiron
+			[28780] = 118, -- Eye of the Dead
+			[28866] = 816, -- Kiss of the Spider
+			[29506] = 202, -- The Burrower's Shell
+			[29604] = 117, -- Jom Gabbar
+			[4079] = 720, -- Gnomish Cloaking Device
+			[50708] = 117, -- Devilsaur Tooth
+			[84212] = 115, -- Glyph of Deflection
+
+			-- Threat Reduction Trinkets
+			[298721] = 323, -- Twilight Powder
+			[290031] = 323, -- Gloaming Powder
+			[28862] = 323, -- The Eye of Diminution
+			[26400] = 323, -- Arcane Shroud
+
+
 			--! Spells
+			["Chaos Brand - Arcane"] = 64,
+			["Chaos Brand - Fire"] = 4,
+			["Chaos Brand - Frost"] = 16,
+			["Chaos Brand - Nature"] = 8,
+			["Chaos Brand - Shadow"] = 32,
+			["Plague Cloud"] = 40,
+			["Cosmic Alacrity"] = 104,
+			["Tears of Grief:3528302"] = 411,
+			["Screaming Torment:3528302"] = 411,
+			["Poison Cloud"] = 806,
+			["Curse of the Firebrand"] = 325,
+			["Death's Shroud"] = 326,
+			["Rotten Wounds"] = 321,
+			["Mobile Mirror Set"] = 3,
+			["World in Flames"] = 400,
+			[77647] = 32, -- Fel-Infused
+			["Beckon"] = 328,
+			["Death Coil"] = 414,
+			["Toss Gormling"] = 100,
+			["Put into Bag"] = 100,
+			["Loaded Dice: All Hands!"] = 104,
+			["Loaded Dice: Man-O-War"] = 104,
+			["Swiftwind Saber"] = 811,
+			["Duelist Dash"] = 903,
+			["Vile Bombardment"] = 40,
+			["Next Add"] = 100,
+			["Goin' Bananas"] = 108,
+			["Slippery Suds"] = 901,
+			["Lorewalker's Alacrity"] = 104,
+			["Blessing of the Waterspeaker"] = 801,
+			["Bubble Burst"] = 801,
+			["Hydrolance"] = 801,
+			["Call Water"] = 801,
+			["Evicted Soul"] = 323,
+			["Slashing Whirl"] = 110,
+			["Web Wrap"] = 900,
+			["Naralex's Nightmare"] = 412,
+			["Grasping Vines"] = 8,
+			["Chained Bolt"] = 800,
+			["Summon Bloodthirsty Ghouls"] = 326,
+			["Ice Shards"] = 160,
+			["Pull"] = 100,
+			["Vine Strike"] = 900,
+			["Toss Statue"] = 809,
+			["Surrender Health:136168"] = 321,
+			["Scarlet Protection:458972"] = 321,
+			["World Shaker"] = 903,
+			["Inevitable Dominion"] = 411,
+			["Man'ari Training Amulet"] = 401,
 			["Minion of Doane"] = 326,
 			["Chloroform"] = 281,
 			["Tarak's Ritual"] = 32,
@@ -1278,6 +2301,7 @@ local function updateData()
 			["Activate Empowerment:4005160"] = 203,
 			["Activate Extractor"] = 100,
 			["Activating Specialization"] = class or 0,
+			["Changing Talents"] = class or 0,
 			["Activating"] = 100,
 			["Adaptive Swarm"] = 326,
 			["Addled Mind"] = 328,
@@ -1393,7 +2417,7 @@ local function updateData()
 			["Anti-Magic Zone"] = 96,
 			["Anti-Personnel Squirrel"] = 800,
 			["Apocalypse Protocol:135796"] = 127,
-			["Apocalypse"] = 414,
+			["Apocalypse"] = 326,
 			["Apocalyptic Darkblade"] = 96,
 			["Apotheosis"] = 200,
 			["Apply Salve"] = 202,
@@ -1448,7 +2472,7 @@ local function updateData()
 			["Armor Plating"] = 110,
 			["Armored Recollection"] = 201,
 			["Army of Deceit"] = 32,
-			["Army of the Dead"] = 414,
+			["Army of the Dead"] = 326,
 			["Arrow Barrage"] = 110,
 			["Arrow of Light"] = 3,
 			["Artifice of Time"] = 204,
@@ -1809,7 +2833,7 @@ local function updateData()
 			["Brood Sacks"] = 900,
 			["Bruising Strike"] = 101,
 			["Brulbash"] = 903,
-			["Brutal Backhand"] = 117,
+			["Brutal Backhand"] = 903,
 			["Brutal Combo:1390946"] = 117,
 			["Brutal Liquidation"] = 200,
 			["Brutal Smash"] = 108,
@@ -3084,6 +4108,7 @@ local function updateData()
 			["Fel Bombardment"] = 401,
 			["Fel Breath"] = 401,
 			["Fel Burn"] = 401,
+			["Cannon Barrage"] = 5,
 			["Fel Cannon Blast"] = 401,
 			["Fel Cauterize"] = 401,
 			["Fel Channeling"] = 127,
@@ -3444,7 +4469,7 @@ local function updateData()
 			["Gladiator's Resonator"] = 106,
 			["Gladiator's Warbanner"] = 112,
 			["Glaive Blast:135797"] = 401,
-			["Glaive Tempest"] = 427,
+			["Glaive Tempest"] = 127,
 			["Glaive Toss"] = 109,
 			["Glare:3528302"] = 411,
 			["Glass Cannon"] = 808,
@@ -3916,7 +4941,7 @@ local function updateData()
 			["Lashing Flurry:134218"] = 900,
 			["Lashing Void"] = 320,
 			["Last Resort"] = 999,
-			["Last Stand"] = 202,
+			["Last Stand"] = 112,
 			["Latent Poison"] = 806,
 			["Lava Beam"] = 400,
 			["Lava Burst"] = 400,
@@ -5026,7 +6051,7 @@ local function updateData()
 			["Sepsis"] = 805,
 			["Sepsis"] = 805,
 			["Seraphim"] = 2,
-			["Serenity Blessing"] = (primary == "int") and 126 or 117,
+			["Serenity Blessing"] = ZA.PrimaryStatSchool,
 			["Serenity"] = 807,
 			["Serpent Sting"] = 806,
 			["Serpent's Swiftness"] = 115,
@@ -5084,6 +6109,7 @@ local function updateData()
 			["Shadow Swipe"] = 32,
 			["Shadow Well:2576095"] = 326,
 			["Shadow Word: Pain"] = 322,
+			["Pain and Suffering"] = 322,
 			["Shadow Word: Void"] = 320,
 			["Shadow Wrath"] = 320,
 			["Shadowbolt Volley"] = 32,
@@ -5589,10 +6615,12 @@ local function updateData()
 			["Stygian Rune of Oblivion"] = 96,
 			["Stygian Rune Tap"] = 96,
 			["Stygian Shield"] = 411,
+			["Static Burst"] = 800,
 			["Stygian Storm"] = 411,
+			["Throw"] = 100,
 			["Stygic Bolt"] = 326,
 			["Subdue:3528312"] = 321,
-			["Subduing Chains"] = 909,
+			["Subduing Chains"] = 33,
 			["Subjugate Demon"] = 328,
 			["Subjugate Soul"] = 32,
 			["Subjugate Spirit"] = 32,
@@ -6012,7 +7040,7 @@ local function updateData()
 			["Umbral Glaive Storm"] = 65,
 			["Unbinding"] = 202,
 			["Unbound Chaos"] = 127,
-			["Unbound Darkness"] = 320,
+			["Unbound Darkness"] = 32,
 			["Unbreakable Guard:3190332"] = 326,
 			["Unbreakable Guard:3190332"] = 326,
 			["Unburden:132864"] = 201,
@@ -6028,7 +7056,7 @@ local function updateData()
 			["Unflinching Defense"] = 65,
 			["Unfurling Darkness"] = 96,
 			["Unholy Assault"] = 103,
-			["Unholy Blight"] = 414,
+			["Unholy Blight"] = 326,
 			["Unholy Bulwark"] = 414,
 			["Unholy Bulwark:2576096"] = 326,
 			["Unholy Fervor:2576093"] = 326,
@@ -6383,7 +7411,7 @@ local function updateData()
 			["Wormhole"] = 646,
 			["Wormhole: Pandaria"] = 646,
 			["Wound Poison"] = 806,
-			["Woven Shadows"] = 328,
+			["Woven Shadows"] = 32,
 			["Wracking Gaze:3729672"] = 411,
 			["Wracking Interrogation"] = 411,
 			["Wracking Pain"] = 322,
@@ -8303,7 +9331,7 @@ local function updateData()
 			[76241] = 5,
 			[74793] = 4,
 			[74475] = 640,
-			[76724] = 10,
+			[76724] = 8,
 			[76759] = 111,
 			[89821] = 321,
 			[89752] = 806,
@@ -8727,6 +9755,17 @@ local function updateData()
 			[338472] = 100,
 			[81515] = 100,
 			[81776] = 100,
+			[339746] = 100,
+			[339680] = 100,
+			[339634] = 100,
+			[340101] = 900,
+			[339465] = 202,
+			[314497] = 415,
+			[370616] = 100,
+			[370937] = 100,
+			[338745] = 111,
+			[80887] = 100,
+			[310202] = 100,
 			--qqq
 
 			--! Ascension Crafting
@@ -17133,6 +18172,7 @@ local function updateData()
 			["Administer Cure-all"] = 0,
 			["Attacking"] = 0,
 			["Opening"] = 0,
+			["Small Talk"] = 0,
 			["Pick Up"] = 0,
 			["Lifting"] = 0,
 			["Burn It!"] = 0,
@@ -17192,6 +18232,7 @@ local function updateData()
 			["Door of Shadows"] = 3586270,
 			["Jump to Skyhold"] = 0,
 			["Dismiss Pet"] = "Interface/AddOns/Media_Newsom/Icons/Cancel",
+			["Scroll of Teleport: Theater of Pain"] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportTheaterOfPain",
 			["Summoning Voidwalker"] = 136221,
 
 
@@ -17727,6 +18768,12 @@ local function updateData()
 			[359493] = 0,
 			[81515] = 0,
 			[81776] = 0,
+			[314497] = 133718,
+			[76724] = 134814,
+			[338745] = 0,
+			[80887] = 0,
+			[95958] = 0,
+			[310202] = 0,
 			--qqi
 
 
@@ -17769,7 +18816,9 @@ local function updateData()
 
 
 			--§ Spells
+			["Drink Minor Potion"] = 134829,
 			["Activating Specialization"] = 0,
+			["Changing Talents"] = 0,
 			[80944] = 571318, -- Fling Fungus (Rockjaw Fungus-Flinger)
 			[364266] = 988193, -- Primordial Mending
 			[347765] = 3591588, -- Demon Soul (Fodder to the Flame)
