@@ -1,6 +1,6 @@
-## Interface: 90207
+## Interface: 100000
 ## Title: ZigiAuras
-## Version: 9.2.7
+## Version: 10.0.0
 ## Notes: Global variables for WeakAuras
 ## Author: Leo
 
