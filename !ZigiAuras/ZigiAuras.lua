@@ -1256,6 +1256,7 @@ local function updateData()
 
 			-- Group Buffs
 			["Power Word: Fortitude"] = true,
+			["Mark of the Wild"] = true,
 			["Arcane Intellect"] = true,
 			["Battle Shout"] = true,
 			["Blessing of the Bronze"] = true,
