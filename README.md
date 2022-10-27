@@ -44,7 +44,7 @@ Returns a texture.
 
 Converts a gradient hex string into decimal color values.
 
-Returns 6 decimal values.
+Returns two Color objects.
 
 ### ZA.HexToRGB(hex)
 
