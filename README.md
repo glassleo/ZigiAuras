@@ -10,7 +10,6 @@ The addon includes:
 
 - A few useful Lua functions
 - Tables of mostly color related data
-- Some debugging slash commands
 - Some slash commands mostly for debugging (althouth the keystone one can be pretty useful!)
 
 Everything is stored in a global table named ``ZA``.
