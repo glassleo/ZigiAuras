@@ -42,9 +42,9 @@ Returns a texture.
 
 ### ZA.GradientRGB(gradient)
 
-Converts a gradient hex string into decimal color values.
+Converts a gradient hex string into color objects.
 
-Returns two Color objects.
+Returns two color objects.
 
 ### ZA.HexToRGB(hex)
 
