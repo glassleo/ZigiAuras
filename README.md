@@ -52,10 +52,6 @@ Converts a color hex string to decimal color values.
 
 Returns 3 decimal values.
 
-### ZA.PlayerPrimaryStat(abbrev)
-
-Returns the player's primary stat ("Agility", "Intellect" or "Strength"), based class and current spec. Set ``abbrev`` to ``true`` for an abbreviated 3 letter string.
-
 ## Tables
 
 ### ZA.IconColors
@@ -93,6 +89,10 @@ A table with replacement icons for vehicles depending on vehicle name.
 ### ZA.Hearhstones
 
 A table with all known Hearthstones and corresponding replacement text.
+
+### ZA.Trinkets
+
+A table with all trinket procs and corresponding gradients.
 
 ### ZA.AutoSpells
 
