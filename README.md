@@ -44,7 +44,7 @@ Returns a texture.
 
 Converts a gradient hex string into color objects.
 
-Returns two color objects.
+Returns 2 RGBA color objects.
 
 ### ZA.HexToRGB(hex)
 
