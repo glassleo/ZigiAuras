@@ -2,7 +2,7 @@
 
 A helper addon for World of Warcraft that adds dynamic custom global tables and functions for use in WeakAuras or other addons. It does not display anything on its own and has a very tiny footprint.
 
-Due to the frequency of updates for this addon as well as its obscure use case I will not be providing neat released packages. You'll have to [download it manually](https://github.com/glassleo/ZigiAuras/archive/refs/heads/master.zip) (just plop the ``!ZigiAuras`` folder into your AddOns folder) if you want to use it.
+Due to the frequency of updates for this addon as well as its obscure use case I will not be providing neat released packages. You'll have to [download it manually](https://github.com/glassleo/ZigiAuras/archive/refs/heads/master.zip) if you want to use it. Just plop the ``!ZigiAuras`` folder into your AddOns folder.
 
 It somewhat depends on [Media_Newsom](https://github.com/glassleo/Media_Newsom) so I recommend you grab that as well if you're going to use this.
 
