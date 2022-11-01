@@ -2,7 +2,7 @@
 
 A helper addon for World of Warcraft that adds dynamic custom global tables and functions for use in WeakAuras or other addons. It does not display anything on its own and has a very tiny footprint.
 
-Due to the frequency of updates for this addon as well as its obscure use case I will not be providing neat released packages. You'll have to [download it manually](https://github.com/glassleo/ZigiAuras/archive/refs/heads/master.zip) (just plop the ``!ZigiAuras`` folder into your AddOns folder) if you want to use it.
+Due to the frequency of updates for this addon as well as its obscure use case I will not be providing neat released packages. You'll have to [download it manually](https://github.com/glassleo/ZigiAuras/archive/refs/heads/master.zip) if you want to use it. Just plop the ``!ZigiAuras`` folder into your AddOns folder.
 
 It somewhat depends on [Media_Newsom](https://github.com/glassleo/Media_Newsom) so I recommend you grab that as well if you're going to use this.
 
@@ -10,7 +10,6 @@ The addon includes:
 
 - A few useful Lua functions
 - Tables of mostly color related data
-- Some debugging slash commands
 - Some slash commands mostly for debugging (althouth the keystone one can be pretty useful!)
 
 Everything is stored in a global table named ``ZA``.
@@ -43,19 +42,15 @@ Returns a texture.
 
 ### ZA.GradientRGB(gradient)
 
-Converts a gradient hex string into decimal color values.
+Converts a gradient hex string into color objects.
 
-Returns 6 decimal values.
+Returns 2 RGBA color objects.
 
 ### ZA.HexToRGB(hex)
 
 Converts a color hex string to decimal color values.
 
 Returns 3 decimal values.
-
-### ZA.PlayerPrimaryStat(abbrev)
-
-Returns the player's primary stat ("Agility", "Intellect" or "Strength"), based class and current spec. Set ``abbrev`` to ``true`` for an abbreviated 3 letter string.
 
 ## Tables
 
@@ -94,6 +89,10 @@ A table with replacement icons for vehicles depending on vehicle name.
 ### ZA.Hearhstones
 
 A table with all known Hearthstones and corresponding replacement text.
+
+### ZA.Trinkets
+
+A table with all trinket procs and corresponding gradients.
 
 ### ZA.AutoSpells
 
