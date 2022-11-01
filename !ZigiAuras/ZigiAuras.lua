@@ -574,6 +574,7 @@ local function updateData()
 
 		--! Text
 		ZA.Text = {
+			[386256] = "Soulkeeper",
 			["Chaos Brand - Arcane"] = "Chaos Brand",
 			["Chaos Brand - Fire"] = "Chaos Brand",
 			["Chaos Brand - Frost"] = "Chaos Brand",
@@ -1026,6 +1027,7 @@ local function updateData()
 			[290028] = "Primal Enchantment", -- Loa-Touched Warscroll
 
 			-- Warlods of Draenor
+			[165534] = "Versatility", -- Enforcer's Stun Grenade
 			[201410] = "Voidsight", -- Orb of Voidsight
 			[201405] = "Demonbane", -- Gronntooth War Horn
 			--[201408] = "Cleansing Flame", -- Infallible Tracking Charm
@@ -1306,6 +1308,7 @@ local function updateData()
 			-- Warlock
 			[196099] = true, -- Grimoire of Sacrifice
 			[48018] = true, -- Demonic Circle
+			[388068] = true, -- Inquisitor's Gaze
 
 			-- Warrior
 
@@ -1617,7 +1620,7 @@ local function updateData()
 			-- ZONE BUFF --
 			---------------
 
-			-- Anima Conductor
+			-- Shadowlands Anima Conductor
 			[335576] = "Zone", -- Ascendant's Lodestar (Kyrian)
 			[335577] = "Zone", -- Warch of the Wise (Kyrian)
 			[335578] = "Zone", -- Vesper of Clarity (Kyrian)
@@ -1705,6 +1708,14 @@ local function updateData()
 			[303490] = "Zone", -- Junkbrat's Broiler
 			[290587] = "Zone", -- Volatile Blaster
 			[302677] = true, -- Anti-Gravity Pack
+
+			-- Frostfire Ridge Shamanstone
+			[155347] = "Zone", -- Shamanstone: Spirit of the Wolf
+			[155334] = "Zone", -- Shamanstone: Touched by Ice
+			[155315] = "Zone", -- Shamanstone: Touched by Fire
+			[155346] = "Zone", -- Shamanstone: Ogrish Fortitude
+			[155344] = "Zone", -- Shamanstone: Buffeting Galefury
+			[154253] = "Zone", -- Shamanstone: Blessing of the Wolf
 
 			-- Acherus
 			[51915] = "Zone", -- Undying Resolve
@@ -1839,6 +1850,7 @@ local function updateData()
 			[298722] = 817, -- Loa-Touched Warscroll
 
 			-- Warlods of Draenor
+			[165534] = 814, -- Enforcer's Stun Grenade
 			[201410] = 320, -- Orb of Voidsight
 			[201405] = 117, -- Gronntooth War Horn
 			[201408] = 5, -- Infallible Tracking Charm
@@ -2030,6 +2042,44 @@ local function updateData()
 
 
 			--! Spells
+			["Exorcism"] = 6,
+			["Bulwark of Order"] = 202,
+			["Bastion of Light"] = "Holy Power",
+			["Summon Prince Malchezaar"] = 411,
+			[267995] = 427, -- Summon Wrathguard (Nether Portal)
+			["Summon Eyes of Gul'dan"] = 401,
+			["Summon Void Terror"] = 320,
+			["Summon Bilescourge"] = 361,
+			["Summon Illidari Satyr"] = 412,
+			["Summon Vicious Hellhound"] = 4,
+			["Summon Darkhound"] = 33,
+			["Summon Ur'zul"] = 324,
+			["Gul'dan's Ambition"] = 127,
+			["Pit Lord"] = 127,
+			["Soulburn: Demonic Circle"] = 32,
+			["Soulburn: Drain Life"] = 32,
+			["Soulburn: Healthstone"] = 32,
+			["Amplify Curse"] = 412,
+			["Shadowy Tear"] = 32,
+			["Chaos Tear"] = 127,
+			["Unstable Tear"] = 361,
+			["Earthliving Weapon"] = 8,
+			["Earthliving"] = 8,
+			["Ever-Rising Tide"] = 801,
+			["Poison Cleansing Totem"] = 801,
+			["Mana Spring Totem"] = "Mana",
+			["Ice Strike"] = 16,
+			["Wild Mushroom"] = 8,
+			["Fey Missile"] = 805,
+			["Denizen of the Dream"] = 805,
+			["Mind Flay: Insanity"] = 328,
+			["Dark Ascension"] = 32,
+			["Lightwell"] = 2,
+			["Lightwell Charges"] = 2,
+			["Divine Image"] = 201,
+			["Divine Word"] = 66,
+			["Divine Favor: Chastise"] = 66,
+			["Divine Favor: Serenity"] = 200,
 			["Chaos Brand - Arcane"] = 64,
 			["Chaos Brand - Fire"] = 4,
 			["Chaos Brand - Frost"] = 16,
@@ -2464,7 +2514,7 @@ local function updateData()
 			["Arcing Sweep"] = 3,
 			["Arcing Zap"] = 800,
 			["Arctic Orb"] = 16,
-			["Ardent Defender"] = 3,
+			["Ardent Defender"] = 2,
 			["Ardenweald Hearthstone"] = 805,
 			["Area 52 Transporter"] = 646,
 			["Argent War Horn"] = 111,
@@ -2611,6 +2661,8 @@ local function updateData()
 			["Bile Spew"] = 40,
 			["Bile Strike"] = 906,
 			["Bilescourge Bombers"] = 361,
+			["Summon Soulkeeper"] = 361,
+			["Soulkeeper"] = 361,
 			["Bilewater Breath"] = 415,
 			["Bilewater Liquefaction"] = 415,
 			["Bind Soul:2576086"] = 326,
@@ -3578,7 +3630,7 @@ local function updateData()
 			["Demonbane"] = 117,
 			["Demonic Breath"] = 401,
 			["Demonic Burst"] = 32,
-			["Demonic Calling"] = 32,
+			["Demonic Calling"] = 401,
 			["Demonic Circle"] = 361,
 			["Demonic Cleave"] = 427,
 			["Demonic Core"] = 36,
@@ -3587,6 +3639,7 @@ local function updateData()
 			["Demonic Rift"] = 32,
 			["Demonic Strikes"] = 32,
 			["Demonic Trample"] = 427,
+			["Tyr's Deliverance"] = 3,
 			["Demonic Tutor"] = 328,
 			["Demonic Tyrant"] = 32,
 			["Demoralizing Shout"] = 117,
@@ -3697,9 +3750,9 @@ local function updateData()
 			["Dissonant Echoes"] = 320,
 			["Distorting Reality"] = 320,
 			["Divine Hymn"] = 200,
-			["Divine Protection"] = 2,
+			["Divine Protection"] = 66,
 			["Divine Purpose"] = 66,
-			["Divine Shield"] = 66,
+			["Divine Shield"] = 660,
 			["Divine Steed"] = 3,
 			["Diviner's Signal:237587"] = 800,
 			["Diving Crash:657488"] = 903,
@@ -3828,6 +3881,7 @@ local function updateData()
 			["Earth Slash"] = 803,
 			["Earth Spike"] = 803,
 			["Earthbind Totem"] = 903,
+			["Stoneskin Totem"] = 903,
 			["Earthbind"] = 803,
 			["Earthen Blast"] = 803,
 			["Earthen Slam"] = 803,
@@ -3932,6 +3986,7 @@ local function updateData()
 			["Empyreal Reflexes"] = 115,
 			["Empyreal Roar"] = 111,
 			["Empyrean Power"] = 66,
+			["Empyreal Blaze"] = 4,
 			["Enchant"] = 646,
 			["Enchanting"] = 646,
 			["Endless Hunger"] = 324,
@@ -4052,6 +4107,8 @@ local function updateData()
 			["Eye of Gul'dan"] = 401,
 			["Eye of Kilrogg"] = 401,
 			["Eye of the Storm"] = 911,
+			["Eye of Tyr"] = 3,
+			["Tempest"] = 911,
 			["Eyes of Elune"] = 640,
 			["Eyes of the Empress"] = 327,
 			["Face Kick"] = 110,
@@ -4689,7 +4746,7 @@ local function updateData()
 			["Hive Toss"] = 810,
 			["Hollow Bite"] = 33,
 			["Holographic Digitalization Hearthstone"] = 100,
-			["Holy Avenger"] = 200,
+			["Holy Avenger"] = 6,
 			["Holy Fire"] = 6,
 			["Holy Light"] = 2,
 			["Holy Smite"] = 2,
@@ -5203,7 +5260,7 @@ local function updateData()
 			["Mind Warp"] = 328,
 			["Mind-Numbing Extract"] = 806,
 			["Mindbender"] = 328,
-			["Mindgames:3565723"] = 321,
+			["Mindgames"] = 328,
 			["Mindmeld:294473"] = 62,
 			["Mindwrack"] = 325,
 			["Mining"] = 909,
@@ -5289,7 +5346,7 @@ local function updateData()
 			["Newfound Resolve"] = 201,
 			["Night Fae Hearthstone"] = 805,
 			["Night Glaive"] = 109,
-			["Nightfall"] = 33,
+			["Nightfall"] = 32,
 			["Nightfire"] = 640,
 			["Faeline Stomp"] = 805,
 			["Faeline"] = 805,
@@ -5431,7 +5488,7 @@ local function updateData()
 			["Petting"] = 661,
 			["Phantasm"] = 323,
 			["Phantom Lance"] = 323,
-			["Phantom Singularity"] = 320,
+			["Phantom Singularity"] = 32,
 			["Phase Shift"] = 720,
 			["Phasing Roar"] = 327,
 			["Pheromone Bomb"] = 402,
@@ -5597,7 +5654,7 @@ local function updateData()
 			["Primal Magma"] = 400,
 			["Primal Rage"] = 105,
 			["Primal Roar"] = 111,
-			["Primal Storm Elemental"] = 811,
+			["Primal Storm Elemental"] = 911,
 			["Primordial Wave"] = 326,
 			["Prismatic Barrier"] = 126,
 			["Prospecting"] = 808,
@@ -5894,6 +5951,7 @@ local function updateData()
 			["Ruinous Bolt"] = 413,
 			["Ruinous Bulwark"] = 127,
 			["Rule of Threes"] = "Mana",
+			["Rule of Law"] = 202,
 			["Rumble:1058934"] = 903,
 			["Rumble:136025"] = 803,
 			["Rumble:252185"] = 903,
@@ -6087,7 +6145,7 @@ local function updateData()
 			["Shadow Bulwark"] = 32,
 			["Shadow Burst"] = 32,
 			["Shadow Conflagration"] = 32,
-			["Shadow Covenant"] = 320,
+			["Shadow Covenant"] = 32,
 			["Shadow Crash"] = 320,
 			["Shadow Dance"] = 33,
 			["Dance of Shadows"] = 33,
@@ -6174,7 +6232,7 @@ local function updateData()
 			["Shield Block"] = 110,
 			["Shield of Light"] = 200,
 			["Shield of Runes"] = 96,
-			["Shield of the Righteous"] = 202,
+			["Shield of the Righteous"] = 117,
 			["Shield of Vengeance"] = 6,
 			["Shield Slam"] = 110,
 			["Shield Spike"] = 909,
@@ -6473,6 +6531,7 @@ local function updateData()
 			["Spirit Link Totem"] = 280,
 			["Spirit Mend"] = 280,
 			["Spirit of Ka-Sha"] = 720,
+			["Spirit of Shinri"] = 720,
 			["Spirit of Preservation"] = 204,
 			["Spirit of Redemption"] = 201,
 			["Spirit Shell"] = 66,
@@ -6831,6 +6890,8 @@ local function updateData()
 			["The Well of Existance"] = 204,
 			["Thick Coat"] = 900,
 			["Thick Fur"] = 903,
+			["Sentinel:135922"] = 200,
+			["Sentinel:135875"] = 200,
 			["Thick Hide"] = 903,
 			["Thief's Blade"] = 101,
 			["Thorim's Bolt"] = 800,
@@ -6866,6 +6927,8 @@ local function updateData()
 			["Throw Scrap"] = 100,
 			["Throw Torch"] = 4,
 			["Throw Totem"] = 9,
+			["Halo"] = 2,
+			["Halo:632353"] = 320,
 			["Throw Witchalok Blade"] = 110,
 			["Throw Wyrmtongue Crate"] = 100,
 			["Thump"] = 903,
@@ -7027,6 +7090,7 @@ local function updateData()
 			["Twin Beams:4038105"] = 106,
 			["Twin Beams:537468"] = 106,
 			["Twist of Fate"] = 34,
+			["Dark Reprimand"] = 34,
 			["Twist Reality"] = 320,
 			["Twisted Lightning"] = 32,
 			["Twisted Nova:1357801"] = 412,
@@ -7100,7 +7164,7 @@ local function updateData()
 			["Unrelenting Anguish"] = 323,
 			["Unruly Yell"] = 111,
 			["Unspoken Gratitude"] = 202,
-			["Unstable Affliction"] = 32,
+			["Unstable Affliction"] = 412,
 			["Unstable Core:4038105"] = 106,
 			["Unstable Ejection:342917"] = 413,
 			["Unstable Fel Crystal"] = 401,
@@ -7115,7 +7179,6 @@ local function updateData()
 			["Unstable Runic Mark"] = 96,
 			["Unstable Shadows"] = 32,
 			["Unstable Stygia"] = 411,
-			["Summon Ur'zul"] = 32,
 			["Unearthly Howl"] = 327,
 			["Untaintable Waters"] = 801,
 			["Unwavering Assault"] = 107,
@@ -7377,6 +7440,7 @@ local function updateData()
 			["Wind Slash"] = 811,
 			["Windburst"] = 811,
 			["Windfury Totem"] = 811,
+			["Tranquil Air Totem"] = 811,
 			["Windrush"] = 911,
 			["Winds of Northrend"] = 160,
 			["Windsong"] = 811,
@@ -7426,6 +7490,7 @@ local function updateData()
 			["Wrath of Lei Shen"] = 800,
 			["Wrath of Zolramus"] = 326,
 			["Wrath Unleashed:3565716"] = 321,
+			["Wrath Unleashed:1271590"] = 200,
 			["Wrath"] = 6,
 			["Wrath:136006"] = 8,
 			["Wrathful Faerie"] = 805,
@@ -18838,7 +18903,6 @@ local function updateData()
 			["Tranquilizing Shot"] = 132323, -- Black Arrow
 			["Wailing Arrow"] = 132170, -- Custom
 			[11426] = 135843, -- Ice Barrier
-			[157375] = 136032, -- Eye of the Storm (Primal Storm Elemental)
 			[164862] = 0, -- Flap
 			[192082] = 463565, -- Wind Rush (from Wind Rush Totem)
 			[193753] = 1396974, -- Dreamwalk
@@ -19071,8 +19135,9 @@ local function updateData()
 		-- Weapon Enchant Icons
 		ZA.EnchantIcons = {
 			-- Imbue
-			[5401] = 462329, -- Windfury Weapon
-			[5400] = 462326, -- Flametongue Weapon
+			[5401] = 462329, -- Windfury
+			[5400] = 462326, -- Flametongue
+			[6498] = 462325, -- Earthliving
 			-- Oil
 			[6188] = 463543, -- Shadowcore Oil
 			[6190] = 463544, -- Embalmer's Oil
@@ -19190,8 +19255,8 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 	if arg == "enchant" or arg == "weaponenchant" then
 		local mh, _, _, mhID, oh, _, _, ohID = GetWeaponEnchantInfo()
 
-		print("Main Hand Enchant", (mh and "|cff00ff00" .. mhID .. "|r" or "|cffff0000none|r"))
-		print("Off Hand Enchant", (oh and "|cff00ff00" .. ohID .. "|r" or "|cffff0000none|r"))
+		print("Main Hand Enchant", (mh and "|cff00ff00" .. mhID .. "|r" or "|cffff0000None|r"))
+		print("Off Hand Enchant", (oh and "|cff00ff00" .. ohID .. "|r" or "|cffff0000None|r"))
 	end
 	if arg == "map" then
 		print("Map", WorldMapFrame:GetMapID() or CreateAtlasMarkup("common-icon-redx") .. " |cffff0000Unknown|r")
