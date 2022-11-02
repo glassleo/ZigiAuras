@@ -2042,6 +2042,7 @@ local function updateData()
 
 
 			--! Spells
+			["Val'kyr Strike:298674"] = 32,
 			["Exorcism"] = 6,
 			["Bulwark of Order"] = 202,
 			["Bastion of Light"] = "Holy Power",
@@ -3459,6 +3460,7 @@ local function updateData()
 			["Dancing Thorns"] = 900,
 			["Dargrul's Escape"] = 803,
 			["Dark Arbiter"] = 411,
+			["Val'kyr Battlemaiden"] = 411,
 			["Dark Binding"] = 326,
 			["Dark Bite"] = 33,
 			["Dark Bolt Volley:3528312"] = 321,
@@ -19242,10 +19244,10 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 	if not msg or msg == "" then
 		if not ZA.DebugMode then
 			ZA.DebugMode = true
-			print(CreateAtlasMarkup("common-icon-checkmark") .. " |cff00ff00Debug Mode Enabled|r")
+			print(CreateAtlasMarkup("checkmark-minimal") .. " |cffffd100Debug Mode On|r")
 		else
 			ZA.DebugMode = false
-			print(CreateAtlasMarkup("LFG-lock") .. " Debug Mode Disabled")
+			print(CreateAtlasMarkup("checkmark-minimal-disabled") .. " |cff6e6e6eDebug Mode Off|r")
 		end
 	end
 	
@@ -19255,8 +19257,8 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 	if arg == "enchant" or arg == "weaponenchant" then
 		local mh, _, _, mhID, oh, _, _, ohID = GetWeaponEnchantInfo()
 
-		print("Main Hand Enchant", (mh and "|cff00ff00" .. mhID .. "|r" or "|cffff0000None|r"))
-		print("Off Hand Enchant", (oh and "|cff00ff00" .. ohID .. "|r" or "|cffff0000None|r"))
+		print(CreateAtlasMarkup("transmog-nav-slot-mainhand") .. " Main Hand Enchant", (mh and "|cff71d5ff" .. mhID .. "|r" or "|cffff2020None|r"))
+		print(CreateAtlasMarkup("transmog-nav-slot-secondaryhand") .. " Off Hand Enchant", (oh and "|cff71d5ff" .. ohID .. "|r" or "|cffff2020None|r"))
 	end
 	if arg == "map" then
 		print("Map", WorldMapFrame:GetMapID() or CreateAtlasMarkup("common-icon-redx") .. " |cffff0000Unknown|r")
