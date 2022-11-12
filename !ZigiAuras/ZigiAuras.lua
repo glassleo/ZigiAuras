@@ -1263,14 +1263,8 @@ local function updateData()
 			["Battle Shout"] = true,
 			["Blessing of the Bronze"] = true,
 
-			-- Death Knight
-
 			-- Demon Hunter
-
-			-- Druid
-			[289318] = true, -- Mark of the Wild (PvP Talent)
-
-			-- Evoker
+			[203981] = true, -- Soul Fragments
 
 			-- Hunter
 			[164273] = true, -- Lone Wolf
@@ -1291,14 +1285,14 @@ local function updateData()
 			[183435] = true, -- Retribution Aura
 			[317920] = true, -- Concentration Aura
 
-			-- Priest
-
 			-- Rogue
 			[315584] = true, -- Instant Poison
 			[2823] = true, -- Deadly Poison
 			[8679] = true, -- Wound Poison
 			[3408] = true, -- Crippling Poison
 			[5761] = true, -- Numbing Poison
+			[381664] = true, -- Amplifying Poison
+			[381637] = true, -- Atrophic Poison
 
 			-- Shaman
 			["Maelstrom Weapon"] = true,
@@ -1309,8 +1303,6 @@ local function updateData()
 			[196099] = true, -- Grimoire of Sacrifice
 			[48018] = true, -- Demonic Circle
 			[388068] = true, -- Inquisitor's Gaze
-
-			-- Warrior
 
 			-- Torghast
 			[324717] = true, -- Soul Remnant's Blessing
@@ -1516,8 +1508,11 @@ local function updateData()
 			-- Experience/Reputation
 			["Experience Eliminated"] = true,
 			["Winds of Wisdom"] = true,
+			["WoW's 18th Anniversary"] = true, -- 2022
+			["WoW's 19th Anniversary"] = true, -- 2023
+			["WoW's 20th Anniversary"] = true, -- 2024
 			[46668] = true, -- WHEE!
-			[46668] = true, -- Darkmoon Top Hat
+			[136583] = true, -- Darkmoon Top Hat
 			[95987] = true, -- Unburdened (Hallow's End)
 			[24705] = true, -- Grim Visage (Hallow's End)
 			[289982] = true, -- Draught of Ten Lands
@@ -1541,34 +1536,22 @@ local function updateData()
 			[361631] = "State", -- Carrying Mawsteel Shard
 			[359044] = "State", -- Motivated Automa
 			[367499] = "State", -- Syllabic Recall
-
-			-- Torghast
+			[76479] = "State", -- Gnomecorder
+			[80689] = "State", -- Gnomecorder
 			[338907] = "State", -- Refuge of the Damned
 			[341602] = "Zone", -- Chorus of Dead Souls
-
-			-- Korthia
 			[354870] = "State", -- Traversing the Rift
-
-			-- The Maw
 			[308270] = "State", -- Cloak of Ve'nari
 			[369379] = "State", -- Lingering Cloak of the Exile
-
-			-- Revendreth
 			[314797] = "State", -- Soulguard
 			[341237] = "State", -- Taskmaster's Trove
 			[333370] = "State", -- House Iremoore Disguise
 			[320559] = "State", -- It's Time to Rock
 			[338740] = "State", -- Promoting the Local Band
-
-			-- Ardenweald
 			[335686] = "State", -- Lady Moonberry's Gift
 			[342337] = "State", -- Foraging for Fungus
 			[334654] = "State", -- High and Dry
-
-			-- Maldraxxus
 			[316323] = "State", -- Wrangled
-
-			-- Island Expeditions
 			[255114] = "State", -- Wanderer's Endurance
 			[248694] = "State", -- Song of the Sea
 			[264666] = "State", -- Heart of the Woods
@@ -1580,40 +1563,20 @@ local function updateData()
 			[264676] = "State", -- Fireseeker
 			[264652] = "State", -- Unleashed Light
 			[255046] = "State", -- Moon Frenzy
-
-			-- Antorus
 			[254239] = "State", -- Boon of the Titans
-
-			-- Argus
 			[251547] = "State", -- Brazier's Warmth
-
-			-- Dreamgrove
 			[206498] = "State", -- Blessing of the Ancients
-
-			-- The Jade Forest
 			[124013] = "State", -- Hozen-Slayer
-
-			-- Mount Hyjal
 			[88334] = "State", -- Make Gar'gol Ogres Friendly
-
-			-- Acherus
 			[51721] = "State", -- Dominion Over Acherus
-
-			-- Loch Modan
+			[52693] = "State", -- Realm of Shadows
 			[82788] = "Zone", -- Clever Plant Disguise
-
-			-- Redridge Mountains
 			[82580] = "State", -- Bravo Company Field Kit
 			[82587] = "State", -- Bravo Company Field Kit
-
-			-- Westfall
 			[79528] = "State", -- Potion of Shrouding
-
-			-- Teldrassil
 			[65602] = "State", -- Vengeance of Elune
-
-			-- Exile's Reach
 			[298241] = "State", -- Ogre Disguise
+			[53081] = "State", -- Scarlet Crusade Disguise
 
 
 			---------------
@@ -2042,6 +2005,18 @@ local function updateData()
 
 
 			--! Spells
+			["Turn Evil"] = 2,
+			["Turn Undead"] = 10,
+			["Learning Tame Beast"] = 114,
+			["Drink Healing Potion"] = 281,
+			["Goblin Dragon Gun"] = 4,
+			["Bottle of Poison"] = 806,
+			["Shock Blast"] = 800,
+			["Void Rip"] = 10,
+			["Call of the Wild"] = 10,
+			["Arcane Surge"] = 126,
+			["Thistle Tea"] = 900,
+			["Eternity Bolt:1392546"] = 321,
 			["Val'kyr Strike:298674"] = 32,
 			["Exorcism"] = 6,
 			["Bulwark of Order"] = 202,
@@ -3230,7 +3205,7 @@ local function updateData()
 			["Convocation of Shadow"] = 32,
 			["Convoke the Spirits"] = 805,
 			["Cooking Fire"] = 4,
-			["Coordinated Assault"] = 117,
+			["Coordinated Assault"] = 103,
 			["Corpse Spew"] = 40,
 			["Corrosive Breath"] = 806,
 			["Corrosive Nova"] = 806,
@@ -3729,19 +3704,21 @@ local function updateData()
 			["Diseased Bite"] = 410,
 			["Diseased Spit"] = 410,
 			["Diseased Thrash"] = 410,
-			["Disenchant"] = 646,
-			["Disenchanting Carefully"] = 646,
-			["Disenchanting"] = 646,
+			["Disenchant"] = 126,
+			["Disenchanting Carefully"] = 126,
+			["Disenchanting"] = 126,
 			["Disengage"] = 104,
 			["Disgusting Slime"] = 806,
 			["Disintegration Beam:1386551"] = 320,
 			["Disintegration Laser"] = 402,
 			["Dismantle:4038104"] = 106,
-			["Dismiss Pet"] = 202,
+			["Fury of the Eagle"] = 109,
+			["Dismiss Pet"] = 112,
 			["Dispel Vision"] = 202,
 			["Dispel"] = 202,
 			["Dispelling"] = 202,
 			["Disperse Sin"] = 321,
+			["Spearhead"] = 280,
 			["Disperse:136111"] = 800,
 			["Dispersed Sin"] = 321,
 			["Dispersion"] = 96,
@@ -3987,10 +3964,10 @@ local function updateData()
 			["Empyreal Ordnance:1405806"] = 201,
 			["Empyreal Reflexes"] = 115,
 			["Empyreal Roar"] = 111,
-			["Empyrean Power"] = 66,
+			["Empyrean Power"] = 201,
 			["Empyreal Blaze"] = 4,
-			["Enchant"] = 646,
-			["Enchanting"] = 646,
+			["Enchant"] = 126,
+			["Enchanting"] = 126,
 			["Endless Hunger"] = 324,
 			["Endless Rage"] = 103,
 			["Endless Torment:1394887"] = 321,
@@ -4134,6 +4111,7 @@ local function updateData()
 			["Fan of Knives"] = 909,
 			["Fanning the Flames"] = 5,
 			["Far Sight"] = 721,
+			["Eagle Eye"] = 721,
 			["Fatal Sting"] = 806,
 			["Fatigue"] = 999,
 			["Fatigued"] = 999,
@@ -4342,6 +4320,7 @@ local function updateData()
 			["Flap Wings"] = 811,
 			["Flap"] = 811,
 			["Flare"] = 5,
+			["Fireworks"] = 5,
 			["Flash Bang"] = 3,
 			["Flash Concentration"] = 3,
 			["Flash Heal"] = 2,
@@ -4942,8 +4921,10 @@ local function updateData()
 			["Invoke Yu'lon, the Jade Serpent"] = 12,
 			["Iron Bark"] = 900,
 			["Iron Shackles"] = 909,
+			["Blight Spray"] = 411,
 			["Iron Spikes"] = 909,
 			["Ironbark"] = 803,
+			["Blight of Ozumat"] = 411,
 			["Ironfur"] = 909,
 			["Irresistible Cologne Spray"] = 281,
 			["Irresistible Cologne"] = 281,
@@ -5002,6 +4983,7 @@ local function updateData()
 			["Lashing Void"] = 320,
 			["Last Resort"] = 999,
 			["Last Stand"] = 112,
+			["Fortitude of the Bear"] = 907,
 			["Latent Poison"] = 806,
 			["Lava Beam"] = 400,
 			["Lava Burst"] = 400,
@@ -5035,10 +5017,12 @@ local function updateData()
 			["Leyflame Burner"] = 64,
 			["Lich's Phylactery"] = 326,
 			["Lichborne"] = 326,
+			["Backlash:135823"] = 4,
 			["Licking Wounds"] = 202,
 			["Life Cocoon"] = 802,
 			["Life-Binder's Invocation"] = 204,
 			["Lifebloom"] = 8,
+			["Lifeblood:538745"] = 401,
 			["Lifting"] = 100,
 			["Light Bonfire"] = 4,
 			["Light Impalement"] = 3,
@@ -5247,16 +5231,20 @@ local function updateData()
 			["Milling"] = 900,
 			["Mimic:342913"] = 410,
 			["Mind Blast"] = 328,
+			["Mind Melt"] = 48,
 			["Mind Bomb"] = 328,
 			["Bitter Withdrawal"] = 328,
+			["Mind Control"] = 328,
 			["Mind Control"] = 328,
 			["Mind Flay"] = 328,
 			["Mind Rend"] = 328,
 			["Mind Sear"] = 328,
-			["Shadow Mend"] = 328,
+			["Shadow Mend"] = 32,
+			["Mind Spike"] = 48,
 			["Mind Slice:986493"] = 903,
 			["Mind Soothe"] = 328,
 			["Mind Trauma"] = 328,
+			["Time Rift"] = 641,
 			["Mind Vision"] = 323,
 			["Mind Vision"] = 328,
 			["Mind Warp"] = 328,
@@ -6323,6 +6311,8 @@ local function updateData()
 			["Siphon Life:132096"] = 321,
 			["Siphon Loyalty"] = 411,
 			["Siphon Nightwell"] = 640,
+			["Siphon Storm"] = 118,
+			["Invigorating Powder"] = 814,
 			["Siphon of Acherus"] = 720,
 			["Siphon Souls:3528308"] = 321,
 			["Siphon Spirit:3528284"] = 201,
@@ -6782,7 +6772,7 @@ local function updateData()
 			["Surrender to Madness"] = 324,
 			["Survey"] = 100,
 			["Survival Instincts"] = 202,
-			["Survival of the Fittest"] = 8,
+			["Survival of the Fittest"] = 800,
 			["Swamp Breath"] = 803,
 			["Swarm of Flies"] = 40,
 			["Swarming Mist"] = 321,
@@ -6969,7 +6959,7 @@ local function updateData()
 			["Tiger's Fury"] = 117,
 			["Tiger's Lust"] = 104,
 			["Time Stop"] = 641,
-			["Time Warp"] = 641,
+			["Time Warp"] = 126,
 			["Timewalker's Hearthstone"] = 641,
 			["Tip of the Spear"] = 109,
 			["Tireless Pursuit"] = 104,
@@ -7211,9 +7201,12 @@ local function updateData()
 			["Veil of Midnight"] = 33,
 			["Veilwalking"] = 720,
 			["Vendetta"] = 411,
+			["Deathmark"] = 411,
+			["Amplifying Poison"] = 806,
 			["Venom Blast"] = 806,
 			["Venom Bolt"] = 806,
 			["Venom Nova"] = 806,
+			["Mutilated Flesh"] = 321,
 			["Venom Spit"] = 806,
 			["Venom Splash"] = 806,
 			["Venom Spray"] = 806,
@@ -7766,6 +7759,9 @@ local function updateData()
 			[303766] = 810, -- Honeyback Drone
 			[259741] = 810, -- Honeyback Harvester
 			[303767] = 810, -- Honeyback Hivemother
+
+			--! Beetle
+			[381529] = 822, -- Telix the Stormhorn
 
 			--! Bird
 			[312751] = 174, -- Clutch of Ha-Li
@@ -8485,6 +8481,9 @@ local function updateData()
 			[318051] = 805, -- Silky Shimmermoth
 			[342667] = 822, -- Vibrant Flutterwing
 
+			--! Murloc
+			[315132] = 901, -- Gargantuan Grrloc
+
 			--! Mushan
 			[148428] = 175, -- Ashhide Mushan Beast
 			[142641] = 119, -- Brawler's Burly Mushan Beast
@@ -8779,7 +8778,7 @@ local function updateData()
 			[346719] = 111, -- Serenade
 			[359377] = 812, -- Unsuccessful Prototype Fleetpod
 
-			--ider
+			--! Spidder
 			[213115] = 142, -- Bloodfang Widow
 			[327407] = 173, -- Vicious War Spider (Alliance)
 			[327408] = 806, -- Vicious War Spider (Horde)
@@ -18299,7 +18298,7 @@ local function updateData()
 			["Dance of Chi-Ji"] = 606543,
 			["Door of Shadows"] = 3586270,
 			["Jump to Skyhold"] = 0,
-			["Dismiss Pet"] = "Interface/AddOns/Media_Newsom/Icons/Cancel",
+			["Dismiss Pet"] = 0,
 			["Scroll of Teleport: Theater of Pain"] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportTheaterOfPain",
 			["Summoning Voidwalker"] = 136221,
 
@@ -18842,6 +18841,7 @@ local function updateData()
 			[80887] = 0,
 			[95958] = 0,
 			[310202] = 0,
+			[77819] = 0,
 			--qqi
 
 
@@ -18884,6 +18884,7 @@ local function updateData()
 
 
 			--§ Spells
+			["Touch of the Magi"] = 236222,
 			["Drink Minor Potion"] = 134829,
 			["Activating Specialization"] = 0,
 			["Changing Talents"] = 0,
