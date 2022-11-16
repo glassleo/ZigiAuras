@@ -277,6 +277,7 @@ local function updateData()
 			["Bess-Moonglade"] = "PALADIN",
 			["Betty-TheVentureCo"] = "HUNTER",
 			["Bimini-Moonglade"] = "WARLOCK",
+			["Birgitta-Ravenholdt"] = "HUNTER",
 			["Bite-TheSha'tar"] = "DRUID",
 			["Blanc-Sporeggar"] = "PRIEST",
 			["Bones-Moonglade"] = "ROGUE",
@@ -291,6 +292,8 @@ local function updateData()
 			["Claw-ScarshieldLegion"] = "DRUID",
 			["Code-ScarshieldLegion"] = "MONK",
 			["Colette-TheSha'tar"] = "DEMONHUNTER",
+			["Cordelia-TheVentureCo"] = "WARLOCK",
+			["Crash-ScarshieldLegion"] = "WARLOCK",
 			["Debbie-Ravenholdt"] = "MAGE",
 			["Desna-SteamwheedleCartel"] = "WARRIOR",
 			["Dia-TheSha'tar"] = "PRIEST",
@@ -298,7 +301,7 @@ local function updateData()
 			["Echo-SteamwheedleCartel"] = "SHAMAN",
 			["Ed-TheVentureCo"] = "ROGUE",
 			["Edna-Moonglade"] = "MAGE",
-			["Eld-TheVentureCo"] = "PALADIN",
+			["Eld-TheVentureCo"] = "PRIEST",
 			["Elise-Ravenholdt"] = "PRIEST",
 			["Ellika-Ravenholdt"] = "SHAMAN",
 			["Elsa-Sporeggar"] = "HUNTER",
@@ -317,6 +320,8 @@ local function updateData()
 			["Frango-Moonglade"] = "DRUID",
 			["Frank-TheVentureCo"] = "PRIEST",
 			["Frid-Sporeggar"] = "DRUID",
+			["Frutsi-Moonglade"] = "DRUID",
+			["Fuzz-ScarshieldLegion"] = "ROGUE",
 			["Galinha-TheSha'tar"] = "DRUID",
 			["Ghost-DefiasBrotherhood"] = "ROGUE",
 			["Ghoulina-Moonglade"] = "DEATHKNIGHT",
@@ -328,17 +333,22 @@ local function updateData()
 			["Gruff-Moonglade"] = "ROGUE",
 			["Hecate-TheVentureCo"] = "PRIEST",
 			["Hekla-Sporeggar"] = "PRIEST",
+			["Helena-Sporeggar"] = "DRUID",
 			["Hilda-DarkmoonFaire"] = "PALADIN",
 			["Huo-SteamwheedleCartel"] = "EVOKER",
 			["Ini-Moonglade"] = "DEATHKNIGHT",
 			["Iro-Ravenholdt"] = "DEMONHUNTER",
+			["Isolde-ScarshieldLegion"] = "DEATHKNIGHT",
 			["Ivan-TheVentureCo"] = "WARRIOR",
-			["Jinjin-Ravenholdt"] = "EVOKER",
+			["Ji-Ravenholdt"] = "MONK",
 			["June-SteamwheedleCartel"] = "SHAMAN",
 			["Kathryn-Ravenholdt"] = "PALADIN",
+			["Katya-Sporeggar"] = "ROGUE",
 			["Kiasmos-Ravenholdt"] = "WARLOCK",
 			["Kiwi-Moonglade"] = "DRUID",
+			["Lakrits-TheSha'tar"] = "PRIEST",
 			["Leaf-ScarshieldLegion"] = "DRUID",
+			["Lemon-Sporeggar"] = "EVOKER",
 			["Lif-SteamwheedleCartel"] = "MONK",
 			["Ling-TheSha'tar"] = "MAGE",
 			["Liou-SteamwheedleCartel"] = "MONK",
@@ -352,24 +362,28 @@ local function updateData()
 			["Marisol-TheSha'tar"] = "MONK",
 			["Mayhem-SteamwheedleCartel"] = "DEMONHUNTER",
 			["Medea-Ravenholdt"] = "MAGE",
+			["Mei-ScarshieldLegion"] = "HUNTER",
 			["Mikael-TheVentureCo"] = "PALADIN",
 			["Milo-Sporeggar"] = "WARRIOR",
 			["Monica-Sporeggar"] = "ROGUE",
-			["Muo-Moonglade"] = "EVOKER",
+			["Moronica-Ravenholdt"] = "WARLOCK",
 			["My-Ravenholdt"] = "WARLOCK",
-			["Namu-Sporeggar"] = "EVOKER",
+			["Namu-TheSha'tar"] = "EVOKER",
 			["Nea-TheSha'tar"] = "WARLOCK",
 			["Njord-TheSha'tar"] = "SHAMAN",
 			["Nord-ScarshieldLegion"] = "DEATHKNIGHT",
 			["Norega-Moonglade"] = "WARRIOR",
 			["Nour-TheSha'tar"] = "PRIEST",
 			["Onion-SteamwheedleCartel"] = "ROGUE",
+			["Ornacia-Moonglade"] = "EVOKER",
+			["Pang-SteamwheedleCartel"] = "EVOKER",
 			["Peppermint-ScarshieldLegion"] = "MONK",
 			["Phoebe-Sporeggar"] = "PRIEST",
 			["Prue-Ravenholdt"] = "MAGE",
 			["Ravioli-Ravenholdt"] = "HUNTER",
 			["Rose-ScarshieldLegion"] = "PALADIN",
 			["Salyssra-SteamwheedleCartel"] = "WARLOCK",
+			["Schnappi-Moonglade"] = "DRUID",
 			["Selma-Ravenholdt"] = "MONK",
 			["Seska-SteamwheedleCartel"] = "ROGUE",
 			["Shanna-TheVentureCo"] = "PRIEST",
@@ -381,11 +395,11 @@ local function updateData()
 			["Solene-Moonglade"] = "HUNTER",
 			["Song-TheVentureCo"] = "SHAMAN",
 			["Spoon-TheSha'tar"] = "SHAMAN",
+			["Syrah-TheSha'tar"] = "HUNTER",
 			["Syro-SteamwheedleCartel"] = "DEMONHUNTER",
 			["Tickle-Moonglade"] = "HUNTER",
 			["Tor-DarkmoonFaire"] = "WARRIOR",
 			["Tracyanne-Ravenholdt"] = "SHAMAN",
-			["Tuo-TheSha'tar"] = "EVOKER",
 			["Vack-Ravenholdt"] = "PRIEST",
 			["Veka-SteamwheedleCartel"] = "SHAMAN",
 			["Vendegast-TheSha'tar"] = "ROGUE",
@@ -406,6 +420,7 @@ local function updateData()
 			["Zoal-Moonglade"] = "MAGE",
 			["Zoom-Moonglade"] = "MAGE",
 			["Zorp-Moonglade"] = "HUNTER",
+			["Zumaridi-Moonglade"] = "DRUID",
 		}
 
 		--! Solid Colors
@@ -563,6 +578,7 @@ local function updateData()
 			[16] = "Arcane Charges",
 			[17] = "Fury",
 			[18] = "Fury", -- Obsolete (Pain)
+			[19] = "Essence",
 		}
 
 		--! Alternate Power
@@ -712,7 +728,10 @@ local function updateData()
 			[4]   = "ff3600:ffc000", -- Fire
 			[5]   = "d45e3e:ffd262", -- Flamestrike
 			[68]  = "ff3883:ffba00", -- Spellfire
-			[400]  = "780033:ff7920", -- Magma
+			[12]  = "63483f:eda24d", -- Volcanic
+			[120] = "007b6e:a0ff90", -- Jade Fire
+			[400] = "780033:ff7920", -- Magma
+			[403] = "f82e2e:ffa0a9", -- Living Flame
 			[402] = "ca0000:ff5e2c", -- Hellfire
 			[401] = "3dec00:fff94f", -- Felfire
 			[427] = "bac53e:9795a5", -- Felstrike
@@ -736,7 +755,6 @@ local function updateData()
 			[800] = "4f64ff:8af1ff", -- Lightning
 			[9]   = "8972ff:c0e8ff", -- Stormstrike
 			[802] = "0aff9a:ffff96", -- Mist
-			[12]  = "007b6e:a0ff90", -- Jade Fire
 			[807] = "00c99d:d6ffc0", -- Jade Lightning
 			[907] = "004eb8:aafff8", -- Chi
 			[280] = "afe446:7eceff", -- Spiritual
@@ -748,7 +766,7 @@ local function updateData()
 			[801] = "2882bf:2dedc9", -- Water
 			[901] = "2c5c7c:76c6b8", -- Waterstrike
 			[24]  = "008aac:b0fff5", -- Froststorm
-			[80]  = "134cff:00baff", -- Spellfrost
+			[80]  = "3b39ff:3dddff", -- Spellfrost
 			[18]  = "309b9c:fdffe9", -- Holyfrost
 			[48]  = "6000ed:73bbd8", -- Shadowfrost
 			[20]  = "97cdff:ff9d41", -- Frostfire
@@ -782,6 +800,7 @@ local function updateData()
 			[65]  = "7c6ecf:c48fe0", -- Spellstrike
 			[126] = "4c99ff:dd41ff", -- Magic
 			[62]  = "52ffb8:ff70cb", -- Chromatic
+			[620] = "f83e3e:b3ff87", -- Preservation
 			[646] = "a4feff:8fb7ff", -- Conjuration
 			[641] = "f2e199:ffa019", -- Temporal
 			[72]  = "3e69a5:67efff", -- Astral
@@ -807,6 +826,7 @@ local function updateData()
 			["Maelstrom"] = "9d8eff:a6efff",
 			["Soul Shards"] = "9b19cc:b670e9",
 			["Runes"] = "615da1:876191",
+			["Essence"] = "83ebff:ffabdf",
 
 			-- Reputation/Reaction
 			["Paragon"] = "3fbeff:9ff0ff",
@@ -824,7 +844,7 @@ local function updateData()
 			["DEATHKNIGHT"] = "a6172d:c62843",
 			["DEMONHUNTER"] = "8325ab:a738cb",
 			["DRUID"] = "e46008:ff8214",
-			["EVOKER"] = "33937f:33937f",
+			["EVOKER"] = "2f8875:43c3a8",
 			["HUNTER"] = "8cb758:aed678",
 			["MAGE"] = "31a9cf:47c9ec",
 			["MONK"] = "00e475:0aff9a",
@@ -1526,7 +1546,8 @@ local function updateData()
 			-- ZONE STATE --
 			----------------
 
-			-- Zereth Mortis
+			--! State
+			[110740] = "State", -- Ominous Presence
 			[359513] = "State", -- Helm of Damnation
 			[363749] = "State", -- Helm of Damnation
 			[359691] = "State", -- Helm of Damnation
@@ -1583,7 +1604,9 @@ local function updateData()
 			-- ZONE BUFF --
 			---------------
 
-			-- Shadowlands Anima Conductor
+			--! Zone
+			[378019] = "Zone", -- Arcane Barrier (The Forbidden Reach)
+			[377874] = "Zone", -- Earth Shield (The Forbidden Reach)
 			[335576] = "Zone", -- Ascendant's Lodestar (Kyrian)
 			[335577] = "Zone", -- Warch of the Wise (Kyrian)
 			[335578] = "Zone", -- Vesper of Clarity (Kyrian)
@@ -1594,8 +1617,6 @@ local function updateData()
 			[335238] = "Zone", -- Mobile Mirror Set (Venthyr)
 			[335241] = "Zone", -- Ashen Urn (Venthyr)
 			[335240] = "Zone", -- Thirst for Anima (Venthyr)
-
-			-- Zereth Mortis
 			[368021] = "Zone", -- Defense Matrix
 			[368622] = "Zone", -- Grace of the First Ones
 			[360511] = "Zone", -- Accelerating Tendons
@@ -1622,77 +1643,45 @@ local function updateData()
 			[365543] = "Zone", -- Toxicialic
 			[365528] = "Zone", -- Velocialic
 			[361917] = "Zone", -- Perceptive Pocopoc
-
-			-- Korthia
 			[357922] = "Zone", -- Swagsnout Gromit
-
-			-- Torghast
 			[355459] = "Zone", -- Reprieve
-
-			-- The Maw
 			[346733] = "Zone", -- Sky Chains
-
-			-- Revendreth
 			[314797] = "Zone", -- Anima Stake
 			[319565] = "Zone", -- Dredger's Hammer
 			[329088] = "Zone", -- Carrying Keg
 			[344428] = "Zone", -- Settling Ash
 			[313064] = "Zone", -- Carrying Remnant of Light
-
-			-- Ardenweald
 			[311058] = "Zone", -- Shimmerdusted
 			[311107] = "Zone", -- Gossamer Laces
 			[311103] = "Zone", -- Minty Fresh Breath
 			[343889] = "Zone", -- Dread Pollen
-
-			-- Maldraxxus
 			[344128] = "Zone", -- Powerful Swiftblade
 			[344148] = "Zone", -- Cleansing Formula
 			[346319] = "Zone", -- Lantern of Force
 			[344671] = "Zone", -- Flask of Unravelling
-
-			-- Island Expeditions
 			[268499] = "Zone", -- Pickaxe
 			[266117] = "Zone", -- Extra-Hot Torch
 			[266066] = "Zone", -- Shovel
 			[268500] = "Zone", -- Runestone
 			[282796] = "Zone", -- Volatile Cure-All
-
-			-- Battle for Azeroth
 			[298761] = "Zone", -- Azerite Energy
-
-			-- Operation: Mechagon
 			[303952] = true, -- Reinforced
 			[303924] = true, -- Greased
 			[304063] = true, -- Conductive
-
-			-- Mechagon
 			[292671] = "Zone", -- Ricket's Special Delivery
 			[303490] = "Zone", -- Junkbrat's Broiler
 			[290587] = "Zone", -- Volatile Blaster
 			[302677] = true, -- Anti-Gravity Pack
-
-			-- Frostfire Ridge Shamanstone
 			[155347] = "Zone", -- Shamanstone: Spirit of the Wolf
 			[155334] = "Zone", -- Shamanstone: Touched by Ice
 			[155315] = "Zone", -- Shamanstone: Touched by Fire
 			[155346] = "Zone", -- Shamanstone: Ogrish Fortitude
 			[155344] = "Zone", -- Shamanstone: Buffeting Galefury
 			[154253] = "Zone", -- Shamanstone: Blessing of the Wolf
-
-			-- Acherus
 			[51915] = "Zone", -- Undying Resolve
-
-			-- Slave Pens
 			[34906] = "Zone", -- Mark of Bite
-
-			-- Redridge Mountains
 			[82577] = "Zone", -- Camouflage
-
-			-- Exile's Reach
 			[306396] = "Zone", -- Light's Speed
-
-			-- Noblegarden
 			[61734] = "Zone", -- Noblegarden Bunny
 		}
 
@@ -1727,6 +1716,7 @@ local function updateData()
 			[6788] = true, -- Weakened Soul (Priest)
 			[57724] = true, -- Sated (Bloodlust)
 			[57723] = true, -- Exhaustion (Heroism)
+			[390435] = true, -- Exhaustion (Fury of the Aspects)
 			[80354] = true, -- Temporal Displacement (Time Warp)
 			[264689] = true, -- Fatigued (Ancient Hysteria)
 			[265703] = true, -- Azerite Energy (Island Expeditions)
@@ -1736,9 +1726,9 @@ local function updateData()
 			-- ZONE DEBUFF --
 			-----------------
 
+			--! Debuff
+			[365374] = "Zone", -- Wrath of the Storm-Eater
 			[206151] = "Zone", -- Challenger's Burden
-
-			-- Shadowlands
 			[362517] = "Zone", -- Kodah Overwhelmed (Zereth Mortis)
 			[361663] = "Zone", -- Defending Kodah (Zereth Mortis)
 			[364863] = "Zone", -- Dazzled (Zereth Mortis)
@@ -1748,12 +1738,8 @@ local function updateData()
 			[346470] = "Zone", -- Suspicious Activity (Revendreth)
 			[369402] = "Zone", -- Weight of Responsibility (Revendreth)
 			[338237] = "Zone", -- Heightened Tensions (Bastion)
-
-			-- Zandalar
 			["Eternal Curse of Zem'lan"] = "Zone", -- (Vol'dun)
 			[281034] = "Zone", -- Noxious Swamp Gas (Nazmir)
-
-			-- Broken Isles
 			["Legion Invasion"] = "Zone",
 			[218397] = "Zone", -- Nightmare Roots (Val'sharah)
 			["Shoulder Demon"] = "Zone", -- (Aszuna)
@@ -1762,11 +1748,10 @@ local function updateData()
 			[192221] = "Zone", -- No Guards (Dalaran)
 			[192229] = "Zone", -- Sewer Guards (Dalaran)
 			[223203] = "Zone", -- Sewer Guards (Dalaran)
-
-			-- Cataclysm
 			[79203] = "Zone", -- Smoked Out (Mount Hyjal)
 			[72872] = "Zone", -- Infected Bite (Gilneas)
 			[72870] = "Zone", -- Infected Bite (Gilneas)
+			[370610] = "Zone", -- Choking
 		}
 
 
@@ -2005,6 +1990,76 @@ local function updateData()
 
 
 			--! Spells
+			["Split Apart:1044088"] = 12,
+			["Restorative Ward:136089"] = 803,
+			["Erode"] = 12,
+			["Monolith Fist"] = 12,
+			["Surging Earth"] = 12,
+			["Seismic Outcry"] = 12,
+			["Tectonic Hunt"] = 12,
+			["Tectonic Spike"] = 12,
+			["Tectonic Spikes"] = 12,
+			["Tectonic Shield"] = 803,
+			["Earthen Spikes"] = 12,
+			["Earthen Spike"] = 12,
+			["Seismic Shield"] = 803,
+			["Seismic Spike"] = 803,
+			["Recall:4622470"] = 641,
+			["Call of Ysera"] = 10,
+			["Dream Breath"] = 120,
+			["Spiritbloom"] = 120,
+			["Dream Flight"] = 120,
+			["Emerald Communion"] = 120,
+			["Echo"] = 641,
+			["Stasis"] = 641,
+			["Reversion"] = 641,
+			["Temporal Compression"] = 641,
+			["Temporal Anomaly"] = 641,
+			["Reversion"] = 641,
+			["Rewind"] = 641,
+			["Time Dilation"] = 641,
+			["Familiar Skies"] = 811,
+			["Boon of the Covenants"] = "Anima",
+			["Landslide"] = 12,
+			["Mass Return:4622473"] = 641,
+			["Return:4622472"] = 641,
+			["Time Spiral"] = 641,
+			["Zephyr"] = 811,
+			["Rescue"] = 811,
+			["Oppressing Roar"] = 111,
+			["Source of Magic"] = 80,
+			["Sleep Walk"] = 120,
+			["Tip the Scales"] = 641,
+			["Shattering Star:4622449"] = 80,
+			["Firestorm:4622459"] = 403,
+			["Dragonrage"] = 620,
+			["Obsidian Scales"] = 12,
+			["Eternity Surge"] = 80,
+			["Quell"] = 811,
+			["Pyre"] = 403,
+			["Essence Burst"] = "Essence",
+			["Shocking Touch"] = 800,
+			["Stormclaw"] = 800,
+			["Fury of the Aspects"] = 62,
+			["Mark of the Wild"] = 8,
+			["Blessing of the Bronze"] = 641,
+			["Fissure"] = 12,
+			["Earthspike"] = 803,
+			["Waking Roar"] = 111,
+			["Water Dart"] = 801,
+			["Breath of Yu'lon"] = 120,
+			["Deep Breath:4622450"] = 12,
+			["Emerald Blossom"] = 120,
+			["Butting Charge"] = 104,
+			["Severing Slice"] = 101,
+			["Soar"] = 811,
+			["Hover"] = 811,
+			["Enhanced Soar"] = 811,
+			["Golem Smash:451165"] = 803,
+			["Disintegrate"] = 80,
+			["Fire Breath:4622458"] = 403,
+			["Living Flame"] = 403,
+			["Asphyxiate"] = 32,
 			["Turn Evil"] = 2,
 			["Turn Undead"] = 10,
 			["Learning Tame Beast"] = 114,
@@ -2189,7 +2244,7 @@ local function updateData()
 			["Cub Pounce"] = 104,
 			["Serpent Sweep"] = 811,
 			["Shoot ALL the fireworks!"] = 4,
-			["Jade Flay"] = 12,
+			["Jade Flay"] = 120,
 			["Air Strikes"] = 5,
 			["Void Slam"] = 320,
 			["Vile Claws"] = 906,
@@ -3682,7 +3737,7 @@ local function updateData()
 			["Devouring Rift"] = 413,
 			["Diabolical Dooooooom!"] = 327,
 			["Die by the Sword"] = 909,
-			["Diffuse Magic"] = 12,
+			["Diffuse Magic"] = 120,
 			["Digging"] = 803,
 			["Dimension Tear:4067372"] = 413,
 			["Dimensional Tear:526520"] = 203,
@@ -3867,7 +3922,7 @@ local function updateData()
 			["Earthen Strikes"] = 803,
 			["Earthen Wall Totem"] = 803,
 			["Earthgrab Totem"] = 8,
-			["Earthquake"] = 803,
+			["Earthquake"] = 12,
 			["Earthrending Slam"] = 903,
 			["Earthshaking Club"] = 903,
 			["Earthshaking Roar:1354169"] = 412,
@@ -4918,7 +4973,7 @@ local function updateData()
 			["Invoke Niuzao, the Black Ox"] = 803,
 			["Invoke Xuen"] = 907,
 			["Invoke Xuen, the White Tiger"] = 907,
-			["Invoke Yu'lon, the Jade Serpent"] = 12,
+			["Invoke Yu'lon, the Jade Serpent"] = 120,
 			["Iron Bark"] = 900,
 			["Iron Shackles"] = 909,
 			["Blight Spray"] = 411,
@@ -4929,9 +4984,9 @@ local function updateData()
 			["Irresistible Cologne Spray"] = 281,
 			["Irresistible Cologne"] = 281,
 			["Itchy Spores"] = 410,
-			["Jade Crystal Fragment"] = 12,
+			["Jade Crystal Fragment"] = 120,
 			["Jade Fire"] = 807,
-			["Jade Serpent Statue"] = 12,
+			["Jade Serpent Statue"] = 120,
 			["Jagged Chop"] = 101,
 			["Jagged Claws"] = 101,
 			["Jagged Disc"] = 803,
@@ -6715,7 +6770,7 @@ local function updateData()
 			["Summon Imp"] = 127,
 			["Summon Incubus"] = 32,
 			["Summon Infernal"] = 401,
-			["Summon Jade Serpent Statue"] = 12,
+			["Summon Jade Serpent Statue"] = 120,
 			["Summon Lesser Demon"] = 32,
 			["Summon Lesser Demons"] = 32,
 			["Summon Meteor"] = 400,
@@ -7390,7 +7445,7 @@ local function updateData()
 			["Whirling Axe"] = 811,
 			["Whirling Blades:1016243"] = 201,
 			["Whirling Dervish"] = 811,
-			["Whirling Dragon Punch"] = 12,
+			["Whirling Dragon Punch"] = 120,
 			["Whirling Mist"] = 109,
 			["Whirling Poison"] = 806,
 			["Whirling Smash:132318"] = 903,
@@ -7496,14 +7551,14 @@ local function updateData()
 			["Xplodium Charge"] = 5,
 			["Xuen"] = 907,
 			["Xuen, the White Tiger"] = 907,
-			["Yu'lon"] = 12,
-			["Yu'lon, the Jade Serpent"] = 12,
+			["Yu'lon"] = 120,
+			["Yu'lon, the Jade Serpent"] = 120,
 			["Zandalar and Kul Tiras Scouting Map"] = 114,
 			["Zap"] = 800,
 			["Zeal of the Burning Blade"] = 720,
 			["Zen Healing"] = 807,
-			["Zen Meditation"] = 12,
-			["Zen Pilgrimage"] = 12,
+			["Zen Meditation"] = 120,
+			["Zen Pilgrimage"] = 120,
 			["Zen Travel"] = 907,
 			["Zephyrium Beam"] = 100,
 			["Zot!"] = 800,
@@ -7929,15 +7984,15 @@ local function updateData()
 			[127164] = 200, -- Heavenly Golden Cloud Serpent
 			[127158] = 96, -- Heavenly Onyx Cloud Serpent
 			[315014] = 202, -- Ivory Cloud Serpent
-			[113199] = 12, -- Jade Cloud Serpent
+			[113199] = 120, -- Jade Cloud Serpent
 			[127154] = 819, -- Onyx Cloud Serpent
 			[315427] = 812, -- Rajani Warserpent
 			[129918] = 817, -- Thundering August Cloud Serpent
 			[139442] = 48, -- Thundering Cobalt Cloud Serpent
-			[124408] = 12, -- Thundering Jade Cloud Serpent
+			[124408] = 120, -- Thundering Jade Cloud Serpent
 			[148476] = 819, -- Thundering Onyx Cloud Serpent
 			[132036] = 818, -- Thundering Ruby Cloud Serpent
-			[127165] = 12, -- Yu'lei, Daughter of Jade
+			[127165] = 120, -- Yu'lei, Daughter of Jade
 			[148619] = 818, -- Grievous Gladiator's Cloud Serpent
 			[139407] = 812, -- Malevolent Gladiator's Cloud Serpent
 			[148620] = 817, -- Prideful Gladiator's Cloud Serpent
@@ -8192,7 +8247,7 @@ local function updateData()
 			[242897] = 154, -- Vicious War Fox (Horde)
 			-- Vulpin
 			[290133] = 80, -- Vulpine Familiar
-			[334366] = 12, -- Wild Glimmerfur Prowler
+			[334366] = 120, -- Wild Glimmerfur Prowler
 
 			--! Gargon
 			[333023] = 809, -- Battle Gargon Silessa
@@ -8567,7 +8622,7 @@ local function updateData()
 			[244712] = 720, -- Spectral Pterrorwing
 
 			--! Quilen
-			[124659] = 12, -- Imperial Quilen
+			[124659] = 120, -- Imperial Quilen
 			[279469] = 133, -- Qinsho's Eternal Hound
 			[316722] = 131, -- Ren's Stalwart Hound
 			[316723] = 133, -- Xinlao
@@ -8906,6 +8961,17 @@ local function updateData()
 			[359230] = 132, -- Curious Crystalsniffer
 			[359231] = 910, -- Darkened Vombata
 			[359229] = 106, -- Heartlight Vombata
+
+			--! Vorquin
+			[394219] = 133, -- Bronze Vorquin
+			[394216] = 172, -- Crimson Vorquin
+			[394220] = 157, -- Obsidian Vorquin
+			[394218] = 138, -- Sapphire Vorquin
+
+			[385134] = 133, -- Swift Armored Vorquin
+			[385115] = 172, -- Majestic Armored Vorquin
+			[384963] = 157, -- Guardian Vorquin
+			[385131] = 138, -- Armorerd Vorquin Leystrider
 
 			--! Warp Stalker
 			[346136] = 323, -- Viridian Phase-Hunter
@@ -9833,6 +9899,10 @@ local function updateData()
 			[338745] = 111,
 			[80887] = 100,
 			[310202] = 100,
+			[271399] = 204,
+			[264918] = 107,
+			[371089] = 100,
+			[379034] = 403,
 			--qqq
 
 			--! Ascension Crafting
@@ -10384,7 +10454,7 @@ local function updateData()
 			[114751] = 64, -- Alchemist's Rejuvenation
 			[114774] = 104, -- Darkwater Potion
 			[114761] = 999, -- Desecrated Oil
-			[114763] = 12, -- Elixir of Mirrors
+			[114763] = 120, -- Elixir of Mirrors
 			[114764] = 814, -- Elixir of Peace
 			[114762] = 817, -- Elixir of Perfection
 			[114759] = 816, -- Elixir of the Rapids
@@ -13546,7 +13616,7 @@ local function updateData()
 			[146638] = 909, -- Crafted Malevolent Gladiator's Medallion of Tenacity
 			[127018] = 646, -- Crane Wing Inscription
 			[111830] = 114, -- Darkmoon Card of Mists
-			[127391] = 12, -- Engraved Jade Disk
+			[127391] = 120, -- Engraved Jade Disk
 			[111920] = 808, -- Ghost Iron Staff
 			[58301]  = "HUNTER", -- Glyph of Lesser Proportion
 			[148274] = "PALADIN", -- Glyph of Pillar of Light
@@ -18225,6 +18295,7 @@ local function updateData()
 			["DEATHKNIGHT"] = 625998,
 			["DEMONHUNTER"] = 1260827,
 			["DRUID"] = 625999,
+			["EVOKER"] = 4574311,
 			["HUNTER"] = 626000,
 			["MAGE"] = 626001,
 			["MONK"] = 610018,
@@ -18842,6 +18913,9 @@ local function updateData()
 			[95958] = 0,
 			[310202] = 0,
 			[77819] = 0,
+			[264918] = 0,
+			[371089] = 0,
+			["Nozdormu Arrives"] = 4630462,
 			--qqi
 
 
