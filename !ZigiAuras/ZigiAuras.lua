@@ -1990,6 +1990,30 @@ local function updateData()
 
 
 			--! Spells
+			["Void Orb"] = 320,
+			["Abyssal Portal"] = 320,
+			["Mark of the Arctic"] = 16,
+			["Hail Decimation:135857"] = 16,
+			["Glacial Claws"] = 17,
+			["Frigid Geysers"] = 16,
+			["Elemental Edema:4226155"] = 801,
+			["Heavy Whiteout:132387"] = 160,
+			["Frost Eruption"] = 160,
+			["Pulsating Stream:971078"] = 801,
+			["Aquanova"] = 801,
+			["Frozen Beam"] = 16,
+			["Lava Dart"] = 400,
+			["Lava Floes"] = 400,
+			["Summon Droplet:1373133"] = 400,
+			["Inferno Cloak"] = 4,
+			["Inferno Mantle"] = 4,
+			["Flaming Pitch"] = 4,
+			["Volcanic Slam"] = 12,
+			["Lava Bolt"] = 400,
+			["Scorching Vortex"] = 4,
+			["Pyroclastic Ejection"] = 400,
+			["Mass Ignition:236220"] = 4,
+			["Slam:136025"] = 903,
 			["Split Apart:1044088"] = 12,
 			["Restorative Ward:136089"] = 803,
 			["Erode"] = 12,
@@ -4863,6 +4887,7 @@ local function updateData()
 			["Ice Form"] = 160,
 			["Ice Lance"] = 160,
 			["Ice Shard"] = 160,
+			["Ice Shackle"] = 160,
 			["Ice Wall"] = 160,
 			["Icebound Fortitude"] = 17,
 			["Iceburst"] = 16,
@@ -18958,6 +18983,7 @@ local function updateData()
 
 
 			--§ Spells
+			["Mark of the Arctic"] = 237522,
 			["Touch of the Magi"] = 236222,
 			["Drink Minor Potion"] = 134829,
 			["Activating Specialization"] = 0,
