@@ -302,7 +302,6 @@ local function updateData()
 			["Ed-TheVentureCo"] = "ROGUE",
 			["Edna-Moonglade"] = "MAGE",
 			["Eld-TheVentureCo"] = "PRIEST",
-			["Elise-Ravenholdt"] = "PRIEST",
 			["Ellika-Ravenholdt"] = "SHAMAN",
 			["Elsa-Sporeggar"] = "HUNTER",
 			["Elspeth-Moonglade"] = "WARLOCK",
@@ -323,6 +322,7 @@ local function updateData()
 			["Frutsi-Moonglade"] = "DRUID",
 			["Fuzz-ScarshieldLegion"] = "ROGUE",
 			["Galinha-TheSha'tar"] = "DRUID",
+			["Gary-Moonglade"] = "EVOKER",
 			["Ghost-DefiasBrotherhood"] = "ROGUE",
 			["Ghoulina-Moonglade"] = "DEATHKNIGHT",
 			["Gizzard-Moonglade"] = "HUNTER",
@@ -349,6 +349,7 @@ local function updateData()
 			["Lakrits-TheSha'tar"] = "PRIEST",
 			["Leaf-ScarshieldLegion"] = "DRUID",
 			["Lemon-Sporeggar"] = "EVOKER",
+			["Leo-Sporeggar"] = "PALADIN",
 			["Lif-SteamwheedleCartel"] = "MONK",
 			["Ling-TheSha'tar"] = "MAGE",
 			["Liou-SteamwheedleCartel"] = "MONK",
@@ -381,7 +382,7 @@ local function updateData()
 			["Phoebe-Sporeggar"] = "PRIEST",
 			["Prue-Ravenholdt"] = "MAGE",
 			["Ravioli-Ravenholdt"] = "HUNTER",
-			["Rose-ScarshieldLegion"] = "PALADIN",
+			["Rose-ScarshieldLegion"] = "PRIEST",
 			["Salyssra-SteamwheedleCartel"] = "WARLOCK",
 			["Schnappi-Moonglade"] = "DRUID",
 			["Selma-Ravenholdt"] = "MONK",
@@ -863,6 +864,7 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Eye of Kilrogg"] = 401,
 			["Horde Cannon"] = 100,
 			["Forsaken Bat"] = 158,
 			["Avatar of Aliothe"] = 805,
@@ -1547,6 +1549,8 @@ local function updateData()
 			----------------
 
 			--! State
+			[85361] = "State", -- Transdimensional Shift
+			[84793] = "State", -- Forsaken Communication Device
 			[110740] = "State", -- Ominous Presence
 			[359513] = "State", -- Helm of Damnation
 			[363749] = "State", -- Helm of Damnation
@@ -1605,6 +1609,11 @@ local function updateData()
 			---------------
 
 			--! Zone
+			[375497] = "Zone", -- Enchanted Winds
+			[375607] = "Zone", -- Seething Blue Magic
+			[147282] = "Zone", -- Wisdom of Yu'lon
+			[147283] = "Zone", -- Chi-Ji's Hope
+			[330529] = "Zone", -- Kyrian Javelin
 			[378019] = "Zone", -- Arcane Barrier (The Forbidden Reach)
 			[377874] = "Zone", -- Earth Shield (The Forbidden Reach)
 			[335576] = "Zone", -- Ascendant's Lodestar (Kyrian)
@@ -1699,6 +1708,7 @@ local function updateData()
 			[362933] = true, -- Pocopoc's Escape
 			[364213] = true, -- Transference
 			[364301] = true, -- Transference
+			[387441] = true, -- Empyrean Legacy (Retribution Paladin)
 
 			--------------------
 			-- COMBAT DEBUFFS --
@@ -1990,6 +2000,22 @@ local function updateData()
 
 
 			--! Spells
+			["Sever Magic"] = 65,
+			["Imbued Strike"] = 65,
+			["Arcane Fetters"] = 64,
+			[375605] = 808, -- Splinter (Ancient Construct)
+			["Empowering the Storm"] = 800,
+			["Storm Savagery"] = 911,
+			["Electric Cataclysm"] = 800,
+			["Razorwhirl"] = 811,
+			["Shocking Lightning"] = 800,
+			["Imprison:136014"] = 800,
+			["Crashing Thunder"] = 800,
+			["Charged Gust"] = 911,
+			["Hurricane Blast"] = 911,
+			["Lightning Surge"] = 800,
+			["Lightning Crash"] = 800,
+			["Divine Resonance"] = 201,
 			["Void Orb"] = 320,
 			["Abyssal Portal"] = 320,
 			["Mark of the Arctic"] = 16,
@@ -4446,6 +4472,7 @@ local function updateData()
 			["Forbearance"] = 999,
 			["Forbidden Knowledge:3528299"] = 411,
 			["Forbidden Rune"] = 96,
+			["Forbidden Technique"] = 411,
 			["Force and Verve"] = 111,
 			["Force Multiplier:136088"] = 103,
 			["Force of Gravity"] = 320,
@@ -7339,6 +7366,7 @@ local function updateData()
 			["Vitality Conduit"] = 204,
 			["Vitalizing Bolt:613955"] = 201,
 			["Vivify"] = 802,
+			["Vivacious Vivification"] = 802,
 			["Void Beam"] = 320,
 			["Void Blast"] = 320,
 			["Void Bolt Volley"] = 320,
@@ -8140,7 +8168,7 @@ local function updateData()
 			[201098] = 411, -- Infinite Timereaver
 			-- Life-Binder Drake
 			[107842] = 5, -- Blazing Drake
-			[107845] = 66, -- Life-Binder's Handmaiden
+			[107845] = 403, -- Life-Binder's Handmaiden
 			[107844] = 142, -- Twilight Harbinger
 			-- New Drake
 			[294197] = 400, -- Obsidian Worldbreaker
@@ -9928,6 +9956,8 @@ local function updateData()
 			[264918] = 107,
 			[371089] = 100,
 			[379034] = 403,
+			[340767] = 641,
+			[388242] = 28,
 			--qqq
 
 			--! Ascension Crafting
