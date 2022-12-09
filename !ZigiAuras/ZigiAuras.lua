@@ -1583,6 +1583,8 @@ local function updateData()
 			----------------
 
 			--! State
+			[369552] = "State", -- Blacktalon Marker
+			[371320] = "State", -- Gnoll Disguise
 			[396766] = "State", -- Wearing Watergliders
 			[396764] = "State", -- Wearing Waterwalkers
 			[386441] = "State", -- Community Feast
@@ -1667,6 +1669,9 @@ local function updateData()
 			---------------
 
 			--! Zone
+			[369277] = "Zone", -- Essence of Awakening
+			[371522] = "Zone", -- Seared Defender's Blade
+			[373533] = "Zone", -- Animated Vault Protector
 			[389516] = true, -- Black Dragonflight Pledge Pin (Critical Strike)
 			[389512] = true, -- Bronze Dragonflight Pledge Pin (Haste)
 			[389521] = true, -- Blue Dragonflight Pledge Pin (Mastery)
@@ -2079,6 +2084,33 @@ local function updateData()
 
 
 			--! Spell
+			["Plant Seed"] = 8,
+			["Storm Shield"] = 800,
+			["Stormshield"] = 800,
+			["Storm Bolt"] = 800,
+			["Storm Shock"] = 800,
+			["Guardian Wind"] = 811,
+			["Spirit Leap"] = 720,
+			["Quick Shot"] = 100,
+			["Gale Arrow"] = 811,
+			["Swift Wind"] = 811,
+			["Startled Chomp"] = 112,
+			["Surge:136048"] = 800,
+			["Surge:252174"] = 800,
+			["Thunderstrike"] = 800,
+			["Necrotic Eruption"] = 326,
+			["Renewing Blaze"] = 403,
+			["Snapfire"] = 4,
+			["Overload Elemental Deposit"] = 28,
+ 			["Devastating Hop"] = 903,
+			["Harrowing Gaze"] = 325,
+			["Gale Protection"] = 811,
+			["Wind Sweep"] = 811,
+			["Dust Bolt"] = 804,
+			["Multi-Shot"] = 100,
+			["Mend Wounds"] = 202,
+			["Wild Flailing"] = 112,
+			["Cackling Charge"] = 104,
 			["Hurl Filth"] = 40,
 			["Headwinds"] = 811,
 			[382542] = 16, -- Spit (Frost Worm)
@@ -4197,6 +4229,7 @@ local function updateData()
 			["Demonic Strikes"] = 32,
 			["Demonic Trample"] = 427,
 			["Tyr's Deliverance"] = 3,
+			["Tyr's Wrath"] = 200,
 			["Demonic Tutor"] = 328,
 			["Demonic Tyrant"] = 32,
 			["Demoralizing Shout"] = 117,
@@ -5159,6 +5192,7 @@ local function updateData()
 			["Greater Fade"] = 720,
 			["Greater Fire Elemental"] = 4,
 			["Greater Invisibility"] = 720,
+			["Plane Displacer"] = 720,
 			["Greater Polymorph"] = 646,
 			["Greater Storm Elemental"] = 911,
 			["Greatfather Winter's Hearthstone"] = 16,
@@ -8789,6 +8823,9 @@ local function updateData()
 			[290133] = 80, -- Vulpine Familiar
 			[334366] = 120, -- Wild Glimmerfur Prowler
 
+			--! Slyvern
+			[385738] = 817, -- Temperamental Skyclaw
+
 			--! Gargon
 			[333023] = 809, -- Battle Gargon Silessa
 			[312754] = 809, -- Battle Gargon Vrednic
@@ -10558,6 +10595,11 @@ local function updateData()
 			[384045] = 200,
 			[369906] = 100,
 			[369947] = 801,
+			[371320] = 64,
+			[101838] = 100,
+			[101845] = 100,
+			[101847] = 100,
+			[384627] = 661,
 			--qqq
 
 
@@ -19677,6 +19719,7 @@ local function updateData()
 			[369906] = 0,
 			[369947] = 0,
 			[369947] = 0,
+			[384627] = 0,
 			--qqi
 
 
