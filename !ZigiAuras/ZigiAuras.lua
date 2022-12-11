@@ -879,6 +879,7 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Osoria"] = 400,
 			["Purified Slime"] = 908,
 			["Murloc Hopper"] = 100,
 			["Tome of Spellflinging"] = 64,
@@ -1810,6 +1811,7 @@ local function updateData()
 			-----------------
 
 			--! Debuff
+			[388315] = "Zone", -- Moving Heavy Beam
 			[392960] = "Zone", -- Waygate Travel
 			[393798] = "Zone", -- Activated Defense Systems
 			[388315] = "Zone", -- Taivan is Moving
@@ -2084,6 +2086,15 @@ local function updateData()
 
 
 			--! Spell
+			["Giant Roar"] = 127,
+			["Lava Spout"] = 12,
+			["Ancient Studies"] = 114,
+			["Plant a Flower"] = 8,
+			["Stormcall"] = 800,
+			["Break Apart:1385913"] = 803,
+			["Tail Whap"] = 104,
+			["Verdant Burst"] = 120,
+			["Preserving Sprout"] = 120,
 			["Plant Seed"] = 8,
 			["Storm Shield"] = 800,
 			["Stormshield"] = 800,
@@ -2126,7 +2137,7 @@ local function updateData()
 			["Razor Petal"] = 8,
 			["Deadly Impalement"] = 102,
 			["Clawed Counter"] = 110,
-			["Rupturing Slash"] = 111,
+			["Rupturing Slash"] = 101,
 			["Call for Family"] = 111,
 			["Putrid Chomp"] = 410,
 			["Going Deep..."] = 801,
@@ -2403,7 +2414,7 @@ local function updateData()
 			["Gooping Lash"] = 906,
 			["Disgorge"] = 906,
 			["Entangling Bolas"] = 100,
-			["Vicious Howl"] = 111,
+			["Vicious Howl"] = 103,
 			["Wind Dart"] = 811,
 			["Talon Rip"] = 101,
 			["Lightning Rod"] = 800,
@@ -2628,6 +2639,7 @@ local function updateData()
 			["Val'kyr Strike:298674"] = 32,
 			["Exorcism"] = 6,
 			["Bulwark of Order"] = 202,
+			["Bulwark of Righteous Fury"] = 202,
 			["Bastion of Light"] = "Holy Power",
 			["Summon Prince Malchezaar"] = 411,
 			[267995] = 427, -- Summon Wrathguard (Nether Portal)
@@ -10517,16 +10529,15 @@ local function updateData()
 			[375932] = 5,
 			[386212] = 900,
 			[383139] = 202,
-			[375992] = 811,
 			[375466] = 202,
 			[375472] = 202,
 			[375470] = 202,
 			[391289] = 202,
 			[388896] = 202,
 			[388709] = 100,
-			[375992] = 12,
-			[376006] = 12,
-			[376011] = 12,
+			[375992] = 120,
+			[376006] = 120,
+			[376011] = 120,
 			[373031] = 64,
 			[373444] = 114,
 			[371692] = 126,
@@ -10538,7 +10549,7 @@ local function updateData()
 			[373160] = 4,
 			[378814] = 4,
 			[371637] = 125,
-			[384389] = 4,
+			[384389] = 2,
 			[384564] = 2,
 			[384588] = 2,
 			[383057] = 803,
@@ -19720,6 +19731,7 @@ local function updateData()
 			[369947] = 0,
 			[369947] = 0,
 			[384627] = 0,
+			[387794] = 0,
 			--qqi
 
 
