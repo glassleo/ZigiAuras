@@ -813,14 +813,14 @@ local function updateData()
 			[640] = "d28aff:766fff", -- Lunar
 			[65]  = "7c6ecf:c48fe0", -- Spellstrike
 			[126] = "a159ff:68e5ff", -- Magic
-			[125] = "4c99ff:dd41ff", -- Magic
 			[62]  = "52ffb8:ff70cb", -- Chromatic
 			[620] = "f83e3e:33c0ff", -- Devastation
 			[621] = "f83e3e:b3ff87", -- Preservation
 			[646] = "a4feff:8fb7ff", -- Conjuration
 			[641] = "f2e199:ffa019", -- Temporal
-			[72]  = "3e69a5:67efff", -- Astral
-			[721] = "f7c57c:bcfcff", -- Stellar
+			[72] = "4c99ff:dd41ff", -- Astral
+			[721] = "ffffff:a38eff", -- Stellar
+			[722]  = "3e69a5:5ddae8", -- Celestial
 			[203] = "ffffff:d8ddde", -- Hyperlight
 			[106] = "ffffff:ffb86c", -- Cosmic
 
@@ -1584,12 +1584,18 @@ local function updateData()
 			----------------
 
 			--! State
+			[261486] = "State", -- Talanji is Near
+			[193472] = "State", -- Mercenary Contract
+			[193475] = "State", -- Mercenary Contract
+			[369968] = "State", -- Racing
+			[382825] = "State", -- Tyrhold Conduit
 			[369552] = "State", -- Blacktalon Marker
 			[371320] = "State", -- Gnoll Disguise
 			[396766] = "State", -- Wearing Watergliders
 			[396764] = "State", -- Wearing Waterwalkers
 			[386441] = "State", -- Community Feast
 			[387686] = "State", -- Steria's Spell of Obscurity
+			[391008] = "State", -- Herald's Urgent Message
 			[388790] = "State", -- Doc Nanner's Urgent Message
 			[386504] = "State", -- Cataloger's Camera
 			[356998] = "State", -- Rock Climbing Gear
@@ -1778,6 +1784,7 @@ local function updateData()
 			["Valiant Strikes"] = true,
 			["Honorless Target"] = true,
 			["Resurrection Sickness"] = true,
+			[390621] = true, -- Azure Rise
 			[361841] = true, -- Resist Domination
 			[362933] = true, -- Pocopoc's Escape
 			[364213] = true, -- Transference
@@ -2086,7 +2093,45 @@ local function updateData()
 
 
 			--! Spell
-			["Giant Roar"] = 127,
+			["Lava Spray"] = 12,
+			[157241] = 32, -- Wail of the Restless
+			[160372] = 32, -- Leech Vitality
+			["Dream Projection"] = 120,
+			["Nullifying Shroud"] = 80,
+			[390621] = 999, -- Azure Arise
+			["Shield Charge"] = 104,
+			["Chill Out"] = 16,
+			["Awaken Crag"] = 803,
+			["Sundering Crash"] = 400,
+			["Shale Breath"] = 400,
+			["Holy Ward"] = 66,
+			["Gladiator's Emblem"] = 103,
+			["Conductive Strike"] = 800,
+			[388335] = 80, -- Rune of Alacrity
+			[388334] = 80, -- Rune of Alacrity
+			["Lava Flood"] = 12,
+			["Magma Gout"] = 12,
+			["Molten Spew"] = 12,
+			[396034] = 802, -- Calming Aura
+			[388954] = 103, -- Feeding Frenzy
+			[388960] = 101, -- Clean Flesh
+			[388952] = 101, -- Clean Flesh
+			[297837] = 101, -- Clean Flesh
+			[393811] = 2, -- Sacred Wave
+			[387708] = 200, -- Tyr's Wrath
+			[385883] = 200, -- Maintenance
+			[393430] = 200, -- Restoration Protocol
+			[385959] = 200, -- Energy Blast
+			[385419] = 200, -- Construct Defense Orb
+			[387740] = 200, -- Bulwark of Order (Titan Maiden)
+			[389169] = 641, -- Timeless Sight
+			[389165] = 641, -- Timeless Sight
+			[2000855] = 200, -- Energy Blast
+			[385386] = 101, -- Tailstrike
+			[385905] = 101, -- Tailstrike
+			[396386] = 12, -- Magma Spray
+			["Throw Net"] = 100,
+			["Giant Roar"] = 111,
 			["Lava Spout"] = 12,
 			["Ancient Studies"] = 114,
 			["Plant a Flower"] = 8,
@@ -2210,11 +2255,11 @@ local function updateData()
 			["Blasting Gust"] = 811,
 			["Severing Slash"] = 101,
 			["Power Vacuum"] = 126,
-			["Astral Breath"] = 125,
+			["Astral Breath"] = 72,
 			["Energy Bomb"] = 126,
-			["Celestial Shield"] = 72,
-			["Astral Bomb"] = 125,
-			["Astral Whirlwind"] = 125,
+			["Celestial Shield"] = 722,
+			["Astral Bomb"] = 72,
+			["Astral Whirlwind"] = 72,
 			["Savage Peck"] = 102,
 			["Overpowering Gust"] = 811,
 			["Call of the Flock:537444"] = 103,
@@ -2224,16 +2269,16 @@ local function updateData()
 			["Deadly Winds"] = 811,
 			["Expel Intruders:236154"] = 811,
 			["Arcane Fissure"] = 64,
-			["Mana Bombs"] = 125,
+			["Mana Bombs"] = 72,
 			["Arcane Expulsion"] = 126,
-			["Mystic Blast"] = 125,
+			["Mystic Blast"] = 72,
 			["Monotonous Lecture:355498"] = 64,
 			["Surge:135731"] = 64,
 			["Vicious Lunge"] = 104,
 			["Vicious Ambush:132089"] = 64,
 			["Riftbreath"] = 126,
 			["Arcane Rain"] = 126,
-			["Mana Void"] = 125,
+			["Mana Void"] = 72,
 			["Branch Out"] = 903,
 			["Barkbreaker"] = 903,
 			["Germinate"] = 8,
@@ -2403,7 +2448,7 @@ local function updateData()
 			["Arcane Bash"] = 65,
 			["Conjured Barrier"] = 126,
 			["Arcane Fetters"] = 64,
-			["Arcane Portal"] = 125,
+			["Arcane Portal"] = 72,
 			["Frosty Leap"] = 160,
 			["Massive Charge"] = 103,
 			["Death Bolt Volley"] = 326,
@@ -2500,7 +2545,7 @@ local function updateData()
 			["Soggy Blast"] = 801,
 			["Water Nova"] = 801,
 			["Sundering Strike"] = 903,
-			["Battle Cry"] = 111,
+			["Battle Cry"] = 103,
 			["Rumbling Quake"] = 400,
 			["Spew Magma"] = 12,
 			["Noxious Cloud"] = 40,
@@ -2633,7 +2678,7 @@ local function updateData()
 			["Shock Blast"] = 800,
 			["Void Rip"] = 10,
 			["Call of the Wild"] = 10,
-			["Arcane Surge"] = 125,
+			["Arcane Surge"] = 72,
 			["Thistle Tea"] = 900,
 			["Eternity Bolt:1392546"] = 321,
 			["Val'kyr Strike:298674"] = 32,
@@ -2881,9 +2926,9 @@ local function updateData()
 			["Control Thoughts"] = 328,
 			["Frost Blast"] = 16,
 			[254545] = 157, -- Baruut the Brisk (Turbo Talbuk)
-			[256388] = 72, -- Initialization Sequence (Reorigination Module)
-			[256396] = 72, -- Reorigination Pulse (Reorigination Module)
-			["Cosmic Ray"] = 72,
+			[256388] = 722, -- Initialization Sequence (Reorigination Module)
+			[256396] = 722, -- Reorigination Pulse (Reorigination Module)
+			["Cosmic Ray"] = 722,
 			["Reverberating Strike:135814"] = 402,
 			["Forging Strike:236253"] = 5,
 			["Demolish:136201"] = 32,
@@ -2895,7 +2940,7 @@ local function updateData()
 			["Empowered Shrapnel Blast:135804"] = 401,
 			["End of All Things:1711335"] = 413,
 			["End of All Things:1386550"] = 320,
-			[253061] = 72, -- Starblast
+			[253061] = 722, -- Starblast
 			["Cosmic Beacon"] = 106,
 			["Torment of Khaz'goroth"] = 4,
 			["Torment of Golganneth"] = 16,
@@ -3001,7 +3046,7 @@ local function updateData()
 			["Amber"] = 810,
 			["Ambergesic"] = 810,
 			["Ambush"] = 33,
-			["Ancestral Guidance"] = 72,
+			["Ancestral Guidance"] = 722,
 			["Ancestral Protection Totem"] = 721,
 			["Ancestral Spirit"] = 280,
 			["Ancestral Vision"] = 280,
@@ -3078,7 +3123,7 @@ local function updateData()
 			["Arcane Barrage"] = 64,
 			["Arcane Blast"] = 64,
 			["Arcane Bolt"] = 64,
-			["Ablative Pulse"] = 125,
+			["Ablative Pulse"] = 72,
 			["Arcane Bolts"] = 64,
 			[221864] = 64, -- Blast (Recursive Elemental)
 			["Arcane Bomb"] = 64,
@@ -3093,14 +3138,14 @@ local function updateData()
 			["Arcane Intellect"] = 118,
 			["Arcane Meteor"] = 64,
 			["Arcane Missiles"] = 64,
-			["Arcane Power"] = 125,
+			["Arcane Power"] = 72,
 			["Arcane Slash:1041233"] = 64,
 			["Arcane Wall"] = 64,
 			["Archangel"] = 200,
 			["Archon's Grace"] = 2,
 			["Archon's Spear"] = 201,
 			["Archon's Blessing"] = 201,
-			[335435] = 72, -- Archon's Blessing (Kleia)
+			[335435] = 722, -- Archon's Blessing (Kleia)
 			["Keen Insight:1029587"] = 201,
 			["Archonic Resonator"] = 201,
 			["Arcing Bonds:607854"] = 64,
@@ -3135,9 +3180,9 @@ local function updateData()
 			["Assassin's Soulcloak"] = 96,
 			["Assembling"] = 100,
 			["Assume Command:132333"] = 100,
-			["Astral Annihilation"] = 72,
+			["Astral Annihilation"] = 722,
 			["Astral Recall"] = 8,
-			["Astral Shift"] = 72,
+			["Astral Shift"] = 722,
 			["Atonement"] = 202,
 			["Attacking"] = 107,
 			["Attendant's Pocket Portal: Ardenweald"] = 203,
@@ -3628,7 +3673,7 @@ local function updateData()
 			["Cauterize Master"] = 402,
 			["Cauterize Master:840409"] = 401,
 			["Cave-in"] = 803,
-			["Celestial Alignment"] = 72,
+			["Celestial Alignment"] = 722,
 			["Celestial Brew"] = 282,
 			["Celestial Flames"] = 4,
 			["Cenarion Ward"] = 10,
@@ -3798,7 +3843,7 @@ local function updateData()
 			["Conqueror's Banner:3578234"] = 326,
 			["Consecrate"] = 6,
 			["Consecration"] = 6,
-			["Constellation Shield"] = 72,
+			["Constellation Shield"] = 722,
 			["Constricting Grasp"] = 324,
 			["Constricting Memories:3528301"] = 411,
 			["Construct Bomb:3528287"] = 201,
@@ -4737,8 +4782,8 @@ local function updateData()
 			["Fan Mail"] = 114,
 			["Fan of Knives"] = 909,
 			["Fanning the Flames"] = 5,
-			["Far Sight"] = 721,
-			["Eagle Eye"] = 721,
+			["Far Sight"] = 641,
+			["Eagle Eye"] = 811,
 			["Fatal Sting"] = 806,
 			["Fatigue"] = 999,
 			["Fatigued"] = 999,
@@ -5092,7 +5137,7 @@ local function updateData()
 			["Fury of the Beast"] = 117,
 			["Fury of the Maw"] = 411,
 			["Fuselighter"] = 4,
-			["Galactic Guardian"] = 72,
+			["Galactic Guardian"] = 722,
 			["Gale Eruption"] = 811,
 			["Gale Force"] = 811,
 			["Gale Slash"] = 811,
@@ -5144,7 +5189,7 @@ local function updateData()
 			["Glimmer of Light"] = 2,
 			["Glimmering Illusion"] = 805,
 			["Glimpse of the Void"] = 320,
-			["Glitter Burst"] = 721,
+			["Glitter Burst"] = 641,
 			["Glittering Scrap Musket"] = 100,
 			["Glob of Fel"] = 401,
 			["Gloom Burst:236296"] = 320,
@@ -6862,7 +6907,7 @@ local function updateData()
 			["Shield Wall"] = 113,
 			["Shielding Words"] = 3,
 			["Shifting Power"] = 805,
-			["Shimmer Down"] = 721,
+			["Shimmer Down"] = 641,
 			["Shimmering Transformation"] = 805,
 			["Discordant Cadenza:463569"] = 413,
 			["Shining Light"] = 2,
@@ -7161,7 +7206,7 @@ local function updateData()
 			["Spirit of Redemption"] = 201,
 			["Spirit Shell"] = 66,
 			["Spirit Stream"] = 720,
-			["Spirit Walk"] = 721,
+			["Spirit Walk"] = 104,
 			["Spirit Wolf"] = 720,
 			["Spirit's Swiftness"] = 104,
 			["Spiritwalker's Grace"] = 280,
@@ -7197,7 +7242,7 @@ local function updateData()
 			["Make the Sky Fall:236168"] = 721,
 			["Starfire"] = 640,
 			["Starlance Vigil"] = 720,
-			["Starsurge"] = 125,
+			["Starsurge"] = 72,
 			["Stasis Beam:135860"] = 203,
 			["Static Bolt"] = 800,
 			["Static Bolts"] = 800,
@@ -7221,7 +7266,7 @@ local function updateData()
 			["Steam Trail"] = 20,
 			["Steel Trap"] = 102,
 			["Stellar Emission:1360763"] = 6,
-			["Stellar Flare"] = 721,
+			["Stellar Flare"] = 106,
 			["Stellar Pylon:253400"] = 3,
 			["Sticky Mucus"] = 908,
 			["Sticky Stomp"] = 9,
@@ -7310,16 +7355,14 @@ local function updateData()
 			["Subjugate Spirit"] = 32,
 			["Subjugate"] = 328,
 			["Submerged:463570"] = 801,
+			["Darkened Lightning:1385911"] = 413,
+			["Death Lens:136202"] = 413,
+			["Dread Essence:1778230"] = 413,
 			["Subterfuge"] = 411,
 			["Subterranean Eruptions"] = 803,
 			["Succumb to Doubt"] = 411,
 			["Sucking Teeth"] = 101,
 			["Sudden Death"] = 411,
-			["Summon Deathtouched Slaver"] = 413,
-			["Darkened Lightning:1385911"] = 413,
-			["Dread Essence:1778230"] = 413,
-			["Death Lens:136202"] = 413,
-			[266460] = 413, -- Dread Bolt (Deathtouched Slaver)
 			["Sudden Doom"] = 411,
 			["Suffering"] = 411,
 			["Sugar Rush:236303"] = 107,
@@ -7332,6 +7375,7 @@ local function updateData()
 			["Summon Cloud Serpent"] = 802,
 			["Summon Condemned"] = 411,
 			["Summon Darkglare"] = 32,
+			["Summon Deathtouched Slaver"] = 413,
 			["Summon Demonic Tyrant"] = 32,
 			["Summon Doomskull"] = 64,
 			["Summon Dread Spirit:132183"] = 412,
@@ -7345,6 +7389,7 @@ local function updateData()
 			["Summon Flaming Heads"] = 36,
 			["Summon Gargoyle"] = 33,
 			["Summon Imp"] = 127,
+			[266460] = 413, -- Dread Bolt (Deathtouched Slaver)
 			["Summon Incubus"] = 32,
 			["Summon Infernal"] = 401,
 			["Summon Jade Serpent Statue"] = 120,
@@ -8412,6 +8457,8 @@ local function updateData()
 			[342668] = 106, -- Desertwing Hunter
 			[359372] = 910, -- Mawdapted Raptora
 			[359373] = 131, -- Raptora Swooper
+			[385266] = 172, -- Zenet Hatchling
+			[359408] = 811, -- Divine Kiss of Ohn'ahra
 			-- Raven
 			[231524] = 141, -- Shadowblade's Baneful Omen
 			[231525] = 142, -- Shadowblade's Crimson Omen
@@ -8544,8 +8591,8 @@ local function updateData()
 			[359317] = 801, -- Wen Lo, the River's Edge
 			-- Manasaber
 			[180545] = 64, -- Mystic Runesaber
-			[230987] = 125, -- Arcanist's Manasaber
-			[258845] = 125, -- Nightborne Manasaber
+			[230987] = 72, -- Arcanist's Manasaber
+			[258845] = 72, -- Nightborne Manasaber
 			[232405] = 4, -- Primal Flamesaber
 			[200175] = 401, -- Felsaber
 			-- Jeweled Panther
@@ -8561,7 +8608,7 @@ local function updateData()
 			[317177] = 66, -- Sunwarmed Furline
 
 			--! Cloud Serpent
-			[127170] = 72, -- Astral Cloud Serpent
+			[127170] = 722, -- Astral Cloud Serpent
 			[123992] = 48, -- Azure Cloud Serpent
 			[127156] = 818, -- Crimson Cloud Serpent
 			[123993] = 817, -- Golden Cloud Serpent
@@ -8782,7 +8829,7 @@ local function updateData()
 			[359407] = 321, -- Wastewarped Deathwalker
 
 			--! Everwyrm
-			[307932] = 72, -- Ensorcelled Everwyrm
+			[307932] = 722, -- Ensorcelled Everwyrm
 
 			--! Falcosaur
 			[213164] = 135, -- Brilliant Direbeak
@@ -8986,7 +9033,7 @@ local function updateData()
 			[278966] = 402, -- Tempestuous Skystallion
 			[171847] = 4, -- Cindermane Charger
 			[163024] = 412, -- Warforged Nightmare
-			[75614]  = 72, -- Celestial Steed
+			[75614]  = 722, -- Celestial Steed
 
 			--! Hyena
 			[237287] = 159, -- Alabaster Hyena
@@ -9144,7 +9191,7 @@ local function updateData()
 			[308087] = 200, -- Lucky Yun
 
 			--! Panthara
-			[243512] = 721, -- Luminous Starseeker
+			[243512] = 106, -- Luminous Starseeker
 
 			--! Parrot
 			[254811] = 815, -- Squawks
@@ -9421,6 +9468,9 @@ local function updateData()
 			[359378] = 106, -- Scarlet Helicid
 			[346719] = 111, -- Serenade
 			[359377] = 812, -- Unsuccessful Prototype Fleetpod
+			-- Magma Snail
+			[350219] = 12, -- Magmashell
+			[374155] = 12, -- Shellack
 
 			--! Spidder
 			[213115] = 142, -- Bloodfang Widow
@@ -10548,7 +10598,7 @@ local function updateData()
 			[376927] = 100,
 			[373160] = 4,
 			[378814] = 4,
-			[371637] = 125,
+			[371637] = 72,
 			[384389] = 2,
 			[384564] = 2,
 			[384588] = 2,
@@ -10592,8 +10642,8 @@ local function updateData()
 			["Effuse Arcana"] = 126,
 			[388465] = 4,
 			[388502] = 202,
-			[372084] = 125,
-			[373061] = 125,
+			[372084] = 72,
+			[373061] = 72,
 			[386066] = 100,
 			[386489] = 202,
 			[388553] = 202,
@@ -10611,6 +10661,13 @@ local function updateData()
 			[101845] = 100,
 			[101847] = 100,
 			[384627] = 661,
+			[377887] = 100,
+			[374817] = 100,
+			[382822] = 200,
+			[390783] = 811,
+			[380227] = 100,
+			[387020] = 100,
+			[377953] = 100,
 			--qqq
 
 
@@ -17542,24 +17599,24 @@ local function updateData()
 			[176316] = 154, -- Fearsome Battle Standard
 			[176315] = 154, -- Inspiring Battle Standard
 			-- Pandaria
-			[143011] = 72, -- Celestial Cloth
+			[143011] = 722, -- Celestial Cloth
 			[130325] = 112, -- Song of Harmony
 			[125556] = 112, -- Royal Satchel
 			[125544] = 152, -- Contender's Satin Cuffs
 			[137908] = 152, -- Crafted Dreadful Gladiator's Cape of Prowess
 			[137934] = 152, -- Crafted Dreadful Gladiator's Satin Robe
-			[142951] = 72, -- White Cloud Leggings
+			[142951] = 722, -- White Cloud Leggings
 			[143053] = 152, -- Crafted Malevolent Gladiator's Cape of Cruelty
 			[143075] = 152, -- Crafted Malevolent Gladiator's Mooncloth Robe
 			[125554] = 126, -- Greater Pearlescent Spellthread
-			[146925] = 72, -- Accelerated Celestial Cloth
+			[146925] = 722, -- Accelerated Celestial Cloth
 			[138597] = 112, -- Falling Blossom Treads
 			[143073] = 152, -- Crafted Malevolent Gladiator's Mooncloth Helm
 			[138598] = 112, -- Falling Blossom Cowl
 			[125555] = 126, -- Greater Cerulean Spellthread
 			[125558] = 112, -- Robe of Eternal Rule
 			[137941] = 152, -- Crafted Dreadful Gladiator's Felweave Raiment
-			[142960] = 72, -- White Cloud Belt
+			[142960] = 722, -- White Cloud Belt
 			[125540] = 152, -- Contender's Satin Amice
 			[125545] = 152, -- Contender's Satin Footwraps
 			[125560] = 112, -- Legacy of the Emperor
@@ -17602,7 +17659,7 @@ local function updateData()
 			[137936] = 152, -- Crafted Dreadful Gladiator's Cloak of Alacrity
 			[137942] = 152, -- Crafted Dreadful Gladiator's Felweave Amice
 			[138600] = 112, -- Falling Blossom Hood
-			[142955] = 72, -- Leggings of the Night Sky
+			[142955] = 722, -- Leggings of the Night Sky
 			[143055] = 152, -- Crafted Malevolent Gladiator's Cord of Cruelty
 			[143057] = 152, -- Crafted Malevolent Gladiator's Cord of Meditation
 			[143065] = 152, -- Crafted Malevolent Gladiator's Drape of Prowess
@@ -17631,7 +17688,7 @@ local function updateData()
 			[137937] = 152, -- Crafted Dreadful Gladiator's Cloak of Prowess
 			[137938] = 152, -- Crafted Dreadful Gladiator's Felweave Handguards
 			[138599] = 112, -- Falling Blossom Sandals
-			[142964] = 72, -- Belt of the Night Sky
+			[142964] = 722, -- Belt of the Night Sky
 			[143054] = 152, -- Crafted Malevolent Gladiator's Cape of Prowess
 			[143062] = 152, -- Crafted Malevolent Gladiator's Cuffs of Prowess
 			[143066] = 152, -- Crafted Malevolent Gladiator's Drape of Meditation
@@ -19732,6 +19789,11 @@ local function updateData()
 			[369947] = 0,
 			[384627] = 0,
 			[387794] = 0,
+			[377887] = 0,
+			[374817] = 0,
+			[390783] = 132845,
+			[380227] = 0,
+			[387020] = 0,
 			--qqi
 
 
@@ -20186,18 +20248,17 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 	if arg == "key" or arg == "!key" or arg == "keyasync" then
 		local key, twkey = nil, nil
 		for bag = 0, NUM_BAG_SLOTS do
-			local bagSlots = GetContainerNumSlots(bag)
+			local bagSlots = C_Container.GetContainerNumSlots(bag)
 			for slot = 1, bagSlots do
-				local link, _, _, id = select(7, GetContainerItemInfo(bag, slot))
-				if id == 180653 then -- Shadowlands
-					key = link
-				elseif id == 187786 then -- Legion Timewalking
-					twkey = link
+				local info = C_Container.GetContainerItemInfo(bag, slot)
+				if info and info.itemID == 180653 then -- Mythic Keystone
+					key = info.hyperlink
+				elseif info and info.itemID == 187786 then -- Timewalking Keystone
+					twkey = info.hyperlink
 				end
 			end
 		end
 
-		local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0
 		if key or twkey then
 			SendGroupMessage((key and key or "")..(twkey and twkey or ""))
 		elseif arg == "keyasync" then
