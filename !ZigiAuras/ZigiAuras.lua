@@ -10,7 +10,7 @@ frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
 
-local function updateData()
+function ZA_UpdateData()
 	local name, realm = UnitFullName("player")
 	local _, class, _ = UnitClass("player")
 	local faction,_ = UnitFactionGroup("player")
@@ -879,12 +879,14 @@ local function updateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Azure Whelpling"] = 814,
+			["Emerald Whelpling"] = 821,
 			["Osoria"] = 400,
 			["Purified Slime"] = 908,
 			["Murloc Hopper"] = 100,
 			["Tome of Spellflinging"] = 64,
 			["Arcane Blaster"] = 64,
-			["Ruby Whelpling"] = 173,
+			["Ruby Whelpling"] = 818,
 			["Eye of Kilrogg"] = 401,
 			["Horde Cannon"] = 100,
 			["Forsaken Bat"] = 158,
@@ -1584,6 +1586,22 @@ local function updateData()
 			----------------
 
 			--! State
+			[371268] = "State", -- Emerald Dream
+			[375232] = "State", -- Emerald Dream
+			[370368] = "State", -- Emerald Dream
+			[373030] = "State", -- Dreaming
+			[384270] = "State", -- Emerald Grief
+			[373707] = "State", -- Murloc You (Alliance)
+			[373709] = "State", -- Murloc You (Horde)
+			[372444] = "State", -- Accompanied by Zera
+			[372518] = true, -- Call for Zera
+			[373645] = "State", -- Dutiful Ottuk
+			[373615] = "State", -- Territorial Ottuk
+			[372806] = "State", -- Carrying Ipko
+			[377333] = "State", -- Carry Sassa
+			[386070] = "State", -- Cataloger's Camera
+			[372817] = "State", -- Cataloger's Camera
+			[375603] = "State", -- Ride Wagon
 			[261486] = "State", -- Talanji is Near
 			[193472] = "State", -- Mercenary Contract
 			[193475] = "State", -- Mercenary Contract
@@ -1676,6 +1694,7 @@ local function updateData()
 			---------------
 
 			--! Zone
+			[388271] = "Zone", -- Nefarian's Bulwark
 			[369277] = "Zone", -- Essence of Awakening
 			[371522] = "Zone", -- Seared Defender's Blade
 			[373533] = "Zone", -- Animated Vault Protector
@@ -2093,6 +2112,70 @@ local function updateData()
 
 
 			--! Spell
+			["Arctic Slam"] = 160,
+			["Glacial Whirlwind"] = 160,
+			["Arcane Sentry"] = 126,
+			[382454] = 65, -- Interrupting Strike
+			["Frost Barrage"] = 16,
+			[389477] = 16, -- Frozen Deluge
+			[387049] = 101, -- Shredding Bite
+			[394598] = 327, -- Grievous Roar
+			[384296] = 800, -- Lightning-Tipped Strike
+			[395448] = 800, -- Vortex Roar
+			["Inspect"] = 114,
+			[394060] = 900, -- Bee Sting
+			[400386] = 327, -- Hideous Cackle
+			[367500] = 327, -- Hideous Cackle
+			["Raking Stab"] = 101,
+			[387317] = 403, -- Purifying Flame
+			["Earthen Devastation"] = 400,
+			["Steam Vent"] = 20,
+			[383033] = 641, -- Rewind Damage
+			[377634] = 641, -- Fragmentation
+			[377628] = 641, -- Fragmentation
+			[389360] = 804, -- Sand Blast
+			[389364] = 804, -- Blinding Sand
+			[393043] = 641, -- Unstable Sands
+			[393045] = 641, -- Time Eruption
+			[393031] = 641, -- Temporal Blast
+			[393036] = 641, -- Slow Burn
+			[393037] = 641, -- Slow Burn
+			[213642] = 641, -- Borrowed Time
+			[213640] = 641, -- Borrowed Time
+			[390692] = 641, -- Borrowed Time
+			[197762] = 641, -- Borrowed Time
+			[390691] = 641, -- Borrowed Time
+			[392663] = 641, -- Borrowed Time
+			[221723] = 641, -- Borrowed Time
+			[395493] = 800, -- Wild Lightning
+			[395488] = 800, -- Zap
+			[372449] = 32, -- Twisted Fang
+			[393731] = 103, -- Battle Howl
+			[372529] = 327, -- Hideous Laughter
+			[382555] = 103, -- Ragestorm
+			[394540] = 111, -- Call Hyenas
+			[385435] = 111, -- Call Hyenas
+			[394536] = 111, -- Call Hyenas
+			[396807] = 101, -- Savage Gore
+			[396805] = 104, -- Massive Charge
+			[396600] = 111, -- Ear-Splitting Roar
+			[132143] = 800, -- Thunder Swipe
+			[395206] = 800, -- Storm Burst
+			["Storm Burst"] = 800,
+			[394423] = 327, -- Enraged Roar
+			["Enraged Roar"] = 103,
+			["Molten Pour"] = 12,
+			[394262] = 34, -- Worldbreaker's Wrath
+			[395567] = 903, -- Slam
+			["Molten Crash"] = 12,
+			[392359] = 4, -- Cataclysmic Punch (Integrated Primal Fire)
+			["Boil"] = 20,
+			["Frigid Fury"] = 103,
+			["Crushing Wave"] = 801,
+			["Harden Mountain"] = 804,
+			["Sand Spray"] = 804,
+			[390392] = 28, -- Overload Elemental Herb
+			["Magma Flow"] = 12,
 			["Lava Spray"] = 12,
 			[157241] = 32, -- Wail of the Restless
 			[160372] = 32, -- Leech Vitality
@@ -2197,7 +2280,7 @@ local function updateData()
 			["Rabid Bite"] = 410,
 			["Earth Torrent"] = 400,
 			["End Prey"] = 112,
-			["Furious Smash"] = 112,
+			["Furious Smash"] = 903,
 			["Lacerate"] = 101,
 			["Molten Stone"] = 12,
 			["Icy Barbs"] = 17,
@@ -2417,7 +2500,7 @@ local function updateData()
 			["Drench"] = 801,
 			["Rending Lightning"] = 800,
 			["Lightning-Tipped Strike"] = 800,
-			["Alpha Storm Blast"] = 911,
+			[384291] = 800, -- Alpha Storm Blast
 			["Search"] = 114,
 			["Listening"] = 111,
 			["Essence Tear"] = 65,
@@ -2443,7 +2526,8 @@ local function updateData()
 			["Vicious Cleaving"] = 107,
 			["Vicious Chomp"] = 101,
 			["Vicious Bite"] = 101,
-			["Munch!"] = 112,
+			[392007] = 112, -- Munch!
+			[372502] = 112, -- Munch!
 			["Hideous Laughter"] = 327,
 			["Arcane Bash"] = 65,
 			["Conjured Barrier"] = 126,
@@ -2828,7 +2912,8 @@ local function updateData()
 			["Delayed Siege Bomb"] = 5,
 			["Iron Bellow"] = 111,
 			["Iron Bulwark"] = 909,
-			["Abomination Hook"] = 100,
+			["Abomination"] = 326,
+			["Raise Abomination"] = 326,
 			["Double Speed"] = 104,
 			["Venomous Eruption"] = 806,
 			[74003] = 800, -- Downsizing (Trade Prince Gallywix)
@@ -5126,7 +5211,7 @@ local function updateData()
 			["Furious Ashhide Mushan"] = 175,
 			["Furious Assault"] = 107,
 			["Furious Charge"] = 104,
-			["Furious Quake"] = 803,
+			["Furious Quake"] = 400,
 			["Furious Roar"] = 111,
 			["Furious Screech"] = 103,
 			["Furious Slam:3995538"] = 411,
@@ -5558,7 +5643,7 @@ local function updateData()
 			["Inflated Ego:3528299"] = 411,
 			["Infuse Death"] = 326,
 			["Infused Bulwark:3867785"] = 203,
-			["Infused Quake"] = 803,
+			["Infused Quake"] = 400,
 			["Infusion of Light"] = 2,
 			["Infusion of Renown"] = "Anima",
 			["Initializing"] = 100,
@@ -5830,7 +5915,7 @@ local function updateData()
 			["Massive Deluge"] = 801,
 			["Massive Eruption:135801"] = 401,
 			["Massive Eruption:135830"] = 12,
-			["Massive Quake"] = 803,
+			["Massive Quake"] = 400,
 			["Massive Screech"] = 111,
 			["Massive Shockwave"] = 903,
 			["Master Assassin"] = 112,
@@ -6363,7 +6448,7 @@ local function updateData()
 			["Putrid Swarm"] = 40,
 			["Pyroblast"] = 402,
 			["Pyroclasm"] = 402,
-			["Quake"] = 803,
+			["Quake"] = 400,
 			["Queen's Bite:136231"] = 321,
 			["Quelling Strike:132307"] = 104,
 			["Quick Bloodlust"] = 105,
@@ -8357,10 +8442,10 @@ local function updateData()
 			--! Mounts
 
 			--! Dragonriding
-			["Renewed Proto-Drake"] = 811,
-			["Cliffside Wylderdrake"] = 811,
-			["Highland Drake"] = 811,
-			["Windborne Velocidrake"] = 811,
+			[368896] = 811, -- Renewed Proto-Drake
+			[368899] = 811, -- Cliffside Wylderdrake
+			[360954] = 811, -- Highland Drake
+			[368901] = 811, -- Windborne Velocidrake
 
 			--! Aircraft
 			[290718] = 100, -- Aerial Unit R-21/X
@@ -8606,6 +8691,9 @@ local function updateData()
 			[294143] = 100, -- X-995 Mechanocat
 			-- Lynx
 			[317177] = 66, -- Sunwarmed Furline
+			-- Sabertooth
+			[394737] = 4, -- Vicious Sabertooth (Alliance)
+			[394738] = 4, -- Vicious Sabertooth (Horde)
 
 			--! Cloud Serpent
 			[127170] = 722, -- Astral Cloud Serpent
@@ -8733,7 +8821,7 @@ local function updateData()
 			[59567]  = 80, -- Azure Drake
 			[59650]  = 156, -- Black Drake
 			[59568]  = 18, -- Blue Drake
-			[59569]  = 641, -- Bronze Drake
+			[59569]  = 130, -- Bronze Drake
 			[175700] = 815, -- Emerald Drake
 			[110039] = 62, -- Experiment 12-B
 			[113120] = 401, -- Feldrake
@@ -9050,6 +9138,7 @@ local function updateData()
 			[133023] = 815, -- Jade Pandaren Kite
 			[130985] = 158, -- Pandaren Kite (Alliance)
 			[118737] = 173, -- Pandaren Kite (Horde)
+			[370770] = 415, -- Tuskarr Shoreglider
 
 			--! Kodo
 			[22718]  = 156, -- Black War Kodo
@@ -10627,7 +10716,6 @@ local function updateData()
 			[375885] = 100,
 			[391032] = 100,
 			[370219] = 100,
-			[377983] = 661,
 			[389127] = 200,
 			[374203] = 281,
 			[374424] = 100,
@@ -10668,6 +10756,55 @@ local function updateData()
 			[380227] = 100,
 			[387020] = 100,
 			[377953] = 100,
+			[392270] = 801,
+			[386636] = 811,
+			[396735] = 40,
+			[386936] = 100,
+			[386936] = 100,
+			[377984] = 661, -- Heart in a Bottle
+			[377989] = 661, -- Heart in a Bottle
+			[377978] = 661, -- Heart in a Bottle
+			[377987] = 661, -- Heart in a Bottle
+			[377982] = 661, -- Heart in a Bottle
+			[377981] = 661, -- Heart in a Bottle
+			[377915] = 661, -- Heart in a Bottle
+			[377985] = 661, -- Heart in a Bottle
+			[377983] = 661, -- Heart in a Bottle
+			[377986] = 661, -- Heart in a Bottle
+			[377988] = 661, -- Heart in a Bottle
+			[393075] = 114,
+			[387163] = 801,
+			[387008] = 20,
+			[389123] = 909,
+			[377375] = 202,
+			[377333] = 202,
+			[377374] = 202,
+			[372806] = 202,
+			[389867] = 100,
+			[389153] = 100,
+			[389152] = 202,
+			[383031] = 641,
+			[209524] = 80, -- Signaling... (Court of Stars)
+			[396362] = 8,
+			[353191] = 801,
+			[391298] = 801,
+			[392129] = 100,
+			[396032] = 100,
+			[373629] = 120,
+			[381256] = 120,
+			[373798] = 120,
+			[374011] = 100,
+			[383510] = 805,
+			[383526] = 805,
+			[374591] = 805,
+			[374799] = 120,
+			[374809] = 120,
+			[374806] = 120,
+			[385006] = 100,
+			[385000] = 100,
+			[393995] = 120,
+			[373033] = 120,
+			[374872] = 120,
 			--qqq
 
 
@@ -19076,6 +19213,53 @@ local function updateData()
 			[330222] = 133, -- Relic of the Past I
 		}
 
+		if ArmyDB and name then
+			-- Dragonriding Customization
+			local realm = GetRealmName()
+
+			if realm and ArmyDB[name.."-"..realm] then
+				-- Renewed Proto-Drake
+				local colors = {
+					[1] = 819, -- Black
+					[2] = 814, -- Blue
+					[3] = 816, -- Yellow
+					[4] = 821, -- Green
+					[5] = 818, -- Red
+				}
+				ZA.Spells[368896] = colors[ArmyDB[name.."-"..realm]["RenewedProtoDrake"]] or colors[5]
+				
+				-- Windborne Velocidrake
+				local colors = {
+					[1] = 819, -- Black
+					[2] = 814, -- Blue
+					[3] = 816, -- Yellow
+					[4] = 815, -- Green
+					[5] = 173, -- Red
+				}
+				ZA.Spells[368899] = colors[ArmyDB[name.."-"..realm]["WindborneVelocidrake"]] or colors[4]
+				
+				-- Highland Drake
+				local colors = {
+					[1] = 155, -- Black
+					[2] = 814, -- Blue
+					[3] = 8, -- Green
+					[4] = 818, -- Red
+					[5] = 816, -- Yellow
+				}
+				ZA.Spells[360954] = colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
+				
+				-- CLiffside Wylderdrake
+				local colors = {
+					[1] = 175, -- Black
+					[2] = 814, -- Blue
+					[3] = 8, -- Green
+					[4] = 173, -- Red
+					[5] = 130, -- Yellow
+				}
+				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
+			end
+		end
+
 		-- Icons
 		ZA.Icons = {
 			--§ Classes
@@ -19794,6 +19978,34 @@ local function updateData()
 			[390783] = 132845,
 			[380227] = 0,
 			[387020] = 0,
+			[392270] = 0,
+			[396735] = 0,
+			[386936] = 0,
+			[384448] = 0,
+			[393075] = 0,
+			[377375] = 0,
+			[377333] = 0,
+			[377374] = 0,
+			[372806] = 0,
+			[389153] = 0,
+			[389152] = 0,
+			[209524] = 0,
+			[392129] = 0,
+			[396032] = 0,
+			[381256] = 0,
+			[373798] = 0,
+			[374011] = 0,
+			[383510] = 0,
+			[383526] = 0,
+			[374591] = 0,
+			[374799] = 0,
+			[374809] = 0,
+			[374806] = 0,
+			[385006] = 0,
+			[385000] = 0,
+			[393995] = 0,
+			[373033] = 0,
+			[374872] = 0,
 			--qqi
 
 
@@ -20150,9 +20362,9 @@ local function eventHandler(self, event, ...)
 	elseif event == "VARIABLES_LOADED" then
 		-- Make sure defaults are set
 		if not ZA then ZA = { } end
-		updateData()
+		ZA_UpdateData()
 	else
-		updateData()
+		ZA_UpdateData()
 	end
 end
 
