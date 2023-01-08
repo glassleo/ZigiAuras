@@ -688,6 +688,7 @@ function ZA_UpdateData()
 			[170] = "4b6d2a:aac65a", -- Green Scale
 			[171] = "5d5a54:cdc5bd", -- Gray Scale
 			[172] = "9c3a4b:cb8c95", -- Crimson Scale
+			[176] = "edb231:ffd268", -- Bronze Scale
 			[173] = "a1241e:eb7028", -- Red Scale
 			[157] = "6d719e:c4bdd9", -- Cobalt Scale
 			[174] = "223763:3f7c8f", -- Deep Sea Scale
@@ -715,7 +716,7 @@ function ZA_UpdateData()
 			[812] = "e2ddd1:daebf5", -- Diamond
 			[820] = "d00d5e:f8b1e0", -- Spinel
 			[813] = "72449d:e598f3", -- Amethyst
-			[814] = "3c5bb3:45d0ff", -- Sapphire
+			[814] = "4a76e6:51d3ff", -- Sapphire
 			[822] = "3ba8b3:63fff6", -- Aquamarine
 			[815] = "25c669:b1ff87", -- Emerald
 			[821] = "669641:ddff69", -- Peridot
@@ -879,6 +880,9 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Valormok Wind Rider"] = 176,
+			["Rocketway Rat"] = 116,
+			["Bilgewater Mortar"] = 100,
 			["Azure Whelpling"] = 814,
 			["Emerald Whelpling"] = 821,
 			["Osoria"] = 400,
@@ -997,6 +1001,7 @@ function ZA_UpdateData()
 
 		--! Vehicle Icons
 		ZA.VehicleIcons = {
+			["Valormok Wind Rider"] = 298594,
 			["Tome of Spellflinging"] = 4062012,
 			["Arcane Blaster"] = 1516058,
 			["Mushroom Network"] = 3854013,
@@ -1392,6 +1397,9 @@ function ZA_UpdateData()
 			-- ELIXIRS --
 			-------------
 
+			-- Dragonflight
+			[371339] = "Elixir", -- Phial of Elemental Chaos
+
 			-- Shadowlands
 			[307185] = "Elixir", -- Spectral Flask of Power
 			[307187] = "Elixir", -- Spectral Stamina Flask
@@ -1586,6 +1594,32 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[69329] = "State", -- Flying a Wind Rider
+			[69054] = "State", -- Ambassador Disguise
+			[69059] = "State", -- Friend of the Blackmaw
+			[69812] = "State", -- Death?
+			[69862] = "State", -- Shadow Bait
+			[66212] = "State", -- Fire Dancing
+			[68189] = "State", -- Essence of Ice
+			[68613] = "State", -- Energized
+			[68413] = "State", -- Spongy!
+			[68710] = "State", -- Shrunkified
+			[69704] = "State", -- Babysitting Raptors
+			[67704] = "State", -- Memories of the Dead
+			[67570] = "State", -- Escorting a Surveyor
+			[69744] = "State", -- Stealth Foeld Generator
+			[67032] = "State", -- Lugging a Goblin
+			[66787] = "State", -- Pilot a Shredder
+			[73841] = "State", -- Hunting
+			[241957] = "State", -- Giant Wakened!
+			[239353] = "State", -- Shoulder Demon
+			[180985] = "State", -- Shoulder Demon
+			[239343] = "State", -- Shoulder Demon
+			[180975] = "State", -- Shoulder Demon
+			[80209] = "State", -- Fire Extinguisher
+			[193863] = "State", -- Alliance
+			[373579] = "State", -- Sendrax's Stand
+			[386257] = "State", -- Shikaar Training
 			[371268] = "State", -- Emerald Dream
 			[375232] = "State", -- Emerald Dream
 			[370368] = "State", -- Emerald Dream
@@ -1693,7 +1727,22 @@ function ZA_UpdateData()
 			-- ZONE BUFF --
 			---------------
 
+			-- Profession Buffs
+			[67556] = "Zone", -- Cooking Speed
+
 			--! Zone
+			[93395] = "Zone", -- Water Walking
+			[68726] = "Zone", -- Riding a Rat
+			[68185] = "Zone", -- Stormward
+			[315322] = "Zone", -- Camping (Make Camp Vulpera Racial)
+			[48719] = "Zone", -- Water Breathing
+			[73673] = "Zone", -- Poison Extraction Totem
+			[178475] = "Zone", -- Fighter Chow
+			[384168] = "Zone", -- Shikaar Mentorship: Versatility
+			[384169] = "Zone", -- Shikaar Mentorship: Mastery
+			[384156] = "Zone", -- Shikaar Mentorship: Haste
+			[384159] = "Zone", -- Shikaar Mentorship: Critical Strike
+			[384062] = "Zone", -- Raptor's Quickness
 			[388271] = "Zone", -- Nefarian's Bulwark
 			[369277] = "Zone", -- Essence of Awakening
 			[371522] = "Zone", -- Seared Defender's Blade
@@ -1858,7 +1907,6 @@ function ZA_UpdateData()
 			[281034] = "Zone", -- Noxious Swamp Gas (Nazmir)
 			["Legion Invasion"] = "Zone",
 			[218397] = "Zone", -- Nightmare Roots (Val'sharah)
-			["Shoulder Demon"] = "Zone", -- (Aszuna)
 			[225994] = "Zone", -- Removed from the Circle (Skyhold)
 			[223202] = "Zone", -- No Guards (Dalaran)
 			[192221] = "Zone", -- No Guards (Dalaran)
@@ -2112,6 +2160,100 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[81014] = 4, -- Flaming Dragon Kick
+			[81005] = 907, -- Hadouken
+			[67887] = 105, -- Living Ire
+			[392401] = 105, -- Improved Garrote
+			[392403] = 105, -- Improved Garrote
+			[69463] = 808, -- Impaling Spine
+			[39837] = 808, -- Impaling Spine
+			["Sea Splash"] = 801,
+			[68129] = 801, -- Summon Shipwrecker
+			[3335] = 410, -- Dark Sludge
+			["Surveying"] = 100,
+			["Superheated Spray"] = 20,
+			["Magma Bomb"] = 12,
+			["Starweaver's Weft"] = 72,
+			["Starweaver's Warp"] = 721,
+			["Hobo Stew"] = 282,
+			["Binding Ice"] = 16,
+			["Glacial Storm"] = 160,
+			["Glacial Breath"] = 160, -- Glacial Breath
+			[395819] = 103, -- Deathless Rage
+			[394563] = 103, -- Violent Roar
+			[390554] = 400, -- Tremors
+			["Thunder Bolt"] = 800,
+			["Lava Spray"] = 12,
+			["Biting Winds"] = 811,
+			["Bloodshot Rage"] = 103,
+			["Shocking Storm"] = 800,
+			[375770] = 801, -- Raging Twister
+			[388310] = 400, -- Fissuring Slam
+			["Necrotic Blast"] = 326,
+			["Azerite Cannon"] = 204,
+			[275027] = 321, -- Coagulated Corruption
+			[102416] = 801, -- Wild Charge (Aquatic Form)
+			[389948] = 101, -- Bloodletting
+			[389949] = 101, -- Bloodletting
+			[372474] = 101, -- Bloodletting
+			[264663] = 105, -- Predator's Thirst
+			[227723] = "Mana", -- Mana Divining Stone
+			[397734] = 104, -- Word of a Worthy Ally
+			[72968] = 661, -- Precious' Ribbon
+			[88100] = 4, -- Disperse
+			[88097] = 4, -- Disperse
+			["Blazing Eruption"] = 4,
+			["Inflict Pain"] = 322,
+			["Brain Spike"] = 328,
+			[394763] = 911, -- Backhand Slash
+			["Quickening Gale"] = 811,
+			[391856] = 400, -- Seismic Volley
+			["Seismic Stomp"] = 400,
+			["Seismic Stomps"] = 400,
+			[392870] = 327, -- Hellish Bleat
+			[388857] = 903, -- Giant Stomp
+			["Boulder Toss"] = 803,
+			["Arcane Detonation"] = 126,
+			[392113] = 641, -- Roaring Sands
+			[392106] = 641, -- Roaring Sands
+			[396690] = 103, -- Ambiguous Flight
+			[392957] = 911, -- Defiant Kick
+			[392097] = 641, -- Eroding Sands
+			[396605] = 111, -- Shrieking Bleat
+			[384285] = 999, -- Purifying Breeze
+			[391098] = 102, -- Puncturing Impalement
+			[396685] = 107, -- Speedy Bugstorm
+			[396684] = 107, -- Speedy Bugstorm
+			[386658] = 911, -- Stampeding Charge
+			[392425] = 903, -- Petrifying Gaze
+			[392435] = 911, -- Mighty Roar
+			[392416] = 911, -- Beetle Charge
+			[392414] = 911, -- Beetle Charge
+			[392411] = 903, -- Beetle Thrust
+			[390861] = 911, -- Wing Flurry
+			[373549] = 103, -- Evasive Maneuvers
+			[396645] = 103, -- Wild Instinct
+			[396641] = 101, -- Rending Slash
+			[396637] = 101, -- Bloody Pounce
+			["Poison Juice"] = 806,
+			["Stone Venom"] = 806,
+			["Primal Lightning"] = 800,
+			[374152] = 808, -- Petryfying Glare
+			["Searing Slime"] = 12,
+			["Molten Slime"] = 12,
+			[390934] = 908, -- Slippery Spittle
+			["Raptor's Quickness"] = 104,
+			["Earhten Ring"] = 803,
+			["Petrifying Gaze"] = 808,
+			["Gale Breath"] = 811,
+			[392132] = 906, -- Vile Chomp
+			[390916] = 806, -- Vile Volley
+			["Rushing Stream"] = 801,
+			["Lava Slam"] = 12,
+			[392841] = 903, -- Hungry Chomp
+			["Lava Vents"] = 12,
+			["Mud Bath"] = 803,
+			["Seismic Ruptures"] = 400,
 			["Arctic Slam"] = 160,
 			["Glacial Whirlwind"] = 160,
 			["Arcane Sentry"] = 126,
@@ -2133,6 +2275,7 @@ function ZA_UpdateData()
 			[383033] = 641, -- Rewind Damage
 			[377634] = 641, -- Fragmentation
 			[377628] = 641, -- Fragmentation
+			["Quakesand"] = 804,
 			[389360] = 804, -- Sand Blast
 			[389364] = 804, -- Blinding Sand
 			[393043] = 641, -- Unstable Sands
@@ -2176,7 +2319,6 @@ function ZA_UpdateData()
 			["Sand Spray"] = 804,
 			[390392] = 28, -- Overload Elemental Herb
 			["Magma Flow"] = 12,
-			["Lava Spray"] = 12,
 			[157241] = 32, -- Wail of the Restless
 			[160372] = 32, -- Leech Vitality
 			["Dream Projection"] = 120,
@@ -2446,7 +2588,7 @@ function ZA_UpdateData()
 			["Magma Nova"] = 12,
 			["Beak Rend"] = 101,
 			["Burnout"] = 4,
-			["Goopy Lash"] = 806,
+			["Goopy Lash"] = 908,
 			["Seismic Pursuit"] = 803,
 			["Excavate"] = 803,
 			["Excavating Blast"] = 803,
@@ -2540,7 +2682,7 @@ function ZA_UpdateData()
 			["Ty'Foon's Typhoon"] = 911,
 			["Dragonrider's Initiative"] = 5,
 			["Quaking Leap"] = 903,
-			["Gooping Lash"] = 906,
+			["Gooping Lash"] = 908,
 			["Disgorge"] = 906,
 			["Entangling Bolas"] = 100,
 			["Vicious Howl"] = 103,
@@ -4847,7 +4989,7 @@ function ZA_UpdateData()
 			["Tempest"] = 911,
 			["Eyes of Elune"] = 640,
 			["Eyes of the Empress"] = 327,
-			["Face Kick"] = 110,
+			["Face Kick"] = 911,
 			["Fade to Nothing"] = 33,
 			["Fade"] = 720,
 			["Fading Blast:3528304"] = 411,
@@ -5716,7 +5858,8 @@ function ZA_UpdateData()
 			["Keeper's Protection:458412"] = 202,
 			["Keg Smash"] = 282,
 			["Kick Up Dust"] = 804,
-			["Kicking"] = 110,
+			["Kicking"] = 911,
+			["Kick"] = 911,
 			["Kill Command"] = 117,
 			["Killing Frenzy"] = 105,
 			["Killing Machine"] = 17,
@@ -7413,7 +7556,7 @@ function ZA_UpdateData()
 			["Stormhammer"] = 9,
 			["Stormkeeper"] = 800,
 			["Stormstrike"] = 9,
-			["Strange Brew"] = 281,
+			["Strange Brew"] = 282,
 			["Streamline"] = 112,
 			["Strength of Many"] = 201,
 			["Strength of the Pack"] = 103,
@@ -8464,12 +8607,15 @@ function ZA_UpdateData()
 			[368158] = 106, -- Zereth Overseer
 
 			--! Alpaca
-			[316493] = 171, -- Elusive Quickhoof
+			[316493] = 156, -- Elusive Quickhoof
 			[298367] = 154, -- Mollie
 			[316802] = 804, -- Springfur Alpaca
 
 			--! Ancient
 			[348162] = 8, -- Wandering Ancient
+
+			--! Armoredon
+			[387231] = 16, -- Hailstorm Armoredon
 
 			--! Aqir Drone
 			[316337] = 324, -- Malevolent Drone
@@ -8583,11 +8729,12 @@ function ZA_UpdateData()
 			--! Brutosaur
 			[264058] = 134, -- Mighty Caravan Brutosaur
 
-			--! Bufonid
+			--! Toad
 			-- Marsh Hopper
 			[288587] = 134, -- Blue Marsh Hopper
 			[259740] = 170, -- Green Marsh Hopper
 			[288589] = 119, -- Yellow Marsh Hopper
+			[369480] = 174, -- Cerulean Marsh Hopper
 			-- Croaker
 			[347255] = 119, -- Vicious War Croaker
 			[347256] = 119, -- Vicious War Croaker
@@ -8643,6 +8790,7 @@ function ZA_UpdateData()
 			--! Cat
 			-- Nightsaber
 			[16056]  = 159, -- Ancient Frostsaber
+			[366962] = 720, -- Ash'adar, Harbinger of Dawn
 			[16055]  = 175, -- Black Nightsaber
 			[22723]  = 910, -- Black War Tiger
 			[63637]  = 175, -- Darnassian Nightsaber
@@ -8718,6 +8866,7 @@ function ZA_UpdateData()
 			[139407] = 812, -- Malevolent Gladiator's Cloud Serpent
 			[148620] = 817, -- Prideful Gladiator's Cloud Serpent
 			[148618] = 819, -- Tyrannical Gladiator's Cloud Serpent
+			[366647] = 813, -- Magenta Cloud Serpent
 
 			--! Core Hound
 			[170347] = 12, -- Core Hound
@@ -8749,6 +8898,7 @@ function ZA_UpdateData()
 			[242875] = 8, -- Wild Dreamrunner
 
 			--! Crab
+			[366789] = 137, -- Crusty Crawler
 			[294039] = 901, -- Snapback Scuttler
 
 			--! Cradle
@@ -8821,7 +8971,7 @@ function ZA_UpdateData()
 			[59567]  = 80, -- Azure Drake
 			[59650]  = 156, -- Black Drake
 			[59568]  = 18, -- Blue Drake
-			[59569]  = 130, -- Bronze Drake
+			[59569]  = 176, -- Bronze Drake
 			[175700] = 815, -- Emerald Drake
 			[110039] = 62, -- Experiment 12-B
 			[113120] = 401, -- Feldrake
@@ -8834,6 +8984,7 @@ function ZA_UpdateData()
 			[101282] = 34, -- Vicious Gladiator's Twilight Drake
 			[124550] = 34, -- Cataclysmic Gladiator's Twilight Drake
 			[201098] = 411, -- Infinite Timereaver
+			[377071] = 4, -- Crimson Gladiator's Drake
 			-- Life-Binder Drake
 			[107842] = 5, -- Blazing Drake
 			[107845] = 403, -- Life-Binder's Handmaiden
@@ -8896,13 +9047,13 @@ function ZA_UpdateData()
 			[65637]  = 171, -- Great Red Elekk
 			[35711]  = 171, -- Purple Elekk
 			[223578] = 813, -- Vicious War Elekk
-
+			-- Meadowstomper
 			[171622] = 804, -- Mottled Meadowstomper
 			[171624] = 171, -- Shadowhide Pearltusk
 			[171623] = 158, -- Trained Meadowstomper
 			[171626] = 12, -- Armored Irontusk
 			[294568] = 12, -- Beastlord's Irontusk
-
+			-- Felcrusher
 			[254259] = 822, -- Avenging Felcrusher
 			[254258] = 813, -- Blessed Felcrusher
 			[258022] = 200, -- Lightforged Felcrusher
@@ -8928,6 +9079,7 @@ function ZA_UpdateData()
 			--! Fathom Ray
 			[292407] = 157, -- Ankoan Waveray
 			[292419] = 108, -- Azshari Bloatray
+			[367620] = 170, -- Coral-Stalker Waveray
 			[300149] = 910, -- Silent Glider
 			[291538] = 818, -- Unshackled Waveray
 
@@ -8936,6 +9088,7 @@ function ZA_UpdateData()
 			[253087] = 32, -- Antoran Gloomhound
 			[229417] = 127, -- Slayer's Felbroken Shrieker
 			[272472] = 134, -- Undercity Plaguebat
+			[369476] = 402, -- Amalgam of Rage
 
 			--! Felstalker
 			[189998] = 32, -- Illidari Felstalker
@@ -8971,6 +9124,7 @@ function ZA_UpdateData()
 			[334366] = 120, -- Wild Glimmerfur Prowler
 
 			--! Slyvern
+			[359622] = 171, -- Liberated Slyvern
 			[385738] = 817, -- Temperamental Skyclaw
 
 			--! Gargon
@@ -9072,7 +9226,7 @@ function ZA_UpdateData()
 			[359013] = 142, -- Val'sharah Hippogryph
 
 			--! Horse
-			[259213] = 153, -- Admiralty Stallion
+			[259213] = 159, -- Admiralty Stallion
 			[67466]  = 171, -- Argent Warhorse
 			[66907]  = 171, -- Argent Warhorse
 			[470]    = 910, -- Black Stallion
@@ -9085,11 +9239,11 @@ function ZA_UpdateData()
 			[68188]  = 171, -- Crusader's Black Warhorse
 			[68187]  = 171, -- Crusader's White Warhorse
 			[260172] = 171, -- Dapple Gray
-			[260175] = 153, -- Goldenmane
+			[260175] = 176, -- Goldenmane
 			[279456] = 116, -- Highland Mustang
-			[282682] = 153, -- Kul Tiran Charger
+			[282682] = 159, -- Kul Tiran Charger
 			[103195] = 804, -- Mountain Horse
-			[16082]  = 153, -- Palomino
+			[16082]  = 176, -- Palomino
 			[472]    = 116, -- Pinto
 			[193695] = 156, -- Prestigious War Steed
 			[255695] = 156, -- Seabraid Stallion
@@ -9099,7 +9253,7 @@ function ZA_UpdateData()
 			[23229]  = 116, -- Swift Brown Steed
 			[65640]  = 171, -- Swift Gray Steed
 			[103196] = 910, -- Swift Mountain Horse
-			[23227]  = 153, -- Swift Palomino
+			[23227]  = 176, -- Swift Palomino
 			[23228]  = 159, -- Swift White Steed
 			[223341] = 171, -- Vicious Gilnean Warhorse
 			[100332] = 156, -- Vicious War Steed
@@ -9141,6 +9295,7 @@ function ZA_UpdateData()
 			[370770] = 415, -- Tuskarr Shoreglider
 
 			--! Kodo
+			--[367875] = 0, -- Armored Siege Kodo
 			[22718]  = 156, -- Black War Kodo
 			[18990]  = 158, -- Brown Kodo
 			[18989]  = 171, -- Gray Kodo
@@ -9178,6 +9333,7 @@ function ZA_UpdateData()
 			[98727]  = 202, -- Winged Guardian
 
 			--! Mammoth
+			-- Northrend Mammoth
 			[59785]  = 171, -- Black War Mammoth
 			[59788]  = 171, -- Black War Mammoth
 			[61467]  = 171, -- Grand Black War Mammoth
@@ -9190,6 +9346,10 @@ function ZA_UpdateData()
 			[61425]  = 154, -- Traveler's Tundra Mammoth
 			[59793]  = 154, -- Wooly Mammoth
 			[59791]  = 154, -- Wooly Mammoth
+			-- Dragon Isles Mammoth
+			[374196] = 154, -- Plainswalker Bearer
+			[373859] = 12, -- Loyal Magmammoth
+			[374275] = 12, -- Raging Magmammoth
 
 			--! Mana Ray
 			[235764] = 157, -- Darkspore Mana Ray
@@ -9276,6 +9436,16 @@ function ZA_UpdateData()
 			[39800]  = 323, -- Red Riding Nether Ray
 			[39802]  = 323, -- Silver Riding Nether Ray
 
+			--! Ottuk
+			[376912] = 805, -- Otterworldly Ottuk Carrier
+			[376873] = 137, -- Otto
+			[376875] = 116, -- Brown Scouting Ottuk
+			[376910] = 116, -- Brown War Ottuk
+			[359409] = 910, -- Iskaara Trader's Ottuk
+			[376879] = 159, -- Ivory Trader's Ottuk
+			[376880] = 153, -- Yellow Scouting Ottuk
+			[376913] = 153, -- Yellow War Ottuk
+
 			--! Ox
 			[308087] = 200, -- Lucky Yun
 
@@ -9284,7 +9454,8 @@ function ZA_UpdateData()
 
 			--! Parrot
 			[254811] = 815, -- Squawks
-			[254813] = 173, -- Sharkbait (Summon Sharkbait)
+			[254813] = 173, -- Sharkbait
+			[366790] = 142, -- Quawks
 			-- Mechanical Parrot
 			[290328] = 100, -- Wonderwing 2.0
 
@@ -9304,7 +9475,7 @@ function ZA_UpdateData()
 			[278656] = 720, -- Spectral Phoenix
 			-- Skyblazer
 			[347813] = 6, -- Fireplume Phoenix
-			[347812] = 80, -- Sapphire Skyblazer
+			[347812] = 814, -- Sapphire Skyblazer
 			-- Fire Hawk
 			[97560]  = 32, -- Corrupted Fire Hawk
 			[97501]  = 401, -- Felfire Hawk
@@ -9326,7 +9497,7 @@ function ZA_UpdateData()
 			[59961]  = 173, -- Red Proto-Drake
 			[63963]  = 132, -- Rusted Proto-Drake
 			[148392] = 173, -- Spawn of Galakras
-			[60002]  = 133, -- Time-Lost Proto-Drake
+			[60002]  = 641, -- Time-Lost Proto-Drake
 			[60024]  = 820, -- Violet Proto-Drake
 			[229388] = 105, -- Battlelord's Bloodthirsty War Wyrm
 			[386452] = 48, -- Frostbrood Proto-Wyrm
@@ -9424,7 +9595,7 @@ function ZA_UpdateData()
 
 			--! Roc
 			-- Dread Raven
-			[155741] = 80, -- Dread Raven
+			[155741] = 814, -- Dread Raven
 			[183117] = 401, -- Corrupted Dreadwing
 			-- Fleshroc
 			[336041] = 415, -- Bonesewn Fleshroc
@@ -9445,6 +9616,9 @@ function ZA_UpdateData()
 			[93644]  = 155, -- Kor'kron Annihilator
 			[148417] = 5, -- Kor'kron Juggernaut
 			[230988] = 173, -- Vicious War Scorpion
+
+			--! Salamanther
+			[374098] = 157, -- Stormhide Salamanther
 
 			--! Seahorse
 			[300153] = 66, -- Crimson Tidestallion
@@ -9559,6 +9733,7 @@ function ZA_UpdateData()
 			[359377] = 812, -- Unsuccessful Prototype Fleetpod
 			-- Magma Snail
 			[350219] = 12, -- Magmashell
+			[374162] = 12, -- Scrappy Worldsnail
 			[374155] = 12, -- Shellack
 
 			--! Spidder
@@ -9623,15 +9798,18 @@ function ZA_UpdateData()
 			[356802] = 200, -- Holy Lightstrider
 
 			--! Tallstrider
+			-- Tallstrider
 			[102346] = 62, -- Swift Forest Strider
 			[102350] = 661, -- Swift Lovebird
 			[101573] = 135, -- Swift Shorestrider
 			[102349] = 159, -- Swift Springstrider
+			-- Hornstrider
+			[352926] = 814, -- Skyskin Hornstrider
 
 			--! Talon Bird
 			[101542] = 4, -- Flametalon of Alysrazor
 			[280729] = 401, -- Frenzied Feltalon
-			[41252]  = 80, -- Raven Lord
+			[41252]  = 814, -- Raven Lord
 			[179478] = 32, -- Voidtalon of the Dark Star
 
 			--! Tauralus
@@ -9644,11 +9822,15 @@ function ZA_UpdateData()
 			[332456] = 415, -- Plaguerot Tauralus
 			[332455] = 415, -- War-Bred Tauralus
 
+			-- Thunder Lizard
+			[374247] = 154, -- Lizi, Thunderspine Trampler
+
 			--! Tome
 			[359318] = 64, -- Soaring Spelltome
 
 			--! Turtle
 			[227956] = 12, -- Arcadian War Turtle
+			--[367826] = 0, -- Savage Green Battle Turtle
 			-- Dragon Turtle
 			[127286] = 157, -- Black Dragon Turtle
 			[127287] = 171, -- Blue Dragon Turtle
@@ -9704,9 +9886,14 @@ function ZA_UpdateData()
 			--! Warp Stalker
 			[346136] = 323, -- Viridian Phase-Hunter
 
-			--! Water Strider
+			--! Dragonfly
+			-- Water Strider
 			[118089] = 814, -- Azure Water Strider
 			[127271] = 818, -- Crimson Water Strider
+			-- Skitterfly
+			[374034] = 137, -- Azure Skitterfly
+			[374032] = 175, -- Tamed Skitterfly
+			[374048] = 170, -- Verdant Skitterfly
 
 			--! Wilderling
 			[353856] = 805, -- Ardenweald Wilderling
@@ -9716,15 +9903,15 @@ function ZA_UpdateData()
 
 			--! Wind Rider
 			[302362] = 3, -- Alabaster Thunderwing
-			[32244]  = 159, -- Blue Wind Rider
+			[32244]  = 157, -- Blue Wind Rider
 			[32245]  = 134, -- Green Wind Rider
-			[32243]  = 804, -- Tawny Wind Rider
+			[32243]  = 176, -- Tawny Wind Rider
 			[107517] = 720, -- Spectral Wind Rider
-			[61230]  = 159, -- Armored Blue Wind Rider
-			[32295]  = 804, -- Swift Green Wind Rider
-			[32297]  = 804, -- Swift Purple Wind Rider
-			[32246]  = 804, -- Swift Red Wind Rider
-			[32296]  = 804, -- Swift Yellow Wind Rider
+			[61230]  = 157, -- Armored Blue Wind Rider
+			[32295]  = 176, -- Swift Green Wind Rider
+			[32297]  = 176, -- Swift Purple Wind Rider
+			[32246]  = 176, -- Swift Red Wind Rider
+			[32296]  = 176, -- Swift Yellow Wind Rider
 			-- Grand Wyvern
 			[136164] = 116, -- Grand Wyvern
 			[135418] = 116, -- Grand Armored Wyvern
@@ -10004,7 +10191,7 @@ function ZA_UpdateData()
 			[6610] = 801,
 			[66280] = 100,
 			[68283] = 801,
-			[68422] = 801,
+			[68422] = 20,
 			[69855] = 202,
 			[70458] = 8,
 			[70476] = 100,
@@ -10184,9 +10371,9 @@ function ZA_UpdateData()
 			[192252] = 100,
 			[196731] = 326,
 			[196724] = 326,
-			[67922] = 126,
-			[69054] = 126,
-			[68945] = 126,
+			[67922] = 646,
+			[69054] = 646,
+			[68945] = 646,
 			[69230] = 18,
 			[69217] = 100,
 			[76241] = 5,
@@ -10805,6 +10992,21 @@ function ZA_UpdateData()
 			[393995] = 120,
 			[373033] = 120,
 			[374872] = 120,
+			[387183] = 100,
+			[387177] = 100,
+			[388188] = 911,
+			[381682] = 202,
+			[388329] = 100,
+			[387871] = 100,
+			[154296] = 100,
+			[374651] = 202,
+			[381319] = 200,
+			[372353] = 909,
+			[391957] = 114,
+			[387206] = 100,
+			[69743] = 5,
+			[67688] = 100,
+			[68752] = 100,
 			--qqq
 
 
@@ -15856,7 +16058,7 @@ function ZA_UpdateData()
 			[26880] = 135, -- Thorium Setting
 			[32809] = 809, -- Dense Stone Statue
 			[26873] = 130, -- Figurine - Golden Hare
-			[26876] = 134, -- Aquamarine Pendant of the Warrior
+			[26876] = 822, -- Aquamarine Pendant of the Warrior
 			[25622] = 130, -- Citrine Pendant of Golden Healing
 			[26874] = 814, -- Aquamarine Signet
 			[26872] = 815, -- Figurine - Jade Owl
@@ -15876,7 +16078,7 @@ function ZA_UpdateData()
 			[25613] = 130, -- Golden Dragon Ring
 			[25612] = 909, -- Heavy Iron Knuckles
 			[25321] = 808, -- Moonsoul Crown
-			[25610] = 815, -- Pendant of the Agate Shield
+			[25610] = 821, -- Pendant of the Agate Shield
 			[25498] = 909, -- Barbaric Iron Collar
 			[32807] = 809, -- Heavy Stone Statue
 			[36524] = 815, -- Heavy Jade Ring
@@ -19222,7 +19424,7 @@ function ZA_UpdateData()
 				local colors = {
 					[1] = 819, -- Black
 					[2] = 814, -- Blue
-					[3] = 816, -- Yellow
+					[3] = 176, -- Yellow
 					[4] = 821, -- Green
 					[5] = 818, -- Red
 				}
@@ -19232,7 +19434,7 @@ function ZA_UpdateData()
 				local colors = {
 					[1] = 819, -- Black
 					[2] = 814, -- Blue
-					[3] = 816, -- Yellow
+					[3] = 176, -- Yellow
 					[4] = 815, -- Green
 					[5] = 173, -- Red
 				}
@@ -19244,7 +19446,7 @@ function ZA_UpdateData()
 					[2] = 814, -- Blue
 					[3] = 8, -- Green
 					[4] = 818, -- Red
-					[5] = 816, -- Yellow
+					[5] = 176, -- Yellow
 				}
 				ZA.Spells[360954] = colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
 				
@@ -19254,7 +19456,7 @@ function ZA_UpdateData()
 					[2] = 814, -- Blue
 					[3] = 8, -- Green
 					[4] = 173, -- Red
-					[5] = 130, -- Yellow
+					[5] = 176, -- Yellow
 				}
 				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
 			end
@@ -19335,7 +19537,6 @@ function ZA_UpdateData()
 			["Dreamwalk"] = 1396974,
 			["Holographic Digitalization Hearthstone"] = 413583,
 			["Empower Ashjra'kamas"] = 132886,
-			["Tinkering"] = 2915722,
 			["Tormenting Haunt"] = 236298,
 			["Chi Torpedo"] = 607849,
 			["Dance of Chi-Ji"] = 606543,
@@ -20006,6 +20207,21 @@ function ZA_UpdateData()
 			[393995] = 0,
 			[373033] = 0,
 			[374872] = 0,
+			[386269] = 0,
+			[387177] = 0,
+			[386317] = 0,
+			[387871] = 0,
+			[154296] = 0,
+			[381319] = 0,
+			[372353] = 0,
+			[391957] = 0,
+			[387206] = 0,
+			[67688] = 0,
+			[68283] = 133037,
+			[68752] = 0,
+			[68726] = 1450569,
+			[68422] = 135231,
+			[69230] = 133146,
 			--qqi
 
 
