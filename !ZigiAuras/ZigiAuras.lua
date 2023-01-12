@@ -384,7 +384,7 @@ function ZA_UpdateData()
 			["Onion-SteamwheedleCartel"] = "ROGUE",
 			["Pang-Sporeggar"] = "EVOKER",
 			["Peppermint-ScarshieldLegion"] = "MONK",
-			["Pest-TheSha'tar"] = "DEATHKNIGHT",
+			["Pest-TheSha'tar"] = "ROGUE",
 			["Phoebe-Sporeggar"] = "PRIEST",
 			["Prue-Ravenholdt"] = "MAGE",
 			["Ravioli-Ravenholdt"] = "HUNTER",
@@ -430,6 +430,7 @@ function ZA_UpdateData()
 			["Zoal-Moonglade"] = "MAGE",
 			["Zoom-Moonglade"] = "MAGE",
 			["Zorp-Moonglade"] = "HUNTER",
+			["Zsa-TheSha'tar"] = "HUNTER",
 			["Zumaridi-Moonglade"] = "DRUID",
 		}
 
@@ -880,6 +881,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Tapionnuq"] = 720,
 			["Valormok Wind Rider"] = 176,
 			["Rocketway Rat"] = 116,
 			["Bilgewater Mortar"] = 100,
@@ -1594,6 +1596,8 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[65466] = "State", -- Ride Caravan Kodo
+			[65601] = "State", -- Dragging a Razormane
 			[69329] = "State", -- Flying a Wind Rider
 			[69054] = "State", -- Ambassador Disguise
 			[69059] = "State", -- Friend of the Blackmaw
@@ -1731,6 +1735,16 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[344051] = "Zone", -- Chosen Battlearmor
+			[385201] = "Zone", -- Boomthyr Rocket Material List
+			[387854] = "Zone", -- Fate Barrier
+			[344066] = "Zone", -- Reinforced Bindings
+			[344395] = "Zone", -- Liberator's Resolve
+			[327425] = "Zone", -- Forlorn's Grace
+			[363611] = "Zone", -- Stolen Power
+			[389174] = "Zone", -- Hearty Musken Meal
+			[65628] = "Zone", -- Saintly
+			[65629] = "Zone", -- Nasty
 			[93395] = "Zone", -- Water Walking
 			[68726] = "Zone", -- Riding a Rat
 			[68185] = "Zone", -- Stormward
@@ -2160,6 +2174,16 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Corrupted Quasar"] = 320,
+			["Void Empowerment"] = 320,
+			["Void Spike"] = 320,
+			["Mud Eruption"] = 803,
+			["Magmatic Core"] = 12,
+			["Burning Roar"] = 402,
+			["Converging Storms"] = 911,
+			["Pressure Point"] = 3,
+			["Corrosive Dosage"] = 806,
+			["Bola Volley"] = 100,
 			[81014] = 4, -- Flaming Dragon Kick
 			[81005] = 907, -- Hadouken
 			[67887] = 105, -- Living Ire
@@ -2313,6 +2337,7 @@ function ZA_UpdateData()
 			["Molten Crash"] = 12,
 			[392359] = 4, -- Cataclysmic Punch (Integrated Primal Fire)
 			["Boil"] = 20,
+			["Flood"] = 801,
 			["Frigid Fury"] = 103,
 			["Crushing Wave"] = 801,
 			["Harden Mountain"] = 804,
@@ -8108,7 +8133,7 @@ function ZA_UpdateData()
 			["Veil of Midnight"] = 33,
 			["Veilwalking"] = 720,
 			["Vendetta"] = 411,
-			["Deathmark"] = 411,
+			["Deathmark"] = 321,
 			["Amplifying Poison"] = 806,
 			["Venom Blast"] = 806,
 			["Venom Bolt"] = 806,
@@ -11007,6 +11032,11 @@ function ZA_UpdateData()
 			[69743] = 5,
 			[67688] = 100,
 			[68752] = 100,
+			[388591] = 900,
+			[388590] = 202,
+			[384538] = 202,
+			[384561] = 202,
+			[384533] = 661,
 			--qqq
 
 
@@ -20222,6 +20252,12 @@ function ZA_UpdateData()
 			[68726] = 1450569,
 			[68422] = 135231,
 			[69230] = 133146,
+			[386885] = 0,
+			[388591] = 0,
+			[388590] = 0,
+			[384538] = 0,
+			[384561] = 0,
+			[384533] = 0,
 			--qqi
 
 
