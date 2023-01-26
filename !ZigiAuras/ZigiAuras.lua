@@ -882,6 +882,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Surging Torrent"] = 801,
 			["Tapionnuq"] = 720,
 			["Valormok Wind Rider"] = 176,
 			["Rocketway Rat"] = 116,
@@ -1004,6 +1005,7 @@ function ZA_UpdateData()
 
 		--! Vehicle Icons
 		ZA.VehicleIcons = {
+			["Surging Torrent"] = 4554463,
 			["Valormok Wind Rider"] = 298594,
 			["Tome of Spellflinging"] = 4062012,
 			["Arcane Blaster"] = 1516058,
@@ -2405,6 +2407,14 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[390635] = 12,
+			["Rain of Destruction:135821"] = 12,
+			[386907] = 104, -- Yes Chef!
+			["Molten Brand"] = 12, -- Soup Up
+			["Molten Tear"] = 12, -- Soup Up
+			[390150] = 12, -- Soup Up
+			[389273] = 5, -- Meat Missiles
+			["Lava Breath"] = 12,
 			[387732] = 801, -- Waternado
 			[395060] = 801, -- Im'bunata's Rage
 			[391188] = 20, -- Stir
@@ -11407,6 +11417,10 @@ function ZA_UpdateData()
 			[245757] = 200,
 			[250455] = 200,
 			[185285] = 202,
+			[371417] = 801,
+			[390400] = 200,
+			[389437] = 200,
+			[389124] = 200,
 			--qqq
 
 
@@ -20634,6 +20648,9 @@ function ZA_UpdateData()
 			[250455] = 0,
 			[217725] = 4226150,
 			[165534] = 133710,
+			[371417] = 0,
+			[390400] = 0,
+			[389437] = 0,
 			--qqi
 
 
