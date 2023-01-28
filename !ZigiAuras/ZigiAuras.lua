@@ -602,6 +602,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[377942] = "Searching Through Bag",
 			[375885] = "Plant Banner",
 			["Boon of the Covenants"] = (covenant == 1) and "Boon of the Kyrian" or (covenant == 2) and "Boon of the Venthyr" or (covenant == 3) and "Boon of the Night Fae" or (covenant == 4) and "Boon of the Necrolords" or "Boon of the Covenants",
 			[386256] = "Soulkeeper",
@@ -1134,6 +1135,7 @@ function ZA_UpdateData()
 			[389820] = "Under Red Wings: Haste", -- Ruby Whelp Shell
 			[383813] = "Sleepy Ruby Warmth: Critical Strike", -- Ruby Whelp Shell
 			[390936] = "Primal Turtle's Wish: Mastery", -- Primal Ritual Shell
+			[382963] = true, -- Brimming Arcanocrystal
 
 			-- Shadowlands
 			[328908] = "Combat Meditation: Mastery", -- Combat Meditation (Pelagos)
@@ -1660,20 +1662,21 @@ function ZA_UpdateData()
 			["Time Travelling"] = true,
 
 			-- Experience/Reputation
-			["Experience Eliminated"] = true,
-			["Winds of Wisdom"] = true,
-			["WoW's 19th Anniversary"] = true, -- 2023
-			["WoW's 20th Anniversary"] = true, -- 2024
-			["WoW's 21st Anniversary"] = true, -- 2025
-			["WoW's 22nd Anniversary"] = true, -- 2026
-			["WoW's 23rd Anniversary"] = true, -- 2027
-			["WoW's 24th Anniversary"] = true, -- 2028
-			["WoW's 25th Anniversary"] = true, -- 2029
-			[46668] = true, -- WHEE!
-			[136583] = true, -- Darkmoon Top Hat
-			[95987] = true, -- Unburdened (Hallow's End)
-			[24705] = true, -- Grim Visage (Hallow's End)
-			[289982] = true, -- Draught of Ten Lands
+			["Experience Eliminated"] = "XP",
+			["Winds of Wisdom"] = "XP",
+			[289982] = "XP", -- Draught of Ten Lands
+			["WoW's 19th Anniversary"] = "Reputation", -- 2023
+			["WoW's 20th Anniversary"] = "Reputation", -- 2024
+			["WoW's 21st Anniversary"] = "Reputation", -- 2025
+			["WoW's 22nd Anniversary"] = "Reputation", -- 2026
+			["WoW's 23rd Anniversary"] = "Reputation", -- 2027
+			["WoW's 24th Anniversary"] = "Reputation", -- 2028
+			["WoW's 25th Anniversary"] = "Reputation", -- 2029
+			[46668] = "Reputation", -- WHEE!
+			[136583] = "Reputation", -- Darkmoon Top Hat
+			[95987] = "Reputation", -- Unburdened (Hallow's End)
+			[24705] = "Reputation", -- Grim Visage (Hallow's End)
+			[390493] = "Reputation", -- Cobalt Boost
 
 			-- Contract
 			["Contract: Artisan's Consortium"] = true,
@@ -1727,6 +1730,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[388320] = "State", -- Kalecgos' Aid
 			[197134] = "State", -- Shelter
 			[374139] = "State", -- Vigilant Watcher
 			[373937] = "State", -- Tyr's Blessing
@@ -1866,8 +1870,35 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[385397] = "Zone", -- Temporal Hiccups
+			[388733] = "Zone", -- Trail Blazer
+			[385701] = "Zone", -- Cold Feet
+			[388928] = "Zone", -- Nega-Jump
+			[388746] = "Zone", -- Arcane Inertia
+			[386518] = "Zone", -- Enough!
+			[386515] = "Zone", -- Arcane Consumption
+			[386513] = "Zone", -- Critical Arcana
+			[388818] = "Zone", -- Arcane Enlargement
+			[385917] = "Zone", -- Me and Myself
+			[374402] = "Zone", -- Suddenly, Sheep!
+			[385844] = "Zone", -- Arcane Equalizer
+			[374403] = "Zone", -- Arcane Leap
+			[385814] = "Zone", -- Killing Spree
+			[385651] = "Zone", -- Exploding Map
+			[385720] = "Zone", -- Stuffed Pockets
+			[385368] = "Zone", -- Quickened
+			[388704] = "Zone", -- Arcane Transference
+			[385429] = "Zone", -- Arcane Health
+			[385841] = "Zone", -- Arcane Bravery
+			[388819] = "Zone", -- Arcane Compaction
+			[385444] = "Zone", -- Arcane Luck
+			[394040] = "Zone", -- Fun Detected
+			[385441] = "Zone", -- Arcane Mastery
+			[390661] = "Zone", -- Arcane Instability
+			[394258] = "Zone", -- Cobalt Cutthroat
+			[396813] = "Zone", -- Blinding Speed
 			[389385] = "Zone", -- Im'bunata's Blessing
-			[227723] = false, -- Mana Divining Stone
+			[227723] = true, -- Mana Divining Stone
 			[139068] = "Zone", -- Determination
 			[211392] = "Zone", -- Heavy Stone
 			[378841] = "Zone", -- Inferno's Blessing
@@ -2114,24 +2145,6 @@ function ZA_UpdateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Trinkets
-
-			-- Agility      115
-			-- Intellect    118
-			-- Strength     117
-
-			-- Crit Strike  817
-			-- Haste        816
-			-- Versatility  814
-			-- Mastery      813
-
-			-- Dodge        115
-			-- Parry        909
-			-- Armor        110
-			-- Stamina      112
-			-- Resistance   62
-			-- Reflect      65
-			-- Absorb       202
-
 			[341260] = ZA.PrimaryStatSchool, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
@@ -2194,6 +2207,7 @@ function ZA_UpdateData()
 			[389820] = 403, -- Ruby Whelp Shell
 			[383813] = 403, -- Ruby Whelp Shell
 			[390936] = 811, -- Primal Ritual Shell
+			[382963] = 126, -- Brimming Arcanocrystal
 
 			-- Shadowlands
 			[328908] = 201, -- Kyrian (Pelagos)
@@ -2407,6 +2421,9 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[394392] = 646, -- Forgotten Melodies
+			[394355] = 410, -- Rime Claw
+			["Paralytic Toxins"] = 806,
 			[390635] = 12,
 			["Rain of Destruction:135821"] = 12,
 			[386907] = 104, -- Yes Chef!
@@ -11253,7 +11270,7 @@ function ZA_UpdateData()
 			[375992] = 120,
 			[376006] = 120,
 			[376011] = 120,
-			[373031] = 64,
+			[373031] = 4,
 			[373444] = 114,
 			[371692] = 126,
 			[371689] = 64,
@@ -11421,6 +11438,9 @@ function ZA_UpdateData()
 			[390400] = 200,
 			[389437] = 200,
 			[389124] = 200,
+			[370173] = 811,
+			[396813] = 126,
+			[377942] = 126,
 			--qqq
 
 
@@ -20651,6 +20671,8 @@ function ZA_UpdateData()
 			[371417] = 0,
 			[390400] = 0,
 			[389437] = 0,
+			[396813] = 0,
+			[377942] = 133622,
 			--qqi
 
 
