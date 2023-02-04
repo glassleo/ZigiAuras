@@ -883,6 +883,8 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Alliance Gunship Cannon"] = 100,
+			["Horde Gunship Cannon"] = 100,
 			["Surging Torrent"] = 801,
 			["Tapionnuq"] = 720,
 			["Valormok Wind Rider"] = 176,
@@ -1730,6 +1732,9 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[377935] = "State", -- Carry Beaver Kit
+			[254239] = "State", -- Boon of the Titans
+			[385095] = "State", -- Arcane S.E.L.F.I.E.
 			[388320] = "State", -- Kalecgos' Aid
 			[197134] = "State", -- Shelter
 			[374139] = "State", -- Vigilant Watcher
@@ -1870,6 +1875,34 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[398118] = "Zone", -- Warmth
+			[109251] = "Zone", -- Power of the Aspects
+			[109253] = "Zone", -- Power of the Aspects
+			[109254] = "Zone", -- Power of the Aspects
+			[109255] = "Zone", -- Power of the Aspects
+			[109257] = "Zone", -- Power of the Aspects
+			[109252] = "Zone", -- Power of the Aspects
+			[109256] = "Zone", -- Power of the Aspects
+			[73828]  = "Zone", -- Strength of Wrynn
+			[60509]  = "Zone", -- Strength of Wrynn
+			[73826]  = "Zone", -- Strength of Wrynn
+			[73762]  = "Zone", -- Strength of Wrynn
+			[73824]  = "Zone", -- Strength of Wrynn
+			[60964]  = "Zone", -- Strength of Wrynn
+			[73825]  = "Zone", -- Strength of Wrynn
+			[73827]  = "Zone", -- Strength of Wrynn
+			[73819]  = "Zone", -- Hellscream's Warsong
+			[73816]  = "Zone", -- Hellscream's Warsong
+			[73820]  = "Zone", -- Hellscream's Warsong
+			[73821]  = "Zone", -- Hellscream's Warsong
+			[134244] = "Zone", -- Hellscream's Warsong
+			[73818]  = "Zone", -- Hellscream's Warsong
+			[73822]  = "Zone", -- Hellscream's Warsong
+			[211084] = "Zone", -- Flowing Waters
+			[211110] = "Zone", -- Umbral Spores
+			[211093] = "Zone", -- Arcane Infusion
+			[211071] = "Zone", -- Starlight Rose Brew
+			[385919] = "Zone", -- Dancing Star
 			[385397] = "Zone", -- Temporal Hiccups
 			[388733] = "Zone", -- Trail Blazer
 			[385701] = "Zone", -- Cold Feet
@@ -1917,7 +1950,6 @@ function ZA_UpdateData()
 			[264676] = "Zone", -- Fireseeker
 			[264652] = "Zone", -- Unleashed Light
 			[255046] = "Zone", -- Moon Frenzy
-			[254239] = "Zone", -- Boon of the Titans
 			[385088] = "Zone", -- Battleforged
 			[386725] = "Zone", -- Beefed Up
 			[344051] = "Zone", -- Chosen Battlearmor
@@ -2104,6 +2136,7 @@ function ZA_UpdateData()
 			-----------------
 
 			--! Debuff
+			[377853] = "Zone", -- Unstable Time
 			[388315] = "Zone", -- Moving Heavy Beam
 			[392960] = "Zone", -- Waygate Travel
 			[393798] = "Zone", -- Activated Defense Systems
@@ -2421,10 +2454,37 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Cinderbolt"] = 4,
+			["Flame Dance"] = 4,
+			[399785] = 16, -- Guardian's Duty
+			[398324] = 16, -- Guardian's Duty
+			["Necrotic Plague"] = 40,
+			["Dream Slip"] = 120,
+			["Glacial Blast"] = 160,
+			["Crypt Scarabs"] = 415,
+			["River Swim"] = 801,
+			["Hoof Kick"] = 911,
+			["Juggernaut Charge"] = 104,
+			[207907] = 4, -- Burning Intensity
+			[207887] = 402, -- Infernal Eruption
+			[206574] = 65, -- Resonant Slash
+			[207278] = 72, -- Arcane Lockdown
+			[207815] = 281, -- Flask of Solemn Night
+			[209378] = 911, -- Whirling Blades
+			[209676] = 911, -- Slicing Maelstrom
+			[209628] = 811, -- Percing Gale
+			[209602] = 911, -- Blade Surge
+			[207980] = 328, -- Disintegration Beam
+			[207806] = 3, -- Signal Beacon
+			[385335] = 65, -- Arcane Stealth
+			[384807] = 646, -- Mirrored
+			[390625] = 64, -- Arcane Shield
+			[382058] = 4, -- Decoration of Flame
+			["Arcane Overload"] = 64,
 			[394392] = 646, -- Forgotten Melodies
 			[394355] = 410, -- Rime Claw
 			["Paralytic Toxins"] = 806,
-			[390635] = 12,
+			[390635] = 12, -- Rain of Destruction
 			["Rain of Destruction:135821"] = 12,
 			[386907] = 104, -- Yes Chef!
 			["Molten Brand"] = 12, -- Soup Up
@@ -2942,6 +3002,7 @@ function ZA_UpdateData()
 			["Big Sharp Teeth"] = 101,
 			["Crab Dinner"] = 102,
 			["Cannibalism"] = 102,
+			["Cannibalize"] = 102,
 			["Sticky Stomp"] = 901,
 			["Rotten Graspers"] = 410,
 			["Decaying Glob"] = 40,
@@ -3149,6 +3210,7 @@ function ZA_UpdateData()
 			["Heavy Blizzard"] = 16,
 			["Avalanche"] = 803,
 			["Sundering Earth"] = 803,
+			["Freezing Venom"] = 806,
 			["Freezing Claws"] = 16,
 			["Applying Salve"] = 202,
 			["Bulwark:132315"] = 901,
@@ -11441,6 +11503,16 @@ function ZA_UpdateData()
 			[370173] = 811,
 			[396813] = 126,
 			[377942] = 126,
+			[214697] = 100,
+			[388323] = 100,
+			[386307] = 114,
+			[225443] = 127,
+			[377327] = 114,
+			[386300] = 114,
+			[386303] = 114,
+			[385708] = 114,
+			[386268] = 114,
+			[385500] = 114,
 			--qqq
 
 
@@ -20673,6 +20745,19 @@ function ZA_UpdateData()
 			[389437] = 0,
 			[396813] = 0,
 			[377942] = 133622,
+			[214697] = 0,
+			[388323] = 0,
+			[386307] = 0,
+			[225443] = 0,
+			[386308] = 0,
+			[377327] = 0,
+			[386300] = 0,
+			[386303] = 0,
+			[385763] = 0,
+			[386262] = 0,
+			[385708] = 0,
+			[386268] = 0,
+			[385500] = 0,
 			--qqi
 
 
