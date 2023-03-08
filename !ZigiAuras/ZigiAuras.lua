@@ -501,6 +501,185 @@ function ZA_UpdateData()
 			["Neutral"] = "ffff00",
 			["Hostile"] = "ff0000",
 			["Hated"] = "cc2222",
+
+			[0]   = "9d9d9d", -- Unknown
+
+			--! School
+
+			-- Physical
+			[1]   = "c6c2b9", -- Physical
+			[151] = "ffcfdd", -- Physical Pink
+			[112] = "ffbdbd", -- Physical Red
+			[107] = "ffecc6", -- Physical Orange
+			[108] = "ffdd53", -- Physical Yellow
+			[109] = "e9ffb3", -- Physical Green
+			[152] = "b3ffbc", -- Physical Teal
+			[110] = "d4e1fa", -- Physical Blue
+			[113] = "d7cbe8", -- Physical Purple
+			[100] = "8fe6ff", -- Mechanical
+			[111] = "d3d280", -- Sonic
+			[101] = "c80000", -- Bleed
+			[102] = "c80000", -- Heavy Bleed
+			[103] = "802d2d", -- Enrage
+			[105] = "ff6240", -- Bloodlust
+			[115] = "d5f77d", -- Agility
+			[117] = "efb073", -- Strength
+			[118] = "a2b7f7", -- Intellect
+			[104] = "ffeb64", -- Alacrity
+			[281] = "c9de57", -- Chemical
+			[282] = "fff6c7", -- Brew
+			[999] = "7d7d66", -- Fatigue
+
+			-- Material
+			[114] = "e6d8b3", -- Paper
+			[159] = "c5bca8", -- White Fur
+			[153] = "dec88b", -- Blonde Fur
+			[154] = "a17649", -- Fur
+			[116] = "b7955d", -- Leather
+			[155] = "b7955d", -- Dark Leather
+			[156] = "b7955d", -- Black Fur
+			[175] = "7c7365", -- Blue Fur
+			[119] = "d5df8b", -- Scale
+			[170] = "d5df8b", -- Green Scale
+			[171] = "cdc5bd", -- Gray Scale
+			[172] = "cb8c95", -- Crimson Scale
+			[176] = "ffd268", -- Bronze Scale
+			[173] = "eb7028", -- Red Scale
+			[157] = "c4bdd9", -- Cobalt Scale
+			[174] = "c4bdd9", -- Deep Sea Scale
+			[158] = "e4c4a2", -- Brown Scale
+			[150] = "b3b0a4", -- Fabric
+			[809] = "b8b7b2", -- Stone
+			[909] = "c3c9cc", -- Metal
+			[910] = "c3c9cc", -- Dark Metal
+			[132] = "e8bc9d", -- Copper
+			[133] = "ddc88a", -- Bronze
+			[131] = "e5e5e6", -- Silver
+			[130] = "f2d26b", -- Gold
+			[134] = "eef9ce", -- Mithril
+			[135] = "9dd9ca", -- Thorium
+			[136] = "9fbe5c", -- Fel Iron
+			[137] = "8cb9cc", -- Adamantite
+			[138] = "1ebcff", -- Cobalt
+			[139] = "6ac098", -- Saronite
+			[140] = "c8c4e8", -- Leystone
+			[141] = "629b42", -- Felslate
+			[142] = "9a4563X", -- Sinvyr
+
+			-- Gem
+			[808] = "a28c93", -- Crystal
+			[812] = "afb2af", -- Diamond
+			[820] = "f8b1e0", -- Spinel
+			[813] = "e598f3", -- Amethyst
+			[814] = "51d3ff", -- Sapphire
+			[822] = "63fff6", -- Aquamarine
+			[815] = "b1ff87", -- Emerald
+			[821] = "ddff69", -- Peridot
+			[816] = "fffe91", -- Citrine
+			[810] = "fba015", -- Amber
+			[817] = "ffae57", -- Topaz
+			[818] = "f56760", -- Ruby
+			[819] = "6c7f68", -- Onyx
+
+			-- Holy
+			[2]   = "ffe680", -- Holy
+			[200] = "fff58a", -- Titanic
+			[3]   = "cabe90", -- Holystrike
+			[6]   = "ffd42a", -- Radiant
+			[202] = "e7cbb6", -- Discipline
+			[201] = "46cdff", -- Ethereal
+			[204] = "46cdff", -- Azerite
+			[66]  = "f5b8ab", -- Divine
+			[660] = "ee8054", -- Legendary
+			[661] = "f1b1d3", -- Love
+
+			-- Fire
+			[4]   = "ff8000", -- Fire
+			[5]   = "ffd262", -- Flamestrike
+			[68]  = "ff754a", -- Spellfire
+			[400] = "d27b35", -- Black Fire
+			[120] = "81e084", -- Jade Fire
+			[12]  = "e76700", -- Volcanic
+			[403] = "ea767c", -- Living Flame
+			[402] = "ff521e", -- Hellfire
+			[401] = "a4ed2a", -- Felfire
+			[427] = "bac53e", -- Felstrike
+			[36]  = "ca3556", -- Shadowflame
+			[361] = "a4ed2a", -- Felshadow
+			[28]  = "e87887", -- Elemental
+			[124] = "4bce24", -- Chaos
+			[127] = "4bce24", -- Chaos
+
+			-- Nature
+			[8]   = "4dff4d", -- Nature
+			[900] = "cff3a5", -- Naturestrike
+			[10]  = "8ee858", -- Life
+			[805] = "8697ff", -- Fey
+			[806] = "009600", -- Poison
+			[906] = "009600", -- Poisonstrike
+			[908] = "4dff62", -- Slime
+			[803] = "f9c265", -- Earth
+			[903] = "dcbc85", -- Earthstrike
+			[804] = "ffea96", -- Sand
+			[811] = "b9cedc", -- Wind
+			[911] = "d9e8e8", -- Storm
+			[800] = "8af1ff", -- Lightning
+			[9]   = "c0e8ff", -- Stormstrike
+			[802] = "7bff96", -- Mist
+			[807] = "7effc2", -- Jade Lightning
+			[907] = "aafff8", -- Chi
+			[280] = "aeffc5", -- Spiritual
+
+			-- Frost
+			[16]  = "80ffff", -- Frost
+			[160] = "c0faff", -- Ice
+			[17]  = "a5b9d5", -- Froststrike
+			[801] = "71e2ff", -- Water
+			[901] = "76c6b8", -- Waterstrike
+			[24]  = "5ac7d3", -- Froststorm
+			[80]  = "7e9aff", -- Spellfrost
+			[18]  = "caf8e8", -- Holyfrost
+			[48]  = "7583f0", -- Shadowfrost
+			[20]  = "f5cea8", -- Frostfire
+
+			-- Shadow
+			[32]  = "8080ff", -- Shadow
+			[33]  = "8e5d93", -- Shadowstrike
+			[328] = "7f57c2", -- Psychic
+			[320] = "3714ff", -- Void
+			[34]  = "cb38dc", -- Twilight
+			[321] = "f90000", -- Blood
+			[322] = "cb765f", -- Pain
+			[323] = "8080ff", -- Haunt
+			[324] = "e09499", -- Corruption
+			[412] = "e8235c", -- Nightmare
+			[327] = "8080ff", -- Dread
+			[96]  = "a654ff", -- Runic (Spellshadow)
+			[325] = "9600ff", -- Curse
+			[40]  = "967213", -- Plague
+			[410] = "966400", -- Disease
+			[414] = "b4e54e", -- Unholy
+			[415] = "bfbe73", -- Bone
+			[326] = "20db9e", -- Necromancy
+			[413] = "2c95c4", -- Drust
+			[720] = "70d7db", -- Spectral
+			[411] = "768f84", -- Death
+
+			-- Arcane
+			[64]  = "ff80ff", -- Arcane
+			[640] = "d28aff", -- Lunar
+			[65]  = "ab8ac2", -- Spellstrike
+			[126] = "3296ff", -- Magic
+			[62]  = "aef0e4", -- Chromatic
+			[620] = "ff8fa3", -- Devastation
+			[621] = "fcc077", -- Preservation
+			[646] = "a4feff", -- Conjuration
+			[641] = "ebc166", -- Temporal
+			[72]  = "ab66ff", -- Astral
+			[721] = "bdb0f6", -- Stellar
+			[722] = "65efff", -- Celestial
+			[203] = "ffffff", -- Hyperlight
+			[106] = "f4ca9c", -- Cosmic
 		}
 
 
@@ -522,15 +701,39 @@ function ZA_UpdateData()
 			elseif ZA.Spells[name] then
 				-- Name
 				return ZA.Gradients[ZA.Spells[name]]
-			elseif ZA.AutoSpells[name..":"..icon] then
-				-- Auto: Name:Icon
-				return ZA.Gradients[ZA.AutoSpells[name..":"..icon]]
-			elseif ZA.AutoSpells[name] then
-				-- Auto: Name
-				return ZA.Gradients[ZA.AutoSpells[name]]
+			elseif ZA.AutoSpells[id] then
+				-- Auto
+				return ZA.Gradients[ZA.AutoSpells[id]]
 			else
 				-- No Match
 				return ZA.Gradients[0]
+			end
+		end
+
+		-- GetSolid function
+		function ZA.GetSolid(id, name, icon)
+			local id = tonumber(id or 0)
+			local name = name or ""
+			local icon = tonumber(icon or 0) or 0
+
+			if id > 0 and ZA.Spells[id] then
+				-- SpellID
+				return ZA.Colors[ZA.Spells[id]]
+			elseif ZA.Spells[name..":"..icon] then
+				-- Name:Icon
+				return ZA.Colors[ZA.Spells[name..":"..icon]]
+			elseif icon > 0 and ZA.Spells[":"..icon] then
+				-- :Icon
+				return ZA.Colors[ZA.Spells[":"..icon]]
+			elseif ZA.Spells[name] then
+				-- Name
+				return ZA.Colors[ZA.Spells[name]]
+			elseif ZA.AutoSpells[id] then
+				-- Auto
+				return ZA.Colors[ZA.AutoSpells[id]]
+			else
+				-- No Match
+				return ZA.Colors[0]
 			end
 		end
 
@@ -883,6 +1086,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Trained Flayedwing"] = 415,
 			["Alliance Gunship Cannon"] = 100,
 			["Horde Gunship Cannon"] = 100,
 			["Surging Torrent"] = 801,
@@ -1075,6 +1279,17 @@ function ZA_UpdateData()
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[394745] = "Seize the Moment: Critical Strike", -- Draconic Hierophant's Finery
+			[388435] = "Spirit of Sharing: Versatility", -- Uncommon Community Feast
+			[388436] = "Spirit of Sharing: Versatility", -- Common Community Feast
+			[388437] = "Spirit of Sharing: Versatility", -- Rare Community Feast
+			[388438] = "Spirit of Sharing: Versatility", -- Epic Community Feast
+			[388439] = "Spirit of Sharing: Versatility", -- Legendary Community Feast
+			[394714] = "Ally of the Light: Versatility", -- Virtuous Silver Cataphract
+			[375343] = "Empowered Frost: Versatility", -- Elemental Lariat
+			[375345] = "Empowered Earth: Mastery", -- Elemental Lariat
+			[375335] = "Empowered Fire: Critical Strike", -- Elemental Lariat
+			[375342] = "Empowered Air: Haste", -- Elemental Lariat
 			[387790] = "Confluence: Critical Strike", -- Unstable Elemental Confluence
 			[387876] = "Confluence: Haste", -- Unstable Elemental Confluence
 			[387874] = "Confluence: Mastery", -- Unstable Elemental Confluence
@@ -1112,7 +1327,7 @@ function ZA_UpdateData()
 			[381998] = "Winds of Ohn'ahra: Haste", -- Ohn'ahra's Carving
 			[392216] = "Gryphon's Gift: Haste", -- Plume of the Forgotten
 			[389114] = "Razorwind Blessing: Critical Strike", -- Razorwind Talisman
-			[382094] = "Concussive Force: Attack Power", -- Rumbling Ruby
+			[382094] = "Concussive Force", -- Rumbling Ruby
 			-- Sands of Temporal Perfection
 			-- Seasoned Hunter's Trophy
 			-- Tome of Unstable Power
@@ -1197,7 +1412,9 @@ function ZA_UpdateData()
 			[34775] = "Dragonspine Flurry: Haste", -- Dragonspine Trophy
 			[35095] = "Enlightenment: Versatility", -- Pendant of the Violet Eye
 			[35163] = "Silver Crescent: Spell Power", -- Icon of the Silver Crescent
+			[194645] = "Silver Crescent: Intellect", -- Icon of the Silver Crescent
 			[35165] = "Essence of the Martyr: Spell Power", -- Essence of the Martyr
+			[194637] = "Essence of the Martyr: Versatility", -- Essence of the Martyr
 			[35166] = "Lust for Battle: Attack Power", -- Bloodlust Brooch
 			[35337] = "Spell Power", -- Xi'ri's Gift/Scryer's Bloodgem
 			[35733] = "Ancient Power: Attack Power", -- Core of Ar'kelos
@@ -1455,6 +1672,7 @@ function ZA_UpdateData()
 
 			-- Priest
 			["Shadowform"] = true,
+			[341291] = true, -- Unfurling Darkness
 
 			-- Rogue
 			[315584] = true, -- Instant Poison
@@ -1732,6 +1950,16 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[213213] = "State", -- Masquerade
+			[211086] = "State", -- Masquerade
+			[232951] = "State", -- Masquerade
+			[232968] = "State", -- Masquerade
+			[232967] = "State", -- Masquerade
+			[230370] = "State", -- Masquerade
+			[211086] = "State", -- Masquerade
+			[211135] = "State", -- Masquerade
+			[392215] = "State", -- Nokhudon Training Course
+			[387871] = "State", -- Carry Supplies
 			[377935] = "State", -- Carry Beaver Kit
 			[254239] = "State", -- Boon of the Titans
 			[385095] = "State", -- Arcane S.E.L.F.I.E.
@@ -1859,6 +2087,7 @@ function ZA_UpdateData()
 			[51721] = "State", -- Dominion Over Acherus
 			[52693] = "State", -- Realm of Shadows
 			[82788] = "Zone", -- Clever Plant Disguise
+			[398118] = "Zone", -- Warmth
 			[82580] = "State", -- Bravo Company Field Kit
 			[82587] = "State", -- Bravo Company Field Kit
 			[79528] = "State", -- Potion of Shrouding
@@ -1875,6 +2104,17 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[388966] = "Zone", -- Everlasting Horn of Lavaswimming
+			[386989] = "Zone", -- Steam Pressure!
+			[386990] = "Zone", -- Water Pressure!
+			[121483] = "Zone", -- Blessing of the Waterspeaker
+			[122714] = "Zone", -- Lorewalkers' Alacrity
+			[202285] = "Zone", -- Mug of Mead
+			[202160] = "Zone", -- Odyn's Blessing
+			[396908] = "Zone", -- Odyn's Favor
+			[384802] = "Zone", -- Resonant Key
+			[389168] = "Zone", -- Nokhud Martial
+			[392051] = "Zone", -- Spiritual Awakening
 			[398118] = "Zone", -- Warmth
 			[109251] = "Zone", -- Power of the Aspects
 			[109253] = "Zone", -- Power of the Aspects
@@ -2129,6 +2369,7 @@ function ZA_UpdateData()
 			[80354] = true, -- Temporal Displacement (Time Warp)
 			[264689] = true, -- Fatigued (Ancient Hysteria)
 			[265703] = true, -- Azerite Energy (Island Expeditions)
+			[211319] = true, -- Restitution (Pr€€iest)
 
 
 			-----------------
@@ -2181,6 +2422,17 @@ function ZA_UpdateData()
 			[341260] = ZA.PrimaryStatSchool, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[394745] = 3, -- Seize the Moment (Draconic Hierophant's Finery)
+			[388435] = 5, -- Spirit of Sharing (Uncommon Community Feast)
+			[388436] = 5, -- Spirit of Sharing (Common Community Feast)
+			[388437] = 5, -- Spirit of Sharing (Rare Community Feast)
+			[388438] = 5, -- Spirit of Sharing (Epic Community Feast)
+			[388439] = 5, -- Spirit of Sharing (Legendary Community Feast)
+			[394714] = 2, -- Ally of the Light (Virtuous Silver Cataphract)
+			[375343] = 16, -- Elemental Lariat - Empowered Frost (Versatility)
+			[375345] = 803, -- Elemental Lariat - Empowered Earth (Mastery)
+			[375335] = 4, -- Elemental Lariat - Empowered Fire (Critical Strike)
+			[375342] = 811, -- Elemental Lariat - Empowered Air (Haste)
 			[387790] = 4, -- Unstable Elemental Confluence (Critical Strike)
 			[387876] = 811, -- Unstable Elemental Confluence (Haste)
 			[387874] = 801, -- Unstable Elemental Confluence (Mastery)
@@ -2306,8 +2558,10 @@ function ZA_UpdateData()
 			[34747] = 118, -- Eye of Magtheridon
 			[34775] = 816, -- Dragonspine Trophy
 			[35095] = 814, -- Pendant of the Violet Eye
-			[35163] = 118, -- Icon of the Silver Crescent
+			[35163] = 721, -- Icon of the Silver Crescent
+			[194645] = 721, -- Icon of the Silver Crescent
 			[35165] = 118, -- Essence of the Martyr
+			[194637] = 202, -- Essence of the Martyr
 			[35166] = 117, -- Bloodlust Brooch
 			[35337] = 118, -- Xi'ri's Gift/Scryer's Bloodgem
 			[35733] = 117, -- Core of Ar'kelos
@@ -2454,6 +2708,44 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Arcane Emanation"] = 64,
+			[395827] = 101, -- Severing Gore
+			["Severing Gore"] = 101,
+			["Fae Exposure"] = 805,
+			[395414] = 805, -- Fae Exposure
+			["Raging Winds"] = 811,
+			[385907] = 104, -- Take 'em by Surprise
+			[384360] = 126, -- Temporal Velocity
+			[383864] = 12, -- Summon Droplet
+			[121483] = 901, -- Blessing of the Waterspeaker
+			[396020] = 130, -- Golden Barrier
+			[396019] = 903, -- Staggering Blow
+			[122714] = 104, -- Lorewalkers' Alacrity
+			["Flashfire"] = 4,
+			["Break time"] = 114,
+			[211319] = 999, -- Restitution
+			["Stygian Blast"] = 411,
+			[389890] = "Fury",
+			["Prayer of Healing"] = 2,
+			[394729] = 6, -- Prayer Focus (Draconic Hierophant's Finery)
+			["Open"] = 100,
+			["Storming Barrier"] = 800,
+			["Storming Blow"] = 9,
+			[392022] = 4, -- Boiling Point
+			[392021] = 4, -- Boiling Point
+			[392455] = 911, -- Angry Headbutt
+			["Demoralizing Roar"] = 111,
+			[396709] = 111,
+			[392884] = 8, -- Frenetic Foraging
+			[392341] = 903, -- Mighty Swipe
+			[376024] = 818, -- Red Recovery
+			[363522] = 106, -- Gladiator's 
+			[375981] = 32, -- Shadowy Insight
+			[87160] = 48, -- Surge of Darkness
+			[77404] = 100, -- Gnomish VLD Parachute
+			["The Most Complicated Bomb in the World"] = 100,
+			[387626] = 32, -- Soulburn
+			["Soulburn"] = 32,
 			["Cinderbolt"] = 4,
 			["Flame Dance"] = 4,
 			[399785] = 16, -- Guardian's Duty
@@ -2863,7 +3155,7 @@ function ZA_UpdateData()
 			["Turbulent Waters"] = 801,
 			["Strength Of Mountains"] = 803,
 			["Iskaara Watergliders"] = 801,
-			[391042] = 811, -- Ohn'ir Windsage's Hearthstone
+			[391042] = 720, -- Ohn'ir Windsage's Hearthstone
 			["Erupting Earth"] = 400,
 			["Crimson Flame"] = 403,
 			["Dragon Rend"] = 101,
@@ -2898,6 +3190,7 @@ function ZA_UpdateData()
 			[387300] = 126, -- Arcane Barrage (Mana Wyrm)
 			["Into the Fray"] = 104,
 			[385391] = 65, -- Spell Reflection (DR)
+			["Spell Block"] = 65,
 			["Restoration Protocal"] = 200,
 			["Tempest's Fury:572029"] = 24,
 			["Submerge:2530431"] = 801,
@@ -3405,10 +3698,10 @@ function ZA_UpdateData()
 			["Fey Missile"] = 805,
 			["Denizen of the Dream"] = 805,
 			["Mind Flay: Insanity"] = 328,
-			["Dark Ascension"] = 32,
+			["Dark Ascension"] = 320,
 			["Lightwell"] = 2,
 			["Lightwell Charges"] = 2,
-			["Divine Image"] = 201,
+			["Divine Image"] = 3,
 			["Divine Word"] = 66,
 			["Divine Favor: Chastise"] = 66,
 			["Divine Favor: Serenity"] = 200,
@@ -3441,7 +3734,6 @@ function ZA_UpdateData()
 			["Goin' Bananas"] = 108,
 			["Slippery Suds"] = 901,
 			["Lorewalker's Alacrity"] = 104,
-			["Blessing of the Waterspeaker"] = 801,
 			["Bubble Burst"] = 801,
 			["Hydrolance"] = 801,
 			["Call Water"] = 801,
@@ -4059,7 +4351,6 @@ function ZA_UpdateData()
 			["Blessing of Spring"] = 10,
 			["Blessing of Summer"] = 66,
 			["Blessing of the Archon"] = 201,
-			["Blessing of the Silver Crescent"] = 3,
 			["Blessing of Winter"] = 805,
 			["Blight Bomb"] = 908,
 			["Blight Crystal Explosion"] = 810,
@@ -6601,7 +6892,7 @@ function ZA_UpdateData()
 			["Milling"] = 900,
 			["Mimic:342913"] = 410,
 			["Mind Blast"] = 328,
-			["Mind Melt"] = 48,
+			["Mind Melt"] = 328,
 			["Mind Bomb"] = 328,
 			["Bitter Withdrawal"] = 328,
 			["Mind Control"] = 328,
@@ -9154,7 +9445,7 @@ function ZA_UpdateData()
 			[359372] = 910, -- Mawdapted Raptora
 			[359373] = 131, -- Raptora Swooper
 			[385266] = 172, -- Zenet Hatchling
-			[359408] = 811, -- Divine Kiss of Ohn'ahra
+			[395644] = 811, -- Divine Kiss of Ohn'ahra
 			-- Raven
 			[231524] = 141, -- Shadowblade's Baneful Omen
 			[231525] = 142, -- Shadowblade's Crimson Omen
@@ -11513,6 +11804,32 @@ function ZA_UpdateData()
 			[385708] = 114,
 			[386268] = 114,
 			[385500] = 114,
+			[102221] = 808,
+			[101874] = 157,
+			[387860] = 100,
+			[387873] = 100,
+			[101993] = 113,
+			[101988] = 64,
+			[101863] = 900,
+			[101868] = 114,
+			[384800] = 116,
+			[392042] = 720,
+			[397802] = 100,
+			[341159] = 641,
+			[323215] = 805,
+			[210253] = 100,
+			[391682] = 80,
+			[391609] = 80,
+			[385577] = 111,
+			[385576] = 111,
+			[385575] = 111,
+			[385327] = 8,
+			[385326] = 8,
+			[385325] = 8,
+			[396147] = 811,
+			[396148] = 811,
+			[385330] = 811,
+			[382427] = 5,
 			--qqq
 
 
@@ -11708,34 +12025,65 @@ function ZA_UpdateData()
 			[344797] = 100, -- Underpowered Gravity Pack
 
 			--! Alchemy
-
-			--"Mana"	Mana
-			--321		Health
-			--64		Rejuvenation
-
-			--115		Agility
-			--117		Strength
-			--118		Intellect
-			--818		Stamina
-
-			--910		Armor
-			--817		Critical Strike
-			--816		Haste
-			--813		Mastery
-			--814		Versatility
-
-			--820		Power
-			--10		Mending
-
-			--646		Transmutation
-
-			--720		Invisibility
-			--104		Movement Speed
-			--65		Stealth/Detection
-			--323		Living Action
-			--202		Dispel
-			--906		Anti-Venom
-
+			-- Dragon Isles
+			[389190] = 646, -- Recraft Equipment
+			[370747] = 281, -- Advanced Phial Experimentation
+			[370745] = 281, -- Advanced Potion Experimentation
+			[370547] = "Mana", -- Aerated Mana Potion
+			[370472] = 811, -- Aerated Phial of Deftness
+			[381270] = 811, -- Aerated Phial of Quick Hands
+			[370732] = 820, -- Agitating Potion Augmentation
+			[370677] = 646, -- Alacritous Alchemist Stone
+			[370746] = 281, -- Basic Phial Experimentation
+			[370743] = 281, -- Basic Potion Experimentation
+			[370521] = 811, -- Bottled Putrescence
+			[370730] = 808, -- Brood Salt
+			[370673] = 281, -- Cauldron of the Pooka
+			[370476] = 811, -- Charged Phial of Alacrity
+			[370483] = 16, -- Crystalline Phial of Perception
+			[370536] = 16, -- Delicate Suspension of Spores
+			[370551] = 28, -- Elemental Potion of Power
+			[370543] = 28, -- Elemental Potion of Ultimate Power
+			[370725] = 134, -- Exultant Incense
+			[370728] = 132, -- Fervid Incense
+			[377978] = 661, -- Heart in a Bottle
+			[370457] = 16, -- Iced Phial of Corrupting Rage
+			[370735] = 100, -- Illustrious Insight
+			[370722] = 62, -- Omnium Draconis
+			[370460] = 811, -- Phial of Charged Isolation
+			[370504] = 28, -- Phial of Elemental Chaos
+			[370462] = 16, -- Phial of Glacial Fury
+			[370456] = 16, -- Phial of Icy Preservation
+			[370463] = 811, -- Phial of Static Empowerment
+			[370453] = 811, -- Phial of Still Air
+			[370465] = 811, -- Phial of Tepid Versatility
+			[370438] = 811, -- Phial of the Eye in the Storm
+			[370738] = 321, -- Potion Absorption Inhibitor
+			[370668] = 28, -- Potion Cauldron of Power
+			[370672] = 28, -- Potion Cauldron of Ultimate Power
+			[370525] = 16, -- Potion of Chilled Clarity
+			[370478] = 16, -- Potion of Frozen Fatality
+			[370524] = "Mana", -- Potion of Frozen Focus
+			[370558] = 811, -- Potion of Gusts
+			[370561] = 811, -- Potion of Shocking Disclosure
+			[370556] = 811, -- Potion of the Hushed Zephyr
+			[370528] = 16, -- Potion of Withering Vitality
+			[370717] = 28, -- Primal Convergent
+			[370733] = 620, -- Reactive Phial Embellishment
+			[370539] = 321, -- Refreshing Healing Potion
+			[370533] = 811, -- Residual Neural Channeling Agent
+			[370723] = 108, -- Sagacious Incense
+			[370724] = 48, -- Somniferous Incense
+			[370729] = 108, -- Stable Fluidic Draconium
+			[370473] = 16, -- Steaming Phial of Finesse
+			[370676] = 646, -- Sustaining Alchemist Stone
+			[370711] = 811, -- Transmute: Awakened Air
+			[370710] = 803, -- Transmute: Awakened Earth
+			[370707] = 4, -- Transmute: Awakened Fire
+			[370708] = 16, -- Transmute: Awakened Frost
+			[370714] = 28, -- Transmute: Decay to Elements
+			[370715] = 28, -- Transmute: Order to Elements
+			[370731] = 810, -- Writhefire Oil
 			-- Shadowlands
 			[338204] = 281, -- Bramblethorn Juice
 			[338199] = 281, -- Brutal Oil
@@ -12418,6 +12766,96 @@ function ZA_UpdateData()
 			[11458] = 64, -- Wildvine Potion
 
 			--! Blacksmithing
+			-- Dragon Isles
+			[4620670] = 909, -- Recraft Equipment
+			[367615] = 909, -- Allied Chestplate of Generosity
+			[367614] = 909, -- Allied Wristguard of Companionship
+			[371403] = 909, -- Alvin the Anvil
+			[371349] = 909, -- Armor Spikes
+			[371372] = 909, -- Black Dragon Touched Hammer
+			[376617] = 909, -- Crimson Combatant's Draconium Armguards
+			[376618] = 909, -- Crimson Combatant's Draconium Breastplate
+			[376619] = 909, -- Crimson Combatant's Draconium Gauntlets
+			[376620] = 909, -- Crimson Combatant's Draconium Greaves
+			[376621] = 909, -- Crimson Combatant's Draconium Helm
+			[376622] = 909, -- Crimson Combatant's Draconium Pauldrons
+			[376623] = 909, -- Crimson Combatant's Draconium Sabatons
+			[376624] = 909, -- Crimson Combatant's Draconium Waistguard
+			[367600] = 909, -- Draconium Axe
+			[371344] = 909, -- Draconium Blacksmith's Hammer
+			[371364] = 909, -- Draconium Blacksmith's Toolbox
+			[393404] = 909, -- Draconium Defender
+			[367596] = 909, -- Draconium Dirk
+			[393416] = 909, -- Draconium Great Axe
+			[367598] = 909, -- Draconium Great Mace
+			[367595] = 909, -- Draconium Knuckles
+			[371338] = 909, -- Draconium Leatherworker's Knife
+			[371360] = 909, -- Draconium Leatherworker's Toolset
+			[371302] = 909, -- Draconium Needle Set
+			[371309] = 909, -- Draconium Pickaxe
+			[371343] = 909, -- Draconium Sickle
+			[371304] = 909, -- Draconium Skinning Knife
+			[367597] = 909, -- Draconium Stiletto
+			[367599] = 909, -- Draconium Sword
+			[367611] = 909, -- Explorer's Expert Clasp
+			[395879] = 909, -- Explorer's Expert Gauntlets
+			[395881] = 909, -- Explorer's Expert Greaves
+			[395883] = 909, -- Explorer's Expert Helm
+			[395880] = 909, -- Explorer's Expert Spaulders
+			[367610] = 909, -- Explorer's Plate Boots
+			[367609] = 909, -- Explorer's Plate Bracers
+			[395886] = 909, -- Explorer's Plate Chestguard
+			[367712] = 20, -- Frostfire Alloy
+			[367619] = 909, -- Frostfire Legguards of Preparation
+			[377981] = 661, -- Heart in a Bottle
+			[376700] = 100, -- Illustrious Insight
+			[367714] = 321, -- Infurious Alloy
+			[367617] = 909, -- Infurious Helm of Vengeance
+			[367616] = 909, -- Infurious Warboots of Impunity
+			[371412] = 909, -- Khaz'gorite Blacksmith's Hammer
+			[371374] = 909, -- Khaz'gorite Blacksmith's Toolbox
+			[371369] = 909, -- Khaz'gorite Leatherworker's Knife
+			[371371] = 909, -- Khaz'gorite Leatherworker's Toolset
+			[371368] = 909, -- Khaz'gorite Needle Set
+			[371366] = 909, -- Khaz'gorite Pickaxe
+			[371365] = 909, -- Khaz'gorite Sickle
+			[371367] = 909, -- Khaz'gorite Skinning Knife
+			[393853] = 909, -- Master's Hammer
+			[367713] = 12, -- Obsidian Seared Alloy
+			[367590] = 909, -- Obsidian Seared Claymore
+			[367591] = 909, -- Obsidian Seared Crusher
+			[367589] = 909, -- Obsidian Seared Facesmasher
+			[367588] = 909, -- Obsidian Seared Halberd
+			[367587] = 909, -- Obsidian Seared Hexsword
+			[367592] = 909, -- Obsidian Seared Invoker
+			[367594] = 909, -- Obsidian Seared Runeaxe
+			[367593] = 909, -- Obsidian Seared Slicer
+			[365735] = 12, -- Primal Molten Alloy
+			[367608] = 909, -- Primal Molten Breastplate
+			[367622] = 909, -- Primal Molten Defender
+			[367606] = 909, -- Primal Molten Gauntlets
+			[365734] = 909, -- Primal Molten Greataxe
+			[367602] = 909, -- Primal Molten Greatbelt
+			[367605] = 909, -- Primal Molten Helm
+			[367604] = 909, -- Primal Molten Legplates
+			[367585] = 909, -- Primal Molten Longsword
+			[367586] = 909, -- Primal Molten Mace
+			[367603] = 909, -- Primal Molten Pauldrons
+			[367607] = 909, -- Primal Molten Sabatons
+			[365730] = 909, -- Primal Molten Shortblade
+			[365731] = 909, -- Primal Molten Spellblade
+			[367601] = 909, -- Primal Molten Vambraces
+			[365729] = 909, -- Primal Molten Warglaive
+			[371682] = 809, -- Primal Razorstone
+			[371674] = 809, -- Primal Weightstone
+			[371650] = 809, -- Primal Whetstone
+			[377281] = 100, -- Prototype Explorer's Barding Framework
+			[377280] = 100, -- Prototype Regal Barding Framework
+			[371395] = 909, -- Serevite Repair Hammer
+			[371394] = 909, -- Serevite Skeleton Key
+			[367623] = 909, -- Shield of the Hearth
+			[388279] = 909, -- Sturdy Expedition Shovel
+			[367618] = 909, -- Unstable Frostfire Belt
 			-- Shadowlands
 			[359700] = 660, -- Vestige of the Eternal
 			[352439] = 660, -- Vestige of Origins
@@ -13581,6 +14019,75 @@ function ZA_UpdateData()
 			[3115] = 809, -- Rough Weightstone
 
 			--! Enchanting
+			-- Dragon Isles
+			[389191] = 126, -- Recraft Equipment
+			[389416] = 126, -- Accelerated Agility
+			[389547] = 126, -- Burning Devotion
+			[389537] = 126, -- Burning Writ
+			[389301] = 126, -- Devotion of Avoidance
+			[389292] = 126, -- Devotion of Critical Strike
+			[389293] = 126, -- Devotion of Haste
+			[389303] = 126, -- Devotion of Leech
+			[389294] = 126, -- Devotion of Mastery
+			[389304] = 126, -- Devotion of Speed
+			[389295] = 126, -- Devotion of Versatility
+			[389508] = 126, -- Draconic Deftness
+			[389513] = 126, -- Draconic Finesse
+			[389519] = 126, -- Draconic Inspiration
+			[389525] = 126, -- Draconic Perception
+			[389530] = 126, -- Draconic Resourcefulness
+			[389549] = 126, -- Earthen Devotion
+			[389540] = 126, -- Earthen Writ
+			[391176] = 126, -- Enchanted Writhebark Wand
+			[389551] = 126, -- Frozen Devotion
+			[389543] = 126, -- Frozen Writ
+			[389403] = 126, -- Graceful Avoidance
+			[377982] = 661, -- Heart in a Bottle
+			[389405] = 126, -- Homebound Speed
+			[391813] = 126, -- Illusion: Primal Air
+			[391814] = 126, -- Illusion: Primal Earth
+			[391815] = 126, -- Illusion: Primal Fire
+			[391816] = 126, -- Illusion: Primal Frost
+			[390839] = 126, -- Illusion: Primal Mastery
+			[391810] = 126, -- Illusory Adornment: Air
+			[391811] = 126, -- Illusory Adornment: Earth
+			[390951] = 126, -- Illusory Adornment: Fire
+			[391809] = 126, -- Illusory Adornment: Frost
+			[391812] = 126, -- Illusory Adornment: Order
+			[391202] = 100, -- Illustrious Insight
+			[390855] = 126, -- Khadgar's Disenchanting Rod
+			[389479] = 126, -- Plainsrunner's Breeze
+			[391185] = 28, -- Primal Invocation Extract
+			[389404] = 126, -- Regenerative Leech
+			[389417] = 126, -- Reserve of Intellect
+			[389480] = 126, -- Rider's Reassurance
+			[390823] = 126, -- Runed Draconium Rod
+			[390825] = 126, -- Runed Khaz'gorite Rod
+			[394189] = 126, -- Runed Serevite Rod
+			[391806] = 126, -- Scepter of Spectacle: Air
+			[391807] = 126, -- Scepter of Spectacle: Earth
+			[391196] = 126, -- Scepter of Spectacle: Fire
+			[391197] = 126, -- Scepter of Spectacle: Frost
+			[391808] = 126, -- Scepter of Spectacle: Order
+			[390831] = 200, -- Sophic Amalgamation
+			[389550] = 126, -- Sophic Devotion
+			[389542] = 126, -- Sophic Writ
+			[389419] = 126, -- Sustained Strength
+			[391179] = 126, -- Torch of Primal Awakening
+			[389558] = 126, -- Wafting Devotion
+			[389546] = 126, -- Wafting Writ
+			[389410] = 126, -- Waking Stats
+			[389484] = 126, -- Watcher's Loam
+			[389397] = 126, -- Writ of Avoidance
+			[389297] = 126, -- Writ of Avoidance
+			[388930] = 126, -- Writ of Critical Strike
+			[389135] = 126, -- Writ of Haste
+			[389398] = 126, -- Writ of Leech
+			[389298] = 126, -- Writ of Leech
+			[389136] = 126, -- Writ of Mastery
+			[389400] = 126, -- Writ of Speed
+			[389300] = 126, -- Writ of Speed
+			[389151] = 126, -- Writ of Versatility
 			-- Shadowlands
 			[309645] = 126, -- Eternal Crystal
 			[309644] = 126, -- Sacred Shard
@@ -14232,6 +14739,99 @@ function ZA_UpdateData()
 
 
 			--! Engineering
+			-- Dragon Isles
+			[389191] = 100, -- Recraft Equipment
+			[382391] = 100, -- Battle-Ready Binoculars
+			[382319] = 100, -- Complicated Cuffs
+			[382320] = 100, -- Difficult Wrist Protectors
+			[382388] = 100, -- Lightweight Ocular Lenses
+			[382318] = 100, -- Needlessly Complex Wristguards
+			[382321] = 100, -- Ol' Smoky
+			[382390] = 100, -- Oscillating Wilderness Opticals
+			[382317] = 100, -- Overengineered Sleeve Extenders
+			[382389] = 100, -- Peripheral Vision Projectors
+			[382358] = 100, -- Suspiciously Silent Crate
+			[382354] = 100, -- Suspiciously Ticking Crate
+			[382400] = 100, -- Khaz'gorite Brainwave Amplifier
+			[382341] = 100, -- Khaz'gorite Delver's Helmet
+			[382399] = 100, -- Khaz'gorite Encased Samophlange
+			[382329] = 100, -- Khaz'gorite Fisherfriend
+			[382342] = 100, -- Lapidary's Khaz'gorite Clamps
+			[382340] = 100, -- Spring-Loaded Khaz'gorite Fabric Cutters
+			[382408] = 100, -- Atomic Recalibrator
+			[382350] = 100, -- Calibrated Safety Switch
+			[382368] = 100, -- Centralized Precipitation Emitter
+			[382349] = 100, -- Critical Failure Prevention Unit
+			[382371] = 100, -- Element-Infused Rocket Helmet
+			[382369] = 100, -- Environmental Emulator
+			[382370] = 100, -- Giggle Goggles
+			[382353] = 100, -- I.W.I.N. Button Mk10
+			[382351] = 100, -- Magazine of Healing Darts
+			[382328] = 100, -- S.A.V.I.O.R.
+			[384491] = 100, -- Spring-Loaded Capacitor Casing
+			[382334] = 100, -- Tinker: Alarm-O-Turret
+			[393796] = 100, -- Tinker: Arclight Vital Correctors
+			[386667] = 100, -- Tinker: Polarity Amplifier
+			[382359] = 100, -- Tinker: Supercollide-O-Tron
+			[387246] = 100, -- Zapthrottle Soul Inhaler
+			[382348] = 100, -- Overcharged Overclocker
+			[382326] = 100, -- High Intensity Thermal Scanner
+			[382325] = 100, -- Projectile Propulsion Pinion
+			[382355] = 100, -- EZ-Thro Creature Combustion Canister
+			[382356] = 100, -- EZ-Thro Gravitational Displacer
+			[386670] = 100, -- EZ-Thro Grease Grenade
+			[382357] = 100, -- EZ-Thro Primal Deconstruction Charge
+			[382336] = 5, -- H.E.L.P.
+			[382332] = 100, -- Quack-E
+			[382324] = 100, -- Tinker: Breath of Neltharion
+			[382344] = 100, -- Tinker: Grounded Circuitry
+			[382367] = 100, -- Wyrmhole Generator
+			[382379] = 100, -- Arclight Capacitor
+			[382387] = 100, -- P.E.W. x2
+			[382380] = 100, -- Reinforced Machine Chassis
+			[396777] = 100, -- Tinker Removal Kit
+			[382381] = 100, -- Illustrious Insight
+			[382339] = 100, -- Bottomless Mireslush Ore Satchel
+			[382393] = 100, -- Bottomless Stonecrust Ore Satchel
+			[382398] = 100, -- Draconium Brainwave Amplifier
+			[382392] = 100, -- Draconium Delver's Helmet
+			[382397] = 100, -- Draconium Encased Samophlange
+			[382394] = 100, -- Draconium Fisherfriend
+			[382395] = 100, -- Lapidary's Draconium Clamps
+			[382396] = 100, -- Spring-Loaded Draconium Fabric Cutters
+			[382345] = 100, -- Assorted Safety Fuses
+			[384313] = 813, -- Black Fireflight
+			[382403] = 814, -- Blue Fireflight
+			[382327] = 100, -- Bundle of Fireworks
+			[382331] = 100, -- D.U.C.K.O.Y.
+			[382335] = 815, -- Green Fireflight
+			[382402] = 100, -- Gyroscopic Kaleidoscope
+			[382404] = 818, -- Red Fireflight
+			[382365] = 100, -- Completely Safe Rockets
+			[382366] = 100, -- Endless Stack of Needles
+			[382343] = 100, -- Gravitational Displacer
+			[382323] = 100, -- Grease Grenade
+			[382346] = 100, -- Haphazardly Tethered Wires
+			[382338] = 100, -- Portable Alchemist's Lab Bench
+			[382337] = 100, -- Portable Tinker's Workbench
+			[382333] = 100, -- Sticky Warp Grenade
+			[382363] = 100, -- Meticulously-Tuned Gear
+			[382364] = 100, -- One-Size-Fits-All Gear
+			[382362] = 100, -- Rapidly Ticking Gear
+			[382361] = 100, -- Razor-Sharp Gear
+			[382401] = 100, -- Tinker: Plane Displacer
+			[382322] = 100, -- Primal Deconstruction Charge
+			[382385] = 100, -- Deadline Deadeyes
+			[382377] = 403, -- Everburning Blasting Powder
+			[382378] = 100, -- Greased-Up Gears
+			[382384] = 100, -- Milestone Magnifiers
+			[382407] = 100, -- Neural Silencer Mk3
+			[382383] = 100, -- Quality-Assured Optics
+			[382386] = 100, -- Sentry's Stabilized Specs
+			[382376] = 100, -- Shock-Spring Coil
+			[384314] = 816, -- Bronze Fireflight
+			[382330] = 100, -- Creature Combustion Canister
+			[382375] = 133, -- Handful of Serevite Bolts
 			-- Shadowlands
 			[338216] = 133, -- Hardened Bolts
 			[338214] = 100, -- Piston Assembly
@@ -14887,7 +15487,111 @@ function ZA_UpdateData()
 			[3918] = 804, -- Rough Blasting Powder
 
 			--! Inscription
+			-- Dragon Isles
+			[389193] = 116, -- Recraft Equipment
+			[382981] = 900, -- Dragon Isles Milling
+			[383550] = 116, -- Alchemist's Brilliant Mixing Rod
+			[383549] = 116, -- Alchemist's Sturdy Mixing Rod
+			[383533] = 16, -- Azurescale Sigil
+			[383563] = 114, -- Blazing Fortune
+			[383786] = 402, -- Blazing Ink
+			[383536] = 200, -- Bronzescale Sigil
+			[383512] = 114, -- Bundle O' Cards: Dragon Isles
+			[383791] = 64, -- Burnished Ink
+			[383527] = 8, -- Buzzing Rune
+			[383551] = 154, -- Chef's Smooth Rolling Pin
+			[383552] = 154, -- Chef's Splendid Rolling Pin
+			[383531] = 16, -- Chilled Rune
+			[383525] = 811, -- Chirping Rune
+			[383574] = 80, -- Cliffside Wylderdrake: Conical Head
+			[383575] = 80, -- Cliffside Wylderdrake: Red Hair
+			[391836] = 80, -- Cliffside Wylderdrake: Silver and Blue Armor
+			[391846] = 80, -- Cliffside Wylderdrake: Steel and Yellow Armor
+			[383576] = 80, -- Cliffside Wylderdrake: Triple Head Horns
+			[383592] = 114, -- Contract: Artisan's Consortium
+			[383593] = 114, -- Contract: Dragonscale Expedition
+			[383588] = 114, -- Contract: Iskaara Tuskarr
+			[383591] = 114, -- Contract: Maruuk Centaur
+			[383590] = 114, -- Contract: Valdrakken Accord
+			[383539] = 114, -- Core Explorer's Compendium
+			[383790] = 812, -- Cosmic Ink
+			[383540] = 114, -- Crackling Codex of the Isles
+			[400028] = 112, -- Crimson Combatant's Emblem
+			[400027] = 112, -- Crimson Combatant's Insignia of Alacrity
+			[400026] = 112, -- Crimson Combatant's Medallion
+			[383770] = 114, -- Darkmoon Deck Box: Dance
+			[383325] = 114, -- Darkmoon Deck Box: Inferno
+			[383767] = 114, -- Darkmoon Deck Box: Rime
+			[383772] = 114, -- Darkmoon Deck Box: Watcher
+			[390850] = 114, -- Draconic Missive of Crafting Speed
+			[390853] = 114, -- Draconic Missive of Deftness
+			[390851] = 114, -- Draconic Missive of Finesse
+			[390847] = 114, -- Draconic Missive of Inspiration
+			[390849] = 114, -- Draconic Missive of Multicraft
+			[390852] = 114, -- Draconic Missive of Perception
+			[390848] = 114, -- Draconic Missive of Resourcefulness
+			[383554] = 114, -- Draconic Missive of the Aurora
+			[383555] = 114, -- Draconic Missive of the Feverflare
+			[383556] = 114, -- Draconic Missive of the Fireflash
+			[383560] = 114, -- Draconic Missive of the Harmonious
+			[383561] = 114, -- Draconic Missive of the Peerless
+			[383562] = 114, -- Draconic Missive of the Quickblade
+			[383522] = 114, -- Draconic Treatise on Alchemy
+			[383517] = 114, -- Draconic Treatise on Blacksmithing
+			[383523] = 114, -- Draconic Treatise on Enchanting
+			[383844] = 114, -- Draconic Treatise on Engineering
+			[383515] = 114, -- Draconic Treatise on Herbalism
+			[383759] = 114, -- Draconic Treatise on Inscription
+			[383524] = 114, -- Draconic Treatise on Jewelcrafting
+			[383519] = 114, -- Draconic Treatise on Leatherworking
+			[383516] = 114, -- Draconic Treatise on Mining
+			[392944] = 114, -- Draconic Treatise on Skinning
+			[383520] = 114, -- Draconic Treatise on Tailoring
+			[383535] = 4, -- Emberscale Sigil
+			[384948] = 114, -- Flourishing Fortune
+			[383787] = 120, -- Flourishing Ink
+			[377985] = 661, -- Heart in a Bottle
+			[383577] = 80, -- Highland Drake: Black Hair
+			[391834] = 80, -- Highland Drake: Silver and Blue Armor
+			[383578] = 80, -- Highland Drake: Spined Crest
+			[383579] = 80, -- Highland Drake: Spined Neck
+			[391845] = 80, -- Highland Drake: Steel and Yellow Armor
+			[383529] = 111, -- Howling Rune
+			[383541] = 822, -- Illuminating Pillar of the Isles
+			[383567] = 114, -- Illusion Parchment: Aqua Torrent
+			[383570] = 114, -- Illusion Parchment: Arcane Burst
+			[383571] = 114, -- Illusion Parchment: Chilling Wind
+			[384869] = 114, -- Illusion Parchment: Love Charm
+			[383565] = 114, -- Illusion Parchment: Magma Missile
+			[383573] = 114, -- Illusion Parchment: Shadow Orb
+			[383572] = 114, -- Illusion Parchment: Spell Shield
+			[383569] = 114, -- Illusion Parchment: Whirling Breeze
+			[391781] = 100, -- Illustrious Insight
+			[383538] = 32, -- Jetscale Sigil
+			[383542] = 815, -- Kinetic Pillar of the Isles
+			[383543] = 813, -- Overseer's Writhebark Stave
+			[383544] = 132, -- Pioneer's Writhebark Stave
+			[383581] = 80, -- Renewed Proto Drake: Bovine Horns
+			[383580] = 80, -- Renewed Proto-Drake: Predator Pattern
+			[383586] = 80, -- Renewed Proto-Drake: Silver and Blue Armor
+			[383582] = 80, -- Renewed Proto-Drake: Spined Crest
+			[383587] = 80, -- Renewed Proto-Drake: Steel and Yellow Armor
+			[383530] = 116, -- Runed Writhebark
+			[383534] = 802, -- Sagescale Sigil
+			[383547] = 159, -- Scribe's Fastened Quill
+			[383548] = 159, -- Scribe's Resplendent Quill
+			[385197] = 114, -- Scroll of Sales
+			[384949] = 114, -- Serene Fortune
+			[383788] = 118, -- Serene Ink
+			[383546] = 103, -- Vantus Rune: Vault of the Incarnates
+			[383545] = 820, -- Weathered Explorer's Stave
+			[383583] = 80, -- Windborne Velocidrake: Black Fur
+			[391832] = 80, -- Windborne Velocidrake: Silver and Blue Armor
+			[383584] = 80, -- Windborne Velocidrake: Spined Head
+			[391848] = 80, -- Windborne Velocidrake: Steel and Orange Armor
+			[383585] = 80, -- Windborne Velocidrake: Windswept Pattern
 			-- Shadowlands
+			[382982] = 900, -- Shadowlands Milling
 			[338227] = 819, -- Ardenberry Ink
 			[338234] = 114, -- Catalog of Sins
 			[338225] = 114, -- Hymnal of Respite
@@ -14948,6 +15652,7 @@ function ZA_UpdateData()
 			[311406] = 107, -- Luminous Ink
 			[311405] = 117, -- Umbral Ink
 			-- Kul Tiras/Zandalar
+			[382984] = 900, -- Kul Tiras and Zandalar Milling
 			[287271] = 801, -- Aqueous Chromotography
 			[292320] = 321, -- Blood Contract: Bloodguard
 			[292012] = 321, -- Blood Contract: Bloodshed
@@ -15064,6 +15769,7 @@ function ZA_UpdateData()
 			[264769] = 114, -- War-Scroll of Fortitude
 			[264766] = 114, -- War-Scroll of Intellect
 			-- Legion
+			[382986] = 900, -- Legion Milling
 			[209510] = 16, -- Aqual Mark
 			[226248] = 114, -- Codex of the Tranquil Mind
 			[227239] = 114, -- Codex of the Tranquil Mind
@@ -15215,6 +15921,7 @@ function ZA_UpdateData()
 			[192864] = 412, -- Vantus Rune: Xavius
 			[192812] = 412, -- Vantus Rune: Xavius
 			-- Draenor
+			[382987] = 900, -- Draenor Milling
 			[166669] = 114, -- Card of Omens
 			[227562] = 114, -- Codex of the Clear Mind
 			[166356] = 808, -- Crystalfire Spellstaff
@@ -15243,6 +15950,7 @@ function ZA_UpdateData()
 			[178497] = 138, -- Warbinder's Ink
 			[165804] = 808, -- Warmaster's Firestick
 			-- Pandaria
+			[382988] = 900, -- Pandaria Milling
 			[127009] = 802, -- Chi-ji Kite
 			[127378] = 114, -- Commissioned Painting
 			[146638] = 909, -- Crafted Malevolent Gladiator's Medallion of Tenacity
@@ -15282,6 +15990,7 @@ function ZA_UpdateData()
 			[127016] = 126, -- Tiger Fang Inscription
 			[127007] = 802, -- Yu'lon Kite
 			-- Cataclysm
+			[382989] = 900, -- Cataclysm Milling
 			[86643]  = 114, -- Battle Tome
 			[86004]  = 999, -- Blackfallow Ink
 			[86616]  = 114, -- Book of Blood
@@ -15321,6 +16030,7 @@ function ZA_UpdateData()
 			[86653]  = 808, -- Silver Inlaid Staff
 			[86375]  = 126, -- Swiftsteel Inscription
 			-- Northrend
+			[382990] = 900, -- Northrend Milling
 			[59504]  = 114, -- Darkmoon Card of the North
 			[59498]  = 114, -- Faces of Doom
 			[148275] = "PRIEST", -- Glyph of Angels
@@ -15351,6 +16061,7 @@ function ZA_UpdateData()
 			[57716]  = 16, -- Snowfall Ink
 			[64053]  = 114, -- Twilight Tome
 			-- Outland
+			[382991] = 900, -- Outland Milling
 			[59496]  = 114, -- Book of Clever Tricks
 			[57714]  = 819, -- Darkflame Ink
 			[57713]  = 323, -- Ethereal Ink
@@ -15363,6 +16074,7 @@ function ZA_UpdateData()
 			[50602]  = 114, -- Scroll of Intellect VI
 			[58489]  = 114, -- Scroll of Strength VI
 			-- Classic
+			[382994] = 900, -- Classic Milling
 			[59487]  = 114, -- Arcane Tarot
 			[59490]  = 114, -- Book of Stars
 			[59478]  = 114, -- Book of Survival
@@ -15452,7 +16164,93 @@ function ZA_UpdateData()
 			[92026]  = 804, -- Vanishing Powder
 
 			--! Jewelcrafting
+			-- Dragon Isles
+			[395696] = 808, -- Dragon Isles Crushing
+			[374627] = 808, -- Dragon Isles Prospecting
+			[389194] = 808, -- Recraft Equipment
+			[374501] = 815, -- Choker of Shielding
+			[374499] = 813, -- Elemental Lariat
+			[374490] = 120, -- Idol of the Dreamer
+			[374493] = 400, -- Idol of the Earth-Warder
+			[374486] = 403, -- Idol of the Life-Binder
+			[374488] = 80, -- Idol of the Spell-Weaver
+			[374551] = 62, -- Jeweled Dragon's Heart
+			[374498] = 813, -- Ring-Bound Hourglass
+			[374497] = 815, -- Signet of Titanic Insight
+			[394621] = 814, -- Torc of Passed Time
+			[374542] = 815, -- Alexstraszite Loupes
+			[374467] = 120, -- Fierce Illimited Diamond
+			[374538] = 808, -- Fine-Print Trifocals
+			[374465] = 820, -- Inscribed Illimited Diamond
+			[374540] = 808, -- Magnificent Margin Magnifier
+			[374543] = 808, -- Resonant Focus
+			[374470] = 80, -- Resplendent Illimited Diamond
+			[374468] = 813, -- Skillful Illimited Diamond
+			[374442] = 818, -- Crafty Alexstraszite
+			[374450] = 815, -- Crafty Ysemerald
+			[374445] = 818, -- Deadly Alexstraszite
+			[374447] = 815, -- Energized Malygite
+			[374454] = 815, -- Energized Ysemerald
+			[374461] = 817, -- Forceful Nozdorite
+			[374459] = 813, -- Fractured Neltharite
+			[374460] = 817, -- Jagged Nozdorite
+			[374516] = 816, -- Jeweled Amber Whelpling
+			[374511] = 815, -- Jeweled Emerald Whelpling
+			[374514] = 819, -- Jeweled Onyx Whelpling
+			[374510] = 818, -- Jeweled Ruby Whelpling
+			[374512] = 814, -- Jeweled Sapphire Whelpling
+			[374457] = 813, -- Keen Neltharite
+			[374453] = 815, -- Keen Ysemerald
+			[374462] = 817, -- Puissant Nozdorite
+			[374455] = 815, -- Quick Ysemerald
+			[374444] = 818, -- Radiant Alexstraszite
+			[374446] = 814, -- Radiant Malygite
+			[374443] = 818, -- Sensei's Alexstraszite
+			[374456] = 813, -- Sensei's Neltharite
+			[374463] = 817, -- Steady Nozdorite
+			[374449] = 814, -- Stormy Malygite
+			[374448] = 814, -- Zen Malygite
+			[374458] = 813, -- Zen Neltharite
+			[374525] = 808, -- Convergent Prism
+			[374509] = 819, -- Djaradin's "Pinata"
+			[374553] = 28, -- Elemental Harmony
+			[374522] = 818, -- Jeweled Offering
+			[374547] = 815, -- Dreamer's Vision
+			[374549] = 813, -- Earthwarden's Prize
+			[374548] = 814, -- Keeper's Glory
+			[374546] = 818, -- Queen's Gift
+			[374550] = 817, -- Timewatcher's Patience
+			[374502] = 808, -- Narcissist's Sculpture
+			[374472] = 822, -- Tiered Medallion Setting
+			[374483] = 804, -- Blotting Sand
+			[374484] = 804, -- Pounce
+			[375063] = 808, -- Rhinestone Sunglasses
+			[377804] = 809, -- Kalu'ak Figurine
+			[374518] = 808, -- Projection Prism
+			[377960] = 808, -- Split-Lens Specs
+			[391782] = 100, -- Illustrious Insight
+			[374495] = 813, -- Crimson Combatant's Jeweled Amulet
+			[374496] = 813, -- Crimson Combatant's Jeweled Signet
+			[392697] = 808, -- Empty Soul Cage
+			[374508] = 809, -- Statue of Tyr's Herald
+			[374506] = 142, -- Revitalizing Red Carving
+			[374530] = 808, -- Bold-Print Bifocals
+			[374537] = 808, -- Chromatic Focus
+			[374531] = 808, -- Left-Handed Magnifying Glass
+			[374532] = 819, -- Sundered Onyx Loupe
+			[376233] = 814, -- Band of New Beginnings
+			[374477] = 808, -- Draconic Vial
+			[374478] = 808, -- Frameless Lens
+			[374494] = 814, -- Pendant of Impending Perils
+			[374437] = 818, -- Crafty Queen's Ruby
+			[374439] = 815, -- Energized Vibrant Emerald
+			[374440] = 813, -- Sensei's Sundered Onyx
+			[374438] = 814, -- Zen Mystic Sapphire
+			[374441] = 817, -- Solid Eternity Amber
+			[374480] = 809, -- Glossy Stone
+			[374475] = 909, -- Shimmering Clasp
 			-- Shadowlands
+			[325248] = 808, -- Shadowlands Prospecting
 			[338248] = 818, -- Brilliant Bauble
 			[338244] = 808, -- Carved Crystal Ring
 			[338239] = 140, -- Engraved Phaedrum Band
@@ -15521,6 +16319,7 @@ function ZA_UpdateData()
 			[311866] = 814, -- Versatile Jewel Doublet
 			[334548] = 133, -- Crown of the Righteous
 			-- Kul Tiras/Zandalar
+			[382973] = 808, -- Kul Tiras and Zandalar Prospecting
 			[307219] = 320, -- Void Focus
 			[299018] = 812, -- Ascended Leviathan's Eye Loop
 			[305981] = 812, -- Awakened Leviathan's Eye Loop
@@ -15600,6 +16399,7 @@ function ZA_UpdateData()
 			[287272] = 801, -- Aqueous Recalibration
 			[286651] = 412, -- Sanguinated Recalibration
 			-- Legion
+			[382975] = 808, -- Legion Prospecting
 			[195940] = 814, -- Ancient Maelstrom Amulet
 			[195919] = 814, -- Ancient Maelstrom Amulet
 			[195873] = 814, -- Ancient Maelstrom Amulet
@@ -15748,6 +16548,7 @@ function ZA_UpdateData()
 			[176087] = 114, -- Secrets of Draenor Jewelcrafting
 			[170700] = 808, -- Taladite Crystal
 			-- Pandaria
+			[382977] = 808, -- Pandaria Prospecting
 			[107693] = 813, -- Accurate Imperial Amethyst
 			[107627] = 813, -- Accurate Roguestone
 			[107645] = 817, -- Adept Tiger Opal
@@ -15946,6 +16747,7 @@ function ZA_UpdateData()
 			[107616] = 815, -- Zen Alexandrite
 			[106958] = 815, -- Zen Wild Jade
 			-- Cataclysm
+			[382978] = 808, -- Cataclysm Prospecting
 			[73360]  = 813, -- Accurate Demonseye
 			[73250]  = 813, -- Accurate Nightstone
 			[101784] = 813, -- Accurate Shadow Spinel
@@ -16168,6 +16970,7 @@ function ZA_UpdateData()
 			[101748] = 815, -- Zen Elven Peridot
 			[73280]  = 815, -- Zen Jasper
 			-- Northrend
+			[382979] = 808, -- Northrend Prospecting
 			[66576] = 813, -- Accurate Dreadstone
 			[53892] = 813, -- Accurate Shadow Crystal
 			[53994] = 813, -- Accurate Twilight Opal
@@ -16384,6 +17187,7 @@ function ZA_UpdateData()
 			[53986] = 817, -- Willful Monarch Topaz
 			[58149] = 808, -- Windfire Band
 			-- Outland
+			[382980] = 808, -- Outland Prospecting
 			[46126] = 815, -- Amulet of Flowing Life
 			[31057] = 820, -- Arcane Khorium Band
 			[31050] = 808, -- Azure Moonstone Ring
@@ -16537,6 +17341,7 @@ function ZA_UpdateData()
 			[39466] = 813, -- Veiled Shadow Draenite
 			[39737] = 813, -- Veiled Shadowsong Amethyst
 			-- Classic
+			[382995] = 808, -- Classic Prospecting
 			[26912] = 819, -- Figurine - Black Diamond Crab
 			[26914] = 910, -- Figurine - Dark Iron Scorpid
 			[26909] = 815, -- Figurine - Emerald Owl
@@ -16613,6 +17418,111 @@ function ZA_UpdateData()
 			[26926] = 132, -- Heavy Copper Ring
 
 			--! Leatherworking
+			-- Dragon Isles
+			[389195] = 116, -- Recraft Equipment
+			[375151] = 814, -- Acidic Hailstone Treads
+			[375188] = 176, -- Alchemist's Hat
+			[375144] = 154, -- Allied Heartwarming Fur Coat
+			[375157] = 170, -- Allied Legguards of Sansok Khan
+			[375153] = 157, -- Ancestor's Dew Drippers
+			[381547] = 116, -- Artisan's Sign
+			[375102] = 116, -- Bonewrought Crossbow
+			[375125] = 157, -- Bow of the Dragon Hunters
+			[375135] = 172, -- Crimson Combatant's Adamant Chainmail
+			[375134] = 172, -- Crimson Combatant's Adamant Cowl
+			[375140] = 172, -- Crimson Combatant's Adamant Cuffs
+			[375137] = 172, -- Crimson Combatant's Adamant Epaulettes
+			[375138] = 172, -- Crimson Combatant's Adamant Gauntlets
+			[375141] = 172, -- Crimson Combatant's Adamant Girdle
+			[375136] = 172, -- Crimson Combatant's Adamant Leggings
+			[375139] = 172, -- Crimson Combatant's Adamant Treads
+			[375133] = 172, -- Crimson Combatant's Resilient Belt
+			[375131] = 172, -- Crimson Combatant's Resilient Boots
+			[375127] = 172, -- Crimson Combatant's Resilient Chestpiece
+			[375130] = 172, -- Crimson Combatant's Resilient Gloves
+			[375126] = 172, -- Crimson Combatant's Resilient Mask
+			[375129] = 172, -- Crimson Combatant's Resilient Shoulderpads
+			[375128] = 172, -- Crimson Combatant's Resilient Trousers
+			[375132] = 172, -- Crimson Combatant's Resilient Wristwraps
+			[375182] = 116, -- Durable Pack
+			[375178] = 170, -- Earthshine Scales
+			[375196] = 814, -- Expert Alchemist's Hat
+			[375191] = 170, -- Expert Skinner's Cap
+			[375159] = 415, -- Fang Adornments
+			[375168] = 116, -- Feral Hide Drums
+			[375162] = 813, -- Fierce Armor Kit
+			[381849] = 176, -- Finished Prototype Explorer's Barding
+			[381848] = 176, -- Finished Prototype Regal Barding
+			[375123] = 170, -- Flame-Touched Chain
+			[375117] = 813, -- Flame-Touched Chainmail
+			[375124] = 170, -- Flame-Touched Cuffs
+			[375119] = 170, -- Flame-Touched Handguards
+			[375120] = 813, -- Flame-Touched Helmet
+			[375121] = 813, -- Flame-Touched Legguards
+			[375122] = 170, -- Flame-Touched Spaulders
+			[375118] = 170, -- Flame-Touched Treads
+			[375195] = 813, -- Flameproof Apron
+			[375197] = 170, -- Flaring Cowl
+			[375181] = 116, -- Floral Basket
+			[375179] = 116, -- Frostbite Scales
+			[375161] = 116, -- Frosted Armor Kit
+			[375171] = 176, -- Gnoll Tent
+			[377989] = 661, -- Heart in a Bottle
+			[375166] = 100, -- Illustrious Insight
+			[375155] = 172, -- Infurious Boots of Reprieve
+			[375156] = 172, -- Infurious Chainhelm Protector
+			[375149] = 172, -- Infurious Footwraps of Indemnity
+			[375176] = 172, -- Infurious Hide
+			[375180] = 172, -- Infurious Scales
+			[375148] = 172, -- Infurious Spirit's Hood
+			[375184] = 116, -- Jeweler's Cover
+			[375189] = 157, -- Lavish Floral Pack
+			[375115] = 170, -- Life-Bound Belt
+			[375116] = 170, -- Life-Bound Bindings
+			[375110] = 814, -- Life-Bound Boots
+			[375112] = 157, -- Life-Bound Cap
+			[375109] = 157, -- Life-Bound Chestpiece
+			[375111] = 814, -- Life-Bound Gloves
+			[375114] = 813, -- Life-Bound Shoulderpads
+			[375113] = 813, -- Life-Bound Trousers
+			[375194] = 157, -- Masterwork Smock
+			[375174] = 157, -- Mireslush Hide
+			[375145] = 157, -- Old Spirit's Wristwraps
+			[375103] = 116, -- Pioneer's Leather Boots
+			[375105] = 116, -- Pioneer's Leather Tunic
+			[375104] = 116, -- Pioneer's Leather Wristguards
+			[395863] = 116, -- Pioneer's Practiced Belt
+			[395864] = 116, -- Pioneer's Practiced Cowl
+			[395865] = 116, -- Pioneer's Practiced Gloves
+			[395867] = 116, -- Pioneer's Practiced Leggings
+			[395868] = 116, -- Pioneer's Practiced Shoulderpads
+			[375185] = 176, -- Protective Gloves
+			[375164] = 116, -- Reinforced Armor Kit
+			[375190] = 170, -- Reinforced Pack
+			[375186] = 116, -- Resilient Smock
+			[375192] = 813, -- Resplendent Cover
+			[375154] = 170, -- Scale Rein Grips
+			[375193] = 170, -- Shockproof Gloves
+			[375183] = 176, -- Skinner's Cap
+			[375142] = 813, -- Slimy Expulsion Boots
+			[375187] = 116, -- Smithing Apron
+			[375146] = 814, -- Snowball Makers
+			[375173] = 813, -- Stonecrust Hide
+			[375147] = 157, -- String of Spiritual Knick-Knacks
+			[375143] = 814, -- Toxic Thorn Footwraps
+			[375160] = 813, -- Toxified Armor Patch
+			[375106] = 116, -- Trailblazer's Scale Boots
+			[375107] = 116, -- Trailblazer's Scale Bracers
+			[375108] = 116, -- Trailblazer's Scale Vest
+			[395844] = 176, -- Trailblazer's Toughened Chainbelt
+			[395839] = 176, -- Trailblazer's Toughened Coif
+			[395845] = 176, -- Trailblazer's Toughened Grips
+			[395847] = 176, -- Trailblazer's Toughened Legguards
+			[395851] = 176, -- Trailblazer's Toughened Spikes
+			[375172] = 154, -- Tuskarr Beanbag
+			[375150] = 813, -- Venom-Steeped Stompers
+			[375152] = 157, -- Wind Spirit's Lasso
+			[375199] = 813, -- Witherrot Tome
 			-- Shadowlands
 			[309190] = 116, -- Bone Bound Knuckles
 			[309213] = 323, -- Boneshatter Armguards
@@ -18114,6 +19024,91 @@ function ZA_UpdateData()
 			[2657] = 132, -- Smelt Copper
 
 			--! Tailoring
+			-- Dragon Isles
+			[389196] = 107, -- Recraft Equipment
+			[376533] = 108, -- Abrasive Polishing Cloth
+			[376497] = 108, -- Allied Wristguards of Time Dilation
+			[376493] = 110, -- Amice of the Blue
+			[376556] = 110, -- Azureweave Bolt
+			[376529] = 110, -- Azureweave Expedition Pack
+			[376502] = 110, -- Azureweave Mantle
+			[376500] = 110, -- Azureweave Robe
+			[376501] = 110, -- Azureweave Slippers
+			[376535] = 108, -- Blazing Embroidery Thread
+			[376496] = 110, -- Blue Dragon Soles
+			[376541] = 110, -- Blue Silken Lining
+			[376542] = 108, -- Bronzed Grip Wrappings
+			[376536] = 109, -- Chromatic Embroidery Thread
+			[376557] = 108, -- Chronocloth Bolt
+			[376503] = 108, -- Chronocloth Gloves
+			[376504] = 108, -- Chronocloth Leggings
+			[376561] = 108, -- Chronocloth Reagent Bag
+			[376505] = 108, -- Chronocloth Sash
+			[376568] = 110, -- Cold Cushion
+			[376527] = 112, -- Crimson Combatant's Wildercloth Bands
+			[376519] = 112, -- Crimson Combatant's Wildercloth Cloak
+			[376522] = 112, -- Crimson Combatant's Wildercloth Gloves
+			[376523] = 112, -- Crimson Combatant's Wildercloth Hood
+			[376524] = 112, -- Crimson Combatant's Wildercloth Leggings
+			[376526] = 112, -- Crimson Combatant's Wildercloth Sash
+			[376525] = 112, -- Crimson Combatant's Wildercloth Shoulderpads
+			[376521] = 112, -- Crimson Combatant's Wildercloth Treads
+			[376520] = 112, -- Crimson Combatant's Wildercloth Tunic
+			[376567] = 108, -- Cushion of Time Travel
+			[376546] = 113, -- Dragoncloth Tailoring Vestments
+			[376570] = 107, -- Dragonscale Expedition's Expedition Tent
+			[376565] = 159, -- Duck-Stuffed Duck Lovie
+			[376532] = 112, -- Explorer's Banner of Geology
+			[376531] = 109, -- Explorer's Banner of Herbology
+			[376563] = 100, -- Fiddle with Draconium Fabric Cutters
+			[376564] = 100, -- Fiddle with Khaz'gorite Fabric Cutters
+			[376566] = 109, -- Forlorn Funeral Pall
+			[376539] = 80, -- Frozen Spellthread
+			[377986] = 661, -- Heart in a Bottle
+			[376492] = 108, -- Hood of Surging Time
+			[376699] = 100, -- Illustrious Insight
+			[376494] = 112, -- Infurious Binding of Gesticulation
+			[376495] = 112, -- Infurious Legwraps of Possibility
+			[376559] = 112, -- Infurious Wildercloth Bolt
+			[376569] = 107, -- Market Tent
+			[376544] = 109, -- Master's Wildercloth Alchemist's Robe
+			[376548] = 109, -- Master's Wildercloth Chef's Hat
+			[376550] = 109, -- Master's Wildercloth Enchanter's Hat
+			[376552] = 109, -- Master's Wildercloth Fishing Cap
+			[376554] = 109, -- Master's Wildercloth Gardening Hat
+			[376537] = 113, -- Shimmering Embroidery Thread
+			[376560] = 107, -- Simply Stitched Reagent Bag
+			[376509] = 107, -- Surveyor's Cloth Bands
+			[376507] = 107, -- Surveyor's Cloth Robe
+			[376508] = 107, -- Surveyor's Cloth Treads
+			[395809] = 107, -- Surveyor's Seasoned Cord
+			[395813] = 107, -- Surveyor's Seasoned Gloves
+			[395807] = 107, -- Surveyor's Seasoned Hood
+			[395814] = 107, -- Surveyor's Seasoned Pants
+			[395815] = 107, -- Surveyor's Seasoned Shoulders
+			[376506] = 107, -- Surveyor's Tailored Cloak
+			[376540] = 641, -- Temporal Spellthread
+			[376534] = 109, -- Vibrant Polishing Cloth
+			[376538] = 120, -- Vibrant Spellthread
+			[376558] = 109, -- Vibrant Wildercloth Bolt
+			[376517] = 109, -- Vibrant Wildercloth Girdle
+			[376513] = 109, -- Vibrant Wildercloth Handwraps
+			[376514] = 109, -- Vibrant Wildercloth Headcover
+			[376510] = 109, -- Vibrant Wildercloth Shawl
+			[376516] = 109, -- Vibrant Wildercloth Shoulderspikes
+			[376515] = 109, -- Vibrant Wildercloth Slacks
+			[376512] = 109, -- Vibrant Wildercloth Slippers
+			[376511] = 109, -- Vibrant Wildercloth Vestments
+			[376518] = 109, -- Vibrant Wildercloth Wristwraps
+			[376543] = 107, -- Wildercloth Alchemist's Robe
+			[376528] = 107, -- Wildercloth Bag
+			[376530] = 107, -- Wildercloth Bandage
+			[376555] = 107, -- Wildercloth Bolt
+			[376547] = 107, -- Wildercloth Chef's Hat
+			[376549] = 107, -- Wildercloth Enchanter's Hat
+			[376551] = 107, -- Wildercloth Fishing Cap
+			[376553] = 107, -- Wildercloth Gardening Hat
+			[376545] = 107, -- Wildercloth Tailor's Coat
 			-- Shadowlands
 			[338271] = 110, -- Woven Gossamer Tunic
 			[338273] = 110, -- Gossamer Cloth
@@ -20758,6 +21753,27 @@ function ZA_UpdateData()
 			[385708] = 0,
 			[386268] = 0,
 			[385500] = 0,
+			[335539] = 0,
+			[335533] = 0,
+			[101874] = 134506,
+			[387873] = 0,
+			[101993] = 132487,
+			[101988] = 463532,
+			[392042] = 0,
+			[397802] = 0,
+			[323215] = 0,
+			[210253] = 0,
+			[391682] = 0,
+			[385577] = 134418,
+			[385576] = 134418,
+			[385575] = 134418,
+			[385327] = 134421,
+			[385326] = 134421,
+			[385325] = 134421,
+			[396147] = 134422,
+			[396148] = 134422,
+			[385330] = 134422,
+			[391609] = 0,
 			--qqi
 
 
@@ -20801,6 +21817,16 @@ function ZA_UpdateData()
 
 
 			--§ Spells
+			[395696] = 0, -- Dragon Isles Crushing
+			[374627] = 0, -- Dragon Isles Prospecting
+			[382995] = 0, -- Classic Prospecting
+			[382978] = 0, -- Cataclysm Prospecting
+			[325248] = 0, -- Shadowlands Prospecting
+			[382973] = 0, -- Kul Tiras and Zandalar Prospecting
+			[382979] = 0, -- Northrend Prospecting
+			[382975] = 0, -- Legion Prospecting
+			[382977] = 0, -- Pandaria Prospecting
+			[382980] = 0, -- Outland Prospecting
 			["Deciphering:254290"] = 0,
 			["Boon of the Covenants"] = (covenant == 1) and 3528287 or (covenant == 2) and 3528311 or (covenant == 3) and 3528279 or (covenant == 4) and 3528295 or 3601566,
 			["Mark of the Arctic"] = 237522,
@@ -21052,6 +22078,82 @@ function ZA_UpdateData()
 			[188802] = 967517, -- Wild Transmutation (Rank 3)
 			[188801] = 967517, -- Wild Transmutation (Rank 2)
 			[188800] = 967517, -- Wild Transmutation (Rank 1)
+			[389196] = 0, -- Recraft Equipment
+			[389195] = 0, -- Recraft Equipment
+			[385304] = 0, -- Recraft Equipment
+			[389190] = 0, -- Recraft Equipment
+			[389191] = 0, -- Recraft Equipment
+			[389192] = 0, -- Recraft Equipment
+			[389194] = 0, -- Recraft Equipment
+			[389193] = 0, -- Recraft Equipment
+			[389416] = 4620672, -- Accelerated Agility
+			[389547] = 4620672, -- Burning Devotion
+			[389537] = 4620672, -- Burning Writ
+			[391302] = 4620672, -- Crystalline Shatter
+			[389301] = 4620672, -- Devotion of Avoidance
+			[389292] = 4620672, -- Devotion of Critical Strike
+			[389293] = 4620672, -- Devotion of Haste
+			[389303] = 4620672, -- Devotion of Leech
+			[389294] = 4620672, -- Devotion of Mastery
+			[389304] = 4620672, -- Devotion of Speed
+			[389295] = 4620672, -- Devotion of Versatility
+			[389508] = 4620672, -- Draconic Deftness
+			[389513] = 4620672, -- Draconic Finesse
+			[389519] = 4620672, -- Draconic Inspiration
+			[389525] = 4620672, -- Draconic Perception
+			[389530] = 4620672, -- Draconic Resourcefulness
+			[389549] = 4620672, -- Earthen Devotion
+			[389540] = 4620672, -- Earthen Writ
+			[391304] = 4620672, -- Elemental Shatter
+			[391176] = 1697864, -- Enchanted Writhebark Wand
+			[389551] = 4620672, -- Frozen Devotion
+			[389543] = 4620672, -- Frozen Writ
+			[389403] = 4620672, -- Graceful Avoidance
+			[389405] = 4620672, -- Homebound Speed
+			[391813] = 237174, -- Illusion: Primal Air
+			[391814] = 237174, -- Illusion: Primal Earth
+			[391815] = 237174, -- Illusion: Primal Fire
+			[391816] = 237174, -- Illusion: Primal Frost
+			[390839] = 237174, -- Illusion: Primal Mastery
+			[391810] = 4620672, -- Illusory Adornment: Air
+			[391811] = 4620672, -- Illusory Adornment: Earth
+			[390951] = 4620672, -- Illusory Adornment: Fire
+			[391809] = 4620672, -- Illusory Adornment: Frost
+			[391812] = 4620672, -- Illusory Adornment: Order
+			[391202] = 391202, -- Illustrious Insight
+			[390855] = 390855, -- Khadgar's Disenchanting Rod
+			[389479] = 4620672, -- Plainsrunner's Breeze
+			[391185] = 4631364, -- Primal Invocation Extract
+			[389404] = 4620672, -- Regenerative Leech
+			[389417] = 4620672, -- Reserve of Intellect
+			[389480] = 4620672, -- Rider's Reassurance
+			[390823] = 4524423, -- Runed Draconium Rod
+			[390825] = 4524423, -- Runed Khaz'gorite Rod
+			[394189] = 463530, -- Runed Serevite Rod
+			[391806] = 135466, -- Scepter of Spectacle: Air
+			[391807] = 1825265, -- Scepter of Spectacle: Earth
+			[391196] = 135468, -- Scepter of Spectacle: Fire
+			[391197] = 135467, -- Scepter of Spectacle: Frost
+			[391808] = 305296, -- Scepter of Spectacle: Order
+			[390831] = 4554442, -- Sophic Amalgamation
+			[389550] = 4620672, -- Sophic Devotion
+			[389542] = 4620672, -- Sophic Writ
+			[389419] = 4620672, -- Sustained Strength
+			[391179] = 4553307, -- Torch of Primal Awakening
+			[389558] = 4620672, -- Wafting Devotion
+			[389546] = 4620672, -- Wafting Writ
+			[389410] = 4620672, -- Waking Stats
+			[389484] = 4620672, -- Watcher's Loam
+			[389397] = 4620672, -- Writ of Avoidance
+			[389297] = 4620672, -- Writ of Avoidance
+			[388930] = 4620672, -- Writ of Critical Strike
+			[389135] = 4620672, -- Writ of Haste
+			[389298] = 4620672, -- Writ of Leech
+			[389398] = 4620672, -- Writ of Leech
+			[389136] = 4620672, -- Writ of Mastery
+			[389300] = 4620672, -- Writ of Speed
+			[389400] = 4620672, -- Writ of Speed
+			[389151] = 4620672, -- Writ of Versatility
 		}
 
 		-- Temporary Weapon Enchants
@@ -21131,8 +22233,7 @@ local function eventHandler(self, event, ...)
 
 			if subEvent == "SPELL_CAST_START" or subEvent == "SPELLCAST_SUCCESS" then
 				if spellId then
-					_, _, icon = GetSpellInfo(spellId)
-					ZA.AutoSpells[spellName .. (icon and ":" .. icon or "")] = spellSchool or 0
+					ZA.AutoSpells[spellId] = spellSchool or 0
 				elseif spellName then
 					ZA.AutoSpells[spellName] = spellSchool or 0
 				end
