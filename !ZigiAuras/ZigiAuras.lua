@@ -227,6 +227,7 @@ function ZA_UpdateData()
 			["Thaumaturge Vashreen"] = "Cosmetic",
 			["Minigob Manabonk"] = "MAGE",
 			["Rathan"] = "WARRIOR",
+			["Sonova Snowden"] = "HUNTER",
 			--! Friends
 			-- Daniel
 			["Hana-Sporeggar"] = "HUNTER",
@@ -1355,6 +1356,13 @@ function ZA_UpdateData()
 			[382963] = true, -- Brimming Arcanocrystal
 
 			-- Shadowlands
+			[330038] = "Optical Target Embiggener: Critical Strike", -- Optical Target Embiggener
+			[367458] = "Brilliant: Haste", -- Gemstone of Prismatic Brilliance
+			[367327] = "Brilliant: Critical Strike", -- Gemstone of Prismatic Brilliance
+			[367455] = "Brilliant: Mastery", -- Gemstone of Prismatic Brilliance
+			[367457] = "Brilliant: Versatility", -- Gemstone of Prismatic Brilliance
+			[367467] = "Tails: Haste", -- Broker's Lucky Coin
+			[367466] = "Heads: Critical Strike", -- Broker's Lucky Coin
 			[328908] = "Combat Meditation: Mastery", -- Combat Meditation (Pelagos)
 			[336885] = "Soothing Shade: Mastery", -- Soothing Shade (Theotar)
 			[330368] = "Quantum Device: Haste", -- Inscrutable Quantum Device
@@ -1712,6 +1720,7 @@ function ZA_UpdateData()
 			-- Dragonflight
 			[371339] = "Elixir", -- Phial of Elemental Chaos
 			[371172] = "Elixir", -- Phial of Tepid Versatility
+			[371386] = "Elixir", -- Phial of Charged Isolation
 
 			-- Shadowlands
 			[307185] = "Elixir", -- Spectral Flask of Power
@@ -1950,6 +1959,9 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[377826] = "State", -- Temporal Anomaly
+			[385081] = "State", -- Unstable Blink
+			[384769] = "State", -- Carry Discarded Toy
 			[213213] = "State", -- Masquerade
 			[211086] = "State", -- Masquerade
 			[232951] = "State", -- Masquerade
@@ -2104,6 +2116,12 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[384785] = "Zone", -- Cauldron Researcher
+			[384786] = "Zone", -- Cauldron Researcher
+			[384788] = "Zone", -- Cauldron Researcher
+			["Luck of the Draw"] = "Zone",
+			[211102] = "Zone", -- Succulent Cuisine
+			[384818] = "Zone", -- Making Connections
 			[388966] = "Zone", -- Everlasting Horn of Lavaswimming
 			[386989] = "Zone", -- Steam Pressure!
 			[386990] = "Zone", -- Water Pressure!
@@ -2495,6 +2513,13 @@ function ZA_UpdateData()
 			[382963] = 126, -- Brimming Arcanocrystal
 
 			-- Shadowlands
+			[330038] = 100, -- Optical Target Embiggener
+			[367458] = 816, -- Gemstone of Prismatic Brilliance
+			[367327] = 818, -- Gemstone of Prismatic Brilliance
+			[367455] = 814, -- Gemstone of Prismatic Brilliance
+			[367457] = 815, -- Gemstone of Prismatic Brilliance
+			[367467] = 131, -- Broker's Lucky Coin
+			[367466] = 131, -- Broker's Lucky Coin
 			[328908] = 201, -- Kyrian (Pelagos)
 			[336885] = 33, -- Venthyr (Theotar)
 			[330368] = 203, -- Inscrutable Quantum Device
@@ -2708,6 +2733,9 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[35925] = 200, -- Energy Flux
+			[401359] = 200, -- Energy Flux
+			["Earthrending Breath"] = 803,
 			["Arcane Emanation"] = 64,
 			[395827] = 101, -- Severing Gore
 			["Severing Gore"] = 101,
@@ -3451,6 +3479,7 @@ function ZA_UpdateData()
 			["Ghastly Bolt"] = 326,
 			["Raise Hound"] = 326,
 			["Horn Toss"] = 154,
+			["Dragonrider's Cultivation"] = 10,
 			["Dragonrider's Compassion"] = 109,
 			["Spear of the Mountain"] = 803,
 			["Heartpiercer"] = 102,
@@ -5492,6 +5521,7 @@ function ZA_UpdateData()
 			["Drudge Bolt"] = 413,
 			["Drudge Bolt:132862"] = 999,
 			["Drums of Deathly Ferocity"] = 105,
+			["Feral Hide Drums"] = 105,
 			["Drums of Fury"] = 105,
 			["Drums of Rage"] = 105,
 			["Drums of the Maelstrom"] = 105,
@@ -6795,7 +6825,7 @@ function ZA_UpdateData()
 			["Mark of the Crane"] = 802,
 			["Marked for Death"] = 411,
 			["Marrowjaw's Bite"] = 102,
-			["Masquerade:1354190"] = 127,
+			["Masquerade:1354190"] = 72,
 			["Mass Corruption"] = 324,
 			["Mass Debilitate"] = 328,
 			["Mass Deliberate"] = 96,
@@ -6935,7 +6965,7 @@ function ZA_UpdateData()
 			["Molten Meteor"] = 12,
 			["Molten Pool"] = 12,
 			["Molten Surge"] = 12,
-			["Moment of Glory"] = 2,
+			["Moment of Glory"] = 66,
 			["Momentum"] = 104,
 			["Mongoose Fury"] = 103,
 			["Moon Burn"] = 640,
@@ -11850,8 +11880,8 @@ function ZA_UpdateData()
 			[387594] = 116, -- Reinforced Irontree Harpoon Handle
 			[388250] = 154, -- Seavine Harpoon Rope
 			[388251] = 154, -- Braided Seavine Harpoon Rope
-			[387375] = 909, -- Serevite Harpoon Head
-			[388249] = 909, -- Jagged Serevite Harpoon Head
+			[387375] = 134, -- Serevite Harpoon Head
+			[388249] = 134, -- Jagged Serevite Harpoon Head
 
 
 			--! Ascension Crafting
@@ -12026,6 +12056,7 @@ function ZA_UpdateData()
 
 			--! Alchemy
 			-- Dragon Isles
+			[370748] = 281, -- Reclaim Concoctions
 			[389190] = 646, -- Recraft Equipment
 			[370747] = 281, -- Advanced Phial Experimentation
 			[370745] = 281, -- Advanced Potion Experimentation
@@ -12797,14 +12828,14 @@ function ZA_UpdateData()
 			[371304] = 909, -- Draconium Skinning Knife
 			[367597] = 909, -- Draconium Stiletto
 			[367599] = 909, -- Draconium Sword
-			[367611] = 909, -- Explorer's Expert Clasp
-			[395879] = 909, -- Explorer's Expert Gauntlets
-			[395881] = 909, -- Explorer's Expert Greaves
-			[395883] = 909, -- Explorer's Expert Helm
-			[395880] = 909, -- Explorer's Expert Spaulders
-			[367610] = 909, -- Explorer's Plate Boots
-			[367609] = 909, -- Explorer's Plate Bracers
-			[395886] = 909, -- Explorer's Plate Chestguard
+			[367611] = 134, -- Explorer's Expert Clasp
+			[395879] = 134, -- Explorer's Expert Gauntlets
+			[395881] = 134, -- Explorer's Expert Greaves
+			[395883] = 134, -- Explorer's Expert Helm
+			[395880] = 134, -- Explorer's Expert Spaulders
+			[367610] = 134, -- Explorer's Plate Boots
+			[367609] = 134, -- Explorer's Plate Bracers
+			[395886] = 134, -- Explorer's Plate Chestguard
 			[367712] = 20, -- Frostfire Alloy
 			[367619] = 909, -- Frostfire Legguards of Preparation
 			[377981] = 661, -- Heart in a Bottle
@@ -12851,8 +12882,8 @@ function ZA_UpdateData()
 			[371650] = 809, -- Primal Whetstone
 			[377281] = 100, -- Prototype Explorer's Barding Framework
 			[377280] = 100, -- Prototype Regal Barding Framework
-			[371395] = 909, -- Serevite Repair Hammer
-			[371394] = 909, -- Serevite Skeleton Key
+			[371395] = 134, -- Serevite Repair Hammer
+			[371394] = 134, -- Serevite Skeleton Key
 			[367623] = 909, -- Shield of the Hearth
 			[388279] = 909, -- Sturdy Expedition Shovel
 			[367618] = 909, -- Unstable Frostfire Belt
@@ -14831,7 +14862,7 @@ function ZA_UpdateData()
 			[382376] = 100, -- Shock-Spring Coil
 			[384314] = 816, -- Bronze Fireflight
 			[382330] = 100, -- Creature Combustion Canister
-			[382375] = 133, -- Handful of Serevite Bolts
+			[382375] = 134, -- Handful of Serevite Bolts
 			-- Shadowlands
 			[338216] = 133, -- Hardened Bolts
 			[338214] = 100, -- Piston Assembly
@@ -21060,6 +21091,7 @@ function ZA_UpdateData()
 
 
 			--§ Quest
+			[261486] = 2032597, -- Talanji is Near
 			[79450] = 237329,
 			[21050] = 133942,
 			[93773] = 133015,
@@ -21817,6 +21849,10 @@ function ZA_UpdateData()
 
 
 			--§ Spells
+
+			[370748] = 0, -- Reclaim Concoctions
+			["Disenchanting"] = 0,
+			["Disenchant"] = 0,
 			[395696] = 0, -- Dragon Isles Crushing
 			[374627] = 0, -- Dragon Isles Prospecting
 			[382995] = 0, -- Classic Prospecting
