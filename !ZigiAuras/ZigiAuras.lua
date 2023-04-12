@@ -228,6 +228,7 @@ function ZA_UpdateData()
 			["Minigob Manabonk"] = "MAGE",
 			["Rathan"] = "WARRIOR",
 			["Sonova Snowden"] = "HUNTER",
+			["Justicar Mariel Trueheart"] = "PALADIN",
 			--! Friends
 			-- Daniel
 			["Hana-Sporeggar"] = "HUNTER",
@@ -1087,6 +1088,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Champion Battlebot"] = 100,
 			["Trained Flayedwing"] = 415,
 			["Alliance Gunship Cannon"] = 100,
 			["Horde Gunship Cannon"] = 100,
@@ -1328,7 +1330,7 @@ function ZA_UpdateData()
 			[381998] = "Winds of Ohn'ahra: Haste", -- Ohn'ahra's Carving
 			[392216] = "Gryphon's Gift: Haste", -- Plume of the Forgotten
 			[389114] = "Razorwind Blessing: Critical Strike", -- Razorwind Talisman
-			[382094] = "Concussive Force", -- Rumbling Ruby
+			--[382094] = "Concussive Force", -- Rumbling Ruby
 			-- Sands of Temporal Perfection
 			-- Seasoned Hunter's Trophy
 			-- Tome of Unstable Power
@@ -1907,7 +1909,11 @@ function ZA_UpdateData()
 			[24705] = "Reputation", -- Grim Visage (Hallow's End)
 			[390493] = "Reputation", -- Cobalt Boost
 
-			-- Contract
+			-- Contract/Envoy
+			[405261] = true, -- Dragonscale's Favor
+			[405264] = true, -- Maruukai's Favor
+			[405263] = true, -- Iskaara's Favor
+			[405265] = true, -- Valdrakken's Favor
 			["Contract: Artisan's Consortium"] = true,
 			["Contract: Dragonscale Expedition"] = true,
 			["Contract: Centaur"] = true,
@@ -2116,6 +2122,18 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[290460] = "Zone", -- Battlebot Champion
+			[397719] = "Zone", -- Celestial Transocular
+			[403407] = "Zone", -- Scroll Collection
+			[405639] = "Zone", -- Azure Scrying Crystal
+			[402595] = "Zone", -- Energized Circlet
+			[398283] = "Zone", -- Windward Steps
+			[401091] = "Zone", -- Reflective Arcane Ward
+			[396787] = "Zone", -- Protective Ward of Flame
+			[401979] = "Zone", -- Elastic Ooze
+			[400751] = "Zone", -- Toxin Antidote
+			[405638] = "Zone", -- Essence of Divination
+			[405637] = "Zone", -- Reliquary Scroll of Perception
 			[384785] = "Zone", -- Cauldron Researcher
 			[384786] = "Zone", -- Cauldron Researcher
 			[384788] = "Zone", -- Cauldron Researcher
@@ -2733,6 +2751,46 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[393047] = 911, -- Skyreach
+			["Territorial Roar"] = 327,
+			["Lightning Squall"] = 800,
+			["Spike Traps"] = 100,
+			["Wing Shredder"] = 911,
+			["Earthen Crash"] = 903,
+			[327233] = 908, -- Belch Plague
+			["Right Reap"] = 803,
+			["Left Reap"] = 803,
+			[374569] = 908, -- Burst
+			["Dust Exhaust"] = 804,
+			["Floating Bubbles"] = 801,
+			["Lingering Bubble"] = 801,
+			[340412] = 413, -- Corrupted Residue
+			["Elastic Ooze"] = 908,
+			["Gushing Ooze"] = 908,
+			["Surging Slime:252178"] = 999,
+			["Obsidian Torrent:1500932"] = 999,
+			["Devastating Rend"] = 102,
+			["Stormy Weather"] = 911,
+			["Magma Wake"] = 12,
+			["Hellfire Walls"] = 12,
+			["Spiraling Squall"] = 911,
+			["Drowned Whispers"] = 32,
+			["Crustaceous Hex"] = 325,
+			["Chilling Wave"] = 16,
+			["Toxic Diffusion"] = 806,
+			["Static Summoning"] = 800,
+			["Galvanic Focus"] = 800,
+			["Ionic Thrust"] = 9,
+			[400413] = 903, -- Bonestorm
+			["Magma Spew"] = 12,
+			["Static Cling"] = 800,
+			[87618] = 800, -- Static Cling
+			[86930] = 800, -- Supremacy of the Storm
+			[86911] = 800, -- Unstable Grounding Field
+			["Dust Flail"] = 804,
+			[44406] = 126, -- Energy Infusion
+			["Thunder Kick"] = 911,
+			[386270] = 112, -- Audacity
 			[35925] = 200, -- Energy Flux
 			[401359] = 200, -- Energy Flux
 			["Earthrending Breath"] = 803,
@@ -2742,7 +2800,7 @@ function ZA_UpdateData()
 			["Fae Exposure"] = 805,
 			[395414] = 805, -- Fae Exposure
 			["Raging Winds"] = 811,
-			[385907] = 104, -- Take 'em by Surprise
+			[385907] = 32, -- Take 'em by Surprise
 			[384360] = 126, -- Temporal Velocity
 			[383864] = 12, -- Summon Droplet
 			[121483] = 901, -- Blessing of the Waterspeaker
@@ -2816,7 +2874,7 @@ function ZA_UpdateData()
 			[395060] = 801, -- Im'bunata's Rage
 			[391188] = 20, -- Stir
 			[391187] = 20, -- Stir
-			[213888] = 104, -- Scent of Blood
+			[213888] = 105, -- Scent of Blood
 			[390785] = 803, -- Primal Turtle's Shell
 			[390420] = 200, -- Restored Titan Artifact
 			[377463] = 4, -- Manic Grieftorch
@@ -3490,7 +3548,7 @@ function ZA_UpdateData()
 			["Heated Stomp"] = 12,
 			["Magma Fist"] = 12,
 			["Corrosive Spew"] = 806,
-			["Fury of the Nokhud"] = 105,
+			["Fury of the Nokhud"] = 103,
 			["Foul Bite"] = 410,
 			["Punish"] = 112,
 			["Electric Spittle"] = 800,
@@ -4696,7 +4754,7 @@ function ZA_UpdateData()
 			["Chain Harvest"] = 321,
 			["Chain Heal"] = 801,
 			["Chain Lightning"] = 800,
-			["Chain Reaction:135844"] = 160,
+			["Chain Reaction:135844"] = 16,
 			["Chain Reaction:135867"] = 281,
 			["Chains of Damnation:463560"] = 411,
 			["Chains of Devastation:136015"] = 800,
@@ -6507,7 +6565,7 @@ function ZA_UpdateData()
 			["Icy Grip"] = 160,
 			["Icy Shard"] = 16,
 			["Icy Throw"] = 160,
-			["Icy Veins"] = 16,
+			["Icy Veins"] = 80,
 			["Ignite Felblade"] = 401,
 			["Ignite"] = 4,
 			["Ignore Pain"] = 202,
@@ -8036,6 +8094,7 @@ function ZA_UpdateData()
 			["Slimewaves"] = 908,
 			["Slimy Coating"] = 908,
 			["Sling Mud"] = 803,
+			["Soft Landing"] = 811,
 			["Slow Fall"] = 811,
 			["Slow"] = 641,
 			["Slop Burst"] = 908,
@@ -8462,6 +8521,7 @@ function ZA_UpdateData()
 			["Surging Mist"] = 802,
 			["Surrender to Madness"] = 324,
 			["Survey"] = 100,
+			["Well-Honed Instincts"] = 202,
 			["Survival Instincts"] = 202,
 			["Survival of the Fittest"] = 800,
 			["Swamp Breath"] = 803,
@@ -8628,7 +8688,7 @@ function ZA_UpdateData()
 			["Thundering Rush"] = 9,
 			["Thundering Shock"] = 800,
 			["Thundering Squall"] = 800,
-			["Thundering Stomp"] = 9,
+			["Thundering Stomp"] = 800,
 			["Thunderous Bolt"] = 800,
 			["Thunderous Gasp"] = 24,
 			["Thunderous Paws"] = 104,
@@ -9609,7 +9669,7 @@ function ZA_UpdateData()
 			[229385] = 802, -- Ban-Lu, Grandmaster's Companion
 			[359317] = 801, -- Wen Lo, the River's Edge
 			-- Manasaber
-			[180545] = 64, -- Mystic Runesaber
+			[180545] = 72, -- Mystic Runesaber
 			[230987] = 72, -- Arcanist's Manasaber
 			[258845] = 72, -- Nightborne Manasaber
 			[232405] = 4, -- Primal Flamesaber
@@ -10142,7 +10202,7 @@ function ZA_UpdateData()
 			[253108] = 401, -- Felglow Mana Ray
 			[253107] = 140, -- Lambent Mana Ray
 			[253109] = 200, -- Scintillating Mana Ray
-			[253106] = 127, -- Vibrant Mana Ray
+			[253106] = 126, -- Vibrant Mana Ray
 			-- Necroray
 			[344574] = 410, -- Bulbous Necroray
 			[344576] = 40, -- Infested Necroray
@@ -11860,6 +11920,36 @@ function ZA_UpdateData()
 			[396148] = 811,
 			[385330] = 811,
 			[382427] = 5,
+			[32744] = 100,
+			[396787] = 4,
+			[401091] = 80,
+			[401363] = 801,
+			[397613] = 804,
+			[404466] = 908,
+			[401441] = 801,
+			[401102] = 906,
+			[401455] = 12,
+			[405326] = 100,
+			[401243] = 130,
+			[403824] = 641,
+			[403791] = 403,
+			[403815] = 120,
+			[401314] = 4,
+			[406826] = 80,
+			[405400] = 100,
+			[405401] = 100,
+			[403407] = 114,
+			[403406] = 64,
+			[393583] = 909,
+			[396727] = 114,
+			[404889] = 80,
+			[398274] = 900,
+			[398660] = 100,
+			[397719] = 100,
+			[402595] = 100,
+			[290460] = 100,
+			[401475] = 100,
+			[381334] = 200,
 			--qqq
 
 
@@ -12053,6 +12143,45 @@ function ZA_UpdateData()
 			[300291] = 100, -- S.P.A.R.E. Crate
 			[303000] = 100, -- Sapphronetta Flivvers Action Figure
 			[344797] = 100, -- Underpowered Gravity Pack
+
+			-- Unsorted
+			[400811] = 126, -- Arcane Dispelling Rune
+			[400809] = 126, -- Glowing Crystal Bookmark
+			[400270] = 281, -- Draconic Suppression Powder
+			[402137] = 815, -- Warblades of the Hakkari, Reborn
+			[400815] = 114, -- Traditional Morqut Kite
+			[400810] = 100, -- Gnomish Voicebox
+			[402133] = 821, -- Venomreaver
+			[400814] = 116, -- Reinforced Pristine Leather
+			[402134] = 909, -- Bloodherald
+			[402125] = 815, -- Gurubashi Poker
+			[402136] = 817, -- Fiery Vengeance
+			[402130] = 140, -- Gurubashi Crusher
+			[402124] = 909, -- Venomfang
+			[402141] = 116, -- Judgment of the Gurubashi
+			[402123] = 909, -- Gurubashi Carver
+			[402142] = 116, -- Gurubashi Ceremonial Staff
+			[402131] = 909, -- Pitchfork of Mojo Madness
+			[405974] = 116, -- Paw-Made Winterpelt Reagent Bag
+			[402135] = 815, -- Bloodlord's Reaver
+			[402138] = 131, -- Gurubashi Slicer
+			[402147] = 136, -- Junglefury Gauntlets
+			[402150] = 139, -- Gurubashi's Grasp
+			[402139] = 126, -- Mindslave's Reach
+			[402148] = 136, -- Junglefury Leggings
+			[402128] = 909, -- Gurubashi Hexxer
+			[402146] = 172, -- Gloves of the Tormentor
+			[402155] = 818, -- Gurubashi Headdress
+			[402140] = 116, -- Gurubashi Hoodoo Stick
+			[402151] = 173, -- Bloodlord's Embrace
+			[402615] = 171, -- Cord of Shriveled Heads
+			[402152] = 154, -- Gurubashi Tigerhide Cloak
+			[402156] = 818, -- Ritualistic Legwarmers
+			[402143] = 176, -- Animist's Footwraps
+			[402118] = 135, -- Gurubashi Headplate
+			[402129] = 808, -- Sceptre of Hexing
+			[402126] = 140, -- Gurubashi Grinder
+			[402144] = 176, -- Animist's Legguards
 
 			--! Alchemy
 			-- Dragon Isles
@@ -12798,6 +12927,7 @@ function ZA_UpdateData()
 
 			--! Blacksmithing
 			-- Dragon Isles
+			[400808] = 909, -- Ancient Ceremonial Trident
 			[4620670] = 909, -- Recraft Equipment
 			[367615] = 909, -- Allied Chestplate of Generosity
 			[367614] = 909, -- Allied Wristguard of Companionship
@@ -14831,13 +14961,13 @@ function ZA_UpdateData()
 			[382395] = 100, -- Lapidary's Draconium Clamps
 			[382396] = 100, -- Spring-Loaded Draconium Fabric Cutters
 			[382345] = 100, -- Assorted Safety Fuses
-			[384313] = 813, -- Black Fireflight
-			[382403] = 814, -- Blue Fireflight
+			[384313] = 400, -- Black Fireflight
+			[382403] = 80, -- Blue Fireflight
 			[382327] = 100, -- Bundle of Fireworks
 			[382331] = 100, -- D.U.C.K.O.Y.
-			[382335] = 815, -- Green Fireflight
+			[382335] = 120, -- Green Fireflight
 			[382402] = 100, -- Gyroscopic Kaleidoscope
-			[382404] = 818, -- Red Fireflight
+			[382404] = 403, -- Red Fireflight
 			[382365] = 100, -- Completely Safe Rockets
 			[382366] = 100, -- Endless Stack of Needles
 			[382343] = 100, -- Gravitational Displacer
@@ -14860,7 +14990,7 @@ function ZA_UpdateData()
 			[382383] = 100, -- Quality-Assured Optics
 			[382386] = 100, -- Sentry's Stabilized Specs
 			[382376] = 100, -- Shock-Spring Coil
-			[384314] = 816, -- Bronze Fireflight
+			[384314] = 641, -- Bronze Fireflight
 			[382330] = 100, -- Creature Combustion Canister
 			[382375] = 134, -- Handful of Serevite Bolts
 			-- Shadowlands
@@ -16196,6 +16326,8 @@ function ZA_UpdateData()
 
 			--! Jewelcrafting
 			-- Dragon Isles
+			[400812] = 808, -- Crystal Tuning Fork
+			[403483] = 142, -- Unstable Elementium
 			[395696] = 808, -- Dragon Isles Crushing
 			[374627] = 808, -- Dragon Isles Prospecting
 			[389194] = 808, -- Recraft Equipment
@@ -16778,6 +16910,7 @@ function ZA_UpdateData()
 			[107616] = 815, -- Zen Alexandrite
 			[106958] = 815, -- Zen Wild Jade
 			-- Cataclysm
+			[404740] = 808, -- Cataclysm Crushing
 			[382978] = 808, -- Cataclysm Prospecting
 			[73360]  = 813, -- Accurate Demonseye
 			[73250]  = 813, -- Accurate Nightstone
@@ -17372,6 +17505,7 @@ function ZA_UpdateData()
 			[39466] = 813, -- Veiled Shadow Draenite
 			[39737] = 813, -- Veiled Shadowsong Amethyst
 			-- Classic
+			[405205] = 808, -- Square Holders
 			[382995] = 808, -- Classic Prospecting
 			[26912] = 819, -- Figurine - Black Diamond Crab
 			[26914] = 910, -- Figurine - Dark Iron Scorpid
@@ -21806,6 +21940,34 @@ function ZA_UpdateData()
 			[396148] = 134422,
 			[385330] = 134422,
 			[391609] = 0,
+			[384801] = 0,
+			[396787] = 0,
+			[401091] = 0,
+			[401363] = 0,
+			[397613] = 0,
+			[404466] = 0,
+			[401441] = 0,
+			[401102] = 0,
+			[401455] = 0,
+			[405326] = 0,
+			[401243] = 0,
+			[403824] = 0,
+			[403791] = 0,
+			[403815] = 0,
+			[401314] = 0,
+			[406826] = 0,
+			[405401] = 0,
+			[403407] = 0,
+			[403406] = 0,
+			[393583] = 0,
+			[404889] = 0,
+			[398660] = 0,
+			[397719] = 0,
+			[402595] = 0,
+			[290460] = 0,
+			[401475] = 0,
+			[402137] = 135365,
+			[381334] = 0,
 			--qqi
 
 
