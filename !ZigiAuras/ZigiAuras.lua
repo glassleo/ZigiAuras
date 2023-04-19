@@ -1288,7 +1288,7 @@ function ZA_UpdateData()
 			[388437] = "Spirit of Sharing: Versatility", -- Rare Community Feast
 			[388438] = "Spirit of Sharing: Versatility", -- Epic Community Feast
 			[388439] = "Spirit of Sharing: Versatility", -- Legendary Community Feast
-			[394714] = "Ally of the Light: Versatility", -- Virtuous Silver Cataphract
+			--[394714] = "Ally of the Light: Versatility", -- Virtuous Silver Cataphract
 			[375343] = "Empowered Frost: Versatility", -- Elemental Lariat
 			[375345] = "Empowered Earth: Mastery", -- Elemental Lariat
 			[375335] = "Empowered Fire: Critical Strike", -- Elemental Lariat
@@ -2122,6 +2122,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[401180] = "Zone", -- Voidmarked
 			[290460] = "Zone", -- Battlebot Champion
 			[397719] = "Zone", -- Celestial Transocular
 			[403407] = "Zone", -- Scroll Collection
@@ -2751,6 +2752,26 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Banana Bomber"] = 5,
+			["Restorative Brew"] = 281,
+			[406714] = 646, -- Scroll of Teleport: Zskera Vaults
+			["Voidmarked"] = 320,
+			["Voidmark"] = 320,
+			[405491] = 130, -- Coin Sweep
+			["Coin Sweep"] = 130,
+			[398782] = 100, -- Trap Prey
+			["Trap Prey"] = 100,
+			["Ook 'Em All"] = 100,
+			["Shoot Ooker"] = 100,
+			[403576] = 126, -- Full Lockdown
+			[403577] = 126, -- Full Lockdown
+			["Ookin Bombs"] = 5,
+			["Banana Broadside"] = 5,
+			[404654] = 107, -- Hard to Port
+			["Crash Course"] = 903,
+			["Quaking Roar"] = 111,
+			[404523] = 10, -- Spiritwalker's Tidal Totem
+			["Atrophic Poison"] = 806,
 			[393047] = 911, -- Skyreach
 			["Territorial Roar"] = 327,
 			["Lightning Squall"] = 800,
@@ -4133,7 +4154,7 @@ function ZA_UpdateData()
 			["Ancient Portal: Dalaran"] = 646,
 			["Ancient Rune:1058940"] = 810,
 			["Ancient Teleport: Dalaran"] = 646,
-			["Scroll of Teleport: Theater of Pain"] = 646,
+			[335671] = 646, -- Scroll of Teleport: Theater of Pain
 			["Angelic Feather"] = 2,
 			["Angry Snort"] = 903,
 			["Anima Barrage:1041233"] = 201,
@@ -6210,7 +6231,7 @@ function ZA_UpdateData()
 			["Fuselighter"] = 4,
 			["Galactic Guardian"] = 722,
 			["Gale Eruption"] = 811,
-			["Gale Force"] = 811,
+			["Gale Force"] = 911,
 			["Gale Slash"] = 811,
 			["Gale Winds"] = 811,
 			["Gale"] = 811,
@@ -8496,6 +8517,7 @@ function ZA_UpdateData()
 			["Summon Water Elemental"] = 801,
 			["Summon Wolfoids"] = 646,
 			["Summon Wrathguard"] = 32,
+			["Summon Rising Tempest"] = 811,
 			["Summoning Voidwalker"] = 320,
 			["Sun Bolt"] = 6,
 			["Sun Strike"] = 6,
@@ -10467,6 +10489,7 @@ function ZA_UpdateData()
 			[230988] = 173, -- Vicious War Scorpion
 
 			--! Salamanther
+			[374090] = 170, -- Ancient Salamanther
 			[374098] = 157, -- Stormhide Salamanther
 
 			--! Seahorse
@@ -11950,6 +11973,9 @@ function ZA_UpdateData()
 			[290460] = 100,
 			[401475] = 100,
 			[381334] = 200,
+			[400665] = 100,
+			[400673] = 100,
+			[405335] = 142,
 			--qqq
 
 
@@ -21209,7 +21235,6 @@ function ZA_UpdateData()
 			["Door of Shadows"] = 3586270,
 			["Jump to Skyhold"] = 0,
 			["Dismiss Pet"] = 0,
-			["Scroll of Teleport: Theater of Pain"] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportTheaterOfPain",
 			["Summoning Voidwalker"] = 136221,
 
 
@@ -21968,6 +21993,10 @@ function ZA_UpdateData()
 			[401475] = 0,
 			[402137] = 135365,
 			[381334] = 0,
+			[400665] = 0,
+			[400673] = 0,
+			[401180] = 0,
+			[405335] = 0,
 			--qqi
 
 
@@ -21995,8 +22024,10 @@ function ZA_UpdateData()
 			[324031] = "Interface/AddOns/Media_Newsom/Icons/WormholeShadowlands", -- Wormhole: Shadowlands
 			[386379] = "Interface/AddOns/Media_Newsom/Icons/WormholeDragonIsles", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
 			[220746] = "Interface/AddOns/Media_Newsom/Icons/TeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
+			[390783] = "Interface/AddOns/Media_Newsom/Icons/TeleportAylaagCamp", -- Teleport: Ravenholdt Manor
 			[71436] = "Interface/AddOns/Media_Newsom/Icons/TeleportBootyBay", -- Teleport: Booty Bay (Boots of the Bay)
 			[231054] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan", -- Teleport: Karazhan
+			[406714] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportForbiddenReach", -- Teleport: Karazhan
 			["Teleport: Karazhan"] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan",
 			["Portal: Karazhan"] = "Interface/AddOns/Media_Newsom/Icons/PortalKarazhan",
 			[41234] = "Interface/AddOns/Media_Newsom/Icons/TeleportBlackTemple", -- Teleport: Black Temple
@@ -22008,6 +22039,8 @@ function ZA_UpdateData()
 			[175608] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarabor", -- Teleport: Karabor
 			[175604] = "Interface/AddOns/Media_Newsom/Icons/TeleportBladespireCitadel", -- Teleport: Bladespire Citadel
 			[54406] = 237509, -- Teleport: Dalaran - Northrend (Band/Signet/Ring of the Kirin Tor)
+			[335671] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportTheaterOfPain", -- Scroll of Teleport: Theater of Pain
+			[26373] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportMoonglade", -- Lunar Invitation
 
 
 			--§ Spells
