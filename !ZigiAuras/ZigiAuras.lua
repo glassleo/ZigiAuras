@@ -230,10 +230,14 @@ function ZA_UpdateData()
 			["Sonova Snowden"] = "HUNTER",
 			["Justicar Mariel Trueheart"] = "PALADIN",
 			--! Friends
+			-- Ivan
+			["Ivana-ScarshieldLegion"] = "PRIEST",
+			["Ivandin-Ravenholdt"] = "PALADIN",
+			["Ivanessence-Ravenholdt"] = "DRUID",
 			-- Daniel
 			["Hana-Sporeggar"] = "HUNTER",
-			["Oceans-Sporeggar"] = "SHAMAN",
 			["Nights-Sporeggar"] = "ROGUE",
+			["Oceans-Sporeggar"] = "SHAMAN",
 			-- Siavash
 			["Bastani-ShatteredHand"] = "HUNTER",
 			["Blackvampkid-Bloodfeather"] = "PALADIN",
@@ -391,6 +395,7 @@ function ZA_UpdateData()
 			["Phoebe-Sporeggar"] = "PRIEST",
 			["Prue-Ravenholdt"] = "MAGE",
 			["Ravioli-Ravenholdt"] = "HUNTER",
+			["Rei-Sporeggar"] = "MONK",
 			["Rose-ScarshieldLegion"] = "PRIEST",
 			["Salyssra-SteamwheedleCartel"] = "WARLOCK",
 			["Schnappi-Moonglade"] = "DRUID",
@@ -1088,6 +1093,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Siege Scorpion"] = 100,
 			["Champion Battlebot"] = 100,
 			["Trained Flayedwing"] = 415,
 			["Alliance Gunship Cannon"] = 100,
@@ -1903,6 +1909,7 @@ function ZA_UpdateData()
 			["WoW's 23rd Anniversary"] = "Reputation", -- 2027
 			["WoW's 24th Anniversary"] = "Reputation", -- 2028
 			["WoW's 25th Anniversary"] = "Reputation", -- 2029
+			["Word of a Worthy Ally"] = "Reputation",
 			[46668] = "Reputation", -- WHEE!
 			[136583] = "Reputation", -- Darkmoon Top Hat
 			[95987] = "Reputation", -- Unburdened (Hallow's End)
@@ -2122,6 +2129,9 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[392634] = "Zone", -- Waiting for the Rugged Dragonscale
+			[400383] = "Zone", -- Positional Displacer
+			[211080] = "Zone", -- Comforting Light
 			[401180] = "Zone", -- Voidmarked
 			[290460] = "Zone", -- Battlebot Champion
 			[397719] = "Zone", -- Celestial Transocular
@@ -2398,15 +2408,17 @@ function ZA_UpdateData()
 			[87024] = true, -- Cauterized (Mage)
 			[41425] = true, -- Hypothermia (Mage)
 			[340556] = true, -- Well-Honed Instincts (Druid)
+			[382912] = true, -- Well-Honed Instincts (Druid)
 			[25771] = true, -- Forbearance (Paladin)
 			[6788] = true, -- Weakened Soul (Priest)
+			[374609] = true, -- Blood Draw (Death Knight)
 			[57724] = true, -- Sated (Bloodlust)
 			[57723] = true, -- Exhaustion (Heroism)
 			[390435] = true, -- Exhaustion (Fury of the Aspects)
 			[80354] = true, -- Temporal Displacement (Time Warp)
 			[264689] = true, -- Fatigued (Ancient Hysteria)
 			[265703] = true, -- Azerite Energy (Island Expeditions)
-			[211319] = true, -- Restitution (Pr€€iest)
+			[211319] = true, -- Restitution (Priest)
 
 
 			-----------------
@@ -2752,6 +2764,42 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Leap"] = 911,
+			["Superheat"] = 402,
+			["Earth Warder's Protection"] = 400,
+			["Earthen Bolt"] = 803,
+			["Cave In"] = 400,
+			["Earthbreaker"] = 400,
+			["Awakened Avalanche"] = 803,
+			["Tectonic Slam"] = 400,
+			["Wind Bolt"] = 811,
+			["Lethal Current"] = 911,
+			["Mammoth Charge"] = 104,
+			["Putrid Bolt"] = 40,
+			["Frantic Sprint"] = 104,
+			["Frigid Torment"] = 16,
+			["Fling Mud"] = 803,
+			["Judgement Wave"] = 200,
+			["Judgment Wave"] = 200,
+			["Torrid Upheaval"] = 12,
+			["High Tide"] = 801,
+			["Gangway"] = 903,
+			["Monstrous Roar"] = 111,
+			[382912] = 999, -- Well-Honed Instincts (Debuff)
+			[81281] = 8, -- Fungal Growth
+			["Nature's Vigil"] = 8,
+			["Temporal Dilation"] = 641,
+			["Sands of Temporal Perfection"] = 641,
+			[303160] = 65, -- Coral Shield
+			["Coral Shield"] = 808,
+			["Sticky Bomb"] = 5,
+			["Sticky Bombs"] = 5,
+			[386509] = 400, -- Deep Breath
+			["Deep Breath:1016352"] = 400,
+			["Infuse Corruption:136064"] = 410,
+			[374609] = 999, -- Blood Draw
+			[382605] = 720, -- Spirit Touched
+			["Dragonkiller Lance"] = 100,
 			["Banana Bomber"] = 5,
 			["Restorative Brew"] = 281,
 			[406714] = 646, -- Scroll of Teleport: Zskera Vaults
@@ -3012,6 +3060,7 @@ function ZA_UpdateData()
 			[370901] = 403, -- Leaping Flames
 			[391006] = 8, -- Refusal to Die
 			["Corrupted Quasar"] = 320,
+			["Void Devastation"] = 320,
 			["Void Empowerment"] = 320,
 			["Void Spike"] = 320,
 			["Mud Eruption"] = 803,
@@ -8116,6 +8165,7 @@ function ZA_UpdateData()
 			["Slimy Coating"] = 908,
 			["Sling Mud"] = 803,
 			["Soft Landing"] = 811,
+			["Parasol Fall"] = 321,
 			["Slow Fall"] = 811,
 			["Slow"] = 641,
 			["Slop Burst"] = 908,
@@ -8457,7 +8507,7 @@ function ZA_UpdateData()
 			["Succumb to Doubt"] = 411,
 			["Sucking Teeth"] = 101,
 			["Sudden Death"] = 411,
-			["Sudden Doom"] = 411,
+			["Sudden Doom"] = 414,
 			["Suffering"] = 411,
 			["Sugar Rush:236303"] = 107,
 			["Summon Air Elemental"] = 811,
@@ -9484,6 +9534,7 @@ function ZA_UpdateData()
 
 			--! Armoredon
 			[387231] = 16, -- Hailstorm Armoredon
+			[406637] = 4, -- Inferno Armoredon
 
 			--! Aqir Drone
 			[316337] = 324, -- Malevolent Drone
@@ -9853,6 +9904,8 @@ function ZA_UpdateData()
 			[124550] = 34, -- Cataclysmic Gladiator's Twilight Drake
 			[201098] = 411, -- Infinite Timereaver
 			[377071] = 4, -- Crimson Gladiator's Drake
+			-- Slitherdrake
+			[408977] = 36, -- Obsidian Gladiator's Slitherdrake
 			-- Life-Binder Drake
 			[107842] = 5, -- Blazing Drake
 			[107845] = 403, -- Life-Binder's Handmaiden
@@ -10219,16 +10272,22 @@ function ZA_UpdateData()
 			[373859] = 12, -- Loyal Magmammoth
 			[374275] = 12, -- Raging Magmammoth
 
-			--! Mana Ray
+			--! Ray
 			[235764] = 157, -- Darkspore Mana Ray
 			[253108] = 401, -- Felglow Mana Ray
 			[253107] = 140, -- Lambent Mana Ray
 			[253109] = 200, -- Scintillating Mana Ray
 			[253106] = 126, -- Vibrant Mana Ray
-			-- Necroray
 			[344574] = 410, -- Bulbous Necroray
 			[344576] = 40, -- Infested Necroray
 			[344575] = 40, -- Pestilent Necroray
+			-- Shalewing
+			[408655] = 809, -- Morsel Sniffer
+			[408653] = 132, -- Boulder Hauler
+			[408647] = 126, -- Cobalt Shalewing
+			[408651] = 6, -- Cataloged Shalewing
+			[408627] = 12, -- Igneous Shalewing
+			[408649] = 36, -- Shadowflame Shalewing
 
 			--! Mauler
 			[356501] = 413, -- Rampaging Mauler
@@ -10266,6 +10325,7 @@ function ZA_UpdateData()
 			[239013] = 200, -- Lightforged Warframe
 			[223814] = 100, -- Mechanized Lumber Extractor
 			[134359] = 100, -- Sky Golem
+			[400733] = 100, -- Rocket Shredder 9001
 
 			--! Mite
 			[312776] = 413, -- Chittering Animite
@@ -10483,10 +10543,12 @@ function ZA_UpdateData()
 			[75973]  = 100, -- X-53 Touring Rocket
 
 			--! Scorpid
-			[123886] = 810, -- Amber Scorpion
 			[93644]  = 155, -- Kor'kron Annihilator
 			[148417] = 5, -- Kor'kron Juggernaut
 			[230988] = 173, -- Vicious War Scorpion
+			-- Crystal Scorpion
+			[123886] = 810, -- Amber Scorpion
+			[411565] = 821, -- Felcrystal Scorpion
 
 			--! Salamanther
 			[374090] = 170, -- Ancient Salamanther
@@ -10607,6 +10669,10 @@ function ZA_UpdateData()
 			[350219] = 12, -- Magmashell
 			[374162] = 12, -- Scrappy Worldsnail
 			[374155] = 12, -- Shellack
+			-- Crystal Snail
+			[408313] = 820, -- Big Slick in the City
+			[409034] = 36, -- Vicious War Snail (Alliance)
+			[409032] = 36, -- Vicious War Snail (Horde)
 
 			--! Spidder
 			[213115] = 142, -- Bloodfang Widow
@@ -10702,7 +10768,7 @@ function ZA_UpdateData()
 
 			--! Turtle
 			[227956] = 12, -- Arcadian War Turtle
-			--[367826] = 0, -- Savage Green Battle Turtle
+			[367826] = 170, -- Savage Green Battle Turtle
 			-- Dragon Turtle
 			[127286] = 157, -- Black Dragon Turtle
 			[127287] = 171, -- Blue Dragon Turtle
@@ -11976,6 +12042,37 @@ function ZA_UpdateData()
 			[400665] = 100,
 			[400673] = 100,
 			[405335] = 142,
+			[405274] = 816,
+			[400384] = 320,
+			[405750] = 403,
+			[404662] = 908,
+			[401354] = 801,
+			[400665] = 28,
+			[400668] = 28,
+			[400671] = 28,
+			[400673] = 28,
+			[400674] = 28,
+			[400676] = 28,
+			[400678] = 28,
+			[400682] = 28,
+			[400686] = 28,
+			[400690] = 28,
+			[400691] = 28,
+			[400693] = 28,
+			[405387] = 100,
+			[406381] = 36,
+			[409654] = 111,
+			[381716] = 202,
+			[399717] = 80,
+			[377924] = 202,
+			[154925] = 720,
+			[390568] = 801,
+			[407827] = 100,
+			[409420] = 804,
+			[404674] = 100,
+			[409650] = 282,
+			[399347] = 100,
+			[400696] = 911,
 			--qqq
 
 
@@ -21151,6 +21248,18 @@ function ZA_UpdateData()
 					[5] = 176, -- Yellow
 				}
 				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
+
+				-- Winding Slitherdrake
+				local colors = {
+					[1] = 175, -- Black
+					[2] = 118, -- Blue
+					[3] = 176, -- Bronze
+					[4] = 170, -- Green
+					[5] = 818, -- Red
+					[6] = 812, -- White
+					[7] = 816, -- Yellow
+				}
+				ZA.Spells[368893] = colors[ArmyDB[name.."-"..realm]["WindingSlitherdrake"]] or colors[1]
 			end
 		end
 
@@ -21997,6 +22106,32 @@ function ZA_UpdateData()
 			[400673] = 0,
 			[401180] = 0,
 			[405335] = 0,
+			[405274] = 0,
+			[400384] = 0,
+			[405750] = 0,
+			[404662] = 0,
+			[401354] = 0,
+			[400665] = 0,
+			[400668] = 0,
+			[400671] = 0,
+			[400673] = 0,
+			[400674] = 0,
+			[400676] = 0,
+			[400678] = 0,
+			[400682] = 0,
+			[400686] = 0,
+			[400690] = 0,
+			[400691] = 0,
+			[400693] = 0,
+			[406381] = 0,
+			[409654] = 134422,
+			[399717] = 0,
+			[377924] = 0,
+			[154925] = 0,
+			[390568] = 0,
+			[407827] = 0,
+			[404674] = 0,
+			[399347] = 0,
 			--qqi
 
 

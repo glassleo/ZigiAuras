@@ -1,7 +1,8 @@
-## Interface: 100007
+## Interface: 100100
 ## Title: ZigiAuras
-## Version: 10.0.7
+## Version: 10.1
 ## Notes: Global variables for WeakAuras
 ## Author: Leo
+## IconTexture: 2405653
 
 ZigiAuras.lua
