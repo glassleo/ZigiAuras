@@ -1093,6 +1093,8 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Big Slick in the City"] = 820,
+			["Curious Niffen"] = 803,
 			["Siege Scorpion"] = 100,
 			["Champion Battlebot"] = 100,
 			["Trained Flayedwing"] = 415,
@@ -2129,6 +2131,9 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[411252] = "Zone", -- Away Team
+			[410669] = "Zone", -- You've got Mail!
+			[399687] = "Zone", -- Bottled Magma
 			[392634] = "Zone", -- Waiting for the Rugged Dragonscale
 			[400383] = "Zone", -- Positional Displacer
 			[211080] = "Zone", -- Comforting Light
@@ -2764,6 +2769,59 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Ear-Splitting Roar"] = 111,
+			["Terrifying Howls"] = 327,
+			["Paralyzing Venomw"] = 806,
+			["Venemous Spit"] = 806,
+			["Crystal Reflection"] = 808,
+			[412454] = 908, -- Blend In
+			[387729] = 908, -- Slippery Mucus
+			["Slippery Mucus"] = 908,
+			[407468] = "Insanity", -- Mind Spike: Insanity
+			[395097] = 402, -- Blazing Talons
+			[412320] = 36, -- Fly Away!
+			["Rupturing Earth"] = 400,
+			["Darkflame Quills"] = 36,
+			["Lightweaver"] = 2,
+			["Pebble Belch"] = 803,
+			[400066] = 806, -- Drowsy Dust
+			[394829] = 105, -- Relentless Pursuit
+			["Relentless Pursuit:1357795"] = 105,
+			[398370] = 806, -- Petrifying Bite
+			[409147] = 803, -- Niffen Diggin' Mitts
+			["Slimy Slime"] = 806,
+			["Summon Slug"] = 806,
+			["Crystalline Powder"] = 808,
+			["Smothering Earth"] = 803,
+			["Dark Rupture:4914673"] = 36,
+			[407296] = 36, -- Dark Rupture
+			["Tenebrous Outburst:4914676"] = 36,
+			[407292] = 36, -- Tenebrous Outburst
+			["Wildfire Weapon"] = 4,
+			["Inflame Aggression"] = 402,
+			["Bottled Magma"] = 12,
+			["Stone's Protection"] = 803,
+			["Earthen Bulwark"] = 803,
+			["Magma Splash"] = 12,
+			["Violent Quake"] = 400,
+			["Molten Furnace"] = 12,
+			["Detonate"] = 5,
+			[400296] = 4, -- Concussive Blast
+			["Burn Away Pain"] = 4,
+			["Slag Armor"] = 12,
+			["Volatile Magma Orb"] = 12,
+			["Cauterizing Prayer"] = 6,
+			[410629] = 403, -- Wave of Flame
+			[410639] = 403, -- Wave of Flame
+			[410538] = 403, -- Falling Embers
+			[410539] = 403, -- Falling Embers
+			["Falling Embers:4622459"] = 403,
+			["Unwind Injury"] = 641,
+			["Hardened Scales"] = 903,
+			["Rock Needle"] = 803,
+			["Sticky Gunk"] = 908,
+			["Slipperu Mucus"] = 908,
+			["Dig Faster"] = 104,
 			["Leap"] = 911,
 			["Superheat"] = 402,
 			["Earth Warder's Protection"] = 400,
@@ -3854,7 +3912,8 @@ function ZA_UpdateData()
 			["Wild Mushroom"] = 8,
 			["Fey Missile"] = 805,
 			["Denizen of the Dream"] = 805,
-			["Mind Flay: Insanity"] = 328,
+			["Mind Spike: Insanity"] = "Insanity",
+			["Mind Flay: Insanity"] = "Insanity",
 			["Dark Ascension"] = 320,
 			["Lightwell"] = 2,
 			["Lightwell Charges"] = 2,
@@ -7314,6 +7373,8 @@ function ZA_UpdateData()
 			["Piercing Blur:1396971"] = 321,
 			["Piercing Chomp"] = 112,
 			["Piercing Fangs"] = 101,
+			["Piercing Fang"] = 101,
+			["Fracturing Bite"] = 101,
 			["Piercing Gaze"] = 328,
 			["Piercing Lens:132160"] = 411,
 			["Piercing Memory:878214"] = 411,
@@ -10269,8 +10330,11 @@ function ZA_UpdateData()
 			[59791]  = 154, -- Wooly Mammoth
 			-- Dragon Isles Mammoth
 			[374196] = 154, -- Plainswalker Bearer
+			[374194] = 119, -- Mossy Mammoth
+			-- Magmammoth
 			[373859] = 12, -- Loyal Magmammoth
 			[374275] = 12, -- Raging Magmammoth
+			[371176] = 80, -- Subterranean Magmammoth
 
 			--! Ray
 			[235764] = 157, -- Darkspore Mana Ray
@@ -12073,6 +12137,22 @@ function ZA_UpdateData()
 			[409650] = 282,
 			[399347] = 100,
 			[400696] = 911,
+			[400025] = 803,
+			[411137] = 100,
+			[400861] = 803,
+			[400826] = 36,
+			[401006] = 100,
+			[401007] = 100,
+			[401034] = 100,
+			[408656] = 117,
+			[406816] = 117,
+			[406812] = 117,
+			[406796] = 117,
+			[376300] = 641,
+			[403313] = 36,
+			[403297] = 36,
+			[403315] = 36,
+			[403318] = 36,
 			--qqq
 
 
@@ -22132,6 +22212,21 @@ function ZA_UpdateData()
 			[407827] = 0,
 			[404674] = 0,
 			[399347] = 0,
+			[400025] = 0,
+			[411137] = 0,
+			[400861] = 0,
+			[400826] = 0,
+			[401006] = 0,
+			[401007] = 0,
+			[401034] = 0,
+			[408656] = 0,
+			[406816] = 0,
+			[406812] = 0,
+			[406796] = 0,
+			[403313] = 5062613,
+			[403297] = 5062634,
+			[403315] = 5062637,
+			[403318] = 5062582,
 			--qqi
 
 
@@ -22143,6 +22238,7 @@ function ZA_UpdateData()
 
 
 			--§ Teleports
+			[409147] = 4643992, -- Niffen Diggin' Mitts
 			[49844] = 1786409, -- Direbrew's Remote
 			[50977] = "Interface/AddOns/Media_Newsom/Icons/DeathGate", -- Death Gate
 			["Death Gate:135766"] = "Interface/AddOns/Media_Newsom/Icons/DeathGate",
