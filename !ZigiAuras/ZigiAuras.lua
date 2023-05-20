@@ -217,6 +217,7 @@ function ZA_UpdateData()
 			["Blizzard"] = "Blizzard",
 			["Customer Support"] = "Blizzard",
 			--! NPCs
+			["Vaskarn"] = "EVOKER",
 			["Shoak"] = "HUNTER",
 			["Breanni"] = "HUNTER",
 			["Mei Francis"] = "HUNTER",
@@ -2131,6 +2132,9 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[383403] = "Zone", -- Qalashi Goulash
+			[412618] = "Zone", -- Ebon Stride
+			[391241] = "Zone", -- Limited Immortality
 			[411252] = "Zone", -- Away Team
 			[410669] = "Zone", -- You've got Mail!
 			[399687] = "Zone", -- Bottled Magma
@@ -2769,6 +2773,41 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[378831] = 5, -- Explosive Concoction
+			[378827] = 5, -- Explosive Concoction
+			["Living Flame Blast"] = 403,
+			["Marked for Butchery"] = 112,
+			["Greater Healing Rapid"] = 801,
+			["Flamespit"] = 4,
+			["Roaring Firebreath"] = 4,
+			["Interrupting Cloudburst"] = 811,
+			["Winds of Change"] = 811,
+			["Stormslam"] = 9,
+			["Tempest Stormshield"] = 911,
+			["Crackling Detonation"] = 800,
+			["Summon Primal Thundercloud"] = 911,
+			["Searing Blows"] = 5,
+			["Molten Boulder"] = 12,
+			["Burnout"] = 402,
+			["Inferno"] = 402,
+			["Summon Scorchlings"] = 4,
+			[385316] = 325, -- Unlucky Strike
+			[385314] = 325, -- Unlucky Strike
+			[385313] = 325, -- Unlucky Strike
+			["Burning Touch"] = 4,
+			["Molten Blood"] = 12,
+			["Fire Maw"] = 5,
+			["Blazing Rush"] = 5,
+			["Steel Barrage"] = 909,
+			["Jagged Earth"] = 803,
+			["Crushing Smash"] = 903,
+			["Cold Claws"] = 17,
+			["Frost Infusion"] = 16,
+			["Icebolt"] = 160,
+			["Ice Shield"] = 160,
+			["Stone Missile"] = 803,
+			["Echolocation"] = 111,
+			[394313] = 112, -- Battering Ram
 			["Ear-Splitting Roar"] = 111,
 			["Terrifying Howls"] = 327,
 			["Paralyzing Venomw"] = 806,
@@ -5192,7 +5231,6 @@ function ZA_UpdateData()
 			["Crushing Headbutt"] = 903,
 			["Crushing Slam"] = 903,
 			["Crushing Slam:135132"] = 427,
-			["Crushing Smash"] = 108,
 			["Crushing Stomp"] = 903,
 			["Crushing Strike"] = 107,
 			["Crushing Swipe"] = 903,
@@ -8893,7 +8931,7 @@ function ZA_UpdateData()
 			["Touch of the Magi"] = 64,
 			["Touch of the Occult"] = 325,
 			["Touch of the Ravenclaw"] = 327,
-			["Town Portal"] = 8,
+			["Town Portal"] = 126,
 			["Toxic Blades"] = 806,
 			["Toxic Breath"] = 806,
 			["Toxic Fumes"] = 806,
@@ -12153,6 +12191,12 @@ function ZA_UpdateData()
 			[403297] = 36,
 			[403315] = 36,
 			[403318] = 36,
+			[403318] = 36,
+			[384837] = 126,
+			[404314] = 101,
+			[403469] = 114,
+			[403462] = 114,
+			[403481] = 202,
 			--qqq
 
 
@@ -21319,7 +21363,7 @@ function ZA_UpdateData()
 				}
 				ZA.Spells[360954] = colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
 				
-				-- CLiffside Wylderdrake
+				-- Cliffside Wylderdrake
 				local colors = {
 					[1] = 175, -- Black
 					[2] = 814, -- Blue
@@ -21333,11 +21377,9 @@ function ZA_UpdateData()
 				local colors = {
 					[1] = 175, -- Black
 					[2] = 118, -- Blue
-					[3] = 176, -- Bronze
+					[3] = 176, -- Yellow
 					[4] = 170, -- Green
 					[5] = 818, -- Red
-					[6] = 812, -- White
-					[7] = 816, -- Yellow
 				}
 				ZA.Spells[368893] = colors[ArmyDB[name.."-"..realm]["WindingSlitherdrake"]] or colors[1]
 			end
@@ -22227,6 +22269,11 @@ function ZA_UpdateData()
 			[403297] = 5062634,
 			[403315] = 5062637,
 			[403318] = 5062582,
+			[384837] = 0,
+			[404314] = 0,
+			[403469] = 0,
+			[403462] = 0,
+			[403481] = 0,
 			--qqi
 
 
