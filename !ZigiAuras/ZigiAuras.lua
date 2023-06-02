@@ -2774,8 +2774,11 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[409704] = 36, -- Dreadfire Breath
+			[982] = 202, -- Revive Pet
+			["Mending Clay"] = 803,
 			["Blood Mirror"] = 321,
-			[88186] = 28, -- Vapor Form
+			[88186] = 20, -- Vapor Form
 			["Respawn"] = 100,
 			[405022] = 320, -- Hurtling Barrage
 			[403625] = 320, -- Scouring Eternity
@@ -9683,9 +9686,10 @@ function ZA_UpdateData()
 			[406637] = 4, -- Inferno Armoredon
 
 			--! Aqir Drone
-			[316337] = 324, -- Malevolent Drone
-			[316339] = 324, -- Shadowbarb Drone
-			[316340] = 324, -- Wicked Swarmer
+			[316337] = 156, -- Malevolent Drone
+			[316339] = 328, -- Shadowbarb Drone
+			[316340] = 818, -- Wicked Swarmer
+			[414986] = 816, -- Royal Swarmer
 
 			--! Aquilon
 			[353880] = 201, -- Ascendant's Aquilon
@@ -10532,7 +10536,7 @@ function ZA_UpdateData()
 			--! Parrot
 			[254811] = 815, -- Squawks
 			[254813] = 173, -- Sharkbait
-			[366790] = 142, -- Quawks
+			[366790] = 34, -- Quawks
 			-- Mechanical Parrot
 			[290328] = 100, -- Wonderwing 2.0
 
