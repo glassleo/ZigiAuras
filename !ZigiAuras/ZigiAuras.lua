@@ -160,6 +160,15 @@ function ZA_UpdateData()
 			end
 		end
 
+
+		-- Specialization
+		function ZA.Specialization(default, ...)
+			local spec = GetSpecialization() or 5
+			if not spec or spec >= 5 then return default end
+
+			return select(spec, ...)
+		end
+
 		-- Custom Icon Colors (OpieUI.lua:getSliceColor)
 		--.........
 		--local li = col[icon] or -3
@@ -840,6 +849,8 @@ function ZA_UpdateData()
 			[145430] = "Teleport: Timeless Isle",
 			[175608] = "Teleport: Karabor",
 			[175604] = "Teleport: Bladespire Citadel",
+			[216138] = "Teleport: Margoss's Retreat",
+			[390783] = "Ride the Wind: Aylaag Camp",
 			[366333] = "Crystallic Spheroid",
 			[105518] = "Disassemble Clockwork Box",
 			[368788] = "Lilian's Hearthstone",
@@ -1337,6 +1348,9 @@ function ZA_UpdateData()
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[408533] = true, -- Anvil Strike (Elementium Pocket Anvil)
+			[381699] = true, -- Forgestorm Ignited (Forgestorm)
+			[390224] = "Sophic Devotion: " .. ZA.PrimaryStatName, -- Enchant: Sophic Devotion
 			[394745] = "Seize the Moment: Critical Strike", -- Draconic Hierophant's Finery
 			[388435] = "Spirit of Sharing: Versatility", -- Uncommon Community Feast
 			[388436] = "Spirit of Sharing: Versatility", -- Common Community Feast
@@ -1950,7 +1964,7 @@ function ZA_UpdateData()
 			-- Experience/Reputation
 			["Experience Eliminated"] = "XP",
 			["Winds of Wisdom"] = "XP",
-			["Winds of Sanctuary"] = "XP",
+			["Winds of Sanctuary"] = "Reputation",
 			[289982] = "XP", -- Draught of Ten Lands
 			["WoW's 19th Anniversary"] = "Reputation", -- 2023
 			["WoW's 20th Anniversary"] = "Reputation", -- 2024
@@ -1960,6 +1974,8 @@ function ZA_UpdateData()
 			["WoW's 24th Anniversary"] = "Reputation", -- 2028
 			["WoW's 25th Anniversary"] = "Reputation", -- 2029
 			["Word of a Worthy Ally"] = "Reputation",
+			["Ribbon Dance"] = "XP",
+			["Reverence for the Flame"] = "XP",
 			[46668] = "Reputation", -- WHEE!
 			[136583] = "Reputation", -- Darkmoon Top Hat
 			[95987] = "Reputation", -- Unburdened (Hallow's End)
@@ -2023,6 +2039,12 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[411650] = "State", -- Fire Attunement
+			[411649] = "State", -- Frost Attunement
+			[415041] = "State", -- Slipstream
+			[400132] = "State", -- Burrow
+			[400133] = "State", -- Carrying Myrrit
+			[400137] = "State", -- Niffen Friend
 			[410214] = "State", -- Myrrit's Dig Buddy
 			[377826] = "State", -- Temporal Anomaly
 			[385081] = "State", -- Unstable Blink
@@ -2181,6 +2203,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[411698] = "Zone", -- Thawing Flame
+			[411696] = "Zone", -- Extinguishing Frost
+			[411171] = "Zone", -- Light Etched Key
+			[45444]  = "Zone", -- Bonfire's Blessing
 			[408794] = "Zone", -- Snail Stacks
 			[409264] = "Zone", -- Retrieve Sphere
 			[409322] = "Zone", -- Retrieve Arm
@@ -2474,6 +2500,7 @@ function ZA_UpdateData()
 			[382912] = true, -- Well-Honed Instincts (Druid)
 			[25771] = true, -- Forbearance (Paladin)
 			[6788] = true, -- Weakened Soul (Priest)
+			[114216] = true, -- Angelic Bulwark (Priest)
 			[374609] = true, -- Blood Draw (Death Knight)
 			[57724] = true, -- Sated (Bloodlust)
 			[57723] = true, -- Exhaustion (Heroism)
@@ -2482,6 +2509,7 @@ function ZA_UpdateData()
 			[264689] = true, -- Fatigued (Ancient Hysteria)
 			[265703] = true, -- Azerite Energy (Island Expeditions)
 			[211319] = true, -- Restitution (Priest)
+			[45181] = true, -- Cheated Death (Rogue)
 
 
 			-----------------
@@ -2534,6 +2562,10 @@ function ZA_UpdateData()
 			[341260] = ZA.PrimaryStatSchool, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[408533] = 36, -- Elementium Pocket Anvil
+			[408578] = 36, -- Elementium Pocket Anvil
+			[381699] = 4, -- Forgestorm
+			[390224] = 200, -- Sophic Devotion
 			[394745] = 3, -- Seize the Moment (Draconic Hierophant's Finery)
 			[388435] = 5, -- Spirit of Sharing (Uncommon Community Feast)
 			[388436] = 5, -- Spirit of Sharing (Common Community Feast)
@@ -2827,9 +2859,36 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[114216] = 999, -- Angelic Bulwark (debuff)
+			[411404] = 720, -- Spectral Smack
+			[411408] = 327, -- Focused Nightmare
+			[406407] = 200, -- Olfactory Defenses
+			[406406] = 200, -- Olfactory Defenses
+			[406405] = 200, -- Olfactory Defenses
+			[406404] = 200, -- Olfactory Defenses
+			[411112] = 804, -- Scent Bomb
+			[411111] = 40, -- Malodorous Release
+			[389583] = 64, -- Mana Bolt
+			[392675] = 801, -- Massive Splash
+			[411353] = 200, -- Tyr's Force
+			[411378] = 200, -- Empowered Bulwark
+			[411374] = 200, -- Blessed Ground
+			[401385] = 906, -- Spit
+			[394429] = 105, -- Wild Nokhud Rage
+			[389947] = 105, -- Fury of the Nokhud
+			[387039] = 105, -- Fury of the Nokhud
+			[106920] = 327, -- Regenerate
+			[106942] = 411, -- Shadows of Destruction
+			[395299] = 65, -- Titanic Slam (Spellforged Destroyer)
+			[395699] = 64, -- Wild Brutality
+			[395747] = 64, -- Wild Brutality
+			[395692] = 64, -- Wild Brutality
+			[217583] = 64, -- Arcane Torment
+			[395650] = 327, -- Arcane Torment
 			[111854] = 160, -- Ice Wave
 			["Ice Wave"] = 160,
-			["Horrific Creation"] = 328,
+			["Horrific Conjuration"] = 320,
+			[395639] = 320, -- Horrific Conjuration
 			[395685] = 111, -- Brutish Bellowing
 			[373277] = 320, -- Thing from Beyond
 			["Drum Solo"] = 111,
@@ -2839,7 +2898,7 @@ function ZA_UpdateData()
 			[401361] = 903, -- Crush
 			[405962] = 803, -- Dirtbreath
 			[236305] = 101, -- Drilljaws
-			[411328] = 403, -- Lithic Disgorge
+			[411328] = 803, -- Lithic Disgorge
 			[404615] = 803, -- Impenetrable Stone
 			[402807] = 808, -- Shattering Spike
 			[405020] = 200, -- Order's Wrath
@@ -3105,7 +3164,7 @@ function ZA_UpdateData()
 			[394729] = 6, -- Prayer Focus (Draconic Hierophant's Finery)
 			["Open"] = 100,
 			["Storming Barrier"] = 800,
-			["Storming Blow"] = 9,
+			["Storming Blow"] = 911,
 			[392022] = 4, -- Boiling Point
 			[392021] = 4, -- Boiling Point
 			[392455] = 911, -- Angry Headbutt
@@ -3838,7 +3897,6 @@ function ZA_UpdateData()
 			["Heated Stomp"] = 12,
 			["Magma Fist"] = 12,
 			["Corrosive Spew"] = 806,
-			["Fury of the Nokhud"] = 103,
 			["Foul Bite"] = 410,
 			["Punish"] = 112,
 			["Electric Spittle"] = 800,
@@ -8554,6 +8612,12 @@ function ZA_UpdateData()
 			["Spine Crush:460686"] = 415,
 			["Spineshatter"] = 903,
 			["Spinning Blade"] = 108,
+			[115009] = 907, -- Focus Energy
+			[106984] = 800, -- Invoke Lightning
+			[110945] = 907, -- Charging Soul
+			[106547] = 907, -- Fire Flower
+			[106433] = 807, -- Tornado Kick
+			[106434] = 807, -- Tornado Kick
 			["Spinning Crane Kick"] = 807,
 			["Spinning Slash"] = 107,
 			["Spinning Up"] = 100,
@@ -10079,9 +10143,7 @@ function ZA_UpdateData()
 			[290608] = 200, -- Crusader's Direhorn
 
 			--! Disc
-			["Archmage's Prismatic Disc:1516058"] = 64, -- Arcane
-			["Archmage's Prismatic Disc:1517838"] = 4, -- Fire
-			["Archmage's Prismatic Disc:1517839"] = 16, -- Frost
+			[229376] = ZA.Specialization(64, 64, 4, 16), -- Archmage's Prismatic Disc
 			[353263] = 203, -- Cartel Master's Gearglider
 			[353264] = 203, -- Pilfered Gearglider
 			[130092] = 811, -- Red Flying Cloud
@@ -10205,7 +10267,7 @@ function ZA_UpdateData()
 			[254069] = 200, -- Glorious Felcrusher
 
 			--! Elemental
-			[231442] = (class == "SHAMAN" and spec == 1) and 4 or (class == "SHAMAN" and spec == 3) and 24 or 811, -- Farseer's Raging Tempest
+			[231442] = ZA.Specialization(811, 4, 811, 24), -- Farseer's Raging Tempest
 			[289555] = 24, -- Glacial Tidestorm
 			[334482] = 320, -- Restoration Deathwalker
 			[340068] = 411, -- Sintouched Deathwalker
@@ -10790,9 +10852,7 @@ function ZA_UpdateData()
 			[75207]  = 157, -- Vashj'ir Seahorse
 
 			--! Seeker
-			["High Priest's Lightsworn Seeker"] = 200, -- Holy/Fallback
-			["High Priest's Lightsworn Seeker:1518632"] = 18, -- Discipline
-			["High Priest's Lightsworn Seeker:1518634"] = 320, -- Shadow
+			[229377] = ZA.Specialization(4, 201, 200, 320), -- High Priest's Lightsworn Seeker
 
 			--! Serpent  ! Wyrm
 			-- Fathom Serpent
@@ -10834,9 +10894,7 @@ function ZA_UpdateData()
 			[26055]  = 816, -- Yellow Qiraji Battle Tank
 
 			--! Skeletal Drake
-			["Deathlord's Vilebrood Vanquisher"] = 40, -- Unholy/Fallback
-			["Deathlord's Vilebrood Vanquisher:1580440"] = 321, -- Blood
-			["Deathlord's Vilebrood Vanquisher:1580441"] = 16, -- Frost
+			[229387] = ZA.Specialization(40, 321, 16, 40), -- Deathlord's Vilebrood Vanquisher
 			-- Frost Wyrm
 			[72808]  = 160, -- Bloodbathed Frostbrood Vanquisher
 			[72807]  = 160, -- Icebound Frostbrood Vanquisher
@@ -12360,6 +12418,11 @@ function ZA_UpdateData()
 			[410074] = 646, -- Path of Festering Rot
 			[410078] = 646, -- Path of the Earth-Warder
 			[410080] = 646, -- Path of Wind's Domain
+			[225435] = 646, -- Town Portal: Kal'delar
+			[225434] = 646, -- Town Portal: Sashj'tar
+			[225428] = 646, -- Town Portal: Shala'nir
+			[225440] = 646, -- Town Portal: Lian'tril
+			[225436] = 646, -- Town Portal: Faronaar
 			[408547] = 808,
 			[405006] = 811,
 			[409244] = 100,
@@ -12375,6 +12438,33 @@ function ZA_UpdateData()
 			[405471] = 100,
 			[408797] = 900,
 			[408789] = 900,
+			[111690] = 2,
+			[107200] = "Chi", -- Meditate
+			[413906] = 114,
+			[413869] = 114,
+			[411171] = 200,
+			[411234] = 200,
+			[411228] = 200,
+			[411204] = 200,
+			[411232] = 200,
+			[411259] = 200,
+			[411261] = 200,
+			[411264] = 200,
+			[411265] = 200,
+			[411384] = 200,
+			[411390] = 200,
+			[411391] = 200,
+			[411392] = 200,
+			[411553] = 114,
+			[414403] = 114,
+			[411402] = 200,
+			[411696] = 16,
+			[411828] = 2,
+			[411698] = 4,
+			[411729] = 20,
+			[411436] = 100,
+			[407846] = 100,
+			[393042] = 802,
 			--qqq
 
 
@@ -22468,6 +22558,33 @@ function ZA_UpdateData()
 			[405471] = 0,
 			[408797] = 0,
 			[408789] = 0,
+			[111690] = 0,
+			[107200] = 0,
+			[413906] = 0,
+			[413869] = 0,
+			[411171] = 0,
+			[411234] = 0,
+			[411228] = 0,
+			[411204] = 0,
+			[411232] = 0,
+			[411259] = 0,
+			[411261] = 0,
+			[411264] = 0,
+			[411265] = 0,
+			[411384] = 0,
+			[411390] = 0,
+			[411391] = 0,
+			[411392] = 0,
+			[411553] = 0,
+			[411402] = 0,
+			[411696] = 0,
+			[411828] = 0,
+			[411698] = 0,
+			[411729] = 0,
+			[411436] = 0,
+			[407846] = 0,
+			[414403] = 0,
+			[393042] = 0,
 			--qqi
 
 
@@ -22479,6 +22596,7 @@ function ZA_UpdateData()
 
 
 			--§ Teleports
+			[216138] = 1535374, -- Teleport: Margoss's Retreat
 			[409147] = 4643992, -- Niffen Diggin' Mitts
 			[49844] = 1786409, -- Direbrew's Remote
 			[50977] = "Interface/AddOns/Media_Newsom/Icons/DeathGate", -- Death Gate
@@ -22495,7 +22613,7 @@ function ZA_UpdateData()
 			[299084] = "Interface/AddOns/Media_Newsom/Icons/WormholeZandalar", -- Wormhole: Zandalar
 			[324031] = "Interface/AddOns/Media_Newsom/Icons/WormholeShadowlands", -- Wormhole: Shadowlands
 			[386379] = "Interface/AddOns/Media_Newsom/Icons/WormholeDragonIsles", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
-			[220746] = "Interface/AddOns/Media_Newsom/Icons/TeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
+			[220746] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
 			[390783] = "Interface/AddOns/Media_Newsom/Icons/TeleportAylaagCamp", -- Teleport: Ravenholdt Manor
 			[71436] = "Interface/AddOns/Media_Newsom/Icons/TeleportBootyBay", -- Teleport: Booty Bay (Boots of the Bay)
 			[231054] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan", -- Teleport: Karazhan
@@ -22513,6 +22631,11 @@ function ZA_UpdateData()
 			[54406] = 237509, -- Teleport: Dalaran - Northrend (Band/Signet/Ring of the Kirin Tor)
 			[335671] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportTheaterOfPain", -- Scroll of Teleport: Theater of Pain
 			[26373] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportMoonglade", -- Lunar Invitation
+			[225435] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportKaldelar", -- Town Portal: Kal'delar
+			[225434] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportSashjtar", -- Town Portal: Sashj'tar
+			[225428] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportShalanir", -- Town Portal: Shala'nir
+			[225440] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportLiantril", -- Town Portal: Lian'tril
+			[225436] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportFaronaar", -- Town Portal: Faronaar
 			-- Hero's Path
 			[131204] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTempleOfTheJadeSerpent", -- Path of the Jade Serpent
 			[131205] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportStormstoutBrewery", -- Path of the Stout Brew
