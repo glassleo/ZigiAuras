@@ -691,7 +691,8 @@ function ZA_UpdateData()
 			[620] = "ff8fa3", -- Devastation
 			[621] = "fcc077", -- Preservation
 			[646] = "a4feff", -- Conjuration
-			[641] = "ebc166", -- Temporal
+			[641] = "f2e199", -- Temporal
+			[642] = "a9fff3", -- Infinite
 			[72]  = "ab66ff", -- Astral
 			[721] = "bdb0f6", -- Stellar
 			[722] = "65efff", -- Celestial
@@ -1092,9 +1093,10 @@ function ZA_UpdateData()
 			[621] = "f83e3e:b3ff87", -- Preservation
 			[646] = "a4feff:8fb7ff", -- Conjuration
 			[641] = "f2e199:ffa019", -- Temporal
-			[72] = "4c99ff:dd41ff", -- Astral
+			[642] = "303c3f:97e2d8", -- Infinite
+			[72]  = "4c99ff:dd41ff", -- Astral
 			[721] = "ffffff:a38eff", -- Stellar
-			[722]  = "3e69a5:5ddae8", -- Celestial
+			[722] = "3e69a5:5ddae8", -- Celestial
 			[203] = "ffffff:d8ddde", -- Hyperlight
 			[106] = "ffffff:ffb86c", -- Cosmic
 
@@ -1720,6 +1722,10 @@ function ZA_UpdateData()
 			["Arcane Intellect"] = true,
 			["Battle Shout"] = true,
 			["Blessing of the Bronze"] = true,
+			[412710] = true, -- Timelessness
+			[369459] = true, -- Source of Magic
+			[403264] = true, -- Black Attunement
+			[403265] = true, -- Bronze Attunement
 
 			-- Demon Hunter
 			[203981] = true, -- Soul Fragments
@@ -1731,6 +1737,9 @@ function ZA_UpdateData()
 			["Travel Form"] = true,
 			["Aquatic Form"] = true,
 			["Flight Form"] = true,
+
+			-- Evoker
+			[410318] = true, -- Bestow Weyrnstone
 
 			-- Hunter
 			[164273] = true, -- Lone Wolf
@@ -2041,6 +2050,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[410129] = "State", -- Midnight At The Faire
 			[367512] = "State", -- Veiled
 			[411650] = "State", -- Fire Attunement
 			[411649] = "State", -- Frost Attunement
@@ -2206,6 +2216,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[411531] = "Zone", -- Eye of Kilrogg
 			[411304] = "Zone", -- Loud and Angry Bat
 			[411301] = "Zone", -- Critter Lasso
 			[411698] = "Zone", -- Thawing Flame
@@ -2864,6 +2875,26 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[406732] = 641, -- Spatial Paradox
+			[408234] = 641, -- Activate Weyrnstone
+			[410318] = 641, -- Bestow Weyrnstone
+			[408233] = 641, -- Bestow Weyrnstone
+			[369459] = 80, -- Source of Magic
+			[396286] = 400, -- Upheaval
+			[412710] = 641, -- Timelessness
+			[404977] = 641, -- Time Skip
+			[410089] = 641, -- Prescience
+			[410651] = 12, -- Molten Blood
+			[360827] = 400, -- Blistering Scales
+			[395152] = 400, -- Ebon Might
+			[395296] = 400, -- Ebon Might
+			[403755] = 641, -- Breath of Eons
+			[403758] = 641, -- Breath of Eons
+			[409632] = 641, -- Breath of Eons
+			[409990] = 641, -- Breath of Eons
+			[403631] = 641, -- Breath of Eons
+			[395160] = 400, -- Eruption
+			[395160] = 400, -- Eruption
 			[278019] = 411, -- Wailing Arrow
 			[205425] = 411, -- Wailing Arrow
 			[347609] = 411, -- Wailing Arrow
@@ -7260,6 +7291,7 @@ function ZA_UpdateData()
 			["Mass Devour"] = 413,
 			["Mass Dispel"] = 202,
 			["Mass Healing Wave"] = 801,
+			[414664] = 720, -- Mass Invisibility
 			["Mass Invisibility"] = 720,
 			["Mass Polymorph"] = 646,
 			["Mass Slow"] = 641,
@@ -8593,6 +8625,7 @@ function ZA_UpdateData()
 			["Soulshape"] = 805,
 			["Soulshift"] = 96,
 			["Soulsmash:237526"] = 411,
+			[20707] = 32, -- Soulstone
 			["Soulstone"] = 32,
 			["Soulstorm:3528295"] = 326,
 			["Soulstorm:4067362"] = 411,
@@ -10211,7 +10244,7 @@ function ZA_UpdateData()
 			[101821] = 320, -- Ruthless Gladiator's Twilight Drake
 			[101282] = 34, -- Vicious Gladiator's Twilight Drake
 			[124550] = 34, -- Cataclysmic Gladiator's Twilight Drake
-			[201098] = 411, -- Infinite Timereaver
+			[201098] = 642, -- Infinite Timereaver
 			[377071] = 4, -- Crimson Gladiator's Drake
 			-- Slitherdrake
 			[408977] = 36, -- Obsidian Gladiator's Slitherdrake
@@ -10411,6 +10444,7 @@ function ZA_UpdateData()
 			[189043] = 402, -- Wild Gladiator's Felblood Gronnling
 
 			--! Gryphon
+			[413827] = 150, -- Harbor Gryphon
 			[302361] = 3, -- Alabaster Stormtalon
 			[61229]  = 159, -- Armored Snowy Gryphon
 			[275859] = 910, -- Dusky Waycrest Gryphon
@@ -10436,7 +10470,7 @@ function ZA_UpdateData()
 			[35018]  = 820, -- Purple Hawkstrider
 			[34795]  = 172, -- Red Hawkstrider
 			[63642]  = 157, -- Silvermoon Hawkstrider
-			[259202] = 811, -- Starcursed Voidstrider
+			[259202] = 320, -- Starcursed Voidstrider
 			[66091]  = 175, -- Sunreaver Hawkstrider
 			[35025]  = 815, -- Swift Green Hawkstrider
 			[33660]  = 172, -- Swift Pink Hawkstrider
@@ -10530,7 +10564,7 @@ function ZA_UpdateData()
 			[370770] = 415, -- Tuskarr Shoreglider
 
 			--! Kodo
-			--[367875] = 0, -- Armored Siege Kodo
+			[367875] = 5, -- Armored Siege Kodo
 			[22718]  = 156, -- Black War Kodo
 			[18990]  = 158, -- Brown Kodo
 			[18989]  = 171, -- Gray Kodo
@@ -10753,6 +10787,7 @@ function ZA_UpdateData()
 			[262023] = 137, -- Sinister Gladiator's Proto-Drake
 
 			--! Pterrordax
+			[413825] = 173, -- Scarlet Pterrordax
 			[136400] = 814, -- Armored Skyscreamer
 			[275838] = 119, -- Captured Swampstalker
 			[275837] = 157, -- Cobalt Pterrordax
@@ -12502,6 +12537,9 @@ function ZA_UpdateData()
 			[407081] = 100,
 			[409049] = 202,
 			[409427] = 803,
+			[410940] = 401,
+			[412234] = 401,
+			[415896] = 4,
 			--qqq
 
 
@@ -21863,6 +21901,7 @@ function ZA_UpdateData()
 					[3] = 176, -- Yellow
 					[4] = 821, -- Green
 					[5] = 818, -- Red
+					[6] = 642, -- Infinite
 				}
 				ZA.Spells[368896] = colors[ArmyDB[name.."-"..realm]["RenewedProtoDrake"]] or colors[5]
 				
@@ -21873,6 +21912,7 @@ function ZA_UpdateData()
 					[3] = 176, -- Yellow
 					[4] = 815, -- Green
 					[5] = 173, -- Red
+					[6] = 642, -- Infinite
 				}
 				ZA.Spells[368899] = colors[ArmyDB[name.."-"..realm]["WindborneVelocidrake"]] or colors[4]
 				
@@ -21883,6 +21923,7 @@ function ZA_UpdateData()
 					[3] = 8, -- Green
 					[4] = 818, -- Red
 					[5] = 176, -- Yellow
+					[6] = 642, -- Infinite
 				}
 				ZA.Spells[360954] = colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
 				
@@ -21893,6 +21934,7 @@ function ZA_UpdateData()
 					[3] = 8, -- Green
 					[4] = 173, -- Red
 					[5] = 176, -- Yellow
+					[6] = 642, -- Infinite
 				}
 				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
 
@@ -21903,6 +21945,7 @@ function ZA_UpdateData()
 					[3] = 176, -- Yellow
 					[4] = 170, -- Green
 					[5] = 818, -- Red
+					[6] = 642, -- Infinite
 				}
 				ZA.Spells[368893] = colors[ArmyDB[name.."-"..realm]["WindingSlitherdrake"]] or colors[1]
 			end
