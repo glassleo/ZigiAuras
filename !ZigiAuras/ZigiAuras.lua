@@ -1341,7 +1341,7 @@ function ZA_UpdateData()
 			["The Innkeeper's Daughter"] = "Hearthstone",
 			["Timewalker's Hearthstone"] = "Hearthstone",
 			["Town Portal"] = "Town Portal",
-			["Venthyr Sinstone"] = "Sinstone",
+			["Venthyr Sinstone"] = "Hearthstone",
 			["Ardenweald Hearthstone"] = "Hearthstone",
 			["Ohn'ir Windsage's Hearthstone"] = "Hearthstone",
 		}
@@ -1797,12 +1797,21 @@ function ZA_UpdateData()
 			[20707] = true, -- Soulstone
 
 
+			-- Trinkets
+			[401519] = true, -- Azure Resonance (Ominous Chromatic Essence)
+			[401518] = true, -- Bronze Resonance (Ominous Chromatic Essence)
+			[401521] = true, -- Emerald Resonance (Ominous Chromatic Essence)
+			[401516] = true, -- Ruby Resonance (Ominous Chromatic Essence)
+			[402221] = true, -- Obsidian Resonance (Ominous Chromatic Essence)
+
+
 			--! Elixirs
 
 			-- Dragonflight
 			[371339] = "Elixir", -- Phial of Elemental Chaos
 			[371172] = "Elixir", -- Phial of Tepid Versatility
 			[371386] = "Elixir", -- Phial of Charged Isolation
+			[371354] = "Elixir", -- Phial of Eye of the Storm
 
 			-- Shadowlands
 			[307185] = "Elixir", -- Spectral Flask of Power
@@ -2216,6 +2225,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[415603] = "Zone", -- Eye of Kilrogg
 			[411531] = "Zone", -- Eye of Kilrogg
 			[411304] = "Zone", -- Loud and Angry Bat
 			[411301] = "Zone", -- Critter Lasso
@@ -2526,6 +2536,7 @@ function ZA_UpdateData()
 			[265703] = true, -- Azerite Energy (Island Expeditions)
 			[211319] = true, -- Restitution (Priest)
 			[45181] = true, -- Cheated Death (Rogue)
+			[404369] = true, -- Empty Hourglass (Evoker)
 
 
 			-----------------
@@ -2875,6 +2886,7 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[404369] = 999, -- Empty Hourglass
 			[406732] = 641, -- Spatial Paradox
 			[408234] = 641, -- Activate Weyrnstone
 			[410318] = 641, -- Bestow Weyrnstone
@@ -12540,6 +12552,7 @@ function ZA_UpdateData()
 			[410940] = 401,
 			[412234] = 401,
 			[415896] = 4,
+			[401515] = 126,
 			--qqq
 
 
