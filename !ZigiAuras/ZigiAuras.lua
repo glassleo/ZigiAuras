@@ -273,8 +273,9 @@ function ZA_UpdateData()
 			["Srilala-ShatteredHand"] = "SHAMAN",
 			["Voidlisa-Bloodfeather"] = "WARLOCK",
 			["Voidlisa-Ravenholdt"] = "WARLOCK",
-			-- Lior
-			["Unabomber-Ravenholdt"] = "PALADIN",
+			-- RR Inc
+			["Kann-Ravenholdt"] = "PALADIN",
+			["Kannada-Ravenholdt"] = "DRUID",
 			-- Leo
 			["Agata-SteamwheedleCartel"] = "PRIEST",
 			["Agnes-SteamwheedleCartel"] = "WARLOCK",
@@ -383,6 +384,7 @@ function ZA_UpdateData()
 			["Lucas-Ravenholdt"] = "DEATHKNIGHT",
 			["Mab-Sporeggar"] = "DRUID",
 			["Malgorzata-Ravenholdt"] = "DEMONHUNTER",
+			["Malicia-EarthenRing"] = "WARLOCK",
 			["Maria-Sporeggar"] = "WARRIOR",
 			["Marisol-TheSha'tar"] = "MONK",
 			["Maya-Moonglade"] = "DRUID",
@@ -2059,6 +2061,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[408633] = "State", -- Time Rifts
 			[410129] = "State", -- Midnight At The Faire
 			[367512] = "State", -- Veiled
 			[411650] = "State", -- Fire Attunement
@@ -2225,6 +2228,8 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[393094] = "Zone", -- Reliquary Access
+			[409513] = "Zone", -- Reliquary Access
 			[415603] = "Zone", -- Eye of Kilrogg
 			[411531] = "Zone", -- Eye of Kilrogg
 			[411304] = "Zone", -- Loud and Angry Bat
@@ -2886,6 +2891,77 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[396591] = 646, -- Teleport: Jeweled Cosat (Lucky Tortollan Charm)
+			["White Tiger Statue"] = 3,
+			[403710] = 320, -- Hurtling Barrage
+			[405497] = 320, -- Hurtling Barrage
+			[405425] = 320, -- Hurtling Barrage
+			[405483] = 320, -- Hurtling Barrage
+			[403709] = 320, -- Hurtling Barrage
+			[405422] = 320, -- Hurtling Barrage
+			[405486] = 320, -- Hurtling Barrage
+			[411997] = 320, -- Hurtling Barrage
+			[405022] = 320, -- Hurtling Barrage
+			[414273] = 66, -- Hand of Divinity
+			[417386] = 33, -- Shadowy Toss
+			[399987] = 36, -- Flamecaller Ritual
+			[412928] = 12, -- Molten Slam
+			[399086] = 36, -- Shadowlava Bolt
+			[412905] = 36, -- Blistering Eruption
+			[412895] = 36, -- Blistering Eruption
+			[383882] = 6, -- Sun King's Blessing
+			[383883] = 402, -- Fury of the Sun King
+			[389714] = 646, -- Displacement Beacon
+			[402583] = 320, -- An'shuul, the Cosmic Wanderer
+			[309894] = 320, -- Void Rend
+			[408434] = 320, -- Void Blast
+			[408457] = 320, -- Void Blast
+			[411237] = 320, -- Void Blast
+			[411238] = 320, -- Void Blast
+			[390979] = 803, -- Tectonic Shield
+			[390988] = 801, -- Water Bolt
+			[385108] = 806, -- Draining Seed
+			["Intermission"] = 100, -- BigWigs
+			["Phase 9"] = 100, -- BigWigs
+			["Phase 8"] = 100, -- BigWigs
+			["Phase 7"] = 100, -- BigWigs
+			["Phase 6"] = 100, -- BigWigs
+			["Phase 5"] = 100, -- BigWigs
+			["Phase 4"] = 100, -- BigWigs
+			["Phase 3"] = 100, -- BigWigs
+			["Phase 2"] = 100, -- BigWigs
+			["Phase 1"] = 100, -- BigWigs
+			["Stage 9"] = 100, -- BigWigs
+			["Stage 8"] = 100, -- BigWigs
+			["Stage 7"] = 100, -- BigWigs
+			["Stage 6"] = 100, -- BigWigs
+			["Stage 5"] = 100, -- BigWigs
+			["Stage 4"] = 100, -- BigWigs
+			["Stage 3"] = 100, -- BigWigs
+			["Stage 2"] = 100, -- BigWigs
+			["Stage 1"] = 100, -- BigWigs
+			["Break time"] = 100, -- BigWigs
+			[406282] = 120, -- Dream Burst
+			[405919] = 5, -- Activate Dragonfire Trap
+			[405886] = 5, -- Activate Dragonfire Trap
+			[389560] = 16, -- Bitter Ice
+			[382783] = 65, -- Charged Slam
+			[395857] = 803, -- Stonefall
+			[406344] = 36, -- Dread Torrent
+			[400974] = 36, -- Molten Agony
+			[378143] = 903, -- Fist of Stone
+			[114214] = 201, -- Angelic Bulwark
+			[407236] = 12, -- Magma Splash
+			[407245] = 36, -- Wrath of the Elders
+			[418010] = 200, -- Purge Outsiders
+			[417955] = 200, -- Purge Outsiders
+			[417926] = 200, -- Order-Infused Strike
+			[418020] = 200, -- Relocate
+			[417944] = 200, -- Relocate
+			[405436] = 320, -- Umbral Annihilation
+			[404038] = 320, -- Umbral Annihilation
+			[405434] = 320, -- Umbral Annihilation
+			[405433] = 320, -- Umbral Annihilation
 			[404369] = 999, -- Empty Hourglass
 			[406732] = 641, -- Spatial Paradox
 			[408234] = 641, -- Activate Weyrnstone
@@ -3064,6 +3140,7 @@ function ZA_UpdateData()
 			[387729] = 908, -- Slippery Mucus
 			["Slippery Mucus"] = 908,
 			[407468] = "Insanity", -- Mind Spike: Insanity
+			[373204] = "Insanity", -- Mind Devourer
 			[395097] = 402, -- Blazing Talons
 			[412320] = 36, -- Fly Away!
 			["Rupturing Earth"] = 400,
@@ -3221,7 +3298,6 @@ function ZA_UpdateData()
 			[396019] = 903, -- Staggering Blow
 			[122714] = 104, -- Lorewalkers' Alacrity
 			["Flashfire"] = 4,
-			["Break time"] = 114,
 			[211319] = 999, -- Restitution
 			["Stygian Blast"] = 411,
 			[389890] = "Fury",
@@ -3386,7 +3462,7 @@ function ZA_UpdateData()
 			["Earth-Warder's Vault Chain"] = 100,
 			[171982] = 32, -- Demonic Synergy
 			[387157] = 361, -- Ritual of Ruin
-			["Blasphemy"] = 32,
+			["Blasphemy"] = 36,
 			[387154] = 12, -- Burn to Ashes
 			["Lava Toss"] = 12,
 			["Leg Strike"] = 110,
@@ -4818,6 +4894,8 @@ function ZA_UpdateData()
 			["Blackout Combo"] = 282,
 			["Blackout Kick!"] = 907,
 			["Blackrock Bomb"] = 5,
+			[390155] = 427, -- Serrated Glaive
+			[390212] = 112, -- Restless Hunter
 			["Blade Dance"] = 112,
 			["Blade Flurry"] = 107,
 			["Blade Guardian's Rune"] = 326,
@@ -12553,6 +12631,8 @@ function ZA_UpdateData()
 			[412234] = 401,
 			[415896] = 4,
 			[401515] = 126,
+			[403906] = 4,
+			[401518] = 4,
 			--qqq
 
 
@@ -22644,7 +22724,7 @@ function ZA_UpdateData()
 			[375361] = 0,
 			[373966] = 133240,
 			[385468] = 0,
-			[373463] = 191676,
+			[373463] = 236213,
 			[369991] = 0,
 			[386076] = 0,
 			[375885] = 236362,
@@ -22954,6 +23034,7 @@ function ZA_UpdateData()
 			[225428] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportShalanir", -- Town Portal: Shala'nir
 			[225440] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportLiantril", -- Town Portal: Lian'tril
 			[225436] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportFaronaar", -- Town Portal: Faronaar
+			[396591] = "Interface/AddOns/Media_Newsom/Icons/TeleportStormsongValley", -- Teleport: Jeweled Coast (Lucky Tortollan Charm)
 			-- Hero's Path
 			[131204] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTempleOfTheJadeSerpent", -- Path of the Jade Serpent
 			[131205] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportStormstoutBrewery", -- Path of the Stout Brew
