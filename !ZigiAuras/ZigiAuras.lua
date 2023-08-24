@@ -253,6 +253,7 @@ function ZA_UpdateData()
 			["Blackvampkid-Bloodfeather"] = "PALADIN",
 			["Brainroom-Bloodfeather"] = "PRIEST",
 			["Bunnylettuce-ShatteredHand"] = "DEMONHUNTER",
+			["Clam-Ravenholdt"] = "WARLOCK",
 			["Dikydodad-ShatteredHand"] = "DEATHKNIGHT",
 			["Disasterpie-Bloodfeather"] = "DEATHKNIGHT",
 			["Fannyvision-Bloodfeather"] = "PALADIN",
@@ -262,15 +263,19 @@ function ZA_UpdateData()
 			["Kintawa-Bloodfeather"] = "SHAMAN",
 			["Kree-Bloodfeather"] = "WARRIOR",
 			["Milkpeople-Bloodfeather"] = "DRUID",
+			["Nadira-Ravenholdt"] = "SHAMAN",
 			["Nannyvision-ShatteredHand"] = "ROGUE",
 			["Nooniverse-Bloodfeather"] = "MAGE",
 			["Raxana"] = "SHAMAN",
 			["Raxana-Bloodfeather"] = "SHAMAN",
+			["Raxana-Ravenholdt"] = "SHAMAN",
 			["Raxicil-Bloodfeather"] = "ROGUE",
+			["Robolobstah-Ravenholdt"] = "MONK",
 			["Rosham-Bloodfeather"] = "HUNTER",
 			["Saravasha-ShatteredHand"] = "HUNTER",
 			["Shovelface-ShatteredHand"] = "WARRIOR",
 			["Srilala-ShatteredHand"] = "SHAMAN",
+			["Voidlisa"] = "WARLOCK",
 			["Voidlisa-Bloodfeather"] = "WARLOCK",
 			["Voidlisa-Ravenholdt"] = "WARLOCK",
 			-- RR Inc
@@ -326,6 +331,7 @@ function ZA_UpdateData()
 			["Elsa-Sporeggar"] = "HUNTER",
 			["Elspeth-Moonglade"] = "WARLOCK",
 			["Emily-TheSha'tar"] = "PALADIN",
+			["Mercy-TheSha'tar"] = "PRIEST",
 			["Emma-Ravenholdt"] = "EVOKER",
 			["Enna-SteamwheedleCartel"] = "MONK",
 			["Eo-SteamwheedleCartel"] = "PALADIN",
@@ -705,7 +711,7 @@ function ZA_UpdateData()
 
 		-- GetGradient function
 		function ZA.GetGradient(id, name, icon)
-			local id = tonumber(id or 0)
+			local id = tonumber(id or 0) or 0
 			local name = name or ""
 			local icon = tonumber(icon or 0) or 0
 
@@ -732,7 +738,7 @@ function ZA_UpdateData()
 
 		-- GetSolid function
 		function ZA.GetSolid(id, name, icon)
-			local id = tonumber(id or 0)
+			local id = tonumber(id or 0) or 0
 			local name = name or ""
 			local icon = tonumber(icon or 0) or 0
 
@@ -759,7 +765,7 @@ function ZA_UpdateData()
 
 		-- GetIcon function
 		function ZA.GetIcon(id, name, icon)
-			local id = tonumber(id or 0)
+			local id = tonumber(id or 0) or 0
 			local name = name or ""
 			local icon = tonumber(icon or 0) or 0
 
@@ -1350,10 +1356,31 @@ function ZA_UpdateData()
 
 
 		--# Trinkets
+		ZA.TrinketOverlayAuras = {
+			[193773] = "381954,381955,381956,381957", -- Spoils of Neltharus
+			[198088] = "382860,382861,382862,382863,382864,382865,382866,382867", -- Darkmoon Deck: Dance
+			[198478] = "382860,382861,382862,382863,382864,382865,382866,382867", -- Darkmoon Deck Box: Dance
+			[198089] = "382852,382853,382854,382855,382856,382857,382858,382859", -- Darkmoon Deck: Watcher
+			[198481] = "382852,382853,382854,382855,382856,382857,382858,382859", -- Darkmoon Deck Box: Watcher
+			[203729] = "401518,401519,401521,401516,402221", -- Ominous Chromatic Essence
+		}
+
+		ZA.TrinketOverlayStacks = {
+			[204202] = 411661, -- Neltharion's Call to Dominance
+			[202617] = "408533,408578", -- Elementium Pocket Anvil
+			[202615] = 401394, -- Vessel of Searing Shadow
+		}
+
 		ZA.Trinkets = {
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[409898] = "Molten Radiance", -- Rashok's Molten Heart
+			[401469] = "Screaming Flight: Critical Strike", -- 
+			[403386] = "Call to Suffering: " .. ZA.PrimaryStatName, -- Neltharion's Call to Suffering
+			[403380] = "Call to Dominance: " .. ZA.PrimaryStatName, -- Neltharion's Call to Dominance
+			[418527] = "Mirror of Fractured Tomorrows", -- Mirror of Fractured Tomorrows
+			[405202] = "Orb Activated", -- Buzzing Orb Core
 			[408533] = true, -- Anvil Strike (Elementium Pocket Anvil)
 			[381699] = true, -- Forgestorm Ignited (Forgestorm)
 			[390224] = "Sophic Devotion: " .. ZA.PrimaryStatName, -- Enchant: Sophic Devotion
@@ -1982,6 +2009,7 @@ function ZA_UpdateData()
 
 			["Enlisted"] = true,
 			["Time Travelling"] = true,
+			[23445] = true, -- Evil Twin (Wormhole)
 
 			-- Experience/Reputation
 			["Experience Eliminated"] = "XP",
@@ -2061,6 +2089,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[229074] = "State", -- Medivh's Echo
 			[408633] = "State", -- Time Rifts
 			[410129] = "State", -- Midnight At The Faire
 			[367512] = "State", -- Veiled
@@ -2228,6 +2257,86 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[412359] = C_QuestLog.IsQuestFlaggedCompleted(74923) and true or "Zone", -- Empowered Temporal Gossamer
+			[304910] = "Zone", -- Swift Currents
+			[291977] = "Zone", -- Oxygen-Rich Membrane
+			[415638] = "Zone", -- Race Times: Wild Preserve Slalom
+			[416853] = "Zone", -- Race Times: Redridge Rally
+			[415790] = "Zone", -- Race Times: Morqut Ascent
+			[415541] = "Zone", -- Race Times: Ruby Lifeshrine Loop
+			[415878] = "Zone", -- Race Times: Feralas Ruins Ramble
+			[415869] = "Zone", -- Race Times: Hyjal Hotfoot
+			[415873] = "Zone", -- Race Times: Webwinder Weave
+			[415650] = "Zone", -- Race Times: Sundapple Copse Circuit
+			[415658] = "Zone", -- Race Times: River Rapids Route
+			[415874] = "Zone", -- Race Times: Desolace Drift
+			[416842] = "Zone", -- Race Times: Twilight Terror
+			[416843] = "Zone", -- Race Times: Deadwind Derby
+			[415791] = "Zone", -- Race Times: Aerie Chasm Cruise
+			[416846] = "Zone", -- Race Times: Gurubashi Gala
+			[415867] = "Zone", -- Race Times: Winter Wander
+			[416847] = "Zone", -- Race Times: Ironforge Interceptor
+			[415868] = "Zone", -- Race Times: Nordrassil Spiral
+			[415879] = "Zone", -- Race Times: Ahn'Qiraj Circuit
+			[415880] = "Zone", -- Race Times: Uldum Tour
+			[415794] = "Zone", -- Race Times: Forbidden Reach Rush
+			[415870] = "Zone", -- Race Times: Rocketway Ride
+			[415881] = "Zone", -- Race Times: Un'Goro Crater Circuit
+			[415871] = "Zone", -- Race Times: Ashenvale Ambit
+			[415872] = "Zone", -- Race Times: Durotar Tour
+			[416841] = "Zone", -- Race Times: Searing Slalom
+			[415659] = "Zone", -- Race Times: Azure Span Sprint
+			[415799] = "Zone", -- Race Times: Loamm Roamm
+			[415661] = "Zone", -- Race Times: Vakthros Ascent
+			[415866] = "Zone", -- Race Times: Felwood Flyover
+			[415792] = "Zone", -- Race Times: Southern Reach Route
+			[415652] = "Zone", -- Race Times: Fen Flythrough
+			[416848] = "Zone", -- Race Times: Blasted Lands Bolt
+			[415666] = "Zone", -- Race Times: Tyrhold Trial
+			[415668] = "Zone", -- Race Times: Cliffside Circuit
+			[416851] = "Zone", -- Race Times: Fuselight Night Flight
+			[415657] = "Zone", -- Race Times: Mirror of the Sky Dash
+			[416852] = "Zone", -- Race Times: Krazzworks Klash
+			[415670] = "Zone", -- Race Times: Garden Gallivant
+			[415875] = "Zone", -- Race Times: Great Divide Dive
+			[416844] = "Zone", -- Race Times: Elwynn Forest Flash
+			[415671] = "Zone", -- Race Times: Caverns Criss-Cross
+			[415642] = "Zone", -- Race Times: Wingrest Roundabout
+			[415660] = "Zone", -- Race Times: Azure Span Slalom
+			[415789] = "Zone", -- Race Times: Stormsunder Crater Circuit
+			[415643] = "Zone", -- Race Times: Flashfrost Flyover
+			[415800] = "Zone", -- Race Times: Sulfur Sprint
+			[415876] = "Zone", -- Race Times: Razorfen Roundabout
+			[415644] = "Zone", -- Race Times: Wild Preserve Circuit
+			[415662] = "Zone", -- Race Times: Iskaara Tour
+			[415877] = "Zone", -- Race Times: Thousand Needles Thread
+			[415663] = "Zone", -- Race Times: Frostland Flyover
+			[415664] = "Zone", -- Race Times: Archive Ambit
+			[415793] = "Zone", -- Race Times: Caldera Coaster
+			[415653] = "Zone", -- Race Times: Ravine River Run
+			[415665] = "Zone", -- Race Times: Flowing Forest Flight
+			[416849] = "Zone", -- Race Times: Plaguelands Plunge
+			[415654] = "Zone", -- Race Times: Emerald Gardens Ascent
+			[415795] = "Zone", -- Race Times: Crystal Circuit
+			[416850] = "Zone", -- Race Times: Booty Bay Blast
+			[415656] = "Zone", -- Race Times: Maruukai Dash
+			[416839] = "Zone", -- Race Times: Gilneas Gambit
+			[415639] = "Zone", -- Race Times: Emberflow Flight
+			[415796] = "Zone", -- Race Times: Caldera Cruise
+			[415669] = "Zone", -- Race Times: Academy Ascent
+			[416840] = "Zone", -- Race Times: Loch Modan Loop
+			[415640] = "Zone", -- Race Times: Apex Canopy River Run
+			[415797] = "Zone", -- Race Times: Brimstone Scramble
+			[415641] = "Zone", -- Race Times: Uktulut Coaster
+			[415798] = "Zone", -- Race Times: Shimmering Slalom
+			[228859] = "Zone", -- Redemption of the Fallen
+			[30550]  = "Zone", -- Redemption of the Fallen
+			[228916] = "Zone", -- Wrath of the Titans
+			[30557]  = "Zone", -- Wrath of the Titans
+			[228849] = "Zone", -- Torment of the Worgen
+			[30567]  = "Zone", -- Torment of the Worgen
+			[407319] = "Zone", -- Zaralek Glowbur
+			[405749] = "Zone", -- Niffen Stink Bomb
 			[393094] = "Zone", -- Reliquary Access
 			[409513] = "Zone", -- Reliquary Access
 			[415603] = "Zone", -- Eye of Kilrogg
@@ -2549,6 +2658,8 @@ function ZA_UpdateData()
 			-----------------
 
 			--! Debuff
+			[292127] = "Zone", -- Darkest Depths
+			[406608] = "Zone", -- Hostile Airways
 			[377853] = "Zone", -- Unstable Time
 			[388315] = "Zone", -- Moving Heavy Beam
 			[392960] = "Zone", -- Waygate Travel
@@ -2594,6 +2705,8 @@ function ZA_UpdateData()
 			[341260] = ZA.PrimaryStatSchool, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[418527] = 641, -- Mirror of Fractured Tomorrows
+			[405202] = 200, -- Orb Activated
 			[408533] = 36, -- Elementium Pocket Anvil
 			[408578] = 36, -- Elementium Pocket Anvil
 			[381699] = 4, -- Forgestorm
@@ -2891,7 +3004,36 @@ function ZA_UpdateData()
 
 
 			--! Spell
-			[396591] = 646, -- Teleport: Jeweled Cosat (Lucky Tortollan Charm)
+			[417303] = 411, -- Call Val'kyr
+			[403275] = 660, -- Unbound Surge
+			[17767]  = 32, -- Shadow Bulwark
+			[303741] = 903, -- Crushing Takedown
+			[303690] = 911, -- Crackling Tornado
+			[304065] = 911, -- Arcanado Burst
+			[303296] = 806, -- Poison-Dipped Arrow
+			[262983] = 800, -- Conjure Lightning
+			[309727] = 800, -- Conjure Lightning
+			[298122] = 280, -- Overwhelming Barrage
+			[296551] = 280, -- Overwhelming Barrage
+			[295138] = 280, -- Overwhelming Barrage
+			[331140] = 999, -- Oil Spray
+			[269306] = 999, -- Oil Spray
+			[269304] = 999, -- Oil Spray
+			[409492] = 327, -- Afflicted Cry
+			[400490] = 104, -- Molten Furnace
+			[400488] = 12, -- Molten Furnace
+			[400486] = 12, -- Molten Furnace
+			[400492] = 111, -- Dragonslayer's Shout
+			[402775] = 112, -- Frenzied Blows
+			[412448] = 112, -- Flaying Claws
+			[270569] = 36, -- The Houndmaster's Stratagem
+			[400052] = 328, -- Dissonant Blast
+			[407319] = 8, -- Zaralek Glowbur
+			[407319] = 8, -- Zaralek Glowbur
+			[372152] = 805, -- Dream of Cenarius
+			[200851] = 103, -- Rage of the Sleeper
+			[381924] = 32, -- Zapthrottle Soul Inhaler
+			[396591] = 801, -- Teleport: Jeweled Coast (Lucky Tortollan Charm)
 			["White Tiger Statue"] = 3,
 			[403710] = 320, -- Hurtling Barrage
 			[405497] = 320, -- Hurtling Barrage
@@ -7114,7 +7256,6 @@ function ZA_UpdateData()
 			["Infernal Tempest"] = 401,
 			["Infernal Torment"] = 401,
 			["Infernal"] = 401,
-			["Infernal"] = 401,
 			["Infested Breath"] = 40,
 			["Infinite Breath:1029007"] = 411,
 			["Inflated Ego:3528299"] = 411,
@@ -9264,6 +9405,7 @@ function ZA_UpdateData()
 			["Touch of the Occult"] = 325,
 			["Touch of the Ravenclaw"] = 327,
 			["Town Portal"] = 126,
+			["Toxic Bolt"] = 806,
 			["Toxic Blades"] = 806,
 			["Toxic Breath"] = 806,
 			["Toxic Fumes"] = 806,
@@ -10133,6 +10275,7 @@ function ZA_UpdateData()
 			[171845] = 100, -- Warlord's Deathwheel
 
 			--! Clefthoof
+			[417245] = 156, -- Ancestral Clefthoof
 			[171620] = 173, -- Bloodhoof Bull
 			[171617] = 171, -- Trained Icehoof
 			[171619] = 153, -- Tundra Icehoof
@@ -12633,6 +12776,45 @@ function ZA_UpdateData()
 			[401515] = 126,
 			[403906] = 4,
 			[401518] = 4,
+			[397734] = 646,
+			[108923] = 646,
+			[108923] = 646,
+			[384855] = 114,
+			[233981] = 100,
+			[229007] = 32,
+			[417510] = 401,
+			[417529] = 401,
+			[417546] = 401,
+			[417547] = 401,
+			[219437] = 401,
+			[240271] = 401,
+			[219446] = 401,
+			[416339] = 401,
+			[416344] = 401,
+			[219425] = 401,
+			[416366] = 401,
+			[416352] = 401,
+			[219460] = 401,
+			[219468] = 401,
+			[416360] = 401,
+			[416368] = 401,
+			[416344] = 401,
+			[416364] = 401,
+			[241271] = 200,
+			[59385] = 114,
+			[387284] = 126,
+			[387285] = 126,
+			[387286] = 126,
+			[387294] = 80,
+			[387293] = 80,
+			[387291] = 80,
+			[387296] = 641,
+			[387295] = 641,
+			[387298] = 641,
+			[417711] = 402,
+			[412350] = 641,
+			[409218] = 641,
+			[404157] = 660,
 			--qqq
 
 
@@ -22005,7 +22187,8 @@ function ZA_UpdateData()
 					[3] = 176, -- Yellow
 					[4] = 815, -- Green
 					[5] = 173, -- Red
-					[6] = 642, -- Infinite
+					[6] = C_QuestLog.IsQuestFlaggedCompleted(69819) and 822 or 642, -- Teal (if unlocked), otherwise Infinite
+					[7] = 642, -- Infinite
 				}
 				ZA.Spells[368899] = colors[ArmyDB[name.."-"..realm]["WindborneVelocidrake"]] or colors[4]
 				
@@ -22981,6 +23164,20 @@ function ZA_UpdateData()
 			[407081] = 0,
 			[409049] = 0,
 			[409427] = 0,
+			[384855] = 0,
+			[233981] = 0,
+			[229007] = 0,
+			[387284] = 4549251,
+			[387285] = 4549251,
+			[387286] = 4549251,
+			[387294] = 4549250,
+			[387293] = 4549250,
+			[387291] = 4549250,
+			[387296] = 4549249,
+			[387295] = 4549249,
+			[387298] = 4549249,
+			[417711] = 0,
+			[404157] = 0,
 			--qqi
 
 
