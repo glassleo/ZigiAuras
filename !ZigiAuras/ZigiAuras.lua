@@ -6,19 +6,20 @@ frame:RegisterEvent("VARIABLES_LOADED")
 frame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
 frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterUnitEvent("PLAYER_SPECIALIZATION_CHANGED", "player")
-frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
 
 function ZA_UpdateData()
 	local name, realm = UnitFullName("player")
+	local realm = GetRealmName() or ""
 	local _, class, _ = UnitClass("player")
 	local faction,_ = UnitFactionGroup("player")
 	local spec = GetSpecialization() or 5
 	local role = GetSpecializationRole(spec) or "DAMAGER" -- "DAMAGER", "TANK" or "HEALER"
 	local level = UnitLevel("player") or 1
 	local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0 -- 1 Kyrian  2 Venthyr  3 Night Fae  4 Necrolord
-	
+	local race = select(2, UnitRace("player"))
+	local custom = Automagic and Automagic.Characters and Automagic.Characters[name.."-"..realm] or Automagic.Characters[name] or {}
 
 	if ZA then
 		-- Debug Mode
@@ -233,7 +234,7 @@ function ZA_UpdateData()
 			["Nat Pagle"] = "HUNTER",
 			["Greatfather Winter"] = "Gold",
 			["Great-father Winter"] = "Gold",
-			["Dansel Adams"] = "Gold",
+			["Dansel Adams"] = "DEATHKNIGHT",
 			["Thaumaturge Vashreen"] = "Cosmetic",
 			["Minigob Manabonk"] = "MAGE",
 			["Rathan"] = "WARRIOR",
@@ -331,7 +332,6 @@ function ZA_UpdateData()
 			["Elsa-Sporeggar"] = "HUNTER",
 			["Elspeth-Moonglade"] = "WARLOCK",
 			["Emily-TheSha'tar"] = "PALADIN",
-			["Mercy-TheSha'tar"] = "PRIEST",
 			["Emma-Ravenholdt"] = "EVOKER",
 			["Enna-SteamwheedleCartel"] = "MONK",
 			["Eo-SteamwheedleCartel"] = "PALADIN",
@@ -397,6 +397,7 @@ function ZA_UpdateData()
 			["Mayhem-SteamwheedleCartel"] = "DEMONHUNTER",
 			["Medea-Ravenholdt"] = "MAGE",
 			["Mei-ScarshieldLegion"] = "HUNTER",
+			["Mercy-TheSha'tar"] = "PRIEST",
 			["Mikael-TheVentureCo"] = "PALADIN",
 			["Milo-Sporeggar"] = "WARRIOR",
 			["Moronica-Ravenholdt"] = "WARLOCK",
@@ -417,6 +418,7 @@ function ZA_UpdateData()
 			["Rose-ScarshieldLegion"] = "PRIEST",
 			["Salyssra-SteamwheedleCartel"] = "WARLOCK",
 			["Schnappi-Moonglade"] = "DRUID",
+			["Selene-Sporeggar"] = "PRIEST",
 			["Selma-Ravenholdt"] = "MONK",
 			["Serena-ScarshieldLegion"] = "MAGE",
 			["Seska-SteamwheedleCartel"] = "ROGUE",
@@ -1163,6 +1165,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Keeper Tyr"] = 200,
 			["Big Slick in the City"] = 820,
 			["Curious Niffen"] = 803,
 			["Siege Scorpion"] = 100,
@@ -1352,31 +1355,69 @@ function ZA_UpdateData()
 			["Venthyr Sinstone"] = "Hearthstone",
 			["Ardenweald Hearthstone"] = "Hearthstone",
 			["Ohn'ir Windsage's Hearthstone"] = "Hearthstone",
+			["Path of the Naaru"] = "Hearthstone",
 		}
 
 
 		--# Trinkets
 		ZA.TrinketOverlayAuras = {
+			[203996] = "402896,402903", -- Igneous Flowstone
+			[203729] = "401518,401519,401521,401516,402221", -- Ominous Chromatic Essence
 			[193773] = "381954,381955,381956,381957", -- Spoils of Neltharus
 			[198088] = "382860,382861,382862,382863,382864,382865,382866,382867", -- Darkmoon Deck: Dance
 			[198478] = "382860,382861,382862,382863,382864,382865,382866,382867", -- Darkmoon Deck Box: Dance
 			[198089] = "382852,382853,382854,382855,382856,382857,382858,382859", -- Darkmoon Deck: Watcher
 			[198481] = "382852,382853,382854,382855,382856,382857,382858,382859", -- Darkmoon Deck Box: Watcher
-			[203729] = "401518,401519,401521,401516,402221", -- Ominous Chromatic Essence
+			[200563] = "390899,390835,390655,390869",
+		}
+
+		ZA.TrinketOverlayAuraText = {
+			-- Igneous Flowstone
+			[402896] = "Crit",
+			[402903] = "Wave",
+			-- Ominous Chromatic Essence
+			[401521] = "Crit",
+			[401518] = "Haste",
+			[401519] = "Mastery",
+			[401516] = "Vers",
+			[402221] = "All",
+			-- Spoils of Neltharus
+			[381954] = "Crit",
+			[381955] = "Haste",
+			[381956] = "Mastery",
+			[381957] = "Vers",
+			-- Primal Ritual Shell
+			[390899] = "Mastery",
+			[390835] = "Fire",
+			[390655] = "Shield",
+			[390869] = "Heal",
 		}
 
 		ZA.TrinketOverlayStacks = {
+			[203996] = "402894,402898", -- Igneous Flowstone
 			[204202] = 411661, -- Neltharion's Call to Dominance
 			[202617] = "408533,408578", -- Elementium Pocket Anvil
 			[202615] = 401394, -- Vessel of Searing Shadow
+			[193006] = 376666, -- Idol of the Earth-Warder
 		}
 
 		ZA.Trinkets = {
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[406485] = "Encouraging Friend", -- Friendship Censer
+			[414976] = "Rage of Azzinoth: Haste", -- Paracausal Fragment of Azzinoth
+			[402897] = "Igneous Fury: Critical Strike", -- Igneous Flowstone
+			[417939] = "Echoing Tyrstone", -- Echoing Tyrstone
+			[414873] = "Blessing of Eternal Kings", -- Paracausal Fragment of Val'anyr
+			[417534] = "Time-Thief's Gambit: Haste", -- Time-Thief's Gambit
+			[408983] = "Underlight Harmony: " .. ZA.PrimaryStatName, -- Underlight Globe
+			[408612] = "Sturdy Deepflayer Scute: Versatility", -- Sturdy Deepflayer Scute
+			[408652] = "Smoldering Howl: Critical Strike", -- Smoldering Howler Horn
+			[409067] = "Stirring Twilight Ember: Haste", -- Stirring Twilight Ember
 			[409898] = "Molten Radiance", -- Rashok's Molten Heart
-			[401469] = "Screaming Flight: Critical Strike", -- 
+			[401469] = "Screaming Flight: Critical Strike", -- Screaming Black Dragonscale
+			[403382] = "Call to Chaos: " .. ZA.PrimaryStatName, -- Neltharion's Call to Chaos
 			[403386] = "Call to Suffering: " .. ZA.PrimaryStatName, -- Neltharion's Call to Suffering
 			[403380] = "Call to Dominance: " .. ZA.PrimaryStatName, -- Neltharion's Call to Dominance
 			[418527] = "Mirror of Fractured Tomorrows", -- Mirror of Fractured Tomorrows
@@ -1631,6 +1672,7 @@ function ZA_UpdateData()
 
 		ZA.TrinketDebuffs = {
 			-- Dragonflight
+			[406744] = true, -- Sulfuric Burning (Suspended Sulfuric Droplet)
 			[386623] = true, -- Awakening Rime (Darkmoon Deck: Rime)
 			[377420] = true, -- Searing Blue Flame (Crystalline Lapis)
 			[388755] = true, -- Soulseeker Arrow (Furious Ragefeather)
@@ -1647,6 +1689,10 @@ function ZA_UpdateData()
 
 		ZA.DefensiveTrinkets = {
 			-- Dragonflight
+			[417139] = "Prophetic Stonescale", -- Prophetic Stonescale
+			[415200] = "\"End It\": Haste", -- Paracausal Fragment of Frostmourne
+			[415172] = "Scourge General: Health", -- Paracausal Fragment of Frostmourne
+			[400986] = "Hellsteel Plating", -- Enduring Dreadplate
 			[384605] = "Blood of the Khanguard: Armor", -- Blood of the Khansguard
 			[384658] = "Supernatural: Health", -- Burgeoning Seed
 			[345231] = "Gladiator's Emblem: Health", -- Gladiator's Emblem
@@ -1713,6 +1759,9 @@ function ZA_UpdateData()
 		-- 38325
 
 		ZA.AbsorbTrinkets = {
+			-- Draognflight
+			[408625] = 1, -- Fractured Crystalspine Quill
+
 			-- Burning Crusade
 			[31771] = 1, -- Runed Fungalcap
 
@@ -2012,8 +2061,10 @@ function ZA_UpdateData()
 			[23445] = true, -- Evil Twin (Wormhole)
 
 			-- Experience/Reputation
+			[419239] = "XP", -- Dreaming Winds
 			["Experience Eliminated"] = "XP",
 			["Winds of Wisdom"] = "XP",
+			[418744] = "Reputation", -- Dreamsurge Learnings
 			["Winds of Sanctuary"] = "Reputation",
 			[289982] = "XP", -- Draught of Ten Lands
 			["WoW's 19th Anniversary"] = "Reputation", -- 2023
@@ -2089,6 +2140,10 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[419309] = "State", -- Brewfest Beverage
+			[399316] = "State", -- Guest of Honor
+			[398785] = "State", -- Champion of the Orcs
+			[415303] = "State", -- Timeshifted
 			[229074] = "State", -- Medivh's Echo
 			[408633] = "State", -- Time Rifts
 			[410129] = "State", -- Midnight At The Faire
@@ -2257,7 +2312,24 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[398555] = "Zone", -- Boon of Thunder Ridge
+			[134206] = "Zone", -- Trusted by the Ashtongue
+			[397488] = "Zone", -- Disguised
+			[414910] = "Zone", -- Barrel of Fun
+			[397607] = "Zone", -- VanCleef's Elixir of Speed
+			[415597] = "Zone", -- Warden's Vigilance
+			[418842] = "Zone", -- Dreamsurge Packhunters
+			[418769] = "Zone", -- Dreamsurge Greenwalker
+			[418652] = "Zone", -- Dreamsurge Wrathbloom
+			[415216] = "Zone", -- Dreamsurge Heartbloom
+			[418656] = "Zone", -- Dreamsurge Magpies
+			[414731] = "Zone", -- Dreamsurge Zephyrs
+			[418694] = "Zone", -- Dreamsurge Helpers
+			[415275] = "Zone", -- Dreamsurge Hibernation
+			[416101] = "Zone", -- Dreamsurge Dreamfall
+			[419535] = "Zone", -- Dreamsurge Thorncloak
 			[412359] = C_QuestLog.IsQuestFlaggedCompleted(74923) and true or "Zone", -- Empowered Temporal Gossamer
+			[391471] = "Zone", -- Cleansing Spores
 			[304910] = "Zone", -- Swift Currents
 			[291977] = "Zone", -- Oxygen-Rich Membrane
 			[415638] = "Zone", -- Race Times: Wild Preserve Slalom
@@ -2702,9 +2774,30 @@ function ZA_UpdateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Trinkets
-			[341260] = ZA.PrimaryStatSchool, -- Burst of Knowledge (Heirloom Set Bonus)
+			[341260] = 200, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			[406485] = 200, -- Friendship Censer
+			[417069] = 999, -- Prophetic Stonescale (debuff)
+			[417139] = 641, -- Prophetic Stonescale
+			[415200] = 48, -- Direct Order - 'End It' (Paracausal Fragment of Frostmourne)
+			[415172] = 411, -- Scourge General (Paracausal Fragment of Frostmourne)
+			[414976] = 401, -- Paracausal Fragment of Azzinoth
+			[402897] = 12, -- Igneous Flowstone
+			[417939] = 200, -- Echoing Tyrstone
+			[401238] = 36, -- Ward of Faceless Ire
+			[414873] = 400, -- Paracausal Fragment of Val'anyr
+			[400986] = 142, -- Enduring Dreadplate
+			[417534] = 642, -- Time-Thief's Gambit
+			[408983] = 126, -- Underlight Globe
+			[408612] = 803, -- Sturdy Deepflayer Scute
+			[408652] = 4, -- Smoldering Howler Horn
+			[409067] = 36, -- Stirring Twilight Ember
+			[409898] = 12, -- Rashok's Molten Heart
+			[401469] = 400, -- Screaming Black Dragonscale
+			[403382] = 36, -- Neltharion's Call to Chaos
+			[403386] = 36, -- Neltharion's Call to Suffering
+			[403380] = 36, -- Neltharion's Call to Dominance
 			[418527] = 641, -- Mirror of Fractured Tomorrows
 			[405202] = 200, -- Orb Activated
 			[408533] = 36, -- Elementium Pocket Anvil
@@ -3004,6 +3097,96 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[383493] = 4, -- Wildfire
+			[102543] = 105, -- Incarnation: Avatar of Ashamane
+			[421807] = 104, -- Speed Boost
+			[403589] = 101, -- Gushing Wound
+			[403584] = 111, -- Howling Screech
+			[400758] = 100, -- Booterang
+			["Booterang"] = 100,
+			["Mug Bash"] = 282,
+			[305027] = 282, -- Mug Bash
+			[279060] = 282, -- Mug Bash
+			[303467] = 282, -- Mug Bash
+			[303467] = 282, -- Mug Bash
+			["Eating"] = 5,
+			[404189] = 803, -- Stoneskin Howl
+			[412555] = 2, -- Path of the Naaru
+			[423576] = 105, -- Demonic Frenzy
+			[423432] = 101, -- Crushing Blow
+			[423431] = 101, -- Crushing Blow
+			[251160] = 401, -- Fel Cross
+			[422396] = 401, -- Fel Cross
+			[423417] = 401, -- Burning Whirlwind
+			[423423] = 401, -- Burning Whirlwind
+			[420487] = 320, -- Manifest Shade
+			[420485] = 320, -- Manifest Shade
+			[420480] = 320, -- Manifest Shade
+			[420478] = 320, -- Manifest Shade
+			[420428] = 320, -- Manifest Shade
+			[413813] = 100, -- Energy Sap
+			[64740] = 100, -- Energy Sap
+			[412889] = 621, -- Preservation
+			[412900] = 403, -- Cleansing Flame
+			[412826] = 400, -- Calamity
+			[412823] = 400, -- Calamity
+			[412816] = 126, -- Arcane Storm
+			[412772] = 320, -- Corrupted Dominion
+			[415296] = 621, -- Scatter Fireseeds
+			[415419] = 402, -- Dreamway of the Flame
+			[424144] = 641, -- Temporal Vortex
+			[414280] = 642, -- Infinite Breath
+			[350134] = 642, -- Infinite Breath
+			[347149] = 642, -- Infinite Breath
+			[412835] = 642, -- Infinite Breath
+			[418680] = 400, -- Searing Breath
+			["Grove Guardians"] = 8,
+			[415847] = 6, -- Holy Armageddon
+			[394758] = 321, -- Flagellation
+			[384631] = 105, -- Flagellation
+			[370136] = 2, -- Pallid Shield
+			[369158] = 908, -- Plague Volley
+			[369135] = 908, -- Plague Volley
+			[240115] = 908, -- Plague Volley
+			[395015] = 8, -- Cultivate
+			[394774] = 8, -- Cultivate
+			[394798] = 8, -- Cultivate
+			[403836] = 32, -- Shadow Breath
+			[403827] = 328, --Maddening Shadowstomp
+			[398311] = 328, -- Drakefire Influence
+			[403790] = 101, -- Vicious Swipe
+			[403684] = 320, -- Cascading Shadow
+			[420337] = 4, -- Fiery Retaliation
+			[419437] = 4, -- Fiery Retaliation
+			[419429] = 4, -- Fiery Retaliation
+			[419174] = 427, -- Chaotic Slash
+			[420486] = 325, -- Curse of Lethargy
+			[420512] = 326, -- Siphoning Rune
+			[420613] = 427, -- Fel-Infused Bite
+			[419106] = 402, -- Searing Bolt
+			[419244] = 401, -- Fel Purge
+			[419157] = 111, -- Admonishing Shout
+			[419116] = 328, -- Silencing Snare
+			[418436] = 402, -- Fire Storm
+			[376073] = 911, -- Rapid Incubation
+			[376073] = 911, -- Rapid Incubation
+			[417220] = 40, -- Plague Miasma
+			[416751] = 40, -- Plague Miasma
+			[233400] = 3, -- Blinding Peck
+			[398677] = 101, -- Bloody Shank
+			[408625] = 808, -- Fractured Crystalspine Quill
+			[414695] = 4, -- Wildfire
+			[389251] = 900, -- Serrated Petals
+			[369241] = 104, -- Death Rage
+			[412999] = 126, -- Orb of Protection
+			[387614] = 326, -- Chant of the Dead
+			[396376] = 326, -- Chant of the Dead
+			[387629] = 410, -- Rotting Wind
+			[387440] = 326, -- Desecrating Roar
+			[35924] = 646, -- Energy Flux
+			[401357] = 646, -- Energy Flux
+			[390624] = 415, -- Bone Frenzy
+			[390613] = 415, -- Bone Frenzy
 			[417303] = 411, -- Call Val'kyr
 			[403275] = 660, -- Unbound Surge
 			[17767]  = 32, -- Shadow Bulwark
@@ -3190,7 +3373,7 @@ function ZA_UpdateData()
 			[381580] = 65, -- Ibued Strike
 			[408551] = 808, -- Splinter
 			[409704] = 36, -- Dreadfire Breath
-			[982] = 202, -- Revive Pet
+			[982] = 8, -- Revive Pet
 			["Mending Clay"] = 803,
 			["Blood Mirror"] = 321,
 			[88186] = 20, -- Vapor Form
@@ -5044,6 +5227,7 @@ function ZA_UpdateData()
 			["Blade of Flames:1118739"] = 401,
 			["Blade of Wrath"] = 2,
 			["Blade Volley:3565727"] = 321,
+			["Bootstorm"] = 107,
 			["Bladestorm"] = 107,
 			["Blast Wave:135903"] = 4,
 			["Blaze of Glory"] = 4,
@@ -6747,6 +6931,8 @@ function ZA_UpdateData()
 			["Force and Verve"] = 111,
 			["Force Multiplier:136088"] = 103,
 			["Force of Gravity"] = 320,
+			[102693] = 8, -- Grove Guardians
+			[205636] = 8, -- Force of Nature
 			["Force of Nature"] = 8,
 			["Forced Contition:3528308"] = 321,
 			["Forced Contrition"] = 321,
@@ -7257,7 +7443,7 @@ function ZA_UpdateData()
 			["Infernal Torment"] = 401,
 			["Infernal"] = 401,
 			["Infested Breath"] = 40,
-			["Infinite Breath:1029007"] = 411,
+			["Infinite Breath:1029007"] = 642,
 			["Inflated Ego:3528299"] = 411,
 			["Infuse Death"] = 326,
 			["Infused Bulwark:3867785"] = 203,
@@ -8414,7 +8600,7 @@ function ZA_UpdateData()
 			["Sated"] = 999,
 			["Satiated:237554"] = 104,
 			["Savage Assault"] = 112,
-			["Savage Claws"] = 107,
+			["Savage Claws"] = 112,
 			["Savage Maul"] = 101,
 			["Savage Roar"] = 104,
 			["Saving"] = 202,
@@ -11985,7 +12171,7 @@ function ZA_UpdateData()
 			[339329] = 201,
 			[341641] = 114,
 			[353963] = 201,
-			[51962] = 202,
+			[51962] = 282,
 			[51210] = 280,
 			[51845] = 280,
 			[53038] = 111,
@@ -11997,8 +12183,8 @@ function ZA_UpdateData()
 			[51319] = 900,
 			[193724] = 807,
 			[213633] = 326,
-			[42436] = 202,
-			[191273] = 202,
+			[42436] = 282,
+			[191273] = 100,
 			[182021] = 281,
 			[182139] = 281,
 			[212360] = 126, -- Enchanting Dormant Book
@@ -12815,6 +13001,43 @@ function ZA_UpdateData()
 			[412350] = 641,
 			[409218] = 641,
 			[404157] = 660,
+			[416882] = 641,
+			[405068] = 12,
+			[421753] = 100,
+			[421756] = 100,
+			[421758] = 100,
+			[421760] = 100,
+			[421761] = 100,
+			[421764] = 100,
+			[421765] = 100,
+			[421766] = 100,
+			[421772] = 100,
+			[421773] = 100,
+			[421775] = 100,
+			[421776] = 100,
+			[415213] = 64,
+			[397607] = 104,
+			[398121] = 64,
+			[397455] = 908,
+			[370480] = 100,
+			[397488] = 100,
+			[370559] = 100,
+			[397573] = 100,
+			[415082] = 641,
+			[416240] = 641,
+			[415562] = 641,
+			[417235] = 641,
+			[417296] = 641,
+			[413061] = 811,
+			[418549] = 200,
+			[420708] = 80,
+			[133806] = 401,
+			[139200] = 401,
+			[400932] = 100,
+			[398599] = 8,
+			[398917] = 321,
+			[421628] = 80,
+			[420460] = 80,
 			--qqq
 
 
@@ -21311,6 +21534,54 @@ function ZA_UpdateData()
 			[2393] = 107, -- White Linen Shirt
 
 			--! Cooking
+			-- Dragon Isles
+			[403018] = 5, -- Deviously Deviled Eggs
+			[381417] = 5, -- Gral's Veneration
+			[400807] = 5, -- Sparkling Spice Pouch
+			[381412] = 5, -- Fated Fortune Cookie
+			[407100] = 5, -- Charitable Cheddar
+			[381382] = 801, -- Delicious Dragon Spittle
+			[381376] = 804, -- Snow in a Cone
+			[381393] = 5, -- Seamoth Surprise
+			[381420] = 5, -- Hoard of Draconic Delicacies
+			[381391] = 5, -- Timely Demise
+			[381392] = 5, -- Filet of Fangs
+			[381415] = 5, -- Gral's Reverence
+			[381389] = 5, -- Hopefully Healthy
+			[381418] = 5, -- Gral's Devotion
+			[378302] = 155, -- Ooey-Gooey Chocolate
+			[381364] = 5, -- Assorted Exotic Spices
+			[381369] = 5, -- Probably Protein
+			[407066] = 809, -- Rocks on the Rocks
+			[381363] = 909, -- Pebbled Rock Salts
+			[381386] = 5, -- Scrambled Basilisk Eggs
+			[381397] = 5, -- Aromatic Seafood Platter
+			[381395] = 5, -- Salt-Baked Fishcake
+			[381403] = 5, -- Braised Bruffalon Brisket
+			[381407] = 5, -- Roast Duck Delight
+			[381396] = 5, -- Feisty Fish Sticks
+			[381377] = 5, -- Blubbery Muffin
+			[381383] = 5, -- Churnbelly Tea
+			[381400] = 5, -- Thousandbone Tongueslicer
+			[381413] = 5, -- Yusa's Hearty Stew
+			[381373] = 900, -- Salad on the Side
+			[381365] = 5, -- Twice-Baked Potato
+			[381368] = 5, -- Mackerel Snackerel
+			[381375] = 909, -- Impossibly Sharp Cutting Knife
+			[381399] = 5, -- Revenge, Served Cold
+			[381385] = 5, -- Charred Hornswog Steaks
+			[381411] = 5, -- Salted Meat Mash
+			[381388] = 5, -- Thrice-Spiced Mammoth Kabob
+			[381380] = 5, -- Tasty Hatchling's Treat
+			[381402] = 5, -- Great Cerulean Sea
+			[381370] = 5, -- Sweet and Sour Clam Chowder
+			[381378] = 5, -- Celebratory Cake
+			[381404] = 5, -- Riverside Picnic
+			[381381] = 5, -- Zesty Water
+			[398438] = 5, -- Firewater Sorbet
+			[381367] = 5, -- Cheese and Quackers
+			[381371] = 5, -- Breakfast of Draconic Champions
+			[381398] = 5, -- Sizzling Seafood Medley
 			-- Shadowlands
 			[338100] = 5, -- Arden Apple Pie
 			[338107] = 900, -- Diced Vegetables
@@ -21691,116 +21962,120 @@ function ZA_UpdateData()
 			[33284] = 5, -- Ravager Dog
 			[43758] = 5, -- Stormchops
 			-- Classic
-			[18247] = 5, -- Baked Salmon
-			[25659] = 5, -- Dirge's Kickin' Chimaerok Chops
-			[45022] = 282, -- Hot Apple Cider
-			[18245] = 5, -- Lobster Stew
-			[18246] = 5, -- Mightfish Steak
-			[22761] = 5, -- Runn Tum Tuber Surprise
-			[24801] = 5, -- Smoked Desert Dumplings
-			[62051] = 5, -- Candied Sweet Potato
-			[66034] = 5, -- Candied Sweet Potato
-			[18242] = 5, -- Hot Smoked Bass
-			[46684] = 5, -- Charred Bear Kabobs
-			[46688] = 5, -- Juicy Bear Burger
-			[18243] = 5, -- Nightfin Soup
-			[18244] = 5, -- Poached Sunscale Salmon
-			[64054] = 5, -- Clamlette Magnifique
-			[18239] = 5, -- Cooked Glossy Mightfish
-			[18241] = 5, -- Filet of Redgill
-			[15933] = 5, -- Monster Omelet
-			[15915] = 5, -- Spiced Chili Crab
-			[22480] = 5, -- Tender Wolf Steak
-			[20626] = 5, -- Undermine Clam Chowder
+			[399040] = 5, -- Feast for the Ancestors
+			[399035] = 5, -- Spicy Seared Talbuk Steak
+			[399038] = 5, -- Grilled Southfury Salmon
+			[399034] = 5, -- Curried Coconut Crab
+			[18247]  = 5, -- Baked Salmon
+			[25659]  = 5, -- Dirge's Kickin' Chimaerok Chops
+			[45022]  = 282, -- Hot Apple Cider
+			[18245]  = 5, -- Lobster Stew
+			[18246]  = 5, -- Mightfish Steak
+			[22761]  = 5, -- Runn Tum Tuber Surprise
+			[24801]  = 5, -- Smoked Desert Dumplings
+			[62051]  = 5, -- Candied Sweet Potato
+			[66034]  = 5, -- Candied Sweet Potato
+			[18242]  = 5, -- Hot Smoked Bass
+			[46684]  = 5, -- Charred Bear Kabobs
+			[46688]  = 5, -- Juicy Bear Burger
+			[18243]  = 5, -- Nightfin Soup
+			[18244]  = 5, -- Poached Sunscale Salmon
+			[64054]  = 5, -- Clamlette Magnifique
+			[18239]  = 5, -- Cooked Glossy Mightfish
+			[18241]  = 5, -- Filet of Redgill
+			[15933]  = 5, -- Monster Omelet
+			[15915]  = 5, -- Spiced Chili Crab
+			[22480]  = 5, -- Tender Wolf Steak
+			[20626]  = 5, -- Undermine Clam Chowder
 			[185705] = 5, -- Fancy Darkmoon Feast
-			[18240] = 5, -- Grilled Squid
-			[18238] = 5, -- Spotted Yellowtail
-			[15906] = 5, -- Dragonbreath Chili
-			[15910] = 5, -- Heavy Kodo Stew
-			[15863] = 5, -- Carrion Surprise
-			[7213] = 5, -- Giant Clam Scorcho
-			[15856] = 5, -- Hot Wolf Ribs
-			[15861] = 5, -- Jungle Stew
-			[20916] = 5, -- Mithril Head Trout
-			[15865] = 5, -- Mystery Stew
-			[15855] = 5, -- Roast Raptor
-			[25954] = 5, -- Sagefish Delight
-			[62049] = 321, -- Cranberry Chutney
-			[66035] = 321, -- Cranberry Chutney
-			[62045] = 5, -- Slow-Roasted Turkey
-			[66037] = 5, -- Slow-Roasted Turkey
-			[21175] = 5, -- Spider Sausage
-			[7828] = 5, -- Rockscale Cod
-			[4094] = 5, -- Barbecued Buzzard Wing
-			[3400] = 5, -- Soothing Turtle Bisque
-			[3398] = 5, -- Hot Lion Chops
-			[13028] = 802, -- Goldthorn Tea
-			[3376] = 5, -- Curiously Tasty Omelet
-			[15853] = 5, -- Lean Wolf Steak
-			[3373] = 5, -- Crocolisk Gumbo
-			[24418] = 5, -- Heavy Crocolisk Stew
-			[3399] = 5, -- Tasty Lion Steak
-			[3377] = 5, -- Gooey Spider Cake
-			[6419] = 5, -- Lean Venison
-			[62044] = 5, -- Pumpkin Pie
-			[66036] = 5, -- Pumpkin Pie
-			[7755] = 5, -- Bristle Whisker Catfish
-			[6418] = 5, -- Crispy Lizard Tail
-			[2549] = 5, -- Seasoned Wolf Kabob
-			[2547] = 5, -- Redridge Goulash
-			[6501] = 5, -- Clam Chowder
-			[6417] = 5, -- Dig Rat Stew
-			[3372] = 5, -- Murloc Fin Soup
-			[2548] = 5, -- Succulent Pork Ribs
-			[6500] = 5, -- Goblin Deviled Clams
+			[18240]  = 5, -- Grilled Squid
+			[18238]  = 5, -- Spotted Yellowtail
+			[15906]  = 5, -- Dragonbreath Chili
+			[15910]  = 5, -- Heavy Kodo Stew
+			[15863]  = 5, -- Carrion Surprise
+			[7213]   = 5, -- Giant Clam Scorcho
+			[15856]  = 5, -- Hot Wolf Ribs
+			[15861]  = 5, -- Jungle Stew
+			[20916]  = 5, -- Mithril Head Trout
+			[15865]  = 5, -- Mystery Stew
+			[15855]  = 5, -- Roast Raptor
+			[25954]  = 5, -- Sagefish Delight
+			[62049]  = 321, -- Cranberry Chutney
+			[66035]  = 321, -- Cranberry Chutney
+			[62045]  = 5, -- Slow-Roasted Turkey
+			[66037]  = 5, -- Slow-Roasted Turkey
+			[21175]  = 5, -- Spider Sausage
+			[7828]   = 5, -- Rockscale Cod
+			[4094]   = 5, -- Barbecued Buzzard Wing
+			[3400]   = 5, -- Soothing Turtle Bisque
+			[3398]   = 5, -- Hot Lion Chops
+			[13028]  = 802, -- Goldthorn Tea
+			[3376]   = 5, -- Curiously Tasty Omelet
+			[15853]  = 5, -- Lean Wolf Steak
+			[3373]   = 5, -- Crocolisk Gumbo
+			[24418]  = 5, -- Heavy Crocolisk Stew
+			[3399]   = 5, -- Tasty Lion Steak
+			[3377]   = 5, -- Gooey Spider Cake
+			[6419]   = 5, -- Lean Venison
+			[62044]  = 5, -- Pumpkin Pie
+			[66036]  = 5, -- Pumpkin Pie
+			[7755]   = 5, -- Bristle Whisker Catfish
+			[6418]   = 5, -- Crispy Lizard Tail
+			[2549]   = 5, -- Seasoned Wolf Kabob
+			[2547]   = 5, -- Redridge Goulash
+			[6501]   = 5, -- Clam Chowder
+			[6417]   = 5, -- Dig Rat Stew
+			[3372]   = 5, -- Murloc Fin Soup
+			[2548]   = 5, -- Succulent Pork Ribs
+			[6500]   = 5, -- Goblin Deviled Clams
 			[347176] = 5, -- Extra Sugary Fish Feast
 			[185708] = 5, -- Sugar-Crusted Fish Feast
-			[2545] = 5, -- Cooked Crab Claw
-			[8238] = 5, -- Savory Deviate Delight
-			[3370] = 5, -- Crocolisk Steak
-			[25704] = 5, -- Smoked Sagefish
-			[2543] = 5, -- Westfall Stew
-			[3371] = 5, -- Blood Sausage
-			[28267] = 5, -- Crunchy Spider Surprise
-			[9513] = 802, -- Thistle Tea
-			[45695] = 282, -- Captain Rumsey's Lager
-			[33278] = 5, -- Bat Bites
-			[2542] = 5, -- Goretusk Liver Pie
-			[7754] = 5, -- Loch Frenzy Delight
-			[7753] = 5, -- Longjaw Mud Snapper
-			[7827] = 5, -- Rainbow Fin Albacore
-			[6416] = 5, -- Strider Stew
-			[62050] = 107, -- Spice Bread Stuffing
-			[66038] = 107, -- Spice Bread Stuffing
-			[2546] = 5, -- Dry Pork Ribs
-			[8607] = 5, -- Smoked Bear Meat
-			[2544] = 5, -- Crab Cake
-			[6414] = 5, -- Roasted Kodo Meat
-			[21144] = 5, -- Winter Veil Egg Nog
-			[2795] = 5, -- Beer Basted Boar Ribs
-			[6413] = 5, -- Scorpid Surprise
-			[6499] = 5, -- Boiled Clams
-			[2541] = 5, -- Coyote Steak
-			[6415] = 5, -- Fillet of Frenzy
+			[2545]   = 5, -- Cooked Crab Claw
+			[8238]   = 5, -- Savory Deviate Delight
+			[3370]   = 5, -- Crocolisk Steak
+			[25704]  = 5, -- Smoked Sagefish
+			[2543]   = 5, -- Westfall Stew
+			[3371]   = 5, -- Blood Sausage
+			[28267]  = 5, -- Crunchy Spider Surprise
+			[9513]   = 802, -- Thistle Tea
+			[45695]  = 282, -- Captain Rumsey's Lager
+			[33278]  = 5, -- Bat Bites
+			[2542]   = 5, -- Goretusk Liver Pie
+			[7754]   = 5, -- Loch Frenzy Delight
+			[7753]   = 5, -- Longjaw Mud Snapper
+			[7827]   = 5, -- Rainbow Fin Albacore
+			[6416]   = 5, -- Strider Stew
+			[62050]  = 107, -- Spice Bread Stuffing
+			[66038]  = 107, -- Spice Bread Stuffing
+			[2546]   = 5, -- Dry Pork Ribs
+			[8607]   = 5, -- Smoked Bear Meat
+			[2544]   = 5, -- Crab Cake
+			[6414]   = 5, -- Roasted Kodo Meat
+			[21144]  = 5, -- Winter Veil Egg Nog
+			[2795]   = 5, -- Beer Basted Boar Ribs
+			[6413]   = 5, -- Scorpid Surprise
+			[6499]   = 5, -- Boiled Clams
+			[2541]   = 5, -- Coyote Steak
+			[6415]   = 5, -- Fillet of Frenzy
 			[185704] = 5, -- Lemon Herb Filet
-			[43779] = 5, -- Delicious Chocolate Cake
-			[7751] = 5, -- Brilliant Smallfish
-			[2538] = 5, -- Charred Wolf Meat
-			[15935] = 5, -- Crispy Bat Wing
-			[21143] = 5, -- Gingerbread Cookie
-			[8604] = 5, -- Herb Baked Egg
-			[33276] = 5, -- Lynx Steak
-			[2540] = 5, -- Roasted Boar Meat
-			[33277] = 5, -- Roasted Moongraze Tenderloin
-			[7752] = 5, -- Slitherskin Mackerel
-			[93741] = 5, -- Venison Jerky
-			[65454] = 5, -- Bread of the Dead
+			[43779]  = 5, -- Delicious Chocolate Cake
+			[7751]   = 5, -- Brilliant Smallfish
+			[2538]   = 5, -- Charred Wolf Meat
+			[15935]  = 5, -- Crispy Bat Wing
+			[21143]  = 5, -- Gingerbread Cookie
+			[8604]   = 5, -- Herb Baked Egg
+			[33276]  = 5, -- Lynx Steak
+			[2540]   = 5, -- Roasted Boar Meat
+			[33277]  = 5, -- Roasted Moongraze Tenderloin
+			[7752]   = 5, -- Slitherskin Mackerel
+			[93741]  = 5, -- Venison Jerky
+			[65454]  = 5, -- Bread of the Dead
 			[347509] = 5, -- Extra Fancy Darkmoon Feast
-			[6412] = 5, -- Kaldorei Spider Kabob
-			[2539] = 5, -- Spiced Wolf Meat
+			[6412]   = 5, -- Kaldorei Spider Kabob
+			[2539]   = 5, -- Spiced Wolf Meat
 			[347457] = 5, -- Extra Lemony Herb Filet
-			[3397] = 5, -- Big Bear Steak
-			[37836] = 5, -- Spice Bread
+			[3397]   = 5, -- Big Bear Steak
+			[37836]  = 5, -- Spice Bread
 
 			--! Archaeology
 			[113993] = 114, -- Anatomical Dummy
@@ -22166,7 +22441,7 @@ function ZA_UpdateData()
 
 		if ArmyDB and name then
 			-- Dragonriding Customization
-			local realm = GetRealmName()
+			local realm = GetRealmName() or ""
 
 			if realm and ArmyDB[name.."-"..realm] then
 				-- Renewed Proto-Drake
@@ -23178,10 +23453,43 @@ function ZA_UpdateData()
 			[387298] = 4549249,
 			[417711] = 0,
 			[404157] = 0,
+			[416882] = 0,
+			[421753] = 0,
+			[421756] = 0,
+			[421758] = 0,
+			[421760] = 0,
+			[421761] = 0,
+			[421764] = 0,
+			[421765] = 0,
+			[421766] = 0,
+			[421772] = 0,
+			[421773] = 0,
+			[421775] = 0,
+			[421776] = 0,
+			[375680] = 0,
+			[375765] = 0,
+			[375771] = 0,
+			[375932] = 0,
+			[398121] = 0,
+			[370480] = 0,
+			[370559] = 0,
+			[397573] = 0,
+			[415082] = 0,
+			[416240] = 0,
+			[415562] = 0,
+			[417235] = 0,
+			[417296] = 0,
+			[415419] = 516743, -- Dreamway of the Flame
+			[133806] = 666474,
+			[139200] = 0,
+			[400932] = 0,
+			[398599] = 0,
+			[398917] = 0,
 			--qqi
 
 
 			--§ Toys
+			[412555] = 1708141,
 			[288601] = 237387,
 			[247129] = 1064187,
 			[247191] = 237388,
@@ -23622,6 +23930,15 @@ function ZA_UpdateData()
 			[389400] = 4620672, -- Writ of Speed
 			[389151] = 4620672, -- Writ of Versatility
 		}
+
+		--! Automagic Override
+		if Automagic and name then
+			if race == "Draenei" and custom["manari"] then
+				ZA.Spells["Gift of the Naaru"] = 401
+				ZA.Icons["Gift of the Naaru"] = 1344647
+				ZA.Text["Gift of the Naaru"] = "Gift of the Man'ari"
+			end
+		end
 
 		-- Temporary Weapon Enchants
 		ZA.TemporaryEnchants = {
