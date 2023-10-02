@@ -2062,6 +2062,8 @@ function ZA_UpdateData()
 
 			-- Experience/Reputation
 			[419239] = "XP", -- Dreaming Winds
+			[423860] = "Reputation", -- Knowledge of Timeways
+			[423861] = "XP", -- Mastery of Timeways
 			["Experience Eliminated"] = "XP",
 			["Winds of Wisdom"] = "XP",
 			[418744] = "Reputation", -- Dreamsurge Learnings
@@ -10262,27 +10264,23 @@ function ZA_UpdateData()
 			--! Mounts
 
 			--! Dragonriding
-			[368896] = 811, -- Renewed Proto-Drake
-			[368899] = 811, -- Cliffside Wylderdrake
-			[360954] = 811, -- Highland Drake
-			[368901] = 811, -- Windborne Velocidrake
-			[412088] = 323, -- Grotto Netherwing Drake
 
 			--! Aircraft
-			[290718] = 100, -- Aerial Unit R-21/X
 			[247448] = 100, -- Darkmoon Dirigible
 			[307256] = 100, -- Explorer's Jungle Hopper
 			[44153]  = 100, -- Flying Machine
 			[261437] = 100, -- Mecha-Mogul Mk2
 			[63796]  = 100, -- Mimiron's Head
 			[245725] = 100, -- Orgrimmar Interceptor
-			[299170] = 100, -- Rustbolt Resistor
 			[134359] = 100, -- Sky Golem
 			[245723] = 100, -- Stormwind Skychaser
 			[272770] = 323, -- The Dreadwake
 			[44151]  = 100, -- Turbo-Charged Flying Machine
 			[256123] = 100, -- Xiwyllag ATV
 			[368158] = 106, -- Zereth Overseer
+			[290718] = 100, -- Aerial Unit R-21/X
+			[299170] = 100, -- Rustbolt Resistor
+			[424082] = 100, -- Mimiron's Jumpjets
 
 			--! Alpaca
 			[316493] = 156, -- Elusive Quickhoof
@@ -10369,8 +10367,10 @@ function ZA_UpdateData()
 			[342668] = 106, -- Desertwing Hunter
 			[359372] = 910, -- Mawdapted Raptora
 			[359373] = 131, -- Raptora Swooper
+			-- Ohuna
 			[385266] = 172, -- Zenet Hatchling
 			[395644] = 811, -- Divine Kiss of Ohn'ahra
+			[385262] = 175, -- Duskwing Ohuna
 			-- Raven
 			[231524] = 141, -- Shadowblade's Baneful Omen
 			[231525] = 142, -- Shadowblade's Crimson Omen
@@ -10383,6 +10383,7 @@ function ZA_UpdateData()
 			[132119] = 802, -- Violet Pandaren Phoenix
 			-- Albatross
 			[266925] = 150, -- Siltwing Albatross
+			[414324] = 150, -- Gold-Toed Albatross
 			-- Vulture
 			[316275] = 155, -- Waste Marauder
 			[316276] = 173, -- Wastewander Skyterror
@@ -10406,6 +10407,9 @@ function ZA_UpdateData()
 			[171633] = 156, -- Wild Goretusk
 			[190690] = 402, -- Bristling Hellboar
 			[190977] = 401, -- Deathtusk Felboar
+
+			--! Broom
+			[419345] = 414, -- Eve's Ghastly Rider
 
 			--! Brutosaur
 			[264058] = 134, -- Mighty Caravan Brutosaur
@@ -10554,6 +10558,7 @@ function ZA_UpdateData()
 			[170347] = 12, -- Core Hound
 			[271646] = 12, -- Dark Iron Core Hound
 			[213209] = 401, -- Steelbound Devourer
+			[414327] = 401, -- Sulfur Hound
 
 			--! Corpsefly
 			[353885] = 40, -- Battlefield Swarmer
@@ -10647,6 +10652,7 @@ function ZA_UpdateData()
 			[351195] = 411, -- Vengeance
 
 			--! Drake
+			[360954] = 814, -- Highland Drake
 			[60025]  = 153, -- Albino Drake
 			[59567]  = 80, -- Azure Drake
 			[59650]  = 156, -- Black Drake
@@ -10666,27 +10672,31 @@ function ZA_UpdateData()
 			[201098] = 642, -- Infinite Timereaver
 			[377071] = 4, -- Crimson Gladiator's Drake
 			-- Slitherdrake
+			[368893] = 175, -- Winding Slitherdrake
 			[408977] = 36, -- Obsidian Gladiator's Slitherdrake
+			[425416] = 120, -- Verdant Gladiator's Slitherdrake
 			-- Life-Binder Drake
 			[107842] = 5, -- Blazing Drake
 			[107845] = 403, -- Life-Binder's Handmaiden
 			[107844] = 142, -- Twilight Harbinger
 			-- New Drake
 			[294197] = 12, -- Obsidian Worldbreaker
+			[420097] = 48, -- Azure Worldchiller
 			[326390] = 100, -- Steamscale Incinerator
 			[302143] = 320, -- Uncorrupted Voidwing
 			[359843] = 815, -- Tangled Dreamweaver
-			-- Nether Drake
-			[41514] = 323, -- Azure Netherwing Drake
-			[58615] = 323, -- Brutal Nether Drake
-			[41515] = 323, -- Cobalt Netherwing Drake
-			[44744] = 323, -- Merciless Nether Drake
-			[41513] = 323, -- Onyx Netherwing Drake
-			[41516] = 323, -- Purple Netherwing Drake
-			[37015] = 323, -- Swift Nether Drake
-			[49193] = 323, -- Vengeful Nether Drake
-			[41517] = 323, -- Veridian Netherwing Drake
-			[41518] = 323, -- Violet Netherwing Drake
+			-- Netherwing Drake
+			[412088] = 822, -- Grotto Netherwing Drake
+			[41514] = 822, -- Azure Netherwing Drake
+			[41515] = 413, -- Cobalt Netherwing Drake
+			[41513] = 819, -- Onyx Netherwing Drake
+			[41516] = 640, -- Purple Netherwing Drake
+			[41517] = 141, -- Veridian Netherwing Drake
+			[41518] = 32, -- Violet Netherwing Drake
+			[37015] = 640, -- Swift Nether Drake
+			[58615] = 640, -- Brutal Nether Drake
+			[44744] = 640, -- Merciless Nether Drake
+			[49193] = 640, -- Vengeful Nether Drake
 			-- Wind Drake
 			[88335]  = 172, -- Drake of the East Wind
 			[315847] = 157, -- Drake of the Four Winds
@@ -10701,6 +10711,7 @@ function ZA_UpdateData()
 			-- Storm Dragon
 			[288721] = 800, -- Island Thunderscale
 			[242882] = 818, -- Valarjar Stormwing
+			[414326] = 427, -- Felstorm Dragon
 			[227989] = 800, -- Cruel Gladiator's Storm Dragon
 			[243201] = 800, -- Demonic Gladiator's Storm Dragon
 			[227995] = 800, -- Dominant Gladiator's Storm Dragon
@@ -10784,6 +10795,7 @@ function ZA_UpdateData()
 			[232412] = 401, -- Netherlord's Chaotic Wrathsteed
 
 			--! Fey Dragon
+			[425338] = 805, -- Flourishing Whimsydrake
 			[142878] = 805, -- Enchanted Fey Dragon
 
 			--! Fish
@@ -10867,6 +10879,7 @@ function ZA_UpdateData()
 			[302361] = 3, -- Alabaster Stormtalon
 			[61229]  = 159, -- Armored Snowy Gryphon
 			[275859] = 910, -- Dusky Waycrest Gryphon
+			[414323] = 910, -- Ravenous Black Gryphon
 			[32239]  = 819, -- Ebon Gryphon
 			[32235]  = 804, -- Golden Gryphon
 			[135416] = 154, -- Grand Armored Gryphon
@@ -10975,6 +10988,8 @@ function ZA_UpdateData()
 			[213134] = 401, -- Felblaze Infernal
 			[213350] = 16, -- Frostshard Infernal
 			[171827] = 402, -- Hellfire Infernal
+			[171840] = 16, -- Coldflame Infernal
+			[213349] = 4, -- Flarecore Infernal
 
 			--! Kite
 			[133023] = 815, -- Jade Pandaren Kite
@@ -11041,6 +11056,7 @@ function ZA_UpdateData()
 			[373859] = 12, -- Loyal Magmammoth
 			[374275] = 12, -- Raging Magmammoth
 			[371176] = 80, -- Subterranean Magmammoth
+			[374278] = 6, -- Renewed Magmammoth
 
 			--! Ray
 			[235764] = 157, -- Darkspore Mana Ray
@@ -11058,6 +11074,7 @@ function ZA_UpdateData()
 			[408651] = 6, -- Cataloged Shalewing
 			[408627] = 12, -- Igneous Shalewing
 			[408649] = 36, -- Shadowflame Shalewing
+			[408654] = 804, -- Sandy Shalewing
 
 			--! Mauler
 			[356501] = 413, -- Rampaging Mauler
@@ -11121,6 +11138,7 @@ function ZA_UpdateData()
 
 			--! Murloc
 			[315132] = 901, -- Gargantuan Grrloc
+			[419567] = 813, -- Ginormous Grrloc
 
 			--! Mushan
 			[148428] = 175, -- Ashhide Mushan Beast
@@ -11187,6 +11205,7 @@ function ZA_UpdateData()
 			[290134] = 803, -- Hogrus, Swine of Good Fortune
 
 			--! Proto-Drake
+			[368896] = 818, -- Renewed Proto-Drake
 			[59976]  = 156, -- Black Proto-Drake
 			[59996]  = 24, -- Blue Proto-Drake
 			[61294]  = 815, -- Green Proto-Drake
@@ -11206,6 +11225,7 @@ function ZA_UpdateData()
 			[262023] = 137, -- Sinister Gladiator's Proto-Drake
 
 			--! Pterrordax
+			[368901] = 815, -- Windborne Velocidrake
 			[413825] = 173, -- Scarlet Pterrordax
 			[136400] = 814, -- Armored Skyscreamer
 			[275838] = 119, -- Captured Swampstalker
@@ -11316,6 +11336,7 @@ function ZA_UpdateData()
 			--! Scorpid
 			[93644]  = 155, -- Kor'kron Annihilator
 			[148417] = 5, -- Kor'kron Juggernaut
+			[414328] = 36, -- Perfected Juggernaut
 			[230988] = 173, -- Vicious War Scorpion
 			-- Crystal Scorpion
 			[123886] = 810, -- Amber Scorpion
@@ -11324,6 +11345,7 @@ function ZA_UpdateData()
 			--! Salamanther
 			[374090] = 170, -- Ancient Salamanther
 			[374098] = 157, -- Stormhide Salamanther
+			[427724] = 120, -- Salatrancer
 
 			--! Seahorse
 			[300153] = 66, -- Crimson Tidestallion
@@ -11380,6 +11402,7 @@ function ZA_UpdateData()
 			-- Frost Wyrm
 			[72808]  = 160, -- Bloodbathed Frostbrood Vanquisher
 			[72807]  = 160, -- Icebound Frostbrood Vanquisher
+			[414334] = 160, -- Scourgebound Vanquisher
 			[64927]  = 160, -- Deadly Gladiator's Frost Wyrm
 			[65439]  = 160, -- Furious Gladiator's Frost Wyrm
 			[67336]  = 160, -- Relentless Gladiator's Frost Wyrm
@@ -11394,6 +11417,7 @@ function ZA_UpdateData()
 			[17464]  = 415, -- Brown Skeletal Horse
 			[17462]  = 415, -- Red Skeletal Horse
 			[288722] = 415, -- Risen Mare
+			[413922] = 415, -- Valiance
 			[136505] = 720, -- Ghastly Charger
 			-- Skeletal Charger
 			[64656]  = 33, -- Blue Skeletal Warhorse
@@ -11606,7 +11630,10 @@ function ZA_UpdateData()
 			[353857] = 817, -- Autumnal Wilderling
 			[353858] = 153, -- Winter Wilderling
 
-			--! Wind Rider
+			--! Wyvern
+			-- Wylderdrake
+			[368899] = 8, -- Cliffside Wylderdrake
+			-- Wind Rider
 			[302362] = 3, -- Alabaster Thunderwing
 			[32244]  = 157, -- Blue Wind Rider
 			[32245]  = 134, -- Green Wind Rider
@@ -11617,7 +11644,6 @@ function ZA_UpdateData()
 			[32297]  = 176, -- Swift Purple Wind Rider
 			[32246]  = 176, -- Swift Red Wind Rider
 			[32296]  = 176, -- Swift Yellow Wind Rider
-			-- Grand Wyvern
 			[136164] = 116, -- Grand Wyvern
 			[135418] = 116, -- Grand Armored Wyvern
 
@@ -11640,6 +11666,7 @@ function ZA_UpdateData()
 			[294569] = 12, -- Beastlord's Warwolf
 			[171841] = 158, -- Trained Snarler
 			[171837] = 158, -- Warsong Direfang
+			[414316] = 812, -- White War Wolf
 			-- Direwolf
 			[16081]  = 160, -- Arctic Wolf
 			[64658]  = 156, -- Black Wolf
@@ -22439,69 +22466,6 @@ function ZA_UpdateData()
 			[330222] = 133, -- Relic of the Past I
 		}
 
-		if ArmyDB and name then
-			-- Dragonriding Customization
-			local realm = GetRealmName() or ""
-
-			if realm and ArmyDB[name.."-"..realm] then
-				-- Renewed Proto-Drake
-				local colors = {
-					[1] = 819, -- Black
-					[2] = 814, -- Blue
-					[3] = 176, -- Yellow
-					[4] = 821, -- Green
-					[5] = 818, -- Red
-					[6] = 642, -- Infinite
-				}
-				ZA.Spells[368896] = colors[ArmyDB[name.."-"..realm]["RenewedProtoDrake"]] or colors[5]
-				
-				-- Windborne Velocidrake
-				local colors = {
-					[1] = 819, -- Black
-					[2] = 814, -- Blue
-					[3] = 176, -- Yellow
-					[4] = 815, -- Green
-					[5] = 173, -- Red
-					[6] = C_QuestLog.IsQuestFlaggedCompleted(69819) and 822 or 642, -- Teal (if unlocked), otherwise Infinite
-					[7] = 642, -- Infinite
-				}
-				ZA.Spells[368899] = colors[ArmyDB[name.."-"..realm]["WindborneVelocidrake"]] or colors[4]
-				
-				-- Highland Drake
-				local colors = {
-					[1] = 155, -- Black
-					[2] = 814, -- Blue
-					[3] = 8, -- Green
-					[4] = 818, -- Red
-					[5] = 176, -- Yellow
-					[6] = 642, -- Infinite
-				}
-				ZA.Spells[360954] = colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
-				
-				-- Cliffside Wylderdrake
-				local colors = {
-					[1] = 175, -- Black
-					[2] = 814, -- Blue
-					[3] = 8, -- Green
-					[4] = 173, -- Red
-					[5] = 176, -- Yellow
-					[6] = 642, -- Infinite
-				}
-				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
-
-				-- Winding Slitherdrake
-				local colors = {
-					[1] = 175, -- Black
-					[2] = 118, -- Blue
-					[3] = 176, -- Yellow
-					[4] = 170, -- Green
-					[5] = 818, -- Red
-					[6] = 642, -- Infinite
-				}
-				ZA.Spells[368893] = colors[ArmyDB[name.."-"..realm]["WindingSlitherdrake"]] or colors[1]
-			end
-		end
-
 		--§ Icons
 		ZA.Icons = {
 			--§ Classes
@@ -23485,6 +23449,7 @@ function ZA_UpdateData()
 			[400932] = 0,
 			[398599] = 0,
 			[398917] = 0,
+			[148417] = 897696, -- Kor'kron Juggernaut
 			--qqi
 
 
@@ -23931,7 +23896,160 @@ function ZA_UpdateData()
 			[389151] = 4620672, -- Writ of Versatility
 		}
 
-		--! Automagic Override
+		--! ArmyData Dragonriding Overrides
+		if ArmyDB and name then
+			-- Dragonriding Customization
+			local realm = GetRealmName() or ""
+
+			if realm and ArmyDB[name.."-"..realm] then
+				-- Renewed Proto-Drake
+				local colors = {
+					[1] = 819, -- Black
+					[2] = 814, -- Blue
+					[3] = 176, -- Yellow
+					[4] = 821, -- Green
+					[5] = 818, -- Red
+				}
+				if C_QuestLog.IsQuestFlaggedCompleted(69594) then colors[#colors+1] = 159 end -- White
+				colors[#colors+1] = 642 -- Infinite
+
+				local transforms = {
+					[2] = 140, -- Storm-Eater
+				}
+
+				ZA.Spells[368896] = transforms[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]] or colors[ArmyDB[name.."-"..realm]["RenewedProtoDrake"]] or colors[5]
+				
+				local transformIcons = {
+					[2] = 4630364, -- Storm-Eater
+				}
+				local transformNames = {
+					[2] = "Storm-Eater Proto-Drake",
+				}
+
+				if transforms[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]] then
+					ZA.Icons[368893] = transformIcons[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]]
+					ZA.Text[368893] = transformNames[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]]
+				end
+
+
+				-- Windborne Velocidrake
+				local colors = {
+					[1] = 819, -- Black
+					[2] = 814, -- Blue
+					[3] = 176, -- Yellow
+					[4] = 815, -- Green
+					[5] = 173, -- Red
+				}
+				if C_QuestLog.IsQuestFlaggedCompleted(69819) then colors[#colors+1] = 822 end -- Teal
+				if C_QuestLog.IsQuestFlaggedCompleted(69820) then colors[#colors+1] = 812 end -- White
+				colors[#colors+1] = 642 -- Infinite
+
+				ZA.Spells[368899] = colors[ArmyDB[name.."-"..realm]["WindborneVelocidrake"]] or colors[4]
+				
+
+				-- Highland Drake
+				local colors = {
+					[1] = 155, -- Black
+					[2] = 814, -- Blue
+					[3] = 8, -- Green
+					[4] = 818, -- Red
+					[5] = 176, -- Yellow
+				}
+				if C_QuestLog.IsQuestFlaggedCompleted(69347) then colors[#colors+1] = 131 end -- White
+				colors[#colors+1] = 642 -- Infinite
+
+				local transforms = {
+					[2] = 4, -- Crimson Gladiator
+					[3] = 36, -- Elementium Drake
+				}
+
+				ZA.Spells[360954] = transforms[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]] or colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
+				
+				local transformIcons = {
+					[2] = 4571779, -- Crimson Gladiator
+					[3] = 5015294, -- Elementium Drake
+				}
+				local transformNames = {
+					[2] = "Crimson Gladiator's Drake",
+					[3] = "Elementium Drake",
+				}
+
+				if transforms[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]] then
+					ZA.Icons[360954] = transformIcons[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]]
+					ZA.Text[360954] = transformNames[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]]
+				end
+				
+
+				-- Cliffside Wylderdrake
+				local colors = {
+					[1] = 175, -- Black
+					[2] = 814, -- Blue
+					[3] = 8, -- Green
+					[4] = 173, -- Red
+					[5] = 176, -- Yellow
+				}
+				if C_QuestLog.IsQuestFlaggedCompleted(69214) then colors[#colors+1] = 131 end -- White
+				colors[#colors+1] = 642 -- Infinite
+
+				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
+
+
+				-- Winding Slitherdrake
+				local colors = {
+					[1] = 175, -- Black
+					[2] = 118, -- Blue
+					[3] = 176, -- Bronze
+					[4] = 170, -- Green
+					[5] = 818, -- Red
+				}
+				if C_QuestLog.IsQuestFlaggedCompleted(73845) then colors[#colors+1] = 131 end -- White
+				if C_QuestLog.IsQuestFlaggedCompleted(73846) then colors[#colors+1] = 816 end -- Yellow
+				colors[#colors+1] = 642 -- Infinite
+
+				local transforms = {
+					[2] = 400, -- Obsidian Gladiator
+					[3] = 120, -- Verdant Gladiator
+				}
+
+				ZA.Spells[368893] = transforms[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]] or colors[ArmyDB[name.."-"..realm]["WindingSlitherdrake"]] or colors[1]
+
+				local transformIcons = {
+					[2] = 5114749, -- Obsidian Gladiator
+					[3] = 5208286, -- Verdant Gladiator
+				}
+				local transformNames = {
+					[2] = "Obsidian Gladiator's Slitherdrake",
+					[3] = "Verdant Gladiator's Slitherdrake",
+				}
+
+				if transforms[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]] then
+					ZA.Icons[368893] = transformIcons[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]]
+					ZA.Text[368893] = transformNames[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]]
+				end
+
+
+				-- Grotto Netherwing Drake
+				local colors = {
+					[1] = 822, -- Teal
+					[2] = 819, -- Black
+					[3] = 141, -- Yellow
+					[4] = 640, -- Violet
+				}
+				ZA.Spells[412088] = colors[ArmyDB[name.."-"..realm]["GrottoNetherwingDrake"]] or colors[1]
+
+
+				-- Flourishing Whimsydrake
+				local colors = {
+					[1] = 805, -- Day
+					[2] = 413, -- Night
+					[3] = 68, -- Sunrise
+					[3] = 34, -- Sunset
+				}
+				ZA.Spells[425338] = colors[ArmyDB[name.."-"..realm]["FlourishingWhimsydrake"]] or colors[1]
+			end
+		end
+
+		--! Automagic Overrides
 		if Automagic and name then
 			if race == "Draenei" and custom["manari"] then
 				ZA.Spells["Gift of the Naaru"] = 401
