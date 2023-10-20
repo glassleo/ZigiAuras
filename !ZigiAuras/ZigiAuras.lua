@@ -227,6 +227,7 @@ function ZA_UpdateData()
 			["Blizzard"] = "Blizzard",
 			["Customer Support"] = "Blizzard",
 			--! NPCs
+			["Mizzen"] = "HUNTER",
 			["Vaskarn"] = "EVOKER",
 			["Shoak"] = "HUNTER",
 			["Breanni"] = "HUNTER",
@@ -526,6 +527,7 @@ function ZA_UpdateData()
 			["Honored"] = "00ff88",
 			["Friendly"] = "1aff1a",
 			["Neutral"] = "ffff00",
+			["Unfriendly"] = "ee6622",
 			["Hostile"] = "ff0000",
 			["Hated"] = "cc2222",
 
@@ -629,13 +631,13 @@ function ZA_UpdateData()
 			[12]  = "e76700", -- Volcanic
 			[403] = "ea767c", -- Living Flame
 			[402] = "ff521e", -- Hellfire
-			[401] = "a4ed2a", -- Felfire
+			[401] = "00ff09", -- Felfire
 			[427] = "bac53e", -- Felstrike
 			[36]  = "ca3556", -- Shadowflame
-			[361] = "a4ed2a", -- Felshadow
+			[361] = "83e000", -- Fel Shadowflame
 			[28]  = "e87887", -- Elemental
-			[124] = "4bce24", -- Chaos
-			[127] = "4bce24", -- Chaos
+			[124] = "4eff3b", -- Chaos
+			[127] = "4eff3b", -- Chaos
 
 			-- Nature
 			[8]   = "4dff4d", -- Nature
@@ -671,7 +673,7 @@ function ZA_UpdateData()
 
 			-- Shadow
 			[32]  = "8080ff", -- Shadow
-			[33]  = "8e5d93", -- Shadowstrike
+			[33]  = "52407d", -- Shadowstrike
 			[328] = "7f57c2", -- Psychic
 			[320] = "3714ff", -- Void
 			[34]  = "cb38dc", -- Twilight
@@ -702,7 +704,7 @@ function ZA_UpdateData()
 			[621] = "fcc077", -- Preservation
 			[646] = "a4feff", -- Conjuration
 			[641] = "f2e199", -- Temporal
-			[642] = "a9fff3", -- Infinite
+			[642] = "7accc8", -- Infinite
 			[72]  = "ab66ff", -- Astral
 			[721] = "bdb0f6", -- Stellar
 			[722] = "65efff", -- Celestial
@@ -717,7 +719,10 @@ function ZA_UpdateData()
 			local name = name or ""
 			local icon = tonumber(icon or 0) or 0
 
-			if id > 0 and ZA.Spells[id] then
+			if id > 0 and icon > 0 and ZA.Spells[id..":"..icon] then
+				-- SpellID:Icon
+				return ZA.Spells[id..":"..icon]
+			elseif id > 0 and ZA.Spells[id] then
 				-- SpellID
 				return ZA.Gradients[ZA.Spells[id]]
 			elseif ZA.Spells[name..":"..icon] then
@@ -1031,12 +1036,12 @@ function ZA_UpdateData()
 			[12]  = "b22408:ff7200", -- Volcanic
 			[403] = "f82e2e:ffa0a9", -- Living Flame
 			[402] = "ca0000:ff5e2c", -- Hellfire
-			[401] = "3dec00:fff94f", -- Felfire
+			[401] = "00ad06:c7ff1f", -- Felfire
 			[427] = "bac53e:9795a5", -- Felstrike
 			[36]  = "5400b2:ff5400", -- Shadowflame
-			[361] = "00e608:ab49ff", -- Felshadow
+			[361] = "7b0094:83e000", -- Fel Shadowflame
 			[28]  = "ff8400:c263ff", -- Elemental
-			[127] = "00654e:a6ff1a", -- Chaos (also 124)
+			[127] = "003d1a:4eff3b", -- Chaos (also 124)
 
 			-- Nature
 			[8]   = "3bb53b:beff72", -- Nature
@@ -1072,7 +1077,7 @@ function ZA_UpdateData()
 
 			-- Shadow
 			[32]  = "451ea7:c257b2", -- Shadow
-			[33]  = "633768:8f7a93", -- Shadowstrike
+			[33]  = "2d2247:6b4566", -- Shadowstrike
 			[328] = "4c3189:7b7c9e", -- Psychic
 			[320] = "220649:243bff", -- Void
 			[34]  = "3949dc:ff256d", -- Twilight
@@ -1103,7 +1108,7 @@ function ZA_UpdateData()
 			[621] = "f83e3e:b3ff87", -- Preservation
 			[646] = "a4feff:8fb7ff", -- Conjuration
 			[641] = "f2e199:ffa019", -- Temporal
-			[642] = "303c3f:97e2d8", -- Infinite
+			[642] = "303c3f:7accc8", -- Infinite
 			[72]  = "4c99ff:dd41ff", -- Astral
 			[721] = "ffffff:a38eff", -- Stellar
 			[722] = "3e69a5:5ddae8", -- Celestial
@@ -1405,6 +1410,31 @@ function ZA_UpdateData()
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			-- 10.2
+			[426676] = "Best Friends with Aerwynn: Critical Strike", -- Pip's Emerald Friendship Badge
+			[426676] = "Best Friends with Pip: Mastery", -- Pip's Emerald Friendship Badge
+			[426676] = "Best Friends with Urctos: Versatility", -- Pip's Emerald Friendship Badge
+			[424141] = "Ori's Verdant Feather: Agility", -- Ori's Verdant Feather
+			[424107] = "Root of Fire: Strength", -- Root of Fire
+			[423906] = "Dancing Dream Blossoms", -- Dancing Dream Blossoms
+			[424272] = "Runebear: Intellect", -- Pinch of Dream Magic
+			[424228] = "Dreamstag: Intellect", -- Pinch of Dream Magic
+			[424276] = "Dreamtalon: Intellect", -- Pinch of Dream Magic
+			[424275] = "Dreamsaber: Intellect", -- Pinch of Dream Magic
+			[424274] = "Ferntalon: Intellect", -- Pinch of Dream Magic
+			[426624] = "Seedling's Thanks: Mastery", -- Nymue's Unraveling Spindle
+			[422016] = "Fury of Urctos", -- Gift of Ursine Vengeance
+			[421994] = "Rising Rage: " .. ZA.PrimaryStatName, -- Gift of Ursine Vengeance
+			[422441] = "Branch of the Tormented Ancient", -- Branch of the Tormented Ancient
+			[427072] = "Nymue's Unraveling Spindle: Mastery", -- Nymue's Unraveling Spindle
+			--[426897] = "Burnout", -- Ashes of the Embersoul
+			[426898] = "Blazing Soul: " .. ZA.PrimaryStatName, -- Ashes of the Embersoul
+			[423611] = "Soul Ignition: " .. ZA.PrimaryStatName, -- Ashes of the Embersoul
+			[425417] = "Solar Maelstrom", -- Belor'relos, the Suncaller
+			[425153] = "Firestarter", -- Cataclysmic Signet Brand
+			[422750] = "Shadowflame Rage", -- Fyrakk's Tainted Rageheart
+			[426553] = "Annihilating Flame", -- Augury of the Primal Flame
+			-- 10.0-10.1.5
 			[406485] = "Encouraging Friend", -- Friendship Censer
 			[414976] = "Rage of Azzinoth: Haste", -- Paracausal Fragment of Azzinoth
 			[402897] = "Igneous Fury: Critical Strike", -- Igneous Flowstone
@@ -1533,6 +1563,7 @@ function ZA_UpdateData()
 			[397400] = "Bonemaw's Big Toe: Critical Strike", -- Bonemaw's Big Toe
 
 			-- Burning Crusade
+			[244176] = "Fel Infusion: Haste", -- The Skull of Gul'dan
 			[144073] = "Arcane Energy: Spell Power", -- Ancient Draenei Arcane Relic
 			[144074] = "Ferocity: Attack Power", -- Ancient Draenei War Talisman
 			[234786] = "Flow of Time: Haste", -- Scarab of the Infinite Cycle
@@ -1672,6 +1703,7 @@ function ZA_UpdateData()
 
 		ZA.TrinketDebuffs = {
 			-- Dragonflight
+			[423923] = true, -- Fang of the Frenzied Nightclaw
 			[406744] = true, -- Sulfuric Burning (Suspended Sulfuric Droplet)
 			[386623] = true, -- Awakening Rime (Darkmoon Deck: Rime)
 			[377420] = true, -- Searing Blue Flame (Crystalline Lapis)
@@ -2142,6 +2174,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[145389] = "State", -- Timeless Anomaly
 			[419309] = "State", -- Brewfest Beverage
 			[399316] = "State", -- Guest of Honor
 			[398785] = "State", -- Champion of the Orcs
@@ -2314,6 +2347,16 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[399327] = "Zone", -- Pollen Power!
+			[418826] = "Zone", -- Wearing Pedgi's Sunglasses
+			[147284] = "Zone", -- Xuen's Strength
+			[147283] = "Zone", -- Chi-Ji's Hope
+			[147282] = "Zone", -- Wisdom of Yu'lon
+			[147281] = "Zone", -- Fortitude of Niuzao
+			[146492] = "Zone", -- Timeless Nutriment
+			[146493] = "Zone", -- Timeless Nutrient
+			[146494] = "Zone", -- Smoldering Spores
+			[85612] = "Zone", -- Fiona's Lucky Charm
 			[398555] = "Zone", -- Boon of Thunder Ridge
 			[134206] = "Zone", -- Trusted by the Ashtongue
 			[397488] = "Zone", -- Disguised
@@ -2779,6 +2822,33 @@ function ZA_UpdateData()
 			[341260] = 200, -- Burst of Knowledge (Heirloom Set Bonus)
 
 			-- Dragonflight
+			-- 10.2
+			[426676] = 120, -- Pip's Emerald Friendship Badge (Aerwynn)
+			[426676] = 120, -- Pip's Emerald Friendship Badge (Pip)
+			[426676] = 120, -- Pip's Emerald Friendship Badge (Urctos)
+			[424141] = 120, -- Ori's Verdant Feather
+			[424107] = 4, -- Root of Fire
+			[423906] = 120, -- Dancing Dream Blossoms
+			[424272] = 120, -- Pinch of Dream Magic (Runebear)
+			[424228] = 120, -- Pinch of Dream Magic (Dreamstag)
+			[424276] = 120, -- Pinch of Dream Magic (Dreamtalon)
+			[424275] = 120, -- Pinch of Dream Magic (Dreamsaber)
+			[424274] = 120, -- Pinch of Dream Magic (Ferntalon)
+			[423923] = 101, -- Fang of the Frenzied Nightclaw
+			[426624] = 8, -- Nymue's Unraveling Spindle
+			[422016] = 412, -- Gift of Ursine Vengeance (Fury of Urctos)
+			[421994] = 103, -- Gift of Ursine Vengeance (Rising Rage)
+			[422441] = 36, -- Branch of the Tormented Ancient
+			[427072] = 805, -- Nymue's Unraveling Spindle
+			[426897] = 999, -- Ashes of the Embersoul (Burnout)
+			[426898] = 36, -- Ashes of the Embersoul (Blazing Soul)
+			[423611] = 36, -- Ashes of the Embersoul (Soul Ignition)
+			[425417] = 6, -- Belor'relos, the Suncaller
+			[425153] = 4, -- Cataclysmic Signet Brand
+			[425571] = 36, -- Fyrakk's Tainted Rageheart (Wall of Hate)
+			[422750] = 36, -- Fyrakk's Tainted Rageheart (Shadowflame Rage)
+			[426553] = 36, -- Augury of the Primal Flame
+			-- 10.0-10.1.5
 			[406485] = 200, -- Friendship Censer
 			[417069] = 999, -- Prophetic Stonescale (debuff)
 			[417139] = 641, -- Prophetic Stonescale
@@ -2911,6 +2981,7 @@ function ZA_UpdateData()
 			[397400] = 40, -- Bonemaw's Big Toe
 
 			-- Burning Crusade
+			[244176] = 401, -- The Skull of Gul'dan
 			[144073] = 118, -- Ancient Draenei Arcane Relic
 			[144074] = 117, -- Ancient Draenei War Talisman
 			[234786] = 816, -- Scarab of the Infinite Cycle
@@ -3099,6 +3170,47 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[415047] = 402, -- Vine March
+			[404652] = 811, -- Elemental Protection
+			[404601] = 911, -- Storm Stomp
+			[428181] = 800, -- Omni Storm
+			[422956] = 805, -- Nymue's Vengeful Spindle
+			[422146] = 6, -- Solar Maelstrom
+			[414839] = 402, -- Pumpkin Breath
+			[414844] = 402, -- Pumpkin Breath
+			[414843] = 402, -- Pumpkin Breath
+			[423626] = 402, -- Hot Head
+			[415300] = 402, -- Hot Head
+			[418566] = 110, -- Haymaker
+			[415863] = 641, -- Out of Sync
+			[106454] = 110, -- Parry Stance
+			[115002] = 32, -- Summon Gripping Hatred
+			[114999] = 327, -- Sha Blast
+			[107357] = 327, -- Rising Hate
+			[107356] = 327, -- Rising Hate
+			["Find Weakness"] = 112,
+ 			[191941] = 33, -- Darkstrikes
+			[204151] = 33, -- Darkstrikes
+			[191823] = 401, -- Furious Blast
+			[202740] = 127, -- Metamorphosis
+			[192504] = 127, -- Metamorphosis
+			[192502] = 401, -- Immolation Aura
+			[202913] = 401, -- Fel Mortar
+			[254400] = 401, -- Fel Mortar
+			[216320] = 40, -- A Mother's Love
+			[194064] = 40, -- A Mother's Love
+			[239859] = 40, -- A Mother's Love
+			[202615] = 401, -- Torment
+			[409652] = 36, -- Umbrafire Embers
+			[395174] = 804, -- Sand Spray
+			[392285] = 804, -- Sand Spray
+			[79174] = 804, -- Sand Spray
+			[386993] = 804, -- Sand Spray
+			[196154] = 804, -- Blinding Sands
+			[196127] = 804, -- Spray Sand
+			[196144] = 804, -- Sandstorm
+			[44224] = 72, -- Gravity Lapse
+			["Active"] = 100,
 			[383493] = 4, -- Wildfire
 			[102543] = 105, -- Incarnation: Avatar of Ashamane
 			[421807] = 104, -- Speed Boost
@@ -9637,7 +9749,7 @@ function ZA_UpdateData()
 			["Triple Technique:132148"] = 402,
 			["Trol'kalar Cleave"] = 17,
 			["True Bearing"] = 641,
-			["Trueshot"] = 65,
+			["Trueshot"] = 80,
 			["Trusty Shotgun"] = 100,
 			["Tummy Ache"] = 40,
 			["Tune Up"] = 100,
@@ -10754,6 +10866,7 @@ function ZA_UpdateData()
 			[254069] = 200, -- Glorious Felcrusher
 
 			--! Elemental
+			[358072] = 160, -- Bound Blizzard
 			[231442] = ZA.Specialization(811, 4, 811, 24), -- Farseer's Raging Tempest
 			[289555] = 24, -- Glacial Tidestorm
 			[334482] = 320, -- Restoration Deathwalker
@@ -13065,6 +13178,53 @@ function ZA_UpdateData()
 			[398917] = 321,
 			[421628] = 80,
 			[420460] = 80,
+			[429005] = 80,
+			[403913] = 641,
+			[419168] = 120,
+			[146266] = 100,
+			[146261] = 100,
+			[146267] = 100,
+			[148099] = 100,
+			[146260] = 100,
+			[146264] = 100,
+			[146259] = 100,
+			[146265] = 100,
+			[146263] = 100,
+			[146244] = 100,
+			[146246] = 100,
+			[148746] = 100,
+			[146239] = 100,
+			[146241] = 100,
+			[146240] = 100,
+			[146243] = 100,
+			[146242] = 100,
+			[146237] = 100,
+			[146238] = 100,
+			[146236] = 100,
+			[147597] = 100,
+			[146268] = 100,
+			[146272] = 100,
+			[146273] = 100,
+			[146274] = 100,
+			[146271] = 100,
+			[146275] = 100,
+			[146269] = 100,
+			[148103] = 100,
+			[146270] = 100,
+			[146279] = 100,
+			[146280] = 100,
+			[146283] = 100,
+			[146282] = 100,
+			[146278] = 100,
+			[146276] = 100,
+			[146281] = 100,
+			[148104] = 100,
+			[147343] = 126,
+			[398208] = 100,
+			[397832] = 720,
+			[398178] = 720,
+			[407453] = 100,
+			[400829] = 4,
 			--qqq
 
 
@@ -23450,6 +23610,54 @@ function ZA_UpdateData()
 			[398599] = 0,
 			[398917] = 0,
 			[148417] = 897696, -- Kor'kron Juggernaut
+			[429005] = 0,
+			[244176] = 236293,
+			[419168] = 0,
+			[146266] = 0,
+			[146261] = 0,
+			[146267] = 0,
+			[148099] = 0,
+			[146260] = 0,
+			[146264] = 0,
+			[146259] = 0,
+			[146265] = 0,
+			[146263] = 0,
+			[146244] = 0,
+			[146246] = 0,
+			[148746] = 0,
+			[146239] = 0,
+			[146241] = 0,
+			[146240] = 0,
+			[146243] = 0,
+			[146242] = 0,
+			[146237] = 0,
+			[146238] = 0,
+			[146236] = 0,
+			[147597] = 0,
+			[146268] = 0,
+			[146272] = 0,
+			[146273] = 0,
+			[146274] = 0,
+			[146271] = 0,
+			[146275] = 0,
+			[146269] = 0,
+			[148103] = 0,
+			[146270] = 0,
+			[146279] = 0,
+			[146280] = 0,
+			[146283] = 0,
+			[146282] = 0,
+			[146278] = 0,
+			[146276] = 0,
+			[146281] = 0,
+			[148104] = 0,
+			[147343] = 0,
+			[398208] = 0,
+			[428181] = 136099,
+			[397832] = 0,
+			[398178] = 0,
+			[407453] = 4639175,
+			[400829] = 0,
 			--qqi
 
 
@@ -23591,6 +23799,7 @@ function ZA_UpdateData()
 			["Tranquilizing Shot"] = 132323, -- Black Arrow
 			["Wailing Arrow"] = 132170, -- Custom
 			[11426] = 135843, -- Ice Barrier
+			[414661] = 135843, -- Ice Barrier (Mass Barrier)
 			[164862] = 0, -- Flap
 			[192082] = 463565, -- Wind Rush (from Wind Rush Totem)
 			[193753] = 1396974, -- Dreamwalk
@@ -23903,6 +24112,10 @@ function ZA_UpdateData()
 
 			if realm and ArmyDB[name.."-"..realm] then
 				-- Renewed Proto-Drake
+				local id = 368896
+				local color = ArmyGetKey("RenewedProtoDrake") or 5
+				local transform = ArmyGetKey("RenewedProtoDrakeTransformation") or 1
+
 				local colors = {
 					[1] = 819, -- Black
 					[2] = 814, -- Blue
@@ -23915,24 +24128,30 @@ function ZA_UpdateData()
 
 				local transforms = {
 					[2] = 140, -- Storm-Eater
+					[3] = 4, -- Blazing
+					[4] = 36, -- Shadowflame
 				}
-
-				ZA.Spells[368896] = transforms[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]] or colors[ArmyDB[name.."-"..realm]["RenewedProtoDrake"]] or colors[5]
 				
-				local transformIcons = {
+				local icons = {
 					[2] = 4630364, -- Storm-Eater
+					[3] = 5319138, -- Blazing
+					[4] = 5319139, -- Shadowflame
 				}
-				local transformNames = {
+				local names = {
 					[2] = "Storm-Eater Proto-Drake",
+					[3] = "Blazing Proto-Drake",
+					[4] = "Shadowflame Proto-Drake",
 				}
 
-				if transforms[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]] then
-					ZA.Icons[368893] = transformIcons[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]]
-					ZA.Text[368893] = transformNames[ArmyDB[name.."-"..realm]["RenewedProtoDrakeTransformation"]]
-				end
+				ZA.Spells[id] = transforms[transform] or colors[color]
+				ZA.Icons[id] = icons[transform] or nil
+				ZA.Text[id] = names[transform] or nil
 
 
 				-- Windborne Velocidrake
+				local id = 368899
+				local color = ArmyGetKey("WindborneVelocidrake") or 4
+				
 				local colors = {
 					[1] = 819, -- Black
 					[2] = 814, -- Blue
@@ -23944,10 +24163,14 @@ function ZA_UpdateData()
 				if C_QuestLog.IsQuestFlaggedCompleted(69820) then colors[#colors+1] = 812 end -- White
 				colors[#colors+1] = 642 -- Infinite
 
-				ZA.Spells[368899] = colors[ArmyDB[name.."-"..realm]["WindborneVelocidrake"]] or colors[4]
+				ZA.Spells[id] = colors[color]
 				
 
 				-- Highland Drake
+				local id = 360954
+				local color = ArmyGetKey("HighlandDrake") or 2
+				local transform = ArmyGetKey("HighlandDrakeTransformation") or 1
+
 				local colors = {
 					[1] = 155, -- Black
 					[2] = 814, -- Blue
@@ -23962,25 +24185,24 @@ function ZA_UpdateData()
 					[2] = 4, -- Crimson Gladiator
 					[3] = 36, -- Elementium Drake
 				}
-
-				ZA.Spells[360954] = transforms[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]] or colors[ArmyDB[name.."-"..realm]["HighlandDrake"]] or colors[2]
-				
-				local transformIcons = {
+				local icons = {
 					[2] = 4571779, -- Crimson Gladiator
 					[3] = 5015294, -- Elementium Drake
 				}
-				local transformNames = {
+				local names = {
 					[2] = "Crimson Gladiator's Drake",
 					[3] = "Elementium Drake",
 				}
 
-				if transforms[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]] then
-					ZA.Icons[360954] = transformIcons[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]]
-					ZA.Text[360954] = transformNames[ArmyDB[name.."-"..realm]["HighlandDrakeTransformation"]]
-				end
+				ZA.Spells[id] = transforms[transform] or colors[color]
+				ZA.Icons[id] = icons[transform] or nil
+				ZA.Text[id] = names[transform] or nil
 				
 
 				-- Cliffside Wylderdrake
+				local id = 368901
+				local color = ArmyGetKey("CliffsideWylderdrake") or 3
+
 				local colors = {
 					[1] = 175, -- Black
 					[2] = 814, -- Blue
@@ -23991,10 +24213,14 @@ function ZA_UpdateData()
 				if C_QuestLog.IsQuestFlaggedCompleted(69214) then colors[#colors+1] = 131 end -- White
 				colors[#colors+1] = 642 -- Infinite
 
-				ZA.Spells[368901] = colors[ArmyDB[name.."-"..realm]["CliffsideWylderdrake"]] or colors[3]
+				ZA.Spells[id] = colors[color]
 
 
 				-- Winding Slitherdrake
+				local id = 368893
+				local color = ArmyGetKey("WindingSlitherdrake") or 1
+				local transform = ArmyGetKey("WindingSlitherdrakeTransformation") or 1
+
 				local colors = {
 					[1] = 175, -- Black
 					[2] = 118, -- Blue
@@ -24010,42 +24236,144 @@ function ZA_UpdateData()
 					[2] = 400, -- Obsidian Gladiator
 					[3] = 120, -- Verdant Gladiator
 				}
-
-				ZA.Spells[368893] = transforms[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]] or colors[ArmyDB[name.."-"..realm]["WindingSlitherdrake"]] or colors[1]
-
-				local transformIcons = {
+				local icons = {
 					[2] = 5114749, -- Obsidian Gladiator
 					[3] = 5208286, -- Verdant Gladiator
 				}
-				local transformNames = {
+				local names = {
 					[2] = "Obsidian Gladiator's Slitherdrake",
 					[3] = "Verdant Gladiator's Slitherdrake",
 				}
 
-				if transforms[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]] then
-					ZA.Icons[368893] = transformIcons[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]]
-					ZA.Text[368893] = transformNames[ArmyDB[name.."-"..realm]["WindingSlitherdrakeTransformation"]]
-				end
+				ZA.Spells[id] = transforms[transform] or colors[color]
+				ZA.Icons[id] = icons[transform] or nil
+				ZA.Text[id] = names[transform] or nil
 
 
 				-- Grotto Netherwing Drake
+				local id = 412088
+				local color = ArmyGetKey("GrottoNetherwingDrake") or 1
+
 				local colors = {
 					[1] = 822, -- Teal
 					[2] = 819, -- Black
 					[3] = 141, -- Yellow
 					[4] = 640, -- Violet
 				}
-				ZA.Spells[412088] = colors[ArmyDB[name.."-"..realm]["GrottoNetherwingDrake"]] or colors[1]
+
+				ZA.Spells[id] = colors[color]
 
 
 				-- Flourishing Whimsydrake
+				local id = 425338
+				local color = ArmyGetKey("FlourishingWhimsydrake") or 1
+
 				local colors = {
 					[1] = 805, -- Day
 					[2] = 413, -- Night
 					[3] = 68, -- Sunrise
 					[3] = 34, -- Sunset
 				}
-				ZA.Spells[425338] = colors[ArmyDB[name.."-"..realm]["FlourishingWhimsydrake"]] or colors[1]
+
+				ZA.Spells[id] = colors[color]
+
+
+				-- Summon Felguard
+				local id = 30146
+				local style = ArmyGetKey("FelguardStyle") or 1
+				local icons = {
+					[1] = 136216, -- Felguard
+					[2] = 615025, -- Wrathguard
+				}
+				local names = {
+					[1] = "Summon Felguard",
+					[1] = "Summon Wrathguard",
+				}
+
+				ZA.Icons[id] = icons[style] or icons[1]
+				ZA.Text[id] = names[style] or names[1]
+
+
+				-- Summon Imp
+				local id = 688
+				local color = ArmyGetKey("Imp")
+				local icons = {
+					[1] = 136218, -- Imp
+					[2] = 136218, -- Imp
+					[3] = 136218, -- Imp
+					[4] = 136218, -- Imp
+					[5] = 136218, -- Imp
+					[6] = 136218, -- Imp
+					[7] = 136218, -- Imp
+					[8] = 615097, -- Fel Imp
+					[9] = 615097, -- Fel Imp
+					[10] = 615097, -- Fel Imp
+					[11] = 615097, -- Fel Imp
+					[12] = 5178164, -- Red Fiend
+					[13] = 5178168, -- Green Fiend
+					[14] = 5178166, -- Blue Fiend
+					[15] = 5178162, -- Purple Fiend
+				}
+
+				ZA.Icons[id] = icons[color] or icons[1]
+
+
+				-- Summon Voidwalker
+				local id = 697
+				local style = ArmyGetKey("VoidwalkerStyle") or 1
+				local icons = {
+					[1] = 136221, -- Voidwalker
+					[2] = 538447, -- Voidlord
+					[3] = 136221, -- Voidseeker
+				}
+				local names = {
+					[1] = "Summon Voidwalker",
+					[2] = "Summon Voidlord",
+					[3] = "Summon Voidseeker",
+				}
+
+				ZA.Icons[id] = icons[style] or icons[1]
+				ZA.Text[id] = names[style] or names[1]
+
+
+				-- Summon Sayaad
+				local id = 366222
+				local style = ArmyGetKey("SayaadStyle") or 1
+				local icons = {
+					[1] = 136220, -- Succubus
+					[2] = 4352492, -- Incubus
+					[3] = 574999, -- Shivarra
+				}
+				local names = {
+					[1] = "Summon Succubus",
+					[2] = "Summon Incubus",
+					[3] = "Summon Shivarra",
+				}
+
+				ZA.Icons[id] = icons[style] or icons[1]
+				ZA.Text[id] = names[style] or names[1]
+
+
+				-- Summon Felhunter
+				local id = 691
+				local color = ArmyGetKey("Felhunter")
+				local icons = {
+					[1] = 1380868, -- Red Felhunter
+					[2] = 136217, -- Green Felhunter
+					[3] = 136217, -- Purple Felhunter
+					[4] = 1378282, -- Red Dreadhound
+					[5] = 1378282, -- Purple Dreadhound
+				}
+				local names = {
+					[1] = "Summon Felhunter",
+					[2] = "Summon Felhunter",
+					[3] = "Summon Felhunter",
+					[4] = "Summon Dreadhound",
+					[5] = "Summon Dreadhound",
+				}
+
+				ZA.Icons[id] = icons[color] or icons[1]
+				ZA.Text[id] = names[color] or names[1]
 			end
 		end
 
