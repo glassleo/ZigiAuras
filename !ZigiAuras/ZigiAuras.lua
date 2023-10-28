@@ -19,7 +19,7 @@ function ZA_UpdateData()
 	local level = UnitLevel("player") or 1
 	local covenant = C_Covenants and C_Covenants.GetActiveCovenantID() or 0 -- 1 Kyrian  2 Venthyr  3 Night Fae  4 Necrolord
 	local race = select(2, UnitRace("player"))
-	local custom = Automagic and Automagic.Characters and Automagic.Characters[name.."-"..realm] or Automagic.Characters[name] or {}
+	local custom = Automagic and Automagic.Characters and Automagic.Characters[name.."-"..realm] or Automagic and Automagic.Characters[name] or {}
 
 	if ZA then
 		-- Debug Mode
@@ -1361,6 +1361,7 @@ function ZA_UpdateData()
 			["Ardenweald Hearthstone"] = "Hearthstone",
 			["Ohn'ir Windsage's Hearthstone"] = "Hearthstone",
 			["Path of the Naaru"] = "Hearthstone",
+			["Hearthstone of the Flame"] = "Hearthstone",
 		}
 
 
@@ -3170,6 +3171,118 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[274358] = 321, -- Rupturing Blood
+			[274168] = 321, -- Locus of Corruption
+			[274271] = 328, -- Deathwish
+			[273365] = 325, -- Dark Revelation
+			[274119] = 321, -- Call of Blood
+			[274098] = 321, -- Call of Blood
+			[273889] = 321, -- Call of Blood
+			[273359] = 34, -- Shadow Barrage
+			[278988] = 104, -- Wild Leap
+			[278976] = 104, -- Wild Leap
+			[278974] = 105, -- Daunting Presence
+			[278990] = 103, -- Bloodshot Rage
+			[278901] = 105, -- Blood Frenzy
+			[276435] = 321, -- Blood Bolt
+			[278934] = 321, -- Bursting Surge
+			[278890] = 102, --Violent Hemorrhage
+			[278881] = 102, --Violent Hemorrhage
+			[278866] = 101, -- Carve and Spit
+			[262256] = 112, -- Thrashing Terror
+			[262277] = 107, -- Terrible Thrash
+			[262288] = 903, -- Shockwave Stomp
+			[262292] = 40, -- Rotting Regurgitation
+			[262378] = 103, -- Fetid Frenzy
+			[262370] = 40, -- Consume Corruption
+			[26662] = 103, -- Berserk
+			[277800] = 911, -- Swoop
+			[277799] = 111, -- Roar of the Pride
+			[277775] = 321, -- Primordial Ooze
+			[277794] = 112, -- Paw Swipe
+			[277805] = 107, -- Hunting Leap
+			[277802] = 104, -- Hunting Leap
+			[277777] = 321, -- Theropodan Aspect
+			[277776] = 321, -- Accipitrene Aspect
+			[277773] = 321, -- Leonine Aspect
+			[277085] = 321, -- Gore Bomb
+			[266948] = 321, -- Plague Bomb
+			[266459] = 321, -- Plague Bomb
+			[276439] = 321, -- Omega Vector
+			[277765] = 321, -- Liquefy
+			[265217] = 321, -- Liquefy
+			[265127] = 321, -- Lingering Infection
+			[265212] = 101, -- Gestate
+			[265209] = 101, -- Gestate
+			[265178] = 102, -- Evolving Affliction
+			[267242] = 321, -- Contagion
+			[265281] = 321, -- Blood Geyser
+			[277812] = 321, -- Plague Bolt
+			[277809] = 321, -- Congealed Plague
+			[276710] = 112, -- Brutal Strikes
+			[276699] = 103, -- Warcry
+			[254901] = 105, -- Blood Frenzy
+			[274809] = 321, -- Sacrifice
+			[384899] = 415, -- Bone Bolt Volley
+			[69080] = 415, -- Bone Volley
+			[240897] = 32, -- Awaken!
+			["Elusande Active"] = 100,
+			[126318] = 111, -- Horn Blast
+			[140300] = 646, -- Sunreaver Beacon
+			[140295] = 646, -- Kirin Tor Beacon
+			[53480] = 111, -- Roar of Sacrifice
+			[422284] = 4, -- Hearthstone of the Flame
+			[385960] = 32, -- Lingering Shadow
+			[417872] = 120, -- Spontaneous Overgrowth
+			[397904] = 108, -- Setting Sun Kick
+			[397899] = 108, -- Leg Sweep
+			[110099] = 328, -- Shadows of Doubt
+			[397931] = 33, -- Dark Claw
+			[114646] = 327, -- Haunting Gaze
+			[397888] = 801, -- Hydrolance
+			[397914] = 411, -- Defiling Mist
+			[397881] = 801, -- Surging Deluge
+			[397878] = 48, -- Tainted Ripple
+			[395829] = 327, -- Sha Residue
+			[117665] = 327, -- Bounds of Reality
+			[106055] = 48, -- Corrupting Waters
+			[106526] = 801, -- Call Water
+			[106612] = 801, -- Bubble Burst
+			[114571] = 322, -- Agony
+			[106823] = 621, -- Serpent Strike
+			[106856] = 621, -- Serpent Strike
+			[106841] = 120, -- Jade Serpent Strike
+			[106864] = 120, -- Jade Serpent Kick
+			[106797] = 120, -- Jade Essence
+			[106427] = 5, -- Hundred Hand Strike
+			[106428] = 5, -- Hundred Hand Strike
+			[106421] = 110, -- Palm Strike
+			[106447] = 110, -- Parry Stance
+			[106646] = 107, -- Whirling Steel
+			[106439] = 104, -- Flying Kick
+			[113760] = 80, -- Ball of Fire
+			[106681] = 120, -- Call Staff
+			[115010] = 32, -- Grip of Hate
+			[106439] = 104, -- Flying Kick
+			[106851] = 282, -- Blackout Brew
+			[115651] = 282, -- Brew Bolt
+			[144882] = 282, -- Skunky Ale Crash
+			[147347] = 282, -- Rain of Skunky Ale
+			[148584] = 282, -- Skunky Suds
+			[116178] = 282, -- Suds
+			[147345] = 282, -- Brew Bolt
+			[115650] = 282, -- Brew Bolt
+			[115652] = 282, -- Brew Bolt
+			[118104] = 282, -- Brew Bolt
+			[128708] = 282, -- Bubble Shield
+			[116170] = 282, -- Carbonation
+			[116162] = 282, -- Carbonation
+			[115003] = 282, -- Carbonation
+			[114386] = 282, -- Carbonation
+			[106563] = 282, -- Bubble Shield
+			[116155] = 282, -- Brew Bolt
+			[114548] = 282, -- Brew Bolt
+			[106546] = 282, -- Bloat
 			[415047] = 402, -- Vine March
 			[404652] = 811, -- Elemental Protection
 			[404601] = 911, -- Storm Stomp
@@ -3289,7 +3402,7 @@ function ZA_UpdateData()
 			[233400] = 3, -- Blinding Peck
 			[398677] = 101, -- Bloody Shank
 			[408625] = 808, -- Fractured Crystalspine Quill
-			[414695] = 4, -- Wildfire
+			[414695] = 4, -- Wildfifre
 			[389251] = 900, -- Serrated Petals
 			[369241] = 104, -- Death Rage
 			[412999] = 126, -- Orb of Protection
@@ -10722,15 +10835,15 @@ function ZA_UpdateData()
 			[369666] = 12, -- Grimhowl
 
 			--! Direhorn
-			[138424] = 119, -- Amber Primordial Direhorn
+			[138424] = 134, -- Amber Primordial Direhorn
 			[138425] = 171, -- Slate Primordial Direhorn
 			[297560] = 170, -- Child of Torcali
 			[138423] = 822, -- Cobalt Primordial Direhorn
 			[140250] = 818, -- Crimson Primal Direhorn
-			[140249] = 119, -- Golden Primal Direhorn
+			[140249] = 133, -- Golden Primal Direhorn
 			[138426] = 807, -- Jade Primordial Direhorn
 			[279474] = 153, -- Palehide Direhorn
-			[136471] = 119, -- Spawn of Horridon
+			[136471] = 137, -- Spawn of Horridon
 			[263707] = 157, -- Zandalari Direhorn
 			[290608] = 200, -- Crusader's Direhorn
 
@@ -11171,6 +11284,9 @@ function ZA_UpdateData()
 			[371176] = 80, -- Subterranean Magmammoth
 			[374278] = 6, -- Renewed Magmammoth
 
+			--! Moonbeast
+			[400976] = 805, -- Gleaming Moonbeast
+
 			--! Ray
 			[235764] = 157, -- Darkspore Mana Ray
 			[253108] = 401, -- Felglow Mana Ray
@@ -11250,7 +11366,7 @@ function ZA_UpdateData()
 			[342667] = 822, -- Vibrant Flutterwing
 
 			--! Murloc
-			[315132] = 901, -- Gargantuan Grrloc
+			[315132] = 119, -- Gargantuan Grrloc
 			[419567] = 813, -- Ginormous Grrloc
 
 			--! Mushan
@@ -13225,6 +13341,35 @@ function ZA_UpdateData()
 			[398178] = 720,
 			[407453] = 100,
 			[400829] = 4,
+			[400829] = 4,
+			[426932] = 120,
+			[426931] = 120,
+			[426933] = 120,
+			[426871] = 120,
+			[426328] = "DRUID", -- Feather of Friends
+			[428622] = "DRUID", -- Feather of the Smoke Red Moon
+			[426476] = "DRUID", -- Mark of the Auric Dreamstag
+			[428050] = "DRUID", -- Mark of the Auroral Dreamtalon
+			[428045] = "DRUID", -- Mark of the Boreal Dreamtalon
+			[426455] = "DRUID", -- Mark of the Dreamtalon Matriarch
+			[426426] = "DRUID", -- Mark of the Evergreen Dreamsaber
+			[426483] = "DRUID", -- Mark of the Hibernating Runebear
+			[426354] = "DRUID", -- Mark of the Keen-Eyed Dreamsaber
+			[426465] = "DRUID", -- Mark of the Loamy Umbraclaw
+			[426475] = "DRUID", -- Mark of the Lush Dreamstag
+			[426439] = "DRUID", -- Mark of the Sable Dreamtalon
+			[426075] = "DRUID", -- Mark of the Slumbering Somnowl
+			[426477] = "DRUID", -- Mark of the Smoldering Dreamstag
+			[426473] = "DRUID", -- Mark of the Snowy Umbraclaw
+			[426457] = "DRUID", -- Mark of the Thriving Dreamtalon
+			[426335] = "DRUID", -- Mark of the Umbramane
+			[426460] = "DRUID", -- Mark of the Verdant Bristlebruin
+			[426485] = "DRUID", -- Moon-Blessed Claw
+			[426462] = "DRUID", -- Pollenfused Bristlebruin Fur Sample
+			[426459] = "DRUID", -- Scale of the Prismatic Whiskerfish
+			[425847] = 120,
+			[420046] = 802,
+			[420046] = 802,
 			--qqq
 
 
@@ -23658,6 +23803,28 @@ function ZA_UpdateData()
 			[398178] = 0,
 			[407453] = 4639175,
 			[400829] = 0,
+			[426328] = 0, -- Feather of Friends
+			[428622] = 0, -- Feather of the Smoke Red Moon
+			[426476] = 0, -- Mark of the Auric Dreamstag
+			[428050] = 0, -- Mark of the Auroral Dreamtalon
+			[428045] = 0, -- Mark of the Boreal Dreamtalon
+			[426455] = 0, -- Mark of the Dreamtalon Matriarch
+			[426426] = 0, -- Mark of the Evergreen Dreamsaber
+			[426483] = 0, -- Mark of the Hibernating Runebear
+			[426354] = 0, -- Mark of the Keen-Eyed Dreamsaber
+			[426465] = 0, -- Mark of the Loamy Umbraclaw
+			[426475] = 0, -- Mark of the Lush Dreamstag
+			[426439] = 0, -- Mark of the Sable Dreamtalon
+			[426075] = 0, -- Mark of the Slumbering Somnowl
+			[426477] = 0, -- Mark of the Smoldering Dreamstag
+			[426473] = 0, -- Mark of the Snowy Umbraclaw
+			[426457] = 0, -- Mark of the Thriving Dreamtalon
+			[426335] = 0, -- Mark of the Umbramane
+			[426460] = 0, -- Mark of the Verdant Bristlebruin
+			[426485] = 0, -- Moon-Blessed Claw
+			[426462] = 0, -- Pollenfused Bristlebruin Fur Sample
+			[426459] = 0, -- Scale of the Prismatic Whiskerfish
+			[140300] = 838819, -- Sunreaver Beacon
 			--qqi
 
 
