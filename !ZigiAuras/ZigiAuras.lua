@@ -2094,6 +2094,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[149333] = "Zone", -- Flameheart Shawl
+			[149345] = "Zone", -- Riverspeaker's Trident
+			[149350] = "Zone", -- Snowdrift Tiger Talons
+			[146385] = "Zone", -- Timeless Nutriment
 			[399327] = "Zone", -- Pollen Power!
 			[418826] = "Zone", -- Wearing Pedgi's Sunglasses
 			[147284] = "Zone", -- Xuen's Strength
@@ -13116,6 +13120,7 @@ function ZA_UpdateData()
 			[425847] = 120,
 			[420046] = 802,
 			[420046] = 802,
+			[148026] = 100,
 			--qqq
 
 
@@ -23571,6 +23576,8 @@ function ZA_UpdateData()
 			[426462] = 0, -- Pollenfused Bristlebruin Fur Sample
 			[426459] = 0, -- Scale of the Prismatic Whiskerfish
 			[140300] = 838819, -- Sunreaver Beacon
+			[148026] = 0,
+			[204542] = 0,
 			--qqi
 
 
