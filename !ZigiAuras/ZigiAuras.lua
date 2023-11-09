@@ -387,6 +387,7 @@ function ZA_UpdateData()
 
 			-- Nature
 			[8]   = "4dff4d", -- Nature
+			[888] = "4dff4d", -- Grass
 			[900] = "cff3a5", -- Naturestrike
 			[10]  = "8ee858", -- Life
 			[805] = "8697ff", -- Fey
@@ -782,7 +783,7 @@ function ZA_UpdateData()
 			[120] = "007b6e:a0ff90", -- Jade Fire
 			[12]  = "b22408:ff7200", -- Volcanic
 			[403] = "f82e2e:ffa0a9", -- Living Flame
-			[402] = "ca0000:ff5e2c", -- Hellfire
+			[402] = "960000:ff4d00", -- Hellfire
 			[401] = "00ad06:c7ff1f", -- Felfire
 			[427] = "bac53e:9795a5", -- Felstrike
 			[36]  = "5400b2:ff5400", -- Shadowflame
@@ -792,6 +793,7 @@ function ZA_UpdateData()
 
 			-- Nature
 			[8]   = "3bb53b:beff72", -- Nature
+			[888] = "1d8a1d:4ef542", -- Nature
 			[900] = "609f5f:cff3a5", -- Naturestrike
 			[10]  = "8ee858:e5ffb2", -- Life
 			[805] = "803aff:21d3ff", -- Fey
@@ -1080,6 +1082,7 @@ function ZA_UpdateData()
 
 		--! Hearthstones
 		ZA.Hearthstones = {
+			["Deepdweller's Earthen Hearthstone"] = "Hearthstone",
 			["Ardenweald Hearthstone"] = "Hearthstone",
 			["Astral Recall"] = "Astral Recall",
 			["Brewfest Reveler's Hearthstone"] = "Hearthstone",
@@ -1923,6 +1926,8 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[422377] = "State", -- Mark of Vyranoth
+			[296644] = "State", -- Time Displacement
 			[145389] = "State", -- Timeless Anomaly
 			[419309] = "State", -- Brewfest Beverage
 			[399316] = "State", -- Guest of Honor
@@ -2096,6 +2101,15 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[424560] = "Zone", -- Putrid Propulsion
+			[421216] = "Zone", -- Dreaming
+			[420845] = "Zone", -- True Sight
+			[415147] = "Zone", -- Moonkin Mayhem
+			[424727] = "Zone", -- Draught of Fyrakk
+			[424504] = "Zone", -- Flame Seed
+			[417609] = "Zone", -- Bee Yourself!
+			[418098] = "Zone", -- Light Daydream
+			[418100] = "Zone", -- Dream Gatherer
 			[387514] = "Zone", -- Fish for the Soup
 			[387511] = "Zone", -- Fish for the Soup
 			[149333] = "Zone", -- Flameheart Shawl
@@ -2925,6 +2939,76 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[424538] = 100, -- Uncommon Herbs Shipment
+			[424736] = 100, -- Skin Shipment
+			[424694] = 100, -- Serevite Shipment
+			[427109] = 100, -- Rare Gem Shipment
+			[424876] = 100, -- Khaz'gorite Shipment
+			[424899] = 100, -- Islefin Dorado Shipment
+			[424529] = 100, -- Hochenblume Shipment
+			[424881] = 100, -- Hide Shipment
+			[424823] = 100, -- Food Shipment
+			[424695] = 100, -- Draconium Shipment
+			[427111] = 100, -- Diamond Shipment
+			[424810] = 100, -- Cloth Shipment
+			[423523] = 32, -- Agony Swipe
+			[423529] = 328, -- Anguished Unmending
+			[414993] = 402, -- Heat Wave
+			[423491] = 4, -- Burn Wave
+			[423811] = 6, -- Warmth
+			[420845] = 805, -- True Sight
+			[419659] = 5, -- Burning Maul
+			[423822] = 402, -- Crawling Char Roots
+			[423820] = 402, -- Crawling Char Roots
+			[414974] = 402, -- Scorching Roots
+			[414959] = 402, -- Thorns of Flame
+			[414992] = 402, -- Burning Wrath
+			[427709] = 801, -- Fatal Currents
+			[427708] = 801, -- Fatal Currents
+			[427727] = 801, -- Undertow
+			[427694] = 901, -- Tidal Crash
+			[420476] = 400, -- Rupturing Earth
+			[420490] = 400, -- Burrowing Fissure
+			[420405] = 811, -- Updraft
+			[420306] = 4, -- Cinder Strike
+			[420332] = 402, -- Dripping Embers
+			[420326] = 402, -- Dripping Embers
+			[428130] = 400, -- Rumbling Slam
+			[428140] = 400, -- Rumbling Quake
+			[428047] = 903, -- Monolith Fist
+			[429071] = 12, -- Molten Stone Barrier
+			[428094] = 400, -- Erupting Earth
+			[420419] = 811, -- Cloud Slice
+			[422443] = 888, -- Botanic Rampage
+			[421746] = 12, -- Volatile Magma Spew
+			[424178] = 806, -- Venomous Bite
+			[425437] = 806, -- Blistering Vines
+			[425455] = 888, -- Petal Storm
+			[188470] = 900, -- Thornstorm
+			[421852] = 108, -- Galloping Charge
+			[421851] = 108, -- Galloping Charge
+			[417860] = 120, -- Dreamdust
+			[417848] = 104, -- Flight of the Bumblebee
+			[302237] = 908, -- Mucous Explosion
+			[420418] = 800, -- Deepdweller's Earthen Hearthstone
+			[369197] = 4, -- Soul Ignition
+			[369690] = 12, -- Molten Trail
+			[369685] = 12, -- Molten Trail
+			[393511] = 12, -- Molten Pour
+			[368984] = 12, -- Magma Bolt
+			[371812] = 811, -- Wind Burst
+			[371824] = 811, -- Updraft
+			[390983] = 4, -- Fireball
+			[390979] = 803, -- Tectonic Shield
+			[381721] = 803, -- Harden
+			[390982] = 803, -- Earth Shard
+			[390984] = 4, -- Spit Fire
+			[390987] = 4, -- Detonate
+			[395763] = 4, -- Molten Reforge
+			[375557] = 12, -- Molten Eruption
+			[395756] = 12, -- Magma Bolt Volley
+			[419595] = 12, -- Magma Soldier
+			[419540] = 12, -- Eruption
 			[417543] = 643, -- Paradox
 			[411433] = 641, -- Chronoweave
 			[413027] = 200, -- Titanic Bulwark
@@ -3877,6 +3961,7 @@ function ZA_UpdateData()
 			[390150] = 12, -- Soup Up
 			[389273] = 5, -- Meat Missiles
 			["Lava Breath"] = 12,
+			[389745] = 801, -- Waternado
 			[387732] = 801, -- Waternado
 			[395060] = 801, -- Im'bunata's Rage
 			[391188] = 20, -- Stir
@@ -5194,6 +5279,7 @@ function ZA_UpdateData()
 			["Apply Salve"] = 202,
 			["Aqua Spout"] = 801,
 			["Aquabolt"] = 801,
+			[374332] = 801, -- Aquabomb
 			["Aquabomb"] = 801,
 			["Arc Bolt"] = 800,
 			["Arc Lightning"] = 800,
@@ -11067,6 +11153,7 @@ function ZA_UpdateData()
 			[189043] = 402, -- Wild Gladiator's Felblood Gronnling
 
 			--! Gryphon
+			[417888] = 800, -- Algarian Stormrider
 			[413827] = 150, -- Harbor Gryphon
 			[302361] = 3, -- Alabaster Stormtalon
 			[61229]  = 159, -- Armored Snowy Gryphon
@@ -13338,6 +13425,73 @@ function ZA_UpdateData()
 			[420046] = 802,
 			[148026] = 100,
 			[391591] = 114,
+			[417555] = 202,
+			[424288] = 803,
+			[424029] = 120,
+			[420661] = 120,
+			[418030] = 803,
+			[415201] = 8,
+			[417845] = 900,
+			[417847] = 280,
+			[422762] = 803,
+			[417607] = 16,
+			[423058] = 120,
+			[423061] = 100,
+			[419974] = 202,
+			[423518] = 100,
+			[422992] = 100,
+			[422008] = 100,
+			[417894] = 100,
+			[415469] = 803,
+			[428913] = 805,
+			[428974] = 805,
+			[428977] = 805,
+			[428979] = 805,
+			[421524] = 100,
+			[425848] = 120,
+			[425872] = 120,
+			[417645] = 120,
+			[417642] = 120,
+			[422754] = 803,
+			[417504] = 803,
+			[417506] = 803,
+			[422714] = 803,
+			[422716] = 803,
+			[422725] = 803,
+			[422727] = 803,
+			[422728] = 803,
+			[422729] = 803,
+			[422730] = 803,
+			[422731] = 803,
+			[422755] = 803,
+			[422756] = 803,
+			[422757] = 803,
+			[422758] = 803,
+			[422760] = 803,
+			[422763] = 803,
+			[422764] = 803,
+			[422765] = 803,
+			[422766] = 803,
+			[422767] = 803,
+			[422768] = 803,
+			[422769] = 803,
+			[422770] = 803,
+			[422771] = 803,
+			[422772] = 803,
+			[422773] = 803,
+			[422774] = 803,
+			[422775] = 803,
+			[422777] = 803,
+			[422780] = 803,
+			[422781] = 803,
+			[423157] = 803,
+			[423158] = 803,
+			[423982] = 803,
+			[423983] = 803,
+			[424287] = 803,
+			[424288] = 803,
+			[428316] = 801,
+			[422476] = 282,
 			--qqq
 
 
@@ -23795,6 +23949,67 @@ function ZA_UpdateData()
 			[140300] = 838819, -- Sunreaver Beacon
 			[148026] = 0,
 			[204542] = 0,
+			[417555] = 0,
+			[424288] = 0,
+			[420661] = 0,
+			[418030] = 0,
+			[415201] = 0,
+			[417845] = 0,
+			[417847] = 0,
+			[417607] = 0,
+			[423061] = 0,
+			[419974] = 0,
+			[423518] = 0,
+			[422992] = 0,
+			[422008] = 0,
+			[417894] = 0,
+			[415469] = 0,
+			[428913] = 0,
+			[428974] = 0,
+			[428977] = 0,
+			[428979] = 0,
+			[421524] = 0,
+			[417504] = 0,
+			[417506] = 0,
+			[422714] = 0,
+			[422716] = 0,
+			[422725] = 0,
+			[422727] = 0,
+			[422728] = 0,
+			[422729] = 0,
+			[422730] = 0,
+			[422731] = 0,
+			[422755] = 0,
+			[422756] = 0,
+			[422757] = 0,
+			[422758] = 0,
+			[422760] = 0,
+			[422762] = 0,
+			[422763] = 0,
+			[422764] = 0,
+			[422765] = 0,
+			[422766] = 0,
+			[422767] = 0,
+			[422768] = 0,
+			[422769] = 0,
+			[422770] = 0,
+			[422771] = 0,
+			[422772] = 0,
+			[422773] = 0,
+			[422774] = 0,
+			[422775] = 0,
+			[422777] = 0,
+			[422780] = 0,
+			[422781] = 0,
+			[423157] = 0,
+			[423158] = 0,
+			[423982] = 0,
+			[423983] = 0,
+			[424287] = 0,
+			[424288] = 0,
+			[422754] = 0,
+			[428316] = 0,
+			[422476] = 0,
 			--qqi
 
 
@@ -24389,7 +24604,7 @@ function ZA_UpdateData()
 
 				-- Grotto Netherwing Drake
 				local id = 412088
-				local color = ArmyGetKey("GrottoNetherwingDrake") or 1
+				local color = ArmyGetKey("GrottoNetherwingDrake") or 4
 
 				local colors = {
 					[1] = 822, -- Teal
@@ -24409,7 +24624,21 @@ function ZA_UpdateData()
 					[1] = 805, -- Day
 					[2] = 413, -- Night
 					[3] = 68, -- Sunrise
-					[3] = 34, -- Sunset
+					[4] = 34, -- Sunset
+				}
+
+				ZA.Spells[id] = colors[color]
+
+
+				-- Algarian Stormrider
+				local id = 417888
+				local color = ArmyGetKey("AlgarianStormrider") or 1
+
+				local colors = {
+					[1] = 800, -- Cyan
+					[2] = 640, -- Violet
+					[3] = 6, -- Yellow
+					[4] = 68, -- Orange
 				}
 
 				ZA.Spells[id] = colors[color]
