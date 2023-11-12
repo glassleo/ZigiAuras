@@ -920,6 +920,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Yvelyn"] = 170,
 			["Keeper Tyr"] = 200,
 			["Big Slick in the City"] = 820,
 			["Curious Niffen"] = 803,
@@ -2101,6 +2102,27 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[400127] = "Zone", -- Arcane Breath
+			[417326] = "Zone", -- Carrying Water Bucket
+			[418166] = "Zone", -- Lifesurger
+			[417277] = "Zone", -- Scroll of Liquid Form
+			[414999] = "Zone", -- Drenching Orb
+			[428203] = "Zone", -- Arachnid Annihilation
+			[414636] = "Zone", -- Bubble Blowgun
+			[423306] = "Zone", -- Bear Spirit Guardian
+			[425408] = "Zone", -- Wolf Spirit Guardian
+			[425432] = "Zone", -- Winged Spirit Guardian
+			[425426] = "Zone", -- Panther Spirit Guardian
+			[421446] = "Zone", -- Mylune's Blessing
+			[424568] = "Zone", -- Basket of Eplosive Acorns
+			[428110] = "Zone", -- Nae'dra Nibbles
+			[424341] = "Zone", -- Sack of Talontreats
+			[415185] = "Zone", -- Moonkin Jump
+			[416868] = "Zone", -- Mighty Roar
+			[424687] = "Zone", -- Feral Overflow
+			[414584] = "Zone", -- Flower Trail
+			[424822] = "Zone", -- Feral Overfloww
+			[418754] = "Zone", -- Potent Lullaby
 			[424560] = "Zone", -- Putrid Propulsion
 			[421216] = "Zone", -- Dreaming
 			[420845] = "Zone", -- True Sight
@@ -2939,6 +2961,39 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[422696] = 402, -- Burning Wrath
+			[375201] = 101, -- Talon Rip
+			[375201] = 101, -- Talon Rip
+			[384474] = 806, -- Corrosive Sting
+			[332500] = 901, -- Fin Slap
+			[406802] = 112, -- Predatory Focus
+			[406798] = 112, -- Predatory Focus
+			[401338] = 806, -- Paralyzing Venom
+			[401342] = 12, -- Magma Spray
+			[420881] = 400, -- Volcanic Stomp
+			[395816] = 12, -- Magmatic Core
+			[395816] = 12, -- Magmatic Core
+			[420776] = 111, -- Call For Family
+			[398494] = 12, -- Magma Needle
+			[408483] = 12, -- Molten Burst
+			[408478] = 12, -- Molten Burst
+			[420782] = 12, -- Magma Storm
+			[422693] = 6, -- Solar Flames
+			[422683] = 101, -- Thrash
+			[386722] = 800, -- Shocking Touch
+			[417313] = 801, -- Wet Whirl
+			[424565] = 888, -- Explosive Acorn
+			[427428] = 104, -- Hunt for Food
+			[424615] = 402, -- Fireburst
+			[420737] = 6, -- Fire Faeries
+			[374898] = 103, -- Enrage
+			[425873] = 412, -- Nightmare Bolt
+			[425875] = 412, -- Feed in the Dark
+			[416870] = 104, -- Mighty Roar
+			[416868] = 104, -- Mighty Roar
+			[359945] = 888, -- Overgrowth
+			[235638] = 8, -- Healing Touch
+			[33844]  = 8, -- Entangling Roots
 			[424538] = 100, -- Uncommon Herbs Shipment
 			[424736] = 100, -- Skin Shipment
 			[424694] = 100, -- Serevite Shipment
@@ -5413,6 +5468,7 @@ function ZA_UpdateData()
 			["Barbed Shot"] = 101,
 			["Barbed Spear"] = 101,
 			["Barbed Sting"] = 906,
+			[417868] = 803, -- Thornfur
 			["Barkskin"] = 803,
 			["Barrage of Doubt"] = 411,
 			["Barrage of Flame"] = 4,
@@ -10571,6 +10627,7 @@ function ZA_UpdateData()
 			--! Armoredon
 			[387231] = 16, -- Hailstorm Armoredon
 			[406637] = 4, -- Inferno Armoredon
+			[422486] = 8, -- Verdant Armoredon
 
 			--! Aqir Drone
 			[316337] = 156, -- Malevolent Drone
@@ -10636,6 +10693,11 @@ function ZA_UpdateData()
 
 			--! Beetle
 			[381529] = 822, -- Telix the Stormhorn
+			-- Scarab
+			[428005] = 132, -- Jeweled Copper Scarab
+			[428060] = 130, -- Golden Regal Scarab
+			[428065] = 120, -- Jeweled Jade Scarab
+			[428062] = 814, -- Jeweled Sapphire Scarab
 
 			--! Bird
 			[312751] = 174, -- Clutch of Ha-Li
@@ -10664,6 +10726,8 @@ function ZA_UpdateData()
 			-- Vulture
 			[316275] = 155, -- Waste Marauder
 			[316276] = 173, -- Wastewander Skyterror
+			-- Somnowl
+			[424484] = 4, -- Anu'relos, Flame's Guidance
 
 			--! Bloodtusk
 			[332478] = 415, -- Blisterback Bloodtusk
@@ -10730,16 +10794,22 @@ function ZA_UpdateData()
 
 			--! Chopper
 			[171846] = 100, -- Champion's Treadblade
-			[87090]  = 100, -- Goblin Trike
-			[87091]  = 100, -- Goblin Turbo-Trike
-			[297157] = 100, -- Junkheap Drifter
-			[296788] = 100, -- Mechacycle Model W
 			[55531]  = 100, -- Mechano-Hog
 			[60424]  = 100, -- Mekgineer's Chopper
 			[179244] = 100, -- Summon Chauffeur
 			[179245] = 100, -- Summon Chauffeur
-			[223354] = 100, -- Vicious War Trike
 			[171845] = 100, -- Warlord's Deathwheel
+			-- Trike
+			[87090]  = 100, -- Goblin Trike
+			[87091]  = 100, -- Goblin Turbo-Trike
+			[223354] = 100, -- Vicious War Trike
+			-- Mechacycle
+			[297157] = 100, -- Junkheap Drifter
+			[296788] = 100, -- Mechacycle Model W
+			-- Felchopper
+			[428013] = 32, -- Deathbringer's Shadowcycle
+			[428068] = 127, -- Felreaver Deathcycle
+			[428067] = 402, -- Shadowflame Hellbike
 
 			--! Clefthoof
 			[417245] = 156, -- Ancestral Clefthoof
@@ -10805,6 +10875,11 @@ function ZA_UpdateData()
 			-- Sabertooth
 			[394737] = 4, -- Vicious Sabertooth (Alliance)
 			[394738] = 4, -- Vicious Sabertooth (Horde)
+			-- Dreamsaber
+			[424479] = 6, -- Evening Sun Dreamsaber
+			[424482] = 135, -- Morning Flourish Dreamsaber
+			[424474] = 80, -- Shadow Dusk Dreamsaber
+			[424476] = 16, -- Winter Night Dreamsaber
 
 			--! Cloud Serpent
 			[127170] = 722, -- Astral Cloud Serpent
@@ -11031,6 +11106,7 @@ function ZA_UpdateData()
 			[254069] = 200, -- Glorious Felcrusher
 
 			--! Elemental
+			[424009] = 4, -- Runebound Firelord
 			[358072] = 160, -- Bound Blizzard
 			[231442] = ZA.Specialization(811, 4, 811, 24), -- Farseer's Raging Tempest
 			[289555] = 24, -- Glacial Tidestorm
@@ -11099,6 +11175,7 @@ function ZA_UpdateData()
 			-- Vulpin
 			[290133] = 80, -- Vulpine Familiar
 			[334366] = 120, -- Wild Glimmerfur Prowler
+			[427435] = 172, -- Crimson Glimmerfur
 
 			--! Slyvern
 			[359622] = 171, -- Liberated Slyvern
@@ -11332,6 +11409,7 @@ function ZA_UpdateData()
 			[374196] = 154, -- Plainswalker Bearer
 			[374194] = 119, -- Mossy Mammoth
 			-- Magmammoth
+			[427546] = 120, -- Mammyth
 			[373859] = 12, -- Loyal Magmammoth
 			[374275] = 12, -- Raging Magmammoth
 			[371176] = 80, -- Subterranean Magmammoth
@@ -11339,6 +11417,8 @@ function ZA_UpdateData()
 
 			--! Moonbeast
 			[400976] = 805, -- Gleaming Moonbeast
+			[424534] = 175, -- vicious Moonbeast (Alliance)
+			[424535] = 158, -- vicious Moonbeast (Horde)
 
 			--! Ray
 			[235764] = 157, -- Darkspore Mana Ray
@@ -11350,6 +11430,7 @@ function ZA_UpdateData()
 			[344576] = 40, -- Infested Necroray
 			[344575] = 40, -- Pestilent Necroray
 			-- Shalewing
+			[427549] = 120, -- Imagiwing
 			[408655] = 809, -- Morsel Sniffer
 			[408653] = 132, -- Boulder Hauler
 			[408647] = 126, -- Cobalt Shalewing
@@ -11435,6 +11516,7 @@ function ZA_UpdateData()
 			[39802]  = 323, -- Silver Riding Nether Ray
 
 			--! Ottuk
+			[427222] = 120, -- Delugen
 			[376912] = 805, -- Otterworldly Ottuk Carrier
 			[376873] = 137, -- Otto
 			[376875] = 116, -- Brown Scouting Ottuk
@@ -11572,6 +11654,11 @@ function ZA_UpdateData()
 			-- Ravasaur
 			[255696] = 200, -- Gilded Ravasaur
 			[266058] = 415, -- Tomb Stalker
+			-- Dreamtalon
+			[427224] = 120, -- Talont
+			[427041] = 621, -- Ochre Dreamtalon
+			[427043] = 16, -- Snowfluff Dreamtalon
+			[426955] = 109, -- Springtide Dreamtalon
 
 			--! Rat
 			[215558] = 116, -- Ratstallion
@@ -11779,6 +11866,12 @@ function ZA_UpdateData()
 			[332243] = 805, -- Shadeleaf Runestag
 			[332244] = 805, -- Wakener's Runestag
 			[332245] = 805, -- Winterborn Runestag
+			-- Dreamstag
+			[427226] = 120, -- Stargrazer
+			[423871] = 153, -- Blossoming Dreamstag
+			[423891] = 16, -- Lunar Dreamstag
+			[423877] = 158, -- Rekindled Dreamstag
+			[423873] = 176, -- Suntouched Dreamstag
 
 			--! Talbuk
 			[39315]  = 140, -- Cobalt Riding Talbuk
@@ -13492,6 +13585,28 @@ function ZA_UpdateData()
 			[424288] = 803,
 			[428316] = 801,
 			[422476] = 282,
+			[281581] = 100,
+			[421241] = 8,
+			[419272] = 801,
+			[419947] = 801,
+			[419950] = 801,
+			[424219] = 8,
+			[350178] = 8,
+			[417508] = 120,
+			[424693] = 114,
+			[421632] = 8,
+			[421818] = 8,
+			[422040] = 8,
+			[422043] = 8,
+			[422044] = 8,
+			[422045] = 8,
+			[422046] = 8,
+			[414999] = 801,
+			[415156] = 202,
+			[417277] = 801,
+			[417809] = 120,
+			[426183] = 100,
+			[418756] = 120,
 			--qqq
 
 
@@ -24010,6 +24125,25 @@ function ZA_UpdateData()
 			[422754] = 0,
 			[428316] = 0,
 			[422476] = 0,
+			[281581] = 0,
+			[421241] = 0,
+			[424219] = 0,
+			[350178] = 0,
+			[424693] = 0,
+			[421632] = 0,
+			[421818] = 0,
+			[422040] = 0,
+			[422043] = 0,
+			[422044] = 0,
+			[422045] = 0,
+			[422046] = 0,
+			[414999] = 0,
+			[415156] = 0,
+			[417277] = 0,
+			[417809] = 0,
+			[426183] = 0,
+			[406802] = 841383, -- Predatory Focus
+			[406798] = 841383, -- Predatory Focus
 			--qqi
 
 
