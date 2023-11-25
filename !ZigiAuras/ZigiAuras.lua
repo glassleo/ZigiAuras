@@ -586,6 +586,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[248906] = "Lightforged Beacon", -- Flight Master's Whistle (Argus)
 			[410137] = "Teleport: Stormwind", -- Lost Dragonscale (Alliance)
 			[410148] = "Teleport: Orgrimmar", -- Lost Dragonscale (Horde)
 			[377942] = "Searching Through Bag",
@@ -679,6 +680,12 @@ function ZA_UpdateData()
 			[410080] = "Teleport: The Vortex Pinnacle", -- Path of Wind's Domain
 			[410074] = "Teleport: The Underrot", -- Path of Festering Rot
 			[393764] = "Teleport: Halls of Valor", -- Path of Proven Worth
+			[424153] = "Teleport: Black Rook Hold", -- Path of Ancient Horrors
+			[424142] = "Teleport: Throne of the Tides", -- Path of the Tiderhunter
+			[424163] = "Teleport: Darkheart Thicket", -- Path of the Nightmare Lord
+			[424167] = "Teleport: Waycrest Manor", -- Path of Heart's Bane
+			[424187] = "Teleport: Atal'Dazar", -- Path of the Golden Tomb
+			[424197] = "Teleport: Dawn of the Infinite", -- Path of Twisted Time
 		}
 
 
@@ -920,6 +927,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Green Dragon"] = 170,
 			["Yvelyn"] = 170,
 			["Keeper Tyr"] = 200,
 			["Big Slick in the City"] = 820,
@@ -1299,6 +1307,7 @@ function ZA_UpdateData()
 			[330367] = "Quantum Device: Versatility", -- Inscrutable Quantum Device
 
 			-- Battle for Azeroth
+			[268998] = "Kindled Soul: Intellect", -- Balefire Branch
 			[290032] = "Hymn of Zeal: Haste", -- Hymnal of the 7th Legion
 			[298717] = "Hymn of Battle: Haste", -- Tome of Thalassian Hymns
 			[298722] = "Tidal Enchantment: Critical Strike", -- Tidesages' Warscroll
@@ -1306,6 +1315,10 @@ function ZA_UpdateData()
 
 			-- Legion
 			[215956] = "Valarjar's Path: " .. ZA.PrimaryStatName, -- Horn of Valor
+
+			-- Cataclysm
+			[429221] = "Leviathan's Wisdom: Intellect", -- Sea Star (10.2 version)
+			[91135]  = "Leviathan: Spell Power", -- Sea Star (4.0 version)
 
 			-- Warlods of Draenor
 			[165534] = "Stun Grenade: Versatility", -- Enforcer's Stun Grenade
@@ -1671,6 +1684,7 @@ function ZA_UpdateData()
 			--! Elixirs
 
 			-- Dragonflight
+			[374000] = "Elixir", -- Iced Phial of Corrupting Rage
 			[371339] = "Elixir", -- Phial of Elemental Chaos
 			[371172] = "Elixir", -- Phial of Tepid Versatility
 			[371386] = "Elixir", -- Phial of Charged Isolation
@@ -1834,7 +1848,8 @@ function ZA_UpdateData()
 			-- AUGMENT RUNE --
 			------------------
 
-			[347901] = "Rune", -- Veiled Augmentation
+			[393438] = "Augment", -- Draconic Augmentation
+			[347901] = "Augment", -- Veiled Augmentation
 
 
 			-----------------
@@ -1862,6 +1877,7 @@ function ZA_UpdateData()
 			["WoW's 24th Anniversary"] = "Reputation", -- 2028
 			["WoW's 25th Anniversary"] = "Reputation", -- 2029
 			["Word of a Worthy Ally"] = "Reputation",
+			[61849] = "Reputation", -- The Spirit of Sharing
 			["Ribbon Dance"] = "XP",
 			["Reverence for the Flame"] = "XP",
 			[46668] = "Reputation", -- WHEE!
@@ -1927,6 +1943,10 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[425479] = "State", -- Dream's Blessing
+			[417837] = "State", -- Wrathion's Entourage
+			[417568] = "State", -- Frosty Feet
+			[428398] = "State", -- Blooming
 			[422377] = "State", -- Mark of Vyranoth
 			[296644] = "State", -- Time Displacement
 			[145389] = "State", -- Timeless Anomaly
@@ -2102,6 +2122,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[424522] = "Zone", -- Spawning Pool
+			[251727] = "Zone", -- Ancient Ward
+			[254210] = "Zone", -- Blessing of the Righteous
+			[234243] = "Zone", -- Sugar Rush
 			[400127] = "Zone", -- Arcane Breath
 			[417326] = "Zone", -- Carrying Water Bucket
 			[418166] = "Zone", -- Lifesurger
@@ -2755,6 +2779,7 @@ function ZA_UpdateData()
 			[330367] = 203, -- Inscrutable Quantum Device
 
 			-- Battle for Azeroth
+			[268998] = 413, -- Balefire Branch
 			[290032] = 3, -- Hymnal of the 7th Legion
 			[298717] = 3, -- Tome of Thalassian Hymns
 			[298722] = 126, -- Tidesages' Warscroll
@@ -2770,6 +2795,10 @@ function ZA_UpdateData()
 			[201408] = 5, -- Infallible Tracking Charm
 			[397399] = 813, -- Voidmender's Shadowgem
 			[397400] = 40, -- Bonemaw's Big Toe
+
+			-- Cataclysm
+			[429221] = 801, -- Sea Star (10.2 version)
+			[91135]  = 801, -- Sea Star (4.0 version)
 
 			-- Burning Crusade
 			[244176] = 401, -- The Skull of Gul'dan
@@ -2961,6 +2990,52 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			["Door Opens"] = 100,
+			[423634] = 72, -- Delphuric Beam
+			[423771] = 72, -- Delphuric Beam
+			[225654] = 72, -- Delphuric Beam
+			[423617] = 721, -- Cascadent Star
+			[387067] = 65, -- Arcane Bash
+			[422813] = 65, -- Arcane Bash
+			[422815] = 72, -- Overflow
+			[224321] = 72, -- Overflow
+			[425706] = 65, -- Arcane Pummel
+			[67255]  = 2, -- Final Meditation
+			[66537]  = 2, -- Renew
+			[66515]  = 202, -- Reflective Shield
+			[66536]  = 2, -- Holy Smite
+			[66546]  = 2, -- Holy Nova
+			[66680]  = 202, -- Confess
+			[66547]  = 202, -- Confess
+			[419278] = 641, -- Extinction Blast
+			[420925] = 400, -- Pulverizing Outburst
+			[421260] = "Essence", -- Slumberous Roar
+			[420895] = 400, -- Groggy Bash
+			[421006] = 400, -- Cranky Tantrum
+			[421902] = 400, -- Cranky Tantrum
+			[421059] = 400, -- Cranky Tantrum
+			[379134] = 803, -- Restorative Ward
+			[424605] = 8, -- Wild Roots
+			[378012] = 402, -- Primal Fire
+			[422606] = 12, -- Molten Storm
+			[418153] = 5, -- Cauterizing Pounce
+			[427432] = 12, -- Molten Slam
+			[427417] = 4, -- Burning Skies
+			[427417] = 4, -- Burning Skies
+			[427444] = 402, -- Incineration
+			[420501] = 402, -- Entwining Flames
+			[417928] = 5, -- Burning Claws
+			[423259] = 402, -- Burning Wrath
+			[421341] = 5, -- Awaken Armaments
+			[421340] = 5, -- Awaken Armaments
+			[423469] = 120, -- Soothing Slumber
+			[300420] = 800, -- Lightning
+			[302578] = 903, -- Spine Molt
+			[302295] = 101, -- Slicing Claw
+			[302302] = 103, -- Hunger
+			[391171] = 5, -- Calcified Spikes
+			[250963] = 427 ,-- Overpowering Flurry
+			[245061] = 127, -- Unchained Dominance
 			[422696] = 402, -- Burning Wrath
 			[375201] = 101, -- Talon Rip
 			[375201] = 101, -- Talon Rip
@@ -4864,6 +4939,7 @@ function ZA_UpdateData()
 			["Eternity Surge"] = 80,
 			["Quell"] = 811,
 			["Pyre"] = 403,
+			[392268] = "Essence", -- Essence Burst
 			["Essence Burst"] = "Essence",
 			["Shocking Touch"] = 800,
 			["Stormclaw"] = 800,
@@ -8179,6 +8255,8 @@ function ZA_UpdateData()
 			["Molten Surge"] = 12,
 			["Moment of Glory"] = 66,
 			["Momentum"] = 104,
+			[427641] = 104,
+			["Inertia"] = 104,
 			["Mongoose Fury"] = 103,
 			["Moon Burn"] = 640,
 			["Moonfire"] = 640,
@@ -12130,7 +12208,7 @@ function ZA_UpdateData()
 			[243833] = 321,
 			[245030] = 4,
 			[248345] = 2,
-			[248906] = 810,
+			[248906] = 200,
 			[251746] = 800,
 			[252295] = 2,
 			[255460] = 2,
@@ -13302,6 +13380,12 @@ function ZA_UpdateData()
 			[410074] = 646, -- Path of Festering Rot
 			[410078] = 646, -- Path of the Earth-Warder
 			[410080] = 646, -- Path of Wind's Domain
+			[424153] = 646, -- Path of Ancient Horrors
+			[424142] = 646, -- Path of the Tiderhunter
+			[424163] = 646, -- Path of the Nightmare Lord
+			[424167] = 646, -- Path of Heart's Bane
+			[424187] = 646, -- Path of the Golden Tomb
+			[424197] = 646, -- Path of Twisted Time
 			[225435] = 646, -- Town Portal: Kal'delar
 			[225434] = 646, -- Town Portal: Sashj'tar
 			[225428] = 646, -- Town Portal: Shala'nir
@@ -13607,6 +13691,36 @@ function ZA_UpdateData()
 			[417809] = 120,
 			[426183] = 100,
 			[418756] = 120,
+			[427633] = 801,
+			[427632] = 801,
+			[427630] = 801,
+			[427351] = 801,
+			[427631] = 801,
+			[427628] = 801,
+			[427813] = 640,
+			[427844] = 640,
+			[245096] = 720,
+			[254208] = 2,
+			[254710] = 100,
+			[421234] = 100,
+			[414233] = 120,
+			[417962] = 120,
+			[418336] = 900,
+			[418336] = 900,
+			[424056] = 323,
+			[418615] = 8,
+			[418960] = 8,
+			[420864] = 403,
+			[250484] = 100,
+			[420830] = 111,
+			[420830] = 111,
+			[425627] = 100,
+			[418492] = 100,
+			[426430] = 120, -- Project into the Dream
+			[420507] = 801,
+			[418521] = 4,
+			[421677] = 100,
+			[419941] = 80,
 			--qqq
 
 
@@ -24144,6 +24258,29 @@ function ZA_UpdateData()
 			[426183] = 0,
 			[406802] = 841383, -- Predatory Focus
 			[406798] = 841383, -- Predatory Focus
+			[427633] = 0,
+			[427632] = 0,
+			[427630] = 0,
+			[427351] = 0,
+			[427631] = 0,
+			[427628] = 0,
+			[427813] = 136057,
+			[245096] = 0,
+			[254208] = 0,
+			[254710] = 0,
+			[421234] = 0,
+			[414233] = 0,
+			[417962] = 0,
+			[418615] = 0,
+			[418960] = 0,
+			[250484] = 0,
+			[420830] = 237378,
+			[425627] = 0,
+			[418492] = 0,
+			[420507] = 0,
+			[418521] = 0,
+			[421677] = 0,
+			[419941] = 0,
 			--qqi
 
 
@@ -24245,6 +24382,12 @@ function ZA_UpdateData()
 			[410074] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheUnderrot", -- Path of Festering Rot
 			[410078] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportNeltharionsLair", -- Path of the Earth-Warder
 			[410080] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheVortexPinnacle", -- Path of Wind's Domain
+			[424153] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportBlackRookHold", -- Path of Ancient Horrors
+			[424142] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportThroneOfTheTides", -- Path of the Tiderhunter
+			[424163] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportDarkheartThicket", -- Path of the Nightmare Lord
+			[424167] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportWaycrestManor", -- Path of Heart's Bane
+			[424187] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportAtalDazar", -- Path of the Golden Tomb
+			[424197] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportDawnOfTheInfinite", -- Path of Twisted Time
 
 
 			--§ Spells
@@ -24742,12 +24885,12 @@ function ZA_UpdateData()
 
 				local colors = {
 					[1] = 822, -- Teal
-					[2] = 819, -- Black
-					[3] = 141, -- Yellow
-					[4] = 640, -- Violet
 				}
+				if C_QuestLog.IsQuestFlaggedCompleted(77147) then colors[#colors+1] = 819 end -- Black
+				if C_QuestLog.IsQuestFlaggedCompleted(77148) then colors[#colors+1] = 141 end -- Yellow
+				colors[#colors+1] = 640 -- Violet
 
-				ZA.Spells[id] = colors[color]
+				ZA.Spells[id] = colors[color] or colors[#colors]
 
 
 				-- Flourishing Whimsydrake
