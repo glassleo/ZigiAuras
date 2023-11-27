@@ -2122,6 +2122,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[421448] = "Zone", -- Resting
 			[424522] = "Zone", -- Spawning Pool
 			[251727] = "Zone", -- Ancient Ward
 			[254210] = "Zone", -- Blessing of the Righteous
@@ -2990,6 +2991,43 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[424757] = 104, -- Green Thumb
+			[417581] = 104, -- Temporal Acceleration
+			[408575] = 12, -- Volcanic Surge
+			[428530] = 411, -- Murk Spew
+			[428868] = 32, -- Putrid Roar
+			[428594] = 411, -- Deluge of Filth
+			[429046] = 411, -- Raining Darkness
+			[428621] = 411, -- Gushing Ink
+			[428531] = 411, -- Grimy
+			[428526] = 411, -- Ink Blast
+			[428399] = 411, -- Blotting Barrage
+			[428404] = 411, -- Blotting Darkness
+			[428889] = 411, -- Foul Bolt
+			[83672] = 411, -- Blight of Ozumat
+			[428952] = 801, -- Tidal Surge
+			[428674] = 801, -- Cleansing Flux
+			[429173] = 328, -- Mind Rot
+			[429048] = 4, -- Flame Shock
+			[429051] = 803, -- Earthfury
+			[429172] = 327, -- Terrifying Vision
+			[429037] = 9, -- Stormflurry Totem
+			[427668] = 32, -- Festering Shockwave
+			[427670] = 901, -- Crushing Claw
+			[427559] = 320, -- Bubbling Ooze
+			[427672] = 320, -- Bubbling Fissure
+			[427451] = 320, -- Congealed Ooze
+			[427456] = 320, -- Awaken Ooze
+			[75722] = 801, -- Summon Geyser
+			[427769] = 801, -- Geyser
+			[428293] = 107, -- Trident Flurry
+			[428291] = 103, -- Slithering Assault
+			[428103] = 16, -- Frostbolt
+			[428329] = 80, -- Icy Veins
+			[428374] = 800, -- Focused Tempest
+			[428376] = 800, -- Focused Tempest
+			[76008] = 800, -- Shock Blast
+			[75683] = 801, -- High Tide
 			["Door Opens"] = 100,
 			[423634] = 72, -- Delphuric Beam
 			[423771] = 72, -- Delphuric Beam
@@ -3504,6 +3542,7 @@ function ZA_UpdateData()
 			[196144] = 804, -- Sandstorm
 			[44224] = 72, -- Gravity Lapse
 			["Active"] = 100,
+			[383492] = 4, -- Wildfire
 			[383493] = 4, -- Wildfire
 			[102543] = 105, -- Incarnation: Avatar of Ashamane
 			[421807] = 104, -- Speed Boost
@@ -6127,7 +6166,7 @@ function ZA_UpdateData()
 			["Cone of Death"] = 413,
 			["Conflagrate"] = 4,
 			["Conflagrate:840200"] = 401,
-			["Conflagration"] = 4,
+			["Conflagration"] = 12,
 			["Conflict and Strife"] = 204,
 			["Congealed Plauge:538040"] = 321,
 			["Conjure Arcane Rune"] = 64,
@@ -13675,7 +13714,7 @@ function ZA_UpdateData()
 			[419947] = 801,
 			[419950] = 801,
 			[424219] = 8,
-			[350178] = 8,
+			[350178] = 120,
 			[417508] = 120,
 			[424693] = 114,
 			[421632] = 8,
@@ -24862,16 +24901,16 @@ function ZA_UpdateData()
 				colors[#colors+1] = 642 -- Infinite
 
 				local transforms = {
-					[2] = 400, -- Obsidian Gladiator
-					[3] = 120, -- Verdant Gladiator
+					[2] = 120, -- Verdant Gladiator
+					[3] = 400, -- Obsidian Gladiator
 				}
 				local icons = {
-					[2] = 5114749, -- Obsidian Gladiator
-					[3] = 5208286, -- Verdant Gladiator
+					[2] = 5208286, -- Verdant Gladiator
+					[3] = 5114749, -- Obsidian Gladiator
 				}
 				local names = {
-					[2] = "Obsidian Gladiator's Slitherdrake",
-					[3] = "Verdant Gladiator's Slitherdrake",
+					[2] = "Verdant Gladiator's Slitherdrake",
+					[3] = "Obsidian Gladiator's Slitherdrake",
 				}
 
 				ZA.Spells[id] = transforms[transform] or colors[color]
