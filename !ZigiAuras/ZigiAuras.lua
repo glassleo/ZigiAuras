@@ -2991,6 +2991,7 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[424368] = 400, -- Trembling Earth
 			[424757] = 104, -- Green Thumb
 			[417581] = 104, -- Temporal Acceleration
 			[408575] = 12, -- Volcanic Surge
