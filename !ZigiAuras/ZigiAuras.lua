@@ -586,6 +586,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[220746] = "Teleport: Ravenholdt Manor",
 			[248906] = "Lightforged Beacon", -- Flight Master's Whistle (Argus)
 			[410137] = "Teleport: Stormwind", -- Lost Dragonscale (Alliance)
 			[410148] = "Teleport: Orgrimmar", -- Lost Dragonscale (Horde)
@@ -927,6 +928,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Lightforged Battery"] = 200,
 			["Green Dragon"] = 170,
 			["Yvelyn"] = 170,
 			["Keeper Tyr"] = 200,
@@ -1317,10 +1319,13 @@ function ZA_UpdateData()
 			[215956] = "Valarjar's Path: " .. ZA.PrimaryStatName, -- Horn of Valor
 
 			-- Cataclysm
+			[92174]  = "Carcinized Adaptation: Mastery", -- Porcelain Crab
 			[429221] = "Leviathan's Wisdom: Intellect", -- Sea Star (10.2 version)
 			[91135]  = "Leviathan: Spell Power", -- Sea Star (4.0 version)
 
 			-- Warlods of Draenor
+			[429246] = "Primal Genesis: Critical Strike", -- Coagulated Genesaur Blood
+			[429262] = "Aqueous Enrichment: Mastery", -- Witherbark's Branch
 			[165534] = "Stun Grenade: Versatility", -- Enforcer's Stun Grenade
 			[201410] = "Voidsight", -- Orb of Voidsight
 			[201405] = "Demonbane: Strength", -- Gronntooth War Horn
@@ -2122,6 +2127,9 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[183765] = "Zone", -- Moongrass
+			[245298] = "Zone", -- Round Up
+			[218965] = "Zone", -- Mylune's Melody
 			[421448] = "Zone", -- Resting
 			[424522] = "Zone", -- Spawning Pool
 			[251727] = "Zone", -- Ancient Ward
@@ -2790,6 +2798,8 @@ function ZA_UpdateData()
 			[215956] = 200, -- Horn of Valor
 
 			-- Warlods of Draenor
+			[429246] = 888, -- Coagulated Genesaur Blood
+			[429262] = 801, -- Witherbark's Branch
 			[165534] = 5, -- Enforcer's Stun Grenade
 			[201410] = 320, -- Orb of Voidsight
 			[201405] = 117, -- Gronntooth War Horn
@@ -2798,6 +2808,7 @@ function ZA_UpdateData()
 			[397400] = 40, -- Bonemaw's Big Toe
 
 			-- Cataclysm
+			[92174]  = 808, -- Porcelain Crab
 			[429221] = 801, -- Sea Star (10.2 version)
 			[91135]  = 801, -- Sea Star (4.0 version)
 
@@ -2991,6 +3002,33 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[251590] = 3, -- Divine Barrage
+			[242548] = 3, -- Righteous Thunder
+			[251521] = 200, -- Holy Onslaught
+			[245377] = 401, -- Felfire Assault
+			[252885] = 3, -- Fist of the Vindicator
+			[251028] = 32, -- Shadow Blast
+			[251031] = 32, -- Encroaching Shadows
+			[244713] = 4, -- Burning Rage
+			[398384] = 4, -- Burning Rage
+			[427341] = 103, -- Burning Rage
+			[398385] = 103, -- Burning Rage
+			[38771]  = 103, -- Burning Rage
+			[421754] = 12, -- Magma Storm
+			[420782] = 12, -- Magma Storm
+			[400954] = 12, -- Molten Flurry
+			[373526] = 811, -- Razor Winds
+			[413537] = 326, -- Malignant Transferal
+			[413543] = 326, -- Malignant Transferal
+			[413469] = 326, -- Malignant Transferal
+			[407616] = 326, -- Malignant Transferal
+			[415106] = 326, -- Malignant Transferal
+			[423397] = 103, -- Molten Frenzy
+			[423396] = 103, -- Molten Frenzy
+			[391385] = 12, -- Molten Tear
+			[383237] = 12, -- Molten Gash
+			[423411] = 12, -- Lava Rush
+			[423410] = 12, -- Lava Rush
 			[424368] = 400, -- Trembling Earth
 			[424757] = 104, -- Green Thumb
 			[417581] = 104, -- Temporal Acceleration
@@ -9084,7 +9122,7 @@ function ZA_UpdateData()
 			["Screeching Howl"] = 111,
 			["Scribe:132851"] = 32,
 			["Scripture of Elune"] = 202,
-			["Scroll of Teleport: Ravenholdt"] = 646,
+			[220746] = 646,
 			["Scrying"] = 64,
 			["Sea Spout"] = 801,
 			["Seal Armor Breach:538043"] = 12,
@@ -10020,7 +10058,7 @@ function ZA_UpdateData()
 			["Tornado Kick"] = 9,
 			["Tornado"] = 911,
 			["Torrent of Shadows"] = 32,
-			["Torrent of Souls:893779"] = 801,
+			[199514] = 48, -- Torrent of Souls
 			["Torrent"] = 801,
 			["Torrent"] = 801,
 			["Tortured Blast:3528305"] = 411,
@@ -13761,6 +13799,22 @@ function ZA_UpdateData()
 			[418521] = 4,
 			[421677] = 100,
 			[419941] = 80,
+			[386243] = 100, -- Completely Safe Rockets
+			[386245] = 100, -- Completely Safe Rockets
+			[386246] = 100, -- Completely Safe Rockets
+			[200215] = 100,
+			[200205] = 100,
+			[200218] = 100,
+			[200149] = 100,
+			[200146] = 100,
+			[200148] = 100,
+			[200087] = 100,
+			[200145] = 100,
+			[200144] = 100,
+			[200106] = 100,
+			[245298] = 100,
+			[251249] = 100,
+			[248463] = 200,
 			--qqq
 
 
@@ -24321,6 +24375,21 @@ function ZA_UpdateData()
 			[418521] = 0,
 			[421677] = 0,
 			[419941] = 0,
+			[386243] = 249174, -- Completely Safe Rockets
+			[386245] = 249174, -- Completely Safe Rockets
+			[386246] = 249174, -- Completely Safe Rockets
+			[200218] = 1005279,
+			[200215] = 237030,
+			[200149] = 0,
+			[200146] = 0,
+			[200148] = 0,
+			[200087] = 0,
+			[200145] = 0,
+			[200144] = 0,
+			[200106] = 0,
+			[245298] = 0,
+			[251249] = 0,
+			[248463] = 0,
 			--qqi
 
 
@@ -24352,7 +24421,7 @@ function ZA_UpdateData()
 			[299084] = "Interface/AddOns/Media_Newsom/Icons/WormholeZandalar", -- Wormhole: Zandalar
 			[324031] = "Interface/AddOns/Media_Newsom/Icons/WormholeShadowlands", -- Wormhole: Shadowlands
 			[386379] = "Interface/AddOns/Media_Newsom/Icons/WormholeDragonIsles", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
-			[220746] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
+			[220746] = "Interface/AddOns/Media_Newsom/Icons/TeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
 			[390783] = "Interface/AddOns/Media_Newsom/Icons/TeleportAylaagCamp", -- Teleport: Ravenholdt Manor
 			[71436] = "Interface/AddOns/Media_Newsom/Icons/TeleportBootyBay", -- Teleport: Booty Bay (Boots of the Bay)
 			[231054] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan", -- Teleport: Karazhan
