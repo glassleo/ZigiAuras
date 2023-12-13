@@ -2127,6 +2127,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[250336] = "Zone", -- Lightforged Ally
 			[183765] = "Zone", -- Moongrass
 			[245298] = "Zone", -- Round Up
 			[218965] = "Zone", -- Mylune's Melody
@@ -3002,6 +3003,10 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[417446] = 36, -- Fyr'alath's Bite
+			[417445] = 36, -- Fyr'alath's Bite
+			[417431] = 36, -- Fyr'alath's Bite
+			[421506] = 36, -- Fyr'alath's Bite
 			[251590] = 3, -- Divine Barrage
 			[242548] = 3, -- Righteous Thunder
 			[251521] = 200, -- Holy Onslaught
@@ -13815,6 +13820,11 @@ function ZA_UpdateData()
 			[245298] = 100,
 			[251249] = 100,
 			[248463] = 200,
+			[200212] = 100,
+			[200214] = 100,
+			[200216] = 100,
+			[253223] = 32,
+			[254037] = 415,
 			--qqq
 
 
@@ -24380,6 +24390,7 @@ function ZA_UpdateData()
 			[386246] = 249174, -- Completely Safe Rockets
 			[200218] = 1005279,
 			[200215] = 237030,
+			[200216] = 237030,
 			[200149] = 0,
 			[200146] = 0,
 			[200148] = 0,
@@ -24390,6 +24401,10 @@ function ZA_UpdateData()
 			[245298] = 0,
 			[251249] = 0,
 			[248463] = 0,
+			[200212] = 134291,
+			[200214] = 134291,
+			[253223] = 0,
+			[254037] = 0,
 			--qqi
 
 
