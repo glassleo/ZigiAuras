@@ -3003,6 +3003,8 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[425300] = 36, -- Shadowflame Bomb
+			[424771] = 402, -- Burning Wrath
 			[417446] = 36, -- Fyr'alath's Bite
 			[417445] = 36, -- Fyr'alath's Bite
 			[417431] = 36, -- Fyr'alath's Bite
@@ -13825,6 +13827,8 @@ function ZA_UpdateData()
 			[200216] = 100,
 			[253223] = 32,
 			[254037] = 415,
+			[425996] = 120,
+			[426327] = 621,
 			--qqq
 
 
