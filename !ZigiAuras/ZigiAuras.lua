@@ -1175,8 +1175,8 @@ function ZA_UpdateData()
 			-- Dragonflight
 			-- 10.2
 			[426676] = "Best Friends with Aerwynn: Critical Strike", -- Pip's Emerald Friendship Badge
-			[426676] = "Best Friends with Pip: Mastery", -- Pip's Emerald Friendship Badge
-			[426676] = "Best Friends with Urctos: Versatility", -- Pip's Emerald Friendship Badge
+			[426647] = "Best Friends with Pip: Mastery", -- Pip's Emerald Friendship Badge
+			[426672] = "Best Friends with Urctos: Versatility", -- Pip's Emerald Friendship Badge
 			[424141] = "Ori's Verdant Feather: Agility", -- Ori's Verdant Feather
 			[424107] = "Root of Fire: Strength", -- Root of Fire
 			[423906] = "Dancing Dream Blossoms", -- Dancing Dream Blossoms
@@ -1689,6 +1689,7 @@ function ZA_UpdateData()
 			--! Elixirs
 
 			-- Dragonflight
+			[371186] = "Elixir", -- Charged Phial of Alacrity
 			[374000] = "Elixir", -- Iced Phial of Corrupting Rage
 			[371339] = "Elixir", -- Phial of Elemental Chaos
 			[371172] = "Elixir", -- Phial of Tepid Versatility
@@ -1948,6 +1949,8 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[291295] = "State", -- Mind Protected
+			[289298] = "State", -- Restoring Sanity
 			[425479] = "State", -- Dream's Blessing
 			[417837] = "State", -- Wrathion's Entourage
 			[417568] = "State", -- Frosty Feet
@@ -2127,6 +2130,16 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[315845] = "Zone", -- Sluggish Potion
+			[315849] = "Zone", -- Sickening Potion
+			[315817] = "Zone", -- Spicy Potion
+			[312355] = "Zone", -- Bear Spirit
+			[314165] = "Zone", -- Empowered
+			[314203] = "Zone", -- Requited Bulwark
+			[305149] = "Zone", -- Shado-Pan Munitions
+			[299663] = "Zone", -- Watery Nutriment
+			[278475] = "Zone", -- Marker
+			[278299] = "Zone", -- Rotten Potato
 			[250336] = "Zone", -- Lightforged Ally
 			[183765] = "Zone", -- Moongrass
 			[245298] = "Zone", -- Round Up
@@ -2649,8 +2662,8 @@ function ZA_UpdateData()
 			-- Dragonflight
 			-- 10.2
 			[426676] = 120, -- Pip's Emerald Friendship Badge (Aerwynn)
-			[426676] = 120, -- Pip's Emerald Friendship Badge (Pip)
-			[426676] = 120, -- Pip's Emerald Friendship Badge (Urctos)
+			[426647] = 120, -- Pip's Emerald Friendship Badge (Pip)
+			[426672] = 120, -- Pip's Emerald Friendship Badge (Urctos)
 			[424141] = 120, -- Ori's Verdant Feather
 			[424107] = 4, -- Root of Fire
 			[423906] = 120, -- Dancing Dream Blossoms
@@ -3003,6 +3016,32 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[314151] = 320, -- Imbue
+			[312818] = 320, -- Fragmentation
+			[312854] = 320, -- Concentric Reverberations
+			[265654] = 325, -- Negation Gasp
+			[246317] = 320, -- Negation Blade
+			[314518] = 320, -- Negation Smash
+			[316609] = 33, -- Skull Breaker
+			[292828] = 320, -- Infusion of Shadows
+			[313363] = 33, -- Tentacle Slam
+			[275362] = 204, -- Resonant Pillar
+			[275360] = 204, -- Resonant Pillar
+			[275435] = 204, -- Azerite Lance
+			[431905] = 36, -- Incarnate
+			[421831] = 36, -- Incarnate
+			[412761] = 36, -- Incarnate
+			[421830] = 36, -- Incarnate
+			[417455] = 36, -- Dream Rend
+			[419161] = 36, -- Dream Rend
+			[419217] = 36, -- Dream Rend
+			[420644] = 36, -- Dream Rend
+			[425481] = 36, -- Dream Rend
+			[428956] = 36, -- Dream Rend
+			[428957] = 36, -- Dream Rend
+			[428958] = 36, -- Dream Rend
+			[429002] = 36, -- Dream Rend
+			[428004] = 8, -- Nourish
 			[425300] = 36, -- Shadowflame Bomb
 			[424771] = 402, -- Burning Wrath
 			[417446] = 36, -- Fyr'alath's Bite
@@ -5435,7 +5474,6 @@ function ZA_UpdateData()
 			["Anchor of Binding"] = 901,
 			["Anchor Shot:1686581"] = 100,
 			["Ancient Aftershock"] = 805,
-			["Ancient Awakening"] = 204,
 			["Ancient Hide"] = 903,
 			["Ancient Hysteria"] = 105,
 			["Ancient Magic"] = 126,
@@ -6996,7 +7034,6 @@ function ZA_UpdateData()
 			["Emotion Expulsion"] = 324,
 			["Emotional Outburst:136158"] = 324,
 			["Emotional Outburst:136184"] = 324,
-			["Empower Ashjra'kamas"] = 660,
 			["Empower Golem"] = 64,
 			["Soulsever"] = 33,
 			["Visions of the Dark Titan"] = 411,
@@ -9075,6 +9112,7 @@ function ZA_UpdateData()
 			["Safe Fall"] = 202,
 			["Safety Bubble"] = 801,
 			["Salt Spray"] = 909,
+			["Salt Blast"] = 909,
 			["Salvaging"] = 100,
 			["Sanctified Mists:3528313"] = 321,
 			["Sanctify"] = 200,
@@ -10874,9 +10912,9 @@ function ZA_UpdateData()
 			[395644] = 811, -- Divine Kiss of Ohn'ahra
 			[385262] = 175, -- Duskwing Ohuna
 			-- Raven
-			[231524] = 141, -- Shadowblade's Baneful Omen
+			[231524] = 139, -- Shadowblade's Baneful Omen
 			[231525] = 142, -- Shadowblade's Crimson Omen
-			[231523] = 910, -- Shadowblade's Lethal Omen
+			[231523] = 33, -- Shadowblade's Lethal Omen
 			[231434] = 323, -- Shadowblade's Murderous Omen
 			-- Pandaren Phoenix
 			[132117] = 802, -- Ashen Pandaren Phoenix
@@ -13829,6 +13867,16 @@ function ZA_UpdateData()
 			[254037] = 415,
 			[425996] = 120,
 			[426327] = 621,
+			[306608] = 204,
+			[307733] = 204,
+			[305151] = 100,
+			[310141] = 202,
+			[315195] = 204,
+			[301981] = 202,
+			[316797] = 646,
+			[312881] = 100,
+			[317910] = 281,
+			[307026] = 660, -- Empower Ashjra'kamas
 			--qqq
 
 
@@ -23304,7 +23352,6 @@ function ZA_UpdateData()
 			["Studying"] = 0,
 			["Dreamwalk"] = 1396974,
 			["Holographic Digitalization Hearthstone"] = 413583,
-			["Empower Ashjra'kamas"] = 132886,
 			["Tormenting Haunt"] = 236298,
 			["Chi Torpedo"] = 607849,
 			["Dance of Chi-Ji"] = 606543,
@@ -24409,6 +24456,16 @@ function ZA_UpdateData()
 			[200214] = 134291,
 			[253223] = 0,
 			[254037] = 0,
+			[306608] = 0,
+			[307733] = 0,
+			[305151] = 0,
+			[310141] = 0,
+			[315195] = 0,
+			[301981] = 0,
+			[316797] = 0,
+			[312881] = 0,
+			[317910] = 0,
+			[307026] = 530999, -- Empower Ashjra'kamas
 			--qqi
 
 
