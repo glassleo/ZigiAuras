@@ -586,6 +586,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[430265] = "Teleport: Gilneas",
 			[220746] = "Teleport: Ravenholdt Manor",
 			[248906] = "Lightforged Beacon", -- Flight Master's Whistle (Argus)
 			[410137] = "Teleport: Stormwind", -- Lost Dragonscale (Alliance)
@@ -928,6 +929,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Reaves"] = 141,
 			["Lightforged Battery"] = 200,
 			["Green Dragon"] = 170,
 			["Yvelyn"] = 170,
@@ -1171,12 +1173,18 @@ function ZA_UpdateData()
 
 		ZA.Trinkets = {
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
+			
+			-- Racial
+			[274739] = "Laughing Skull: Critical Strike",
+			[274740] = "Burning Blade: Haste",
+			[274741] = "Frostwolf: Mastery",
+			[274742] = "Blackrock: Versatility",
 
 			-- Dragonflight
 			-- 10.2
-			[426676] = "Best Friends with Aerwynn: Critical Strike", -- Pip's Emerald Friendship Badge
-			[426647] = "Best Friends with Pip: Mastery", -- Pip's Emerald Friendship Badge
-			[426672] = "Best Friends with Urctos: Versatility", -- Pip's Emerald Friendship Badge
+			[426676] = "Aerwynn: Critical Strike", -- Pip's Emerald Friendship Badge
+			[426647] = "Pip: Mastery", -- Pip's Emerald Friendship Badge
+			[426672] = "Urctos: Versatility", -- Pip's Emerald Friendship Badge
 			[424141] = "Ori's Verdant Feather: Agility", -- Ori's Verdant Feather
 			[424107] = "Root of Fire: Strength", -- Root of Fire
 			[423906] = "Dancing Dream Blossoms", -- Dancing Dream Blossoms
@@ -1949,6 +1957,8 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[429461] = "State", -- The Search for Knowledge!
+			[74920]  = "State", -- Climbing Tree
 			[291295] = "State", -- Mind Protected
 			[289298] = "State", -- Restoring Sanity
 			[425479] = "State", -- Dream's Blessing
@@ -2130,6 +2140,19 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[409319] = "Zone", -- Observation Mode
+			[431142] = "Zone", -- Scrying Mode
+			[414539] = "Zone", -- Technoscryers
+			[417726] = "Zone", -- Technoscryers
+			[431477] = "Zone", -- Flame
+			[431476] = "Zone", -- Shadow
+			[431470] = "Zone", -- Fel
+			[97890]  = "Zone", -- Protecting Elderlimb
+			[98613]  = "Zone", -- Protecting Thisalee
+			[98614]  = "Zone", -- Protecting Tholo and Anren
+			[76119]  = "Zone", -- Carrying a Bear
+			[74663]  = "Zone", -- Leading a Fawn
+			[201979] = "Zone", -- Headgun Goggles
 			[315845] = "Zone", -- Sluggish Potion
 			[315849] = "Zone", -- Sickening Potion
 			[315817] = "Zone", -- Spicy Potion
@@ -2658,6 +2681,11 @@ function ZA_UpdateData()
 		ZA.Spells = {
 			--! Trinkets
 			[341260] = 200, -- Burst of Knowledge (Heirloom Set Bonus)
+			-- Racial
+			[274739] = 720, -- Rictus of the Laughing Skull
+			[274740] = 720, -- Zeal of the Burning Blade
+			[274741] = 720, -- Ferocity of the Frostwolf
+			[274742] = 720, -- Might of the Blackrock
 
 			-- Dragonflight
 			-- 10.2
@@ -3016,6 +3044,54 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[430503] = 36, -- Shadowflame Vomit
+			[427203] = 811, -- Vigorous Winds
+			[427200] = 811, -- Vigorous Winds
+			[427189] = 900, -- Shell Spin
+			[427182] = 101, -- Bloody Pounce
+			[427175] = 101, -- Bloody Pounce
+			[427169] = 120, -- Shapeshift: Snapper
+			[427159] = 120, -- Shapeshift: Sabertooth
+			[427162] = 120, -- Shapeshift: Ohuna
+			[430265] = 646, -- Teleport: Gilneas (Tess's Peacebloom)
+			[429116] = 200, -- Channel Power
+			[430548] = 200, -- Zealous Purification
+			[430248] = 200, -- Zealous Purification
+			[430247] = 200, -- Zealous Purification
+			[430291] = 6, -- Burning Purification
+			[430292] = 6, -- Burning Purification
+			[277195] = 6, -- Radiant Nova
+			[430218] = 6, -- Radiant Nova
+			[430476] = 6, -- Wake of Ashes
+			[7978] = 5, -- Throw Dynamite
+			[217744] = 5, -- Throw Dynamite
+			[133895] = 5, -- Throw Dynamite
+			[133213] = 5, -- Throw Dynamite
+			[148138] = 5, -- Throw Dynamite
+			[40062] = 5, -- Throw Dynamite
+			[40064] = 5, -- Throw Dynamite
+			[263221] = 5, -- Throw Dynamite
+			[289071] = 5, -- Throw Dynamite
+			[107115] = 5, -- Throw Dynamite
+			[279185] = 5, -- Throw Dynamite
+			[213978] = 5, -- Throw Dynamite
+			[195393] = 5, -- Throw Dynamite
+			[35276] = 5, -- Throw Dynamite
+			[196157] = 5, -- Throw Dynamite
+			[311819] = 5, -- Throw Dynamite
+			[194951] = 5, -- Throw Dynamite
+			[279615] = 5, -- Throw Dynamite
+			[214739] = 5, -- Throw Dynamite
+			[65128] = 5, -- Throw Dynamite
+			[86088] = 5, -- Throw Dynamite
+			[390927] = 5, -- Throw Dynamite
+			[390926] = 5, -- Throw Dynamite
+			[29579] = 5, -- Throw Dynamite
+			[279199] = 100, -- Wrenching Smack
+			[425115] = 900, -- Fruit Toss
+			[425117] = 900, -- Seed Barrage
+			[373573] = 805, -- Pixie Dust
+			[193491] = 911, -- Tempest Attunement
 			[314151] = 320, -- Imbue
 			[312818] = 320, -- Fragmentation
 			[312854] = 320, -- Concentric Reverberations
@@ -6384,6 +6460,7 @@ function ZA_UpdateData()
 			["Crimson Chorus:3528307"] = 321,
 			["Crimson Scourge"] = 321,
 			["Crimson Tempest"] = 321,
+			[121411] = 321, -- Crimson Tempest
 			["Crimson Vial"] = 321,
 			["Cripple"] = 328,
 			["Crippler"] = 112,
@@ -8503,6 +8580,7 @@ function ZA_UpdateData()
 			["Open Vision"] = 320,
 			["Opening Shredder Crate"] = 100,
 			["Opening"] = 100,
+			["Retrieving..."] = 100,
 			["Closing"] = 100,
 			["Opportunity Strikes:132308"] = 117,
 			["Opportunity"] = 112,
@@ -10492,6 +10570,7 @@ function ZA_UpdateData()
 			["Wavebreaker"] = 901,
 			["Waygate Transfer"] = 3,
 			["Weakened Soul:135871"] = 999,
+			[387184] = 201, -- Weapons of Order
 			["Weapons of Order"] = 201,
 			["Weapons of Order:642415"] = "Chi",
 			["Weary Soul:3528307"] = 321,
@@ -10716,6 +10795,7 @@ function ZA_UpdateData()
 			[309005] = 201, -- Anima Bomb
 			[309749] = 326, -- Dispel Disguise (Maldraxxus)
 			[312106] = 80, -- Weapons of Order (Debuff)
+			[387179] = 80, -- Weapons of Order (Debuff)
 			[317231] = 326, -- Crushing Slam
 			[318879] = 321, -- Summon Guardian (Revendreth)
 			[319294] = 326, -- Spirit Bolt (Exile's Reach)
@@ -11225,6 +11305,7 @@ function ZA_UpdateData()
 			[201098] = 642, -- Infinite Timereaver
 			[377071] = 4, -- Crimson Gladiator's Drake
 			-- Slitherdrake
+			[418286] = 8, -- Auspicious Arborwyrm
 			[368893] = 175, -- Winding Slitherdrake
 			[408977] = 36, -- Obsidian Gladiator's Slitherdrake
 			[425416] = 120, -- Verdant Gladiator's Slitherdrake
@@ -11370,6 +11451,7 @@ function ZA_UpdateData()
 			[61309]  = 68, -- Magnificent Flying Carpet
 
 			--! Fox
+			[430225] = 812, -- Gilnean Prowler
 			[171850] = 817, -- Llothien Prowler
 			[242896] = 155, -- Vicious War Fox (Alliance)
 			[242897] = 154, -- Vicious War Fox (Horde)
@@ -11530,6 +11612,7 @@ function ZA_UpdateData()
 			[92231]  = 720, -- Spectral Steed
 			[339588] = 321, -- Sinrunner Blanchy
 			[142073] = 201, -- Hearthsteed
+			[278966] = 402, -- Fiery Hearthsteed
 			[278966] = 402, -- Tempestuous Skystallion
 			[171847] = 4, -- Cindermane Charger
 			[163024] = 412, -- Warforged Nightmare
@@ -11630,6 +11713,7 @@ function ZA_UpdateData()
 			[344574] = 410, -- Bulbous Necroray
 			[344576] = 40, -- Infested Necroray
 			[344575] = 40, -- Pestilent Necroray
+			[427777] = 661, -- Heartseeker Mana Ray
 			-- Shalewing
 			[427549] = 120, -- Imagiwing
 			[408655] = 809, -- Morsel Sniffer
@@ -11928,7 +12012,7 @@ function ZA_UpdateData()
 			--! Seeker
 			[229377] = ZA.Specialization(4, 201, 200, 320), -- High Priest's Lightsworn Seeker
 
-			--! Serpent  ! Wyrm
+			--! Serpent  ! Worm
 			-- Fathom Serpent
 			[232519] = 135, -- Abyss Worm
 			[275623] = 321, -- Nazjatar Blood Serpent
@@ -12109,6 +12193,7 @@ function ZA_UpdateData()
 			[101573] = 135, -- Swift Shorestrider
 			[102349] = 159, -- Swift Springstrider
 			-- Hornstrider
+			[432610] = 117, -- Clayscale Hornstrider
 			[352926] = 814, -- Skyskin Hornstrider
 
 			--! Talon Bird
@@ -12128,6 +12213,7 @@ function ZA_UpdateData()
 			[332455] = 415, -- War-Bred Tauralus
 
 			-- Thunder Lizard
+			[374204] = 153, -- Lizi, Thunderspine Trampler
 			[374247] = 154, -- Lizi, Thunderspine Trampler
 
 			--! Tome
@@ -12136,6 +12222,7 @@ function ZA_UpdateData()
 			--! Turtle
 			[227956] = 12, -- Arcadian War Turtle
 			[367826] = 170, -- Savage Green Battle Turtle
+			[433281] = 134, -- Savage Blue Battle Turtle
 			-- Dragon Turtle
 			[127286] = 157, -- Black Dragon Turtle
 			[127287] = 171, -- Blue Dragon Turtle
@@ -12685,7 +12772,7 @@ function ZA_UpdateData()
 			[69230] = 18,
 			[69217] = 100,
 			[76241] = 5,
-			[74793] = 4,
+			[74793] = 402,
 			[74475] = 640,
 			[76724] = 8,
 			[76759] = 111,
@@ -13877,6 +13964,48 @@ function ZA_UpdateData()
 			[312881] = 100,
 			[317910] = 281,
 			[307026] = 660, -- Empower Ashjra'kamas
+			[425023] = 120, -- Restored Dreamleaf
+			[75570]  = 100,
+			[75535]  = 101,
+			[77394]  = 4,
+			[430348] = 80,
+			[430506] = 80,
+			[427075] = 660,
+			[425867] = 28,
+			[417729] = 100,
+			[431142] = 646,
+			[409668] = 646,
+			[417278] = 100,
+			[409319] = 646,
+			[432613] = 804,
+			[408850] = 100,
+			[409516] = 100,
+			[412910] = 646,
+			[414034] = 646,
+			[409190] = 28,
+			[417012] = 646,
+			[433080] = 100,
+			[422072] = 100,
+			[434634] = 100,
+			[421669] = 100,
+			[396500] = 100,
+			[433077] = 401,
+			[433076] = 401,
+			[433083] = 401,
+			[433081] = 401,
+			[418593] = 641,
+			[432954] = 401,
+			[433456] = 401,
+			[433469] = 401,
+			[433468] = 401,
+			[433467] = 401,
+			[433451] = 401,
+			[433452] = 401,
+			[433533] = 401,
+			[433535] = 401,
+			[433532] = 401,
+			[433534] = 401,
+			[421553] = 646,
 			--qqq
 
 
@@ -23298,6 +23427,7 @@ function ZA_UpdateData()
 			--§ Minor
 			["Administer Cure-all"] = 0,
 			["Attacking"] = 0,
+			["Retrieving..."] = 0,
 			["Opening"] = 0,
 			["Small Talk"] = 0,
 			["Pick Up"] = 0,
@@ -24466,6 +24596,27 @@ function ZA_UpdateData()
 			[312881] = 0,
 			[317910] = 0,
 			[307026] = 530999, -- Empower Ashjra'kamas
+			[74793]  = 135139,
+			[75570]  = 0,
+			[77394]  = 0,
+			[425867] = 0,
+			[417729] = 0,
+			[431142] = 0,
+			[409668] = 0,
+			[417278] = 0,
+			[409319] = 0,
+			[432613] = 0,
+			[408850] = 0,
+			[409516] = 0,
+			[412910] = 0,
+			[414034] = 0,
+			[417012] = 0,
+			[433080] = 0,
+			[422072] = 0,
+			[434634] = 0,
+			[421669] = 0,
+			[396500] = 0,
+			[421553] = 0,
 			--qqi
 
 
@@ -24498,6 +24649,7 @@ function ZA_UpdateData()
 			[324031] = "Interface/AddOns/Media_Newsom/Icons/WormholeShadowlands", -- Wormhole: Shadowlands
 			[386379] = "Interface/AddOns/Media_Newsom/Icons/WormholeDragonIsles", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
 			[220746] = "Interface/AddOns/Media_Newsom/Icons/TeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
+			[430265] = "Interface/AddOns/Media_Newsom/Icons/TeleportGilneas", -- Teleport: Gilneas
 			[390783] = "Interface/AddOns/Media_Newsom/Icons/TeleportAylaagCamp", -- Teleport: Ravenholdt Manor
 			[71436] = "Interface/AddOns/Media_Newsom/Icons/TeleportBootyBay", -- Teleport: Booty Bay (Boots of the Bay)
 			[231054] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan", -- Teleport: Karazhan
