@@ -2140,6 +2140,9 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[401444] = "Zone", -- Charged Up
+			[401272] = "Zone", -- Strength of the Brood
+			[388343] = "Zone", -- Twilight Aegis
 			[409319] = "Zone", -- Observation Mode
 			[431142] = "Zone", -- Scrying Mode
 			[414539] = "Zone", -- Technoscryers
@@ -2433,17 +2436,17 @@ function ZA_UpdateData()
 			[348542] = "Zone", -- Refilling Elixir of Life
 			[384256] = "Zone", -- Magma Pot
 			[384998] = "Zone", -- Good Soup
-			[255114] = "Zone", -- Wanderer's Endurance
-			[248694] = "Zone", -- Song of the Sea
-			[264666] = "Zone", -- Heart of the Woods
-			[248667] = "Zone", -- Light's Zeal
-			[264170] = "Zone", -- Burned Soul
-			[255012] = "Zone", -- Siltherskin
-			[243818] = "Zone", -- Primal Rage
-			[254824] = "Zone", -- Devouring Souls
-			[264676] = "Zone", -- Fireseeker
-			[264652] = "Zone", -- Unleashed Light
-			[255046] = "Zone", -- Moon Frenzy
+			[255114] = "State", -- Wanderer's Endurance
+			[248694] = "State", -- Song of the Sea
+			[264666] = "State", -- Heart of the Woods
+			[248667] = "State", -- Light's Zeal
+			[264170] = "State", -- Burned Soul
+			[255012] = "State", -- Siltherskin
+			[243818] = "State", -- Primal Rage
+			[254824] = "State", -- Devouring Souls
+			[264676] = "State", -- Fireseeker
+			[264652] = "State", -- Unleashed Light
+			[255046] = "State", -- Moon Frenzy
 			[385088] = "Zone", -- Battleforged
 			[386725] = "Zone", -- Beefed Up
 			[344051] = "Zone", -- Chosen Battlearmor
@@ -2541,11 +2544,11 @@ function ZA_UpdateData()
 			[344148] = "Zone", -- Cleansing Formula
 			[346319] = "Zone", -- Lantern of Force
 			[344671] = "Zone", -- Flask of Unravelling
-			[268499] = "Zone", -- Pickaxe
-			[266117] = "Zone", -- Extra-Hot Torch
-			[266066] = "Zone", -- Shovel
-			[268500] = "Zone", -- Runestone
-			[282796] = "Zone", -- Volatile Cure-All
+			[268499] = "State", -- Pickaxe
+			[266117] = "State", -- Extra-Hot Torch
+			[266066] = "State", -- Shovel
+			[268500] = "State", -- Runestone
+			[282796] = "State", -- Volatile Cure-All
 			[298761] = "Zone", -- Azerite Energy
 			[303952] = true, -- Reinforced
 			[303924] = true, -- Greased
@@ -3032,18 +3035,73 @@ function ZA_UpdateData()
 			[28866] = 816, -- Kiss of the Spider
 			[29506] = 202, -- The Burrower's Shell
 			[29604] = 117, -- Jom Gabbar
-			[4079] = 720, -- Gnomish Cloaking Device
+			[4079]  = 720, -- Gnomish Cloaking Device
 			[50708] = 117, -- Devilsaur Tooth
 			[84212] = 115, -- Glyph of Deflection
 
 			-- Threat Reduction Trinkets
 			[298721] = 323, -- Twilight Powder
 			[290031] = 323, -- Gloaming Powder
-			[28862] = 323, -- The Eye of Diminution
-			[26400] = 323, -- Arcane Shroud
+			[28862]  = 323, -- The Eye of Diminution
+			[26400]  = 323, -- Arcane Shroud
 
 
 			--! Spell
+			[408558] = 323, -- Phase Shift
+			[222201] = 201, -- Spirit Healer's Reprieve
+			[391889] = 10, -- Adaptive Swarm (Debuff)
+			[391891] = 10, -- Adaptive Swarm (Buff)
+			[385408] = 8, -- Sepsis
+			[391528] = 640, -- Convoke the Spirit
+			[376103] = 72, -- Radiant Spark
+			[382440] = "Essence", -- Shifting Power
+			[375893] = 646, -- Death Chakram
+			[388193] = 120, -- Jadefire Stomp
+			["Jadefire Stomp"] = 120,
+			[375986] = 28, -- Primordial Wave
+			[422964] = 400, -- Outburst
+			[405236] = 62, -- Harmonic Music Stone
+			[302864] = 204, -- Ripple in Space
+			[309807] = 109, -- Jade Spit
+			[310121] = 800, -- Capacitant Bolt
+			[307303] = 800, -- Capacitant Bolt
+			[287952] = 646, -- Wormhole Generator
+			[289537] = 646, -- World Enlarger
+			[288041] = 646, -- World Enlarger
+			[286693] = 646, -- World Enlarger
+			[287929] = 5, -- Signal Exploding Sheep
+			[287114] = 646, -- Miscalculated Teleport
+			[286051] = 104, -- Hyperdrive
+			[287757] = 800, -- Gigavolt Charge
+			[286646] = 800, -- Gigavolt Charge
+			[286597] = 800, -- Gigavolt Charge
+			[287751] = 5, -- Evasive Maneuvers!
+			[289696] = 9, -- Electroshock Strikes
+			[289699] = 9, -- Electroshock Amplification
+			[287167] = 646, -- Discombobulation
+			[288410] = 100, -- Deploy Spark Bot
+			[287691] = 100, -- Deploy Spark Bot
+			[287797] = 900, -- Crash Down
+			[282245] = 900, -- Crash Down
+			[282182] = 100, -- Buster Cannon
+			[282153] = 100, -- Buster Cannon
+			[282205] = 5, -- Blast Off
+			[282408] = 100, -- Spark Pulse
+			[289233] = 100, -- Spark Pulse
+			[289226] = 100, -- Spark Pulse
+			[289228] = 100, -- Spark Pulse
+			[289232] = 100, -- Spark Pulse
+			[282406] = 100, -- Spark Pulse
+			[282408] = 100, -- Spark Pulse
+			[289859] = 104, -- Locked and Loaded
+			[289742] = 100, -- Defense Field
+			[271731] = 5, -- Rocket Barrage
+			[289737] = 100, -- Defense Field Generator
+			[286389] = 109, -- Spear Dive
+			[289937] = 800, -- Thundering Slam
+			[286026] = 130, -- Channel Gold
+			[290045] = 107, -- Spear Swipe
+			[239781] = 323, -- Essence Blast
 			[430503] = 36, -- Shadowflame Vomit
 			[427203] = 811, -- Vigorous Winds
 			[427200] = 811, -- Vigorous Winds
@@ -4394,7 +4452,7 @@ function ZA_UpdateData()
 			["Arc Weld"] = 72,
 			["Earth-Warder's Vault Chain"] = 100,
 			[171982] = 32, -- Demonic Synergy
-			[387157] = 361, -- Ritual of Ruin
+			[387157] = 36, -- Ritual of Ruin
 			["Blasphemy"] = 36,
 			[387154] = 12, -- Burn to Ashes
 			["Lava Toss"] = 12,
@@ -5172,7 +5230,7 @@ function ZA_UpdateData()
 			["Shock Blast"] = 800,
 			["Void Rip"] = 10,
 			["Call of the Wild"] = 10,
-			["Arcane Surge"] = 72,
+			["Arcane Surge"] = 126,
 			["Thistle Tea"] = 900,
 			["Eternity Bolt:1392546"] = 321,
 			["Val'kyr Strike:298674"] = 32,
@@ -9671,6 +9729,8 @@ function ZA_UpdateData()
 			["Spatial Rift"] = 320,
 			["Spawn Waterlings"] = 801,
 			["Spear of Anguish"] = 806,
+			[376079] = 106, -- Champion's Spear
+			["Champion's Spear"] = 106,
 			["Spear of Bastion"] = 201,
 			["Spectral Bolt Volley"] = 326,
 			["Spectral Bolt"] = 326,
@@ -10570,7 +10630,7 @@ function ZA_UpdateData()
 			["Wavebreaker"] = 901,
 			["Waygate Transfer"] = 3,
 			["Weakened Soul:135871"] = 999,
-			[387184] = 201, -- Weapons of Order
+			[387184] = 807, -- Weapons of Order
 			["Weapons of Order"] = 201,
 			["Weapons of Order:642415"] = "Chi",
 			["Weary Soul:3528307"] = 321,
@@ -10794,8 +10854,8 @@ function ZA_UpdateData()
 			[306828] = 320, -- Defiled Ground (Visions of N'Zoth - Thrall)
 			[309005] = 201, -- Anima Bomb
 			[309749] = 326, -- Dispel Disguise (Maldraxxus)
-			[312106] = 80, -- Weapons of Order (Debuff)
-			[387179] = 80, -- Weapons of Order (Debuff)
+			[312106] = 120, -- Weapons of Order (Debuff)
+			[387179] = 120, -- Weapons of Order (Debuff)
 			[317231] = 326, -- Crushing Slam
 			[318879] = 321, -- Summon Guardian (Revendreth)
 			[319294] = 326, -- Spirit Bolt (Exile's Reach)
@@ -12363,6 +12423,9 @@ function ZA_UpdateData()
 			[171848] = 24, -- Challenger's War Yeti
 			[279467] = 173, -- Craghorn Chasm-Leaper
 			[191314] = 156, -- Minion of Grumpus
+
+			--! Soar
+			[369536] = 811,
 
 			-------
 
@@ -14006,6 +14069,10 @@ function ZA_UpdateData()
 			[433532] = 401,
 			[433534] = 401,
 			[421553] = 646,
+			[273700] = 801,
+			[316389] = 116,
+			[422154] = 909,
+			[418709] = 646,
 			--qqq
 
 
@@ -23500,6 +23567,7 @@ function ZA_UpdateData()
 			[107845] = 574626, -- Life-Binder's Handmaiden
 			[107844] = 574626, -- Twilight Harbinger
 			[59996] = 294032, -- Blue Proto-Drake
+			[369536] = 0, -- Soar
 
 
 			--§ Quest
@@ -24617,6 +24685,11 @@ function ZA_UpdateData()
 			[421669] = 0,
 			[396500] = 0,
 			[421553] = 0,
+			[273700] = 0,
+			[316389] = 0,
+			[426430] = 0, -- Project into the Dream
+			[422154] = 0,
+			[418709] = 0,
 			--qqi
 
 
@@ -24728,6 +24801,10 @@ function ZA_UpdateData()
 
 
 			--§ Spells
+			[382440] = 1033914, -- Shifting Power
+			[388193] = 628675, -- Jadefire Stomp
+			["Jadefire Stomp"] = 628675,
+			[375986] = 4630359, -- Primordial Wave
 			[370748] = 0, -- Reclaim Concoctions
 			["Disenchanting"] = 0,
 			["Disenchant"] = 0,
@@ -25093,20 +25170,20 @@ function ZA_UpdateData()
 				colors[#colors+1] = 642 -- Infinite
 
 				local transforms = {
-					[2] = 140, -- Storm-Eater
-					[3] = 4, -- Blazing
-					[4] = 36, -- Shadowflame
+					[2] = 4, -- Blazing
+					[3] = 36, -- Shadowflame
+					[4] = 140, -- Storm-Eater
 				}
 				
 				local icons = {
-					[2] = 4630364, -- Storm-Eater
-					[3] = 5319138, -- Blazing
-					[4] = 5319139, -- Shadowflame
+					[2] = 5319138, -- Blazing
+					[3] = 5319139, -- Shadowflame
+					[4] = 4630364, -- Storm-Eater
 				}
 				local names = {
-					[2] = "Storm-Eater Proto-Drake",
-					[3] = "Blazing Proto-Drake",
-					[4] = "Shadowflame Proto-Drake",
+					[2] = "Blazing Proto-Drake",
+					[3] = "Shadowflame Proto-Drake",
+					[4] = "Storm-Eater Proto-Drake",
 				}
 
 				ZA.Spells[id] = transforms[transform] or colors[color]
