@@ -2192,6 +2192,14 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[304853] = "Zone", -- Singular Sanity Expertise
+			[305381] = "Zone", -- Experimental Destabilization
+			[314087] = "Zone", -- Enriched
+			[424596] = "Zone", -- Wild Roots
+			[418810] = "Zone", -- Dreamsurge Lone Wolves
+			[398866] = "Zone", -- Zethgos is Near
+			[432494] = "Zone", -- Duck Disguise
+			[377836] = "Zone", -- Boon of the Great Sea
 			[423792] = "Zone", -- Tyr's Favor
 			[419079] = "Zone", -- Dreamsurge Defenders
 			[416191] = "Zone", -- Carry Abomination Chunk
@@ -3111,6 +3119,26 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[397394] = 800, -- Deadly Thunder
+			[203346] = 36, -- Shadowflame Nova
+			[169035] = 36, -- Shadowflame Nova
+			[169036] = 36, -- Shadowflame Nova
+			[222576] = 36, -- Shadowflame Nova
+			[222575] = 36, -- Shadowflame Nova
+			[341624] = 141, -- The Countess's Parasol
+			[341682] = 33, -- Weathered Purple Parasol
+			[341678] = 910, -- Stylish Black Parasol
+			[431949] = 153, -- Delicate Silk Parasol
+			[431994] = 888, -- Delicate Jade Parasol
+			[432001] = 819, -- Delicate Ebony Parasol
+			[431998] = 818, -- Delicate Crimson Parasol
+			[434288] = 801, -- Rain Storm
+			[434289] = 801, -- Rain Storm
+			[434268] = 801, -- Quack Splash
+			[434269] = 801, -- Quack Splash
+			[420528] = 402, -- Brimming Blaze
+			[420533] = 402, -- Brimming Blaze
+			[420509] = 402, -- Brimming Blaze
 			[412455] = 34, -- Arcane Drill
 			[423775] = 120, -- Somnolent Mist
 			[422686] = 120, -- Somnolent Mist
@@ -3894,7 +3922,7 @@ function ZA_UpdateData()
 			[407315] = 4, -- Embers
 			[407535] = 100, -- Deploy Goblin Sappers
 			[418684] = 100, -- Deploy Dwarven Bombers
-			[417011] = 4, -- Holy Light
+			[417011] = 2, -- Holy Light
 			[407891] = 801, -- Healing Wave
 			[416999] = 6, -- Consecration
 			[417002] = 6, -- Consecration
@@ -14650,6 +14678,14 @@ function ZA_UpdateData()
 			[398965] = 202,
 			[415149] = 100,
 			[415152] = 100,
+			[398862] = 202,
+			[415167] = 114,
+			[398989] = 202,
+			[415182] = 202,
+			[305118] = 200, -- Synchronized Mind Stabilizer
+			[399242] = 801,
+			[400115] = 114,
+			[169833] = 801,
 			--qqq
 
 
@@ -25455,6 +25491,14 @@ function ZA_UpdateData()
 			[398965] = 0,
 			[415149] = 0,
 			[415152] = 0,
+			[398862] = 0,
+			[415167] = 0,
+			[398989] = 0,
+			[415182] = 0,
+			[305118] = 0, -- Synchronized Mind Stabilizer
+			[400061] = 114,
+			[400115] = 1505954,
+			[169833] = 0,
 			--qqi
 
 
