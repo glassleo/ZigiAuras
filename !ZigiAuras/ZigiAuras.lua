@@ -1240,6 +1240,7 @@ function ZA_UpdateData()
 			[422750] = "Shadowflame Rage", -- Fyrakk's Tainted Rageheart
 			[426553] = "Annihilating Flame", -- Augury of the Primal Flame
 			-- 10.0-10.1.5
+			[408835] = "Seething Rage", -- Djaruun, Pillar of the Elder Flame
 			[406485] = "Encouraging Friend", -- Friendship Censer
 			[414976] = "Rage of Azzinoth: Haste", -- Paracausal Fragment of Azzinoth
 			[402897] = "Igneous Fury: Critical Strike", -- Igneous Flowstone
@@ -2829,6 +2830,7 @@ function ZA_UpdateData()
 			[422750] = 36, -- Fyrakk's Tainted Rageheart (Shadowflame Rage)
 			[426553] = 36, -- Augury of the Primal Flame
 			-- 10.0-10.1.5
+			[408835] = 12, -- Djaruun, Pillar of the Elder Flame
 			[401238] = 36, -- Ward of Writhing Ire
 			[406485] = 200, -- Friendship Censer
 			[417069] = 999, -- Prophetic Stonescale (debuff)
@@ -2838,7 +2840,6 @@ function ZA_UpdateData()
 			[414976] = 401, -- Paracausal Fragment of Azzinoth
 			[402897] = 12, -- Igneous Flowstone
 			[417939] = 200, -- Echoing Tyrstone
-			[401238] = 36, -- Ward of Faceless Ire
 			[414873] = 400, -- Paracausal Fragment of Val'anyr
 			[400986] = 142, -- Enduring Dreadplate
 			[417534] = 642, -- Time-Thief's Gambit
@@ -3160,6 +3161,90 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[376727] = 911, -- Siphon Power
+			[376724] = 800, -- Crackling Shield
+			[385490] = 911, -- The Raging Tempest
+			[384761] = 911, -- Wind Burst
+			[384686] = 800, -- Energy Surge
+			[391967] = 800, -- Electrical Overload
+			[384186] = 800, -- Lightning Strike
+			[384620] = 911, -- Electrical Storm
+			[394875] = 800, -- Surge of Power
+			[382630] = 800, -- Uncontrollable Energy
+			[386490] = 100, -- Dismantle
+			[386530] = 100, -- Dragonkiller Lance
+			[388817] = 803, -- Shards of Stone
+			[385916] = 400, -- Tectonic Stomp
+			[388283] = 400, -- Eruption
+			[376827] = 800, -- Conductive Strike
+			[376899] = 911, -- Crackling Cloud
+			[376829] = 9, -- Thunder Strike
+			[376892] = 9, -- Crackling Upheaval
+			[376864] = 9, -- Static Spear
+			[376737] = 800, -- Lightning
+			[376730] = 911, -- Stormwinds
+			[376725] = 800, -- Storm Bolt
+			[375929] = 112, -- Savage Strike
+			[375937] = 102, -- Rending Strike
+			[393421] = 400, -- Quake
+			[375943] = 400, -- Upheaval
+			[376683] = 903, -- Iron Stampede
+			[376634] = 903, -- Iron Spear
+			[382277] = 104, -- Vehement Charge
+			[382267] = 104, -- Vehement Charge
+			[372147] = 903, -- Ravaging Spear
+			[382233] = 903, -- Broad Stomp
+			[382233] = 903, -- Broad Stomp
+			[373395] = 327, -- Bloodcurdling Shout
+			[383067] = 104, -- Raging Kin
+			[386411] = 100, -- Quick Shot
+			[384808] = 911, -- Guardian Wind
+			[382670] = 811, -- Gale Arrow
+			[345561] = 720, -- Life Link
+			[392198] = 720, -- Ancestral Bond
+			[395668] = 400, -- Aftershock
+			[385339] = 400, -- Earthsplitter
+			[386063] = 327, -- Frightful Roar
+			[382836] = 112, -- Brutalize
+			[387826] = 112, -- Sundering Slash
+			[395035] = 326, -- Shatter Soul
+			[306982] = 320, -- Annihilation
+			[316368] = 32, -- Wielder of Shadow
+			[316620] = 32, -- Shadow Bolt Volley
+			[316152] = 9, -- Thunder Clapper
+			[316143] = 9, -- Thunder Clap
+			[316141] = 110, -- Mortal Striker
+			[315830] = 110, -- Mortal Strike
+			[315000] = 32, -- Shadow Chisel
+			[314998] = 32, -- Shadow Bolt
+			[315013] = 32, -- Bursting Shadows
+			[315011] = 32, -- Bursting Shadows
+			[314905] = 32, -- Shadow Wounds
+			[314903] = 33, -- Shadow Claws
+			[314909] = 910, -- Obsidian Shatter
+			[314803] = 910, -- Obsidian Skin
+			[311015] = 320, -- Monstrous Eruption
+			[311023] = 320, -- Dread Smash
+			[311019] = 325, -- Weakening Blow
+			[316532] = 327, -- Hideous Transformation
+			[311041] = 327, -- Drive to Madness
+			[311084] = 112, -- Crazed Rush
+			[311086] = 104, -- Enrage
+			[316133] = 104, -- Enrage
+			[311073] = 320, -- Steadfast Defense
+			[311052] = 320, -- Steadfast Defense
+			[316383] = 320, -- Void Slam
+			[316384] = 320, -- Wielder of the Void
+			[318525] = 320, -- Void Burst
+			[311046] = 320, -- Void Bolt Volley
+			[311045] = 320, -- Void Bolt
+			[318409] = 320, -- Discordant Whispers
+			[310842] = 320, -- Shadow Heal
+			[310839] = 320, -- Dirge from Below
+			[310845] = 320, -- Dark Smite
+			[411811] = 908, -- Slime Ejection
+			[411808] = 908, -- Slime Ejection
+			[411813] = 908, -- Slime Ejection
 			[118552] = 809, -- Flesh to Stone
 			[387186] = 643, -- Diminishing Blow
 			[435263] = 641, -- Temporal Echo
@@ -4553,6 +4638,7 @@ function ZA_UpdateData()
 			[412999] = 126, -- Orb of Protection
 			[387614] = 326, -- Chant of the Dead
 			[396376] = 326, -- Chant of the Dead
+			[436841] = 410, -- Rotting Wind
 			[387629] = 410, -- Rotting Wind
 			[387440] = 326, -- Desecrating Roar
 			[35924] = 646, -- Energy Flux
@@ -15085,6 +15171,7 @@ function ZA_UpdateData()
 			[426924] = 16,
 			[426927] = 811,
 			[429137] = 126,
+			[387051] = 202,
 			--qqq
 
 
@@ -25973,6 +26060,8 @@ function ZA_UpdateData()
 			[445313] = 134095,
 			[445310] = 134097,
 			[128873] = 0,
+			[387051] = 0,
+			[386530] = 0,
 			--qqi
 
 
