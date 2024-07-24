@@ -593,30 +593,30 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
-			[387284] = "Vibrant Spellthread " .. ATLAS_QUALITY_1,
-			[387285] = "Vibrant Spellthread " .. ATLAS_QUALITY_2,
-			[387286] = "Vibrant Spellthread " .. ATLAS_QUALITY_3,
-			[387291] = "Frozen Spellthread " .. ATLAS_QUALITY_1,
-			[387293] = "Frozen Spellthread " .. ATLAS_QUALITY_2,
-			[387294] = "Frozen Spellthread " .. ATLAS_QUALITY_3,
-			[387295] = "Temporal Spellthread " .. ATLAS_QUALITY_1,
-			[387296] = "Temporal Spellthread " .. ATLAS_QUALITY_2,
-			[387298] = "Temporal Spellthread " .. ATLAS_QUALITY_3,
-			[376822] = "Fierce Armor Kit " .. ATLAS_QUALITY_1,
-			[376844] = "Fierce Armor Kit " .. ATLAS_QUALITY_2,
-			[376848] = "Fierce Armor Kit " .. ATLAS_QUALITY_3,
-			[406295] = "Lambent Armor Kit " .. ATLAS_QUALITY_1,
-			[406298] = "Lambent Armor Kit " .. ATLAS_QUALITY_2,
-			[406299] = "Lambent Armor Kit " .. ATLAS_QUALITY_3,
-			[376819] = "Frosted Armor Kit " .. ATLAS_QUALITY_1,
-			[376845] = "Frosted Armor Kit " .. ATLAS_QUALITY_2,
-			[376847] = "Frosted Armor Kit " .. ATLAS_QUALITY_3,
-			[376839] = "Reinforced Armor Kit " .. ATLAS_QUALITY_1,
-			[376843] = "Reinforced Armor Kit " .. ATLAS_QUALITY_2,
-			[376849] = "Reinforced Armor Kit " .. ATLAS_QUALITY_3,
-			[411899] = "Shadowed Belt Clasp " .. ATLAS_QUALITY_1,
-			[411898] = "Shadowed Belt Clasp " .. ATLAS_QUALITY_2,
-			[411897] = "Shadowed Belt Clasp " .. ATLAS_QUALITY_3,
+			[387284] = "Vibrant Spellthread",
+			[387285] = "Vibrant Spellthread",
+			[387286] = "Vibrant Spellthread",
+			[387291] = "Frozen Spellthread",
+			[387293] = "Frozen Spellthread",
+			[387294] = "Frozen Spellthread",
+			[387295] = "Temporal Spellthread",
+			[387296] = "Temporal Spellthread",
+			[387298] = "Temporal Spellthread",
+			[376822] = "Fierce Armor Kit",
+			[376844] = "Fierce Armor Kit",
+			[376848] = "Fierce Armor Kit",
+			[406295] = "Lambent Armor Kit",
+			[406298] = "Lambent Armor Kit",
+			[406299] = "Lambent Armor Kit",
+			[376819] = "Frosted Armor Kit",
+			[376845] = "Frosted Armor Kit",
+			[376847] = "Frosted Armor Kit",
+			[376839] = "Reinforced Armor Kit",
+			[376843] = "Reinforced Armor Kit",
+			[376849] = "Reinforced Armor Kit",
+			[411899] = "Shadowed Belt Clasp",
+			[411898] = "Shadowed Belt Clasp",
+			[411897] = "Shadowed Belt Clasp",
 			[430265] = "Teleport: Gilneas",
 			[220746] = "Teleport: Ravenholdt Manor",
 			[248906] = "Lightforged Beacon", -- Flight Master's Whistle (Argus)
@@ -1123,6 +1123,7 @@ function ZA_UpdateData()
 			["The Paraxis"] = 1450455,
 			["Hellfire Cannon"] = 1113440,
 			["Reinforced Hellfire Door"] = 1113443,
+			["Heart of Amirdrassil"] = 5342929,
 		}
 
 
@@ -1216,6 +1217,7 @@ function ZA_UpdateData()
 
 			-- Dragonflight
 			-- 10.2
+			[400986] = "Hellsteel Plating", -- Enduring Dreadplate
 			[426676] = "Aerwynn: Critical Strike", -- Pip's Emerald Friendship Badge
 			[426647] = "Pip: Mastery", -- Pip's Emerald Friendship Badge
 			[426672] = "Urctos: Versatility", -- Pip's Emerald Friendship Badge
@@ -2209,6 +2211,8 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[28704]  = "Zone", -- Netherbloom Pollen
+			[28694]  = "Zone", -- Dreaming Glory
 			[128943] = "Zone", -- Cyclonic Inspiration
 			[127351] = "Zone", -- Master of Puppets
 			[123211] = "Zone", -- Painkiller
@@ -3161,6 +3165,39 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[338085] = 326, -- Necrosis
+			[338085] = 326, -- Necrosis
+			[337982] = 326, -- Necrosis
+			[337131] = 326, -- Deathshades
+			[332646] = 326, -- Blighted Breath
+			[336910] = 415, -- Tail Sweep
+			[393876] = 903, -- Crashing Stomp
+			["Lord Sanguinar"] = 100, -- BigWigs
+			["Thaladred the Darkener"] = 100, -- BigWigs
+			["Grand Astromancer Capernian"] = 100, -- BigWigs
+			["Master Engineer Telonicus"] = 100, -- BigWigs
+			["Adds Revived"] = 100, -- BigWigs
+			[396304] = 410, -- Withering Infection
+			[396303] = 410, -- Withering Infection
+			[373595] = 410, -- Withering Infection
+			[411862] = 806, -- Acidic Bile
+			[412488] = 126, -- Arcane Burst
+			[412488] = 126, -- Arcane Burst
+			[411799] = 96, -- Creeping Ooze
+			[411798] = 96, -- Creeping Ooze
+			[409041] = 908, -- Congealed Mass
+			[409018] = 908, -- Infected Slop
+			[408970] = 403, -- Dragon Bolt
+			[408946] = 403, -- Cleansing Breath
+			[391723] = 4, -- Flame Breath
+			[395292] = 5, -- Fire Maw
+			[392394] = 5, -- Fire Maw
+			[392569] = 12, -- Molten Blood
+			[392395] = 9, -- Thunder Jaw
+			[391726] = 911, -- Storm Breath
+			[392641] = 800, -- Rolling Thunder
+			[392640] = 800, -- Rolling Thunder
+			[375285] = 808, -- Choker of Shielding
 			[376727] = 911, -- Siphon Power
 			[376724] = 800, -- Crackling Shield
 			[385490] = 911, -- The Raging Tempest
@@ -9951,7 +9988,9 @@ function ZA_UpdateData()
 			["Ritual of Bones"] = 411,
 			["Ritual of Decay"] = 326,
 			["Ritual of Destruction"] = 32,
-			["Ritual of Doom"] = 402,
+			[223922] = 327, -- Ritual of Doom
+			[227892] = 327, -- Ritual of Doom
+			[342601] = 327, -- Ritual of Doom
 			["Ritual of Pain:3528301"] = 411,
 			["Ritual of Shadow"] = 32,
 			["Ritual of Summoning"] = 32,
@@ -11883,6 +11922,7 @@ function ZA_UpdateData()
 			[316276] = 173, -- Wastewander Skyterror
 			-- Somnowl
 			[424484] = 4, -- Anu'relos, Flame's Guidance
+			[443660] = 16, -- Charming Courier
 			-- Peafowl
 			[432564] = 721, -- Starry Twilight Peafowl
 			[432562] = 4, -- Brilliant Sunburst Peafowl
@@ -15172,6 +15212,22 @@ function ZA_UpdateData()
 			[426927] = 811,
 			[429137] = 126,
 			[387051] = 202,
+			[440103] = 621,
+			[433800] = 621,
+			[381853] = 100,
+			[385797] = 100,
+			[385795] = 100,
+			[385799] = 100,
+			[431859] = 621,
+			[431867] = 621,
+			[431857] = 621,
+			[387562] = 100,
+			[382134] = 101, -- Elusive Creature Bait
+			[422134] = 909, -- Mining...?
+			[422154] = 909, -- Mining...?
+			[422133] = 909, -- Mining...?
+			[422153] = 909, -- Mining...?
+			[423210] = 909, -- Mining...?
 			--qqq
 
 
@@ -17488,10 +17544,13 @@ function ZA_UpdateData()
 
 			--! Enchanting
 			-- Dragon Isles
+			[429947] = 126, -- Enchanted Aspect's Awakened Crest
+			[429945] = 126, -- Enchanted Wyrm's Awakened Crest
+			[429948] = 126, -- Enchanted Whelpling's Awakened Crest
 			[414989] = 126, -- Enchanted Aspect's Dreaming Crest
 			[414988] = 126, -- Enchanted Wyrm's Dreaming Crest
-			[422338] = 660, -- Shalasar's Sophic Vellum
 			[414985] = 126, -- Enchanted Whelpling's Dreaming Crest
+			[422338] = 660, -- Shalasar's Sophic Vellum
 			[416047] = 126, -- Dreaming Devotion
 			[414946] = 120, -- Illusory Adornment: Dreams
 			[405803] = 126, -- Spore Keeper's Baton
@@ -18819,9 +18878,9 @@ function ZA_UpdateData()
 			[30311] = 100, -- Adamantite Grenade
 			[30337] = 100, -- Crashin' Thrashin' Robot
 			[30568] = 100, -- Gnomish Flame Turret
-			[30344] = 100, -- Green Smoke Flare
-			[32814] = 100, -- Purple Smoke Flare
-			[30341] = 100, -- White Smoke Flare
+			[30344] = 815, -- Green Smoke Flare
+			[32814] = 813, -- Purple Smoke Flare
+			[30341] = 811, -- White Smoke Flare
 			[39971] = 100, -- Icy Blasting Primers
 			[30312] = 100, -- Fel Iron Musket
 			[30551] = 100, -- Healing Potion Injector
@@ -18995,6 +19054,11 @@ function ZA_UpdateData()
 			[3922] = 132, -- Handful of Copper Bolts
 			[3919] = 100, -- Rough Dynamite
 			[3918] = 804, -- Rough Blasting Powder
+
+			--! Herbalism
+			-- Dragon Isles
+			[391088] = 8, -- Refine Herbs - ⬥⬥
+			[391089] = 8, -- Refine Herbs - ⬥⬥⬥
 
 			--! Inscription
 			-- Dragon Isles
@@ -22605,6 +22669,13 @@ function ZA_UpdateData()
 
 
 			--! Mining
+			-- Dragon Isles
+			[383795] = 910, -- Refine Draconium ⬥⬥⬥
+			[383793] = 910, -- Refine Draconium ⬥⬥
+			[383796] = 130, -- Refine Khaz'gorite ⬥⬥⬥
+			[383797] = 130, -- Refine Khaz'gorite ⬥⬥
+			[383792] = 909, -- Refine Serevite ⬥⬥⬥
+			[383649] = 909, -- Refine Serevite ⬥⬥
 			-- Pandaria
 			[102167] = 910, -- Smelt Trillium
 			[102165] = 909, -- Smelt Ghost Iron
@@ -22642,6 +22713,35 @@ function ZA_UpdateData()
 			[2658] = 131, -- Smelt Silver
 			[3304] = 131, -- Smelt Tin
 			[2657] = 132, -- Smelt Copper
+
+
+			--! Skinning
+			-- Dragon Isles
+			[383128] = 281, -- Bottled Pheromones
+			[395282] = 101, -- Curious Hide
+			[395706] = 101, -- Dense Hide
+			[383132] = 101, -- Elusive Creature Bait
+			[377988] = 101, -- Heart in a Bottle
+			[385984] = 40, -- Infusion: Decay
+			[385982] = 803, -- Infusion: Earth
+			[385972] = 16, -- Infusion: Frost
+			[385985] = 200, -- Infusion: Titan
+			[383094] = 101, -- Islefin Dorado Lure
+			[392440] = 101, -- Leather Skinning
+			[395700] = 101, -- Lustrous Scaled Hide
+			[375763] = 155, -- Refine Hides - ⬥⬥⬥
+			[375731] = 155, -- Refine Hides - ⬥⬥
+			[376612] = 116, -- Refine Leather - ⬥⬥⬥
+			[376611] = 116, -- Refine Leather - ⬥⬥
+			[376614] = 119, -- Refine Scales - ⬥⬥⬥
+			[376613] = 119, -- Refine Scales - ⬥⬥
+			[396173] = 415, -- Saturated Bone
+			[392445] = 119, -- Scale Skinning
+			[383090] = 101, -- Aileron Seamoth Lure
+			[375787] = 101, -- Cerulean Spinefish Lure
+			[375773] = 101, -- Scalebelly Mackerel Lure
+			[375786] = 101, -- Temporal Dragonhead Lure
+			[375782] = 101, -- Thousandbite Piranha Lure
 
 			--! Tailoring
 			-- Dragon Isles
@@ -26062,6 +26162,22 @@ function ZA_UpdateData()
 			[128873] = 0,
 			[387051] = 0,
 			[386530] = 0,
+			[440103] = 0,
+			[433800] = 0,
+			[381853] = 0,
+			[385797] = 0,
+			[385795] = 0,
+			[385799] = 0,
+			[431859] = 0,
+			[431867] = 0,
+			[431857] = 0,
+			[387562] = 0,
+			[382134] = 0, -- Elusive Creature Bait
+			[422134] = 0, -- Mining...?
+			[422154] = 0, -- Mining...?
+			[422133] = 0, -- Mining...?
+			[422153] = 0, -- Mining...?
+			[423210] = 0, -- Mining...?
 			--qqi
 
 
@@ -26544,19 +26660,19 @@ function ZA_UpdateData()
 
 				local transforms = {
 					[2] = 4, -- Blazing
-					[3] = 36, -- Shadowflame
-					[4] = 140, -- Storm-Eater
+					[3] = 140, -- Storm-Eater
+					[4] = 36, -- Shadowflame
 				}
 				
 				local icons = {
 					[2] = 5319138, -- Blazing
-					[3] = 5319139, -- Shadowflame
-					[4] = 4630364, -- Storm-Eater
+					[3] = 4630364, -- Storm-Eater
+					[4] = 5319139, -- Shadowflame
 				}
 				local names = {
 					[2] = "Blazing Proto-Drake",
-					[3] = "Shadowflame Proto-Drake",
-					[4] = "Storm-Eater Proto-Drake",
+					[3] = "Storm-Eater Proto-Drake",
+					[4] = "Shadowflame Proto-Drake",
 				}
 
 				ZA.Spells[id] = transforms[transform] or colors[color]
@@ -26598,19 +26714,19 @@ function ZA_UpdateData()
 				colors[#colors+1] = 642 -- Infinite
 
 				local transforms = {
-					[2] = "Insanity", -- Draconic Gladiator
-					[3] = 4, -- Crimson Gladiator
-					[4] = 36, -- Elementium Drake
+					[2] = 36, -- Elementium Drake
+					[3] = "Insanity", -- Draconic Gladiator
+					[4] = 4, -- Crimson Gladiator
 				}
 				local icons = {
-					[2] = 5145984, -- Draconic Gladiator
-					[3] = 4571779, -- Crimson Gladiator
-					[4] = 5015294, -- Elementium Drake
+					[2] = 5015294, -- Elementium Drake
+					[3] = 5145984, -- Draconic Gladiator
+					[4] = 4571779, -- Crimson Gladiator
 				}
 				local names = {
-					[2] = "Draconic Gladiator's Drake",
-					[3] = "Crimson Gladiator's Drake",
-					[4] = "Elementium Drake",
+					[2] = "Elementium Drake",
+					[3] = "Draconic Gladiator's Drake",
+					[4] = "Crimson Gladiator's Drake",
 				}
 
 				ZA.Spells[id] = transforms[transform] or colors[color]
@@ -26684,6 +26800,19 @@ function ZA_UpdateData()
 				ZA.Spells[id] = colors[color] or colors[#colors]
 
 
+				-- Algarian Stormrider
+				local id = 417888
+				local color = ArmyGetKey("AlgarianStormrider") or 1
+
+				local colors = {
+					[1] = 800, -- Cyan
+					[2] = 640, -- Violet
+					[3] = 6, -- Yellow
+					[4] = 68, -- Orange
+				}
+
+
+
 				-- Flourishing Whimsydrake
 				local id = 425338
 				local color = ArmyGetKey("FlourishingWhimsydrake") or 1
@@ -26696,20 +26825,32 @@ function ZA_UpdateData()
 				}
 
 				ZA.Spells[id] = colors[color]
+				ZA.Spells[id] = colors[color]
 
 
-				-- Algarian Stormrider
-				local id = 417888
-				local color = ArmyGetKey("AlgarianStormrider") or 1
+				-- Delver's Dirigible
+				local id = 446052
+				local color = ArmyGetKey("DelversDirigible") or 1
+				local transform = ArmyGetKey("DelversDirigibleTransformation") or 1
 
 				local colors = {
-					[1] = 800, -- Cyan
-					[2] = 640, -- Violet
-					[3] = 6, -- Yellow
-					[4] = 68, -- Orange
+					[1] = 100, -- Blue
+					[2] = 100, -- Brown
+					[3] = 100, -- Green
+					[4] = 100, -- Red
+					[5] = 100, -- White
+					[6] = 100, -- Yellow
 				}
 
-				ZA.Spells[id] = colors[color]
+				local transforms = {
+					[2] = 320, -- Void
+				}
+				local icons = {
+					[2] = 5884218, -- Void
+				}
+
+				ZA.Spells[id] = transforms[transform] or colors[color]
+				ZA.Icons[id] = icons[transform] or nil
 
 
 				-- Summon Felguard
