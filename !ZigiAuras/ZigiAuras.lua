@@ -308,6 +308,8 @@ function ZA_UpdateData()
 			[118] = "a2b7f7", -- Intellect
 			[104] = "ffeb64", -- Alacrity
 			[281] = "c9de57", -- Chemical
+			[143] = "ae9a75", -- Web
+			[144] = "b6571c", -- Honey
 			[282] = "fff6c7", -- Brew
 			[999] = "7d7d66", -- Fatigue
 
@@ -738,6 +740,7 @@ function ZA_UpdateData()
 			[152] = "52c690:b3ffbc", -- Physical Teal
 			[110] = "7997cc:d4e1fa", -- Physical Blue
 			[113] = "977fb9:d7cbe8", -- Physical Purple
+			[50]  = "bf2d13:ff7033", -- Physical Fire
 			[100] = "6f9cd4:8fe6ff", -- Mechanical
 			[111] = "d3d280:fffef2", -- Sonic
 			[101] = "bc434c:de726b", -- Bleed
@@ -748,6 +751,8 @@ function ZA_UpdateData()
 			[117] = "c65c2d:efb073", -- Strength
 			[118] = "6e55f6:a2b7f7", -- Intellect
 			[104] = "ffeb64:f2ffbf", -- Alacrity
+			[143] = "78755b:d9d9c0", -- Web
+			[144] = "b34116:f3cf54", -- Honey
 			[281] = "c9de57:7cb700", -- Chemical
 			[282] = "b38e37:fff6c7", -- Brew
 			[999] = "3b3b3b:6e6d59", -- Fatigue
@@ -1965,6 +1970,9 @@ function ZA_UpdateData()
 			[24705] = "Reputation", -- Grim Visage (Hallow's End)
 			[390493] = "Reputation", -- Cobalt Boost
 			[440393] = "Reputation", -- Timerunner's Advantage
+			[430666] = "Reputation", -- Sign of Awakened Storms
+			[430668] = "Reputation", -- Sign of Awakened Embers
+			[430669] = "Reputation", -- Sign of Awakened Dreams
 
 			-- Contract/Envoy
 			[405261] = true, -- Dragonscale's Favor
@@ -3165,6 +3173,12 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[430669] = 120, -- Sign of Awakened Dreams
+			[430668] = 400, -- Sign of Awakened Embers
+			[430666] = 911, -- Sign of Awakened Storms
+			[387336] = 814, -- Zone of Focus
+			[164273] = 100, -- Lone Wolf
+			[426341] = 6, -- Tindral's Fowl Fantasia
 			[338085] = 326, -- Necrosis
 			[338085] = 326, -- Necrosis
 			[337982] = 326, -- Necrosis
@@ -6144,7 +6158,7 @@ function ZA_UpdateData()
 			["Call Water"] = 801,
 			["Evicted Soul"] = 323,
 			["Slashing Whirl"] = 110,
-			["Web Wrap"] = 900,
+			["Web Wrap"] = 143,
 			["Naralex's Nightmare"] = 412,
 			["Grasping Vines"] = 8,
 			["Chained Bolt"] = 800,
@@ -6643,6 +6657,8 @@ function ZA_UpdateData()
 			["Barrage of Doubt"] = 411,
 			["Barrage of Flame"] = 4,
 			["Barrage"] = 108,
+			[120360] = 108, -- Barrage
+			[459796] = 50, -- Rapid Fire Barrage
 			["Barrage:132204"] = 906,
 			["Barrage:135804"] = 401,
 			["Barrage:461115"] = 100,
@@ -6775,7 +6791,7 @@ function ZA_UpdateData()
 			["Blinding Radiance"] = 3,
 			["Blinding Sand"] = 804,
 			["Blinding Trap"] = 3,
-			["Blinding Webs"] = 900,
+			["Blinding Webs"] = 143,
 			["Blinding Wind"] = 811,
 			["Blindside"] = 33,
 			["Blink"] = 646,
@@ -7171,7 +7187,7 @@ function ZA_UpdateData()
 			["Cleave"] = 109,
 			["Clinging Darkness:136122"] = 326,
 			["Clinging Infestation"] = 410,
-			["Clinging Web"] = 900,
+			["Clinging Web"] = 143,
 			["Clining Infestation"] = 40,
 			["Cloak of Shadows"] = 96,
 			["Cloudburst Totem"] = 911,
@@ -8072,7 +8088,7 @@ function ZA_UpdateData()
 			["Sleep"] = 328,
 			[340642] = 413, -- Death Blow
 			["Enveloping Mist"] = 802,
-			["Enveloping Webbing"] = 900,
+			["Enveloping Webbing"] = 143,
 			["Anima Infusion:1394887"] = 321,
 			["Envenom"] = 906,
 			["Ephemeral Wings"] = 2,
@@ -8133,7 +8149,8 @@ function ZA_UpdateData()
 			["Explosive Rune"] = 96,
 			["Explosive Runes"] = 96,
 			["Explosive Runes:1122136"] = 810,
-			["Explosive Shot"] = 4,
+			["Explosive Shot"] = 50,
+			["Bursting Shot"] = 50,
 			["Explosive Vellum:531009"] = 4,
 			["Expose Desires:3684826"] = 321,
 			["Exposed Core"] = 813,
@@ -8838,7 +8855,7 @@ function ZA_UpdateData()
 			["Hulking Kick"] = 109,
 			["Hungering Eruption:135786"] = 413,
 			["Hungering Void"] = 320,
-			["Hunter's Mark"] = 112,
+			["Hunter's Mark"] = 50,
 			["Hunter's Signal"] = 111,
 			["Hunting Talons"] = 108,
 			["Hurl Amber"] = 810,
@@ -8888,7 +8905,7 @@ function ZA_UpdateData()
 			["Icebound Fortitude"] = 17,
 			["Iceburst"] = 16,
 			["Icefury"] = 160,
-			["Icestrand Web"] = 17,
+			["Icestrand Web"] = 143,
 			["Icicles"] = 160,
 			["Icy Grip"] = 160,
 			["Icy Shard"] = 16,
@@ -9823,7 +9840,7 @@ function ZA_UpdateData()
 			["Rancid Maw:136007"] = 806,
 			["Rapid Contagion"] = 40,
 			["Rapid Contagion:237557"] = 32,
-			["Rapid Fire"] = 112,
+			["Rapid Fire"] = 50,
 			["Rapid Shot"] = 103,
 			["Rapid Tide"] = 801,
 			["Rapid Tides"] = 801,
@@ -10638,7 +10655,7 @@ function ZA_UpdateData()
 			["Spiritwalker's Grace"] = 280,
 			["Spit Blood"] = 321,
 			["Spit Filth"] = 410,
-			["Spit Honey"] = 810,
+			["Spit Honey"] = 144,
 			["Spitting Cobra"] = 906,
 			["Splash"] = 801,
 			["Splintered Elemental Rod"] = 810,
@@ -10910,7 +10927,7 @@ function ZA_UpdateData()
 			["Talon Slash"] = 101,
 			["Tame Beast"] = 661,
 			["Tangled Ward"] = 900,
-			["Tangled Webs"] = 900,
+			["Tangled Webs"] = 143,
 			["Tantrum"] = 103,
 			["Tar Trap"] = 999,
 			["Tarecgosa's Visage"] = 80,
@@ -11150,7 +11167,7 @@ function ZA_UpdateData()
 			["Trembling Stomp"] = 903,
 			["Tremendous Roar"] = 327,
 			["Tremor Totem"] = 803,
-			["Trick Shots"] = 107,
+			["Trick Shots"] = 112,
 			["Tricks of the Trade"] = 112,
 			["Tricky Treat"] = 104,
 			["Triple Bite:136067"] = 906,
@@ -11347,7 +11364,7 @@ function ZA_UpdateData()
 			["Vile Spittle"] = 806,
 			["Vile Sting"] = 806,
 			["Vile Taint"] = 32,
-			["Vile Webbing"] = 900,
+			["Vile Webbing"] = 143,
 			["Vilefiend"] = 401,
 			["Villainous Bolt:876915"] = 321,
 			["Vine Lash"] = 900,
@@ -11427,7 +11444,7 @@ function ZA_UpdateData()
 			["Volcanic Pressure"] = 12,
 			["Volcanic Tantrum"] = 12,
 			["Volley of Power:1394887"] = 321,
-			["Volley"] = 100,
+			["Volley"] = 107,
 			["Volley:132312"] = 108,
 			["Vomhop!"] = 903,
 			["Voodoo Totem"] = 325,
@@ -11484,10 +11501,10 @@ function ZA_UpdateData()
 			["Weapons of Order"] = 201,
 			["Weapons of Order:642415"] = "Chi",
 			["Weary Soul:3528307"] = 321,
-			["Web Spray"] = 900,
-			["Web Strand"] = 900,
-			["Web"] = 900,
-			["Webspinner Song"] = 900,
+			["Web Spray"] = 143,
+			["Web Strand"] = 143,
+			["Web"] = 143,
+			["Webspinner Song"] = 143,
 			["Weeping Burden"] = 325,
 			["Weight Weapon"] = 803,
 			["Weighted Net"] = 100,
@@ -11879,9 +11896,9 @@ function ZA_UpdateData()
 			[341821] = 16, -- Snowstorm
 
 			--! Bee
-			[303766] = 810, -- Honeyback Drone
-			[259741] = 810, -- Honeyback Harvester
-			[303767] = 810, -- Honeyback Hivemother
+			[303766] = 144, -- Honeyback Drone
+			[259741] = 144, -- Honeyback Harvester
+			[303767] = 144, -- Honeyback Hivemother
 
 			--! Beetle
 			[381529] = 822, -- Telix the Stormhorn
@@ -23937,10 +23954,10 @@ function ZA_UpdateData()
 			[259430] = 5, -- Grilled Catfish
 			[314963] = 5, -- Grilled Gnasher
 			[280282] = 5, -- Heartsbane Hexwurst
-			[286381] = 5, -- Honey Potpie
-			[259416] = 5, -- Honey-Glazed Haunches
-			[259415] = 5, -- Honey-Glazed Haunches
-			[259414] = 5, -- Honey-Glazed Haunches
+			[286381] = 144, -- Honey Potpie
+			[259416] = 144, -- Honey-Glazed Haunches
+			[259415] = 144, -- Honey-Glazed Haunches
+			[259414] = 144, -- Honey-Glazed Haunches
 			[314960] = 5, -- K'Bab
 			[259413] = 5, -- Kul Tiramisu
 			[259412] = 5, -- Kul Tiramisu
