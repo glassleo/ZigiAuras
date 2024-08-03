@@ -1169,7 +1169,6 @@ function ZA_UpdateData()
 		}
 
 
-		--# Trinkets
 		ZA.TrinketOverlayAuras = {
 			[203996] = "402896,402903", -- Igneous Flowstone
 			[203729] = "401518,401519,401521,401516,402221", -- Ominous Chromatic Essence
@@ -1211,6 +1210,7 @@ function ZA_UpdateData()
 			[193006] = 376666, -- Idol of the Earth-Warder
 		}
 
+		--# Trinkets
 		ZA.Trinkets = {
 			[341260] = "Burst of Knowledge: " .. ZA.PrimaryStatName, -- Burst of Knowledge (Heirloom Set Bonus)
 			
@@ -1219,6 +1219,12 @@ function ZA_UpdateData()
 			[274740] = "Burning Blade: Haste",
 			[274741] = "Frostwolf: Mastery",
 			[274742] = "Blackrock: Versatility",
+
+			-- The War Within
+			-- 10.0
+			[449282] = "Aim of the Iron Dwarves: Critical Strike", -- Weathered Northrend Sigil (Iron Dwarf)
+			[449281] = "Power of the Taunka: Attack Power", -- Weathered Northrend Sigil (Taunka)
+			[449278] = "Speed of the Vrykul: Haste", -- Weathered Northrend Sigil (Vrykul)
 
 			-- Dragonflight
 			-- 10.2
@@ -1295,7 +1301,6 @@ function ZA_UpdateData()
 			[384646] = "Brimming Life-Pod", -- Burgeoning Seed
 			[384658] = "Supernatural: Versatility", -- Burgeoning Seed
 			[383818] = true, -- Bushwhacker's Compass
-			[381965] = "Controlled Currents: Attack Speed", -- Controlled Current Technique
 			[381966] = true, -- Controlled Current Technique
 			[345228] = "Gladiator's Badge: " .. ZA.PrimaryStatName, -- Gladiator's Badge of Ferocity
 			[345230] = "Gladiator's Insignia: " .. ZA.PrimaryStatName, -- Gladiator's Insignia of Alacrity
@@ -1649,10 +1654,11 @@ function ZA_UpdateData()
 			["The Mad Duke's Tea"] = true,
 
 			-- Group Buffs
-			["Power Word: Fortitude"] = true,
-			["Mark of the Wild"] = true,
-			["Arcane Intellect"] = true,
-			["Battle Shout"] = true,
+			[21562] = true, -- Power Word: Fortitude
+			[462854] = true, -- Skyfury
+			[1126] = true, -- Mark of the Wild
+			[1459] = true, -- Arcane Intellect
+			[6673] = true, -- Battle Shout
 			["Blessing of the Bronze"] = true,
 			[412710] = true, -- Timelessness
 			[369459] = true, -- Source of Magic
@@ -2219,6 +2225,8 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[407326] = "Zone", -- Zaralek Glowdust
+			[196847] = "Zone", -- Majesty of the Elderhorn
 			[28704]  = "Zone", -- Netherbloom Pollen
 			[28694]  = "Zone", -- Dreaming Glory
 			[128943] = "Zone", -- Cyclonic Inspiration
@@ -2814,6 +2822,12 @@ function ZA_UpdateData()
 			[274741] = 720, -- Ferocity of the Frostwolf
 			[274742] = 720, -- Might of the Blackrock
 
+			-- The War Within
+			-- 10.0
+			[449282] = 16, -- Weathered Northrend Sigil (Iron Dwarf)
+			[449281] = 117, -- Weathered Northrend Sigil (Taunka)
+			[449278] = 104, -- Weathered Northrend Sigil (Vrykul)
+
 			-- Dragonflight
 			-- 10.2
 			[426676] = 120, -- Pip's Emerald Friendship Badge (Aerwynn)
@@ -3173,6 +3187,42 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[456260] = 646, -- Teleporter Mishap
+			[427266] = 8, -- Emerald Serpent's Ward
+			[455476] = 401, -- Summon Gloomhound
+			[455465] = 401, -- Summon Gloomhound
+			["Charhound"] = 4,
+			["Gloomhound"] = 32,
+			[449609] = 811, -- Lighter Than Air
+			[462844] = 8, -- Stone Bulwark
+			[114893] = 8, -- Stone Bulwark
+			[166646] = 811, -- Windwalking
+			[8220]   = 646, -- Flip Out
+			[8219]   = 646, -- Flip Out
+			[8222]   = 646, -- Yaaarrrr
+			[8221]   = 646, -- Yaaarrrr
+			[382028] = 4, -- Improved Flametongue Weapon
+			[462849] = 16, -- Lich King's Bulwark
+			[462836] = 4, -- Firelord's Shield
+			[462842] = 4, -- Broodmother's Barrier
+			[462854] = 811, -- Skyfury
+			[419239] = 120, -- Dreaming Winds
+			[409502] = 36, -- Darkflame Embers
+			[429196] = 911, -- Rainstorm
+			[426339] = 412, -- Igira's Curel Nightmare
+			[395197] = "Mana", -- Mana Spring
+			[371172] = 16, -- Phial of Tepid Versatility
+			[405612] = 816, -- Minor Bronze Resonance
+			[401518] = 816, -- Bronze Resonance
+			[401519] = 814, -- Azure Resonance
+			[405611] = 814, -- Minor Azure Resonance
+			[97341]  = 100, -- Guild Champion
+			[412359] = 641, -- Empowered Temporal Gossamer
+			[403265] = 641, -- Bronze Attunement
+			[426288] = 4, -- Smolderon's Delusions of Grandeur
+			[131459] = 801, -- Watergliding Jets
+			[393957] = 72, -- Waning Twilight
+			[393903] = 113, -- Ursine Vigor
 			[430669] = 120, -- Sign of Awakened Dreams
 			[430668] = 400, -- Sign of Awakened Embers
 			[430666] = 911, -- Sign of Awakened Storms
@@ -7942,7 +7992,7 @@ function ZA_UpdateData()
 			["Earth Slash"] = 803,
 			["Earth Spike"] = 803,
 			["Earthbind Totem"] = 903,
-			["Stoneskin Totem"] = 903,
+			["Stone Bulwark Totem"] = 888,
 			["Earthbind"] = 803,
 			["Earthen Blast"] = 803,
 			["Earthen Slam"] = 803,
@@ -9202,8 +9252,9 @@ function ZA_UpdateData()
 			["Maker's Sanctuary:135954"] = 66,
 			["Maldraxxian Repayment"] = 326,
 			["Malefic Grasp"] = 32,
-			["Malefic Rapture"] = 32,
-			["Malefic Rapture"] = 32,
+			[417537] = 96, -- Oblivion
+			[324536] = 361, -- Malefic Rapture
+			["Malefic Rapture"] = 361,
 			["Malefic Resonance"] = 411,
 			["Malefic"] = 32,
 			["Malevolence"] = 32,
@@ -10551,6 +10602,7 @@ function ZA_UpdateData()
 			["Soul Prison"] = 411,
 			["Soul Reaper"] = 96,
 			["Soul Rend:895888"] = 413,
+			[386997] = 361, -- Soul Rot
 			["Soul Rot"] = 413,
 			["Soul Ruin"] = 411,
 			["Soul Shard"] = 32,
@@ -10709,7 +10761,8 @@ function ZA_UpdateData()
 			["Steam Trail"] = 20,
 			["Steel Trap"] = 102,
 			["Stellar Emission:1360763"] = 6,
-			["Stellar Flare"] = 106,
+			[202347] = 721, -- Stellar Flare
+			["Stellar Flare"] = 721,
 			["Stellar Pylon:253400"] = 3,
 			["Sticky Mucus"] = 908,
 			["Sticky Stomp"] = 9,
@@ -10860,6 +10913,8 @@ function ZA_UpdateData()
 			["Summon Succubus"] = 32,
 			["Summon Tentacle of the Old Ones"] = 324,
 			["Summon Unstable Slag"] = 12,
+			["Summon Gloomhoun"] = 401,
+			["Summon Charhound"] = 401,
 			["Summon Vilefiend"] = 401,
 			["Summon Voidlord"] = 320,
 			["Summon Voidwalker"] = 320,
@@ -10913,7 +10968,7 @@ function ZA_UpdateData()
 			["Swipe"] = 108,
 			["Swooping Lunge"] = 811,
 			["Sword Toss:135369"] = 100,
-			["Symbol of Hope"] = "Mana",
+			["Symbol of Hope"] = 201,
 			["Symbols of Death"] = 411,
 			["Tachyon Jump"] = 203,
 			["Tail Swipe:575745"] = 107,
@@ -12468,6 +12523,7 @@ function ZA_UpdateData()
 			[189043] = 402, -- Wild Gladiator's Felblood Gronnling
 
 			--! Gryphon
+			[441324] = 204, -- Remembered Golden Gryphon
 			[417888] = 800, -- Algarian Stormrider
 			[413827] = 150, -- Harbor Gryphon
 			[302361] = 3, -- Alabaster Stormtalon
@@ -13271,6 +13327,7 @@ function ZA_UpdateData()
 			-- Wylderdrake
 			[368899] = 8, -- Cliffside Wylderdrake
 			-- Wind Rider
+			[441325] = 204, -- Remembered Wind Rider
 			[302362] = 3, -- Alabaster Thunderwing
 			[32244]  = 157, -- Blue Wind Rider
 			[32245]  = 134, -- Green Wind Rider
@@ -15245,6 +15302,10 @@ function ZA_UpdateData()
 			[422133] = 909, -- Mining...?
 			[422153] = 909, -- Mining...?
 			[423210] = 909, -- Mining...?
+			[460002] = 811, -- Switch Flight Style
+			[460003] = 811, -- Switch Flight Style
+			[456173] = 100,
+			[456624] = 100,
 			--qqq
 
 
@@ -26195,6 +26256,10 @@ function ZA_UpdateData()
 			[422133] = 0, -- Mining...?
 			[422153] = 0, -- Mining...?
 			[423210] = 0, -- Mining...?
+			[460002] = 0, -- Switch Flight Style
+			[460003] = 0, -- Switch Flight Style
+			[456173] = 0,
+			[456624] = 0,
 			--qqi
 
 
@@ -26979,12 +27044,14 @@ function ZA_UpdateData()
 		end
 
 		-- Temporary Weapon Enchants
+		-- /za enchant
 		ZA.TemporaryEnchants = {
 			--[ID] = "Icon|Name|Tooltip",
 			-- Imbue
 			[5401] = "462329|Windfury|Imbued with the element of Wind",
 			[5400] = "462326|Flametongue|Imbued with the element of Fire",
 			[6498] = "462325|Earthliving|Imbued with the element of Earth",
+			[7587] = "5975854|Thunderstrike Ward|Imbued with the element of Lightning",
 			-- Rune
 			[6514] = "134421|Buzzing Rune|Critical Strike increased by 310.",
 			[6513] = "134421|Buzzing Rune|Critical Strike increased by 265.",
