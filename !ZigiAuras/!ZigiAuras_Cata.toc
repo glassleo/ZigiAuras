@@ -1,0 +1,9 @@
+## Interface: 40400
+## Title: ZigiAuras
+## Version: Perpetual
+## Notes: Global variables for WeakAuras
+## Author: Leo
+## IconTexture: 458256
+## X-Flavor: Cata
+
+ZigiAurasClassic.lua
