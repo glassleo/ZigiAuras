@@ -3187,6 +3187,9 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[373277] = 320, -- Thing from Beyond
+			[460905] = 96, -- Warband Bank Distane Inhibitor
+			[4294]   = 403, -- The Life-Binding
 			[456260] = 646, -- Teleporter Mishap
 			[427266] = 8, -- Emerald Serpent's Ward
 			[455476] = 401, -- Summon Gloomhound
@@ -15304,8 +15307,13 @@ function ZA_UpdateData()
 			[423210] = 909, -- Mining...?
 			[460002] = 811, -- Switch Flight Style
 			[460003] = 811, -- Switch Flight Style
+			[436854] = 811, -- Switch Flight Style
 			[456173] = 100,
 			[456624] = 100,
+			[460271] = 646,
+			[457472] = 646,
+			[444901] = 204,
+			[431280] = 114,
 			--qqq
 
 
@@ -26258,8 +26266,11 @@ function ZA_UpdateData()
 			[423210] = 0, -- Mining...?
 			[460002] = 0, -- Switch Flight Style
 			[460003] = 0, -- Switch Flight Style
+			[436854] = 0, -- Switch Flight Style
 			[456173] = 0,
 			[456624] = 0,
+			[457472] = 0,
+			[444901] = 0,
 			--qqi
 
 
