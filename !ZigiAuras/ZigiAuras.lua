@@ -595,6 +595,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[397406] = "Wondrous Wavewhisker", -- Fix spelling error on the spell
 			[387284] = "Vibrant Spellthread",
 			[387285] = "Vibrant Spellthread",
 			[387286] = "Vibrant Spellthread",
@@ -2225,6 +2226,8 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[459254] = "Zone", -- Loader Signal
+			[448868] = "Zone", -- Lucky Cursed Potion
 			[407326] = "Zone", -- Zaralek Glowdust
 			[196847] = "Zone", -- Majesty of the Elderhorn
 			[28704]  = "Zone", -- Netherbloom Pollen
@@ -2771,6 +2774,7 @@ function ZA_UpdateData()
 			-----------------
 
 			--! Debuff
+			[456486] = "Zone", -- Dangerous Skies
 			[292127] = "Zone", -- Darkest Depths
 			[406608] = "Zone", -- Hostile Airways
 			[377853] = "Zone", -- Unstable Time
@@ -3187,6 +3191,52 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[66532]  = 401, -- Fel Fireball
+			[459155] = 411, -- Summon Val'kyr
+			[459496] = 96, -- Soul Reaper
+			[459495] = 96, -- Soul Reaper
+			[459191] = 160, -- Remorseless Winter
+			[458748] = 411, -- Defile
+			[458747] = 411, -- Defile
+			[458746] = 411, -- Defile
+			[411706] = 36, -- Form Salverun
+			[459479] = 4, -- Deep Breath
+			[459355] = 111, -- Broodmother's Cry
+			[459422] = 327, -- Bellowing Roar
+			[459449] = 911, -- Wing Buffet
+			[279910] = 401, -- Wild Imp
+			[387393] = 32, -- Dread Calling
+			[387601] = 401, -- The Expendables
+			[409442] = 320, -- The Voice Beckons
+			[445559] = 903, -- Shattering Stomp
+			[452233] = 40, -- Stinging Swarm
+			[452231] = 40, -- Stinging Swarm
+			[448549] = 803, -- Impale
+			[431744] = 803, -- Impale
+			[448050] = 903, -- Hardened Carapace
+			[448050] = 903, -- Hardened Carapace
+			[452169] = 111, -- Deafening Shriek
+			[452169] = 111, -- Deafening Shriek
+			[431459] = 143, -- Web Bolt
+			[458226] = 143, -- Web Bolt
+			[457447] = 143, -- Web Bolt
+			[457183] = 143, -- Web Bolt
+			[449568] = 143, -- Web Bolt
+			[456868] = 143, -- Toxic Web Bolt
+			[443001] = 143, -- Toxic Web Bolt
+			[455069] = 143, -- Ravenous Web Bolt
+			[449251] = 143, -- Web Bolt
+			[431552] = 143, -- Web Bolt
+			[451113] = 143, -- Web Bolt
+			[431645] = 143, -- Web Bolt
+			[45587]  = 143, -- Web Bolt
+			[443427] = 143, -- Web Bolt
+			[434786] = 143, -- Web Bolt
+			[451238] = 107, -- Brutal Jab
+			[451239] = 107, -- Brutal Jab
+			[431639] = 107, -- Brutal Jab
+			[413135] = 36, -- Shadowlava Swing
+			[413134] = 36, -- Shadowlava Swing
 			[373277] = 320, -- Thing from Beyond
 			[460905] = 96, -- Warband Bank Distane Inhibitor
 			[4294]   = 403, -- The Life-Binding
@@ -12443,7 +12493,7 @@ function ZA_UpdateData()
 
 			--! Fish
 			-- Carp
-			[397406] = 801, -- Wonderous Waveshisker
+			[397406] = 801, -- Wonderous Waveshisker [sic]
 			-- Bottom-Feeder
 			[214791] = 801, -- Brinedeep Bottom-Feeder
 			-- Sea Ray
@@ -13088,7 +13138,7 @@ function ZA_UpdateData()
 			[67336]  = 160, -- Relentless Gladiator's Frost Wyrm
 			[71810]  = 160, -- Wrathful Gladiator's Frost Wyrm
 			-- Ember Wyrm
-			[231428] = 12, -- Smoldering Ember Wyrm
+			[231428] = 4, -- Smoldering Ember Wyrm
 
 			--! Skeletal Horse
 			-- Skeletal Horse
@@ -15314,6 +15364,13 @@ function ZA_UpdateData()
 			[457472] = 646,
 			[444901] = 204,
 			[431280] = 114,
+			[429488] = 903,
+			[429890] = 202,
+			[430024] = 65,
+			[431519] = 646,
+			[421148] = 202,
+			[411497] = 100,
+			[427938] = 806,
 			--qqq
 
 
@@ -26271,6 +26328,13 @@ function ZA_UpdateData()
 			[456624] = 0,
 			[457472] = 0,
 			[444901] = 0,
+			[429488] = 0,
+			[429890] = 0,
+			[430024] = 0,
+			[431519] = 0,
+			[421148] = 0,
+			[411497] = 0,
+			[427938] = 0,
 			--qqi
 
 
