@@ -26335,6 +26335,17 @@ function ZA_UpdateData()
 			[421148] = 0,
 			[411497] = 0,
 			[427938] = 0,
+			[55002] = 0, -- Flexweave Underlay
+			[54793] = 0, -- Frag Belt
+			[126392] = 0, -- Goblin Glider
+			[55016] = 0, -- Nitro Boosts
+			[84425] = 0, -- Cardboard Assassin
+			[84427] = 0, -- Grounded Plasma Shield
+			[84424] = 0, -- Invisibility Field
+			[82200] = 0, -- Spinal Healing Injector
+			[109099] = 0, -- Watergliding Jets
+			[67839] = 0, -- Mind Amplification Dish
+			[54736] = 0, -- EMP Generator
 			--qqi
 
 
