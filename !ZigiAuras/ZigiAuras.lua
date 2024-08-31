@@ -195,15 +195,15 @@ function ZA_UpdateData()
 			[132320] = "4f6986", -- ability_stealth
 
 			-- World Markers
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerSquare"] = "0070dd",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerTriangle"] = "1eff00",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerDiamond"] = "a334ee",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerCross"] = "ff2020",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerStar"] = "ffff00",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerCircle"] = "ff7f3f",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerMoon"] = "aaaadd",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerSkull"] = "dedede",
-			["Interface/AddOns/Media_Newsom/Icons/WorldMarkerClear"] = "404040",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerSquare"] = "0070dd",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerTriangle"] = "1eff00",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerDiamond"] = "a334ee",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerCross"] = "ff2020",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerStar"] = "ffff00",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerCircle"] = "ff7f3f",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerMoon"] = "aaaadd",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerSkull"] = "dedede",
+			["Interface/AddOns/!ZigiAuras/Icons/WorldMarkerClear"] = "404040",
 
 			-- Hunter Pets
 			["Interface/AddOns/Media_Newsom/Pets/CoreHoundPurple"] = "972eba",
@@ -429,6 +429,7 @@ function ZA_UpdateData()
 			-- Shadow
 			[32]  = "8080ff", -- Shadow
 			[33]  = "52407d", -- Shadowstrike
+			[330] = "8080ff", -- Darkness
 			[328] = "7f57c2", -- Psychic
 			[320] = "3714ff", -- Void
 			[34]  = "cb38dc", -- Twilight
@@ -595,6 +596,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[460271] = "Teleport: Silithus",
 			[397406] = "Wondrous Wavewhisker", -- Fix spelling error on the spell
 			[387284] = "Vibrant Spellthread",
 			[387285] = "Vibrant Spellthread",
@@ -648,6 +650,7 @@ function ZA_UpdateData()
 			[299084] = "Wormhole: Zandalar",
 			[324031] = "Wormhole: Shadowlands",
 			[386379] = "Wyrmhole: Dragon Isles",
+			[448126] = "Wormhole: Khaz Algar",
 			[231054] = "Teleport: Karazhan",
 			[145430] = "Teleport: Timeless Isle",
 			[175608] = "Teleport: Karabor",
@@ -873,6 +876,7 @@ function ZA_UpdateData()
 			-- Shadow
 			[32]  = "451ea7:c257b2", -- Shadow
 			[33]  = "2d2247:6b4566", -- Shadowstrike
+			[330] = "110936:6224b5", -- Darkness
 			[328] = "4c3189:7b7c9e", -- Psychic
 			[320] = "220649:243bff", -- Void
 			[34]  = "3949dc:ff256d", -- Twilight
@@ -967,6 +971,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Lamplighter Skiff"] = 100,
 			["Xaril the Poisoned Mind"] = 810,
 			["Reaves"] = 141,
 			["Lightforged Battery"] = 200,
@@ -2226,6 +2231,12 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[456024] = "Zone", -- Derby Dasher
+			[430281] = "Zone", -- Arathi Healer
+			[440025] = "Zone", -- Beguiling Lure
+			[455247] = "Zone", -- Carrying Suspiciously Light Lumber
+			[407519] = "Zone", -- Carrying a Titan Part
+			[407510] = "Zone", -- Carrying a Curious Ore Sample
 			[459254] = "Zone", -- Loader Signal
 			[448868] = "Zone", -- Lucky Cursed Potion
 			[407326] = "Zone", -- Zaralek Glowdust
@@ -2774,6 +2785,7 @@ function ZA_UpdateData()
 			-----------------
 
 			--! Debuff
+			[449867] = "Zone", -- Carrying Arathi Goods
 			[456486] = "Zone", -- Dangerous Skies
 			[292127] = "Zone", -- Darkest Depths
 			[406608] = "Zone", -- Hostile Airways
@@ -3191,6 +3203,97 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[450885] = 50, -- Cinderstinger Fling
+			[443491] = 50, -- Final Sting
+			[450697] = 50, -- Final Sting
+			[441489] = 50, -- Final Sting
+			[450700] = 50, -- Final Sting
+			[441485] = 50, -- Final Sting
+			[450899] = 111, -- Call The Hive
+			[449937] = 103, -- Howl of the Alpha
+			[438975] = 101, -- Shredding Sting
+			[438971] = 101, -- Shredding Sting
+			[439418] = 50, -- Bee-Haw!
+			[450955] = 4, -- Cinder Charge
+			[450955] = 4, -- Cinder Charge
+			[450941] = 4, -- Cinder Charge
+			[451008] = 811, -- Wing Buffet
+			[445205] = 50, -- Molten Stinger
+			[446424] = 144, -- Sucrose Secretion
+			[446416] = 144, -- Sucrose Secretion
+			[452044] = 9, -- Storm Pounce
+			[452035] = 9, -- Storm Pounce
+			[448002] = 9, -- Electric Jaws
+			[452013] = 800, -- Chain Lightning
+			[445217] = 50, -- Scorching Sting
+			[445218] = 50, -- Scorching Sting
+			[450786] = 50, -- Cindervenom Volley
+			[451820] = 144, -- Sticky Storm
+			[451820] = 144, -- Sticky Storm
+			[451044] = 144, -- Honeyslime Bolt
+			[451064] = 144, -- Honey Buddies
+			[451736] = 144, -- Gooey Membrane
+			[451734] = 144, -- Gooey Membrane
+			[456149] = 811, -- Wing Buffet
+			[456147] = 101, -- Vicious Peck
+			[431421] = 326, -- Reanimate Remains
+			[440912] = 101, -- Lash
+			[443112] = 803, -- Strength of the Black Ox
+			[443575] = 907, -- Tiger Stance
+			[451433] = 107, -- Acclamation
+			[450571] = "Chi", -- Flow of Chi
+			[450572] = "Chi", -- Flow of Chi
+			[115804] = 102, -- Mortal Wounds
+			[396167] = 907, -- Fury of Xuen
+			[443569] = 66, -- Chi-Ji's Swiftness
+			[443424] = 120, -- Heart of the Jade Serpent
+			[195321] = 907, -- Transfer the Power
+			[430281] = 202, -- Arathi Healer
+			[450552] = 120, -- Jade Walk
+			[432180] = 802, -- Dance of the Wind
+			[450574] = 907, -- Flow of Chi
+			[443574] = 803, -- Ox Stance
+			[129914] = 802, -- Combat Wisdom
+			[440181] = 888, -- Spore Bolt
+			[440162] = 806, -- Lethargic Poison
+			[445746] = 107, -- Claw Snap
+			[440549] = 804, -- Scavenger
+			[440551] = 100, -- Throw Junk
+			[440550] = 100, -- Holding Supplies
+			[372369] = 100, -- Shoot
+			[431659] = 32, -- Shadow Bolt
+			[440615] = 32, -- Abyssal Surge
+			[440622] = 325, -- Curse of the Depths
+			[446261] = 325, -- Eye of Dread
+			[440266] = 33, -- Dark Bite
+			[440195] = 330, -- Death Bolt
+			[440452] = 809, -- Boulder Toss
+			[440448] = 400, -- Angry Stomp
+			[445311] = 101, -- Pincer Slice
+			[440025] = 320, -- Beguiling Lure
+			[449567] = 107, -- Fillet
+			[449584] = 102, -- Deep Cut
+			[449585] = 102, -- Deep Cut
+			[451758] = 906, -- Poison Blade
+			[451608] = 801, -- Flowing Steps
+			[445811] = 908, -- Slimed
+			[449960] = 101, -- Fresh Cut
+			[455877] = 400, -- Massive Stomp
+			[389564] = 906, -- Venomous Chomp
+			[444473] = 103, -- Hysteric Screech
+			[444985] = 806, -- Venemous Crunch
+			[388349] = 806, -- Corrosive Bile
+			[460490] = 907, -- Chi Burst
+			[443028] = 120, -- Celestial Conduit
+			[394927] = 80, -- Light of Creation (Kharnalex, The First Light)
+			[401229] = 36, -- Ire of Fyrakk
+			[405227] = 36, -- Ire of Fyrakk
+			[403034] = 36, -- Ire of Fyrakk
+			[414589] = 800, -- Lightning-Charged Strikes
+			[414589] = 800, -- Lightning-Charged Strikes
+			[414609] = 811, -- Wind's Grace
+			[396675] = 102, -- Hemorrhaging Rend
+			[390181] = 102, -- Soulscar
 			[66532]  = 401, -- Fel Fireball
 			[459155] = 411, -- Summon Val'kyr
 			[459496] = 96, -- Soul Reaper
@@ -3588,7 +3691,7 @@ function ZA_UpdateData()
 			[443179] = 32, -- Desecrating Blades
 			[448910] = 32, -- Void Stomp
 			[252738] = 33, -- Umbral Slice
-			[448912] = 32, -- Umbra Bolt
+			[448912] = 330, -- Umbra Bolt
 			[150424] = 100, -- Throw Axe
 			[374898] = 103, -- Enrage
 			[444698] = 320, -- Void Bolt
@@ -4208,6 +4311,7 @@ function ZA_UpdateData()
 			[67255]  = 2, -- Final Meditation
 			[66537]  = 2, -- Renew
 			[66515]  = 202, -- Reflective Shield
+			[451811] = 2, -- Holy Smite
 			[66536]  = 2, -- Holy Smite
 			[66546]  = 2, -- Holy Nova
 			[66680]  = 202, -- Confess
@@ -5898,7 +6002,8 @@ function ZA_UpdateData()
 			["Temporal Empowerment"] = 641,
 			["Bronze Swoop"] = 641,
 			["Bellowing Gust"] = 811,
-			[386379] = 100, -- Wyrmhole: Dragon Isles
+			[448126] = 646, -- Wormhole: Khaz Algar
+			[386379] = 646, -- Wyrmhole: Dragon Isles
 			["Whirling Winds"] = 811,
 			["Strength of the Isles"] = 720,
 			["Reanimate Companion"] = 326,
@@ -6427,6 +6532,7 @@ function ZA_UpdateData()
 			["Nanobot Repair Unit"] = 100,
 			["Grievous Wound"] = 102,
 			["Sedimentary Breath"] = 804,
+			[440424] = 808, -- Coral Growth
 			["Coral Growth"] = 808,
 			["Angry Stomp:796637"] = 903,
 			["Control Thoughts"] = 328,
@@ -7385,7 +7491,8 @@ function ZA_UpdateData()
 			["Convocation of Shadow"] = 32,
 			["Convoke the Spirits"] = 805,
 			["Cooking Fire"] = 4,
-			["Coordinated Assault"] = 103,
+			[360952] = 117, -- Coordinated Assault
+			["Coordinated Assault"] = 117,
 			["Corpse Spew"] = 40,
 			["Corrosive Breath"] = 806,
 			["Corrosive Nova"] = 806,
@@ -7688,7 +7795,7 @@ function ZA_UpdateData()
 			["Darkglare"] = 32,
 			["Darkheart Nova"] = 412,
 			["Darkmist Bombardment"] = 411,
-			["Darkness"] = 32,
+			["Darkness"] = 330,
 			["Darksworn Blast"] = 411,
 			["Dart"] = 104,
 			["Darting Daggers"] = 112,
@@ -8451,7 +8558,7 @@ function ZA_UpdateData()
 			["Final Bargain:2576086"] = 326,
 			["Final Harvest"] = 326,
 			["Final Reckoning:135878"] = 200,
-			["Final Sting"] = 806,
+			[305996] = 806, -- Final Sting
 			["Fingers of Frost"] = 160,
 			["Fire Bomb"] = 4,
 			["Fire Eater's Hearthstone"] = 4,
@@ -9436,7 +9543,7 @@ function ZA_UpdateData()
 			["Bitter Withdrawal"] = 328,
 			["Mind Control"] = 328,
 			["Mind Control"] = 328,
-			["Mind Flay"] = 328,
+			["Mind Flay"] = 330,
 			["Mind Rend"] = 328,
 			["Mind Sear"] = 328,
 			["Shadow Mend"] = 32,
@@ -11977,7 +12084,7 @@ function ZA_UpdateData()
 
 			--! Bat
 			[139595] = 321, -- Armored Bloodwing
-			[288720] = 160, -- Bloodgorged Hunter
+			[288720] = 24, -- Bloodgorged Hunter
 			[288714] = 172, -- Bloodthirsty Dreadwing
 			[279868] = 158, -- Witherbark Direwing
 			-- Revendreth Dredwing
@@ -12034,7 +12141,7 @@ function ZA_UpdateData()
 			[231523] = 33, -- Shadowblade's Lethal Omen
 			[231434] = 323, -- Shadowblade's Murderous Omen
 			-- Pandaren Phoenix
-			[446017] = 173, -- August Phoenix
+			[446017] = 50, -- August Phoenix
 			[132117] = 802, -- Ashen Pandaren Phoenix
 			[129552] = 802, -- Crimson Pandaren Phoenix
 			[132118] = 802, -- Emerald Pandaren Phoenix
@@ -12174,6 +12281,7 @@ function ZA_UpdateData()
 			-- Tiger
 			[10790]  = 173, -- Tiger
 			[24252]  = 173, -- Swift Zulian Tiger
+			[435153] = 817, -- Purple Shado-Pan Riding Tiger
 			[129934] = 159, -- Blue Shado-Pan Riding Tiger
 			[129932] = 173, -- Green Shado-Pan Riding Tiger
 			[129935] = 170, -- Red Shado-Pan Riding Tiger
@@ -12307,6 +12415,9 @@ function ZA_UpdateData()
 			[290608] = 200, -- Crusader's Direhorn
 
 			--! Disc
+			[435082] = 131, -- Sky Surfer
+			[435082] = 132, -- Mogu Hazeblazer
+			[435044] = 130, -- Golden Discus
 			[229376] = ZA.Specialization(64, 64, 4, 16), -- Archmage's Prismatic Disc
 			[353263] = 203, -- Cartel Master's Gearglider
 			[353264] = 203, -- Pilfered Gearglider
@@ -12330,6 +12441,7 @@ function ZA_UpdateData()
 			[260174] = 158, -- Terrified Pack Mule
 
 			--! Dragonhawk
+			[62048]  = 909, -- Illidari Doomhawk
 			[96503]  = 820, -- Amani Dragonhawk
 			[142478] = 133, -- Armored Blue Dragonhawk
 			[142266] = 142, -- Armored Red Dragonhawk
@@ -12399,9 +12511,9 @@ function ZA_UpdateData()
 			[88746] = 822, -- Vitreous Stone Drake
 			[88331] = 818, -- Volcanic Stone Drake
 			-- Storm Dragon
-			[288721] = 800, -- Island Thunderscale
-			[242882] = 818, -- Valarjar Stormwing
-			[414326] = 427, -- Felstorm Dragon
+			[288721] = 48, -- Island Thunderscale
+			[242882] = 620, -- Valarjar Stormwing
+			[414326] = 280, -- Felstorm Dragon
 			[227989] = 800, -- Cruel Gladiator's Storm Dragon
 			[243201] = 800, -- Demonic Gladiator's Storm Dragon
 			[227995] = 800, -- Dominant Gladiator's Storm Dragon
@@ -12696,6 +12808,7 @@ function ZA_UpdateData()
 			[213349] = 4, -- Flarecore Infernal
 
 			--! Kite
+			[435109] = 144, -- Feathered Windsurfer
 			[133023] = 815, -- Jade Pandaren Kite
 			[130985] = 158, -- Pandaren Kite (Alliance)
 			[118737] = 173, -- Pandaren Kite (Horde)
@@ -12858,6 +12971,8 @@ function ZA_UpdateData()
 			[419567] = 813, -- Ginormous Grrloc
 
 			--! Mushan
+			[435160] = 137, -- Riverwalker Mushan
+			[435161] = 119, -- Palehide Mushan Beast
 			[148428] = 175, -- Ashhide Mushan Beast
 			[142641] = 119, -- Brawler's Burly Mushan Beast
 			[130965] = 170, -- Son of Galleon
@@ -12947,17 +13062,25 @@ function ZA_UpdateData()
 
 			--! Pterrordax
 			[368901] = 815, -- Windborne Velocidrake
+			-- Skyscreamer
+			[435146] = 175, -- Night Pterrorwing
+			[435147] = 141, -- Jade Pterrordax
+			[435145] = 102, -- Bloody Skyscreamer
+			[441794] = 817, -- Amber Pterrordax
 			[413825] = 173, -- Scarlet Pterrordax
-			[136400] = 814, -- Armored Skyscreamer
-			[275838] = 119, -- Captured Swampstalker
 			[275837] = 157, -- Cobalt Pterrordax
+			[136400] = "SHAMAN", -- Armored Skyscreamer
+			-- Windreaver
 			[289101] = 134, -- Dazar'alor Windreaver
 			[267270] = 140, -- Kua'fon
 			[301841] = 140, -- Kua'fon
 			[275840] = 113, -- Voldunai Dunescraper
 			[244712] = 720, -- Spectral Pterrorwing
+			[275838] = 119, -- Captured Swampstalker
 
 			--! Quilen
+			[435118] = 131, -- Marble Quilen
+			[435115] = 134, -- Guardian Quilen
 			[124659] = 120, -- Imperial Quilen
 			[279469] = 133, -- Qinsho's Eternal Hound
 			[316722] = 131, -- Ren's Stalwart Hound
@@ -13063,12 +13186,15 @@ function ZA_UpdateData()
 
 			--! Scorpid
 			[93644]  = 155, -- Kor'kron Annihilator
-			[148417] = 5, -- Kor'kron Juggernaut
-			[414328] = 36, -- Perfected Juggernaut
 			[230988] = 173, -- Vicious War Scorpion
 			-- Crystal Scorpion
 			[123886] = 810, -- Amber Scorpion
 			[411565] = 136, -- Felcrystal Scorpion
+			-- Mechanical Juggernaut
+			[435150] = 136, -- Fel Iron Juggernaut
+			[435149] = 137, -- Cobalt Juggernaut
+			[148417] = 5, -- Kor'kron Juggernaut
+			[414328] = 142, -- Perfected Juggernaut
 
 			--! Salamanther
 			[374097] = 172, -- Coralscale Salamanther
@@ -13395,6 +13521,9 @@ function ZA_UpdateData()
 			[135418] = 116, -- Grand Armored Wyvern
 
 			--! Windsteed
+			[435107] = 170, -- Forest Windsteed
+			[435108] = 176, -- Daystorm Windsteed
+			[435103] = 102, -- Dashing Windsteed
 			[134573] = 811, -- Swift Windsteed
 
 			--! Wolf
@@ -13439,6 +13568,9 @@ function ZA_UpdateData()
 			[229386] = 116, -- Huntmaster's Loyal Wolfhawk
 
 			--! Yak
+			[127213] = 116, -- Modest Expedition Yak
+			[123182] = 154, -- Kafa Yak
+			[127209] = 156, -- Black Riding Yak
 			[127220] = 153, -- Blonde Riding Yak
 			[122708] = 116, -- Grand Expedition Yak
 			[127216] = 171, -- Grey Riding Yak
@@ -15371,6 +15503,31 @@ function ZA_UpdateData()
 			[421148] = 202,
 			[411497] = 100,
 			[427938] = 806,
+			[431789] = 621,
+			[444937] = 100,
+			[455303] = 100,
+			[405949] = 126,
+			[387639] = 202,
+			[427552] = 4,
+			[441358] = 328,
+			[440976] = 100,
+			[440905] = 801,
+			[434489] = 803,
+			[440723] = 126,
+			[440737] = 126,
+			[440736] = 126,
+			[440726] = 64,
+			[440727] = 64,
+			[440722] = 64,
+			[444274] = 4,
+			[459935] = 803,
+			[261402] = 100,
+			[433181] = 114,
+			[430764] = 4,
+			[428667] = 330,
+			[448280] = 114,
+			[452422] = 114,
+			[423341] = 909, -- Khaz Algar Mining
 			--qqq
 
 
@@ -26346,6 +26503,31 @@ function ZA_UpdateData()
 			[109099] = 0, -- Watergliding Jets
 			[67839] = 0, -- Mind Amplification Dish
 			[54736] = 0, -- EMP Generator
+			[431789] = 0,
+			[444937] = 0,
+			[455303] = 0,
+			[405949] = 0,
+			[387639] = 0,
+			[427552] = 0,
+			[441358] = 0,
+			[440976] = 0,
+			[440905] = 0,
+			[434489] = 0,
+			[440723] = 0,
+			[440737] = 0,
+			[440736] = 0,
+			[440726] = 0,
+			[440727] = 0,
+			[440722] = 0,
+			[444274] = 5681681,
+			[459935] = 0,
+			[261402] = 0,
+			[433181] = 0,
+			[430764] = 5214467,
+			[428667] = 5929759,
+			[448280] = 0,
+			[452422] = 0,
+			[423341] = 0, -- Khaz Algar Mining
 			--qqi
 
 
@@ -26363,100 +26545,103 @@ function ZA_UpdateData()
 			[216138] = 1535374, -- Teleport: Margoss's Retreat
 			[409147] = 4643992, -- Niffen Diggin' Mitts
 			[49844] = 1786409, -- Direbrew's Remote
-			[50977] = "Interface/AddOns/Media_Newsom/Icons/DeathGate", -- Death Gate
-			["Death Gate:135766"] = "Interface/AddOns/Media_Newsom/Icons/DeathGate",
-			[23453] = "Interface/AddOns/Media_Newsom/Icons/WormholeGadgetzan", -- Ultrasafe Transporter: Gadgetzan
-			[36941] = "Interface/AddOns/Media_Newsom/Icons/WormholeToshleysStation", -- Ultrasafe Transporter: Toshley's Station
-			[23442] = "Interface/AddOns/Media_Newsom/Icons/WormholeEverlook", -- Dimensional Ripper: Everlook
-			[36890] = "Interface/AddOns/Media_Newsom/Icons/WormholeArea52", -- Dimensional Ripper: Area 52
-			[67833] = "Interface/AddOns/Media_Newsom/Icons/WormholeNorthrend", -- Wormhole: Northrend
-			[126755] = "Interface/AddOns/Media_Newsom/Icons/WormholePandaria", -- Wormhole: Pandaria
-			[163830] = "Interface/AddOns/Media_Newsom/Icons/WormholeDraenor", -- Wormhole: Draenor
-			[250796] = "Interface/AddOns/Media_Newsom/Icons/WormholeArgus", -- Wormhole: Argus
-			[299083] = "Interface/AddOns/Media_Newsom/Icons/WormholeKulTiras", -- Wormhole: Kul Tiras
-			[299084] = "Interface/AddOns/Media_Newsom/Icons/WormholeZandalar", -- Wormhole: Zandalar
-			[324031] = "Interface/AddOns/Media_Newsom/Icons/WormholeShadowlands", -- Wormhole: Shadowlands
-			[386379] = "Interface/AddOns/Media_Newsom/Icons/WormholeDragonIsles", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
-			[220746] = "Interface/AddOns/Media_Newsom/Icons/TeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
-			[430265] = "Interface/AddOns/Media_Newsom/Icons/TeleportGilneas", -- Teleport: Gilneas
-			[390783] = "Interface/AddOns/Media_Newsom/Icons/TeleportAylaagCamp", -- Teleport: Ravenholdt Manor
-			[71436] = "Interface/AddOns/Media_Newsom/Icons/TeleportBootyBay", -- Teleport: Booty Bay (Boots of the Bay)
-			[231054] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan", -- Teleport: Karazhan
-			[406714] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportForbiddenReach", -- Teleport: Karazhan
-			["Teleport: Karazhan"] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarazhan",
-			["Portal: Karazhan"] = "Interface/AddOns/Media_Newsom/Icons/PortalKarazhan",
-			[41234] = "Interface/AddOns/Media_Newsom/Icons/TeleportBlackTemple", -- Teleport: Black Temple
-			["Teleport: Black Temple"] = "Interface/AddOns/Media_Newsom/Icons/TeleportBlackTemple",
-			[245173] = "Interface/AddOns/Media_Newsom/Icons/PortalBlackTemple", -- Portal: Black Temple
-			["Portal: Black Temple"] = "Interface/AddOns/Media_Newsom/Icons/PortalBlackTemple",
-			[66238] = "Interface/AddOns/Media_Newsom/Icons/TeleportArgentTournament", -- Teleport: Argent Tournament
-			[145430] = "Interface/AddOns/Media_Newsom/Icons/TeleportTimelessIsle", -- Teleport: Timeless Isle
-			[175608] = "Interface/AddOns/Media_Newsom/Icons/TeleportKarabor", -- Teleport: Karabor
-			[175604] = "Interface/AddOns/Media_Newsom/Icons/TeleportBladespireCitadel", -- Teleport: Bladespire Citadel
+			[50977] = "Interface/AddOns/!ZigiAuras/Icons/DeathGate", -- Death Gate
+			["Death Gate:135766"] = "Interface/AddOns/!ZigiAuras/Icons/DeathGate",
+			[23453] = "Interface/AddOns/!ZigiAuras/Icons/WormholeGadgetzan", -- Ultrasafe Transporter: Gadgetzan
+			[36941] = "Interface/AddOns/!ZigiAuras/Icons/WormholeToshleysStation", -- Ultrasafe Transporter: Toshley's Station
+			[23442] = "Interface/AddOns/!ZigiAuras/Icons/WormholeEverlook", -- Dimensional Ripper: Everlook
+			[36890] = "Interface/AddOns/!ZigiAuras/Icons/WormholeArea52", -- Dimensional Ripper: Area 52
+			[67833] = "Interface/AddOns/!ZigiAuras/Icons/WormholeNorthrend", -- Wormhole: Northrend
+			[126755] = "Interface/AddOns/!ZigiAuras/Icons/WormholePandaria", -- Wormhole: Pandaria
+			[163830] = "Interface/AddOns/!ZigiAuras/Icons/WormholeDraenor", -- Wormhole: Draenor
+			[250796] = "Interface/AddOns/!ZigiAuras/Icons/WormholeArgus", -- Wormhole: Argus
+			[299083] = "Interface/AddOns/!ZigiAuras/Icons/WormholeKulTiras", -- Wormhole: Kul Tiras
+			[299084] = "Interface/AddOns/!ZigiAuras/Icons/WormholeZandalar", -- Wormhole: Zandalar
+			[324031] = "Interface/AddOns/!ZigiAuras/Icons/WormholeShadowlands", -- Wormhole: Shadowlands
+			[386379] = "Interface/AddOns/!ZigiAuras/Icons/WormholeDragonIsles", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
+			[448126] = "Interface/AddOns/!ZigiAuras/Icons/WormholeKhazAlgar", -- Wyrmhole: Dragon Isles (Wyrmhole Generator)
+			[220746] = "Interface/AddOns/!ZigiAuras/Icons/TeleportRavenholdtManor", -- Teleport: Ravenholdt Manor
+			[430265] = "Interface/AddOns/!ZigiAuras/Icons/TeleportGilneas", -- Teleport: Gilneas
+			[390783] = "Interface/AddOns/!ZigiAuras/Icons/TeleportAylaagCamp", -- Teleport: Ravenholdt Manor
+			[71436] = "Interface/AddOns/!ZigiAuras/Icons/TeleportBootyBay", -- Teleport: Booty Bay (Boots of the Bay)
+			[231054] = "Interface/AddOns/!ZigiAuras/Icons/TeleportKarazhan", -- Teleport: Karazhan
+			[406714] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportForbiddenReach", -- Teleport: Karazhan
+			["Teleport: Karazhan"] = "Interface/AddOns/!ZigiAuras/Icons/TeleportKarazhan",
+			["Portal: Karazhan"] = "Interface/AddOns/!ZigiAuras/Icons/PortalKarazhan",
+			[41234] = "Interface/AddOns/!ZigiAuras/Icons/TeleportBlackTemple", -- Teleport: Black Temple
+			["Teleport: Black Temple"] = "Interface/AddOns/!ZigiAuras/Icons/TeleportBlackTemple",
+			[245173] = "Interface/AddOns/!ZigiAuras/Icons/PortalBlackTemple", -- Portal: Black Temple
+			["Portal: Black Temple"] = "Interface/AddOns/!ZigiAuras/Icons/PortalBlackTemple",
+			[66238] = "Interface/AddOns/!ZigiAuras/Icons/TeleportArgentTournament", -- Teleport: Argent Tournament
+			[145430] = "Interface/AddOns/!ZigiAuras/Icons/TeleportTimelessIsle", -- Teleport: Timeless Isle
+			[175608] = "Interface/AddOns/!ZigiAuras/Icons/TeleportKarabor", -- Teleport: Karabor
+			[175604] = "Interface/AddOns/!ZigiAuras/Icons/TeleportBladespireCitadel", -- Teleport: Bladespire Citadel
 			[54406] = 237509, -- Teleport: Dalaran - Northrend (Band/Signet/Ring of the Kirin Tor)
-			[335671] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportTheaterOfPain", -- Scroll of Teleport: Theater of Pain
-			[26373] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportMoonglade", -- Lunar Invitation
-			[225435] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportKaldelar", -- Town Portal: Kal'delar
-			[225434] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportSashjtar", -- Town Portal: Sashj'tar
-			[225428] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportShalanir", -- Town Portal: Shala'nir
-			[225440] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportLiantril", -- Town Portal: Lian'tril
-			[225436] = "Interface/AddOns/Media_Newsom/Icons/ScrollTeleportFaronaar", -- Town Portal: Faronaar
-			[396591] = "Interface/AddOns/Media_Newsom/Icons/TeleportStormsongValley", -- Teleport: Jeweled Coast (Lucky Tortollan Charm)
+			[335671] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportTheaterOfPain", -- Scroll of Teleport: Theater of Pain
+			[26373] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportMoonglade", -- Lunar Invitation
+			[225435] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportKaldelar", -- Town Portal: Kal'delar
+			[225434] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportSashjtar", -- Town Portal: Sashj'tar
+			[225428] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportShalanir", -- Town Portal: Shala'nir
+			[225440] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportLiantril", -- Town Portal: Lian'tril
+			[225436] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportFaronaar", -- Town Portal: Faronaar
+			[396591] = "Interface/AddOns/!ZigiAuras/Icons/TeleportStormsongValley", -- Teleport: Jeweled Coast (Lucky Tortollan Charm)
+			[460271] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportSilithus", -- Teleporting to Silithus
 			-- Hero's Path
-			[131204] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTempleOfTheJadeSerpent", -- Path of the Jade Serpent
-			[131205] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportStormstoutBrewery", -- Path of the Stout Brew
-			[131206] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportShadoPanMonastery", -- Path of the Shado-Pan
-			[131222] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportMogushanPalace", -- Path of the Mogu King
-			[131225] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportGateOfTheSettingSun", -- Path of the Setting Sun
-			[131228] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportSiegeOfNiuzaoTemple", -- Path of the Black Ox
-			[131229] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportScarletMonastery", -- Path of the Scarlet Mitre
-			[131231] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportScarletHalls", -- Path of the Scarlet Blade
-			[131232] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportScholomance", -- Path of the Necromancer
-			[159895] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportBloodmaulSlagMines", -- Path of the Bloodmaul
-			[159896] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportIronDocks", -- Path of the Iron Prow
-			[159897] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportAuchindoun", -- Path of the Vigilant
-			[159898] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportSkyreach", -- Path of the Skies
-			[159899] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportShadowmoonBurialGrounds", -- Path of the Crescent Moon
-			[159900] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportGrimrailDepot", -- Path of the Dark Rail
-			[159901] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheEverbloom", -- Path of the Verdant
-			[159902] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportUpperBlackrockSpire", -- Path of the Burning Mountain
-			[354462] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheNecroticWake", -- Path of the Courageous
-			[354463] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportPlaguefall", -- Path of the Plagued
-			[354464] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportMistsOfTirnaScithe", -- Path of the Misty Forest
-			[354465] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportHallsOfAtonement", -- Path of the Sinful Soul
-			[354466] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportSpiresOfAscension", -- Path of the Ascendant
-			[354467] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheaterOfPain", -- Path of the Undefeated
-			[354468] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportDeOtherSide", -- Path of the Scheming Loa
-			[354469] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportSanguineDepths", -- Path of the Stone Warden
-			[367416] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTazavesh", -- Path of the Streetwise Merchant
-			[373190] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportCastleNathria", -- Path of the Sire
-			[373191] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportSanctumOfDomination", -- Path of the Tormented Soul
-			[373192] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportSepulcherOfTheFirstOnes", -- Path of the First Ones
-			[373262] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportKarazhan", -- Path of the Fallen Guardian
-			[373274] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportOperationMechagon", -- Path of the Scrappy Prince
-			[393222] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportUldaman", -- Path of the Watcher's Legacy
-			[393256] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportRubyLifePools", -- Path of the Clutch Defender
-			[393262] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheNokhudOffensive", -- Path of the Windswept Plains
-			[393267] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportBrackenhideHollow", -- Path of the Rotting Woods
-			[393273] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportAlgetharAcademy", -- Path of the Draconic Diploma
-			[393276] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportNeltharus", -- Path of the Obsidian Hoard
-			[393279] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheAzureVault", -- Path of Arcane Secrets
-			[393283] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportHallsOfInfusion", -- Path of the Titanic Reservoir
-			[393764] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportHallsOfValor", -- Path of Proven Worth
-			[393766] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportCourtOfStars", -- Path of the Grand Magistrix
-			[410071] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportFreehold", -- Path of the Freebooter
-			[410074] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheUnderrot", -- Path of Festering Rot
-			[410078] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportNeltharionsLair", -- Path of the Earth-Warder
-			[410080] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportTheVortexPinnacle", -- Path of Wind's Domain
-			[424153] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportBlackRookHold", -- Path of Ancient Horrors
-			[424142] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportThroneOfTheTides", -- Path of the Tiderhunter
-			[424163] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportDarkheartThicket", -- Path of the Nightmare Lord
-			[424167] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportWaycrestManor", -- Path of Heart's Bane
-			[424187] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportAtalDazar", -- Path of the Golden Tomb
-			[424197] = "Interface/AddOns/Media_Newsom/Icons/HeroTeleportDawnOfTheInfinite", -- Path of Twisted Time
+			[131204] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTempleOfTheJadeSerpent", -- Path of the Jade Serpent
+			[131205] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportStormstoutBrewery", -- Path of the Stout Brew
+			[131206] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportShadoPanMonastery", -- Path of the Shado-Pan
+			[131222] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportMogushanPalace", -- Path of the Mogu King
+			[131225] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportGateOfTheSettingSun", -- Path of the Setting Sun
+			[131228] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSiegeOfNiuzaoTemple", -- Path of the Black Ox
+			[131229] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportScarletMonastery", -- Path of the Scarlet Mitre
+			[131231] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportScarletHalls", -- Path of the Scarlet Blade
+			[131232] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportScholomance", -- Path of the Necromancer
+			[159895] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportBloodmaulSlagMines", -- Path of the Bloodmaul
+			[159896] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportIronDocks", -- Path of the Iron Prow
+			[159897] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAuchindoun", -- Path of the Vigilant
+			[159898] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSkyreach", -- Path of the Skies
+			[159899] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportShadowmoonBurialGrounds", -- Path of the Crescent Moon
+			[159900] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportGrimrailDepot", -- Path of the Dark Rail
+			[159901] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheEverbloom", -- Path of the Verdant
+			[159902] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportUpperBlackrockSpire", -- Path of the Burning Mountain
+			[354462] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheNecroticWake", -- Path of the Courageous
+			[354463] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportPlaguefall", -- Path of the Plagued
+			[354464] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportMistsOfTirnaScithe", -- Path of the Misty Forest
+			[354465] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportHallsOfAtonement", -- Path of the Sinful Soul
+			[354466] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSpiresOfAscension", -- Path of the Ascendant
+			[354467] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheaterOfPain", -- Path of the Undefeated
+			[354468] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDeOtherSide", -- Path of the Scheming Loa
+			[354469] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSanguineDepths", -- Path of the Stone Warden
+			[367416] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTazavesh", -- Path of the Streetwise Merchant
+			[373190] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCastleNathria", -- Path of the Sire
+			[373191] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSanctumOfDomination", -- Path of the Tormented Soul
+			[373192] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSepulcherOfTheFirstOnes", -- Path of the First Ones
+			[373262] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportKarazhan", -- Path of the Fallen Guardian
+			[373274] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportOperationMechagon", -- Path of the Scrappy Prince
+			[393222] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportUldaman", -- Path of the Watcher's Legacy
+			[393256] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportRubyLifePools", -- Path of the Clutch Defender
+			[393262] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheNokhudOffensive", -- Path of the Windswept Plains
+			[393267] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportBrackenhideHollow", -- Path of the Rotting Woods
+			[393273] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAlgetharAcademy", -- Path of the Draconic Diploma
+			[393276] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportNeltharus", -- Path of the Obsidian Hoard
+			[393279] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheAzureVault", -- Path of Arcane Secrets
+			[393283] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportHallsOfInfusion", -- Path of the Titanic Reservoir
+			[393764] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportHallsOfValor", -- Path of Proven Worth
+			[393766] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCourtOfStars", -- Path of the Grand Magistrix
+			[410071] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportFreehold", -- Path of the Freebooter
+			[410074] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheUnderrot", -- Path of Festering Rot
+			[410078] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportNeltharionsLair", -- Path of the Earth-Warder
+			[410080] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheVortexPinnacle", -- Path of Wind's Domain
+			[424153] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportBlackRookHold", -- Path of Ancient Horrors
+			[424142] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportThroneOfTheTides", -- Path of the Tiderhunter
+			[424163] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDarkheartThicket", -- Path of the Nightmare Lord
+			[424167] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportWaycrestManor", -- Path of Heart's Bane
+			[424187] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAtalDazar", -- Path of the Golden Tomb
+			[424197] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDawnOfTheInfinite", -- Path of Twisted Time
 
 
 			--§ Spells
+			[394927] = 4630438, -- Light of Creation (Kharnalex, The First Light)
 			[375893] = 648707, -- Death Chakram
 			[382440] = 1033914, -- Shifting Power
 			[388193] = 628675, -- Jadefire Stomp
