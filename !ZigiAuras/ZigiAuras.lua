@@ -332,7 +332,7 @@ function ZA_UpdateData()
 			[174] = "c4bdd9", -- Deep Sea Scale
 			[158] = "e4c4a2", -- Brown Scale
 			[150] = "b3b0a4", -- Fabric
-			[809] = "b8b7b2", -- Stone
+			[809] = "c2d4b3", -- Stone
 			[909] = "c3c9cc", -- Metal
 			[910] = "c3c9cc", -- Dark Metal
 			[132] = "e8bc9d", -- Copper
@@ -399,16 +399,16 @@ function ZA_UpdateData()
 			[900] = "cff3a5", -- Naturestrike
 			[10]  = "8ee858", -- Life
 			[805] = "8697ff", -- Fey
-			[806] = "009600", -- Poison
-			[906] = "009600", -- Poisonstrike
+			[806] = "bad82a", -- Poison
+			[906] = "a6ff3b", -- Poisonstrike
 			[908] = "4dff62", -- Slime
 			[803] = "f9c265", -- Earth
 			[903] = "dcbc85", -- Earthstrike
 			[804] = "ffea96", -- Sand
 			[811] = "b9cedc", -- Wind
 			[911] = "d9e8e8", -- Storm
-			[800] = "147aff", -- Lightning
-			[9]   = "c0e8ff", -- Stormstrike
+			[800] = "58b3ff", -- Lightning
+			[9]   = "3584ff", -- Stormstrike
 			[802] = "7bff96", -- Mist
 			[807] = "7effc2", -- Jade Lightning
 			[907] = "aafff8", -- Chi
@@ -430,6 +430,7 @@ function ZA_UpdateData()
 			[32]  = "8080ff", -- Shadow
 			[33]  = "52407d", -- Shadowstrike
 			[330] = "8080ff", -- Darkness
+			[331] = "3714ff", -- Ascension
 			[328] = "7f57c2", -- Psychic
 			[320] = "3714ff", -- Void
 			[34]  = "cb38dc", -- Twilight
@@ -444,6 +445,7 @@ function ZA_UpdateData()
 			[325] = "9600ff", -- Curse
 			[40]  = "967213", -- Plague
 			[410] = "966400", -- Disease
+			[416] = "967213", -- Locust
 			[414] = "b4e54e", -- Unholy
 			[415] = "bfbe73", -- Bone
 			[326] = "20db9e", -- Necromancy
@@ -780,7 +782,7 @@ function ZA_UpdateData()
 			[174] = "223763:3f7c8f", -- Deep Sea Scale
 			[158] = "615738:e4c4a2", -- Brown Scale
 			[150] = "fbfaf8:b3b0a4", -- Fabric
-			[809] = "74726a:b8b7b2", -- Stone
+			[809] = "6c7a6f:d5e4c8", -- Stone
 			[909] = "62686c:c3c9cc", -- Metal
 			[910] = "3e4244:9a9ea1", -- Dark Metal
 			[132] = "d1793b:e8bc9d", -- Copper
@@ -846,7 +848,7 @@ function ZA_UpdateData()
 			[900] = "609f5f:cff3a5", -- Naturestrike
 			[10]  = "8ee858:e5ffb2", -- Life
 			[805] = "803aff:21d3ff", -- Fey
-			[806] = "00f139:aeff00", -- Poison
+			[806] = "4c7205:dcf925", -- Poison
 			[906] = "1d7211:55bf38", -- Poisonstrike
 			[908] = "23a965:4dff62", -- Slime
 			[803] = "91622d:f9c265", -- Earth
@@ -854,8 +856,8 @@ function ZA_UpdateData()
 			[804] = "b68640:ffea96", -- Sand
 			[811] = "b9cedc:ffffff", -- Wind
 			[911] = "6670a3:d9e8e8", -- Storm
-			[800] = "147aff:bdf0ff", -- Lightning
-			[9]   = "8972ff:c0e8ff", -- Stormstrike
+			[800] = "2e88ff:a6faff", -- Lightning
+			[9]   = "1f54ff:a6faff", -- Stormstrike
 			[802] = "0aff9a:ffff96", -- Mist
 			[807] = "00c99d:d6ffc0", -- Jade Lightning
 			[907] = "004eb8:aafff8", -- Chi
@@ -877,6 +879,7 @@ function ZA_UpdateData()
 			[32]  = "451ea7:c257b2", -- Shadow
 			[33]  = "2d2247:6b4566", -- Shadowstrike
 			[330] = "110936:6224b5", -- Darkness
+			[331] = "0f00eb:c21d00", -- Ascension
 			[328] = "4c3189:7b7c9e", -- Psychic
 			[320] = "220649:243bff", -- Void
 			[34]  = "3949dc:ff256d", -- Twilight
@@ -891,6 +894,7 @@ function ZA_UpdateData()
 			[325] = "481840:c13ccd", -- Curse
 			[40]  = "967213:b7e751", -- Plague
 			[410] = "6a6009:f1b33b", -- Disease
+			[416] = "2a174d:69a600", -- Locust
 			[414] = "618400:b4e54e", -- Unholy
 			[415] = "bfc483:bfbe73", -- Bone
 			[326] = "3e6051:20db9e", -- Necromancy
@@ -971,6 +975,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["ZZ-01-47"] = 100,
 			["Imperial Lynx"] = 171,
 			["Lamplighter Skiff"] = 100,
 			["Xaril the Poisoned Mind"] = 810,
@@ -2233,6 +2238,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[443860] = "Zone", -- Purified Air
+			[443860] = "Zone", -- Purified Air
+			[443880] = "Zone", -- Air Totem
+			[434980] = "Zone", -- Azj-Kahet Pheromones
 			[444499] = "Zone", -- Arathi Lynx
 			[453877] = "Zone", -- Cinderbrew Reserve
 			[456024] = "Zone", -- Derby Dasher
@@ -3207,6 +3216,103 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[447244] = 722, -- Call of the Ancestors
+			[454009] = 911, -- Tempest
+			[436358] = 117, -- Demolish
+			[458887] = 204, -- Energized Freedom
+			[456948] = 12, -- Purging Protocol
+			[446401] = 4, -- Firewall Protocol
+			[436344] = 204, -- Azerite Surge
+			[459248] = 330, -- Dark Barrage
+			[459246] = 330, -- Dark Barrage
+			[431734] = 416, -- Carrion Beetles
+			[53521]  = 416, -- Carrion Beetles
+			[53520]  = 416, -- Carrion Beetles
+			[441252] = 330, -- Spit
+			[458228] = 903, -- Wallop
+			[459229] = 400, -- Fierce Stomping
+			[446646] = 400, -- Double Impact
+			[442998] = 32, -- Grimweave Burst
+			[449896] = 906, -- Envenomed Carapace
+			[432127] = 906, -- Envenomed Carapace
+			[450400] = 100, -- Merciless Blade
+			[295032] = 643, -- Diesel Spray
+			[295034] = 643, -- Diesel Spray
+			[460608] = 800, -- Electric Shock
+			[460609] = 800, -- Electric Shock
+			[450399] = 4, -- Flame Jet
+			[295028] = 4, -- Bush Burner 9000
+			[460587] = 4, -- Reckless Rockets
+			[450781] = 100, -- Shovel Swipe
+			[450781] = 100, -- Shovel Swipe
+			[455052] = 50, -- Firebomb
+			[460595] = 50, -- Fire Bomb
+			[441864] = 800, -- Maintenance Beam
+			[441770] = 800, -- Maintenance Beam
+			[442748] = 800, -- Maintenance Beam
+			[449770] = 12, -- Worm Bile
+			[449767] = 12, -- Worm Bile
+			[449765] = 12, -- Worm Bile
+			[463956] = 4, -- Fire Glob
+			[449717] = 5, -- Feeding Larva
+			[449714] = 5, -- Feeding Larva
+			[450133] = 806, -- Noxious Gas
+			[450128] = 806, -- Noxious Gas
+			[450142] = 4, -- Burn Away
+			[450330] = 5, -- Throw Wax
+			[441550] = 100, -- Unclog Drain
+			["Well Fed"] = 5,
+			[443572] = 66, -- Crane Stance
+			[459254] = 100, -- Loader Signal
+			[432994] = 811, -- Streamlined Relic
+			[443880] = 811, -- Air Totem
+			[443860] = 811, -- Purified Air
+			[445718] = 12, -- Magma Hammer
+			[445781] = 12, -- Lava Blast
+			[86088] = 5, -- Throw Dynamite
+			[29579] = 5, -- Throw Dynamite
+			[133213] = 5, -- Throw Dynamite
+			[214739] = 5, -- Throw Dynamite
+			[40062] = 5, -- Throw Dynamite
+			[7978] = 5, -- Throw Dynamite
+			[217744] = 5, -- Throw Dynamite
+			[196157] = 5, -- Throw Dynamite
+			[148138] = 5, -- Throw Dynamite
+			[448528] = 5, -- Throw Dynamite
+			[311819] = 5, -- Throw Dynamite
+			[255497] = 5, -- Throw Dynamite
+			[35276] = 5, -- Throw Dynamite
+			[263221] = 5, -- Throw Dynamite
+			[194951] = 5, -- Throw Dynamite
+			[133895] = 5, -- Throw Dynamite
+			[195393] = 5, -- Throw Dynamite
+			[40064] = 5, -- Throw Dynamite
+			[279615] = 5, -- Throw Dynamite
+			[213978] = 5, -- Throw Dynamite
+			[65128] = 5, -- Throw Dynamite
+			[289071] = 5, -- Throw Dynamite
+			[107115] = 5, -- Throw Dynamite
+			[448600] = 5, -- Throw Dynamite
+			[390926] = 5, -- Throw Dynamite
+			[390927] = 5, -- Throw Dynamite
+			[279185] = 5, -- Throw Dynamite
+			[445191] = 4, -- Wicklighter Volley
+			[448399] = 103, -- Battle Cry
+			[449071] = 4, -- Blazing Wick
+			[448341] = 107, -- Thwack!
+			[446430] = 8, -- Algal Bloom
+			[304481] = 8, -- Algal Bloom
+			[446409] = 888, -- Seaweed Splash
+			[439432] = 104, -- Turbo Boost
+			[453509] = 400, -- Sureki Shockwaves
+			[453507] = 400, -- Sureki Shockwaves
+			[449650] = 911, -- Dive Bomb
+			[449640] = 911, -- Dive Bomb
+			[453029] = 416, -- Locust Swarm
+			[452985] = 416, -- Locust Swarm
+			[450435] = 331, -- Final Ascension
+			[431612] = 143, -- Entangling Web
+			[431549] = 806, -- Poison Bolt
 			[420125] = 803, -- Earthen Strike
 			[450439] = 144, -- Viscous Drippings
 			[450425] = 144, -- Viscous Drippings
@@ -3236,7 +3342,7 @@ function ZA_UpdateData()
 			[432502] = 200, -- Sacred Weapon
 			[441333] = 40, -- Corrupting Spores
 			[414945] = 40, -- Rotten Bolt
-			[449522] = 104, -- Dive Bomb
+			[449522] = 911, -- Dive Bomb
 			[431714] = 325, -- Silken Razorwire
 			[455809] = 330, -- Call Rift
 			[378454] = 400, -- Sundering Earth
@@ -3831,8 +3937,8 @@ function ZA_UpdateData()
 			[445559] = 903, -- Shattering Stomp
 			[452233] = 40, -- Stinging Swarm
 			[452231] = 40, -- Stinging Swarm
-			[448549] = 803, -- Impale
-			[431744] = 803, -- Impale
+			[448549] = 400, -- Impale
+			[431744] = 400, -- Impale
 			[448050] = 903, -- Hardened Carapace
 			[448050] = 903, -- Hardened Carapace
 			[452169] = 111, -- Deafening Shriek
@@ -9652,7 +9758,6 @@ function ZA_UpdateData()
 			["Immolation Orb:841218"] = 401,
 			["Immortality:3528292"] = 326,
 			["Impact Spit"] = 40,
-			["Impale"] = 101,
 			["Impaling Coral"] = 808,
 			["Impaling Gaze"] = 112,
 			["Impaling Spikes:136181"] = 411,
@@ -12582,6 +12687,7 @@ function ZA_UpdateData()
 			[308814] = 320, -- Ny'alotha Allseer
 			[261395] = 328, -- The Hivemind
 			-- Aurelid
+			[359380] = 3, -- Depthstalker
 			[359381] = 132, -- Cryptic Aurelid
 			[342680] = 106, -- Deepstar Aurelid
 			[359379] = 131, -- Shimmering Aurelid
@@ -12623,6 +12729,10 @@ function ZA_UpdateData()
 			[303766] = 144, -- Honeyback Drone
 			[259741] = 144, -- Honeyback Harvester
 			[303767] = 144, -- Honeyback Hivemother
+			-- Cinderbee
+			[447160] = 4, -- Raging Cinderbee
+			[447057] = 4, -- Smoldering Cinderbee
+			[447151] = 4, -- Soaring Meaderbee
 
 			--! Beetle
 			[381529] = 822, -- Telix the Stormhorn
@@ -12631,6 +12741,8 @@ function ZA_UpdateData()
 			[428060] = 130, -- Golden Regal Scarab
 			[428065] = 120, -- Jeweled Jade Scarab
 			[428062] = 814, -- Jeweled Sapphire Scarab
+			-- Goliathus
+			[452779] = 202, -- Ivory Goliathus
 
 			--! Bird
 			[312751] = 174, -- Clutch of Ha-Li
@@ -12761,7 +12873,9 @@ function ZA_UpdateData()
 			[171621] = 12, -- Ironhoof Destroyer
 
 			--! Cat
+			[317177] = 66, -- Sunwarmed Furline
 			-- Nightsaber
+			[449126] = 175, -- Kor'kron Warsaber
 			[16056]  = 159, -- Ancient Frostsaber
 			[366962] = 720, -- Ash'adar, Harbinger of Dawn
 			[16055]  = 175, -- Black Nightsaber
@@ -12812,7 +12926,8 @@ function ZA_UpdateData()
 			-- Mechanocat
 			[294143] = 100, -- X-995 Mechanocat
 			-- Lynx
-			[317177] = 66, -- Sunwarmed Furline
+			[448979] = 158, -- Dauntless Imperial Lynx
+			[448978] = 173, -- Vermillion Imperial Lynx
 			-- Sabertooth
 			[394737] = 4, -- Vicious Sabertooth (Alliance)
 			[394738] = 4, -- Vicious Sabertooth (Horde)
@@ -12903,6 +13018,10 @@ function ZA_UpdateData()
 
 			--! Crocolisk
 			[289639] = 157, -- Bruce
+			[457654] = 170, -- Keg Leg's Radiant Crocolisk
+			[457650] = 119, -- Plunderlord's Golden Crocolisk
+			[457656] = 819, -- Plunderlord's Midnight Crocolisk
+			[457659] = 171, -- Plunderlord's Weathered Crocolisk
 
 			--! Darkhound
 			[344228] = 326, -- Battle-Bound Warhound
@@ -13070,6 +13189,10 @@ function ZA_UpdateData()
 			[358072] = 160, -- Bound Blizzard
 			[231442] = ZA.Specialization(811, 4, 811, 24), -- Farseer's Raging Tempest
 			[289555] = 24, -- Glacial Tidestorm
+			-- Deathwalker
+			[448939] = 999, -- Shackled Shadow
+			[448941] = 330, -- Beledar's Spawn
+			[448934] = 411, -- Black Shadow Elemental
 			[334482] = 320, -- Restoration Deathwalker
 			[340068] = 411, -- Sintouched Deathwalker
 			[358319] = 326, -- Soultwisted Deathwalker
@@ -13095,8 +13218,15 @@ function ZA_UpdateData()
 			[253088] = 4, -- Antoran Charhound
 			[253087] = 32, -- Antoran Gloomhound
 			[229417] = 127, -- Slayer's Felbroken Shrieker
-			[272472] = 134, -- Undercity Plaguebat
 			[369476] = 402, -- Amalgam of Rage
+			[449466] = 133, -- Forged Gladiator's Fel Bat
+			[449465] = 131, -- Silver Gladiator's Fel Bat
+			-- Plaguebat
+			[272472] = 134, -- Undercity Plaguebat
+			-- Skyrazor
+			[451489] = 910, -- Siesbarg
+			[451491] = 150, -- Ascendant Skyrazor
+			[451486] = 150, -- Sureki Skyrazor
 
 			--! Felstalker
 			[189998] = 32, -- Illidari Felstalker
@@ -13120,6 +13250,11 @@ function ZA_UpdateData()
 			-- Sea Ray
 			[228919] = 801, -- Darkwater Skate
 			[278803] = 801, -- Great Sea Ray
+			-- Underlight Fish
+			[448851] = 32, -- Underlight Corrupted Behemoth
+			[448850] = 331, -- Kah, Legend of the Deep
+			[448849] = 174, -- Underlight Shorestalker
+			[448845] = 331, -- Indigo Underlight Fish
 
 			--! Flying Carpet
 			[169952] = 5, -- Creeping Carpet
@@ -13162,7 +13297,8 @@ function ZA_UpdateData()
 			[353873] = 321, -- Pale Gravewing
 			[353872] = 321, -- Sinfall Gravewing
 
-			--! Giant Hand
+			--! Hand
+			[459193] = 137, -- Hand of Reshkigaal
 			[352309] = 813, -- Hand of Bahmethra
 			[339957] = 131, -- Hand of Hrestimorak
 			[354354] = 130, -- Hand of Nilganihmaht
@@ -13217,6 +13353,8 @@ function ZA_UpdateData()
 			[32292]  = 804, -- Swift Purple Gryphon
 			[32289]  = 804, -- Swift Red Gryphon
 			[54729]  = 415, -- Winged Steed of the Ebon Blade
+			-- Stormrook
+			[447213] = 811, -- Alunira
 
 			--! Hawkstrider
 			[35022]  = 175, -- Black Hawkstrider
@@ -13316,6 +13454,9 @@ function ZA_UpdateData()
 			[171840] = 16, -- Coldflame Infernal
 			[213349] = 4, -- Flarecore Infernal
 
+			--! Jawcrawler
+			[447957] = 202, -- Ferocious Jawcrawler
+
 			--! Kite
 			[435109] = 144, -- Feathered Windsurfer
 			[133023] = 815, -- Jade Pandaren Kite
@@ -13386,6 +13527,11 @@ function ZA_UpdateData()
 			[371176] = 80, -- Subterranean Magmammoth
 			[374278] = 6, -- Renewed Magmammoth
 
+			--! Mole
+			[449258] = 155, -- Ol' Mole Rufus
+			[449264] = 154, -- Wick
+			[449269] = 159, -- Crimson Mudnose
+
 			--! Moonbeast
 			[400976] = 805, -- Gleaming Moonbeast
 			[424534] = 175, -- vicious Moonbeast (Alliance)
@@ -13442,15 +13588,25 @@ function ZA_UpdateData()
 			[183889] = 100, -- Vicious War Mechanostrider
 			[15779]  = 100, -- White Mechanostrider Mod B
 
-			--! Mech
+			--! Mechsuit
 			[182912] = 141, -- Felsteel Annihilator
 			[289083] = 204, -- G.M.O.D.
 			[239013] = 200, -- Lightforged Warframe
-			[223814] = 100, -- Mechanized Lumber Extractor
-			[134359] = 100, -- Sky Golem
-			[400733] = 100, -- Rocket Shredder 9001
+			[223814] = 136, -- Mechanized Lumber Extractor
+			[134359] = 135, -- Sky Golem
+			[400733] = 5, -- Rocket Shredder 9001
+			[448186] = 130, -- Crowd Pummeler 2-30
+			[448188] = 133, -- Machine Defense Unit 1-11
+			[442358] = 910, -- Stonevault Mechsuit
+			[458335] = 822, -- Diamond Mechsuit
 
 			--! Mite
+			[449325] = 822, -- Vicious Skyflayer (Alliance)
+			[447405] = 817, -- Vicious Skyflayer (Horde)
+			[447185] = 135, -- Aquamarine Swarmite
+			[447195] = 113, -- Swarmite Skyhunter
+			[447190] = 320, -- Shadowed Swarmite
+			[447189] = 202, -- Tan Swarmite
 			[312776] = 413, -- Chittering Animite
 			[332905] = 413, -- Endmire Flyer
 			[275841] = 101, -- Expedition Bloodswarmer
@@ -13469,15 +13625,21 @@ function ZA_UpdateData()
 			[373967] = 157, -- Stormtouched Bruffalon
 			[349935] = 171, -- Noble Bruffalon
 
+			--! Mana Wyrm
+			[367676] = 822, -- Nether-Gorged Greatwyrm
+
 			--! Moth
 			[342666] = 66, -- Amber Ardenmoth
 			[332256] = 805, -- Duskflutter Ardenmoth
 			[318051] = 805, -- Silky Shimmermoth
 			[342667] = 822, -- Vibrant Flutterwing
+			-- Glowmite
+			[447176] = 201, -- Cyan Glowmite
 
 			--! Murloc
 			[315132] = 119, -- Gargantuan Grrloc
 			[419567] = 813, -- Ginormous Grrloc
+			[463025] = 173, -- Gigantic Grrloc
 
 			--! Mushan
 			[435160] = 137, -- Riverwalker Mushan
@@ -13615,6 +13777,10 @@ function ZA_UpdateData()
 			[23240]  = 159, -- Swift White Ram
 			[171834] = 154, -- Vicious War Ram
 			[6898]   = 159, -- White Ram
+			-- Ramolith
+			[453785] = 2, -- Eathen Ordinant's Ramolith
+			[449415] = 809, -- Slatestone Ramolith
+			[449418] = 909, -- Shale Ramolith
 
 			--! Raptor
 			[96491]  = 173, -- Armored Razzashi Raptor
@@ -13723,13 +13889,11 @@ function ZA_UpdateData()
 			--! Seeker
 			[229377] = ZA.Specialization(4, 201, 200, 320), -- High Priest's Lightsworn Seeker
 
-			--! Serpent  ! Worm
+			--! Worm
 			-- Fathom Serpent
 			[232519] = 135, -- Abyss Worm
 			[275623] = 321, -- Nazjatar Blood Serpent
 			[243025] = 137, -- Riddler's Mind-Worm
-			-- Mana Wyrm
-			[367676] = 822, -- Nether-Gorged Greatwyrm
 			-- Serpent of N'Zoth
 			[316637] = 324, -- Awakened Mindborer
 			[305182] = 324, -- Black Serpent of N'Zoth
@@ -13957,6 +14121,11 @@ function ZA_UpdateData()
 			[30174] = 119, -- Riding Turtle
 			[64731] = 157, -- Sea Turtle
 
+			--! Undercrawler
+			[448685] = 810, -- Heritage Undercrawler
+			[448689] = 135, -- Royal Court Undercrawler
+			[448680] = 137, -- Widow's Undercrawler
+
 			--! Ur'zul
 			[243651] = 414, -- Shackled Ur'zul
 
@@ -14036,6 +14205,7 @@ function ZA_UpdateData()
 			[134573] = 811, -- Swift Windsteed
 
 			--! Wolf
+			[449140] = 150, -- Sentinel War Wolf
 			[171838] = 150, -- Armored Frostwolf
 			[171844] = 153, -- Dustmane Direwolf
 			[186305] = 401, -- Infernal Direwolf
@@ -16057,6 +16227,78 @@ function ZA_UpdateData()
 			[446045] = 330,
 			[446038] = 330,
 			[444659] = 100,
+			[244078] = 114,
+			[440320] = 100,
+			[440319] = 100,
+			[451095] = 50,
+			[441545] = 4,
+			[456561] = 100, -- Adding
+			[456960] = 100, -- Adding
+			[456551] = 100, -- Adding
+			[456535] = 100, -- Adding
+			[457007] = 100, -- Adding
+			[456555] = 100, -- Adding
+			[456557] = 100, -- Adding
+			[456558] = 100, -- Adding
+			[456556] = 100, -- Adding
+			[456997] = 100, -- Adding
+			[456553] = 100, -- Adding
+			[457004] = 100, -- Adding
+			[456559] = 100, -- Adding
+			[457008] = 100, -- Adding
+			[456560] = 100, -- Adding
+			[456996] = 100, -- Adding
+			[456998] = 100, -- Adding
+			[457001] = 100, -- Adding
+			[457002] = 100, -- Adding
+			[457003] = 100, -- Adding
+			[457006] = 100, -- Adding
+			[456999] = 100, -- Adding
+			[456972] = 100, -- Adding
+			[457005] = 100, -- Adding
+			[464726] = 100, -- Adding
+			[456957] = 100, -- Adding
+			[464659] = 100, -- Adding
+			[281581] = 100, -- Adding
+			[417162] = 100, -- Adding
+			[417164] = 100, -- Adding
+			[417165] = 100, -- Adding
+			[417169] = 100, -- Adding
+			[456958] = 100, -- Adding
+			[456959] = 100, -- Adding
+			[456962] = 100, -- Adding
+			[456963] = 100, -- Adding
+			[456965] = 100, -- Adding
+			[456966] = 100, -- Adding
+			[456967] = 100, -- Adding
+			[456969] = 100, -- Adding
+			[456970] = 100, -- Adding
+			[456971] = 100, -- Adding
+			[456979] = 100, -- Adding
+			[456980] = 100, -- Adding
+			[456981] = 100, -- Adding
+			[456982] = 100, -- Adding
+			[456983] = 100, -- Adding
+			[456984] = 100, -- Adding
+			[456987] = 100, -- Adding
+			[456988] = 100, -- Adding
+			[456989] = 100, -- Adding
+			[456990] = 100, -- Adding
+			[456991] = 100, -- Adding
+			[456993] = 100, -- Adding
+			[456994] = 100, -- Adding
+			[456995] = 100, -- Adding
+			[464725] = 100, -- Adding
+			[464727] = 100, -- Adding
+			[452007] = 100,
+			[442595] = 100,
+			[447418] = 200,
+			[447473] = 200,
+			[452214] = 204,
+			[447989] = 204,
+			[423490] = 100,
+			[426798] = 100,
+			[453185] = 100,
 			--qqq
 
 
@@ -27078,6 +27320,78 @@ function ZA_UpdateData()
 			[446045] = 0,
 			[446038] = 0,
 			[444659] = 0,
+			[244078] = 0,
+			[440320] = 0,
+			[440319] = 0,
+			[451095] = 0,
+			[441545] = 0,
+			[456561] = 0, -- Adding
+			[456960] = 0, -- Adding
+			[456551] = 0, -- Adding
+			[456535] = 0, -- Adding
+			[457007] = 0, -- Adding
+			[456555] = 0, -- Adding
+			[456557] = 0, -- Adding
+			[456558] = 0, -- Adding
+			[456556] = 0, -- Adding
+			[456997] = 0, -- Adding
+			[456553] = 0, -- Adding
+			[457004] = 0, -- Adding
+			[456559] = 0, -- Adding
+			[457008] = 0, -- Adding
+			[456560] = 0, -- Adding
+			[456996] = 0, -- Adding
+			[456998] = 0, -- Adding
+			[457001] = 0, -- Adding
+			[457002] = 0, -- Adding
+			[457003] = 0, -- Adding
+			[457006] = 0, -- Adding
+			[456999] = 0, -- Adding
+			[456972] = 0, -- Adding
+			[457005] = 0, -- Adding
+			[464726] = 0, -- Adding
+			[456957] = 0, -- Adding
+			[464659] = 0, -- Adding
+			[281581] = 0, -- Adding
+			[417162] = 0, -- Adding
+			[417164] = 0, -- Adding
+			[417165] = 0, -- Adding
+			[417169] = 0, -- Adding
+			[456958] = 0, -- Adding
+			[456959] = 0, -- Adding
+			[456962] = 0, -- Adding
+			[456963] = 0, -- Adding
+			[456965] = 0, -- Adding
+			[456966] = 0, -- Adding
+			[456967] = 0, -- Adding
+			[456969] = 0, -- Adding
+			[456970] = 0, -- Adding
+			[456971] = 0, -- Adding
+			[456979] = 0, -- Adding
+			[456980] = 0, -- Adding
+			[456981] = 0, -- Adding
+			[456982] = 0, -- Adding
+			[456983] = 0, -- Adding
+			[456984] = 0, -- Adding
+			[456987] = 0, -- Adding
+			[456988] = 0, -- Adding
+			[456989] = 0, -- Adding
+			[456990] = 0, -- Adding
+			[456991] = 0, -- Adding
+			[456993] = 0, -- Adding
+			[456994] = 0, -- Adding
+			[456995] = 0, -- Adding
+			[464725] = 0, -- Adding
+			[464727] = 0, -- Adding
+			[452007] = 0,
+			[442595] = 0,
+			[447418] = 0,
+			[447473] = 0,
+			[452214] = 0,
+			[447989] = 0,
+			[423490] = 0,
+			[426798] = 0,
+			[453185] = 0,
 			--qqi
 
 
@@ -27713,6 +28027,8 @@ function ZA_UpdateData()
 					[3] = 6, -- Yellow
 					[4] = 68, -- Orange
 				}
+
+				ZA.Spells[id] = colors[color] or colors[#colors]
 
 
 
