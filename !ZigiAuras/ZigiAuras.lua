@@ -379,99 +379,101 @@ function ZA_UpdateData()
 
 			-- Fire
 			[4]   = "ff8000", -- Fire
-			[5]   = "fcae49", -- Flamestrike
-			[68]  = "ff754a", -- Spellfire
-			[400] = "d27b35", -- Black Fire
-			[120] = "81e084", -- Jade Fire
-			[12]  = "e76700", -- Volcanic
+			[5]   = "f08a2c", -- Flamestrike
+			[68]  = "f7513d", -- Spellfire
+			[400] = "ba6a2a", -- Black Fire
+			[12]  = "ea4f00", -- Volcanic
+			[402] = "e72900", -- Scorch
+			[401] = "8de900", -- Felfire
 			[403] = "ea767c", -- Living Flame
-			[402] = "ff521e", -- Scorch
-			[401] = "00ff09", -- Felfire
-			[427] = "bac53e", -- Felstrike
-			[36]  = "ca3556", -- Shadowflame
-			[361] = "83e000", -- Fel Shadowflame
-			[28]  = "e87887", -- Elemental
-			[124] = "4eff3b", -- Chaos
-			[127] = "4eff3b", -- Chaos
+			[36]  = "b9204e", -- Shadowflame
+			[361] = "a5994f", -- Fel Shadowflame
+			[28]  = "dd619a", -- Elemental
+			[124] = "45d018", -- Chaos
+			[127] = "45d018", -- Chaos
+			[427] = "b9be7f", -- Felstrike
 
 			-- Nature
-			[8]   = "4dff4d", -- Nature
-			[888] = "4dff4d", -- Grass
-			[900] = "cff3a5", -- Naturestrike
-			[10]  = "8ee858", -- Life
+			[8]   = "8fe747", -- Nature
+			[888] = "4ee51f", -- Grass
+			[900] = "a8d87d", -- Naturestrike
+			[10]  = "cafa86", -- Life
 			[805] = "8697ff", -- Fey
-			[806] = "dcf925", -- Poison
-			[906] = "a8de43", -- Poisonstrike
-			[908] = "4dff62", -- Slime
-			[803] = "f9c265", -- Earth
-			[903] = "dcbc85", -- Earthstrike
-			[804] = "ffea96", -- Sand
-			[811] = "b9cedc", -- Wind
-			[911] = "d9e8e8", -- Storm
-			[800] = "58b3ff", -- Lightning
-			[9]   = "3584ff", -- Stormstrike
-			[802] = "7bff96", -- Mist
-			[807] = "7effc2", -- Jade Lightning
-			[907] = "aafff8", -- Chi
-			[280] = "aeffc5", -- Spiritual
+			[806] = "b6d900", -- Poison
+			[906] = "88b81f", -- Poisonstrike
+			[908] = "4eed47", -- Slime
+			[803] = "d79b42", -- Earth
+			[903] = "bc9b64", -- Earthstrike
+			[804] = "e7c86a", -- Sand
+			[811] = "e2ebf0", -- Wind
+			[911] = "a9b7cb", -- Storm
+			[800] = "67afff", -- Lightning
+			[9]   = "6399ce", -- Stormstrike
+			[120] = "74dd72", -- Dream
+			[802] = "8eff81", -- Mist
+			[807] = "84eaa3", -- Jade Lightning
+			[907] = "5daed9", -- Chi
+			[280] = "82cdb3", -- Spiritual
 
 			-- Frost
-			[16]  = "80ffff", -- Frost
-			[160] = "c0faff", -- Ice
-			[17]  = "a5b9d5", -- Froststrike
-			[801] = "71e2ff", -- Water
-			[901] = "76c6b8", -- Waterstrike
-			[24]  = "5ac7d3", -- Froststorm
-			[80]  = "7e9aff", -- Spellfrost
-			[18]  = "caf8e8", -- Holyfrost
-			[48]  = "7583f0", -- Shadowfrost
-			[20]  = "f5cea8", -- Frostfire
-			[21]  = "f5cea8", -- Steam
+			[16]  = "7cbcff", -- Frost
+			[160] = "c1fcff", -- Ice
+			[17]  = "8196c1", -- Froststrike
+			[801] = "58c8f0", -- Water
+			[901] = "5ba29c", -- Waterstrike
+			[24]  = "7ddfde", -- Froststorm
+			[80]  = "4f77f8", -- Spellfrost
+			[18]  = "b2dac6", -- Holyfrost
+			[48]  = "5b6eda", -- Shadowfrost
+			[20]  = "b36745", -- Frostfire
+			[21]  = "d7a576", -- Steam
 
 			-- Shadow
-			[32]  = "8080ff", -- Shadow
-			[33]  = "9679db", -- Shadowstrike
-			[330] = "9679db", -- Darkness
-			[331] = "8080ff", -- Ascension
-			[328] = "8080ff", -- Psychic
+			[32]  = "9133a2", -- Shadow
+			[33]  = "673c67", -- Shadowstrike
+			[330] = "591bc0", -- Darkness
+			[331] = "b20a55", -- Ascension
+			[328] = "824cff", -- Psychic
+			[34]  = "983cda", -- Twilight
 			[320] = "8080ff", -- Void
-			[34]  = "cb38dc", -- Twilight
+			[324] = "c46d7c", -- Corruption
+			[412] = "f22e53", -- Nightmare
 			[321] = "f90000", -- Blood
-			[322] = "cb765f", -- Pain
-			[323] = "8080ff", -- Haunt
-			[324] = "e09499", -- Corruption
-			[412] = "e8235c", -- Nightmare
-			[327] = "b31416", -- Fear
-			[329] = "ded1ed", -- Dread
-			[96]  = "a654ff", -- Runic (Spellshadow)
-			[325] = "9600ff", -- Curse
-			[40]  = "967213", -- Plague
+			[322] = "b15e4b", -- Pain
+			[323] = "717c95", -- Haunt
+			[327] = "cd003f", -- Fear
+			[329] = "ac9bc3", -- Dread
+			[96]  = "8c3cf1", -- Runic (Spellshadow)
+			[325] = "bf26d9", -- Curse
+			[40]  = "a0b625", -- Plague
 			[410] = "966400", -- Disease
-			[416] = "36f58f", -- Locust
-			[414] = "b4e54e", -- Unholy
-			[415] = "bfbe73", -- Bone
+			[416] = "44b488", -- Locust
+			[414] = "8fc01e", -- Unholy
+			[415] = "b2b667", -- Bone
 			[326] = "20db9e", -- Necromancy
 			[413] = "2c95c4", -- Drust
 			[720] = "70d7db", -- Spectral
-			[411] = "768f84", -- Death
+			[411] = "6e8078", -- Death
 
 			-- Arcane
-			[64]  = "ff80ff", -- Arcane
-			[640] = "d28aff", -- Lunar
-			[65]  = "ab8ac2", -- Spellstrike
-			[126] = "3296ff", -- Magic
-			[62]  = "aef0e4", -- Chromatic
+			[64]  = "c566f7", -- Arcane
+			[644] = "c9447e", -- Cosmic Arcane
+			[640] = "9867ff", -- Lunar
+			[65]  = "7c64c2", -- Spellstrike
+			[126] = "6684ff", -- Magic
+			[650] = "9390d3", -- Magicstrike
+			[62]  = "dc87d1", -- Chromatic
+			[646] = "88c4ff", -- Conjuration
 			[620] = "ff8fa3", -- Devastation
-			[621] = "fcc077", -- Preservation
-			[646] = "a4feff", -- Conjuration
-			[641] = "f2e199", -- Temporal
-			[642] = "7accc8", -- Infinite
-			[643] = "f2e199", -- Corrosion
-			[72]  = "ab66ff", -- Astral
-			[721] = "bdb0f6", -- Stellar
-			[722] = "65efff", -- Celestial
+			[621] = "fcc277", -- Preservation
+			[641] = "f2bd52", -- Temporal
+			[643] = "c58632", -- Corrosion
+			[642] = "70c1bb", -- Infinite
+			[72]  = "a66cff", -- Astral
+			[721] = "af9eff", -- Stellar
+			[722] = "51bbd5", -- Celestial
 			[203] = "ffffff", -- Hyperlight
-			[106] = "f4ca9c", -- Cosmic
+			[106] = "fddcb8", -- Cosmic
 		}
 
 
@@ -600,8 +602,9 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[443523] = "Trap",
 			[460271] = "Teleport: Silithus",
-			[397406] = "Wondrous Wavewhisker", -- Fix spelling error on the spell
+			[397406] = "Wondrous Wavewhisker", -- Fix spelling error
 			[387284] = "Vibrant Spellthread",
 			[387285] = "Vibrant Spellthread",
 			[387286] = "Vibrant Spellthread",
@@ -858,11 +861,11 @@ function ZA_UpdateData()
 			[804] = "b68640:ffea96", -- Sand
 			[811] = "b9cedc:ffffff", -- Wind
 			[911] = "6670a3:d9e8e8", -- Storm
-			[800] = "2e88ff:a6faff", -- Lightning
-			[9]   = "1f54ff:a6faff", -- Stormstrike
+			[800] = "1f54ff:a6faff", -- Lightning
+			[9]   = "3b36bf:89dae0", -- Stormstrike
 			[802] = "0aff9a:ffff96", -- Mist
 			[807] = "00c99d:d6ffc0", -- Jade Lightning
-			[907] = "004eb8:aafff8", -- Chi
+			[907] = "006691:bfffff", -- Chi
 			[280] = "afe446:7eceff", -- Spiritual
 
 			-- Frost
@@ -883,7 +886,7 @@ function ZA_UpdateData()
 			[33]  = "2d2247:6b4566", -- Shadowstrike
 			[330] = "110936:6224b5", -- Darkness
 			[331] = "0f00eb:c21d00", -- Ascension
-			[328] = "4c3189:7b7c9e", -- Psychic
+			[328] = "515cfd:bf6bff", -- Psychic
 			[320] = "220649:243bff", -- Void
 			[34]  = "3949dc:ff256d", -- Twilight
 			[321] = "711010:f90000", -- Blood
@@ -906,10 +909,12 @@ function ZA_UpdateData()
 			[411] = "372e4b:6e857a", -- Death
 
 			-- Arcane
-			[64]  = "d830f1:d8b5ff", -- Arcane
+			[64]  = "c31edb:d599ff", -- Arcane
+			[644] = "c62b87:ffc4a0", -- Cosmic Arcane
 			[640] = "d28aff:766fff", -- Lunar
-			[65]  = "7c6ecf:c48fe0", -- Spellstrike
-			[126] = "a159ff:68e5ff", -- Magic
+			[65]  = "863a9c:9696e0", -- Spellstrike
+			[126] = "9421ff:68e5ff", -- Magic
+			[650] = "7ea8d7:d87bb8", -- Magicstrike
 			[62]  = "52ffb8:ff70cb", -- Chromatic
 			[620] = "f83e3e:33c0ff", -- Devastation
 			[621] = "f83e3e:b3ff87", -- Preservation
@@ -978,6 +983,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Coreway Repair Rig"] = 100,
 			["Stolen Skiff"] = 100,
 			["ZZ-01-47"] = 100,
 			["Imperial Lynx"] = 171,
@@ -1150,6 +1156,7 @@ function ZA_UpdateData()
 
 		--! Hearthstones
 		ZA.Hearthstones = {
+			["Notorious Thread's Hearthstone"] = "Hearthstone",
 			["Draenic Hologem"] = "Hearthstone",
 			["Deepdweller's Earthen Hearthstone"] = "Hearthstone",
 			["Ardenweald Hearthstone"] = "Hearthstone",
@@ -1215,7 +1222,6 @@ function ZA_UpdateData()
 			[390899] = "Mastery",
 			[390835] = "Fire",
 			[390655] = "Shield",
-			[390869] = "Heal",
 		}
 
 		ZA.TrinketOverlayStacks = {
@@ -1224,6 +1230,7 @@ function ZA_UpdateData()
 			[202617] = "408533,408578", -- Elementium Pocket Anvil
 			[202615] = 401394, -- Vessel of Searing Shadow
 			[193006] = 376666, -- Idol of the Earth-Warder
+			[225651] = 455464, -- Kaheti Shadeweaver's Emblem
 		}
 
 		--# Trinkets
@@ -1238,6 +1245,10 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[455464] = true, -- Kaheti Shadeweaver's Emblem
+			[455482] = "Ascension: " .. ZA.PrimaryStatName, -- Imperfect Ascendancy Serum
+			[435493] = true, -- Concoction: Kiss of Death
+			[451303] = "Volatile Energy: Mastery", -- Harvester's Edict
 			[449282] = "Aim of the Iron Dwarves: Critical Strike", -- Weathered Northrend Sigil (Iron Dwarf)
 			[449281] = "Power of the Taunka: Attack Power", -- Weathered Northrend Sigil (Taunka)
 			[449278] = "Speed of the Vrykul: Haste", -- Weathered Northrend Sigil (Vrykul)
@@ -2060,6 +2071,7 @@ function ZA_UpdateData()
 			["Sign of the Mists"] = true,
 			["Sign of Iron"] = true,
 			["Sign of the Legion"] = true,
+			["Sign of the Explorer"] = true,
 			[424143] = true, -- WoW Remix: Mists of Pandaria
 
 
@@ -2068,6 +2080,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[443248] = "State", -- Azj-Kahet Pheromones
 			[455648] = "State", -- Appropriate Stolen Skiff
 			[428546] = "State", -- Tremorsense
 			[465541] = "State", -- Air Bubble
@@ -2258,6 +2271,12 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[440977] = "Zone", -- Sharpen Your Knife
+			[441078] = "Zone", -- Memory Magnet
+			[443116] = "Zone", -- Moose Charge
+			[443114] = "Zone", -- Ram Charge
+			[460190] = "Zone", -- Storm's Vengeance
+			[434432] = "Zone", -- Lightning Charge
 			[455272] = "Zone", -- Gift of Pure Flame
 			[449343] = "Zone", -- Edict of Rage
 			[445798] = "Zone", -- Shattered Essence
@@ -2893,6 +2912,7 @@ function ZA_UpdateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Trinkets
+			[455482] = 143, -- Imperfect Ascendancy Serum
 			[341260] = 200, -- Burst of Knowledge (Heirloom Set Bonus)
 			-- Racial
 			[274739] = 720, -- Rictus of the Laughing Skull
@@ -2902,6 +2922,9 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[455464] = 330, -- Kaheti Shadeweaver's Emblem
+			[435493] = 806, -- Concoction: Kiss of Death
+			[451303] = 331, -- Harvester's Edict
 			[449282] = 16, -- Weathered Northrend Sigil (Iron Dwarf)
 			[449281] = 117, -- Weathered Northrend Sigil (Taunka)
 			[449278] = 104, -- Weathered Northrend Sigil (Vrykul)
@@ -3265,7 +3288,244 @@ function ZA_UpdateData()
 
 
 			--! Spell
-			[440187] = 906, -- Infectious Spores
+			[458430] = 410, -- Suffocating Smog
+			[300650] = 410, -- Suffocating Smog
+			[446328] = 410, -- Suffocating Smog
+			[453588] = 908, -- Thwap!
+			[456788] = 801, -- Splash!
+			[455313] = 806, -- Revitalizing Poison
+			[455231] = 806, -- Deathbud
+			[455298] = 806, -- Sporefield
+			[455278] = 806, -- Sporefield
+			[455260] = 806, -- Sporefield
+			[455302] = 806, -- Sporefield
+			[436336] = 80, -- Mass Disintegrate
+			[448410] = 4, -- Burning Cart
+			[448417] = 4, -- Burning Cart
+			[448348] = 4, -- Burning Cart
+			[448375] = 4, -- Burning Cart
+			[448412] = 4, -- Burning Cart
+			[448421] = 4, -- Burning Cart
+			[448353] = 4, -- Burning Cart
+			[448374] = 4, -- Burning Cart
+			[448376] = 4, -- Burning Cart
+			[448377] = 4, -- Burning Cart
+			[448411] = 4, -- Burning Cart
+			[448444] = 325, -- Runic Shackles
+			[415253] = 806, -- Fungal Breath
+			[415251] = 806, -- Fungal Bloom
+			[415250] = 806, -- Fungal Bloom
+			[456703] = 400, -- Rampage
+			[456702] = 400, -- Rampage
+			[453709] = 888, -- Soggy Smash
+			[453072] = 400, -- Trample
+			[452539] = 400, -- Trample
+			[452442] = 327, -- Horrifying Howl
+			[452442] = 327, -- Horrifying Howl
+			[453192] = 400, -- Fracturing Crags
+			[453187] = 400, -- Fracturing Crags
+			[453188] = 400, -- Fracturing Crags
+			[441929] = 143, -- Silken Tomb
+			[439869] = 143, -- Silken Tomb
+			[439829] = 143, -- Silken Tomb
+			[439825] = 143, -- Silken Tomb
+			[439865] = 143, -- Silken Tomb
+			[439852] = 143, -- Silken Tomb
+			[439814] = 143, -- Silken Tomb
+			[431934] = 143, -- Webbed Disengage
+			[431935] = 143, -- Webbed Disengage
+			[450153] = 400, -- Bogmire Charge
+			[450177] = 400, -- Bogmire Charge
+			[450178] = 400, -- Bogmire Charge
+			[28622]  = 143, -- Web Wrap
+			[28673]  = 143, -- Web Wrap
+			[45420]  = 143, -- Web Wrap
+			[52087]  = 143, -- Web Wrap
+			[52094]  = 143, -- Web Wrap
+			[54127]  = 143, -- Web Wrap
+			[71009]  = 143, -- Web Wrap
+			[157281] = 143, -- Web Wrap
+			[157282] = 143, -- Web Wrap
+			[223089] = 143, -- Web Wrap
+			[223093] = 143, -- Web Wrap
+			[223098] = 143, -- Web Wrap
+			[228369] = 143, -- Web Wrap
+			[239048] = 143, -- Web Wrap
+			[239297] = 143, -- Web Wrap
+			[239298] = 143, -- Web Wrap
+			[310085] = 143, -- Web Wrap
+			[336296] = 143, -- Web Wrap
+			[336301] = 143, -- Web Wrap
+			[423798] = 143, -- Web Wrap
+			[448048] = 143, -- Web Wrap
+			[448239] = 143, -- Web Wrap
+			[458577] = 143, -- Web Wrap
+			[52086]  = 143, -- Web Wrap
+			[54290]  = 143, -- Web Shot
+			[86834]  = 143, -- Web Shot
+			[248552] = 143, -- Web Shot
+			[59362]  = 143, -- Web Shot
+			[99847]  = 143, -- Web Shot
+			[456211] = 112, -- Double Pincer
+			[444946] = 806, -- Lick
+			[450728] = 416, -- Stinging Swarm
+			[450718] = 112, -- Mandible Strike
+			[450671] = 400, -- Burrow
+			[444347] = 411, -- Death Charge
+			[449815] = 643, -- Abrasive Sand
+			[461869] = 321, -- Blood Drain
+			[450501] = 321, -- Blood Drain
+			[140069] = 321, -- Blood Drain
+			[112896] = 321, -- Drain Blood
+			[274787] = 321, -- Drain Blood
+			[461872] = 321, -- Blood Drain
+			[274276] = 321, -- Blood Drain
+			[241716] = 321, -- Blood Drain
+			[41238]  = 321, -- Blood Drain
+			["Wave 20"] = 100, -- BigWigs
+			["Wave 19"] = 100, -- BigWigs
+			["Wave 18"] = 100, -- BigWigs
+			["Wave 17"] = 100, -- BigWigs
+			["Wave 16"] = 100, -- BigWigs
+			["Wave 15"] = 100, -- BigWigs
+			["Wave 14"] = 100, -- BigWigs
+			["Wave 13"] = 100, -- BigWigs
+			["Wave 12"] = 100, -- BigWigs
+			["Wave 11"] = 100, -- BigWigs
+			["Wave 10"] = 100, -- BigWigs
+			["Wave 9"] = 100, -- BigWigs
+			["Wave 8"] = 100, -- BigWigs
+			["Wave 7"] = 100, -- BigWigs
+			["Wave 6"] = 100, -- BigWigs
+			["Wave 5"] = 100, -- BigWigs
+			["Wave 4"] = 100, -- BigWigs
+			["Wave 3"] = 100, -- BigWigs
+			["Wave 2"] = 100, -- BigWigs
+			["Wave 1"] = 100, -- BigWigs
+			[450417] = 806, -- Infectious Spit
+			[424741] = 810, -- Infectious Spores
+			[440185] = 806, -- Infectious Spores
+			[440187] = 806, -- Infectious Spores
+			[383874] = 402, -- Hyperthermia
+			[444701] = 400, -- Fracturing Leap
+			[444688] = 400, -- Fracturing Leap
+			[444692] = 400, -- Fracturing Leap
+			[444503] = 5, -- Forgefire Turbocharge
+			[444683] = 803, -- Stone Hide
+			[458844] = 650, -- Suppression Burst
+			[458838] = 650, -- Suppression Burst
+			[458329] = 650, -- Titanic Impact
+			[458327] = 650, -- Titanic Impact
+			[458320] = 650, -- Titanic Impact
+			[458423] = 126, -- Arcane Bombardment
+			[459281] = 64, -- Empowering Coalescence
+			[458799] = 65, -- Overcharged Earth
+			[458217] = "Essence", -- Overcharged Lasers
+			[458209] = "Essence", -- Overcharged Lasers
+			[453200] = 400, -- Ejecting Tremor
+			[376230] = 21, -- Steam Bolt Volley
+			[376223] = 21, -- Steam Bolt Volley
+			[376222] = 21, -- Steam Bolt Volley
+			[376218] = 21, -- Steam Bolt Volley
+			[385734] = 21, -- Steam Bolt
+			[391948] = 21, -- Steam Bolt
+			[128408] = 21, -- Steam Blast
+			[147863] = 21, -- Steam Blast
+			[157971] = 21, -- Steam Blast
+			[157974] = 21, -- Steam Blast
+			[157975] = 21, -- Steam Blast
+			[160431] = 21, -- Steam Blast
+			[173169] = 21, -- Steam Blast
+			[216194] = 21, -- Steam Blast
+			[288277] = 21, -- Steam Blast
+			[336394] = 21, -- Steam Blast
+			[336395] = 21, -- Steam Blast
+			[396302] = 21, -- Steam Blast
+			[419771] = 21, -- Steam Blast
+			[50375]  = 21, -- Steam Blast
+			[51920]  = 21, -- Cosmetic Steam Blast
+			[52531]  = 21, -- Steam Blast
+			[59141]  = 21, -- Steam Blast
+			[66203]  = 21, -- Steam Blast
+			[93655]  = 21, -- Steam Blast
+			[455620] = 100, -- Triangulating
+			[458254] = 9, -- Stormrider's Charge
+			[458088] = 9, -- Stormrider's Charge
+			[428269] = 320, -- Reshape
+			[445262] = 320, -- Void Shell
+			[429493] = 331, -- Unleash Corruption
+			[429487] = 331, -- Unleash Corruption
+			[455220] = 48, -- Tainted Waters
+			[445457] = 320, -- Oblivion Wave
+			[440207] = 320, -- Null Upheaval
+			[423305] = 320, -- Null Upheaval
+			[423393] = 330, -- Entropy
+			[423839] = 9, -- Electrocuted
+			[460190] = 9, -- Storm's Vengeance
+			[432805] = 320, -- Void Backlash
+			[306996] = 331, -- Gift of the Void
+			[310224] = 320, -- Annihilation
+			[307403] = 320, -- Annihilation
+			[430238] = 320, -- Void Bolt
+			[430288] = 320, -- Crushing Darkness
+			[430282] = 320, -- Crushing Darkness
+			[424966] = 320, -- Lingering Void
+			[426160] = 320, -- Dark Gravity
+			[425048] = 320, -- Dark Gravity
+			[451843] = 320, -- Crush Reality
+			[425113] = 320, -- Crush Reality
+			[424958] = 320, -- Crush Reality
+			[424739] = 331, -- Chaotic Corruption
+			[424737] = 331, -- Chaotic Corruption
+			[443854] = 320, -- Instability
+			[423979] = 320, -- Implosion
+			[430814] = 320, -- Attracting Shadows
+			[430812] = 320, -- Attracting Shadows
+			[430805] = 320, -- Arcing Void
+			[430754] = 320, -- Void Shell
+			[430179] = 325, -- Seeping Corruption
+			[444418] = 800, -- Thunderbolt
+			[444324] = 9, -- Stormheart
+			[444123] = 800, -- Lightning Torrent
+			[419871] = 9, -- Lightning Dash
+			[419870] = 9, -- Lightning Dash
+			[424148] = 800, -- Chain Lightning
+			[427402] = 9, -- Crackling Crush
+			[427260] = 103, -- Enrage Rook
+			[430013] = 800, -- Thunderstrike
+			[427616] = 800, -- Energized Barrage
+			[427325] = 800, -- Charged Bombardment
+			[427323] = 800, -- Charged Bombardment
+			[427404] = 911, -- Localized Storm
+			[430109] = 800, -- Lightning Bolt
+			[430125] = 320, -- Entropy Shield
+			[450628] = 320, -- Entropy Shield
+			[426893] = 320, -- Bounding Void
+			[463481] = 143, -- Notorious Thread's Hearthstone
+			[388897] = 112, -- Snapping Slice
+			[424704] = 107, -- Vicious Stabs
+			[424750] = 410, -- Infectious Spores
+			[424738] = 410, -- Infectious Spores
+			[424773] = 40, -- Sporogenesis
+			[424801] = 906, -- Unstable Bloat
+			[424801] = 906, -- Unstable Bloat
+			[424798] = 906, -- Bloated Eruption
+			[445038] = 107, -- Cleave
+			[444915] = 720, -- Illusive Step
+			[433040] = 720, -- Illusive Step
+			[443482] = 330, -- Blessing of Dusk
+			[470592] = 330, -- Blessing of Dusk
+			[443232] = 100, -- Shoot
+			[457446] = 32, -- Shadow Eruption
+			[457448] = 32, -- Shadow Eruption
+			[470591] = 32, -- Shadow Bolt
+			[443111] = 32, -- Shadow Bolt
+			[443510] = 112, -- Stab
+			[433406] = 911, -- Skitter Charge
+			[450197] = 911, -- Skitter Charge
+			[416224] = 321, -- Dwarven Medicine
+			[443482] = 330, -- Blessing of Dusk
+			[443482] = 330, -- Blessing of Dusk
 			[450872] = 400, -- Unending Spines
 			[451790] = 327, -- Infinite Horror
 			[451782] = 327, -- Infinite Horror
@@ -3296,13 +3556,13 @@ function ZA_UpdateData()
 			[463093] = 400, -- Earthshaking Charge
 			[463081] = 400, -- Earthshaking Charge
 			[463052] = 400, -- Bellowing Slam
-			[462938] = 9, -- Routine Maintenance
-			[462936] = 9, -- Routine Maintenance
-			[462856] = 9, -- Nullification Barrier
-			[442528] = 9, -- Hazardous Beam
-			[462922] = 9, -- Hazardous Beam
-			[462892] = 9, -- Hazardous Beam
-			[462898] = 9, -- Hazardous Beam
+			[462938] = 800, -- Routine Maintenance
+			[462936] = 800, -- Routine Maintenance
+			[462856] = 800, -- Nullification Barrier
+			[442528] = 800, -- Hazardous Beam
+			[462922] = 800, -- Hazardous Beam
+			[462892] = 800, -- Hazardous Beam
+			[462898] = 800, -- Hazardous Beam
 			[449343] = 820, -- Edict of Rage
 			[451822] = 903, -- Pulverizing Slam
 			[452785] = 103, -- Otherworldly Rage
@@ -3316,7 +3576,7 @@ function ZA_UpdateData()
 			[383783] = 721, -- Nether Precision
 			[453601] = 72, -- Aether Attunement
 			[424891] = 400, -- Vine Spear
-			[450454] = 111, -- Tectonic Roar
+			[450454] = 903, -- Tectonic Roar
 			[450407] = 400, -- Colossal Slam
 			[450677] = 50, -- Rupturing Runes
 			[451702] = 903, -- Discard Weaklings
@@ -3338,7 +3598,7 @@ function ZA_UpdateData()
 			[173737] = 888, -- Sporesplosion
 			[427710] = 888, -- Sporesplosion
 			[445910] = 888, -- Sporesplosion
-			[414944] = 104, -- Battle Roar
+			[414944] = 111, -- Battle Roar
 			[448663] = 416, -- Stinging Swarm
 			[450637] = 416, -- Leeching Swarm
 			[450636] = 416, -- Leeching Swarm
@@ -3445,7 +3705,7 @@ function ZA_UpdateData()
 			[432227] = 806, -- Venom Volley
 			[433841] = 806, -- Venom Volley
 			[447244] = 722, -- Call of the Ancestors
-			[455097] = 9, -- Arc Discharge
+			[455097] = 800, -- Arc Discharge
 			[454015] = 911, -- Tempest
 			[454009] = 911, -- Tempest
 			[436358] = 117, -- Demolish
@@ -4019,7 +4279,6 @@ function ZA_UpdateData()
 			[413438] = 320, -- Void Bolt
 			[417737] = 320, -- Void Bolt
 			[418292] = 320, -- Void Bolt
-			[430238] = 320, -- Void Bolt
 			[434122] = 320, -- Void Bolt
 			[441772] = 320, -- Void Bolt
 			[443649] = 320, -- Void Bolt
@@ -4114,12 +4373,14 @@ function ZA_UpdateData()
 			[440181] = 888, -- Spore Bolt
 			[440162] = 806, -- Lethargic Poison
 			[445746] = 107, -- Claw Snap
-			[440549] = 804, -- Scavenger
+			[440549] = 100, -- Scavenge
 			[440551] = 100, -- Throw Junk
 			[440550] = 100, -- Holding Supplies
 			[372369] = 100, -- Shoot
 			[431659] = 32, -- Shadow Bolt
-			[440615] = 330, -- Abyssal Surge
+			[470587] = 48, -- Abyssal Surge
+			[440615] = 48, -- Abyssal Surge
+			[470588] = 325, -- Curse of the Depths
 			[440622] = 325, -- Curse of the Depths
 			[446261] = 325, -- Eye of Dread
 			[440266] = 33, -- Dark Bite
@@ -4293,8 +4554,8 @@ function ZA_UpdateData()
 			[376827] = 800, -- Conductive Strike
 			[376899] = 911, -- Crackling Cloud
 			[376829] = 9, -- Thunder Strike
-			[376892] = 9, -- Crackling Upheaval
-			[376864] = 9, -- Static Spear
+			[376892] = 800, -- Crackling Upheaval
+			[376864] = 800, -- Static Spear
 			[376737] = 800, -- Lightning
 			[376730] = 911, -- Stormwinds
 			[376725] = 800, -- Storm Bolt
@@ -6165,7 +6426,7 @@ function ZA_UpdateData()
 			["Toxic Diffusion"] = 806,
 			["Static Summoning"] = 800,
 			["Galvanic Focus"] = 800,
-			["Ionic Thrust"] = 9,
+			["Ionic Thrust"] = 800,
 			[400413] = 903, -- Bonestorm
 			["Magma Spew"] = 12,
 			["Static Cling"] = 800,
@@ -6779,14 +7040,22 @@ function ZA_UpdateData()
 			["Piercing Rush"] = 104,
 			["Poison-Tipped Spear"] = 806,
 			["Poisonous Harvest"] = 806,
-			["Debilitating Poison"] = 806,
+			[424614] = 806, -- Debilitating Venom
+			[118316] = 806, -- Debilitating Poison
+			[391833] = 806, -- Debilitating Poison
+			[182717] = 806, -- Debilitating Poison
+			[182720] = 806, -- Debilitating Poison
+			[43133]  = 806, -- Debilitating Poison
+			[353107] = 806, -- Debilitating Poison
+			[41978]  = 806, -- Debilitating Poison
+			[261921] = 806, -- Debilitating Poison
+			[326092] = 806, -- Debilitating Poison
 			["Crashing Ice"] = 160,
 			["Giant Snowball"] = 160,
 			["Molten Fury"] = 12,
 			["Hardened Skin"] = 803,
 			["Explosive Elements"] = 28,
 			["Enlightened Potential"] = 200,
-			["Steam Bolt"] = 21,
 			["Bronze Rewind"] = 641,
 			[393434] = 403, -- Puryfying Flame (Dracthyr Mercenary)
 			["Strong Gust"] = 811,
@@ -7614,7 +7883,7 @@ function ZA_UpdateData()
 			["Keen Insight:1029587"] = 201,
 			["Archonic Resonator"] = 201,
 			["Arcing Bonds:607854"] = 64,
-			["Arcing Current"] = 9,
+			["Arcing Current"] = 800,
 			["Arcing Slash:1029595"] = 811,
 			["Arcing Smash:132406"] = 427,
 			["Arcing Sweep"] = 3,
@@ -8147,6 +8416,7 @@ function ZA_UpdateData()
 			["Cauterize Master"] = 402,
 			["Cauterize Master:840409"] = 401,
 			["Cave-in"] = 803,
+			[383410] = 722, -- Celestial Alignment
 			["Celestial Alignment"] = 722,
 			["Celestial Brew"] = 282,
 			["Celestial Flames"] = 4,
@@ -8459,7 +8729,7 @@ function ZA_UpdateData()
 			["Crusade:236262"] = 200,
 			["Crusader Aura"] = 3,
 			["Crush Armor"] = 107,
-			[455975] = 110, -- Crush
+			[455975] = 400, -- Crush
 			["Crush"] = 110,
 			["Crush:451165"] = 903,
 			["Crushing Darkness:1396971"] = 412,
@@ -9230,6 +9500,10 @@ function ZA_UpdateData()
 			["Extract Agony:3528302"] = 411,
 			["Extracting Histories:1029583"] = 201,
 			["Extracting Power:132096"] = 321,
+			[452416] = 127, -- Demonsurge
+			[462030] = 401, -- Sigil of Doom
+			[427912] = 401, -- Immolation Aura
+			[452486] = 127, -- Fel Desolation
 			["Eye Beam"] = 127,
 			["Eye for an Eye"] = 3,
 			["Eye of Dread"] = 327,
@@ -9654,13 +9928,13 @@ function ZA_UpdateData()
 			["Gift of the Naaru"] = 201,
 			["Gift of the Titans"] = 660,
 			[293854] = 100, -- Activate Anti-Personnel Squirrel
-			[293827] = 9, -- Giga-Wallop
-			[417757] = 9, -- Hyper Giga-Zapinator
-			[417752] = 9, -- Hyper Giga-Zapinator
-			[292264] = 9, -- Giga-Zap
-			[291939] = 9, -- Giga-Zap
-			[291928] = 9, -- Giga-Zap
-			[292267] = 9, -- Giga-Zap
+			[293827] = 800, -- Giga-Wallop
+			[417757] = 800, -- Hyper Giga-Zapinator
+			[417752] = 800, -- Hyper Giga-Zapinator
+			[292264] = 800, -- Giga-Zap
+			[291939] = 800, -- Giga-Zap
+			[291928] = 800, -- Giga-Zap
+			[292267] = 800, -- Giga-Zap
 			["Gilded Claws"] = 3,
 			["Give No Quarter:132337"] = 65,
 			["Give Silk"] = 900,
@@ -10206,7 +10480,7 @@ function ZA_UpdateData()
 			["Lightning Discharge"] = 800,
 			["Lightning Lash"] = 800,
 			["Lightning Lasso"] = 800,
-			["Lightning Nova Totem"] = 9,
+			["Lightning Nova Totem"] = 800,
 			["Lightning Nova"] = 800,
 			["Lightning Prod"] = 800,
 			["Lightning Shield"] = 800,
@@ -11779,7 +12053,6 @@ function ZA_UpdateData()
 			["Steal Memories:3528284"] = 201,
 			["Stealing Egg"] = 108,
 			["Stealthlings:1370997"] = 900,
-			["Steam Blast"] = 21,
 			["Steam Trail"] = 21,
 			["Steel Trap"] = 102,
 			["Stellar Emission:1360763"] = 6,
@@ -11844,7 +12117,7 @@ function ZA_UpdateData()
 			["Stormclouds"] = 911,
 			["Stormforged Spear"] = 800,
 			["Stormhammer"] = 9,
-			["Stormkeeper"] = 9,
+			["Stormkeeper"] = 800,
 			["Stormstrike"] = 9,
 			["Strange Brew"] = 282,
 			["Streamline"] = 112,
@@ -12128,7 +12401,7 @@ function ZA_UpdateData()
 			["Thunder Clap"] = 9,
 			["Thunder Focus Tea"] = 800,
 			["Thunder Peal"] = 800,
-			["Thunder Spear"] = 9,
+			["Thunder Spear"] = 800,
 			["Thunder's Bite"] = 800,
 			["Thunder's Call"] = 800,
 			["Thunderbolt"] = 800,
@@ -13218,7 +13491,7 @@ function ZA_UpdateData()
 			[353885] = 40, -- Battlefield Swarmer
 			[347250] = 32, -- Lord of the Corpseflies
 			[353883] = 40, -- Maldraxxian Corpsefly
-			[353884] = 806, -- Regal Corpsefly
+			[353884] = 908, -- Regal Corpsefly
 
 			--! Courser
 			[342335] = 201, -- Ascended Skymane
@@ -16564,6 +16837,27 @@ function ZA_UpdateData()
 			[455648] = 100,
 			[455371] = 100,
 			[455216] = 100,
+			[455272] = 200,
+			[443129] = 100,
+			[406549] = 100,
+			[452940] = 100,
+			[455944] = 100,
+			[453304] = 814,
+			[423680] = 64,
+			[443523] = 321,
+			[454567] = 661,
+			[436098] = 100,
+			[443814] = 801,
+			[453985] = 281,
+			[449730] = 100,
+			[449749] = 100,
+			[449746] = 100,
+			[449745] = 100,
+			[449748] = 100,
+			[453893] = 202,
+			[444022] = 62,
+			[436717] = 143,
+			[441078] = 100,
 			--qqq
 
 
@@ -19717,7 +20011,7 @@ function ZA_UpdateData()
 			[447310] = 100, -- Scour Through Scrap
 			[447374] = 5, -- Box o' Booms
 			[447373] = 100, -- Crowd Pummeler 2-30
-			[447312] = 9, -- Invent
+			[447312] = 800, -- Invent
 			[447318] = 100, -- Blasting Bracers
 			[447321] = 100, -- Clanking Cuffs
 			[447317] = 100, -- Dangerous Distraction Inhibitor
@@ -27841,6 +28135,23 @@ function ZA_UpdateData()
 			[451878] = 0,
 			[452465] = 0,
 			[455648] = 0,
+			[443129] = 0,
+			[406549] = 0,
+			[455944] = 0,
+			[453304] = 0,
+			[423680] = 0,
+			[443523] = 3750313,
+			[454567] = 0,
+			[436098] = 0,
+			[443814] = 0,
+			[453985] = 0,
+			[449730] = 0,
+			[449746] = 0,
+			[449745] = 0,
+			[449748] = 0,
+			[453893] = 0,
+			[444022] = 0,
+			[449749] = 0,
 			--qqi
 
 
