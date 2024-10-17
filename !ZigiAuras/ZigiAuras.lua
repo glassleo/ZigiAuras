@@ -457,7 +457,7 @@ function ZA_UpdateData()
 
 			-- Arcane
 			[64]  = "c566f7", -- Arcane
-			[644] = "c9447e", -- Cosmic Arcane
+			[644] = "c9447e", -- Primordial
 			[640] = "9867ff", -- Lunar
 			[65]  = "7c64c2", -- Spellstrike
 			[126] = "6684ff", -- Magic
@@ -910,7 +910,7 @@ function ZA_UpdateData()
 
 			-- Arcane
 			[64]  = "c31edb:d599ff", -- Arcane
-			[644] = "c62b87:ffc4a0", -- Cosmic Arcane
+			[644] = "c62b87:ffc4a0", -- Primordial
 			[640] = "d28aff:766fff", -- Lunar
 			[65]  = "863a9c:9696e0", -- Spellstrike
 			[126] = "9421ff:68e5ff", -- Magic
@@ -983,6 +983,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Hungry Ramolith"] = 809,
 			["Coreway Repair Rig"] = 100,
 			["Stolen Skiff"] = 100,
 			["ZZ-01-47"] = 100,
@@ -3288,6 +3289,102 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[429474] = 8, -- Blooming Infusion
+			[455104] = 320, -- Jagged Darkness
+			[455098] = 100, -- Disarm
+			[441235] = 143, -- Royal Condemnation
+			[438667] = 143, -- Royal Condemnation
+			[438970] = 143, -- Royal Condemnation
+			[438983] = 143, -- Royal Condemnation
+			[439028] = 143, -- Royal Condemnation
+			[438976] = 143, -- Royal Condemnation
+			[441213] = 143, -- Royal Condemnation
+			[438974] = 143, -- Royal Condemnation
+			[439036] = 143, -- Royal Condemnation
+			[338937] = 806, -- Venom Nova
+			[440701] = 806, -- Venom Nova
+			[447278] = 806, -- Venom Nova
+			[440703] = 806, -- Venom Nova
+			[452291] = 806, -- Venom Nova
+			[452392] = 806, -- Venom Nova
+			[453587] = 806, -- Venom Nova
+			[440699] = 806, -- Venom Nova
+			[437417] = 806, -- Venom Nova
+			[438804] = 806, -- Venom Nova
+			[454019] = 806, -- Venom Nova
+			[438947] = 806, -- Venom Nova
+			[150513] = 806, -- Venom Nova
+			[224460] = 806, -- Venom Nova
+			[438789] = 806, -- Venom Nova
+			[450950] = 806, -- Venom Nova
+			[438784] = 806, -- Venom Nova
+			[438676] = 806, -- Venom Nova
+			[461078] = 331, -- Aphotic Communion
+			[443832] = 331, -- Aphotic Communion
+			[461218] = 331, -- Aphotic Communion
+			[450072] = 331, -- Aphotic Communion
+			[445138] = 331, -- Aphotic Communion
+			[450051] = 331, -- Aphotic Communion
+			[450054] = 331, -- Aphotic Communion
+			[450073] = 331, -- Aphotic Communion
+			[450166] = 331, -- Aphotic Communion
+			[450174] = 331, -- Aphotic Communion
+			[449986] = 331, -- Aphotic Communion
+			[450020] = 331, -- Aphotic Communion
+			[461478] = 320, -- Null Detonation
+			[445021] = 320, -- Null Detonation
+			[445915] = 320, -- Null Detonation
+			[445422] = 320, -- Frothing Gluttony
+			[445820] = 320, -- Frothing Gluttony
+			[445818] = 320, -- Frothing Gluttony
+			[445531] = 320, -- Frothing Gluttony
+			[445632] = 320, -- Frothing Gluttony
+			[445535] = 320, -- Frothing Gluttony
+			[445585] = 320, -- Frothing Gluttony
+			[445561] = 320, -- Frothing Gluttony
+			[445948] = 320, -- Frothing Gluttony
+			[445950] = 320, -- Frothing Gluttony
+			[462020] = 320, -- Frothing Gluttony
+			[445574] = 320, -- Frothing Gluttony
+			[445946] = 320, -- Frothing Gluttony
+			[444492] = 320, -- Frothing Gluttony
+			[445947] = 320, -- Frothing Gluttony
+			[445719] = 320, -- Frothing Gluttony
+			[445491] = 320, -- Frothing Gluttony
+			[445724] = 320, -- Frothing Gluttony
+			[445506] = 320, -- Frothing Gluttony
+			[445763] = 320, -- Frothing Gluttony
+			[445952] = 320, -- Frothing Gluttony
+			[445511] = 320, -- Frothing Gluttony
+			[445777] = 320, -- Frothing Gluttony
+			[454014] = 320, -- Frothing Gluttony
+			[445778] = 320, -- Frothing Gluttony
+			[458056] = 320, -- Frothing Gluttony
+			[445790] = 320, -- Frothing Gluttony
+			[460043] = 320, -- Frothing Gluttony
+			[445539] = 320, -- Frothing Gluttony
+			[445797] = 320, -- Frothing Gluttony
+			[444911] = 320, -- Queen's Summons
+			[444833] = 320, -- Queen's Summons
+			[444829] = 320, -- Queen's Summons
+			[445049] = 320, -- Queen's Summons
+			[444910] = 320, -- Queen's Summons
+			[445047] = 320, -- Queen's Summons
+			[445050] = 320, -- Queen's Summons
+			[444907] = 320, -- Queen's Summons
+			[444940] = 320, -- Queen's Summons
+			[455288] = 320, -- Queen's Summons
+			[444908] = 320, -- Queen's Summons
+			[444965] = 320, -- Queen's Summons
+			[445037] = 320, -- Queen's Summons
+			[445045] = 320, -- Queen's Summons
+			[447950] = 320, -- Shadowblast
+			[452651] = 806, -- Bile Spray
+			[452912] = 806, -- Stone Blood Venom
+			[452910] = 906, -- Crushing Jaws
+			[460520] = 909, -- Camouflaging Bucket
+			[460519] = 909, -- Bucket Armor
+			[460525] = 910, -- Thieving Strike
 			[458430] = 410, -- Suffocating Smog
 			[300650] = 410, -- Suffocating Smog
 			[446328] = 410, -- Suffocating Smog
@@ -11095,6 +11192,8 @@ function ZA_UpdateData()
 			["Primal Roar"] = 111,
 			["Primal Storm Elemental"] = 911,
 			["Primordial Wave"] = 326,
+			[463905] = 126, -- Arcane Barrier
+			[382143] = 126, -- Arcane Barrier
 			["Prismatic Barrier"] = 126,
 			["Prospecting"] = 808,
 			["Protect the Nest"] = 103,
@@ -12432,8 +12531,44 @@ function ZA_UpdateData()
 			["Tiger Dash"] = 104,
 			["Tiger's Fury"] = 117,
 			["Tiger's Lust"] = 104,
-			["Time Stop"] = 641,
-			["Time Warp"] = 126,
+			["Time Stop"] = 643,
+			[35346]  = 320, -- Warp Time
+			[121546] = 126, -- Time Warp
+			[145534] = 126, -- Time Warp
+			[162128] = 126, -- Time Warp
+			[173106] = 126, -- Time Warp
+			[244645] = 126, -- Time Warp
+			[267575] = 126, -- Time Warp
+			[287925] = 126, -- Time Warp
+			[428941] = 126, -- Time Warp
+			[225800] = 126, -- Greater Time Warp
+			[456666] = 641, -- Time Warped
+			[459064] = 641, -- Time Warped
+			[459069] = 641, -- Time Warped
+			[459073] = 641, -- Time Warped
+			[456666] = 641, -- Time Warped
+			[459073] = 641, -- Time Warped
+			[459069] = 641, -- Time Warped
+			[459064] = 641, -- Time Warped
+			[459065] = 641, -- Time Warp
+			[459070] = 641, -- Time Warp
+			[459074] = 641, -- Time Warp
+			[456662] = 641, -- Time Warp
+			[456662] = 641, -- Time Warp
+			[52766]  = 643, -- Time Warp
+			[145534] = 126, -- Time Warp
+			[342242] = 126, -- Time Warp
+			[227665] = 126, -- Time Warp
+			[350249] = 126, -- Time Warp
+			[162128] = 126, -- Time Warp
+			[189359] = 126, -- Time Warp
+			[96794]  = 126, -- Time Warp
+			[397571] = 126, -- Time Warp
+			[87596]  = 126, -- Jurrix's Time Warp
+			[87611]  = 126, -- Jurrix's Time Warp
+			[87598]  = 126, -- Jurrix's Time Warp
+			[428941] = 126, -- Time Warp
+			[80353]  = 126, -- Time Warp
 			["Timewalker's Hearthstone"] = 641,
 			["Tip of the Spear"] = 109,
 			["Tireless Pursuit"] = 104,
@@ -12680,7 +12815,6 @@ function ZA_UpdateData()
 			["Amplifying Poison"] = 806,
 			["Venom Blast"] = 806,
 			["Venom Bolt"] = 806,
-			["Venom Nova"] = 806,
 			["Mutilated Flesh"] = 321,
 			["Venom Spit"] = 806,
 			["Venom Splash"] = 806,
@@ -12896,7 +13030,7 @@ function ZA_UpdateData()
 			["Wild Polymorph"] = 646,
 			["Wild Spirits"] = 805,
 			["Wild Tornado"] = 911,
-			["Wildfire Bomb"] = 4,
+			["Wildfire Bomb"] = 5,
 			["Willbreaker:135906"] = 427,
 			["Wily Wits"] = 115,
 			["Wind Blast"] = 811,
@@ -12980,7 +13114,8 @@ function ZA_UpdateData()
 			["Zen Pilgrimage"] = 120,
 			["Zen Travel"] = 907,
 			["Zephyrium Beam"] = 100,
-			["Zot!"] = 800,
+			[160184] = 100, -- Zot!
+			[133038] = 64, -- Zot!
 			[113862] = 323, -- Greater Invisibility (DR)
 			[113942] = 999, -- Demonic Gateway (Debuff)
 			[114050] = 4, -- Ascendance (Fire)
@@ -16858,6 +16993,9 @@ function ZA_UpdateData()
 			[444022] = 62,
 			[436717] = 143,
 			[441078] = 100,
+			[456597] = 100,
+			[456605] = 12,
+			[432684] = 100,
 			--qqq
 
 
@@ -28152,6 +28290,9 @@ function ZA_UpdateData()
 			[453893] = 0,
 			[444022] = 0,
 			[449749] = 0,
+			[456597] = 0,
+			[456605] = 0,
+			[432684] = 0,
 			--qqi
 
 
