@@ -602,6 +602,10 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[455392] = "Darkmoon Deck: Symbiosis",
+			[455393] = "Darkmoon Deck: Radiance",
+			[455394] = "Darkmoon Deck: Ascension",
+			[455391] = "Darkmoon Deck: Vivacity",
 			[443523] = "Trap",
 			[460271] = "Teleport: Silithus",
 			[397406] = "Wondrous Wavewhisker", -- Fix spelling error
@@ -1246,6 +1250,12 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[455451] = "Quickwick: Haste & Speed", -- Quickwick Candlestick
+			--[455456] = "Unstable Core: Versatility", -- Unstable Power Suit Core
+			--[455455] = "Unstable Core: Haste", -- Unstable Power Suit Core
+			--[455454] = "Unstable Core: Critical Strike", -- Unstable Power Suit Core
+			--[455441] = "Unstable Core: Mastery", -- Unstable Power Suit Core
+			[455420] = "Spelunker's Candle: Critical Strike", -- Spelunker's Waning Candle
 			[455464] = true, -- Kaheti Shadeweaver's Emblem
 			[455482] = "Ascension: " .. ZA.PrimaryStatName, -- Imperfect Ascendancy Serum
 			[435493] = true, -- Concoction: Kiss of Death
@@ -1726,6 +1736,8 @@ function ZA_UpdateData()
 			[101643] = true, -- Transcendence
 
 			-- Paladin
+			[433550] = true, -- Rite of Sanctification
+			[433584] = true, -- Rite of Adjuration
 			[32223] = true, -- Crusader Aura
 			[465] = true, -- Devotion Aura
 			[183435] = true, -- Retribution Aura
@@ -1997,13 +2009,8 @@ function ZA_UpdateData()
 			[418744] = "Reputation", -- Dreamsurge Learnings
 			["Winds of Sanctuary"] = "Reputation",
 			[289982] = "XP", -- Draught of Ten Lands
-			["WoW's 19th Anniversary"] = "Reputation", -- 2023
-			["WoW's 20th Anniversary"] = "Reputation", -- 2024
-			["WoW's 21st Anniversary"] = "Reputation", -- 2025
-			["WoW's 22nd Anniversary"] = "Reputation", -- 2026
-			["WoW's 23rd Anniversary"] = "Reputation", -- 2027
-			["WoW's 24th Anniversary"] = "Reputation", -- 2028
-			["WoW's 25th Anniversary"] = "Reputation", -- 2029
+			["Blessings of the Bronze Dragonflight"] = "Reputation",
+			["WoW's Anniversary"] = "Reputation",
 			["Word of a Worthy Ally"] = "Reputation",
 			[61849] = "Reputation", -- The Spirit of Sharing
 			["Ribbon Dance"] = "XP",
@@ -2072,6 +2079,7 @@ function ZA_UpdateData()
 			["Sign of the Mists"] = true,
 			["Sign of Iron"] = true,
 			["Sign of the Legion"] = true,
+			["Sign of the Past"] = true,
 			["Sign of the Explorer"] = true,
 			[424143] = true, -- WoW Remix: Mists of Pandaria
 
@@ -2923,7 +2931,13 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
-			[455464] = 330, -- Kaheti Shadeweaver's Emblem
+			[455451] = 104, -- Quickwick Candlestick
+			[455456] = 18, -- Unstable Power Suit Core (Versatility)
+			[455455] = 721, -- Unstable Power Suit Core (Haste)
+			[455454] = 808, -- Unstable Power Suit Core (Critical Strike)
+			[455441] = 3, -- Unstable Power Suit Core (Mastery)
+			[455420] = 5, -- Spelunker's Waning Candle
+			[455464] = 32, -- Kaheti Shadeweaver's Emblem
 			[435493] = 806, -- Concoction: Kiss of Death
 			[451303] = 331, -- Harvester's Edict
 			[449282] = 16, -- Weathered Northrend Sigil (Iron Dwarf)
@@ -3289,8 +3303,35 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[464118] = 641, -- Sands of Power
+			[424223] = 4, -- Incite Flames
+			[424212] = 4, -- Incite Flames
+			[423109] = 4, -- Enkindling Inferno
+			[443835] = 4, -- Blazing Storms
+			[421817] = 5, -- Wicklighter Barrage
+			[421638] = 5, -- Wicklighter Barrage
+			[425394] = 811, -- Dousing Breath
+			[415495] = 806, -- Gloopy Fungus
+			[425315] = 806, -- Fungsplosion
+			[415406] = 107, -- Fungalstorm
+			[415492] = 911, -- Fungal Charge
+			[415499] = 911, -- Dizzy
+			[456735] = 801, -- Hydroshell Regeneration
+			[440931] = 806, -- Spore Cloud
+			[440921] = 806, -- Spore Cloud
+			[422959] = 327, -- Howling Fear
+			[257791] = 327, -- Howling Fear
+			[449455] = 327, -- Howling Fear
+			[449821] = 103, -- Hulking Might
+			[445885] = 803, -- Muddy Trotters
+			[445882] = 803, -- Muddy Trotters
+			[450509] = 107, -- Wide Swipe
+			[448247] = 806, -- Revolting Volley
+			[448248] = 806, -- Revolting Volley
+			[434254] = 400, -- Intensity
+			[434252] = 400, -- Massive Slam
 			[429474] = 8, -- Blooming Infusion
-			[455104] = 320, -- Jagged Darkness
+			[455104] = 33, -- Jagged Darkness
 			[455098] = 100, -- Disarm
 			[441235] = 143, -- Royal Condemnation
 			[438667] = 143, -- Royal Condemnation
@@ -3600,7 +3641,7 @@ function ZA_UpdateData()
 			[426893] = 320, -- Bounding Void
 			[463481] = 143, -- Notorious Thread's Hearthstone
 			[388897] = 112, -- Snapping Slice
-			[424704] = 107, -- Vicious Stabs
+			[424704] = 108, -- Vicious Stabs
 			[424750] = 410, -- Infectious Spores
 			[424738] = 410, -- Infectious Spores
 			[424773] = 40, -- Sporogenesis
@@ -3689,6 +3730,8 @@ function ZA_UpdateData()
 			[446519] = 103, -- Stampeding Bellow
 			[448634] = 400, -- Impale
 			[448632] = 400, -- Impale
+			[449072] = 111, -- Call Drones
+			[449038] = 400, -- Impaling Spikes
 			[448644] = 400, -- Burrowing Tremors
 			[433410] = 327, -- Fearful Shriek
 			[165929] = 888, -- Sporesplosion
@@ -9218,9 +9261,9 @@ function ZA_UpdateData()
 			["Diseased Bite"] = 410,
 			["Diseased Spit"] = 410,
 			["Diseased Thrash"] = 410,
-			["Disenchant"] = 126,
-			["Disenchanting Carefully"] = 126,
-			["Disenchanting"] = 126,
+			["Disenchant"] = 64,
+			["Disenchanting Carefully"] = 65,
+			["Disenchanting"] = 64,
 			["Disengage"] = 104,
 			["Disgusting Slime"] = 908,
 			["Disintegration Beam:1386551"] = 320,
@@ -9244,6 +9287,7 @@ function ZA_UpdateData()
 			["Distorting Reality"] = 320,
 			["Divine Hymn"] = 200,
 			["Divine Protection"] = 66,
+			[408458] = 66, -- Divine Purpose
 			["Divine Purpose"] = 66,
 			["Divine Shield"] = 660,
 			["Divine Steed"] = 3,
@@ -14028,6 +14072,7 @@ function ZA_UpdateData()
 			[223363] = 174, -- Vicious Warstrider
 
 			--! Hippogryph
+			[452643] = 138, -- Frayfeather Hippogryph
 			[63844]  = 153, -- Argent Hippogryph
 			[74856]  = 12, -- Blazing Hippogryph
 			[43927]  = 174, -- Cenarion War Hippogryph
@@ -16996,6 +17041,10 @@ function ZA_UpdateData()
 			[456597] = 100,
 			[456605] = 12,
 			[432684] = 100,
+			[455391] = 126,
+			[455392] = 126,
+			[455393] = 126,
+			[455394] = 126,
 			--qqq
 
 
@@ -28293,6 +28342,10 @@ function ZA_UpdateData()
 			[456597] = 0,
 			[456605] = 0,
 			[432684] = 0,
+			[455391] = 5976888,
+			[455392] = 5088858,
+			[455393] = 5976860,
+			[455394] = 5976742,
 			--qqi
 
 
@@ -28406,12 +28459,7 @@ function ZA_UpdateData()
 
 
 			--§ Spells
-			[394927] = 4630438, -- Light of Creation (Kharnalex, The First Light)
-			[375893] = 648707, -- Death Chakram
-			[382440] = 1033914, -- Shifting Power
-			[388193] = 628675, -- Jadefire Stomp
-			["Jadefire Stomp"] = 628675,
-			[375986] = 4630359, -- Primordial Wave
+			[394927] = 4630438, -- Light of Creation (Kharnalex, The First Light) (missing icon)
 			[370748] = 0, -- Reclaim Concoctions
 			["Disenchanting"] = 0,
 			["Disenchant"] = 0,
@@ -29090,6 +29138,8 @@ function ZA_UpdateData()
 			[5400] = "462326|Flametongue|Imbued with the element of Fire",
 			[6498] = "462325|Earthliving|Imbued with the element of Earth",
 			[7587] = "5975854|Thunderstrike Ward|Imbued with the element of Lightning",
+			[7143] = "237172|Rite of Sanctification|Primary stat increased by 2%. Armor increased by 5%.",
+			[7144] = "237051|Rite of Adjuration|Stamina increased by 3%.",
 			-- Rune
 			[6514] = "134421|Buzzing Rune|Critical Strike increased by 310.",
 			[6513] = "134421|Buzzing Rune|Critical Strike increased by 265.",
