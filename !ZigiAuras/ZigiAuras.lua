@@ -1271,6 +1271,7 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[268769] = "Dead Ahead: Critical Strike", -- Dead-Eye Spyglass
 			[452146] = "Egg Sac: " .. ZA.PrimaryStatName, -- Ara-Kara Sacbrood
 			[455451] = "Quickwick: Haste & Speed", -- Quickwick Candlestick
 			--[455456] = "Unstable Core: Versatility", -- Unstable Power Suit Core
@@ -1658,6 +1659,9 @@ function ZA_UpdateData()
 
 		--# Potions
 		ZA.Potions = {
+			-- The War Within
+			[431932] = true, -- Tempered Potion
+
 			-- Dragonflight
 			[371028] = true, -- Elemental Potion of Ultimate Power
 			[371024] = true, -- Elemental Potion of Power
@@ -2087,8 +2091,7 @@ function ZA_UpdateData()
 			["Contract: The Wild Hunt"] = true,
 
 			-- Gathering
-			[191212] = true, -- Fizzy Apple Cider
-			[136583] = true, -- Darkmoon Firewater
+			[191212] = "Gathering", -- Fizzy Apple Cider
 
 			-- Event
 			["Sign of the Critter"] = true,
@@ -2305,6 +2308,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[441665] = "Zone", -- Baeny The Barrel
 			[441390] = "Zone", -- Scared of the Dark
 			[281186] = "Zone", -- Bristling with the Essence
 			[278780] = "Zone", -- Gnomish Twisting Device
@@ -2955,7 +2959,6 @@ function ZA_UpdateData()
 		-- Match priority: SpellID > Name:Icon > :Icon > Name
 		ZA.Spells = {
 			--! Trinkets
-			[455482] = 143, -- Imperfect Ascendancy Serum
 			[341260] = 200, -- Burst of Knowledge (Heirloom Set Bonus)
 			-- Racial
 			[274739] = 720, -- Rictus of the Laughing Skull
@@ -2965,6 +2968,8 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[268769] = 100, -- Dead-Eye Spyglass
+			[455482] = 143, -- Imperfect Ascendancy Serum
 			[452146] = 143, -- Ara-Kara Sacbrood
 			[455451] = 104, -- Quickwick Candlestick
 			[455456] = 18, -- Unstable Power Suit Core (Versatility)
@@ -3339,6 +3344,12 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[431932] = 281, -- Tempered Potion
+			[458648] = 325, -- Curse Fog
+			[458646] = 325, -- Curse Fog
+			[453199] = 327, -- Dematerialize
+			[444673] = 103, -- Growl
+			[444685] = 104, -- Exhilarating Speed
 			[444957] = 811, -- Gale Strike
 			[444944] = 101, -- Talon Shred
 			[453749] = 901, -- Kelpsplosion
@@ -17160,6 +17171,14 @@ function ZA_UpdateData()
 			[442170] = 200,
 			[442513] = 202,
 			[448217] = 100,
+			[464829] = 100,
+			[450830] = 100,
+			[452543] = 100,
+			[452530] = 100,
+			[412638] = 6,
+			[432094] = 100,
+			[426164] = 6,
+			[427993] = 6,
 			--qqq
 
 
@@ -28563,6 +28582,13 @@ function ZA_UpdateData()
 			[442170] = 0,
 			[442513] = 0,
 			[448217] = 0,
+			[464829] = 0,
+			[450830] = 0,
+			[452543] = 0,
+			[452530] = 0,
+			[412638] = 0,
+			[432094] = 0,
+			[426164] = 0,
 			--qqi
 
 
