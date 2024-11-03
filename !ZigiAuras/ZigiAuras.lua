@@ -685,57 +685,76 @@ function ZA_UpdateData()
 			[54574] = "Scourge Gryphon",
 			[54567] = "Scourge Gryphon",
 			-- Hero's Path
-			[393279] = "Teleport: The Azure Vault", -- Path of Arcane Secrets
-			[393262] = "Teleport: The Nokhud Offensive", -- Path of the Windswept Plains
-			[393222] = "Teleport: Uldaman", -- Path of the Watcher's Legacy
-			[159897] = "Teleport: Auchindoun", -- Path of the Vigilant
-			[159901] = "Teleport: The Everbloom", -- Path of the Verdant
-			[354467] = "Teleport: Theater of Pain", -- Path of the Undefeated
-			[373191] = "Teleport: Sanctum of Domination", -- Path of the Tormented Soul
-			[393283] = "Teleport: Halls of Infusion", -- Path of the Titanic Reservoir
-			[367416] = "Teleport: Tazavesh", -- Path of the Streetwise Merchant
+			-- -- Cataclysm
+			[410080] = "Teleport: The Vortex Pinnacle", -- Path of Wind's Domain
+			[424142] = "Teleport: Throne of the Tides", -- Path of the Tiderhunter
+			[445424] = "Teleport: Grim Batol", -- Path of the Twilight Fortress
+			-- -- Mists of Pandaria
+			[131204] = "Teleport: Temple of the Jade Serpent", -- Path of the Jade Serpent
 			[131205] = "Teleport: Stormstout Brewery", -- Path of the Stout Brew
-			[354469] = "Teleport: Sanguine Depths", -- Path of the Stone Warden
-			[159898] = "Teleport: Skyreach", -- Path of the Skies
-			[373190] = "Teleport: Castle Nathria", -- Path of the Sire
-			[354465] = "Teleport: Halls of Atonement", -- Path of the Sinful Soul
 			[131206] = "Teleport: Shado-Pan Monastery", -- Path of the Shado-Pan
+			[131222] = "Teleport: Mogu'shan Palace", -- Path of the Mogu King
 			[131225] = "Teleport: Gate of the Setting Sun", -- Path of the Setting Sun
-			[373274] = "Teleport: Mechagon", -- Path of the Scrappy Prince
-			[354468] = "Teleport: De Other Side", -- Path of the Scheming Loa
+			[131228] = "Teleport: Siege of Niuzao Temple", -- Path of the Black Ox
 			[131229] = "Teleport: Scarlet Monastery", -- Path of the Scarlet Mitre
 			[131231] = "Teleport: Scarlet Halls", -- Path of the Scarlet Blade
-			[393267] = "Teleport: Brackenhide Hollow", -- Path of the Rotting Woods
-			[354463] = "Teleport: Plaguefall", -- Path of the Plagued
-			[393276] = "Teleport: Neltharus", -- Path of the Obsidian Hoard
 			[131232] = "Teleport: Scholomance", -- Path of the Necromancer
-			[131222] = "Teleport: Mogu'shan Palace", -- Path of the Mogu King
-			[354464] = "Teleport: Mists of Tirna Scithe", -- Path of the Misty Forest
-			[131204] = "Teleport: Temple of the Jade Serpent", -- Path of the Jade Serpent
-			[159896] = "Teleport: Iron Docks", -- Path of the Iron Prow
-			[393766] = "Teleport: Court of Stars", -- Path of the Grand Magistrix
-			[410071] = "Teleport: Freehold", -- Path of the Freebooter
-			[373192] = "Teleport: Sepulcher of the First Ones", -- Path of the First Ones
-			[373262] = "Teleport: Karazhan", -- Path of the Fallen Guardian
-			[410078] = "Teleport: Neltharion's Lair", -- Path of the Earth-Warder
-			[393273] = "Teleport: Algeth'ar Academy", -- Path of the Draconic Diploma
-			[159900] = "Teleport: Grimrail Depot", -- Path of the Dark Rail
-			[159899] = "Teleport: Shadowmoon Burial Grounds", -- Path of the Crescent Moon
-			[354462] = "Teleport: The Necrotic Wake", -- Path of the Courageous
-			[393256] = "Teleport: Ruby Life Pools", -- Path of the Clutch Defender
-			[159902] = "Teleport: Upper Blackrock Spire", -- Path of the Burning Mountain
+			-- -- Warlords of Draenor
 			[159895] = "Teleport: Bloodmaul Slag Mines", -- Path of the Bloodmaul
-			[131228] = "Teleport: Siege of Niuzao Temple", -- Path of the Black Ox
-			[354466] = "Teleport: Spires of Ascension", -- Path of the Ascendant
-			[410080] = "Teleport: The Vortex Pinnacle", -- Path of Wind's Domain
-			[410074] = "Teleport: The Underrot", -- Path of Festering Rot
-			[393764] = "Teleport: Halls of Valor", -- Path of Proven Worth
-			[424153] = "Teleport: Black Rook Hold", -- Path of Ancient Horrors
-			[424142] = "Teleport: Throne of the Tides", -- Path of the Tiderhunter
+			[159896] = "Teleport: Iron Docks", -- Path of the Iron Prow
+			[159897] = "Teleport: Auchindoun", -- Path of the Vigilant
+			[159898] = "Teleport: Skyreach", -- Path of the Skies
+			[159899] = "Teleport: Shadowmoon Burial Grounds", -- Path of the Crescent Moon
+			[159900] = "Teleport: Grimrail Depot", -- Path of the Dark Rail
+			[159901] = "Teleport: The Everbloom", -- Path of the Verdant
+			[159902] = "Teleport: Upper Blackrock Spire", -- Path of the Burning Mountain
+			-- -- Legion
 			[424163] = "Teleport: Darkheart Thicket", -- Path of the Nightmare Lord
+			[424153] = "Teleport: Black Rook Hold", -- Path of Ancient Horrors
+			[410078] = "Teleport: Neltharion's Lair", -- Path of the Earth-Warder
+			[393764] = "Teleport: Halls of Valor", -- Path of Proven Worth
+			[393766] = "Teleport: Court of Stars", -- Path of the Grand Magistrix
+			[373262] = "Teleport: Karazhan", -- Path of the Fallen Guardian
+			-- -- Battle for Azeroth
+			[410071] = "Teleport: Freehold", -- Path of the Freebooter
+			[410074] = "Teleport: The Underrot", -- Path of Festering Rot
+			[373274] = "Teleport: Mechagon", -- Path of the Scrappy Prince
 			[424167] = "Teleport: Waycrest Manor", -- Path of Heart's Bane
 			[424187] = "Teleport: Atal'Dazar", -- Path of the Golden Tomb
+			[445418] = "Teleport: Siege of Boralus", -- Path of the Besieged Harbor (Alliance)
+			[464256] = "Teleport: Siege of Boralus", -- Path of the Besieged Harbor (Horde)
+			-- -- Shadowlands
+			[354462] = "Teleport: The Necrotic Wake", -- Path of the Courageous
+			[354463] = "Teleport: Plaguefall", -- Path of the Plagued
+			[354464] = "Teleport: Mists of Tirna Scithe", -- Path of the Misty Forest
+			[354465] = "Teleport: Halls of Atonement", -- Path of the Sinful Soul
+			[354466] = "Teleport: Spires of Ascension", -- Path of the Ascendant
+			[354467] = "Teleport: Theater of Pain", -- Path of the Undefeated
+			[354468] = "Teleport: De Other Side", -- Path of the Scheming Loa
+			[354469] = "Teleport: Sanguine Depths", -- Path of the Stone Warden
+			[367416] = "Teleport: Tazavesh", -- Path of the Streetwise Merchant
+			[373190] = "Teleport: Castle Nathria", -- Path of the Sire
+			[373191] = "Teleport: Sanctum of Domination", -- Path of the Tormented Soul
+			[373192] = "Teleport: Sepulcher of the First Ones", -- Path of the First Ones
+			-- -- Dragonflight
+			[393222] = "Teleport: Uldaman", -- Path of the Watcher's Legacy
+			[393256] = "Teleport: Ruby Life Pools", -- Path of the Clutch Defender
+			[393262] = "Teleport: The Nokhud Offensive", -- Path of the Windswept Plains
+			[393267] = "Teleport: Brackenhide Hollow", -- Path of the Rotting Woods
+			[393273] = "Teleport: Algeth'ar Academy", -- Path of the Draconic Diploma
+			[393276] = "Teleport: Neltharus", -- Path of the Obsidian Hoard
+			[393279] = "Teleport: The Azure Vault", -- Path of Arcane Secrets
+			[393283] = "Teleport: Halls of Infusion", -- Path of the Titanic Reservoir
 			[424197] = "Teleport: Dawn of the Infinite", -- Path of Twisted Time
+			-- -- The War Within
+			[445416] = "Teleport: City of Threads", -- Path of Nerubian Ascension
+			[445414] = "Teleport: The Dawnbreaker", -- Path of the Arathi Flagship
+			[445269] = "Teleport: The Stonevault", -- Path of the Corrupted Foundry
+			[445443] = "Teleport: The Rookery", -- Path of the Fallen Stormriders
+			[445440] = "Teleport: Cinderbrew Meadery", -- Path of the Flaming Brewery
+			[445444] = "Teleport: Priory of the Sacred Flame", -- Path of the Light's Reverence
+			[445417] = "Teleport: Ara-Kara, City of Echoes", -- Path of the Ruined City
+			[445441] = "Teleport: Darkflame Cleft", -- Path of the Warding Candles
 		}
 
 
@@ -888,7 +907,7 @@ function ZA_UpdateData()
 			-- Shadow
 			[32]  = "451ea7:c257b2", -- Shadow
 			[33]  = "2d2247:6b4566", -- Shadowstrike
-			[330] = "110936:6224b5", -- Darkness
+			[330] = "1a0e52:6b27c4", -- Darkness
 			[331] = "0f00eb:c21d00", -- Ascension
 			[328] = "515cfd:bf6bff", -- Psychic
 			[320] = "220649:243bff", -- Void
@@ -987,6 +1006,8 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Harvestbot Remy"] = 100,
+			["Kobyss Killer"] = 100,
 			["Hungry Ramolith"] = 809,
 			["Coreway Repair Rig"] = 100,
 			["Stolen Skiff"] = 100,
@@ -1250,6 +1271,7 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[452146] = "Egg Sac: " .. ZA.PrimaryStatName, -- Ara-Kara Sacbrood
 			[455451] = "Quickwick: Haste & Speed", -- Quickwick Candlestick
 			--[455456] = "Unstable Core: Versatility", -- Unstable Power Suit Core
 			--[455455] = "Unstable Core: Haste", -- Unstable Power Suit Core
@@ -1387,6 +1409,7 @@ function ZA_UpdateData()
 			[382963] = true, -- Brimming Arcanocrystal
 
 			-- Shadowlands
+			[330131] = "Unbound Changeling: Haste", -- Unbound Changeling
 			[330038] = "Optical Target Embiggener: Critical Strike", -- Optical Target Embiggener
 			[367458] = "Brilliant: Haste", -- Gemstone of Prismatic Brilliance
 			[367327] = "Brilliant: Critical Strike", -- Gemstone of Prismatic Brilliance
@@ -2024,6 +2047,7 @@ function ZA_UpdateData()
 			[430666] = "Reputation", -- Sign of Awakened Storms
 			[430668] = "Reputation", -- Sign of Awakened Embers
 			[430669] = "Reputation", -- Sign of Awakened Dreams
+			[442983] = "Reputation", -- Vizier's Savvy
 
 			-- Contract/Envoy
 			["Contract: The Severed Threads"] = true,
@@ -2089,6 +2113,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[433172] = "State", -- Story Time
 			[443248] = "State", -- Azj-Kahet Pheromones
 			[455648] = "State", -- Appropriate Stolen Skiff
 			[428546] = "State", -- Tremorsense
@@ -2280,6 +2305,15 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[441390] = "Zone", -- Scared of the Dark
+			[281186] = "Zone", -- Bristling with the Essence
+			[278780] = "Zone", -- Gnomish Twisting Device
+			[258430] = "Zone", -- Lumberjack Axe
+			[442389] = "Zone", -- Star Glimmer
+			[442529] = "Zone", -- Glimmer Illumination
+			[426838] = "Zone", -- Hallowfall Scythe
+			[431828] = "Zone", -- Harvester Part
+			[441442] = "Zone", -- Light's Bounty
 			[440977] = "Zone", -- Sharpen Your Knife
 			[441078] = "Zone", -- Memory Magnet
 			[443116] = "Zone", -- Moose Charge
@@ -2931,6 +2965,7 @@ function ZA_UpdateData()
 
 			-- The War Within
 			-- 10.0
+			[452146] = 143, -- Ara-Kara Sacbrood
 			[455451] = 104, -- Quickwick Candlestick
 			[455456] = 18, -- Unstable Power Suit Core (Versatility)
 			[455455] = 721, -- Unstable Power Suit Core (Haste)
@@ -3073,6 +3108,7 @@ function ZA_UpdateData()
 			[382963] = 126, -- Brimming Arcanocrystal
 
 			-- Shadowlands
+			[330131] = 10, -- Unbound Changeling (Haste)
 			[330038] = 100, -- Optical Target Embiggener
 			[367458] = 816, -- Gemstone of Prismatic Brilliance
 			[367327] = 818, -- Gemstone of Prismatic Brilliance
@@ -3303,6 +3339,88 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[444957] = 811, -- Gale Strike
+			[444944] = 101, -- Talon Shred
+			[453749] = 901, -- Kelpsplosion
+			[453745] = 901, -- Kelpsplosion
+			[452567] = 906, -- Retch Refuse
+			[457959] = 801, -- Asphyxiate
+			[457937] = 801, -- Asphyxiate
+			[457934] = 801, -- Asphyxiate
+			[458409] = 101, -- Goring Horn
+			[253498] = 66, -- Style
+			[428332] = 801, -- Primordial Wave
+			[314125] = 331, -- Glimpse of Infinity
+			[314118] = 331, -- Glimpse of Infinity
+			[311176] = 331, -- Glimpse of Infinity
+			[311552] = 327, -- Fear the Void
+			[311550] = 327, -- Fear the Void
+			[314614] = 327, -- Fear of the Void
+			[307079] = 40, -- Synthesis
+			[307071] = 40, -- Synthesis
+			[307080] = 40, -- Synthesis
+			[317423] = 321, -- Synthesis
+			[310793] = 321, -- Pumping Blood
+			[319006] = 321, -- Pumping Blood
+			[319005] = 321, -- Pumping Blood
+			[310788] = 321, -- Pumping Blood
+			[316951] = 105, -- Voracious Charge
+			[277507] = 101, -- Thrashing
+			[277501] = 101, -- Thrashing
+			[277774] = 40, -- Infest
+			[277779] = 40, -- Infest
+			[276540] = 321, -- Blood Shield
+			[294349] = 806, -- Volatile Waste
+			[370965] = 127, -- The Hunt
+			[390163] = 127, -- Sigil of Spite
+			[414317] = 4, -- Bug Broiler
+			[458672] = 803, -- Rock Shards
+			[458670] = 400, -- Stomp
+			[458676] = 400, -- Crushing Leap
+			[276893] = 400, -- Collapse
+			[276766] = 400, -- Collapse
+			[276759] = 400, -- Collapse
+			[276764] = 400, -- Collapse
+			[161120] = 143, -- Spider Web
+			[161106] = 143, -- Spider Web
+			[161105] = 143, -- Spider Web
+			[28434]  = 143, -- Spider Web
+			[30043]  = 806, -- Poison Spray
+			[458003] = 328, -- Mind Claw
+			[457987] = 325, -- Mass Halucination
+			[458068] = 900, -- Tasty Morsel
+			[458001] = 806, -- Gluttonous Upheaval
+			[457993] = 806, -- Gluttonous Upheaval
+			[458086] = 400, -- Bounding Slam
+			[458080] = 400, -- Bounding Slam
+			[204066] = 721, -- Lunar Beam
+			[440231] = 101, -- Cleaving Strikes
+			[440222] = 410, -- Tetanus
+			[8014]   = 410, -- Tetanus
+			[452307] = 641, -- Sign of the Past
+			[455020] = 641, -- WoW's Anniversary
+			[345252] = 321, -- Noblesse Oblige
+			[345555] = 321, -- Noblesse Oblige
+			[345138] = 321, -- Noblesse Oblige
+			[345199] = 321, -- Noblesse Oblige
+			[345213] = 321, -- Noblesse Oblige
+			[345254] = 321, -- Noblesse Oblige
+			[345258] = 321, -- Noblesse Oblige
+			[345259] = 321, -- Noblesse Oblige
+			[345260] = 321, -- Noblesse Oblige
+			[345350] = 321, -- Noblesse Oblige
+			[336137] = 400, -- Shattering Shockwave
+			[332683] = 321, -- Shattering Blast
+			[227987] = 111, -- Dinner Bell!
+			[345553] = 111, -- Dinner Bell
+			[265407] = 111, -- Dinner Bell
+			[462818] = 16, -- Icefury
+			[468226] = 800, -- Lightning Conduit
+			[341131] = 321, -- Dark Bolt
+			[341390] = 321, -- Dark Bolt Volley
+			[341406] = 321, -- Orbital Explosion
+			[341395] = 321, -- Spherical Redirection
+			[345367] = 100, -- Repairing...
 			[464118] = 641, -- Sands of Power
 			[424223] = 4, -- Incite Flames
 			[424212] = 4, -- Incite Flames
@@ -3639,6 +3757,9 @@ function ZA_UpdateData()
 			[430125] = 320, -- Entropy Shield
 			[450628] = 320, -- Entropy Shield
 			[426893] = 320, -- Bounding Void
+			[463498] = 143, -- Executor's Severed Thread
+			[463497] = 143, -- Crypt Lord's Severed Thread
+			[463493] = 143, -- Spymaster's Severed Thread
 			[463481] = 143, -- Notorious Thread's Hearthstone
 			[388897] = 112, -- Snapping Slice
 			[424704] = 108, -- Vicious Stabs
@@ -5369,6 +5490,7 @@ function ZA_UpdateData()
 			[375893] = 646, -- Death Chakram
 			[388193] = 120, -- Jadefire Stomp
 			["Jadefire Stomp"] = 120,
+			[375982] = 28, -- Primordial Wave
 			[375986] = 28, -- Primordial Wave
 			[422964] = 400, -- Outburst
 			[405236] = 62, -- Harmonic Music Stone
@@ -10149,13 +10271,19 @@ function ZA_UpdateData()
 			["Graze"] = 900,
 			["Grease Spray:252178"] = 999,
 			["Greater Castigation:3528313"] = 321,
+			["Lesser Earth Elemental"] = 803,
 			["Greater Earth Elemental"] = 803,
 			["Greater Fade"] = 720,
+			["Lesser Fire Elemental"] = 4,
 			["Greater Fire Elemental"] = 4,
 			["Greater Invisibility"] = 720,
 			["Plane Displacer"] = 720,
 			["Greater Polymorph"] = 646,
+			["Candle Confidant"] = 5,
+			["Lesser Storm Elemental"] = 911,
+			["Lesser Lightning Elemental"] = 9,
 			["Greater Storm Elemental"] = 911,
+			["Greater Lightning Elemental"] = 9,
 			["Greatfather Winter's Hearthstone"] = 16,
 			["Grenade Launcher"] = 100,
 			["Grenade"] = 5,
@@ -13394,6 +13522,7 @@ function ZA_UpdateData()
 			[261434] = 158, -- Vicious War Basilisk
 
 			--! Bat
+			[466838] = 158, -- Chaos-Forged Direwing
 			[139595] = 321, -- Armored Bloodwing
 			[288720] = 24, -- Bloodgorged Hunter
 			[288714] = 172, -- Bloodthirsty Dreadwing
@@ -13502,6 +13631,7 @@ function ZA_UpdateData()
 			[419345] = 414, -- Eve's Ghastly Rider
 
 			--! Brutosaur
+			[465235] = 156, -- Trader's Gilded Brutosaur
 			[264058] = 134, -- Mighty Caravan Brutosaur
 
 			--! Toad
@@ -13570,6 +13700,7 @@ function ZA_UpdateData()
 			[171621] = 12, -- Ironhoof Destroyer
 
 			--! Cat
+			[454682] = 721, -- Startouched Furline
 			[317177] = 66, -- Sunwarmed Furline
 			-- Nightsaber
 			[449126] = 175, -- Kor'kron Warsaber
@@ -14030,6 +14161,7 @@ function ZA_UpdateData()
 			[189043] = 402, -- Wild Gladiator's Felblood Gronnling
 
 			--! Gryphon
+			[466811] = 159, -- Chaos-Forged Gryphon
 			[441324] = 204, -- Remembered Golden Gryphon
 			[417888] = 800, -- Algarian Stormrider
 			[413827] = 150, -- Harbor Gryphon
@@ -14072,6 +14204,7 @@ function ZA_UpdateData()
 			[223363] = 174, -- Vicious Warstrider
 
 			--! Hippogryph
+			[466812] = 159, -- Chaos-Forged Hippogryph
 			[452643] = 138, -- Frayfeather Hippogryph
 			[63844]  = 153, -- Argent Hippogryph
 			[74856]  = 12, -- Blazing Hippogryph
@@ -14882,6 +15015,7 @@ function ZA_UpdateData()
 			-- Wylderdrake
 			[368899] = 8, -- Cliffside Wylderdrake
 			-- Wind Rider
+			[466845] = 173, -- Chaos-Forged Wind Rider
 			[441325] = 204, -- Remembered Wind Rider
 			[302362] = 3, -- Alabaster Thunderwing
 			[32244]  = 157, -- Blue Wind Rider
@@ -16143,57 +16277,6 @@ function ZA_UpdateData()
 			[403481] = 202,
 			[396597] = 911,
 			[410792] = 803,
-			[131204] = 646, -- Path of the Jade Serpent
-			[131205] = 646, -- Path of the Stout Brew
-			[131206] = 646, -- Path of the Shado-Pan
-			[131222] = 646, -- Path of the Mogu King
-			[131225] = 646, -- Path of the Setting Sun
-			[131228] = 646, -- Path of the Black Ox
-			[131229] = 646, -- Path of the Scarlet Mitre
-			[131231] = 646, -- Path of the Scarlet Blade
-			[131232] = 646, -- Path of the Necromancer
-			[159895] = 646, -- Path of the Bloodmaul
-			[159896] = 646, -- Path of the Iron Prow
-			[159897] = 646, -- Path of the Vigilant
-			[159898] = 646, -- Path of the Skies
-			[159899] = 646, -- Path of the Crescent Moon
-			[159900] = 646, -- Path of the Dark Rail
-			[159901] = 646, -- Path of the Verdant
-			[159902] = 646, -- Path of the Burning Mountain
-			[354462] = 646, -- Path of the Courageous
-			[354463] = 646, -- Path of the Plagued
-			[354464] = 646, -- Path of the Misty Forest
-			[354465] = 646, -- Path of the Sinful Soul
-			[354466] = 646, -- Path of the Ascendant
-			[354467] = 646, -- Path of the Undefeated
-			[354468] = 646, -- Path of the Scheming Loa
-			[354469] = 646, -- Path of the Stone Warden
-			[367416] = 646, -- Path of the Streetwise Merchant
-			[373190] = 646, -- Path of the Sire
-			[373191] = 646, -- Path of the Tormented Soul
-			[373192] = 646, -- Path of the First Ones
-			[373262] = 646, -- Path of the Fallen Guardian
-			[373274] = 646, -- Path of the Scrappy Prince
-			[393222] = 646, -- Path of the Watcher's Legacy
-			[393256] = 646, -- Path of the Clutch Defender
-			[393262] = 646, -- Path of the Windswept Plains
-			[393267] = 646, -- Path of the Rotting Woods
-			[393273] = 646, -- Path of the Draconic Diploma
-			[393276] = 646, -- Path of the Obsidian Hoard
-			[393279] = 646, -- Path of Arcane Secrets
-			[393283] = 646, -- Path of the Titanic Reservoir
-			[393764] = 646, -- Path of Proven Worth
-			[393766] = 646, -- Path of the Grand Magistrix
-			[410071] = 646, -- Path of the Freebooter
-			[410074] = 646, -- Path of Festering Rot
-			[410078] = 646, -- Path of the Earth-Warder
-			[410080] = 646, -- Path of Wind's Domain
-			[424153] = 646, -- Path of Ancient Horrors
-			[424142] = 646, -- Path of the Tiderhunter
-			[424163] = 646, -- Path of the Nightmare Lord
-			[424167] = 646, -- Path of Heart's Bane
-			[424187] = 646, -- Path of the Golden Tomb
-			[424197] = 646, -- Path of Twisted Time
 			[225435] = 646, -- Town Portal: Kal'delar
 			[225434] = 646, -- Town Portal: Sashj'tar
 			[225428] = 646, -- Town Portal: Shala'nir
@@ -17045,7 +17128,111 @@ function ZA_UpdateData()
 			[455392] = 126,
 			[455393] = 126,
 			[455394] = 126,
+			[430509] = 6,
+			[433208] = 6,
+			[416859] = 6,
+			[416112] = 100,
+			[432020] = 6,
+			[426128] = 6,
+			[426139] = 6,
+			[436873] = 6,
+			[436968] = 100,
+			[437097] = 101,
+			[263373] = 200,
+			[269455] = 200,
+			[430115] = 100,
+			[430930] = 8,
+			[426092] = 6,
+			[414311] = 100,
+			[415780] = 6,
+			[308649] = 800,
+			[316417] = 800,
+			[311518] = 800,
+			[269331] = 100,
+			[452585] = 8,
+			[442118] = 803,
+			[441933] = 803,
+			[442427] = 202,
+			[442703] = 100,
+			[442700] = 100,
+			[437626] = 8,
+			[451402] = 100,
+			[442170] = 200,
+			[442513] = 202,
+			[448217] = 100,
 			--qqq
+
+
+			-- -- Cataclysm
+			[410080] = 646, -- Path of Wind's Domain
+			[424142] = 646, -- Path of the Tiderhunter
+			[445424] = 646, -- Path of the Twilight Fortress
+			-- -- Mists of Pandaria
+			[131204] = 646, -- Path of the Jade Serpent
+			[131205] = 646, -- Path of the Stout Brew
+			[131206] = "Teleport: Shado-Pan Monastery", -- Path of the Shado-Pan
+			[131222] = 646, -- Path of the Mogu King
+			[131225] = 646, -- Path of the Setting Sun
+			[131228] = 646, -- Path of the Black Ox
+			[131229] = 646, -- Path of the Scarlet Mitre
+			[131231] = 646, -- Path of the Scarlet Blade
+			[131232] = 646, -- Path of the Necromancer
+			-- -- Warlords of Draenor
+			[159895] = 646, -- Path of the Bloodmaul
+			[159896] = 646, -- Path of the Iron Prow
+			[159897] = 646, -- Path of the Vigilant
+			[159898] = 646, -- Path of the Skies
+			[159899] = 646, -- Path of the Crescent Moon
+			[159900] = 646, -- Path of the Dark Rail
+			[159901] = 646, -- Path of the Verdant
+			[159902] = 646, -- Path of the Burning Mountain
+			-- -- Legion
+			[424163] = 646, -- Path of the Nightmare Lord
+			[424153] = 646, -- Path of Ancient Horrors
+			[410078] = 646, -- Path of the Earth-Warder
+			[393764] = 646, -- Path of Proven Worth
+			[393766] = 646, -- Path of the Grand Magistrix
+			[373262] = 646, -- Path of the Fallen Guardian
+			-- -- Battle for Azeroth
+			[410071] = 646, -- Path of the Freebooter
+			[410074] = 646, -- Path of Festering Rot
+			[373274] = 646, -- Path of the Scrappy Prince
+			[424167] = 646, -- Path of Heart's Bane
+			[424187] = 646, -- Path of the Golden Tomb
+			[445418] = 646, -- Path of the Besieged Harbor (Alliance)
+			[464256] = 646, -- Path of the Besieged Harbor (Horde)
+			-- -- Shadowlands
+			[354462] = 646, -- Path of the Courageous
+			[354463] = 646, -- Path of the Plagued
+			[354464] = 646, -- Path of the Misty Forest
+			[354465] = 646, -- Path of the Sinful Soul
+			[354466] = 646, -- Path of the Ascendant
+			[354467] = 646, -- Path of the Undefeated
+			[354468] = 646, -- Path of the Scheming Loa
+			[354469] = 646, -- Path of the Stone Warden
+			[367416] = 646, -- Path of the Streetwise Merchant
+			[373190] = 646, -- Path of the Sire
+			[373191] = 646, -- Path of the Tormented Soul
+			[373192] = 646, -- Path of the First Ones
+			-- -- Dragonflight
+			[393222] = 646, -- Path of the Watcher's Legacy
+			[393256] = 646, -- Path of the Clutch Defender
+			[393262] = 646, -- Path of the Windswept Plains
+			[393267] = 646, -- Path of the Rotting Woods
+			[393273] = 646, -- Path of the Draconic Diploma
+			[393276] = 646, -- Path of the Obsidian Hoard
+			[393279] = 646, -- Path of Arcane Secrets
+			[393283] = 646, -- Path of the Titanic Reservoir
+			[424197] = 646, -- Path of Twisted Time
+			-- -- The War Within
+			[445416] = 646, -- Path of Nerubian Ascension
+			[445414] = 646, -- Path of the Arathi Flagship
+			[445269] = 646, -- Path of the Corrupted Foundry
+			[445443] = 646, -- Path of the Fallen Stormriders
+			[445440] = 646, -- Path of the Flaming Brewery
+			[445444] = 646, -- Path of the Light's Reverence
+			[445417] = 646, -- Path of the Ruined City
+			[445441] = 646, -- Path of the Warding Candles
 
 
 			--! Tuskarr Fishing Gear
@@ -28346,6 +28533,36 @@ function ZA_UpdateData()
 			[455392] = 5088858,
 			[455393] = 5976860,
 			[455394] = 5976742,
+			[433208] = 0,
+			[416859] = 0,
+			[432020] = 0,
+			[426128] = 0,
+			[426139] = 0,
+			[436873] = 0,
+			[436968] = 0,
+			[437097] = 133892,
+			[263373] = 0,
+			[269455] = 0,
+			[430115] = 0,
+			[430930] = 0,
+			[426092] = 0,
+			[414311] = 0,
+			[415780] = 0,
+			[308649] = 0,
+			[316417] = 0,
+			[311518] = 0,
+			[269331] = 0,
+			[452585] = 0,
+			[442118] = 0,
+			[441933] = 0,
+			[442427] = 0,
+			[442703] = 0,
+			[442700] = 0,
+			[437626] = 0,
+			[451402] = 0,
+			[442170] = 0,
+			[442513] = 0,
+			[448217] = 0,
 			--qqi
 
 
@@ -28405,6 +28622,11 @@ function ZA_UpdateData()
 			[396591] = "Interface/AddOns/!ZigiAuras/Icons/TeleportStormsongValley", -- Teleport: Jeweled Coast (Lucky Tortollan Charm)
 			[460271] = "Interface/AddOns/!ZigiAuras/Icons/ScrollTeleportSilithus", -- Teleporting to Silithus
 			-- Hero's Path
+			-- -- Cataclysm
+			[410080] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheVortexPinnacle", -- Path of Wind's Domain
+			[424142] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportThroneOfTheTides", -- Path of the Tiderhunter
+			[445424] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportGrimBatol", -- Path of the Twilight Fortress
+			-- -- Mists of Pandaria
 			[131204] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTempleOfTheJadeSerpent", -- Path of the Jade Serpent
 			[131205] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportStormstoutBrewery", -- Path of the Stout Brew
 			[131206] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportShadoPanMonastery", -- Path of the Shado-Pan
@@ -28414,6 +28636,7 @@ function ZA_UpdateData()
 			[131229] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportScarletMonastery", -- Path of the Scarlet Mitre
 			[131231] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportScarletHalls", -- Path of the Scarlet Blade
 			[131232] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportScholomance", -- Path of the Necromancer
+			-- -- Warlords of Draenor
 			[159895] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportBloodmaulSlagMines", -- Path of the Bloodmaul
 			[159896] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportIronDocks", -- Path of the Iron Prow
 			[159897] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAuchindoun", -- Path of the Vigilant
@@ -28422,6 +28645,22 @@ function ZA_UpdateData()
 			[159900] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportGrimrailDepot", -- Path of the Dark Rail
 			[159901] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheEverbloom", -- Path of the Verdant
 			[159902] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportUpperBlackrockSpire", -- Path of the Burning Mountain
+			-- -- Legion
+			[424163] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDarkheartThicket", -- Path of the Nightmare Lord
+			[424153] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportBlackRookHold", -- Path of Ancient Horrors
+			[410078] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportNeltharionsLair", -- Path of the Earth-Warder
+			[393764] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportHallsOfValor", -- Path of Proven Worth
+			[393766] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCourtOfStars", -- Path of the Grand Magistrix
+			[373262] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportKarazhan", -- Path of the Fallen Guardian
+			-- -- Battle for Azeroth
+			[410071] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportFreehold", -- Path of the Freebooter
+			[410074] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheUnderrot", -- Path of Festering Rot
+			[373274] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportOperationMechagon", -- Path of the Scrappy Prince
+			[424167] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportWaycrestManor", -- Path of Heart's Bane
+			[424187] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAtalDazar", -- Path of the Golden Tomb
+			[445418] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSiegeOfBoralus", -- Path of the Besieged Harbor (Alliance)
+			[464256] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSiegeOfBoralus", -- Path of the Besieged Harbor (Horde)
+			-- -- Shadowlands
 			[354462] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheNecroticWake", -- Path of the Courageous
 			[354463] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportPlaguefall", -- Path of the Plagued
 			[354464] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportMistsOfTirnaScithe", -- Path of the Misty Forest
@@ -28434,8 +28673,7 @@ function ZA_UpdateData()
 			[373190] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCastleNathria", -- Path of the Sire
 			[373191] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSanctumOfDomination", -- Path of the Tormented Soul
 			[373192] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSepulcherOfTheFirstOnes", -- Path of the First Ones
-			[373262] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportKarazhan", -- Path of the Fallen Guardian
-			[373274] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportOperationMechagon", -- Path of the Scrappy Prince
+			-- -- Dragonflight
 			[393222] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportUldaman", -- Path of the Watcher's Legacy
 			[393256] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportRubyLifePools", -- Path of the Clutch Defender
 			[393262] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheNokhudOffensive", -- Path of the Windswept Plains
@@ -28444,18 +28682,17 @@ function ZA_UpdateData()
 			[393276] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportNeltharus", -- Path of the Obsidian Hoard
 			[393279] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheAzureVault", -- Path of Arcane Secrets
 			[393283] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportHallsOfInfusion", -- Path of the Titanic Reservoir
-			[393764] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportHallsOfValor", -- Path of Proven Worth
-			[393766] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCourtOfStars", -- Path of the Grand Magistrix
-			[410071] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportFreehold", -- Path of the Freebooter
-			[410074] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheUnderrot", -- Path of Festering Rot
-			[410078] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportNeltharionsLair", -- Path of the Earth-Warder
-			[410080] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheVortexPinnacle", -- Path of Wind's Domain
-			[424153] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportBlackRookHold", -- Path of Ancient Horrors
-			[424142] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportThroneOfTheTides", -- Path of the Tiderhunter
-			[424163] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDarkheartThicket", -- Path of the Nightmare Lord
-			[424167] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportWaycrestManor", -- Path of Heart's Bane
-			[424187] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAtalDazar", -- Path of the Golden Tomb
 			[424197] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDawnOfTheInfinite", -- Path of Twisted Time
+			-- -- The War Within
+			[445416] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCityOfThreads", -- Path of Nerubian Ascension
+			[445414] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheDawnbreaker", -- Path of the Arathi Flagship
+			[445269] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheStonevault", -- Path of the Corrupted Foundry
+			[445443] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheRookery", -- Path of the Fallen Stormriders
+			[445440] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportCinderbrewMeadery", -- Path of the Flaming Brewery
+			[445444] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportPrioryOfTheSacredFlame", -- Path of the Light's Reverence
+			[445417] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAraKara", -- Path of the Ruined City
+			[445441] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDarkflameCleft", -- Path of the Warding Candles
+			
 
 
 			--§ Spells
