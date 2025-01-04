@@ -8,12 +8,6 @@ frame:RegisterEvent("PLAYER_LEVEL_UP")
 frame:RegisterUnitEvent("PLAYER_SPECIALIZATION_CHANGED", "player")
 frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
-local ATLAS_QUALITY_1 = CreateAtlasMarkup("Professions-ChatIcon-Quality-Tier1")
-local ATLAS_QUALITY_2 = CreateAtlasMarkup("Professions-ChatIcon-Quality-Tier2")
-local ATLAS_QUALITY_3 = CreateAtlasMarkup("Professions-ChatIcon-Quality-Tier3")
-local ATLAS_QUALITY_4 = CreateAtlasMarkup("Professions-ChatIcon-Quality-Tier4")
-local ATLAS_QUALITY_5 = CreateAtlasMarkup("Professions-ChatIcon-Quality-Tier5")
-
 
 function ZA_UpdateData()
 	local name, realm = UnitFullName("player")
@@ -869,7 +863,7 @@ function ZA_UpdateData()
 			[401] = "00ad06:c7ff1f", -- Felfire
 			[427] = "bac53e:9795a5", -- Felstrike
 			[36]  = "5400b2:ff5400", -- Shadowflame
-			[361] = "7b0094:83e000", -- Fel Shadowflame
+			[361] = "490261:4eff3b", -- Fel Shadowflame
 			[28]  = "ff8400:c263ff", -- Elemental
 			[127] = "003d1a:4eff3b", -- Chaos (also 124)
 
@@ -1010,6 +1004,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["TR-06 Pummeler"] = 100,
 			["Harvestbot Remy"] = 100,
 			["Kobyss Killer"] = 100,
 			["Hungry Ramolith"] = 809,
@@ -1975,43 +1970,45 @@ function ZA_UpdateData()
 			[33720] = "Elixir", -- Onslaught Elixir
 
 			-- Classic
-			--[?] = "Elixir", -- Alchemist's Flask
+			[79639] = "Elixir", -- Alchemist's Flask (Agility)
+			[79640] = "Elixir", -- Alchemist's Flask (Intellect)
+			[79638] = "Elixir", -- Alchemist's Flask (Strength)
 			[17626] = "Elixir", -- Flask of the Titans
 			[17627] = "Elixir", -- Flask of Distilled Wisdom
 			[17628] = "Elixir", -- Flask of Supreme Power
 			[11390] = "Elixir", -- Arcane Elixir
 			[11328] = "Elixir", -- Elixir of Agility
 			[17537] = "Elixir", -- Elixir of Brute Force
-			[3220] = "Elixir", -- Elixir of Defense
+			[3220]  = "Elixir", -- Elixir of Defense
 			[11406] = "Elixir", -- Elixir Demonslaying
-			[7844] = "Elixir", -- Elixir of Firepower
-			[3593] = "Elixir", -- Elixir of Fortitude
+			[7844]  = "Elixir", -- Elixir of Firepower
+			[3593]  = "Elixir", -- Elixir of Fortitude
 			[21920] = "Elixir", -- Elixir of Frost Power
-			[8212] = "Elixir", -- Elixir of Giant Growth
+			[8212]  = "Elixir", -- Elixir of Giant Growth
 			[11405] = "Elixir", -- Elixir of Giants
 			[11334] = "Elixir", -- Elixir of Greater Agility
 			[11349] = "Elixir", -- Elixir of Greater Defense
 			[26276] = "Elixir", -- Elixir of Greater Firepower
 			[11396] = "Elixir", -- Elixir of Greater Intellect
-			[3160] = "Elixir", -- Elixir of Lesser Agility
-			[2367] = "Elixir", -- Elixir of Lion's Strength
+			[3160]  = "Elixir", -- Elixir of Lesser Agility
+			[2367]  = "Elixir", -- Elixir of Lion's Strength
 			[63729] = "Elixir", -- Elixir of Minor Accuracy
-			[2374] = "Elixir", -- Elixir of Minor Agility
-			[673] = "Elixir", -- Elixir of Minor Defense
-			[2378] = "Elixir", -- Elixir of Minor Fortitude
-			[3164] = "Elixir", -- Elixir of Ogre's Strength
+			[2374]  = "Elixir", -- Elixir of Minor Agility
+			[673]   = "Elixir", -- Elixir of Minor Defense
+			[2378]  = "Elixir", -- Elixir of Minor Fortitude
+			[3164]  = "Elixir", -- Elixir of Ogre's Strength
 			[11474] = "Elixir", -- Elixir of Shadow Power
 			[11348] = "Elixir", -- Elixir of Superior Defense
 			[17538] = "Elixir", -- Elixir of the Mongoose
 			[17535] = "Elixir", -- Elixir of the Sages
-			[3166] = "Elixir", -- Elixir of Wisdom
+			[3166]  = "Elixir", -- Elixir of Wisdom
 			[11371] = "Elixir", -- Gift of Arthas
 			[17539] = "Elixir", -- Greater Arcane Elixir
 			[24363] = "Elixir", -- Mageblood Elixir
-			[3223] = "Elixir", -- Major Troll's Blood Elixir
+			[3223]  = "Elixir", -- Major Troll's Blood Elixir
 			[24361] = "Elixir", -- Mighty Troll's Blood Elixir
-			[3222] = "Elixir", -- Strong Troll's Blood Elixir
-			[3219] = "Elixir", -- Weak Troll's Blood Elixir
+			[3222]  = "Elixir", -- Strong Troll's Blood Elixir
+			[3219]  = "Elixir", -- Weak Troll's Blood Elixir
 			[12608] = "Elixir", -- Catseye Elixir
 
 
@@ -2058,6 +2055,7 @@ function ZA_UpdateData()
 			[430669] = "Reputation", -- Sign of Awakened Dreams
 			[442983] = "Reputation", -- Vizier's Savvy
 			[462806] = "Reputation", -- Vizier's Supremacy
+			[462810] = "Reputation", -- Weaver's Prodigy
 
 			-- Contract/Envoy
 			["Contract: The Severed Threads"] = true,
@@ -2122,6 +2120,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[458069] = "State", -- Seafury Tempest
 			[433172] = "State", -- Story Time
 			[443248] = "State", -- Azj-Kahet Pheromones
 			[455648] = "State", -- Appropriate Stolen Skiff
@@ -2314,6 +2313,19 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[466925] = "Zone", -- N.U.K.U.L.A.R Device
+			[114535] = "Zone", -- Travel Incense
+			[471459] = "Zone", -- Boltwrench Broiler
+			[470197] = "Zone", -- Blessing of the Seadweller
+			[460596] = "Zone", -- Orweyna's Wings
+			[467787] = "Zone", -- Ricket's Special Delivery
+			[470543] = "Zone", -- Crawler Mine
+			[469809] = "Zone", -- Experimental Go-Pack
+			[1216785] = "Zone", -- Glittering Vault Shard
+			[268464] = "Zone", -- Thirst for Treasure
+			[268468] = "Zone", -- Thirst for Brew
+			[268462] = "Zone", -- Thirst for Adventure
+			[268490] = "Zone", -- Ol' Bonebite
 			[455845] = "Zone", -- Truffle Digigng with a Stagshell
 			[193547] = "Zone", -- Fel Crystal Infusion
 			[396046] = "Zone", -- Twisted Heart
@@ -2932,6 +2944,7 @@ function ZA_UpdateData()
 			-----------------
 
 			--! Debuff
+			[1217180] = "Zone", -- High Winds
 			[420847] = "Zone", -- Unseeming Shift
 			[449867] = "Zone", -- Carrying Arathi Goods
 			[456486] = "Zone", -- Dangerous Skies
@@ -3365,6 +3378,98 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[456627] = 108, -- Many Bullets
+			[456800] = 20, -- Suzie's Barbecuer
+			[378770] = 411, -- Deathblow
+			[457871] = 323, -- Sneak
+			[457306] = 811, -- Flap
+			[469864] = 12, -- Mega Lava Barrage
+			[469833] = 12, -- Mega Lava Barrage
+			[268415] = 800, -- Power Through
+			[469871] = 800, -- Lightning Pulse
+			[463331] = 800, -- Haywire
+			[469802] = 804, -- Pocket Sand
+			[469792] = 100, -- Throw Wrench
+			[465240] = 101, -- Blood Rush
+			[465237] = 101, -- Blood Rush
+			[465249] = 321, -- Sanguine Rejuvenation
+			[465749] = 103, -- Resilient Roar
+			[465832] = 8, -- Porcine Tenacity
+			[465771] = 911, -- Crap Dance
+			[468912] = 400, -- Hulking Charge
+			[468832] = 400, -- Colossal Slam
+			[468974] = 400, -- Boulder Throw
+			[468969] = 400, -- Boulder Throw
+			[471232] = 800, -- Lightning Fang
+			[471223] = 800, -- Cliffreach Lightning
+			[471594] = 811, -- Wind Blast
+			[471565] = 911, -- Tempest Wing
+			[471564] = 911, -- Tempest Wing
+			[471622] = 9, -- Storm Rush
+			[471621] = 9, -- Storm Rush
+			[471282] = 9, -- Stormtouched Claw
+			[472072] = 415, -- Bone Bolt
+			[472093] = 326, -- Raise Skeletons
+			[472207] = 901, -- Stormcast
+			[472207] = 901, -- Stormcast
+			[472199] = 901, -- Stormcast
+			[472198] = 901, -- Stormcast
+			[472165] = 328, -- Mind Pulse
+			[467931] = 801, -- Sustaining Water
+			[471382] = 9, -- Unleashed Storm
+			[471285] = 800, -- Lightning Frenzy
+			[471358] = 800, -- Lightning Rage
+			[472077] = 415, -- Unstable Haste
+			[472086] = 415, -- Unstable Haste
+			[467054] = 801, -- Greater Shell Ward
+			[467021] = 112, -- Claw Frenzy
+			[467065] = 105, -- Reef Rage
+			[466060] = 326, -- Deathfire Burst
+			[466045] = 326, -- Corpsefire
+			[466044] = 326, -- Corpsefire
+			[470976] = 800, -- Lightning Ward
+			[468803] = 908, -- Viscous Upheaval
+			[468765] = 908, -- Splatter Stomp
+			[468716] = 908, -- Icky Sticky Slime
+			[468734] = 908, -- Gooey Slam
+			[467295] = 100, -- Experimental Go-Pack
+			[468457] = 101, -- Rend
+			[468493] = 110, -- Overpower
+			[468456] = 110, -- Mortal Strike
+			[468498] = 911, -- Charge
+			[465804] = 806, -- Cliffreach Poison
+			[465261] = 101, -- Perforate Flesh
+			[465271] = 101, -- Heart Shot
+			[465343] = 103, -- Bloody Demise
+			[469060] = 40, -- Breath of Death
+			[469063] = 40, -- Breath of Death
+			[469184] = 811, -- Dark Wings
+			[469189] = 811, -- Dark Wings
+			[469204] = 811, -- Dark Wings
+			[466692] = 400, -- Stomp
+			[466665] = 911, -- Punt
+			[466728] = 900, -- Nap
+			[466716] = 111, -- Bellow
+			[470967] = 400, -- Dragon Stomp
+			[469090] = 911, -- Tail Thrash
+			[469167] = 911, -- Tail Thrash
+			[469174] = 911, -- Tail Thrash
+			[467106] = 101, -- Ravenous Charge
+			[467105] = 101, -- Ravenous Charge
+			[467137] = 102, -- Feeding Frenzy
+			[465796] = 112, -- Chomping Jaws
+			[465213] = 101, -- Bloody Slash
+			[465211] = 105, -- Bloodrage
+			[465223] = 321, -- Blood Tithe
+			[465228] = 321, -- Vascular Ruture
+			[465190] = 321, -- Bloodbind
+			[156322] = 6, -- Eternal Flame
+			[461288] = 321, -- Bloodbath
+			[396752] = 112, -- Crushing Blow
+			[435615] = 800, -- Thunder Blast
+			[442726] = 361, -- Malevolence
+			["Voidwraith"] = 320,
+			[387792] = 2, -- Empyreal Ward
 			[400456] = 5, -- Salvo
 			[459859] = 5, -- Bombardier
 			[381512] = 9, -- Stormslam
@@ -6405,7 +6510,7 @@ function ZA_UpdateData()
 			[428293] = 107, -- Trident Flurry
 			[428291] = 103, -- Slithering Assault
 			[428103] = 16, -- Frostbolt
-			[428329] = 80, -- Icy Veins
+			[428329] = 240, -- Icy Veins
 			[428374] = 800, -- Focused Tempest
 			[428376] = 800, -- Focused Tempest
 			[76008] = 800, -- Shock Blast
@@ -6542,7 +6647,7 @@ function ZA_UpdateData()
 			[417860] = 120, -- Dreamdust
 			[417848] = 104, -- Flight of the Bumblebee
 			[302237] = 908, -- Mucous Explosion
-			[420418] = 800, -- Deepdweller's Earthen Hearthstone
+			[420418] = 9, -- Deepdweller's Earthen Hearthstone
 			[369197] = 4, -- Soul Ignition
 			[369690] = 12, -- Molten Trail
 			[369685] = 12, -- Molten Trail
@@ -9975,6 +10080,7 @@ function ZA_UpdateData()
 			["Deafening Howl"] = 111,
 			["Deafening Roar"] = 111,
 			["hout"] = 111,
+			[188290] = 321, -- Death and Decay
 			["Death and Decay"] = 321,
 			["Death and Madness"] = "Insanity",
 			["Death Blast"] = 411,
@@ -10438,7 +10544,7 @@ function ZA_UpdateData()
 			["Engineering"] = 100,
 			["Engorge:136158"] = 413,
 			["Engulfing Hunger:132111"] = 413,
-			["Enlightened Hearthstone"] = 203,
+			["Enlightened Hearthstone"] = 106,
 			["Enrage"] = 103,
 			["Enraged Bite"] = 103,
 			["Enraged Mask:132096"] = 321,
@@ -11166,6 +11272,8 @@ function ZA_UpdateData()
 			["Healing Brew"] = 281,
 			["Healing Mists"] = 802,
 			["Healing Potion"] = 281,
+			[456366] = 801, -- Healing Rain
+			[73920] = 801, -- Healing Rain
 			["Healing Rain"] = 801,
 			["Healing Spray"] = 100,
 			["Healing Stream Totem"] = 801,
@@ -11993,7 +12101,7 @@ function ZA_UpdateData()
 			["Piercing Thrust"] = 112,
 			["Pillage Hope"] = 411,
 			["Pillage"] = 108,
-			["Pillar of Frost"] = 16,
+			["Pillar of Frost"] = 240,
 			["Pincer"] = 108,
 			["Pinning Shot"] = 100,
 			["Pinning Spear"] = 110,
@@ -14318,7 +14426,6 @@ function ZA_UpdateData()
 			[245725] = 100, -- Orgrimmar Interceptor
 			[134359] = 100, -- Sky Golem
 			[245723] = 100, -- Stormwind Skychaser
-			[272770] = 323, -- The Dreadwake
 			[44151]  = 100, -- Turbo-Charged Flying Machine
 			[256123] = 100, -- Xiwyllag ATV
 			[368158] = 106, -- Zereth Overseer
@@ -14385,6 +14492,7 @@ function ZA_UpdateData()
 
 			--! Bear
 			[457485] = 154, -- Grizzly Hills Packmaster
+			[452645] = 156, -- Amani Hunting Bear
 			[98204]  = 156, -- Amani Battle Bear
 			[43688]  = 156, -- Amani War Bear
 			[60116]  = 154, -- Armored Brown Bear
@@ -14454,8 +14562,12 @@ function ZA_UpdateData()
 			[443660] = 16, -- Charming Courier
 			-- Peafowl
 			[432564] = 721, -- Starry Twilight Peafowl
-			[432562] = 4, -- Brilliant Sunburst Peafowl
+			[432562] = 68, -- Brilliant Sunburst Peafowl
 			[432558] = 805, -- Majestic Azure Peafowl
+			-- Stormcrow
+			[171828] = 6, -- Solar Spirehawk
+			[471562] = 800, -- Tgratur, Eyes of the Siren
+			[253639] = 126, -- Violet Spellwing
 
 			--! Bloodtusk
 			[332478] = 415, -- Blisterback Bloodtusk
@@ -14478,6 +14590,10 @@ function ZA_UpdateData()
 			[190977] = 401, -- Deathtusk Felboar
 
 			--! Broom
+			[472488] = 32, -- Twilight Witch's Sweeper
+			[472479] = 661, -- Love Witch's Sweeper
+			[472489] = 16, -- Sky Witch's Sweeper
+			[472487] = 159, -- Silvermoon Sweeper
 			[419345] = 414, -- Eve's Ghastly Rider
 
 			--! Brutosaur
@@ -14518,6 +14634,7 @@ function ZA_UpdateData()
 			[336039] = 415, -- Gruesome Flayedwing
 			[336036] = 415, -- Marrowfang
 			-- Rylak
+			[1214920] = 175, -- Nightfall Skyreaver
 			[153489] = 158, -- Iron Skyreaver
 			[191633] = 102, -- Soaring Skyterror
 
@@ -14773,6 +14890,7 @@ function ZA_UpdateData()
 			[59570]  = 173, -- Red Drake
 			[279466] = 34, -- Twilight Avenger
 			[59571]  = 320, -- Twilight Drake
+			[1214946]= 34, -- Broodling of Sinestra
 			[101821] = 320, -- Ruthless Gladiator's Twilight Drake
 			[101282] = 34, -- Vicious Gladiator's Twilight Drake
 			[124550] = 34, -- Cataclysmic Gladiator's Twilight Drake
@@ -14868,7 +14986,8 @@ function ZA_UpdateData()
 			[358072] = 160, -- Bound Blizzard
 			[231442] = ZA.Specialization(811, 4, 811, 24), -- Farseer's Raging Tempest
 			[289555] = 24, -- Glacial Tidestorm
-			-- Deathwalker
+			-- Shadow Elemental
+			[448934] = 819, -- Shadow of Doubt
 			[448939] = 999, -- Shackled Shadow
 			[448941] = 330, -- Beledar's Spawn
 			[448934] = 411, -- Black Shadow Elemental
@@ -15357,6 +15476,7 @@ function ZA_UpdateData()
 			[243512] = 106, -- Luminous Starseeker
 
 			--! Parrot
+			[471696] = 34, -- Hooktalon
 			[254812] = 814, -- Royal Seafeather
 			[437162] = 814, -- Polly Roger
 			[254811] = 815, -- Squawks
@@ -15387,10 +15507,6 @@ function ZA_UpdateData()
 			[97560]  = 32, -- Corrupted Fire Hawk
 			[97501]  = 401, -- Felfire Hawk
 			[97493]  = 4, -- Pureblood Fire Hawk
-			-- Stormcrow
-			[171828] = 6, -- Solar Spirehawk
-			[147595] = 800, -- Stormcrow
-			[253639] = 126, -- Violet Spellwing
 
 			--! Pig
 			[290134] = 803, -- Hogrus, Swine of Good Fortune
@@ -15424,7 +15540,7 @@ function ZA_UpdateData()
 			[441794] = 817, -- Amber Pterrordax
 			[413825] = 173, -- Scarlet Pterrordax
 			[275837] = 157, -- Cobalt Pterrordax
-			[136400] = "SHAMAN", -- Armored Skyscreamer
+			[136400] = 240, -- Armored Skyscreamer
 			-- Windreaver
 			[289101] = 134, -- Dazar'alor Windreaver
 			[267270] = 140, -- Kua'fon
@@ -15434,6 +15550,7 @@ function ZA_UpdateData()
 			[275838] = 119, -- Captured Swampstalker
 
 			--! Quilen
+			[1214974] = 403, -- Copper-Maned Quilen
 			[435118] = 131, -- Marble Quilen
 			[435115] = 134, -- Guardian Quilen
 			[124659] = 120, -- Imperial Quilen
@@ -15500,6 +15617,8 @@ function ZA_UpdateData()
 			[427041] = 621, -- Ochre Dreamtalon
 			[427043] = 16, -- Snowfluff Dreamtalon
 			[426955] = 109, -- Springtide Dreamtalon
+			-- Saurid
+			[473472] = 142, -- Jani's Trashpile
 
 			--! Rat
 			[215558] = 116, -- Ratstallion
@@ -15536,6 +15655,7 @@ function ZA_UpdateData()
 			[336045] = 415, -- Predatory Plagueroc
 
 			--! Rocket
+			[472253] = 5, -- Lunar Launcher
 			[126507] = 100, -- Depleted-Kyparium Rocket
 			[126508] = 100, -- Geosynchronous World Spinner
 			[71342]  = 661, -- X-45 Heartbreaker
@@ -15572,6 +15692,10 @@ function ZA_UpdateData()
 
 			--! Seeker
 			[229377] = ZA.Specialization(4, 201, 200, 320), -- High Priest's Lightsworn Seeker
+
+			--! Ship
+			[272770] = 323, -- The Dreadwake
+			[472752] = 323, -- The Breaker's Song
 
 			--! Worm
 			-- Fathom Serpent
@@ -15659,6 +15783,7 @@ function ZA_UpdateData()
 			[354352] = 134, -- Soulbound Gloomcharger
 
 			--! Snapdragon
+			[474086] = 135, -- Prismatic Snapdragon
 			[300147] = 157, -- Deepcoral Snapdragon
 			[294038] = 901, -- Royal Snapdragon
 			[300146] = 119, -- Snapdragon Kelpstalker
@@ -15784,6 +15909,7 @@ function ZA_UpdateData()
 
 			--! Turtle
 			[227956] = 12, -- Arcadian War Turtle
+			[473861] = 171, -- Savage Alabaster Battle Turtle
 			[367826] = 170, -- Savage Green Battle Turtle
 			[433281] = 134, -- Savage Blue Battle Turtle
 			-- Dragon Turtle
@@ -15811,7 +15937,8 @@ function ZA_UpdateData()
 			[448680] = 137, -- Widow's Undercrawler
 
 			--! Ur'zul
-			[243651] = 414, -- Shackled Ur'zul
+			[1214940] = 322, -- Ur'zul Fleshripper
+			[243651] = 361, -- Shackled Ur'zul
 
 			--! Wasp
 			-- Vespoid
@@ -15845,6 +15972,11 @@ function ZA_UpdateData()
 
 			--! Warp Stalker
 			[346136] = 323, -- Viridian Phase-Hunter
+
+			--! Waveshredder
+			[446352] = 100, -- Goblin Surfboard
+			[473137] = 100, -- Soweezi's Vintage Waveshredder
+			[447413] = 100, -- Pearlescent Goblin Wave Shredder
 
 			--! Dragonfly
 			-- Water Strider
@@ -18070,6 +18202,26 @@ function ZA_UpdateData()
 			[253032] = 320,
 			[455805] = 803,
 			[429832] = 114,
+			[1215418] = 100,
+			[472219] = 200,
+			[463623] = 111,
+			[470864] = 200,
+			[459858] = 114,
+			[464797] = 200,
+			[471460] = 5,
+			[467787] = 5,
+			[471522] = 5,
+			[460138] = 5,
+			[456209] = 114,
+			[463216] = 801,
+			[471459] = 5,
+			[459302] = 100,
+			[458645] = 111,
+			[468800] = 100,
+			[462442] = 100,
+			[443583] = 806,
+			[466882] = 50,
+			[466925] = 5,
 			--qqq
 
 
@@ -27685,126 +27837,126 @@ function ZA_UpdateData()
 			[90608] = 114, -- Zin'rokh, Destroyer of Worlds
 
 			-- Relic of the Past
-			[330173] = 818, -- Relic of the Past V
-			[330236] = 818, -- Relic of the Past V
-			[330231] = 818, -- Relic of the Past V
-			[330148] = 818, -- Relic of the Past V
-			[330241] = 818, -- Relic of the Past V
-			[330158] = 818, -- Relic of the Past V
-			[330143] = 818, -- Relic of the Past V
-			[330261] = 818, -- Relic of the Past V
-			[330163] = 818, -- Relic of the Past V
-			[330221] = 818, -- Relic of the Past V
-			[330210] = 818, -- Relic of the Past V
-			[330190] = 818, -- Relic of the Past V
-			[330168] = 818, -- Relic of the Past V
-			[330215] = 818, -- Relic of the Past V
-			[330178] = 818, -- Relic of the Past V
-			[330256] = 818, -- Relic of the Past V
-			[330205] = 818, -- Relic of the Past V
-			[330200] = 818, -- Relic of the Past V
-			[330246] = 818, -- Relic of the Past V
-			[330195] = 818, -- Relic of the Past V
-			[330251] = 818, -- Relic of the Past V
-			[330153] = 818, -- Relic of the Past V
-			[330226] = 818, -- Relic of the Past V
-			[330185] = 818, -- Relic of the Past V
-			[330260] = 813, -- Relic of the Past IV
-			[330245] = 813, -- Relic of the Past IV
-			[330147] = 813, -- Relic of the Past IV
-			[330209] = 813, -- Relic of the Past IV
-			[330167] = 813, -- Relic of the Past IV
-			[330250] = 813, -- Relic of the Past IV
-			[330220] = 813, -- Relic of the Past IV
-			[330177] = 813, -- Relic of the Past IV
-			[330235] = 813, -- Relic of the Past IV
-			[330152] = 813, -- Relic of the Past IV
-			[330199] = 813, -- Relic of the Past IV
-			[330214] = 813, -- Relic of the Past IV
-			[330255] = 813, -- Relic of the Past IV
-			[330204] = 813, -- Relic of the Past IV
-			[330194] = 813, -- Relic of the Past IV
-			[330172] = 813, -- Relic of the Past IV
-			[330189] = 813, -- Relic of the Past IV
-			[330157] = 813, -- Relic of the Past IV
-			[330162] = 813, -- Relic of the Past IV
-			[330240] = 813, -- Relic of the Past IV
-			[330230] = 813, -- Relic of the Past IV
-			[330142] = 813, -- Relic of the Past IV
-			[330225] = 813, -- Relic of the Past IV
-			[330184] = 813, -- Relic of the Past IV
-			[330259] = 815, -- Relic of the Past III
-			[330146] = 815, -- Relic of the Past III
-			[330219] = 815, -- Relic of the Past III
-			[330239] = 815, -- Relic of the Past III
-			[330203] = 815, -- Relic of the Past III
-			[330254] = 815, -- Relic of the Past III
-			[330188] = 815, -- Relic of the Past III
-			[330156] = 815, -- Relic of the Past III
-			[330234] = 815, -- Relic of the Past III
-			[330213] = 815, -- Relic of the Past III
-			[330171] = 815, -- Relic of the Past III
-			[330208] = 815, -- Relic of the Past III
-			[330176] = 815, -- Relic of the Past III
-			[330166] = 815, -- Relic of the Past III
-			[330161] = 815, -- Relic of the Past III
-			[330141] = 815, -- Relic of the Past III
-			[330244] = 815, -- Relic of the Past III
-			[330198] = 815, -- Relic of the Past III
-			[330193] = 815, -- Relic of the Past III
-			[330249] = 815, -- Relic of the Past III
-			[330151] = 815, -- Relic of the Past III
-			[330229] = 815, -- Relic of the Past III
-			[330224] = 815, -- Relic of the Past III
-			[330183] = 815, -- Relic of the Past III
-			[330197] = 130, -- Relic of the Past II
-			[330258] = 130, -- Relic of the Past II
-			[330170] = 130, -- Relic of the Past II
-			[330207] = 130, -- Relic of the Past II
-			[330202] = 130, -- Relic of the Past II
-			[330212] = 130, -- Relic of the Past II
-			[330192] = 130, -- Relic of the Past II
-			[330238] = 130, -- Relic of the Past II
-			[330187] = 130, -- Relic of the Past II
-			[330233] = 130, -- Relic of the Past II
-			[330248] = 130, -- Relic of the Past II
-			[330175] = 130, -- Relic of the Past II
-			[330253] = 130, -- Relic of the Past II
-			[330145] = 130, -- Relic of the Past II
-			[330228] = 130, -- Relic of the Past II
-			[330165] = 130, -- Relic of the Past II
-			[330243] = 130, -- Relic of the Past II
-			[330155] = 130, -- Relic of the Past II
-			[330160] = 130, -- Relic of the Past II
-			[330150] = 130, -- Relic of the Past II
-			[330140] = 130, -- Relic of the Past II
-			[330218] = 130, -- Relic of the Past II
-			[330181] = 130, -- Relic of the Past II
-			[330223] = 130, -- Relic of the Past II
-			[330232] = 133, -- Relic of the Past I
-			[330242] = 133, -- Relic of the Past I
-			[330206] = 133, -- Relic of the Past I
-			[330252] = 133, -- Relic of the Past I
-			[330149] = 133, -- Relic of the Past I
-			[330227] = 133, -- Relic of the Past I
-			[330196] = 133, -- Relic of the Past I
-			[330247] = 133, -- Relic of the Past I
-			[330159] = 133, -- Relic of the Past I
-			[330186] = 133, -- Relic of the Past I
-			[330154] = 133, -- Relic of the Past I
-			[330191] = 133, -- Relic of the Past I
-			[330134] = 133, -- Relic of the Past I
-			[330211] = 133, -- Relic of the Past I
-			[330201] = 133, -- Relic of the Past I
-			[330174] = 133, -- Relic of the Past I
-			[330164] = 133, -- Relic of the Past I
-			[330169] = 133, -- Relic of the Past I
-			[330216] = 133, -- Relic of the Past I
-			[330144] = 133, -- Relic of the Past I
-			[330257] = 133, -- Relic of the Past I
-			[330237] = 133, -- Relic of the Past I
-			[330180] = 133, -- Relic of the Past I
-			[330222] = 133, -- Relic of the Past I
+			[330173] = 641, -- Relic of the Past V
+			[330236] = 641, -- Relic of the Past V
+			[330231] = 641, -- Relic of the Past V
+			[330148] = 641, -- Relic of the Past V
+			[330241] = 641, -- Relic of the Past V
+			[330158] = 641, -- Relic of the Past V
+			[330143] = 641, -- Relic of the Past V
+			[330261] = 641, -- Relic of the Past V
+			[330163] = 641, -- Relic of the Past V
+			[330221] = 641, -- Relic of the Past V
+			[330210] = 641, -- Relic of the Past V
+			[330190] = 641, -- Relic of the Past V
+			[330168] = 641, -- Relic of the Past V
+			[330215] = 641, -- Relic of the Past V
+			[330178] = 641, -- Relic of the Past V
+			[330256] = 641, -- Relic of the Past V
+			[330205] = 641, -- Relic of the Past V
+			[330200] = 641, -- Relic of the Past V
+			[330246] = 641, -- Relic of the Past V
+			[330195] = 641, -- Relic of the Past V
+			[330251] = 641, -- Relic of the Past V
+			[330153] = 641, -- Relic of the Past V
+			[330226] = 641, -- Relic of the Past V
+			[330185] = 641, -- Relic of the Past V
+			[330260] = 641, -- Relic of the Past IV
+			[330245] = 641, -- Relic of the Past IV
+			[330147] = 641, -- Relic of the Past IV
+			[330209] = 641, -- Relic of the Past IV
+			[330167] = 641, -- Relic of the Past IV
+			[330250] = 641, -- Relic of the Past IV
+			[330220] = 641, -- Relic of the Past IV
+			[330177] = 641, -- Relic of the Past IV
+			[330235] = 641, -- Relic of the Past IV
+			[330152] = 641, -- Relic of the Past IV
+			[330199] = 641, -- Relic of the Past IV
+			[330214] = 641, -- Relic of the Past IV
+			[330255] = 641, -- Relic of the Past IV
+			[330204] = 641, -- Relic of the Past IV
+			[330194] = 641, -- Relic of the Past IV
+			[330172] = 641, -- Relic of the Past IV
+			[330189] = 641, -- Relic of the Past IV
+			[330157] = 641, -- Relic of the Past IV
+			[330162] = 641, -- Relic of the Past IV
+			[330240] = 641, -- Relic of the Past IV
+			[330230] = 641, -- Relic of the Past IV
+			[330142] = 641, -- Relic of the Past IV
+			[330225] = 641, -- Relic of the Past IV
+			[330184] = 641, -- Relic of the Past IV
+			[330259] = 641, -- Relic of the Past III
+			[330146] = 641, -- Relic of the Past III
+			[330219] = 641, -- Relic of the Past III
+			[330239] = 641, -- Relic of the Past III
+			[330203] = 641, -- Relic of the Past III
+			[330254] = 641, -- Relic of the Past III
+			[330188] = 641, -- Relic of the Past III
+			[330156] = 641, -- Relic of the Past III
+			[330234] = 641, -- Relic of the Past III
+			[330213] = 641, -- Relic of the Past III
+			[330171] = 641, -- Relic of the Past III
+			[330208] = 641, -- Relic of the Past III
+			[330176] = 641, -- Relic of the Past III
+			[330166] = 641, -- Relic of the Past III
+			[330161] = 641, -- Relic of the Past III
+			[330141] = 641, -- Relic of the Past III
+			[330244] = 641, -- Relic of the Past III
+			[330198] = 641, -- Relic of the Past III
+			[330193] = 641, -- Relic of the Past III
+			[330249] = 641, -- Relic of the Past III
+			[330151] = 641, -- Relic of the Past III
+			[330229] = 641, -- Relic of the Past III
+			[330224] = 641, -- Relic of the Past III
+			[330183] = 641, -- Relic of the Past III
+			[330197] = 641, -- Relic of the Past II
+			[330258] = 641, -- Relic of the Past II
+			[330170] = 641, -- Relic of the Past II
+			[330207] = 641, -- Relic of the Past II
+			[330202] = 641, -- Relic of the Past II
+			[330212] = 641, -- Relic of the Past II
+			[330192] = 641, -- Relic of the Past II
+			[330238] = 641, -- Relic of the Past II
+			[330187] = 641, -- Relic of the Past II
+			[330233] = 641, -- Relic of the Past II
+			[330248] = 641, -- Relic of the Past II
+			[330175] = 641, -- Relic of the Past II
+			[330253] = 641, -- Relic of the Past II
+			[330145] = 641, -- Relic of the Past II
+			[330228] = 641, -- Relic of the Past II
+			[330165] = 641, -- Relic of the Past II
+			[330243] = 641, -- Relic of the Past II
+			[330155] = 641, -- Relic of the Past II
+			[330160] = 641, -- Relic of the Past II
+			[330150] = 641, -- Relic of the Past II
+			[330140] = 641, -- Relic of the Past II
+			[330218] = 641, -- Relic of the Past II
+			[330181] = 641, -- Relic of the Past II
+			[330223] = 641, -- Relic of the Past II
+			[330232] = 641, -- Relic of the Past I
+			[330242] = 641, -- Relic of the Past I
+			[330206] = 641, -- Relic of the Past I
+			[330252] = 641, -- Relic of the Past I
+			[330149] = 641, -- Relic of the Past I
+			[330227] = 641, -- Relic of the Past I
+			[330196] = 641, -- Relic of the Past I
+			[330247] = 641, -- Relic of the Past I
+			[330159] = 641, -- Relic of the Past I
+			[330186] = 641, -- Relic of the Past I
+			[330154] = 641, -- Relic of the Past I
+			[330191] = 641, -- Relic of the Past I
+			[330134] = 641, -- Relic of the Past I
+			[330211] = 641, -- Relic of the Past I
+			[330201] = 641, -- Relic of the Past I
+			[330174] = 641, -- Relic of the Past I
+			[330164] = 641, -- Relic of the Past I
+			[330169] = 641, -- Relic of the Past I
+			[330216] = 641, -- Relic of the Past I
+			[330144] = 641, -- Relic of the Past I
+			[330257] = 641, -- Relic of the Past I
+			[330237] = 641, -- Relic of the Past I
+			[330180] = 641, -- Relic of the Past I
+			[330222] = 641, -- Relic of the Past I
 		}
 
 		--§ Icons
@@ -29527,6 +29679,18 @@ function ZA_UpdateData()
 			[253032] = 0,
 			[455805] = 0,
 			[429832] = 0,
+			[1215418] = 0,
+			[467787] = 0,
+			[460138] = 0,
+			[456209] = 0,
+			[463216] = 0,
+			[471459] = 0,
+			[459302] = 0,
+			[458645] = 0,
+			[468800] = 0,
+			[462442] = 0,
+			[443583] = 0,
+			[466925] = 0,
 			--qqi
 
 
@@ -30004,6 +30168,28 @@ function ZA_UpdateData()
 			[389151] = 4620672, -- Writ of Versatility
 		}
 
+
+		-- Mount Color Overrides
+		-- Prismatic Snapdragon
+		if C_QuestLog.IsQuestFlaggedCompleted(86373) then
+			ZA.Spells[474086] = 135 -- Teal (default)
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86386) then
+			ZA.Spells[474086] = 173 -- Crimson
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86387) then
+			ZA.Spells[474086] = 153 -- Sandy
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86381) then
+			ZA.Spells[474086] = 158 -- Muddy
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86385) then
+			ZA.Spells[474086] = 96 -- Royal
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86384) then
+			ZA.Spells[474086] = 16 -- Storminfused
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86382) then
+			ZA.Spells[474086] = 175 -- Inky
+		elseif C_QuestLog.IsQuestFlaggedCompleted(86383) then
+			ZA.Spells[474086] = 170 -- Kaja'Cola-braised
+		end
+
+
 		--! ArmyData Dragonriding Overrides
 		if ArmyDB and name then
 			-- Dragonriding Customization
@@ -30395,7 +30581,7 @@ function ZA_UpdateData()
 			[2506] = "135228|Elemental Sharpening Stone|Melee Critical Strike increased by 13.",
 			[3593] = "135249|Consecrated Sharpening Stone|Attack Power against Undead increased by 1.",
 			[1643] = "135252|Sharpened V|Weapon Damage increased by 2.", -- Dense Sharpening Stone
-			[483]  = "135251|Sharpened IV|Weapon Damage increased by 1.", -- Solid Sharpening Stone
+			[483]  = "135251|Sharpened IV|Weapon Damage increased by 2.", -- Solid Sharpening Stone
 			[14]   = "135250|Sharpened III|Weapon Damage increased by 1.", -- Heavy Sharpening Stone
 			[13]   = "135249|Sharpened II|Weapon Damage increased by 1.", -- Coarse Sharpening Stone
 			[40]   = "135248|Sharpened I|Weapon Damage increased by 1.", -- Rough Sharpening Stone
@@ -30411,7 +30597,7 @@ function ZA_UpdateData()
 			[2955] = "135261|Weighted VII|Weapon Damage increased by 4. Critical Strike increased by 4.", -- Adamantite Weightstone
 			[2954] = "135260|Weighted VI|Weapon Damage increased by 4.", -- Fel Weightstone
 			[1703] = "135259|Weighted V|Weapon Damage increased by 2.", -- Dense Weightstone
-			[484]  = "135258|Weighted IV|Weapon Damage increased by 1.", -- Solid Weightstone
+			[484]  = "135258|Weighted IV|Weapon Damage increased by 2.", -- Solid Weightstone
 			[21]   = "135257|Weighted III|Weapon Damage increased by 1.", -- Heavy Weightstone
 			[20]   = "135256|Weighted II|Weapon Damage increased by 1.", -- Coarse Weightstone
 			[19]   = "135255|Weighted I|Weapon Damage increased by 1.", -- Rough Weightstone
