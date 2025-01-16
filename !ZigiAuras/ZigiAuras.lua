@@ -1269,6 +1269,9 @@ function ZA_UpdateData()
 			[274742] = "Blackrock: Versatility",
 
 			-- The War Within
+			-- 10.0.7
+			[472360] = "Wayward Vrykul's Lantern: Critical Strike", -- Wayward Vrykul's Lantern
+			[472228] = true, -- Cursed Pirate Skull
 			-- 10.0
 			[448730] = "Authority of Radiant Power: " .. ZA.PrimaryStatName, -- Authority of Radiant Power
 			[268769] = "Dead Ahead: Critical Strike", -- Dead-Eye Spyglass
@@ -1435,12 +1438,6 @@ function ZA_UpdateData()
 			-- Legion
 			[215956] = "Valarjar's Path: " .. ZA.PrimaryStatName, -- Horn of Valor
 
-			-- Cataclysm
-			[91340]  = "Tidehunter's Blessing: Strength", -- Might of the Ocean
-			[92174]  = "Carcinized Adaptation: Mastery", -- Porcelain Crab
-			[429221] = "Leviathan's Wisdom: Intellect", -- Sea Star (10.2 version)
-			[91135]  = "Leviathan: Spell Power", -- Sea Star (4.0 version)
-
 			-- Warlods of Draenor
 			[429246] = "Primal Genesis: Critical Strike", -- Coagulated Genesaur Blood
 			[429262] = "Aqueous Enrichment: Mastery", -- Witherbark's Branch
@@ -1450,6 +1447,15 @@ function ZA_UpdateData()
 			--[201408] = "Cleansing Flame", -- Infallible Tracking Charm
 			[397399] = "Shadowgem: Critical Strike", -- Voidmender's Shadowgem
 			[397400] = "Bonemaw's Big Toe: Critical Strike", -- Bonemaw's Big Toe
+
+			-- Pandaria
+			[126519] = "Lessons of the Darkmaster: Strength", -- Lessons of the Darkmaster
+
+			-- Cataclysm
+			[91340]  = "Tidehunter's Blessing: Strength", -- Might of the Ocean
+			[92174]  = "Carcinized Adaptation: Mastery", -- Porcelain Crab
+			[429221] = "Leviathan's Wisdom: Intellect", -- Sea Star (10.2 version)
+			[91135]  = "Leviathan: Spell Power", -- Sea Star (4.0 version)
 
 			-- Burning Crusade
 			[244176] = "Fel Infusion: Haste", -- The Skull of Gul'dan
@@ -3000,6 +3006,9 @@ function ZA_UpdateData()
 			[274742] = 722, -- Might of the Blackrock
 
 			-- The War Within
+			-- 10.0.7
+			[472360] = 326, -- Wayward Vrykul's Lantern
+			[472228] = 321, -- Cursed Pirate Skull
 			-- 10.0
 			[448730] = 6, -- Authority of Radiant Power
 			[268769] = 100, -- Dead-Eye Spyglass
@@ -3181,6 +3190,9 @@ function ZA_UpdateData()
 			[201408] = 5, -- Infallible Tracking Charm
 			[397399] = 813, -- Voidmender's Shadowgem
 			[397400] = 40, -- Bonemaw's Big Toe
+
+			-- Mists of Pandaria
+			[126519] = 36, -- Lessons of the Darkmaster
 
 			-- Cataclysm
 			[91340]  = 801, -- Might of the Ocean
@@ -3378,6 +3390,116 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[464934] = 801, -- Empowering Stream
+			[470337] = 100, -- No Escape
+			[470296] = 110, -- Double Strike
+			[464928] = 330, -- Tenebrous Strike
+			[468405] = 112, -- Brutal Impale
+			[465943] = 40, -- Putrid Breath
+			[465940] = 40, -- Putrid Breath
+			[464997] = 40, -- Putrid Breath
+			[464990] = 801, -- Distortion Pulse
+			[464990] = 801, -- Distortion Pulse
+			[470372] = 801, -- Water Sphere
+			[470371] = 801, -- Water Sphere
+			[470351] = 801, -- Crashing Surge
+			[470580] = 331, -- Summon Zoatroids
+			[470430] = 331, -- Summon Zoatroids
+			[470429] = 331, -- Summon Zoatroids
+			[465033] = 400, -- Gibbering Roar
+			[465030] = 400, -- Gibbering Roar
+			[465011] = 911, -- Crushing Charge
+			[465006] = 911, -- Crushing Charge
+			[464966] = 40, -- Miasmal Stream
+			[107120] = 109, -- Frenzied Assault
+			[110852] = 800, -- Overcharged Soul
+			[107140] = 9, -- Magnetic Shroud
+			[180737] = 800, -- Releasing Static Field
+			[390747] = 800, -- Static Field
+			[390750] = 800, -- Static Field
+			[18147] = 800, -- Static Field
+			[57429] = 800, -- Static Field
+			[106941] = 800, -- Static Field
+			[106945] = 800, -- Static Field
+			[128889] = 800, -- Static Field
+			[183706] = 800, -- Static Field
+			[183749] = 800, -- Static Field
+			[355586] = 800, -- Static Field
+			[355591] = 800, -- Static Field
+			[358167] = 800, -- Static Field
+			[413783] = 800, -- Static Field
+			[57430] = 800, -- Static Field
+			[28135] = 800, -- Static Field
+			[106923] = 800, -- Static Field
+			[18148] = 800, -- Static Field
+			[57428] = 800, -- Static Field
+			[377662] = 800, -- Static Field
+			[193260] = 800, -- Static Field
+			[57431] = 800, -- Summon Static Field
+			[106946] = 800, -- Static Field
+			[54528] = 800, -- Static Field
+			[106932] = 800, -- Static Field
+			[355619] = 800, -- Static Field
+			[378998] = 800, -- Static Field
+			[397188] = 800, -- Static Field
+			[115509] = 9, -- Thundering Fist
+			[309675] = 111, -- Inciting Roar
+			[17447] = 4, -- Circle of Flame
+			[470626] = 4, -- Circle of Flame
+			[119684] = 400, -- Ground Slam
+			[122962] = 101, -- Carnivorous Bite
+			[122962] = 101, -- Carnivorous Bite
+			[121174] = 4, -- Erupting Flame
+			[121165] = 4, -- Fireball
+			[121182] = 4, -- Molten Barrage
+			[121182] = 4, -- Molten Barrage
+			[118936] = 4, -- Fire Bolt
+			[118940] = 6, -- Cleansing Flame
+			[118903] = 32, -- Hex of Lethargy
+			[129262] = 105, -- Reckless Inspiration
+			[118988] = 105, -- Reckless Inspiration
+			[118963] = 102, -- Shank
+			[131521] = 329, -- Ring of Malice
+			[131521] = 329, -- Ring of Malice
+			[112933] = 329, -- Ring of Malice
+			[112969] = 329, -- Ring of Malice
+			[131522] = 329, -- Ring of Malice
+			[112932] = 329, -- Ring of Malice
+			[184361] = 103, -- Enrage
+			[117011] = 329, -- Sha Spike
+			[106877] = 329, -- Sha Spike
+			[117010] = 329, -- Sha Spike
+			[106871] = 329, -- Sha Spike
+			[127576] = 329, -- Parting Smoke
+			[106826] = 329, -- Smoke Blades
+			[106827] = 329, -- Smoke Blades
+			[106872] = 328, -- Disorienting Smash
+			[114291] = 5, -- Explosive Brew
+			[112944] = 810, -- Carrot Breath
+			[445214] = 5, -- Fire Charge
+			[445210] = 5, -- Fire Charge
+			[445211] = 5, -- Fire Charge
+			[445209] = 5, -- Fire Charge
+			[458602] = 111, -- Binding Song
+			[458606] = 111, -- Binding Song
+			[458763] = 111, -- Binding Song
+			[458766] = 111, -- Binding Song
+			[447521] = 111, -- Song of Discord
+			[465723] = 111, -- Song of Discord
+			[464757] = 111, -- Baleful Bellow
+			[464710] = 911, -- Brutal Headbutt
+			[464739] = 415, -- Sharpen Spines
+			[464744] = 410, -- Scurvy Slash
+			[464753] = 105, -- Rally Crew
+			[471867] = 801, -- Water Bolt
+			[471857] = 801, -- Violent Percolation
+			[471863] = 801, -- Tidal Surge
+			[471862] = 801, -- Tidal Surge
+			[464633] = 48, -- Corrupting Waters
+			[464607] = 48, -- Corrupting Waters
+			[464570] = 101, -- Toe-Slash
+			[464601] = 282, -- Grog Bomb
+			[464581] = 50, -- Blunderblast
 			[456627] = 108, -- Many Bullets
 			[456800] = 20, -- Suzie's Barbecuer
 			[378770] = 411, -- Deathblow
@@ -5985,6 +6107,8 @@ function ZA_UpdateData()
 			[422817] = 903, -- Combination Attack
 			[422816] = 903, -- Combination Attack
 			[422808] = 903, -- Combination Attack
+			[112993] = 107, -- Furlwind
+			[112992] = 107, -- Furlwind
 			[422610] = 107, -- Bladestorm
 			[413552] = 103, -- Tempest Tantrum
 			[414145] = 911, -- Storm Snatch
@@ -6962,13 +7086,15 @@ function ZA_UpdateData()
 			[106427] = 5, -- Hundred Hand Strike
 			[106428] = 5, -- Hundred Hand Strike
 			[106421] = 110, -- Palm Strike
+			[106423] = 907, -- Unleash Vibrations
+			[106422] = 907, -- Quivering Palm
 			[106447] = 110, -- Parry Stance
 			[106646] = 107, -- Whirling Steel
-			[106439] = 104, -- Flying Kick
+			[106439] = 911, -- Flying Kick
 			[113760] = 80, -- Ball of Fire
 			[106681] = 120, -- Call Staff
 			[115010] = 32, -- Grip of Hate
-			[106439] = 104, -- Flying Kick
+			[106439] = 911, -- Flying Kick
 			[106851] = 282, -- Blackout Brew
 			[115651] = 282, -- Brew Bolt
 			[144882] = 282, -- Skunky Ale Crash
@@ -10863,6 +10989,7 @@ function ZA_UpdateData()
 			["Fishy Strike"] = 901,
 			["Fissile Fling"] = 908,
 			["Fissure:1032476"] = 12,
+			[106853] = 5, -- Fists of Fury
 			["Fists of Fury"] = 907,
 			["Fixate"] = 112,
 			["Fixing Up"] = 100,
@@ -12727,7 +12854,6 @@ function ZA_UpdateData()
 			["Sha Breath"] = 329,
 			["Sha Energy"] = 329,
 			["Sha Smash"] = 329,
-			["Sha Spike"] = 329,
 			["Sha Touch"] = 329,
 			["Shackle the Unworthy:3565442"] = 201,
 			["Shackles"] = 909,
@@ -13045,7 +13171,6 @@ function ZA_UpdateData()
 			["Smash:3528285"] = 201,
 			["Smash:606542"] = 9,
 			["Smelt Rune"] = 9,
-			["Smoke Blades"] = 327,
 			["Smoky Belch"] = 811,
 			["Smoldering Inertia"] = 4,
 			["Snail Slime"] = 908,
@@ -13203,12 +13328,13 @@ function ZA_UpdateData()
 			["Spine Crush:460686"] = 415,
 			["Spineshatter"] = 903,
 			["Spinning Blade"] = 108,
-			[115009] = 907, -- Focus Energy
+			[115009] = 800, -- Focus Energy
 			[106984] = 800, -- Invoke Lightning
-			[110945] = 907, -- Charging Soul
+			[110945] = 800, -- Charging Soul
 			[106547] = 907, -- Fire Flower
 			[106433] = 807, -- Tornado Kick
 			[106434] = 807, -- Tornado Kick
+			[106533] = "Chi", -- Ball of Fire
 			["Spinning Crane Kick"] = 807,
 			["Spinning Slash"] = 107,
 			["Spinning Up"] = 100,
@@ -14758,6 +14884,8 @@ function ZA_UpdateData()
 			[148620] = 817, -- Prideful Gladiator's Cloud Serpent
 			[148618] = 819, -- Tyrannical Gladiator's Cloud Serpent
 			[366647] = 813, -- Magenta Cloud Serpent
+			-- Sky Snake
+			[468205] = 130, -- Timbered Sky Snake
 
 			--! Core Hound
 			[170347] = 12, -- Core Hound
@@ -18222,6 +18350,12 @@ function ZA_UpdateData()
 			[443583] = 806,
 			[466882] = 50,
 			[466925] = 5,
+			[459309] = 100,
+			[443259] = 5,
+			[445240] = 100,
+			[386196] = 100,
+			[457919] = 100,
+			[461503] = 100,
 			--qqq
 
 
@@ -29691,6 +29825,11 @@ function ZA_UpdateData()
 			[462442] = 0,
 			[443583] = 0,
 			[466925] = 0,
+			[459309] = 0,
+			[386196] = 0,
+			[457919] = 0,
+			[445240] = 0,
+			[461503] = 0,
 			--qqi
 
 
