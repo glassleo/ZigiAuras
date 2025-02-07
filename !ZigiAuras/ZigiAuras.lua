@@ -1218,6 +1218,9 @@ function ZA_UpdateData()
 
 
 		ZA.TrinketOverlayAuras = {
+			[220202] = 451199, -- Spymaster's Web
+			[212452] = 452816, -- Gruesome Syringe
+			[220305] = 449578, -- Ovi'nax's Mercurial Egg
 			[203996] = "402896,402903", -- Igneous Flowstone
 			[203729] = "401518,401519,401521,401516,402221", -- Ominous Chromatic Essence
 			[193773] = "381954,381955,381956,381957", -- Spoils of Neltharus
@@ -1250,6 +1253,9 @@ function ZA_UpdateData()
 		}
 
 		ZA.TrinketOverlayStacks = {
+			[220202] = 451199, -- Spymaster's Web
+			[212452] = 452816, -- Gruesome Syringe
+			[220305] = 449578, -- Ovi'nax's Mercurial Egg
 			[203996] = "402894,402898", -- Igneous Flowstone
 			[204202] = 411661, -- Neltharion's Call to Dominance
 			[202617] = "408533,408578", -- Elementium Pocket Anvil
@@ -1273,6 +1279,43 @@ function ZA_UpdateData()
 			[472360] = "Wayward Vrykul's Lantern: Critical Strike", -- Wayward Vrykul's Lantern
 			[472228] = true, -- Cursed Pirate Skull
 			-- 10.0
+			[438753] = "Horn of Declaration: Mastery", -- Horn of Declaration
+			[450962] = "Void Pactstone: Haste", -- Void Pactstone
+			[451748] = "Stormrider Flight Badge: Haste", -- Stormrider Flight Badge
+			[444959] = "Spymaster's Web: Intellect", -- Spymaster's Web
+			[443531] = "Bolstering Light", -- Signet of the Priory
+			[449407] = "Call of the Horde", -- Recruit's Warhorn
+			[449256] = "Call of the Alliance", -- Recruit's Trumpet
+			[462159] = "Terrible Visage", -- Nizrek's Holographic Manipulator
+			[449895] = "Predatory Instinct: Haste", -- Nerubian Venom-Tipped Dart
+			[458132] = "Silken Square Pheromones: Mastery", -- Message-Imprinted Silken Square
+			[450551] = "Mereldar's Toll: Versatility", -- Mereldar's Toll
+			[451248] = "Shadowy Accretion: Intellect", -- High Speaker's Accretion
+			[452816] = "Gruesome Intellect", -- Gruesome Syringe
+			[443238] = "Esteemed Earthen Emblem: Versatility", -- Esteemed Earthen Emblem
+			[449254] = "Entropic Reclamation: Intellect", -- Entropic Skardyn Core
+			[449275] = "Nascent Empowerment", -- Empowering Crystal of Anub'ikkaj
+			[454982] = "Vivacity of the Faire: Versatility", -- Vivacity (Vivacity of the Faire)
+			[454979] = "Vivacity of Arcane: Mastery", -- Vivacity (Vivacity of Arcane)
+			[454977] = "Vivacity of Frost: Critical Strike", -- Vivacity (Vivacity of Frost)
+			[454862] = "Vivacity of Fire: Haste", -- Vivacity (Vivacity of Fire)
+			[454980] = "Vivacity of Force: Versatility", -- Vivacity (Vivacity of Force)
+			[454978] = "Vivacity of Light: Mastery", -- Vivacity (Vivacity of Light)
+			[454975] = "Vivacity of Shadow: Haste", -- Vivacity (Vivacity of Shadow)
+			[454976] = "Vivacity of Nature: Critical Strike", -- Vivacity (Vivacity of Nature)
+			[454782] = true, -- Radiant Focus
+			[452288] = "Strand of the Lord: " .. ZA.PrimaryStatName, -- Cirral Concoctery (Strand of the Lord)
+			[452337] = "Strand of the Ascended", -- Cirral Concoctery (Strand of the Ascended)
+			[452365] = "Strand of the Sundered: Shadow Damage", -- Cirral Concoctery (Strand of the Sundered)
+			[452361] = "Strand of the Sundered: Shadow Damage", -- Cirral Concoctery (Strand of the Sundered)
+			[452366] = "Strand of the Sundered: Shadow Damage", -- Cirral Concoctery (Strand of the Sundered)
+			[452367] = "Strand of the Sage: Mana", -- Cirral Concoctery (Strand of the Sage)
+			[443381] = "Cinderbrew Stein: " .. ZA.PrimaryStatName, -- Cinderbrew Stein
+			[449710] = "Underground Beast: Critical Strike", -- Charm of the Underground Beast
+			[451367] = "Candle Comfort: Versatility", -- Carved Blazikon Wax
+			[449954] = "Ethereal Powerlink: " .. ZA.PrimaryStatName, -- Treacherous Transmitter
+			[443407] = "Skarmorak Shard: Mastery", -- Skarmorak Shard
+			[445560] = true, -- Ovi'nax's Mercurial Egg (Suspended Incubation)
 			[448730] = "Authority of Radiant Power: " .. ZA.PrimaryStatName, -- Authority of Radiant Power
 			[268769] = "Dead Ahead: Critical Strike", -- Dead-Eye Spyglass
 			--[452146] = "Egg Sac: " .. ZA.PrimaryStatName, -- Ara-Kara Sacbrood
@@ -1452,6 +1495,7 @@ function ZA_UpdateData()
 			[126519] = "Lessons of the Darkmaster: Strength", -- Lessons of the Darkmaster
 
 			-- Cataclysm
+			[92099]  = "Speed of Thought: Mastery", -- Skardyn's Grace
 			[91340]  = "Tidehunter's Blessing: Strength", -- Might of the Ocean
 			[92174]  = "Carcinized Adaptation: Mastery", -- Porcelain Crab
 			[429221] = "Leviathan's Wisdom: Intellect", -- Sea Star (10.2 version)
@@ -1554,6 +1598,8 @@ function ZA_UpdateData()
 			[51955] = "Dire Drunkard: Attack Power", -- Empty Mug of Direbrew
 
 			-- Classic
+			[469930] = "Second Wind: Mana", -- Second Wind
+			[469926] = "Burst of Knowledge: Intellect", -- Burst of Knowledge
 			[15604] = "Second Wind: Mana", -- Second Wind
 			[15646] = "Burst of Knowledge", -- Burst of Knowledge
 			[17275] = "Heart of the Scale", -- Heart of the Scale
@@ -1597,6 +1643,13 @@ function ZA_UpdateData()
 		}
 
 		ZA.TrinketDebuffs = {
+			-- The War Within
+			[447471] = true, -- Volatile Acid (Skyterror's Corrosive Organ)
+			[449892] = true, -- Nerubian Venom-Tipped Dart
+			[444264] = true, -- Digestive Venom (Foul Behemoth's Chelicera)
+			[450969] = true, -- Caseless Swarm (Ceaseless Swarmgland)
+			[449877] = true, -- Deephunter's Bloody Hook
+
 			-- Dragonflight
 			[423923] = true, -- Fang of the Frenzied Nightclaw
 			[406744] = true, -- Sulfuric Burning (Suspended Sulfuric Droplet)
@@ -1605,6 +1658,12 @@ function ZA_UpdateData()
 			[388755] = true, -- Soulseeker Arrow (Furious Ragefeather)
 			[388929] = true, -- Skewering Cold (Globe of Jagged Ice)
 			[385903] = true, -- Crystal Sickness (Umbrelskul's Fractured Heart)
+
+			-- Shadowlands
+			[335265] = true, -- Mobile Mirror Set
+
+			-- Battle for Azeroth
+			[345548] = true, -- Spare Meat Hook
 
 			-- Burning Crusade
 			[26610] = "Poison", -- Figurine - Dark Iron Scorpid
@@ -1615,6 +1674,11 @@ function ZA_UpdateData()
 		}
 
 		ZA.DefensiveTrinkets = {
+			-- The War Within
+			[459206] = "Reinforced Wax Plating", -- Reinforced Wax Plating
+			[451568] = "Refracting Resistance", -- Refracting Aggression Module
+			[452360] = "Strand of the Queen: Tertiary Stats", -- Cirral Concoctery (Strand of the Queen)
+
 			-- Dragonflight
 			[417139] = "Prophetic Stonescale", -- Prophetic Stonescale
 			[415200] = "\"End It\": Haste", -- Paracausal Fragment of Frostmourne
@@ -1647,6 +1711,7 @@ function ZA_UpdateData()
 			[84213] = "Gnome Ingenuity", -- Gnomeregan Auto-Dodger 600
 
 			-- Classic
+			[469931] = "Force of Will", -- Force of Will
 			[10342] = "Guardian", -- Guardian Talismana
 			[10368] = "Uther's Light", -- Uther's Strength
 			[12733] = "Mithril Insignia", -- Glimmering Mithril Insignia
@@ -2319,6 +2384,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[303601] = "Zone", -- Blessing of the Moon
 			[466925] = "Zone", -- N.U.K.U.L.A.R Device
 			[114535] = "Zone", -- Travel Incense
 			[471459] = "Zone", -- Boltwrench Broiler
@@ -3010,6 +3076,59 @@ function ZA_UpdateData()
 			[472360] = 326, -- Wayward Vrykul's Lantern
 			[472228] = 321, -- Cursed Pirate Skull
 			-- 10.0
+			[438753] = 111, -- Horn of Declaration
+			[469813] = 12, -- Molten Furnace
+			[450962] = 320, -- Void Pactstone
+			[451997] = 320, -- Viscous Coaglam (Viscous Overflow)
+			[452054] = 320, -- Viscous Coaglam (Viscous Coagulation)
+			[451748] = 911, -- Stormrider Flight Badge
+			[444959] = 143, -- Spymaster's Web
+			[451199] = 118, -- Spymaster's Web (Spymaster's Report)
+			[447471] = 806, -- Skyterror's Corrosive Organ (Volatile Acid)
+			[435482] = 143, -- Silken Chain Weaver
+			[443531] = 6, -- Signet of the Priory
+			[459206] = 3, -- Reinforced Wax Plating
+			[451568] = 818, -- Refracting Aggression Module
+			[449407] = 818, -- Recruit's Warhorn
+			[449256] = 814, -- Recruit's Trumpet
+			[462159] = 324, -- Nizrek's Holographic Manipulator
+			[449895] = 103, -- Nerubian Venom-Tipped Dart (Predatory Instinct)
+			[449892] = 806, -- Nerubian Venom-Tipped Dart
+			[458132] = 328, -- Message-Imprinted Silken Square
+			[450551] = 6, -- Mereldar's Toll
+			[451248] = 320, -- High Speaker's Accretion
+			[452816] = 328, -- Gruesome Syringe (Gruesome Intellect)
+			[452816] = 321, -- Gruesome Syringe (Volatile Serum)
+			[455486] = 2, -- Goldenglow Censer
+			[444264] = 806, -- Foul Behemoth's Chelicera
+			[443238] = 5, -- Esteemed Earthen Emblem
+			[449254] = 320, -- Entropic Skardyn Core
+			[449275] = 48, -- Empowering Crystal of Anub'ikkaj
+			[449877] = 101, -- Deephunter's Bloody Hook
+			[454982] = 240, -- Vivacity (Vivacity of the Faire)
+			[454979] = 64, -- Vivacity (Vivacity of Arcane)
+			[454977] = 16, -- Vivacity (Vivacity of Frost)
+			[454862] = 4, -- Vivacity (Vivacity of Fire)
+			[454980] = 111, -- Vivacity (Vivacity of Force)
+			[454978] = 2, -- Vivacity (Vivacity of Light)
+			[454975] = 32, -- Vivacity (Vivacity of Shadow)
+			[454976] = 8, -- Vivacity (Vivacity of Nature)
+			[454782] = 6, -- Radiant Focus
+			[452288] = 324, -- Cirral Concoctery (Strand of the Lord)
+			[452337] = 324, -- Cirral Concoctery (Strand of the Ascended)
+			[452360] = 324, -- Cirral Concoctery (Strand of the Queen)
+			[452365] = 32, -- Cirral Concoctery (Strand of the Sundered)
+			[452361] = 32, -- Cirral Concoctery (Strand of the Sundered)
+			[452366] = 32, -- Cirral Concoctery (Strand of the Sundered)
+			[452367] = "Mana", -- Cirral Concoctery (Strand of the Sage)
+			[443381] = 282, -- Cinderbrew Stein
+			[449710] = 322, -- Charm of the Underground Beast
+			[450969] = 416, -- Ceaseless Swarmgland
+			[451367] = 5, -- Carved Blazikon Wax
+			[451924] = 3, -- Burin of the Candle King
+			[449954] = 328, -- Treacherous Transmitter
+			[443407] = 320, -- Skarmorak Shard
+			[445560] = 143, -- Ovi'nax's Mercurial Egg (Suspended Incubation)
 			[448730] = 6, -- Authority of Radiant Power
 			[268769] = 100, -- Dead-Eye Spyglass
 			[455482] = 143, -- Imperfect Ascendancy Serum
@@ -3156,6 +3275,7 @@ function ZA_UpdateData()
 			[382963] = 126, -- Brimming Arcanocrystal
 
 			-- Shadowlands
+			[335265] = 6, -- Mobile Mirror Set
 			[330131] = 10, -- Unbound Changeling (Haste)
 			[330038] = 100, -- Optical Target Embiggener
 			[367458] = 816, -- Gemstone of Prismatic Brilliance
@@ -3172,6 +3292,7 @@ function ZA_UpdateData()
 			[330367] = 203, -- Inscrutable Quantum Device
 
 			-- Battle for Azeroth
+			[345548] = 102, -- Spare Meat Hook
 			[268998] = 413, -- Balefire Branch
 			[290032] = 3, -- Hymnal of the 7th Legion
 			[298717] = 3, -- Tome of Thalassian Hymns
@@ -3195,6 +3316,7 @@ function ZA_UpdateData()
 			[126519] = 36, -- Lessons of the Darkmaster
 
 			-- Cataclysm
+			[92099]  = 328, -- Skardyn's Grace
 			[91340]  = 801, -- Might of the Ocean
 			[92174]  = 808, -- Porcelain Crab
 			[429221] = 801, -- Sea Star (10.2 version)
@@ -3319,6 +3441,9 @@ function ZA_UpdateData()
 			[84213] = 115, -- Gnomeregan Auto-Dodger 600
 
 			-- Classic
+			[469930] = "Mana", -- Second Wind
+			[469931] = 328, -- Force of Will
+			[469926] = 118, -- Burst of Knowledge
 			[10342] = 110, -- Guardian Talisman
 			[10368] = 202, -- Uther's Strength
 			[12733] = 62, -- Glimmering Mithril Insignia
@@ -3390,6 +3515,19 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[443337] = 800, -- Charged Stomrook Plume
+			[468073] = 911, -- Up and Away
+			[469898] = 105, -- Fel Hunger
+			[432135] = 400, -- Bonk!
+			[469893] = 20, -- Elemental Shield
+			[469890] = 20, -- Frostfire Shard
+			[470593] = 330, -- Inflict Death
+			[440205] = 330, -- Inflict Death
+			[468518] = 40, -- Miasmal Lash
+			[468561] = 901, -- Repulse
+			[468521] = 801, -- Vortex Storm
+			[468524] = 801, -- Vortex Storm
+			[468520] = 801, -- Vortex Storm
 			[464934] = 801, -- Empowering Stream
 			[470337] = 100, -- No Escape
 			[470296] = 110, -- Double Strike
@@ -4763,7 +4901,7 @@ function ZA_UpdateData()
 			[434506] = 401, -- Infernal Bolt
 			[433891] = 401, -- Infernal Bolt
 			[433885] = 127, -- Ruination
-			[432059] = 402, -- Candelight Scorch
+			[432059] = 5, -- Candelight Scorch
 			[449136] = 112, -- Merciless Lash
 			[449135] = 112, -- Merciless Lash
 			[426869] = 5, -- Flame Fist
@@ -9079,6 +9217,8 @@ function ZA_UpdateData()
 			["Annihilate:136138"] = 427,
 			["Annihilate:2101973"] = 203,
 			["Annihilation"] = 127,
+			[444741] = 414, -- Anti-Magic Shell
+			[48707] = 414, -- Anti-Magic Shell
 			["Anti-Magic Shell"] = 414,
 			["Anti-Magic Shield"] = 414,
 			["Anti-Magic Zone"] = 96,
@@ -14597,7 +14737,7 @@ function ZA_UpdateData()
 			[359380] = 3, -- Depthstalker
 			[359381] = 132, -- Cryptic Aurelid
 			[342680] = 106, -- Deepstar Aurelid
-			[359379] = 131, -- Shimmering Aurelid
+			[359379] = 130, -- Shimmering Aurelid
 
 			--! Basilisk
 			[230844] = 119, -- Brawler's Burly Basilisk
@@ -14793,7 +14933,7 @@ function ZA_UpdateData()
 			[171621] = 12, -- Ironhoof Destroyer
 
 			--! Cat
-			[454682] = 721, -- Startouched Furline
+			[454682] = 722, -- Startouched Furline
 			[317177] = 66, -- Sunwarmed Furline
 			-- Warsaber
 			[449132] = 175, -- Blackrock Warsaber
@@ -18356,6 +18496,15 @@ function ZA_UpdateData()
 			[386196] = 100,
 			[457919] = 100,
 			[461503] = 100,
+			[461425] = 126,
+			[456534] = 20,
+			[462625] = 100,
+			[462731] = 50,
+			[462808] = 126,
+			[463125] = 126,
+			[410868] = 100,
+			[303721] = 640,
+			[303602] = 640,
 			--qqq
 
 
@@ -29830,6 +29979,13 @@ function ZA_UpdateData()
 			[457919] = 0,
 			[445240] = 0,
 			[461503] = 0,
+			[461425] = 0,
+			[462625] = 0,
+			[462731] = 0,
+			[462808] = 0,
+			[463125] = 0,
+			[410868] = 0,
+			[459206] = 1500973, -- Reinforced Wax Plating
 			--qqi
 
 
