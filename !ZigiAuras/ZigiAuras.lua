@@ -1006,6 +1006,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Venture Slimetanker"] = 100,
 			["Hotwired B.I.R.D."] = 100,
 			["Pamsys's Rocketboard"] = 100,
 			["The Skypiercer"] = 100,
@@ -1154,6 +1155,7 @@ function ZA_UpdateData()
 
 		--! Vehicle Icons
 		ZA.VehicleIcons = {
+			["Venture Slimetanker"] = 6124648,
 			["The Skypiercer"] = 1519491,
 			["Surging Torrent"] = 4554463,
 			["Valormok Wind Rider"] = 298594,
@@ -1258,8 +1260,9 @@ function ZA_UpdateData()
 			[381956] = "Mastery",
 			[381957] = "Vers",
 			-- Primal Ritual Shell
+			[390869] = "Heal",
 			[390899] = "Mastery",
-			[390835] = "Fire",
+			[390835] = "Damage",
 			[390655] = "Shield",
 		}
 
@@ -1747,6 +1750,7 @@ function ZA_UpdateData()
 		ZA.Potions = {
 			-- The War Within
 			[431932] = true, -- Tempered Potion
+			[431914] = true, -- Potion of Unwavering Focus
 
 			-- Dragonflight
 			[371028] = true, -- Elemental Potion of Ultimate Power
@@ -1756,7 +1760,67 @@ function ZA_UpdateData()
 			[371052] = true, -- Potion of Chilled Clarity
 
 			-- Shadowlands
+			[307159] = true, -- Potion of Spectral Agility
+			[307162] = true, -- Potion of Spectral Intellect
+			[307164] = true, -- Potion of Spectral Strength
+			[307497] = true, -- Potion of Deathly Fixation
+			[307496] = true, -- Potion of Divine Awakening
+			[307494] = true, -- Potion of Empowered Exorcisms
+			[307495] = true, -- Potion of Phantom Fire
+			[322302] = true, -- Potion of Sacrificial Anima
+			[342890] = true, -- Potion of Unhindered Passing
+
+			-- Battle for Azeroth
+			[298146] = true, -- Superior Battle Potion of Agility
+			[279152] = true, -- Battle Potion of Agility
+			[298152] = true, -- Superior Battle Potion of Intellect
+			[279151] = true, -- Battle Potion of Intellect
+			[279153] = true, -- Superior Battle Potion of Strength
+			[298154] = true, -- Battle Potion of Strength
+			[300741] = true, -- Potion of Wild Mending
 			[300714] = true, -- Potion of Unbridled Fury
+			[269853] = true, -- Potion of Rising Death
+			[298317] = true, -- Potion of Focused Resolve
+			[298225] = true, -- Potion of Empowered Proximity
+			[251316] = true, -- Potion of Bursting Blood
+
+			-- Legion
+			[229206] = true, -- Potion of Prolonged Power
+			[188027] = true, -- Potion of Deadly Grace
+			[188028] = true, -- Potion of the Old War
+
+			-- Warlords of Draenor
+			[175817] = true, -- Draenic Living Action Potion
+			[156423] = true, -- Draenic Agility Potion
+			[156426] = true, -- Draenic Intellect Potion
+			[156428] = true, -- Draenic Strength Potion
+			[156430] = true, -- Draenic Versatility Potion
+
+			-- Mists of Pandaria
+			[105697] = "Virmen's Bite: Agility",
+			[105702] = "Potion of the Jade Serpent: Intellect",
+			[105706] = "Potion of Mogu Power: Strength",
+
+			-- Cataclysm
+			[79633] = "Potion of the Tol'vir: Agility",
+			[79476] = "Volcanic Potion: Intellect",
+			[79634] = "Golemblood Potion: Strength",
+
+			-- Wrath of the Lich King
+			[53908] = "Potion of Speed: Haste",
+			[53909] = "Wild Magic: Spellpower & Critical Strike",
+
+			-- Burning Crusade
+			[38929] = true, -- Fel Mana Potion
+			[28494] = true, -- Insane Strength Potion
+			[28506] = "Heroic Potion: Strength & Health",
+			[28507] = "Haste Potion",
+			[28508] = "Destruction: Spellpower & Critical Strike",
+
+			-- Classic
+			[24364] = true, -- Living Action Potion
+			[17528] = "Mighty Rage: Strength", -- Mighty Rage Potion
+			[11350] = "Oil of Immolation",
 		}
 
 		-- INVIS
@@ -2400,6 +2464,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[463534] = "Zone", -- Obsidian Blessing
 			[472448] = "Zone", -- Carrying an Unconcious Goblin
 			[464301] = "Zone", -- Mount Up!
 			[1222913] = "Zone", -- Sea's Bounty
@@ -3555,6 +3620,214 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[468812] = 800, -- Gigazap
+			[468604] = 400, -- Dam Rubble
+			[468606] = 400, -- Dam Rubble
+			[468661] = 9, -- Shock Water
+			[468261] = 801, -- Dam Water
+			[468608] = 400, -- Dam!
+			[468276] = 400, -- Dam!
+			[466088] = 800, -- Turbo Bolt
+			[465279] = 801, -- Dam Water
+			[466197] = 800, -- Thunder Punch
+			[466190] = 800, -- Thunder Punch
+			[468846] = 9, -- Leaping Sparks
+			[465463] = 800, -- Turbo Charge
+			[465966] = 800, -- Charge Batteries
+			[465666] = 800, -- Sparkslam
+			[1216607] = 800, -- Battery Discharge
+			[469800] = 800, -- Overcharge
+			[469799] = 800, -- Overcharge
+			[465595] = 800, -- Lightning Bolt
+			[471845] = 800, -- Repair Wiring
+			[471841] = 800, -- Repair Wiring
+			[1217496] = 801, -- Splish Splash
+			[465487] = 901, -- Bubble Smash
+			[469818] = 801, -- Bubble Burp
+			[469816] = 801, -- Bubble Burp
+			[469812] = 801, -- Backwash
+			[469811] = 801, -- Backwash
+			[469721] = 801, -- Backwash
+			[473047] = 906, -- Skewering Root
+			[470039] = 906, -- Razorchoke Vines
+			[473052] = 801, -- Rushing Tide
+			[473070] = 901, -- Awaken the Swamp
+			[472878] = 803, -- Sludge Claws
+			[472878] = 803, -- Sludge Claws
+			[469478] = 803, -- Sludge Claws
+			[473114] = 400, -- Mudslide
+			[1218417] = 50, -- FIRE!!!
+			[473688] = 111, -- Kinetic Explosive Gel
+			[473690] = 111, -- Kinetic Explosive Gel
+			[460602] = 100, -- Quick Shot
+			[1217653] = 4, -- B.B.B.F.G.
+			[472755] = 12, -- Shrapnel
+			[460787] = 5, -- Deflagration
+			[460867] = 5, -- Big Bada BOOM!
+			[470090] = 105, -- Divided Duo
+			[470090] = 105, -- Divided Duo
+			[459779] = 50, -- Barreling Charge
+			[459799] = 400, -- Wallop
+			[1217456] = 906, -- Jettison Kelp
+			[471736] = 906, -- Jettison Kelp
+			[471733] = 8, -- Restorative Algae
+			[1213790] = 5, -- Zeppelin Barrage
+			[1213704] = 5, -- Zeppelin Barrage
+			[1213772] = 5, -- Zeppelin Barrage
+			[468726] = 5, -- Plant Seaforium Charge
+			[468724] = 5, -- Plant Seaforium Charge
+			[468635] = 101, -- Harpoon
+			[468632] = 101, -- Harpoon
+			[468630] = 101, -- Harpoon
+			[468631] = 101, -- Harpoon
+			[468672] = 112, -- Pinch
+			[468680] = 5, -- Crabsplosion
+			[1213805] = 101, -- Nailgun
+			[1213803] = 101, -- Nailed
+			[462771] = 4, -- Surveying Beam
+			[472338] = 5, -- Surveyed Ground
+			[463169] = 5, -- EZ-Thro Dynamite III
+			[1216833] = 417, -- Contort Blood
+			[1216826] = 417, -- Contort Blood
+			[465871] = 417, -- Blood Blast
+			[465827] = 417, -- Warp Blood
+			[469981] = 9, -- Kill-o-Block Barrier
+			[471585] = 111, -- Mobilize Mechadrones
+			[473287] = 800, -- Excessive Electrification
+			[473220] = 111, -- Sonic Boom
+			[473836] = 9, -- Electrocrush
+			[473351] = 9, -- Electrocrush
+			[471652] = 111, -- Broadcast Orders
+			[460156] = 800, -- Jumpstart
+			[472454] = 800, -- Doom Storm
+			[472452] = 800, -- Doom Storm
+			[460393] = 100, -- Shoot
+			[465127] = 108, -- Wind Up
+			[465120] = 108, -- Wind Up
+			[465682] = 32, -- Surprise Inspection
+			[461796] = 100, -- Reload
+			[1216039] = 5, -- R.P.G.G.
+			[461805] = 100, -- Locked and Loaded
+			[463061] = 103, -- Bloodthirsty Cackle
+			[463058] = 103, -- Bloodthirsty Cackle
+			[462737] = 417, -- Black Blood Wound
+			[1214468] = 32, -- Trickshot
+			[464655] = 100, -- Snipe
+			[474351] = 102, -- Shreddation
+			[474337] = 102, -- Shreddation
+			[474388] = 5, -- Flamethrower
+			[465754] = 5, -- Flamethrower
+			[386015] = 811, -- Summon Squall
+			[372561] = 400, -- Binding Spear
+			[371875] = 103, -- Fired Up
+			[307159] = 115, -- Potion of Spectral Agility
+			[307162] = 118, -- Potion of Spectral Intellect
+			[307164] = 117, -- Potion of Spectral Strength
+			[307497] = 50, -- Potion of Deathly Fixation
+			[307496] = 6, -- Potion of Divine Awakening
+			[307494] = 417, -- Potion of Empowered Exorcisms
+			[307495] = 326, -- Potion of Phantom Fire
+			[322302] = 326, -- Potion of Sacrificial Anima
+			[342890] = 109, -- Potion of Unhindered Passing
+			[298146] = 115, -- Superior Battle Potion of Agility
+			[279152] = 115, -- Battle Potion of Agility
+			[298152] = 118, -- Superior Battle Potion of Intellect
+			[279151] = 118, -- Battle Potion of Intellect
+			[279153] = 117, -- Superior Battle Potion of Strength
+			[298154] = 117, -- Battle Potion of Strength
+			[300741] = 6, -- Potion of Wild Mending
+			[300714] = 36, -- Potion of Unbridled Fury
+			[269853] = 48, -- Potion of Rising Death
+			[298317] = 50, -- Potion of Focused Resolve
+			[298225] = 412, -- Potion of Empowered Proximity
+			[251316] = 417, -- Potion of Bursting Blood
+			[229206] = 240, -- Potion of Prolonged Power
+			[188027] = 328, -- Potion of Deadly Grace
+			[188028] = 117, -- Potion of the Old War
+			[175817] = 109, -- Draenic Living Action Potion
+			[156423] = 115, -- Draenic Agility Potion
+			[156426] = 118, -- Draenic Intellect Potion
+			[156428] = 117, -- Draenic Strength Potion
+			[156430] = 910, -- Draenic Versatility Potion
+			[105697] = 115, -- Virmen's Bite
+			[105702] = 807, -- Potion of the Jade Serpent
+			[105706] = 117, -- Potion of Mogu Power
+			[79633] = 115, -- Potion of the Tol'vir
+			[79476] = 12, -- Volcanic Potion
+			[79634] = 117, -- Golemblood Potion
+			[53908] = 816, -- Potion of Speed
+			[53909] = 118, -- Potion of Wild Magic
+			[38929] = "Mana", -- Fel Mana Potion
+			[28494] = 117, -- Insane Strength Potion
+			[28506] = 117, -- Heroic Potion
+			[28507] = 816, -- Haste Potion
+			[28508] = 118, -- Destruction Potion
+			[24364] = 109, -- Living Action Potion
+			[17528] = 103, -- Mighty Rage Potion
+			[11350] = 5, -- Oil of Immolation
+			[431424] = 720, -- Treading Lightly (Draught of Silent Footfalls)
+			[431914] = 50, -- Potion of Unwavering Focus
+			[431941] = 104, -- Potion of the Reborn Cheetah
+			[431925] = 809, -- Frontline Potion
+			[371134] = 720, -- Potion of the Hushed Zephyr
+			[371133] = 720, -- Potion of the Hushed Zephyr
+			[371125] = 720, -- Potion of the Hushed Zephyr
+			[371164] = 811, -- Potion of Gusts
+			[371646] = 999, -- Potion of Frozen Fataility
+			[307163] = 321, -- Potion of Spectral Stamina
+			[344314] = 326, -- Potion of the Psychopomp's Speed
+			[307501] = 326, -- Potion of Specter Swiftness
+			[307160] = 809, -- Potion of Hardened Shadows
+			[250878] = 104, -- Lightfoot Potion
+			[298155] = 809, -- Superior Steelskin Potion
+			[251231] = 809, -- Steelskin Potion
+			[251143] = 802, -- Sea Mist Potion
+			[250956] = 720, -- Potion of Concealment
+			[298153] = 321, -- Superior Battle Potion of Stamina
+			[279154] = 321, -- Battle Potion of Stamina
+			[188029] = 809, -- Unbending Potion
+			[188024] = 810, -- Skystep Potion
+			[175790] = 104, -- Draenic Swiftness Potion
+			[105698] = 809, -- Potion of the Mountains
+			[105707] = 901, -- Darkwater Potion
+			[79475] = 809, -- Earthen Potion
+			[53762] = 910, -- Indestructible Potion
+			[53915] = 32, -- Shadow Protection
+			[28537] = 32, -- Shadow Protection
+			[53914] = 8, -- Nature Protection
+			[28513] = 8, -- Nature Protection
+			[28538] = 2, -- Holy Protection
+			[28538] = 2, -- Holy Protection
+			[53913] = 16, -- Frost Protection
+			[28512] = 16, -- Frost Protection
+			[53911] = 4, -- Fire Protection
+			[28511] = 4, -- Fire Protection
+			[53910] = 64, -- Arcane Protection
+			[28536] = 64, -- Arcane Protection
+			[38908] = 402, -- Fel Regeneration Potion
+			[28515] = 910, -- Ironshield (Ironshield Potion)
+			[2379] = 104, -- Speed (Swiftness Potion / Molotoc Cocktail)
+			[7840] = 801, -- Swim Speed (Swim Speed Potion)
+			[7840] = 801, -- Swim Speed (Swim Speed Potion)
+			[11359] = 202, -- Resotration (Restorative Potion)
+			[4941] = 809, -- Stoneshield (Lesser Stoneshield Potion)
+			[3169] = 110, -- Invulnerability (Limited Invulnerability Potion)
+			[7245] = 2, -- Holy Protection
+			[17548] = 32, -- Shadow Protection
+			[7242] = 32, -- Shadow Protection
+			[17546] = 8, -- Nature Protection
+			[7254] = 8, -- Nature Protection
+			[17544] = 16, -- Frost Protection
+			[7239] = 16, -- Frost Protection
+			[17543] = 4, -- Fire Protection
+			[7233] = 4, -- Fire Protection
+			[17549] = 64, -- Arcane Protection
+			[396475] = 806, -- Poison Blast
+			[128075] = 417, -- Dread Bile
+			[465752] = 911, -- Seal Slam
+			["Elisande Active"] = 100, -- BigWigs timer
+			[1215017] = 800, -- Power Pulse
+			[1215018] = 111, -- Vacuum Slime
 			[433785] = 330, -- Grasping Slash
 			[433821] = 911, -- Dashing Strike
 			[433656] = 417, -- Black Blood
@@ -6203,8 +6476,8 @@ function ZA_UpdateData()
 			[375943] = 400, -- Upheaval
 			[376683] = 903, -- Iron Stampede
 			[376634] = 903, -- Iron Spear
-			[382277] = 104, -- Vehement Charge
-			[382267] = 104, -- Vehement Charge
+			[382277] = 400, -- Vehement Charge
+			[382267] = 400, -- Vehement Charge
 			[372147] = 903, -- Ravaging Spear
 			[382233] = 903, -- Broad Stomp
 			[382233] = 903, -- Broad Stomp
@@ -8917,7 +9190,7 @@ function ZA_UpdateData()
 			["Blazing Trail"] = 4,
 			["Magma Bolt"] = 12,
 			["Magma Bolt Volley"] = 12,
-			["Inflame Armaments"] = 4,
+			[392594] = 5, -- Inflame Armaments
 			["Magma Vortex"] = 12,
 			["Throw Spear"] = 100,
 			["Lava Trap"] = 12,
@@ -9223,7 +9496,7 @@ function ZA_UpdateData()
 			["Venomous Eruption"] = 806,
 			[74003] = 800, -- Downsizing (Trade Prince Gallywix)
 			["Unload Toxic Assets"] = 806,
-			["Cutting Laser"] = 818,
+			["Cutting Laser"] = 50,
 			["Saw Blade"] = 100,
 			["Kaja'Cola Zero-One"] = 281,
 			["Kaja'Cola"] = 281,
@@ -12036,6 +12309,7 @@ function ZA_UpdateData()
 			["Invigorating Fish Stick"] = 325,
 			["Invisibility"] = 720,
 			["Invisible"] = 720,
+			[307195] = 720, -- Invisible
 			["Invoke Chi-Ji, the Red Crane"] = 66,
 			["Invoke Niuzao, the Black Ox"] = 803,
 			["Invoke Xuen"] = 907,
@@ -16113,6 +16387,9 @@ function ZA_UpdateData()
 			[342667] = 822, -- Vibrant Flutterwing
 			-- Glowmite
 			[447176] = 201, -- Cyan Glowmite
+			-- Butterfly
+			[1218012] = 403, -- Ruby Butterfly
+			[1217994] = 808, -- Pearlescent Butterfly
 
 			--! Murloc
 			[315132] = 119, -- Gargantuan Grrloc
@@ -18971,6 +19248,11 @@ function ZA_UpdateData()
 			[468151] = 32,
 			[468040] = 32,
 			[468148] = 32,
+			[223475] = 202,
+			[474029] = 100,
+			[468652] = 100,
+			[1216621] = 100,
+			[1214337] = 5,
 			--qqq
 
 
@@ -30509,6 +30791,10 @@ function ZA_UpdateData()
 			[468151] = 0,
 			[468040] = 0,
 			[468148] = 0,
+			[223475] = 0,
+			[468652] = 0,
+			[1216621] = 0,
+			[1214337] = 0,
 			--qqi
 
 
