@@ -720,6 +720,8 @@ function ZA_UpdateData()
 			[424187] = "Teleport: Atal'Dazar", -- Path of the Golden Tomb
 			[445418] = "Teleport: Siege of Boralus", -- Path of the Besieged Harbor (Alliance)
 			[464256] = "Teleport: Siege of Boralus", -- Path of the Besieged Harbor (Horde)
+			[467553] = "Teleport: The MOTHERLODE!!", -- Path of the Azerite Refinery (Alliance)
+			[467555] = "Teleport: The MOTHERLODE!!", -- Path of the Azerite Refinery (Horde)
 			-- -- Shadowlands
 			[354462] = "Teleport: The Necrotic Wake", -- Path of the Courageous
 			[354463] = "Teleport: Plaguefall", -- Path of the Plagued
@@ -752,6 +754,7 @@ function ZA_UpdateData()
 			[445444] = "Teleport: Priory of the Sacred Flame", -- Path of the Light's Reverence
 			[445417] = "Teleport: Ara-Kara, City of Echoes", -- Path of the Ruined City
 			[445441] = "Teleport: Darkflame Cleft", -- Path of the Warding Candles
+			[1216786] = "Teleport: The Waterworks", -- Path of the Circuit Breaker
 		}
 
 
@@ -1006,6 +1009,8 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Anti-Anti-Freeze Shredder"] = 100,
+			["Brann Bronzebeard"] = "HUNTER",
 			["Venture Slimetanker"] = 100,
 			["Hotwired B.I.R.D."] = 100,
 			["Pamsys's Rocketboard"] = 100,
@@ -1189,6 +1194,7 @@ function ZA_UpdateData()
 
 		--! Hearthstones
 		ZA.Hearthstones = {
+			["Explosive Hearthstone"] = "Hearthstone",
 			["Notorious Thread's Hearthstone"] = "Hearthstone",
 			["Draenic Hologem"] = "Hearthstone",
 			["Deepdweller's Earthen Hearthstone"] = "Hearthstone",
@@ -2271,6 +2277,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[1214346] = "State", -- Revolution!
 			[458069] = "State", -- Seafury Tempest
 			[433172] = "State", -- Story Time
 			[443248] = "State", -- Azj-Kahet Pheromones
@@ -2464,6 +2471,7 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[473218] = "Zone", -- Delver's Bounty
 			[463534] = "Zone", -- Obsidian Blessing
 			[472448] = "Zone", -- Carrying an Unconcious Goblin
 			[464301] = "Zone", -- Mount Up!
@@ -3620,6 +3628,165 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[470277] = 999, -- Spew Sludge
+			[470276] = 999, -- Muck Bolt
+			[470276] = 999, -- Black Goo
+			[465939] = 5, -- Buster Shot
+			[273647] = 5, -- Buster Shot
+			[260372] = 5, -- Buster Shot
+			[471186] = 103, -- Bloodthirsty
+			[1218174] = 130, -- "Garbage" Collection
+			[1218173] = 130, -- "Garbage" Collection
+			[1218156] = 200, -- Liquid Gold
+			[287073] = 200, -- Liquid Gold
+			[1218155] = 200, -- Liquid Gold
+			[1218152] = 200, -- Liquid Gold
+			[287072] = 200, -- Liquid Gold
+			[418262] = 320, -- Void Grasp
+			[418295] = 330, -- Umbral Slash
+			[418297] = 320, -- Castigate
+			[1218029] = 5, -- Crab-a-bomb Barrage
+			[1218024] = 5, -- Crab-a-bomb Barrage
+			[1218021] = 5, -- Crab-a-bomb Barrage
+			[1218008] = 5, -- Crab-a-bomb Barrage
+			[1218017] = 5, -- Crab-a-bomb Barrage
+			[1217326] = 3, -- Take a Selfie!
+			[1217362] = 5, -- Worthless Adorations
+			[1217368] = 5, -- Worthless Adorations
+			[1217361] = 5, -- Worthless Adorations
+			[1217369] = 5, -- Worthless Adorations
+			[1217418] = 111, -- Call My Agent
+			[1217433] = 111, -- Call My Agent
+			[1217435] = 111, -- Call My Broker
+			[1217449] = 111, -- Call My Broker
+			[1217437] = 111, -- Call My Mother
+			[1217452] = 111, -- Call My Mother
+			[1216805] = 800, -- Zap!
+			[1216806] = 400, -- There's the Door
+			[474750] = 8, -- Symbiotic Relationship
+			[451874] = 281, -- Algari Mana Oil
+			[451869] = 281, -- Algari Mana Oil
+			[451873] = 281, -- Algari Mana Oil
+			[421434] = 200, -- Ultimate Penitence
+			[421453] = 200, -- Ultimate Penitence
+			[458836] = 32, -- Shadowspin
+			[458836] = 32, -- Shadowspin
+			[458834] = 32, -- Shadowspin
+			[458876] = 330, -- Shadow Wave
+			[458875] = 330, -- Shadow Wave
+			[458874] = 330, -- Shadow Wave
+			[473697] = 5, -- Molotov Cocktail
+			[31560] = 5, -- Molotov Cocktail
+			[473699] = 5, -- Molotov Cocktail
+			[473700] = 5, -- Molotov Cocktail
+			[473696] = 5, -- Molotov Cocktail
+			[1220869] = 911, -- Bonebreaker
+			[211941] = 911, -- Bonebreaker
+			[269188] = 911, -- Bonebreaker
+			[211936] = 911, -- Bonebreaker
+			[1220869] = 911, -- Bonebreaker
+			[472850] = 5, -- Destroy
+			[472842] = 50, -- Destroy
+			[472833] = 50, -- Seek
+			[1217280] = 911, -- Uppercut
+			[1217279] = 911, -- Uppercut
+			[29850] = 911, -- Uppercut
+			[317169] = 911, -- Uppercut
+			[29585] = 911, -- Uppercut
+			[252701] = 911, -- Colossal Uppercut
+			[470873] = 40, -- Festering Uppercut
+			[61565] = 911, -- Uppercut
+			[141103] = 911, -- Uppercut
+			[197733] = 911, -- Brutal Uppercut
+			[214358] = 911, -- Demonic Uppercut
+			[259770] = 911, -- Uppercut of Fate
+			[439031] = 911, -- Bottoms Uppercut
+			[225419] = 911, -- Uppercut
+			[227981] = 911, -- Uppercut
+			[473537] = 911, -- Uppercut
+			[10966] = 911, -- Uppercut
+			[18072] = 911, -- Uppercut
+			[26007] = 911, -- Uppercut
+			[34996] = 911, -- Uppercut
+			[80182] = 911, -- Uppercut
+			[53629] = 911, -- Uppercut
+			[259747] = 911, -- Uppercut of Fate
+			[30471] = 911, -- Uppercut
+			[32055] = 911, -- Uppercut
+			[119498] = 911, -- Uppercut
+			[270982] = 911, -- Uppercut
+			[22916] = 911, -- Uppercut
+			[34014] = 911, -- Uppercut
+			[272461] = 911, -- Bony Uppercut
+			[104718] = 911, -- Uppercut
+			[41388] = 911, -- Uppercut
+			[50084] = 911, -- Hulking Uppercut
+			[91045] = 911, -- Uppercut
+			[277574] = 911, -- Uppercut
+			[148743] = 911, -- Uppercut
+			[39069] = 911, -- Uppercut
+			[474004] = 400, -- Drill Quake
+			[474004] = 400, -- Drill Quake
+			[1215957] = 400, -- Tremor Claw
+			[1215907] = 417, -- Carnage Cannon
+			[1215905] = 417, -- Carnage Cannon
+			[1215909] = 417, -- Carnage Cannon
+			[1215975] = 103, -- Juice It Up!
+			[473539] = 105, -- Flurry of Punches
+			[473541] = 105, -- Flurry of Punches
+			[1217354] = 644, -- Picking Filter
+			[473533] = 103, -- Ferocious Howl
+			[473993] = 417, -- Black Blood Bolt
+			[473995] = 417, -- Bloodbath
+			[474001] = 103, -- Bathe in Blod
+			[1215830] = 417, -- Disintegration Ray
+			[1215226] = 417, -- Disintegration Ray
+			[1215197] = 417, -- Disintegration Ray
+			[1215228] = 417, -- Disintegration Ray
+			[1215140] = 417, -- Golden Parachute
+			[1215149] = 417, -- Golden Parachute
+			[1215144] = 417, -- Golden Parachute
+			[1216525] = 50, -- Rocket Barrage
+			[473558] = 50, -- Rocket Barrage
+			[1216661] = 50, -- Rocket Barrage
+			[472867] = 50, -- Rocket Barrage
+			[473550] = 50, -- Rocket Barrage
+			[473556] = 50, -- Rocket Barrage
+			[1216455] = 50, -- Rocket Barrage
+			[466434] = 50, -- Rocket Barrage
+			[466437] = 50, -- Rocket Barrage
+			[466438] = 50, -- Rocket Barrage
+			[470978] = 50, -- Rocket Barrage
+			[473277] = 50, -- Rocket Barrage
+			[473553] = 50, -- Rocket Barrage
+			[474052] = 50, -- Rocket Barrage
+			[1216416] = 50, -- Rocket Barrage
+			[466421] = 50, -- Rocket Barrage
+			[470977] = 50, -- Rocket Barrage
+			[473279] = 50, -- Rocket Barrage
+			[473557] = 50, -- Rocket Barrage
+			[474064] = 50, -- Rocket Barrage
+			[1216113] = 50, -- Rocket Barrage
+			[1216417] = 50, -- Rocket Barrage
+			[1216460] = 50, -- Rocket Barrage
+			[1216526] = 50, -- Rocket Barrage
+			[1216531] = 50, -- Rocket Barrage
+			[1220490] = 50, -- Rocket Barrage
+			[466657] = 320, -- Void Rocket Barrage
+			[466659] = 320, -- Void Rocket Barrage
+			[466661] = 320, -- Void Rocket Barrage
+			[466660] = 320, -- Void Rocket Barrage
+			[1215618] = 5, -- Explosive Present
+			[1215577] = 5, -- Explosive Present
+			[1215584] = 5, -- Explosive Present
+			[1215537] = 417, -- Bloodthrower
+			[473840] = 417, -- Bloodthrower
+			[470855] = 417, -- Bloodthrower
+			[1215532] = 417, -- Bloodthrower
+			[1214834] = 417, -- Heave Container
+			[472627] = 5, -- Bombs Away
+			[472389] = 800, -- Conductive Surge
+			[431544] = 112, -- Bite
 			[468812] = 800, -- Gigazap
 			[468604] = 400, -- Dam Rubble
 			[468606] = 400, -- Dam Rubble
@@ -3965,6 +4132,8 @@ function ZA_UpdateData()
 			[471287] = 103, -- Ferocious Howl
 			[472378] = 9, -- Repairing
 			[472457] = 104, -- Overclock
+			[395297] = 911, -- Disengage
+			[472126] = 911, -- Disengage
 			[472154] = 911, -- Disengage
 			[472169] = 50, -- The Big Shot
 			[472153] = 50, -- The Big Shot
@@ -5404,6 +5573,7 @@ function ZA_UpdateData()
 			[463498] = 143, -- Executor's Severed Thread
 			[463497] = 143, -- Crypt Lord's Severed Thread
 			[463493] = 143, -- Spymaster's Severed Thread
+			[1220729] = 5, -- Explosive Hearthstone
 			[463481] = 143, -- Notorious Thread's Hearthstone
 			[388897] = 112, -- Snapping Slice
 			[424704] = 108, -- Vicious Stabs
@@ -5416,6 +5586,7 @@ function ZA_UpdateData()
 			[445038] = 107, -- Cleave
 			[444915] = 720, -- Illusive Step
 			[433040] = 720, -- Illusive Step
+			[458879] = 330, -- Blessing of Dusk
 			[443482] = 330, -- Blessing of Dusk
 			[470592] = 330, -- Blessing of Dusk
 			[443232] = 100, -- Shoot
@@ -12832,7 +13003,10 @@ function ZA_UpdateData()
 			["Overpower"] = 110,
 			["Overpowering Flurry:1344646"] = 427,
 			["Overrun"] = 104,
-			["Overtime!"] = 103,
+			[277451] = 103, -- Overtime!
+			[81772] = 103, -- Overtime
+			[1213656] = 104, -- Overtime!
+			[104] = 103, -- Overtime!
 			["Overwhelm"] = 113,
 			["Overwhelming Despair:3528302"] = 411,
 			["Overwhelming Effusion:136201"] = 413,
@@ -15377,6 +15551,9 @@ function ZA_UpdateData()
 			[290718] = 100, -- Aerial Unit R-21/X
 			[299170] = 100, -- Rustbolt Resistor
 			[424082] = 100, -- Mimiron's Jumpjets
+			-- Custom
+			[446052] = 100, -- Delver's Dirigible
+			[466133] = 100, -- Delver's Gob-Trotter
 
 			--! Alpaca
 			[316493] = 156, -- Elusive Quickhoof
@@ -15840,7 +16017,7 @@ function ZA_UpdateData()
 			[59570]  = 173, -- Red Drake
 			[279466] = 34, -- Twilight Avenger
 			[59571]  = 320, -- Twilight Drake
-			[1214946]= 34, -- Broodling of Sinestra
+			[1214946]= 330, -- Broodling of Sinestra
 			[101821] = 320, -- Ruthless Gladiator's Twilight Drake
 			[101282] = 34, -- Vicious Gladiator's Twilight Drake
 			[124550] = 34, -- Cataclysmic Gladiator's Twilight Drake
@@ -19253,6 +19430,57 @@ function ZA_UpdateData()
 			[468652] = 100,
 			[1216621] = 100,
 			[1214337] = 5,
+			[1219467] = 100,
+			[467635] = 200,
+			[441033] = 100,
+			[456834] = 321,
+			[461431] = 114,
+			[457148] = 50,
+			[458424] = 100,
+			[458811] = 281,
+			[461823] = 417,
+			[470694] = 100,
+			[463931] = 103,
+			[463539] = 9,
+			[463646] = 100,
+			[1217568] = 100,
+			[472213] = 202,
+			[1220989] = 5,
+			[1225809] = 130,
+			[473218] = 130,
+			[474433] = 804,
+			[1214821] = 100,
+			[465255] = 202,
+			[1224323] = 100,
+			[459588] = 800,
+			[459582] = 114,
+			[459727] = 114,
+			[465543] = 114,
+			[465561] = 114,
+			[460037] = 202,
+			[460042] = 202,
+			[460054] = 100,
+			[460080] = 130,
+			[460091] = 114,
+			[460131] = 100,
+			[468868] = 100,
+			[460259] = 100,
+			[1218083] = 111,
+			[466898] = 111,
+			[466897] = 111,
+			[467072] = 100,
+			[467406] = 9,
+			[470522] = 800,
+			[470526] = 800,
+			[470528] = 800,
+			[467905] = 800,
+			[1221683] = 800,
+			[467985] = 202,
+			[471049] = 114,
+			[470933] = 100,
+			[468171] = 100,
+			[470777] = 64,
+			[470986] = 100,
 			--qqq
 
 
@@ -19294,6 +19522,8 @@ function ZA_UpdateData()
 			[424187] = 646, -- Path of the Golden Tomb
 			[445418] = 646, -- Path of the Besieged Harbor (Alliance)
 			[464256] = 646, -- Path of the Besieged Harbor (Horde)
+			[467553] = 646, -- Path of the Azerite Refinery (Alliance)
+			[467555] = 646, -- Path of the Azerite Refinery (Horde)
 			-- -- Shadowlands
 			[354462] = 646, -- Path of the Courageous
 			[354463] = 646, -- Path of the Plagued
@@ -19326,6 +19556,7 @@ function ZA_UpdateData()
 			[445444] = 646, -- Path of the Light's Reverence
 			[445417] = 646, -- Path of the Ruined City
 			[445441] = 646, -- Path of the Warding Candles
+			[1216786] = 646, -- Path of the Circuit Breaker
 
 
 			--! Tuskarr Fishing Gear
@@ -30795,6 +31026,43 @@ function ZA_UpdateData()
 			[468652] = 0,
 			[1216621] = 0,
 			[1214337] = 0,
+			[1219467] = 0,
+			[441033] = 0,
+			[456834] = 0,
+			[458424] = 0,
+			[461823] = 0,
+			[470694] = 0,
+			[463539] = 0,
+			[463931] = 0,
+			[463646] = 0,
+			[1217568] = 0,
+			[472213] = 0,
+			[474433] = 0,
+			[1214821] = 0,
+			[465255] = 0,
+			[1224323] = 0,
+			[459588] = 0,
+			[459582] = 0,
+			[459727] = 0,
+			[465543] = 0,
+			[465561] = 0,
+			[460037] = 0,
+			[460042] = 0,
+			[460054] = 0,
+			[460080] = 0,
+			[460091] = 0,
+			[460131] = 0,
+			[468868] = 0,
+			[460259] = 0,
+			[1218083] = 0,
+			[467072] = 0,
+			[1221683] = 0,
+			[467985] = 0,
+			[471049] = 0,
+			[470933] = 0,
+			[468171] = 0,
+			[470777] = 0,
+			[470986] = 0,
 			--qqi
 
 
@@ -30892,6 +31160,8 @@ function ZA_UpdateData()
 			[424187] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAtalDazar", -- Path of the Golden Tomb
 			[445418] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSiegeOfBoralus", -- Path of the Besieged Harbor (Alliance)
 			[464256] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportSiegeOfBoralus", -- Path of the Besieged Harbor (Horde)
+			--[467553] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheMOTHERLODE", -- Path of the Azerite Refinery (Alliance)
+			--[467555] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheMOTHERLODE", -- Path of the Azerite Refinery (Horde)
 			-- -- Shadowlands
 			[354462] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportTheNecroticWake", -- Path of the Courageous
 			[354463] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportPlaguefall", -- Path of the Plagued
@@ -30924,6 +31194,7 @@ function ZA_UpdateData()
 			[445444] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportPrioryOfTheSacredFlame", -- Path of the Light's Reverence
 			[445417] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAraKara", -- Path of the Ruined City
 			[445441] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDarkflameCleft", -- Path of the Warding Candles
+			--[1216786] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportOperationFloodgate", -- Path of the Circuit Breaker
 			
 
 
@@ -31506,6 +31777,27 @@ function ZA_UpdateData()
 				}
 				local icons = {
 					[2] = 5884218, -- Void
+				}
+
+				ZA.Spells[id] = transforms[transform] or colors[color]
+				ZA.Icons[id] = icons[transform] or nil
+
+
+				-- Delver's Gob-Trotter
+				local id = 466133
+				local color = ArmyGetKey("DelversGobTrotter") or 1
+				local transform = ArmyGetKey("DelversGobTrotterTransformation") or 1
+
+				local colors = {
+					[1] = 100, -- Red
+					[2] = 100, -- Green
+				}
+
+				local transforms = {
+					[2] = 130, -- Gold
+				}
+				local icons = {
+					[2] = 6100921, -- Gold
 				}
 
 				ZA.Spells[id] = transforms[transform] or colors[color]
