@@ -1009,6 +1009,8 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Party Bazooka"] = 5,
+			["Bilgewater Defuser"] = 100,
 			["Anti-Anti-Freeze Shredder"] = 100,
 			["Brann Bronzebeard"] = "HUNTER",
 			["Venture Slimetanker"] = 100,
@@ -1160,6 +1162,7 @@ function ZA_UpdateData()
 
 		--! Vehicle Icons
 		ZA.VehicleIcons = {
+			["Party Bazooka"] = 249174,
 			["Venture Slimetanker"] = 6124648,
 			["The Skypiercer"] = 1519491,
 			["Surging Torrent"] = 4554463,
@@ -1711,6 +1714,9 @@ function ZA_UpdateData()
 			[384605] = "Blood of the Khanguard: Armor", -- Blood of the Khansguard
 			[384658] = "Supernatural: Health", -- Burgeoning Seed
 			[345231] = "Gladiator's Emblem: Health", -- Gladiator's Emblem
+
+			-- Battle for Azeroth
+			[299869] = true, -- Modular Platinum Plating
 
 			-- Burning Crusade
 			[40464] = "Protector's Vigor: Health", -- Shadowmoon Insignia
@@ -2471,6 +2477,8 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[434696] = "Zone", -- Stormrooks Favor [sic]
+			[472737] = "Zone", -- S4F3-T Inspection
 			[473218] = "Zone", -- Delver's Bounty
 			[463534] = "Zone", -- Obsidian Blessing
 			[472448] = "Zone", -- Carrying an Unconcious Goblin
@@ -3180,6 +3188,8 @@ function ZA_UpdateData()
 			[274742] = 722, -- Might of the Blackrock
 
 			-- The War Within
+			-- 11.1
+			[1219102] = 803, -- Ringing Ritual Mud
 			-- 10.0.7
 			[472360] = 326, -- Wayward Vrykul's Lantern
 			[472228] = 321, -- Cursed Pirate Skull
@@ -3404,6 +3414,7 @@ function ZA_UpdateData()
 			[330367] = 203, -- Inscrutable Quantum Device
 
 			-- Battle for Azeroth
+			[299869] = 812, -- Modular Platinum Plating
 			[345548] = 102, -- Spare Meat Hook
 			[268998] = 413, -- Balefire Branch
 			[290032] = 3, -- Hymnal of the 7th Legion
@@ -3628,6 +3639,52 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[446325] = 811, -- Feather Storm
+			[458254] = 800, -- Stormrider's Charge
+			[458082] = 800, -- Stormrider's Charge
+			[458089] = 800, -- Stormrider's Charge
+			[458088] = 800, -- Stormrider's Charge
+			[458130] = 800, -- Stormrider's Charge
+			[458083] = 800, -- Stormrider's Charge
+			[458079] = 800, -- Stormrider's Charge
+			[442345] = 9, -- Storm's Vengeance
+			[460194] = 9, -- Storm's Vengeance
+			[423839] = 9, -- Storm's Vengeance
+			[424371] = 9, -- Storm's Vengeance
+			[460190] = 9, -- Storm's Vengeance
+			[442355] = 9, -- Storm's Vengeance
+			[442456] = 9, -- Storm's Vengeance
+			[1214546] = 331, -- Umbral Wave
+			[1214550] = 331, -- Umbral Wave
+			[474425] = 331, -- Umbral Wave
+			[474423] = 331, -- Umbral Wave
+			[474422] = 331, -- Umbral Wave
+			[472764] = 32, -- Void Extraction
+			[474107] = 330, -- Unleash Darkness
+			[474104] = 330, -- Unleash Darkness
+			[474123] = 330, -- Unleash Darkness
+			[1214631] = 330, -- Unleash Darkness
+			[1214628] = 330, -- Unleash Darkness
+			[1214523] = 34, -- Feasting Void
+			[1214523] = 34, -- Feasting Void
+			[444123] = 800, -- Lightning Torrent
+			[444123] = 800, -- Lightning Torrent
+			[444034] = 800, -- Lightning Torrent
+			[395497] = 800, -- Wild Lightning
+			[395497] = 800, -- Wild Lightning
+			[1214327] = 800, -- Wild Lightning
+			[474016] = 800, -- Wild Lightning
+			[395503] = 800, -- Wild Lightning
+			[395508] = 800, -- Wild Lightning
+			[395493] = 800, -- Wild Lightning
+			[474017] = 800, -- Wild Lightning
+			[474018] = 800, -- Wild Lightning
+			[466904] = 105, -- Harrier's Cry
+			[1215356] = 50, -- Seek and Destrou
+			[463734] = 50, -- Seek and Destrou
+			[1219526] = 50, -- Seek and Destrou
+			[262377] = 50, -- Seek and Destrou
+			[279825] = 50, -- Seek and Destrou
 			[470277] = 999, -- Spew Sludge
 			[470276] = 999, -- Muck Bolt
 			[470276] = 999, -- Black Goo
@@ -19315,7 +19372,7 @@ function ZA_UpdateData()
 			[438274] = 107,
 			[452896] = 101,
 			[452898] = 801,
-			[429832] = 114,
+			[429832] = 100,
 			[438781] = 100,
 			[442196] = 111,
 			[416271] = 4,
@@ -19331,7 +19388,6 @@ function ZA_UpdateData()
 			[249236] = 202,
 			[253032] = 320,
 			[455805] = 803,
-			[429832] = 114,
 			[1215418] = 100,
 			[472219] = 200,
 			[463623] = 111,
@@ -19481,6 +19537,13 @@ function ZA_UpdateData()
 			[468171] = 100,
 			[470777] = 64,
 			[470986] = 100,
+			[469242] = 814,
+			[1217117] = 100,
+			[1221220] = 100,
+			[469296] = 100,
+			[472748] = 646,
+			[469281] = 5,
+			[469383] = 100,
 			--qqq
 
 
@@ -23554,6 +23617,73 @@ function ZA_UpdateData()
 			[391089] = 8, -- Refine Herbs - ⬥⬥⬥
 
 			--! Inscription
+			-- Khaz Algar
+			[444181] = 900, -- Khaz Algar Milling
+			[444338] = 112, -- Algari Competitor's Emblem
+			[444337] = 112, -- Algari Competitor's Insignia of Alacrity
+			[455006] = 3, -- Algari Competitor's Lamp
+			[444336] = 112, -- Algari Competitor's Medallion
+			[455007] = 133, -- Algari Competitor's Pillar
+			[455008] = 3, -- Algari Competitor's Staff
+			[444232] = 114, -- Algari Missive of Crafting Speed
+			[444235] = 114, -- Algari Missive of Deftness
+			[444233] = 114, -- Algari Missive of Finesse
+			[444229] = 114, -- Algari Missive of Ingenuity
+			[444231] = 114, -- Algari Missive of Multicraft
+			[444234] = 114, -- Algari Missive of Perception
+			[444230] = 114, -- Algari Missive of Resourcefulness
+			[444210] = 114, -- Algari Missive of the Aurora
+			[444211] = 114, -- Algari Missive of the Feverflare
+			[444212] = 114, -- Algari Missive of the Fireflash
+			[444213] = 114, -- Algari Missive of the Harmonious
+			[444214] = 114, -- Algari Missive of the Peerless
+			[444215] = 114, -- Algari Missive of the Quickblade
+			[444187] = 114, -- Algari Treatise on Alchemy
+			[444184] = 114, -- Algari Treatise on Blacksmithing
+			[444188] = 114, -- Algari Treatise on Enchanting
+			[444223] = 114, -- Algari Treatise on Engineering
+			[444182] = 114, -- Algari Treatise on Herbalism
+			[447868] = 114, -- Algari Treatise on Inscription
+			[444189] = 114, -- Algari Treatise on Jewelcrafting
+			[444185] = 114, -- Algari Treatise on Leatherworking
+			[444183] = 114, -- Algari Treatise on Mining
+			[444236] = 114, -- Algari Treatise on Skinning
+			[444186] = 114, -- Algari Treatise on Tailoring
+			[444222] = 6, -- Apricate Ink
+			[444191] = 5, -- Boundless Cipher
+			[444208] = 154, -- Burnt Rolling Pin
+			[444190] = 18, -- Codified Greenwood
+			[444217] = 114, -- Contract: Assembly of the Deeps
+			[444220] = 114, -- Contract: Council of Dornogal
+			[444218] = 114, -- Contract: Hallowfall Arathi
+			[471132] = 114, -- Contract: The Cartels of Undermine
+			[444219] = 114, -- Contract: The Severed Threads
+			[444192] = 32, -- Darkmoon Sigil: Ascension
+			[444193] = 6, -- Darkmoon Sigil: Radiance
+			[444194] = 120, -- Darkmoon Sigil: Symbiosis
+			[444195] = 240, -- Darkmoon Sigil: Vivacity
+			[1213515] = "ROGUE", -- Glyph of the Admiral's Pistol Shot
+			[1213517] = "ROGUE", -- Glyph of the Ashvane Pistol Shot
+			[1213514] = "ROGUE", -- Glyph of the Gilded Pistol Shot
+			[1213512] = "ROGUE", -- Glyph of the Twilight Pistol Shot
+			[444206] = 116, -- Hasty Alchemist's Mixing Rod
+			[444201] = 154, -- Inquisitor's Baton
+			[444200] = 154, -- Inquisitor's Crutch
+			[444196] = 3, -- Inquisitor's Torch
+			[444209] = 154, -- Inscribed Rolling Pin
+			[444204] = 811, -- Lightweight Scribe's Quill
+			[444207] = 116, -- Patient Alchemist's Mixing Rod
+			[444221] = 32, -- Shadow Ink
+			[444205] = 811, -- Silver Tongue's Quill
+			[444224] = 32, -- Transcribe: Ascension
+			[444227] = 6, -- Transcribe: Radiance
+			[444226] = 120, -- Transcribe: Symbiosis
+			[444225] = 240, -- Transcribe: Vivacity
+			[444199] = 5, -- Vagabond's Bounding Baton
+			[444198] = 5, -- Vagabond's Careful Crutch
+			[444197] = 5, -- Vagabond's Torch
+			[472951] = 5, -- Vantus Rune: Liberation of Undermine
+			[444203] = 5, -- Vantus Rune: Nerub-ar Palace
 			-- Dragon Isles
 			[425263] = 114, -- Contract: Dream Wardens
 			[429149] = "DRUID", -- Glyph of the Lunar Chameleon
@@ -24266,6 +24396,70 @@ function ZA_UpdateData()
 			[92026]  = 804, -- Vanishing Powder
 
 			--! Jewelcrafting
+			-- Khaz Algar
+			[435337] = 817, -- Algari Amber Prism
+			[435387] = 818, -- Algari Competitor's Amulet
+			[435386] = 818, -- Algari Competitor's Signet
+			[434020] = 808, -- Algari Crushing
+			[435338] = 815, -- Algari Emerald Prism
+			[435369] = 813, -- Algari Onyx Prism
+			[435339] = 818, -- Algari Ruby Prism
+			[435370] = 814, -- Algari Sapphire Prism
+			[435385] = 117, -- Amulet of Earthen Craftsmanship
+			[435391] = 808, -- Beautification Iris
+			[435382] = 817, -- Binding of Binding
+			[435333] = 816, -- Captured Starlight
+			[435321] = 820, -- Cognitive Bloodstone
+			[435392] = 812, -- Cubic Blasphemia
+			[435318] = 812, -- Culminating Blasphemite
+			[434537] = 817, -- Deadly Amber
+			[434541] = 815, -- Deadly Emerald
+			[434545] = 813, -- Deadly Onyx
+			[434549] = 818, -- Deadly Ruby
+			[434553] = 814, -- Deadly Sapphire
+			[435325] = 808, -- Decorative Lens
+			[435322] = 820, -- Determined Bloodstone
+			[435331] = 808, -- Elemental Focusing Lens
+			[435319] = 812, -- Elusive Blasphemite
+			[435374] = 200, -- Enchanter's Crystal
+			[435320] = 820, -- Enduring Bloodstone
+			[435324] = 809, -- Engraved Gemcutter
+			[435372] = 808, -- Extravagant Loupes
+			[435376] = 808, -- Forger's Font Inspector
+			[435383] = 808, -- Fractured Gemstone Locket
+			[435323] = 808, -- Gilded Vial
+			[435373] = 200, -- Incanter's Shard
+			[435230] = 812, -- Insightful Blasphemite
+			[435327] = 808, -- Inverted Prism
+			[435334] = 137, -- Magnificent Jeweler's Setting
+			[435379] = 140, -- Malleable Band
+			[435380] = 140, -- Malleable Pendant
+			[435326] = 809, -- Marbled Stone
+			[434539] = 817, -- Masterful Amber
+			[434543] = 815, -- Masterful Emerald
+			[434547] = 813, -- Masterful Onyx
+			[434551] = 818, -- Masterful Ruby
+			[434555] = 814, -- Masterful Sapphire
+			[435378] = 808, -- Novelist's Specs
+			[435330] = 816, -- Ominous Energy Crystal
+			[435332] = 808, -- Prismatic Null Stone
+			[434538] = 817, -- Quick Amber
+			[434542] = 815, -- Quick Emerald
+			[434546] = 813, -- Quick Onyx
+			[434550] = 818, -- Quick Ruby
+			[434554] = 814, -- Quick Sapphire
+			[435371] = 808, -- Radiant Loupes
+			[435389] = 809, -- Remembrance Stone
+			[435375] = 808, -- Right-Handed Magnifying Glass
+			[435384] = 117, -- Ring of Earthen Craftsmanship
+			[435329] = 804, -- Sifted Cave Sand
+			[434536] = 817, -- Solid Amber
+			[435377] = 808, -- Storyteller's Glasses
+			[434540] = 817, -- Versatile Amber
+			[434544] = 815, -- Versatile Emerald
+			[434548] = 813, -- Versatile Onyx
+			[434552] = 818, -- Versatile Ruby
+			[434563] = 814, -- Versatile Sapphire
 			-- Dragon Isles
 			[420740] = 120, -- Dreamtender's Charm
 			[419005] = 813, -- Verdant Combatant's Jeweled Signet
@@ -31063,6 +31257,10 @@ function ZA_UpdateData()
 			[468171] = 0,
 			[470777] = 0,
 			[470986] = 0,
+			[1217117] = 0,
+			[1221220] = 0,
+			[469296] = 0,
+			[469383] = 0,
 			--qqi
 
 
