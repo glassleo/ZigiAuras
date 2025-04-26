@@ -435,6 +435,7 @@ function ZA_UpdateData()
 			[324] = "c46d7c", -- Corruption
 			[412] = "f22e53", -- Nightmare
 			[417] = "e33d82", -- Black Blood
+			[418] = "e1edf5", -- Soul
 			[321] = "f90000", -- Blood
 			[322] = "b15e4b", -- Pain
 			[323] = "717c95", -- Haunt
@@ -599,6 +600,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[1223041] = "Teleport: Incontinental Hotel", -- Gallagio Loyalty Rewards Card
 			[455392] = "Darkmoon Deck: Symbiosis",
 			[455393] = "Darkmoon Deck: Radiance",
 			[455394] = "Darkmoon Deck: Ascension",
@@ -920,6 +922,7 @@ function ZA_UpdateData()
 			[324] = "6e1b3e:ec9da2", -- Corruption
 			[412] = "5d243a:ff273b", -- Nightmare
 			[417] = "4a0435:d63678", -- Black Blood
+			[418] = "7aabbf:e1edf5", -- Soul
 			[327] = "b31416:7920d4", -- Fear
 			[329] = "13192e:c2f1fc", -- Dread
 			[96]  = "320057:9330ff", -- Runic (Spellshadow)
@@ -1009,13 +1012,14 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Uther the Lightbringer"] = "PALADIN",
 			["Party Bazooka"] = 5,
 			["Bilgewater Defuser"] = 100,
 			["Anti-Anti-Freeze Shredder"] = 100,
 			["Brann Bronzebeard"] = "HUNTER",
 			["Venture Slimetanker"] = 100,
 			["Hotwired B.I.R.D."] = 100,
-			["Pamsys's Rocketboard"] = 100,
+			["Pamsy's Rocketboard"] = 100,
 			["The Skypiercer"] = 100,
 			["TR-06 Pummeler"] = 100,
 			["Harvestbot Remy"] = 100,
@@ -1235,6 +1239,8 @@ function ZA_UpdateData()
 
 
 		ZA.TrinketOverlayAuras = {
+			[230190] = 472787, -- Torq's Big Red Button
+			[230193] = "467492,467497", -- Mister Lock-N-Stalk
 			[212449] = "447978,448036,447962", -- Sikran's Endless Arsenal
 			[220202] = 451199, -- Spymaster's Web
 			[212452] = 452816, -- Gruesome Syringe
@@ -1276,6 +1282,9 @@ function ZA_UpdateData()
 		}
 
 		ZA.TrinketOverlayStacks = {
+			[230190] = 472787, -- Torq's Big Red Button
+			[230194] = 1216212, -- Reverb Radio
+			[230198] = 469889, -- Eye of Kezan
 			[212449] = 448433, -- Sikran's Endless Arsenal
 			[220202] = 451199, -- Spymaster's Web
 			[212452] = 452816, -- Gruesome Syringe
@@ -1299,10 +1308,33 @@ function ZA_UpdateData()
 			[274742] = "Blackrock: Versatility",
 
 			-- The War Within
-			-- 10.0.7
+			-- 11.1.5
+			[1223887] = "Hallowed Tome: Haste", -- Hallowed Tome of the Abbot
+			[1223898] = "Hallowed Tome: Critical Strike", -- Hallowed Tome of the Zealot
+			[1223901] = "Hallowed Tome: Versatility", -- Hallowed Tome of the Crusader
+			[1223903] = "Hallowed Tome: Mastery", -- Hallowed Tome of the Cleric
+			-- 11.1
+			[472787] = "Torq's Big Red Button: Strength", -- Torq's Big Red Button
+			[1216650] = "Suspicious Energy Drink: Mastery", -- Suspicious Energy Drink
+			[472167] = "Scrapfield 9001 Overload: Haste", -- Scrapfield 9001
+			[1216212] = "Hyped: Haste", -- Reverb Radio
+			[474285] = "Moxie Frenzy: Critical Strike", -- Mug's Moxie Jug
+			[1214806] = "Mechano-Core Amplifier: Critical Strike", -- Mechano-Core Amplifier
+			[1214807] = "Mechano-Core Amplifier: Haste", -- Mechano-Core Amplifier
+			[1214808] = "Mechano-Core Amplifier: Mastery", -- Mechano-Core Amplifier
+			[1214810] = "Mechano-Core Amplifier: Versatility", -- Mechano-Core Amplifier
+			[1218713] = "Explosive Adrenaline: Critical Strike", -- Improvised Seaforium Pacemaker
+			[466681] = "House of Cards: Mastery", -- House of Cards
+			[1213434] = "Funhouse Lens: Haste", -- Funhouse Lens
+			[1213433] = "Funhouse Lens: Critical Strike", -- Funhouse Lens
+			[1216774] = "Abyssal Volt: Haste", -- Abyssal Volt (external)
+			[1216770] = "Abyssal Volt: Haste", -- Abyssal Volt (self)
+			[473147] = true, -- Flarendo's Pilot Light (Pilot Light Charging)
+			[471142] = "Flarendo's Pilot Light: Intellect", -- Flarendo's Pilot Light
+			-- 11.0.7
 			[472360] = "Wayward Vrykul's Lantern: Critical Strike", -- Wayward Vrykul's Lantern
 			[472228] = true, -- Cursed Pirate Skull
-			-- 10.0
+			-- 11.0
 			[444301] = true, -- Swarmlord's Authority (Ravenous Swarm)
 			[438753] = "Horn of Declaration: Mastery", -- Horn of Declaration
 			[450962] = "Void Pactstone: Haste", -- Void Pactstone
@@ -1670,6 +1702,8 @@ function ZA_UpdateData()
 
 		ZA.TrinketDebuffs = {
 			-- The War Within
+			[1216605] = true, -- Ratfang Toxin
+			--[1216604] = true, -- Ratfang Toxin (stacking DoT)
 			[445434] = true, -- Surekian Flourish (Sikran's Endless Arsenal)
 			[447471] = true, -- Volatile Acid (Skyterror's Corrosive Organ)
 			[449892] = true, -- Nerubian Venom-Tipped Dart
@@ -1716,6 +1750,7 @@ function ZA_UpdateData()
 			[345231] = "Gladiator's Emblem: Health", -- Gladiator's Emblem
 
 			-- Battle for Azeroth
+			[300140] = "Anodized Deflectors: Parry & Avoidance", -- Anodized Deflectors
 			[299869] = true, -- Modular Platinum Plating
 
 			-- Burning Crusade
@@ -1876,6 +1911,9 @@ function ZA_UpdateData()
 			[390655] = true, -- Stone Turtle's Blessing
 			[390869] = true, -- Sea Turtle's Blessing
 
+			-- Delves
+			[442522] = true, -- Well Fed
+
 			-- Shadowlands
 			[338041] = true, -- Lone Spirit
 			[326967] = true, -- Kindred Spirits
@@ -1907,6 +1945,7 @@ function ZA_UpdateData()
 			["Travel Form"] = true,
 			["Aquatic Form"] = true,
 			["Flight Form"] = true,
+			[474754] = true, -- Symbiotic Relationship
 
 			-- Evoker
 			[410318] = true, -- Bestow Weyrnstone
@@ -1966,6 +2005,7 @@ function ZA_UpdateData()
 			--! Consumable Auras
 
 			["Well Fed"] = true,
+			["Herty Well Fed"] = true,
 			[20707] = true, -- Soulstone
 
 
@@ -2218,6 +2258,7 @@ function ZA_UpdateData()
 			[442983] = "Reputation", -- Vizier's Savvy
 			[462806] = "Reputation", -- Vizier's Supremacy
 			[462810] = "Reputation", -- Weaver's Prodigy
+			[1227124] = "Reputation", -- Sacred Flame's Ward
 
 			-- Contract/Envoy
 			["Contract: The Cartels of Undermine"] = true,
@@ -2275,6 +2316,7 @@ function ZA_UpdateData()
 			["Sign of the Legion"] = true,
 			["Sign of the Past"] = true,
 			["Sign of the Explorer"] = true,
+			["Winds of Mysterious Fortune"] = true,
 			[424143] = true, -- WoW Remix: Mists of Pandaria
 
 
@@ -2477,6 +2519,20 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1214339] = "Zone", -- Shards of the Not So Unbreakable Iron Idol
+			[1215320] = "Zone", -- Prototype Heroism Cannister
+			[1228333] = "Zone", -- Liquid Divination
+			[423851] = "Zone", -- Construct Canker
+			[474630] = "Zone", -- Diving Suit
+			[1215287] = "Zone", -- Silencing Potion
+			[1214336] = "Zone", -- Shard of Porcelain Arrowhead Idol
+			[423852] = "Zone", -- Dormouse Ecila
+			[1221399] = "Zone", -- Bioprint II
+			[1221350] = "Zone", -- Bioprint I
+			[1214350] = "Zone", -- Massive Shards of Amorphous Relic
+			[1214334] = "Zone", -- Miniature Shards of Amorphous Relic
+			[1215327] = "Zone", -- Shield Alert Version 0.76
+			[1215327] = "Zone", -- Shield Alert Version 0.76
 			[434696] = "Zone", -- Stormrooks Favor [sic]
 			[472737] = "Zone", -- S4F3-T Inspection
 			[473218] = "Zone", -- Delver's Bounty
@@ -3188,7 +3244,42 @@ function ZA_UpdateData()
 			[274742] = 722, -- Might of the Blackrock
 
 			-- The War Within
+			-- 11.1.5
+			[1223887] = 6, -- Hallowed Tome of the Abbot
+			[1223898] = 6, -- Hallowed Tome of the Zealot
+			[1223901] = 6, -- Hallowed Tome of the Crusader
+			[1223903] = 6, -- Hallowed Tome of the Cleric
 			-- 11.1
+			[300140] = 108, -- Anodized Deflectors
+			[1219104] = 100, -- Darkfuse Medichopper
+			[472350] = 800, -- Turbo-Drain 5000
+			[472787] = 117, -- Torq's Big Red Button
+			[472787] = 9, -- Torq's Big Red Button (Tempest Charged)
+			[1216650] = 417, -- Suspicious Energy Drink
+			[466673] = 9, -- Scrapfield 9001 (Vortex)
+			[472171] = 100, -- Scrapfield 9001 (Recharging)
+			[472172] = 100, -- Scrapfield 9001 (Imminent Overload)
+			[472167] = 800, -- Scrapfield 9001 (Overload)
+			[1216212] = 111, -- Reverb Radio
+			[1215336] = 104, -- Papa's Prized Putter
+			[1216921] = 999, -- Ominous Oil Residue
+			[474285] = 417, -- Mug's Moxie Jug
+			[1214806] = 111, -- Mechano-Core Amplifier (Critical Strike)
+			[1214807] = 111, -- Mechano-Core Amplifier (Haste)
+			[1214808] = 111, -- Mechano-Core Amplifier (Mastery)
+			[1214810] = 111, -- Mechano-Core Amplifier (Versatility)
+			[1218713] = 5, -- Improvised Seaforium Pacemaker
+			[466681] = 417, -- House of Cards
+			[1213434] = 3, -- Funhouse Lens (Haste)
+			[1213433] = 808, -- Funhouse Lens (Critical Strike)
+			[469889] = 5, -- Eye of Kezan
+			[466810] = 5, -- Chromebustible Bomb Suit
+			[1216774] = 9, -- Abyssal Volt (external)
+			[1216770] = 9, -- Abyssal Volt (self)
+			[473147] = 50, -- Flarendo's Pilot Light (Pilot Light Charging)
+			[471142] = 4, -- Flarendo's Pilot Light
+			[1216606] = 806, -- Ratfang Toxin
+			[1216604] = 906, -- Ratfang Toxin
 			[1219102] = 803, -- Ringing Ritual Mud
 			-- 10.0.7
 			[472360] = 326, -- Wayward Vrykul's Lantern
@@ -3250,7 +3341,7 @@ function ZA_UpdateData()
 			[449954] = 328, -- Treacherous Transmitter
 			[443407] = 320, -- Skarmorak Shard
 			[445560] = 143, -- Ovi'nax's Mercurial Egg (Suspended Incubation)
-			[448730] = 6, -- Authority of Radiant Power
+			[448730] = 2, -- Authority of Radiant Power
 			[268769] = 100, -- Dead-Eye Spyglass
 			[455482] = 143, -- Imperfect Ascendancy Serum
 			[452146] = 143, -- Ara-Kara Sacbrood
@@ -3639,6 +3730,166 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[154889] = 400, -- Jumping Smash
+			[154891] = 400, -- Jumping Smash
+			[470756] = 400, -- Jump Smash
+			[470727] = 400, -- Jump Smash
+			[466991] = 411, -- Withering Fire
+			[473149] = 112, -- Thwack!
+			[429545] = 320, -- Censoring Gear
+			[445251] = 101, -- Rupturing Bite
+			[468572] = 330, -- Black Arrow
+			[1216784] = 911, -- Forward Charge
+			[1216790] = 911, -- Forward Charge
+			[1216794] = 50, -- Alpha Cannon
+			[470290] = 999, -- Muck Bolt
+			[63226] = 806, -- Poison Breath
+			[470826] = 806, -- Poison Breath
+			[470827] = 806, -- Poison Breath
+			[454831] = 806, -- Poison Breath
+			[48133] = 806, -- Poison Breath
+			[63551] = 806, -- Poison Breath
+			[59271] = 806, -- Poison Breath
+			[144892] = 806, -- Poison Breath
+			[454832] = 806, -- Poison Breath
+			[470845] = 806, -- Slobber Volley
+			[470846] = 806, -- Slobber Volley
+			[470847] = 806, -- Slobber Volley
+			["Door opens"] = 100, -- BigWigs
+			["Door open"] = 100, -- BigWigs
+			[355425] = 418, -- Soul's Swiftness
+			[1226941] = 327, -- Fear the Dark
+			[459849] = 400, -- Skewering Spikes
+			[459852] = 400, -- Skewering Spikes
+			[470388] = 400, -- Skewering Spikes
+			[459853] = 400, -- Skewering Spikes
+			[470399] = 400, -- Skewering Spikes
+			[470402] = 400, -- Skewering Spikes
+			[214787] = 416, -- Spawn Hatchlings
+			[214792] = 416, -- Spawn Hatchlings
+			[470368] = 416, -- Spawn Hatchlings
+			[470366] = 416, -- Spawn Hatchlings
+			[470374] = 416, -- Spawn Hatchlings
+			[470711] = 143, -- Web Grip
+			[470569] = 143, -- Web Grip
+			[470515] = 143, -- Web Grip
+			[470561] = 143, -- Web Grip
+			[470563] = 143, -- Web Grip
+			[470565] = 143, -- Web Grip
+			[470567] = 143, -- Web Grip
+			[470576] = 143, -- Web Grip
+			[470583] = 143, -- Web Grip
+			[470584] = 143, -- Web Grip
+			[470585] = 143, -- Web Grip
+			[470586] = 143, -- Web Grip
+			[470708] = 143, -- Web Grip
+			[470321] = 417, -- Forced Evulsion
+			[470308] = 417, -- Forced Evulsion
+			[470339] = 400, -- Frenzied Burrow
+			[470335] = 400, -- Frenzied Burrow
+			[470357] = 400, -- Frenzied Burrow
+			[470336] = 400, -- Frenzied Burrow
+			[462510] = 320, -- Dark Prayer
+			[462508] = 320, -- Dark Prayer
+			[1214607] = 5, -- Bigger Badder Bomb Blast
+			[1214229] = 100, -- Armageddon-class Plating
+			[1214369] = 800, -- TOTAL DESTRUCTION!!!
+			[1217987] = 417, -- Combination Canisters
+			[1220761] = 417, -- Mechgineer's Canisters
+			[465952] = 5, -- Big Bad Buncha Bombs
+			[466154] = 4, -- Blast Burns
+			[466153] = 5, -- Bad Belated Boom
+			[466165] = 5, -- 1500-Pound "Dud"
+			[466246] = 5, -- Focused Detonation
+			[1217292] = 5, -- Time-Release Crackle
+			[1222831] = 800, -- Overloaded Coils
+			[466751] = 4, -- Venting Heat
+			[467182] = 5, -- Suppression
+			[1224669] = 50, -- Gatling Cannon
+			[471225] = 50, -- Gatling Cannon
+			[266171] = 5, -- Gatling Gun
+			[1214798] = 50, -- Gatling Gun
+			[1214809] = 50, -- Gatling Gun
+			[1214813] = 50, -- Gatling Gun
+			[260279] = 50, -- Gatling Gun
+			[260280] = 50, -- Gatling Gun
+			[1218513] = 800, -- Giga Blast Residue
+			[1218504] = 800, -- Giga Blast Residue
+			[469327] = 800, -- Giga Blast
+			[469326] = 800, -- Giga Blast
+			[469290] = 800, -- Giga Blast
+			[471341] = 800, -- Giga Blast
+			[1217953] = 800, -- Giga Blast
+			[1218438] = 100, -- Chew Scrap
+			[1218462] = 40, -- Trash Heap Volley
+			[1218461] = 40, -- Trash Heap Volley
+			[473910] = 999, -- Oil Splatter
+			[69871] = 40, -- Plague Stream
+			[1218716] = 5, -- K.U.-J.O.'s Flame Vents
+			[471214] = 282, -- Gallagio Bottle Service
+			[1216937] = 5, -- Underpin's Grand Entrance
+			[1214455] = 320, -- Make It Rain!
+			[1214453] = 320, -- Make It Rain!
+			[1214457] = 320, -- Make It Rain!
+			[1214135] = 320, -- Make It Rain!
+			[1214504] = 417, -- Goblin Ingenuity
+			[474206] = 32, -- Shadow Stomp
+			[474223] = 330, -- Concussive Smash
+			[466303] = 911, -- Wild Charge
+			[472980] = 111, -- Deafening Shriek
+			[1223041] = 646, -- Gallagio Loyalty Rewards Card
+			[1217311] = 911, -- Kick to the Shins
+			[1217302] = 5, -- Heedless Charge
+			[1217300] = 5, -- Heedless Charge
+			[1217301] = 5, -- Heedless Charge
+			[1217303] = 5, -- Heedless Charge
+			[473924] = 999, -- Expel Slime
+			[473925] = 999, -- Expel Slime
+			[473927] = 999, -- Expel Slime
+			[470392] = 908, -- Slime Bolt
+			[32309] = 806, -- Slime Bolt
+			[28311] = 806, -- Slime Bolt
+			[1218527] = 999, -- Slime Bolt
+			[470379] = 999, -- Slime Bolt
+			[1218533] = 999, -- Slime Bolt
+			[449290] = 321, -- Devour
+			[471176] = 906, -- Digestive Spittle
+			[458406] = 327, -- Dreadful Fumes
+			[458408] = 327, -- Dreadful Fumes
+			[1213785] = 400, -- Tear it Down
+			[1213776] = 325, -- Hopeless Curse
+			[1213838] = 50, -- Unanswered Call
+			[1213700] = 50, -- Unanswered Call
+			[1218061] = 5, -- Gold Fuse
+			[474160] = 417, -- Viscous Bite
+			[474007] = 417, -- Volatile Eruption
+			[474006] = 417, -- Unstable
+			[474325] = 330, -- Abyssal Grasp
+			[474511] = 330, -- Shadow Smash
+			[474482] = 320, -- Lure to the Void
+			[474201] = 101, -- Gore
+			[474008] = 417, -- Spew Blood
+			[446832] = 806, -- Infusion of Poison
+			[1215870] = 911, -- Sprocket Smash
+			[460046] = 800, -- Shock Maintenance
+			[1215791] = 800, -- Shock Maintenance
+			[469428] = 800, -- Shock Maintenance
+			[1215792] = 800, -- Shock Maintenance
+			[1215773] = 800, -- Shock Maintenance
+			[460489] = 800, -- Shock Maintenance
+			[460454] = 800, -- Shock Maintenance
+			[460061] = 800, -- Shock Maintenance
+			[460044] = 800, -- Shock Maintenance
+			[1215374] = 800, -- Shock Maintenance
+			[469273] = 800, -- Shock Maintenance
+			[1215337] = 5, -- Clanker Bomb
+			[1215337] = 5, -- Clanker Bomb
+			[473686] = 100, -- Cogstorm
+			[473684] = 100, -- Cogstorm
+			[473691] = 100, -- Spanner Slam
+			[157375] = 9, -- Stormfury
+			[1217413] = 811, -- Slicing Winds
+			[433925] = 105, -- Essence of the Blood Queen
 			[446325] = 811, -- Feather Storm
 			[458254] = 800, -- Stormrider's Charge
 			[458082] = 800, -- Stormrider's Charge
@@ -4207,6 +4458,8 @@ function ZA_UpdateData()
 			[1213832] = 325, -- Bloodbathe
 			[1213797] = 325, -- Bloodbathe
 			[1219698] = 16, -- Chilled
+			[1213959] = 417, -- Wretched Spew
+			[1213928] = 417, -- Wretched Spew
 			[470403] = 417, -- Slime Bolt
 			[471669] = 417, -- Slimy Membrane
 			[471662] = 417, -- Congealed Shadow
@@ -4944,7 +5197,7 @@ function ZA_UpdateData()
 			[358770] = 329, -- Excruciating Pain
 			[357083] = 411, -- Black Bolt
 			[358980] = 411, -- Dark Wind
-			[358963] = 329, -- Eternal Torture
+			[358963] = 418, -- Eternal Torture
 			[357280] = 321, -- Fountain of Pain
 			[357135] = 321, -- Rage Bolt
 			[49453]  = 100, -- Wolvar Net
@@ -5592,6 +5845,7 @@ function ZA_UpdateData()
 			[306996] = 331, -- Gift of the Void
 			[310224] = 320, -- Annihilation
 			[307403] = 320, -- Annihilation
+			[1235583] = 320, -- Void Bolt
 			[430238] = 320, -- Void Bolt
 			[430288] = 320, -- Crushing Darkness
 			[430282] = 320, -- Crushing Darkness
@@ -5713,13 +5967,6 @@ function ZA_UpdateData()
 			[451702] = 903, -- Discard Weaklings
 			[450929] = 911, -- Mountain's Grasp
 			[400050] = 101, -- Claw Rip
-			[454831] = 806, -- Poison Breath
-			[454832] = 806, -- Poison Breath
-			[144892] = 806, -- Poison Breath
-			[63226]  = 806, -- Poison Breath
-			[63551]  = 806, -- Poison Breath
-			[48133]  = 806, -- Poison Breath
-			[59271]  = 806, -- Poison Breath
 			[446519] = 103, -- Stampeding Bellow
 			[448634] = 400, -- Impale
 			[448632] = 400, -- Impale
@@ -6517,8 +6764,9 @@ function ZA_UpdateData()
 			[440550] = 100, -- Holding Supplies
 			[372369] = 100, -- Shoot
 			[431659] = 32, -- Shadow Bolt
-			[470587] = 48, -- Abyssal Surge
-			[440615] = 48, -- Abyssal Surge
+			[446079] = 900, -- Call of the Abyss
+			[470587] = 900, -- Abyssal Surge
+			[440615] = 900, -- Abyssal Surge
 			[470588] = 325, -- Curse of the Depths
 			[440622] = 325, -- Curse of the Depths
 			[446261] = 325, -- Eye of Dread
@@ -10551,11 +10799,11 @@ function ZA_UpdateData()
 			["Captive Tides"] = 801,
 			["Capturing:132487"] = ZA.AH(814, 818),
 			["Careful Swing"] = 109,
-			["Carrion Beam"] = 127,
-			["Carrion Eruption"] = 40,
-			["Carrion Plague"] = 40,
-			["Carrion Slam"] = 40,
-			["Carrion Swarm"] = 40,
+			["Carrion Beam"] = 416,
+			["Carrion Eruption"] = 416,
+			["Carrion Plague"] = 416,
+			["Carrion Slam"] = 416,
+			["Carrion Swarm"] = 416,
 			["Carrying the Wounded"] = 117,
 			["Carve and Spit"] = 102,
 			["Carve:136202"] = 96,
@@ -12202,12 +12450,14 @@ function ZA_UpdateData()
 			["Greater Earth Elemental"] = 803,
 			["Greater Fade"] = 720,
 			["Lesser Fire Elemental"] = 4,
+			["Lesser Primal Fire Elemental"] = 4,
 			["Greater Fire Elemental"] = 4,
 			["Greater Invisibility"] = 720,
 			["Plane Displacer"] = 720,
 			["Greater Polymorph"] = 646,
 			["Candle Confidant"] = 5,
 			["Lesser Storm Elemental"] = 911,
+			["Lesser Primal Storm Elemental"] = 911,
 			["Lesser Lightning Elemental"] = 9,
 			["Greater Storm Elemental"] = 911,
 			["Greater Lightning Elemental"] = 9,
@@ -12789,6 +13039,8 @@ function ZA_UpdateData()
 			["Master Marksman"] = 101,
 			["Master of Death:3163624"] = 32,
 			["Master of the Elements"] = 280,
+			[54216] = 10, -- Master's Call
+			[1224810] = 10, -- Master's Call
 			["Master's Call"] = 10,
 			[341199] = 100, -- Shoot
 			[341323] = 321, -- Repelling Shot
@@ -14275,8 +14527,8 @@ function ZA_UpdateData()
 			["Sorrowful Burden"] = 325,
 			["Soul Barrier"] = 32,
 			["Soul Blast"] = 411,
-			["Soul Bolt Volley"] = 411,
-			["Soul Bolt"] = 411,
+			["Soul Bolt Volley"] = 418,
+			["Soul Bolt"] = 418,
 			["Soul Bolt:631503"] = 413,
 			["Soul Burn:1778228"] = 413,
 			["Soul Charge"] = 32,
@@ -15592,6 +15844,7 @@ function ZA_UpdateData()
 
 			--! D.R.I.V.E.
 			[460013] = 100, -- G-99 Breakneck
+			[1218373] = 100, -- G-99 Breakneck (Libration of Undermine)
 
 			--! Aircraft
 			[247448] = 100, -- Darkmoon Dirigible
@@ -15721,6 +15974,8 @@ function ZA_UpdateData()
 			[395644] = 811, -- Divine Kiss of Ohn'ahra
 			[385262] = 175, -- Duskwing Ohuna
 			-- Raven
+			[1226983] = 150, -- Archmage's Great Raven
+			[1226760] = 819, -- Prophet's Great Raven
 			[231524] = 139, -- Shadowblade's Baneful Omen
 			[231525] = 142, -- Shadowblade's Crimson Omen
 			[231523] = 33, -- Shadowblade's Lethal Omen
@@ -16512,6 +16767,13 @@ function ZA_UpdateData()
 			[374275] = 402, -- Raging Magmammoth
 			[371176] = 80, -- Subterranean Magmammoth
 			[374278] = 6, -- Renewed Magmammoth
+
+			--! Meeksi
+			[473745] = 65, -- Meeksi Brewthief
+			[473743] = 6, -- Meeksi Rollingpaw
+			[473739] = 80, -- Meeksi Rufflefur
+			[473741] = 901, -- Meeksi Softpaw
+			[473744] = 802, -- Meeksi Teatuft
 
 			--! Mole
 			[449258] = 155, -- Ol' Mole Rufus
@@ -17457,7 +17719,7 @@ function ZA_UpdateData()
 			[342040] = 660,
 			[342106] = 201,
 			[342113] = 201,
-			[342127] = 203,
+			[342127] = 418,
 			[342169] = 201,
 			[342188] = 201,
 			[342506] = 326,
@@ -19544,6 +19806,28 @@ function ZA_UpdateData()
 			[472748] = 646,
 			[469281] = 5,
 			[469383] = 100,
+			[1214131] = 800,
+			[474491] = 202,
+			[449461] = 100,
+			[473269] = 320,
+			[473028] = 320,
+			[452385] = 808,
+			[443823] = 100,
+			[470410] = 661,
+			[467448] = 100,
+			[449273] = 806,
+			[472644] = 100,
+			[420810] = 320,
+			[1232961] = 200,
+			[1232960] = 200,
+			[1233354] = 4,
+			[1231576] = 5,
+			[1233382] = 4,
+			[1233307] = 4,
+			[323953] = 418,
+			[1213891] = 100,
+			[1213898] = 100,
+			[1213896] = 100,
 			--qqq
 
 
@@ -22023,6 +22307,94 @@ function ZA_UpdateData()
 			[3115]   = 909, -- Rough Weightstone
 
 			--! Enchanting
+			-- Khaz Algar
+			[445466] = 126, -- Shatter Essence
+			[445364] = 126, -- Algari Deftness
+			[445328] = 126, -- Algari Finesse
+			[445378] = 126, -- Algari Ingenuity
+			[445338] = 64, -- Algari Mana Oil
+			[445380] = 126, -- Algari Perception
+			[445398] = 126, -- Algari Resourcefulness
+			[445331] = 126, -- Authority of Air
+			[445403] = 126, -- Authority of Fiery Resolve
+			[445339] = 126, -- Authority of Radiant Power
+			[445336] = 126, -- Authority of Storms
+			[445341] = 126, -- Authority of the Depths
+			[445335] = 126, -- Cavalry's March
+			[445334] = 126, -- Chant of Armored Avoidance
+			[445325] = 126, -- Chant of Armored Leech
+			[445330] = 126, -- Chant of Armored Speed
+			[445389] = 126, -- Chant of Burrowing Rapidity
+			[445393] = 126, -- Chant of Leeching Fangs
+			[445386] = 126, -- Chant of Winged Grace
+			[445395] = 641, -- Concentration Concentrate
+			[445379] = 126, -- Council's Guile
+			[445322] = 126, -- Council's Intellect
+			[445333] = 126, -- Crystalline Radiance
+			[445394] = 126, -- Cursed Critical Strike
+			[445388] = 126, -- Cursed Haste
+			[445359] = 126, -- Cursed Mastery
+			[445383] = 126, -- Cursed Versatility
+			[445396] = 126, -- Defender's March
+			[445354] = 126, -- Enchanted Gilded Harbinger Crest
+			[445347] = 126, -- Enchanted Runed Harbinger Crest
+			[445324] = 126, -- Enchanted Spearwood Wand
+			[445399] = 126, -- Enchanted Weathered Harbinger Crest
+			[445367] = 126, -- Gleeful Glamour - Blood Elf
+			[445400] = 126, -- Gleeful Glamour - Dark Iron Dwarf
+			[445391] = 126, -- Gleeful Glamour - Draenei
+			[445402] = 126, -- Gleeful Glamour - Dwarf
+			[445382] = 126, -- Gleeful Glamour - Earthen
+			[445362] = 126, -- Gleeful Glamour - Gnome
+			[445332] = 126, -- Gleeful Glamour - Goblin
+			[445377] = 126, -- Gleeful Glamour - Highmountain Tauren
+			[445352] = 126, -- Gleeful Glamour - Human
+			[445342] = 126, -- Gleeful Glamour - Kul Tiran
+			[445343] = 126, -- Gleeful Glamour - Lightforged Draenei
+			[445370] = 126, -- Gleeful Glamour - Mag'har Orc
+			[445357] = 126, -- Gleeful Glamour - Mechagnome
+			[445363] = 126, -- Gleeful Glamour - Night Elf
+			[445390] = 126, -- Gleeful Glamour - Nightborne
+			[445319] = 126, -- Gleeful Glamour - Orc
+			[445365] = 126, -- Gleeful Glamour - Pandaren
+			[445366] = 126, -- Gleeful Glamour - Tauren
+			[445326] = 126, -- Gleeful Glamour - Troll
+			[445350] = 126, -- Gleeful Glamour - Undead
+			[445356] = 126, -- Gleeful Glamour - Void Elf
+			[445329] = 126, -- Gleeful Glamour - Vulpera
+			[445397] = 126, -- Gleeful Glamour - Worgen
+			[445345] = 126, -- Gleeful Glamour - Zandalari Troll
+			[445358] = 126, -- Glimmering Critical Strike
+			[445384] = 126, -- Glimmering Haste
+			[445381] = 126, -- Glimmering Mastery
+			[445340] = 126, -- Glimmering Versatility
+			[445327] = 126, -- Illusory Adornment: Crystal
+			[445401] = 126, -- Illusory Adornment: Radiance
+			[445360] = 126, -- Illusory Adornment: Runes
+			[445337] = 126, -- Illusory Adornment: Shadow
+			[445371] = 646, -- Mirror Powder
+			[445321] = 126, -- Oathsworn's Strength
+			[445351] = 126, -- Oathsworn's Tenacity
+			[445318] = 6, -- Oil of Beledar's Grace
+			[445346] = 906, -- Oil of Deep Toxins
+			[445387] = 126, -- Radiant Critical Strike
+			[445320] = 126, -- Radiant Haste
+			[445375] = 126, -- Radiant Mastery
+			[445349] = 126, -- Radiant Versatility
+			[445361] = 126, -- Runed Bismuth Rod
+			[445372] = 126, -- Runed Ironclaw Rod
+			[445323] = 126, -- Runed Null Stone Rod
+			[445355] = 126, -- Scepter of Radiant Magics
+			[445368] = 126, -- Scout's March
+			[445385] = 126, -- Stonebound Artistry
+			[445353] = 126, -- Stormrider's Agility
+			[445317] = 126, -- Stormrider's Fury
+			[445392] = 126, -- Whisper of Armored Avoidance
+			[445374] = 126, -- Whisper of Armored Leech
+			[445376] = 126, -- Whisper of Armored Speed
+			[445344] = 126, -- Whisper of Silken Avoidance
+			[445348] = 126, -- Whisper of Silken Leech
+			[445373] = 126, -- Whisper of Silken Speed
 			-- Dragon Isles
 			[429947] = 126, -- Enchanted Aspect's Awakened Crest
 			[429945] = 126, -- Enchanted Wyrm's Awakened Crest
@@ -31261,6 +31633,29 @@ function ZA_UpdateData()
 			[1221220] = 0,
 			[469296] = 0,
 			[469383] = 0,
+			[1214131] = 0,
+			[474491] = 0,
+			[449461] = 0,
+			[473269] = 0,
+			[473028] = 0,
+			[452385] = 0,
+			[443823] = 0,
+			[470410] = 0,
+			[467448] = 0,
+			[449273] = 0,
+			[472644] = 0,
+			[1216937] = 5393730, -- Underpin's Grand Entrance
+			[420810] = 0,
+			[1232961] = 0,
+			[1232960] = 0,
+			[1233354] = 0,
+			[1231576] = 0,
+			[1233382] = 0,
+			[1233307] = 0,
+			[323953] = 0,
+			[1213891] = 0,
+			[1213898] = 0,
+			[1213896] = 0,
 			--qqi
 
 
@@ -31273,6 +31668,7 @@ function ZA_UpdateData()
 
 
 			--§ Teleports
+			[1223041] = 6392630, -- Gallagio Loyalty Rewards Card
 			[410137] = 135763, -- Lost Dragonscale (Alliance)
 			[410148] = 135759, -- Lost Dragonscale (Horde)
 			[216138] = 1535374, -- Teleport: Margoss's Retreat
@@ -31962,12 +32358,12 @@ function ZA_UpdateData()
 				local transform = ArmyGetKey("DelversDirigibleTransformation") or 1
 
 				local colors = {
-					[1] = 100, -- Blue
-					[2] = 100, -- Brown
-					[3] = 100, -- Green
-					[4] = 100, -- Red
-					[5] = 100, -- White
-					[6] = 100, -- Yellow
+					[1] = 100, -- Brown
+					[2] = 100, -- Green
+					[3] = 100, -- White
+					--[4] = 100, -- Yellow
+					--[5] = 100, -- Red
+					--[6] = 100, -- Blue
 				}
 
 				local transforms = {
@@ -32293,6 +32689,25 @@ function SlashCmdList.ZIGIAURAS(msg, ...)
 	arg, a, b, c = strsplit(" ", msg)
 	arg = string.lower(arg)
 
+	if arg == "ginvite" then
+		if not a then
+			print("Usage: /za invite unit")
+			return
+		end
+		if not UnitExists(a) and a == "target" then
+			print("You have no target")
+			return
+		elseif not UnitExists(a) then
+			print("Unit \""..a.."\" does not exist")
+			return
+		end
+		local n, r = UnitFullName("target")
+
+		if n then
+			print("|cffffff00Sending guild invite to|r |c"..(RAID_CLASS_COLORS[select(2,UnitClass("target"))].colorStr)..n.."|r")
+			GuildInvite(n..(r and"-"..r or""))
+		end
+	end
 	if arg == "enchant" or arg == "weaponenchant" then
 		local mh, _, _, mhID, oh, _, _, ohID = GetWeaponEnchantInfo()
 
