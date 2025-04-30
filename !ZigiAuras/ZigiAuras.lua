@@ -2519,6 +2519,8 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[447304] = "Zone", -- Water Breathing
+			[1213981] = "Zone", -- Darkfuse Explosives
 			[1214339] = "Zone", -- Shards of the Not So Unbreakable Iron Idol
 			[1215320] = "Zone", -- Prototype Heroism Cannister
 			[1228333] = "Zone", -- Liquid Divination
@@ -3730,6 +3732,22 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[446230] = 806, -- Repelling Blast
+			[446321] = 40, -- Deepsea Polyps
+			[446300] = 40, -- Deepsea Polyps
+			[446405] = 806, -- Fungal Infection
+			[446406] = 410, -- Fungal Infection
+			[445705] = 108, -- Claw Snap
+			[445771] = 801, -- Bubble Surge
+			[1214238] = 900, -- Harden Shell
+			[1214246] = 112, -- Crushing Pinch
+			[1215015] = 400, -- This One, Boss?
+			[1215084] = 103, -- Darkfuse Cocktail
+			[1215023] = 100, -- Shoot
+			[1215060] = 5, -- Long Fuse Missiles
+			[1215033] = 5, -- Long Fuse Missiles
+			[473972] = 911, -- Reckless Charge
+			[473963] = 911, -- Reckless Charge
 			[154889] = 400, -- Jumping Smash
 			[154891] = 400, -- Jumping Smash
 			[470756] = 400, -- Jump Smash
@@ -6765,8 +6783,8 @@ function ZA_UpdateData()
 			[372369] = 100, -- Shoot
 			[431659] = 32, -- Shadow Bolt
 			[446079] = 900, -- Call of the Abyss
-			[470587] = 900, -- Abyssal Surge
-			[440615] = 900, -- Abyssal Surge
+			[470587] = 48, -- Abyssal Surge
+			[440615] = 48, -- Abyssal Surge
 			[470588] = 325, -- Curse of the Depths
 			[440622] = 325, -- Curse of the Depths
 			[446261] = 325, -- Eye of Dread
@@ -8942,8 +8960,8 @@ function ZA_UpdateData()
 			[371622] = 720, -- Residual Neural Channeling Agent
 			[371164] = 811, -- Potion of Gusts
 			[370816] = 800, -- Shocking Disclosure
-			[371028] = 28, -- Elemental Potion of Ultimate Power
-			[371024] = 28, -- Elemental Potion of Power
+			[371028] = 20, -- Elemental Potion of Ultimate Power
+			[371024] = 20, -- Elemental Potion of Power
 			["Flameshower"] = 402,
 			["Unyielding Aggression"] = 103,
 			[396351] = 804, -- Infused Fallout
@@ -18525,7 +18543,6 @@ function ZA_UpdateData()
 			[383031] = 641,
 			[209524] = 80, -- Signaling... (Court of Stars)
 			[396362] = 8,
-			[353191] = 801,
 			[391298] = 801,
 			[392129] = 100,
 			[396032] = 100,
@@ -19828,6 +19845,7 @@ function ZA_UpdateData()
 			[1213891] = 100,
 			[1213898] = 100,
 			[1213896] = 100,
+			[472445] = 202,
 			--qqq
 
 
@@ -30055,7 +30073,7 @@ function ZA_UpdateData()
 			[350281] = 0,
 			[351172] = 0,
 			[352909] = 237476,
-			[353191] = 237476,
+			[353191] = 0,
 			[354782] = 0,
 			[352560] = 0,
 			[346310] = 0,
@@ -31656,6 +31674,7 @@ function ZA_UpdateData()
 			[1213891] = 0,
 			[1213898] = 0,
 			[1213896] = 0,
+			[472445] = 0,
 			--qqi
 
 
