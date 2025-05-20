@@ -1201,6 +1201,7 @@ function ZA_UpdateData()
 
 		--! Hearthstones
 		ZA.Hearthstones = {
+			[1217281] = "Hearthstone", -- Redeployment Module
 			["Explosive Hearthstone"] = "Hearthstone",
 			["Notorious Thread's Hearthstone"] = "Hearthstone",
 			["Draenic Hologem"] = "Hearthstone",
@@ -1314,6 +1315,7 @@ function ZA_UpdateData()
 			[1223901] = "Hallowed Tome: Versatility", -- Hallowed Tome of the Crusader
 			[1223903] = "Hallowed Tome: Mastery", -- Hallowed Tome of the Cleric
 			-- 11.1
+			[467251] = true, -- Mister Pick-Me-Up
 			[472787] = "Torq's Big Red Button: Strength", -- Torq's Big Red Button
 			[1216650] = "Suspicious Energy Drink: Mastery", -- Suspicious Energy Drink
 			[472167] = "Scrapfield 9001 Overload: Haste", -- Scrapfield 9001
@@ -2519,6 +2521,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1217692] = "Zone", -- Holding Candles
+			[1217807] = "Zone", -- Holding Totems
+			[1214026] = "Zone", -- Carrying Web Bomb
+			[459199] = "Zone", -- Queen's Pheromone
 			[447304] = "Zone", -- Water Breathing
 			[1213981] = "Zone", -- Darkfuse Explosives
 			[1214339] = "Zone", -- Shards of the Not So Unbreakable Iron Idol
@@ -3161,6 +3167,7 @@ function ZA_UpdateData()
 			-- COMBAT DEBUFFS --
 			--------------------
 
+			[1226677] = true, -- Cartel Jumper Cables
 			[358404] = true, -- Trial of Doubt (Kyrian)
 			[358164] = true, -- Soul Exhaustion (Necrolord)
 			[320227] = true, -- Depleted Shell (Night Fae)
@@ -3252,6 +3259,7 @@ function ZA_UpdateData()
 			[1223901] = 6, -- Hallowed Tome of the Crusader
 			[1223903] = 6, -- Hallowed Tome of the Cleric
 			-- 11.1
+			[467251] = 100, -- Mister Pick-Me-Up
 			[300140] = 108, -- Anodized Deflectors
 			[1219104] = 100, -- Darkfuse Medichopper
 			[472350] = 800, -- Turbo-Drain 5000
@@ -3732,6 +3740,266 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[446154] = 112, -- Razortooth Shred
+			[466742] = 911, -- Dumpster Dive
+			[466743] = 911, -- Dumpster Dive
+			[470446] = 9, -- Trash Collection
+			[471177] = 400, -- Compact Trash
+			[470447] = 400, -- Compact Trash
+			[471093] = 806, -- Gastric Destruction
+			[471093] = 806, -- Gastric Destruction
+			[471091] = 806, -- Gastric Destruction
+			[471072] = 806, -- Boom Dogs
+			[471070] = 806, -- Boom Dogs
+			[470981] = 806, -- Corrosive Flatulence
+			[467176] = 4, -- Blistering Roar
+			[474283] = 417, -- Unstable Formula
+			[474283] = 417, -- Unstable Formula
+			[474282] = 417, -- Unstable Formula
+			[473895] = 908, -- Reglobify
+			[473904] = 908, -- Globsorption Shield
+			[473878] = 806, -- Globbed
+			[473876] = 806, -- Glob Stomp
+			[473918] = 806, -- Lob Glob
+			[465188] = 911, -- Boar Rush
+			[465186] = 911, -- Boar Rush
+			[466950] = 911, -- Tempest
+			[466921] = 911, -- Tempest
+			[466893] = 811, -- Sea Squall
+			[466878] = 811, -- Sea Squall
+			[466820] = 811, -- Wing Flurry
+			[471352] = 800, -- Juice It!
+			[466955] = 800, -- Shock Barrage
+			[466834] = 800, -- Shock Barrage
+			[1218704] = 800, -- Prototype Powercoil
+			[467109] = 800, -- Trash Compactor
+			[467117] = 800, -- Overdrive
+			[1217954] = 800, -- Meltdown
+			[464112] = 9, -- Demolish
+			[464248] = 5, -- Hot Garbage
+			[472893] = 4, -- Incineration
+			[464149] = 4, -- Incinerator
+			[466748] = 410, -- Infected Bite
+			[1220648] = 50, -- Marked for "Recycling"
+			[473119] = 5, -- Short Fuse
+			[1217975] = 4, -- Doomsploded
+			[464747] = 5, -- Muffled Doomsplosion
+			[464854] = 40, -- Garbage Pile
+			[465611] = 100, -- Rolled!
+			[465741] = 40, -- Garbage Dump
+			[461536] = 40, -- Rolling Rubbish
+			[464399] = 800, -- Electromagnetic Sorting
+			[466178] = 9, -- Lightning Bash
+			[463925] = 800, -- Lingering Electricity
+			[1213994] = 80, -- Voltaic Image
+			[463900] = 800, -- Thunderdrum Salvo
+			[474159] = 800, -- Static Charge
+			[472225] = 800, -- Glavanized Spite
+			[1214190] = 5, -- Eruption Stomp
+			[472233] = 5, -- Blastburn Roarcannon
+			[1213690] = 12, -- Molten Phlegm
+			[1214039] = 12, -- Molten Pool
+			[473650] = 5, -- Scrapbomb
+			[472222] = 4, -- Blistering Spite
+			[1221826] = 100, -- Tiny Tussle
+			[471557] = 105, -- King of Carnage
+			[471660] = 900, -- Raised Guard
+			[465863] = 5, -- Colossal Clash (Flarendo)
+			[465872] = 800, -- Colossal Clash (Torq)
+			[469784] = 620, -- Colossal Clash
+			[1222076] = 620, -- Colossal Clash
+			[470044] = 620, -- Colossal Clash
+			[473201] = 620, -- Colossal Clash
+			[470032] = 620, -- Colossal Clash
+			[473202] = 620, -- Colossal Clash
+			[470034] = 620, -- Colossal Clash
+			[465833] = 620, -- Colossal Clash
+			[463967] = 105, -- Bloodlust
+			[471419] = 620, -- Bulletstorm
+			[468880] = 620, -- Bulletstorm
+			[471574] = 620, -- Bulletstorm
+			[1215953] = 9, -- Static Charge
+			[469391] = 101, -- Perforating Wound
+			[469491] = 50, -- Double Whammy Shot
+			[1222948] = 800, -- Electro-Charged Shield
+			[1214991] = 800, -- Surging Arc
+			[1215595] = 800, -- Faulty Wiring
+			[1215591] = 800, -- Faulty Wiring
+			[-31766] = 100, -- Mk II Electro Shocker
+			[466545] = 50, -- Spray and Pray
+			[467380] = 5, -- Goblin-guided Rocket
+			[469043] = 12, -- Searing Shrapnel
+			[466539] = 5, -- Golden Crawler Mines
+			[467202] = 6, -- Golden Drip
+			[466518] = 6, -- Molten Gold Knuckles
+			[466509] = 9, -- Stormfury Finger Gun
+			[470245] = 9, -- Stormfury Finger Gun
+			[1223254] = 9, -- Stormfury Finger Gun
+			[1221302] = 9, -- Stormfury Finger Gun
+			[1225931] = 9, -- Stormfury Finger Gun
+			[1225933] = 9, -- Stormfury Finger Gun
+			[466480] = 16, -- Frostshatter Spear
+			[466476] = 16, -- Frostshatter Boots
+			[1218064] = 410, -- Smelly
+			[470373] = 410, -- Smelly
+			[470877] = 410, -- Flea Infestation
+			[470873] = 410, -- Festering Uppercut
+			[470684] = 12, -- Greasefire Blast
+			[470686] = 101, -- Mech-a-Zoomies
+			[470695] = 101, -- Mech-a-Zoomies
+			[469900] = 100, -- Scrap Dump
+			[469901] = 100, -- Scrap Dump
+			[473955] = 5, -- Deploy Flame Laser
+			[470706] = 800, -- Sparkbolt
+			[466808] = 806, -- Toxic Bile
+			[474212] = 410, -- Toxic Additives
+			[474209] = 410, -- Toxic Additives
+			[474203] = 410, -- Toxic Additives
+			[474168] = 806, -- Acid Rain
+			[474125] = 806, -- Septic Swell
+			[474098] = 806, -- Septic Swell
+			[474069] = 806, -- Noxious Spew
+			[1214180] = 4, -- Torch Light
+			[462416] = 50, -- Signal Flare
+			[1214872] = 5, -- Pyro Party Pack
+			[1214267] = 417, -- Black Bloodsplatter
+			[1218344] = 417, -- Upgraded Bloodtech
+			[466860] = 417, -- Bleeding Edge
+			[1214181] = 4, -- Ignited
+			[1214181] = 4, -- Ignited
+			[465165] = 5, -- Big Finish
+			[1219386] = 5, -- Scrap Rockets
+			[1219384] = 5, -- Scrap Rockets
+			[465971] = 5, -- Scatter Shot
+			[470910] = 400, -- Gaol Break
+			[472782] = 803, -- Pay Respects
+			[1214623] = 103, -- Enraged
+			[468660] = 28, -- Elemental Carnage
+			[468658] = 28, -- Elemental Carnage
+			[474461] = 400, -- Earthshaker Gaol
+			[1215760] = 400, -- Earthshaker Gaol
+			[1220769] = 400, -- Earthshaker Gaol
+			[1213676] = 400, -- Earthshaker Gaol
+			[472528] = 400, -- Earthshaker Gaol
+			[472631] = 400, -- Earthshaker Gaol
+			[1216142] = 20, -- Double-Minded Fury
+			[466385] = 105, -- Moxie
+			[1218319] = 320, -- Voidsplosion
+			[466765] = 911, -- Beta Launch
+			[465917] = 9, -- Gravi-Gunk
+			[1214878] = 5, -- Pyro Party Pack
+			[465232] = 111, -- Sonic Ba-Boom
+			[1216509] = 5, -- Screw Up
+			[466235] = 800, -- Wire Transfer
+			[1218418] = 800, -- Wire Transfer
+			[1218342] = 12, -- Unstable Shrapnel
+			[1216406] = 5, -- Unstable Explosion
+			[1217231] = 5, -- Foot-Blasters
+			[1221320] = 800, -- Activate Inventions!
+			[473276] = 800, -- Activate Inventions!
+			[1216706] = 320, -- Void Barrage
+			[1219047] = 5, -- Polarized Catastro-Blast
+			[1216934] = 50, -- Nega-Polarization
+			[1216911] = 9, -- Posi-Polarization
+			[1216802] = 620, -- Polarization Generator
+			[468791] = 411, -- Gigadeath
+			[473655] = 111, -- Hyper Fever!
+			[473260] = 111, -- Blaring Drop
+			[464518] = 111, -- Tinnitus
+			[1214164] = 104, -- Excitement
+			[472306] = 5, -- Sparkblast Ignition
+			[466979] = 800, -- Faulty Zaps
+			[466866] = 111, -- Echoing Chant
+			[466093] = 800, -- Haywire
+			[1214598] = 661, -- Entranced
+			[468119] = 111, -- Resonant Echoes
+			[1217122] = 800, -- Lingering Voltage
+			[473748] = 111, -- Amplification!
+			[468208] = 323, -- Vanish
+			[468206] = 323, -- Vanish
+			[468229] = 101, -- Slashing Prices
+			[467246] = 105, -- Killer Discount
+			[463811] = 12, -- Molten Slug
+			[469274] = 111, -- Amped
+			[469272] = 111, -- Amped
+			[469392] = 111, -- Heavy Bass
+			[463790] = 5, -- Concussion Charge
+			[469340] = 111, -- Shattering Reverb
+			[465071] = 101, -- Sundering Bash
+			[470100] = 400, -- Stage Dive
+			[1219192] = 111, -- Sonic Burst
+			[1219199] = 111, -- Sonic Burst
+			[469380] = 111, -- Sound Cannon
+			[467615] = 111, -- Sound Cannon
+			[467606] = 111, -- Sound Cannon
+			[467602] = 111, -- Sound Cannon
+			[1213817] = 111, -- Sound Cloud
+			[464584] = 111, -- Sound Cloud
+			[468915] = 111, -- Ear Splitter
+			[471442] = 102, -- Rabid Charge
+			[465326] = 101, -- Rend Flesh
+			[467169] = 800, -- Bone Thumber Barrage
+			[465826] = 108, -- Crossfire
+			[465822] = 108, -- Crossfire
+			[465801] = 100, -- Shoot
+			[1219438] = 5, -- Fire Starters
+			[465905] = 400, -- Heavy Smash
+			[465715] = 800, -- Stunning Burst
+			[471303] = 800, -- Shocking Blast
+			[474480] = 100, -- Unstable Mech
+			[474492] = 800, -- Short Circuit
+			[474453] = 800, -- Mega Blast
+			[466296] = 9, -- Charged Claw
+			[1217249] = 130, -- Empty Pockets
+			[467231] = 108, -- Crap Shoot
+			[473841] = 130, -- Fool's Gold
+			[467238] = 417, -- Riddled Darkness
+			[467234] = 417, -- Riddled Darkness
+			[1213469] = 417, -- Dark Slug
+			[1213354] = 102, -- Scream Saw
+			[1214998] = 410, -- Verminicide
+			[1214790] = 64, -- Transmogrify
+			[1214794] = 64, -- Transmogrify
+			[1214783] = 64, -- Transmogrify
+			[473715] = 32, -- Dark Bolt
+			[1218353] = 5, -- Crowd Divider
+			[467212] = 5, -- Molten Reign
+			[1213621] = 5, -- Rocket Rain
+			[1213648] = 5, -- Rocket Rain
+			[467223] = 5, -- Searing Slam
+			[1219407] = 400, -- Brutal Club
+			[467178] = 282, -- Bottle Service
+			[467180] = 282, -- Bottle Service
+			[474147] = 417, -- Noire Royal
+			[444451] = 32, -- Speaker's Wrath
+			[444408] = 32, -- Speaker's Wrath
+			[444438] = 32, -- Speaker's Wrath
+			[444446] = 32, -- Speaker's Wrath
+			[444452] = 32, -- Speaker's Wrath
+			[1226677] = 999, -- Cartel Jumper Cables
+			[457853] = 111, -- Incide Workers
+			[457854] = 911, -- Punishing Blow
+			[1217281] = 106, -- Redeployment Module
+			[473973] = 320, -- Card Shark
+			[473964] = 320, -- Card Shark
+			[473961] = 320, -- Card Shark
+			[455926] = 400, -- Precision Impale
+			[455925] = 400, -- Precision Impale
+			[455923] = 400, -- Precision Impale
+			[455930] = 400, -- Precision Impale
+			[456119] = 900, -- Commander's Carapace
+			[455939] = 900, -- Commander's Carapace
+			[470843] = 806, -- Noxious Ooze
+			[470831] = 806, -- Noxious Ooze
+			[470433] = 320, -- Eldritch Power
+			[468589] = 325, -- Naga Curse
+			[468585] = 801, -- Empowering Lash
+			[449285] = 40, -- Digestive Spittle
+			[1218302] = 101, -- Punctured
+			[1218298] = 101, -- Not Feeling Quite Right
+			[1218294] = 101, -- Not Feeling Quite Right
+			[1218252] = 40, -- Nasty Sneeze
+			[1218258] = 112, -- Giant Punch
 			[446230] = 806, -- Repelling Blast
 			[446321] = 40, -- Deepsea Polyps
 			[446300] = 40, -- Deepsea Polyps
@@ -3811,7 +4079,7 @@ function ZA_UpdateData()
 			[462508] = 320, -- Dark Prayer
 			[1214607] = 5, -- Bigger Badder Bomb Blast
 			[1214229] = 100, -- Armageddon-class Plating
-			[1214369] = 800, -- TOTAL DESTRUCTION!!!
+			[1214369] = 5, -- TOTAL DESTRUCTION!!!
 			[1217987] = 417, -- Combination Canisters
 			[1220761] = 417, -- Mechgineer's Canisters
 			[465952] = 5, -- Big Bad Buncha Bombs
@@ -3870,7 +4138,7 @@ function ZA_UpdateData()
 			[1218527] = 999, -- Slime Bolt
 			[470379] = 999, -- Slime Bolt
 			[1218533] = 999, -- Slime Bolt
-			[449290] = 321, -- Devour
+			[449290] = 324, -- Devour
 			[471176] = 906, -- Digestive Spittle
 			[458406] = 327, -- Dreadful Fumes
 			[458408] = 327, -- Dreadful Fumes
@@ -3957,9 +4225,9 @@ function ZA_UpdateData()
 			[470277] = 999, -- Spew Sludge
 			[470276] = 999, -- Muck Bolt
 			[470276] = 999, -- Black Goo
-			[465939] = 5, -- Buster Shot
-			[273647] = 5, -- Buster Shot
-			[260372] = 5, -- Buster Shot
+			[465939] = 108, -- Buster Shot
+			[273647] = 108, -- Buster Shot
+			[260372] = 108, -- Buster Shot
 			[471186] = 103, -- Bloodthirsty
 			[1218174] = 130, -- "Garbage" Collection
 			[1218173] = 130, -- "Garbage" Collection
@@ -6256,11 +6524,11 @@ function ZA_UpdateData()
 			[458675] = 4, -- Blazing Roar
 			[458657] = 50, -- Volcanic Bomb
 			[451732] = 50, -- Alarm!
-			[455380] = 100, -- Sprocket Punch
+			[455380] = 108, -- Sprocket Punch
 			[452023] = 4, -- Oppressive Flames
 			[452024] = 4, -- Oppressive Flames
 			[452009] = 400, -- Golem Smash
-			[451778] = 100, -- Throw Gear
+			[451778] = 50, -- Throw Gear
 			[451900] = 50, -- Spark Bolt
 			[451890] = 100, -- Assemble Bot
 			[449712] = 143, -- Abductor's Webs
@@ -8641,10 +8909,10 @@ function ZA_UpdateData()
 			[404062] = 320, -- Void Bomb
 			[404027] = 320, -- Void Bomb
 			["Void Bomb"] = 320,
-			[411240] = 33, -- Void Claws
-			[411242] = 33, -- Void Claws
-			[411241] = 33, -- Void Claws
-			[411236] = 33, -- Void Claws
+			[411240] = 320, -- Void Claws
+			[411242] = 320, -- Void Claws
+			[411241] = 320, -- Void Claws
+			[411236] = 320, -- Void Claws
 			[404754] = 327, -- Blasting Scream
 			[411030] = 320, -- Desolate Blossom
 			[404425] = 320, -- Desolate Blossom
@@ -15865,21 +16133,30 @@ function ZA_UpdateData()
 			[1218373] = 100, -- G-99 Breakneck (Libration of Undermine)
 
 			--! Aircraft
-			[247448] = 100, -- Darkmoon Dirigible
-			[307256] = 100, -- Explorer's Jungle Hopper
-			[44153]  = 100, -- Flying Machine
-			[261437] = 100, -- Mecha-Mogul Mk2
-			[63796]  = 100, -- Mimiron's Head
-			[245725] = 100, -- Orgrimmar Interceptor
-			[134359] = 100, -- Sky Golem
-			[245723] = 100, -- Stormwind Skychaser
-			[44151]  = 100, -- Turbo-Charged Flying Machine
-			[256123] = 100, -- Xiwyllag ATV
+			-- Flying Machine
+			[307256] = 176, -- Explorer's Jungle Hopper
+			[44153]  = 133, -- Flying Machine
+			[44151]  = 133, -- Turbo-Charged Flying Machine
+			-- Copter
+			[261437] = 130, -- Mecha-Mogul Mk2
+			[63796]  = 130, -- Mimiron's Head
+			-- Hovercraft
+			[1217760] = 910, -- The Big G
+			[1221155] = 818, -- Prototype A.S.M.R.
+			[466028] = 815, -- Mean Green Flying Machine
+			[466025] = 814, -- Margin Manipulator
+			[466024] = 818, -- Bilgewater Bombardier
+			[466026] = 816, -- Salvaged Goblin Gazillionair's Flying Machine
+			[466027] = 910, -- Darkfuse Spy-Eye
 			[368158] = 106, -- Zereth Overseer
-			[290718] = 100, -- Aerial Unit R-21/X
-			[299170] = 100, -- Rustbolt Resistor
-			[424082] = 100, -- Mimiron's Jumpjets
-			-- Custom
+			[290718] = 176, -- Aerial Unit R-21/X
+			[299170] = 133, -- Rustbolt Resistor
+			[424082] = 909, -- Mimiron's Jumpjets
+			[256123] = 100, -- Xiwyllag ATV
+			-- Airship / Dirigible / Zeppelin
+			[245725] = 910, -- Orgrimmar Interceptor
+			[245723] = 909, -- Stormwind Skychaser
+			[247448] = 325, -- Darkmoon Dirigible
 			[446052] = 100, -- Delver's Dirigible
 			[466133] = 100, -- Delver's Gob-Trotter
 
@@ -16081,33 +16358,38 @@ function ZA_UpdateData()
 
 			--! Chimaera
 			[288495] = 33, -- Ashenvale Chimaera
+			-- Cormera
+			[1226855] = 12, -- Molten Cormaera
+			[1226856] = 6, -- Lavaborn Cormaera
+			[1226851] = 401, -- Felborn Cormaera
+			[1226740] = 240, -- Coldflame Cormaera
+			-- Rylak
+			[1214920] = 175, -- Nightfall Skyreaver
+			[153489] = 158, -- Iron Skyreaver
+			[191633] = 102, -- Soaring Skyterror
 			-- Flayedwing
 			[336038] = 415, -- Callow Flayedwing
 			[318052] = 415, -- Deathbringer's Flayedwing
 			[336039] = 415, -- Gruesome Flayedwing
 			[336036] = 415, -- Marrowfang
-			-- Rylak
-			[1214920] = 175, -- Nightfall Skyreaver
-			[153489] = 158, -- Iron Skyreaver
-			[191633] = 102, -- Soaring Skyterror
 
 			--! Chopper
-			[171846] = 100, -- Champion's Treadblade
-			[55531]  = 100, -- Mechano-Hog
-			[60424]  = 100, -- Mekgineer's Chopper
-			[179244] = 100, -- Summon Chauffeur
-			[179245] = 100, -- Summon Chauffeur
-			[171845] = 100, -- Warlord's Deathwheel
+			[60424]  = 130, -- Mekgineer's Chopper (Alliance)
+			[55531]  = 133, -- Mechano-Hog (Horde)
+			[179245] = 130, -- Summon Chauffeur (Alliance)
+			[179244] = 133, -- Summon Chauffeur (Horde)
+			[171846] = 909, -- Champion's Treadblade (Alliance)
+			[171845] = 156, -- Warlord's Deathwheel (Horde)
 			-- Trike
-			[87090]  = 100, -- Goblin Trike
-			[87091]  = 100, -- Goblin Turbo-Trike
-			[223354] = 100, -- Vicious War Trike
+			[87090]  = 5, -- Goblin Trike
+			[87091]  = 5, -- Goblin Turbo-Trike
+			[223354] = 173, -- Vicious War Trike
 			-- Mechacycle
-			[297157] = 100, -- Junkheap Drifter
-			[296788] = 100, -- Mechacycle Model W
+			[297157] = 132, -- Junkheap Drifter
+			[296788] = 176, -- Mechacycle Model W
 			-- Felcycle
 			[428013] = 127, -- Ingognitro, the Indecipherable Felcycle
-			[428068] = 32, -- Felreaver Deathcycle
+			[428068] = 48, -- Voidfire Deathcycle
 			[428067] = 402, -- Hateforged Blazecycle
 
 			--! Clefthoof
@@ -16167,6 +16449,7 @@ function ZA_UpdateData()
 			[232405] = 4, -- Primal Flamesaber
 			[200175] = 401, -- Felsaber
 			-- Jeweled Panther
+			[1218317] = 328, -- Void-Crystal Panther
 			[121837] = 815, -- Jade Panther
 			[121838] = 818, -- Ruby Panther
 			[121836] = 814, -- Sapphire Panther
@@ -16176,6 +16459,8 @@ function ZA_UpdateData()
 			-- Mechanocat
 			[294143] = 100, -- X-995 Mechanocat
 			-- Lynx
+			[1228865] = 320, -- Void-Scarred Lynx
+			[1226421] = 159, -- Radiant Imperial Lynx
 			[448979] = 158, -- Dauntless Imperial Lynx
 			[448978] = 173, -- Vermillion Imperial Lynx
 			-- Sabertooth
@@ -16229,6 +16514,7 @@ function ZA_UpdateData()
 			[353884] = 908, -- Regal Corpsefly
 
 			--! Courser
+			[1217965] = 80, --Shimmermist Free Runner
 			[342335] = 201, -- Ascended Skymane
 			[336064] = 33, -- Dauntless Duskrunner
 			[247402] = 96, -- Lucid Nightmare
@@ -16282,6 +16568,10 @@ function ZA_UpdateData()
 			[341766] = 157, -- Warstitched Darkhound
 			[369666] = 12, -- Grimhowl
 
+			--! Devilsaur
+			-- Mechasaur
+			[466011] = 176, -- Flarendo the Furious
+
 			--! Direhorn
 			[138424] = 134, -- Amber Primordial Direhorn
 			[138425] = 171, -- Slate Primordial Direhorn
@@ -16309,7 +16599,8 @@ function ZA_UpdateData()
 
 			--! Dog
 			-- Bakar
-			[424607] = 116, -- Taivan
+			[424601] = 116, -- Brown-Furred Spiky Bakar
+			[424607] = 144, -- Taivan
 			-- Dog
 			[259395] = 803, -- Shu-Zen, the Divine Sentinel
 			-- Lupine
@@ -16355,10 +16646,12 @@ function ZA_UpdateData()
 			[377071] = 4, -- Crimson Gladiator's Drake
 			[424539] = "Insanity", -- Draconic Gladiator's Drake
 			-- Slitherdrake
+			[1218316] = 320, -- Corruption of the Aspects
 			[418286] = 8, -- Auspicious Arborwyrm
 			[368893] = 175, -- Winding Slitherdrake
 			[408977] = 36, -- Obsidian Gladiator's Slitherdrake
 			[425416] = 120, -- Verdant Gladiator's Slitherdrake
+			[110051] = 130, -- Heart of the Aspects
 			-- Life-Binder Drake
 			[107842] = 5, -- Blazing Drake
 			[107845] = 403, -- Life-Binder's Handmaiden
@@ -16403,8 +16696,6 @@ function ZA_UpdateData()
 			[227991] = 800, -- Ferocious Gladiator's Storm Dragon
 			[227994] = 800, -- Fierce Gladiator's Storm Dragon
 			[227986] = 800, -- Vindictive Gladiator's Storm Dragon
-			-- Heart of the Aspects
-			[110051] = 130, -- Heart of the Aspects
 			-- Veilwing
 			[290132] = 805, -- Sylverian Dreamer
 			-- Soul Eater
@@ -16413,6 +16704,11 @@ function ZA_UpdateData()
 			[370346] = 411, -- Eternal Gladiator's Soul Eater
 			[332400] = 411, -- Sinful Gladiator's Soul Eater
 			[353036] = 411, -- Unchained Gladiator's Soul Eater
+
+			--! Eel
+			-- Electric Eel
+			[466146] = 800, -- Vicious Electro Eel (Alliance)
+			[466145] = 800, -- Vicious Electro Eel (Horde)
 
 			--! Elekk
 			[48027]  = 116, -- Black War Elekk
@@ -16474,6 +16770,7 @@ function ZA_UpdateData()
 			[253087] = 32, -- Antoran Gloomhound
 			[229417] = 127, -- Slayer's Felbroken Shrieker
 			[369476] = 402, -- Amalgam of Rage
+			[466144] = 5, -- Prized Gladiator's Fel Bat
 			[449466] = 133, -- Forged Gladiator's Fel Bat
 			[449465] = 131, -- Silver Gladiator's Fel Bat
 			-- Plaguebat
@@ -16560,7 +16857,14 @@ function ZA_UpdateData()
 			[354354] = 130, -- Hand of Nilganihmaht
 			[354355] = 321, -- Hand of Salaranga
 
+			--! Hedgehog
+			[1226511] = 155, -- Spring Harvesthog
+			[1226531] = 159, -- Summer Harvesthog
+			[1226533] = 202, -- Autumn Harvesthog
+			[1226532] = 175, -- Winter Harvesthog
+
 			--! Goat
+			[1219705] = 175, -- Spotted Black Riding Goat
 			[435133] = 102, -- Little Red Riding Goat
 			[435131] = 150, -- Snowy Riding Goat
 			[130138] = 156, -- Black Riding Goat
@@ -16589,9 +16893,9 @@ function ZA_UpdateData()
 			[189043] = 402, -- Wild Gladiator's Felblood Gronnling
 
 			--! Gryphon
+			[1218229] = 320, -- Void-Scarred Gryphon
 			[466811] = 159, -- Chaos-Forged Gryphon
 			[441324] = 204, -- Remembered Golden Gryphon
-			[417888] = 800, -- Algarian Stormrider
 			[413827] = 150, -- Harbor Gryphon
 			[302361] = 3, -- Alabaster Stormtalon
 			[61229]  = 159, -- Armored Snowy Gryphon
@@ -16611,6 +16915,7 @@ function ZA_UpdateData()
 			[32289]  = 804, -- Swift Red Gryphon
 			[54729]  = 415, -- Winged Steed of the Ebon Blade
 			-- Stormrook
+			[417888] = 800, -- Algarian Stormrider
 			[447213] = 811, -- Alunira
 
 			--! Hawkstrider
@@ -16648,6 +16953,7 @@ function ZA_UpdateData()
 			[359013] = 142, -- Val'sharah Hippogryph
 
 			--! Horse
+			[1218305] = 320, -- Void-Forged Stallion
 			[259213] = 159, -- Admiralty Stallion
 			[67466]  = 171, -- Argent Warhorse
 			[66907]  = 171, -- Argent Warhorse
@@ -16680,16 +16986,20 @@ function ZA_UpdateData()
 			[223341] = 171, -- Vicious Gilnean Warhorse
 			[100332] = 156, -- Vicious War Steed
 			[16083]  = 116, -- White Stallion
-
+			-- Horned Steed
 			[66090]  = 159, -- Quel'dorei Steed
 			[49322]  = 150, -- Swift Zhevra
-
+			-- Charger
+			[1217343] = 111, -- Snowy Darkmoon Charger
+			[1217340] = 819, -- Midnight Darkmoon Charger
+			[1217342] = 32, -- Violet Darkmoon Charger
+			[1217341] = 141, -- Lively Darkmoon Charger
 			[66906]  = 2, -- Argent Charger
 			[231435] = 2, -- Highlord's Golden Charger
 			[231589] = 2, -- Highlord's Valorous Charger
 			[231587] = 2, -- Highlord's Vengeful Charger
 			[231588] = 2, -- Highlord's Vigilant Charger
-
+			-- Special Steed
 			[107203] = 203, -- Tyrael's Charger
 			[92231]  = 720, -- Spectral Steed
 			[339588] = 321, -- Sinrunner Blanchy
@@ -16701,6 +17011,10 @@ function ZA_UpdateData()
 			[75614]  = 722, -- Celestial Steed
 
 			--! Hyena
+			[466000] = 910, -- Darkfuse Chompactor
+			[466001] = 814, -- Blackwater Bonecrusher
+			[465999] = 813, -- Crimson Armored Growler
+			[466002] = 813, -- Violet Armored Growler
 			[237287] = 159, -- Alabaster Hyena
 			[306423] = 153, -- Caravan Hyena
 			[237286] = 153, -- Dune Scavenger
@@ -16844,7 +17158,7 @@ function ZA_UpdateData()
 			[63638]  = 100, -- Gnomeregan Mechanostrider
 			[17453]  = 100, -- Green Mechanostrider
 			[17459]  = 100, -- Icy Blue Mechanostrider Mod A
-			[305592] = 100, -- Mechagon Mechanostrider
+			[305592] = 176, -- Mechagon Mechanostrider
 			[10873]  = 100, -- Red Mechanostrider
 			[23225]  = 100, -- Swift Green Mechanostrider
 			[23223]  = 100, -- Swift White Mechanostrider
@@ -16855,6 +17169,13 @@ function ZA_UpdateData()
 			[15779]  = 100, -- White Mechanostrider Mod B
 
 			--! Mechsuit
+			[466022] = 816, -- Venture Co-ordinator
+			[468068] = 800, -- Junkmaestro's Magnetomech
+			[466018] = 910, -- Darkfuse Demolisher
+			[466023] = 818, -- Asset Advocator
+			[466021] = 813, -- Violet Goblin Shredder
+			[466020] = 815, -- Personalized Goblin S.C.R.A.P.per
+			[466019] = 814, -- Blackwater Shredder Deluxe Mk 2
 			[182912] = 141, -- Felsteel Annihilator
 			[289083] = 204, -- G.M.O.D.
 			[239013] = 200, -- Lightforged Warframe
@@ -16867,16 +17188,19 @@ function ZA_UpdateData()
 			[458335] = 822, -- Diamond Mechsuit
 
 			--! Mite
+			-- Swarmite
+			[447189] = 172, -- Nesting Swarmite
 			[449325] = 822, -- Vicious Skyflayer (Alliance)
 			[447405] = 817, -- Vicious Skyflayer (Horde)
 			[447185] = 135, -- Aquamarine Swarmite
 			[447195] = 113, -- Swarmite Skyhunter
 			[447190] = 320, -- Shadowed Swarmite
 			[447189] = 202, -- Tan Swarmite
-			[312776] = 413, -- Chittering Animite
-			[332905] = 413, -- Endmire Flyer
 			[275841] = 101, -- Expedition Bloodswarmer
 			[243795] = 101, -- Leaping Veinseeker
+			-- Animite
+			[312776] = 413, -- Chittering Animite
+			[332905] = 413, -- Endmire Flyer
 
 			--! Moose
 			[213339] = 159, -- Great Northern Elderhorn
@@ -16901,8 +17225,10 @@ function ZA_UpdateData()
 			[342667] = 822, -- Vibrant Flutterwing
 			-- Glowmite
 			[447176] = 201, -- Cyan Glowmite
-			-- Butterfly
-			[1218012] = 403, -- Ruby Butterfly
+			--! Butterfly
+			[1218013] = 28, -- Spring Butterfly
+			[1218014] = 126, -- Midnight Butterfly
+			[1218012] = 412, -- Ruby Butterfly
 			[1217994] = 808, -- Pearlescent Butterfly
 
 			--! Murloc
@@ -16950,7 +17276,7 @@ function ZA_UpdateData()
 			[254813] = 173, -- Sharkbait
 			[366790] = 34, -- Quawks
 			-- Mechanical Parrot
-			[290328] = 100, -- Wonderwing 2.0
+			[290328] = 176, -- Wonderwing 2.0
 
 			--! Phalynx
 			[334406] = 201, -- Eternal Phalynx of Courage
@@ -17122,6 +17448,11 @@ function ZA_UpdateData()
 			[336045] = 415, -- Predatory Plagueroc
 
 			--! Rocket
+			[466014] = 815, -- Steamwheedle Supplier
+			[466013] = 816, -- Ochre Delivery Rocket
+			[466017] = 910, -- Innovation Investigator
+			[466012] = 818, -- Thunderdrum Misfire
+			[466016] = 813, -- The Topskimmer Special
 			[472253] = 5, -- Lunar Launcher
 			[126507] = 100, -- Depleted-Kyparium Rocket
 			[126508] = 100, -- Geosynchronous World Spinner
@@ -17166,6 +17497,7 @@ function ZA_UpdateData()
 
 			--! Worm
 			-- Fathom Serpent
+			[1218314] = 137, -- Ny'alothan Shadow Worm
 			[232519] = 135, -- Abyss Worm
 			[275623] = 321, -- Nazjatar Blood Serpent
 			[243025] = 137, -- Riddler's Mind-Worm
@@ -17269,6 +17601,7 @@ function ZA_UpdateData()
 			-- Magma Slug
 			[374138] = 402, -- Seething Slug
 			-- Crystal Snail
+			[1218069] = 815, -- Emerald Snail
 			[408313] = 820, -- Big Slick in the City
 			[409034] = 36, -- Vicious War Snail (Alliance)
 			[409032] = 36, -- Vicious War Snail (Horde)
@@ -17284,10 +17617,11 @@ function ZA_UpdateData()
 
 			--! Spider Tank
 			-- Mechaspider
-			[299158] = 100, -- Mechagon Peacekeeper
-			[291492] = 100, -- Rusty Mechanocrawler
-			[299159] = 100, -- Scrapforged Mechaspider
-			-- Zerethsteed
+			[1221694] = 910, -- Enterprising Shreddertank
+			[1217235] = 818, -- Crimson Shreddertank
+			[299158] = 176, -- Mechagon Peacekeeper
+			[291492] = 133, -- Rusty Mechanocrawler
+			[299159] = 131, -- Scrapforged Mechaspider
 			[359545] = 106, -- Carcinized Zerethsteed
 
 			--! Stag
@@ -17375,7 +17709,6 @@ function ZA_UpdateData()
 			[359318] = 64, -- Soaring Spelltome
 
 			--! Turtle
-			[227956] = 12, -- Arcadian War Turtle
 			[473861] = 171, -- Savage Alabaster Battle Turtle
 			[367826] = 170, -- Savage Green Battle Turtle
 			[433281] = 134, -- Savage Blue Battle Turtle
@@ -17397,6 +17730,9 @@ function ZA_UpdateData()
 			-- Sea Turtle
 			[30174] = 119, -- Riding Turtle
 			[64731] = 157, -- Sea Turtle
+			-- War Turtle
+			[1227076] = 202, -- Tyrannotort
+			[227956] = 12, -- Arcadian War Turtle
 
 			--! Undercrawler
 			[448685] = 810, -- Heritage Undercrawler
@@ -17440,10 +17776,12 @@ function ZA_UpdateData()
 			--! Warp Stalker
 			[346136] = 323, -- Viridian Phase-Hunter
 
-			--! Waveshredder
-			[446352] = 100, -- Goblin Surfboard
-			[473137] = 100, -- Soweezi's Vintage Waveshredder
-			[447413] = 100, -- Pearlescent Goblin Wave Shredder
+			--! Surfboard
+			-- Waveshredder
+			[473188] = 133, -- Bronze Goblin Waveshredder
+			[446352] = 140, -- Goblin Surfboard
+			[473137] = 910, -- Soweezi's Vintage Waveshredder
+			[447413] = 133, -- Pearlescent Goblin Wave Shredder
 
 			--! Dragonfly
 			-- Water Strider
@@ -17467,6 +17805,7 @@ function ZA_UpdateData()
 			-- Wylderdrake
 			[368899] = 8, -- Cliffside Wylderdrake
 			-- Wind Rider
+			[1218307] = 320, -- Void-Scarred Windrider
 			[466845] = 173, -- Chaos-Forged Wind Rider
 			[441325] = 204, -- Remembered Wind Rider
 			[302362] = 3, -- Alabaster Thunderwing
@@ -17489,6 +17828,7 @@ function ZA_UpdateData()
 			[134573] = 811, -- Swift Windsteed
 
 			--! Wolf
+			[1218306] = 320, -- Void-Scarred Pack Mother
 			[449142] = 171, -- Kaldorei War Wolf
 			[449140] = 150, -- Sentinel War Wolf
 			[171838] = 150, -- Armored Frostwolf
@@ -19846,6 +20186,21 @@ function ZA_UpdateData()
 			[1213898] = 100,
 			[1213896] = 100,
 			[472445] = 202,
+			[1228497] = 111, -- Summon Orphan
+			[283612] = 111, -- Summon Orphan
+			[1230183] = 111, -- Summon Orphan
+			[1230185] = 111, -- Summon Orphan
+			[282839] = 111, -- Summon Orphan
+			[23012] = 111, -- Summon Orphan
+			[1227498] = 111, -- Summon Khaz Algar Orphan
+			[23013] = 111, -- Summon Orphan
+			[1230155] = 111, -- Summon Orphan
+			[1227484] = 111, -- Summon Orphan
+			[1227485] = 111, -- Summon Orphan
+			[1233414] = 5,
+			[1228234] = 202,
+			[1214359] = 143,
+			[1216521] = 143,
 			--qqq
 
 
@@ -31675,6 +32030,22 @@ function ZA_UpdateData()
 			[1213898] = 0,
 			[1213896] = 0,
 			[472445] = 0,
+			[23012] = 0,
+			[1228497] = 0, -- Summon Orphan
+			[283612] = 0, -- Summon Orphan
+			[1230183] = 0, -- Summon Orphan
+			[1230185] = 0, -- Summon Orphan
+			[282839] = 0, -- Summon Orphan
+			[23012] = 0, -- Summon Orphan
+			[1227498] = 0, -- Summon Khaz Algar Orphan
+			[23013] = 0, -- Summon Orphan
+			[1230155] = 0, -- Summon Orphan
+			[1227484] = 0, -- Summon Orphan
+			[1227485] = 0, -- Summon Orphan
+			[1233414] = 0,
+			[1228234] = 0,
+			[1214359] = 0,
+			[1216521] = 0,
 			--qqi
 
 
