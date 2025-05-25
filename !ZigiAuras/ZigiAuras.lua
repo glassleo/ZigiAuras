@@ -1012,6 +1012,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Defunct Bike"] = 100,
 			["Uther the Lightbringer"] = "PALADIN",
 			["Party Bazooka"] = 5,
 			["Bilgewater Defuser"] = 100,
@@ -3740,6 +3741,47 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[466040] = 5, -- Blaze of Glory
+			[469708] = 400, -- Uncontrolled Destruction
+			[468694] = 400, -- Uncontrolled Destruction
+			[1216845] = 112, -- Wrench
+			[1216846] = 100, -- Holding a Wrench
+			[469061] = 5, -- Unstable Crawler Mines
+			[469062] = 5, -- Unstable Crawler Mines
+			[466541] = 5, -- Unstable Crawler Mines
+			[466597] = 5, -- Unstable Crawler Mines
+			[466538] = 5, -- Unstable Crawler Mines
+			[466540] = 5, -- Unstable Crawler Mines
+			[472446] = 5, -- Unstable Crawler Mines
+			[472339] = 5, -- Unstable Crawler Mines
+			[466573] = 5, -- Unstable Crawler Mines
+			[466536] = 5, -- Unstable Crawler Mines
+			[466539] = 5, -- Unstable Crawler Mines
+			[472061] = 5, -- Unstable Crawler Mines
+			[472458] = 5, -- Unstable Crawler Mines
+			[466537] = 5, -- Unstable Crawler Mines
+			[308945] = 328, -- Searing Gaze
+			[1218140] = 101, -- Junksaws
+			[1218127] = 108, -- Junksaws
+			[1218120] = 4, -- Incinerate
+			[308575] = 320, -- Shadow Shift
+			[308508] = 33, -- Rift Strike
+			[308481] = 33, -- Rift Strike
+			[270505] = 100, -- Shoot
+			[308308] = 320, -- Piercing Shot
+			[308375] = 327, -- Psychic Scream
+			[308172] = 330, -- Mind Flay
+			[296510] = 330, -- Creepy Crawler
+			[1235620] = 320, -- Vengeance
+			[298584] = 65, -- Repel
+			[458416] = 320, -- Darkened Sky
+			[308288] = 320, -- Darkened Sky
+			[308278] = 320, -- Darkened Sky
+			[458417] = 320, -- Darkened Sky
+			[445492] = 112, -- Serrated Cleave
+			[389572] = 112, -- Crunch
+			[445407] = 103, -- Bloodthirsty
+			[445406] = 103, -- Bloodthirsty
 			[446154] = 112, -- Razortooth Shred
 			[466742] = 911, -- Dumpster Dive
 			[466743] = 911, -- Dumpster Dive
@@ -3815,9 +3857,9 @@ function ZA_UpdateData()
 			[470034] = 620, -- Colossal Clash
 			[465833] = 620, -- Colossal Clash
 			[463967] = 105, -- Bloodlust
-			[471419] = 620, -- Bulletstorm
-			[468880] = 620, -- Bulletstorm
-			[471574] = 620, -- Bulletstorm
+			[471419] = 3, -- Bulletstorm
+			[468880] = 3, -- Bulletstorm
+			[471574] = 3, -- Bulletstorm
 			[1215953] = 9, -- Static Charge
 			[469391] = 101, -- Perforating Wound
 			[469491] = 50, -- Double Whammy Shot
@@ -14465,7 +14507,6 @@ function ZA_UpdateData()
 			["Shadow Pounce"] = 720,
 			["Shadow Prison"] = 96,
 			["Shadow Rip"] = 96,
-			["Shadow Shift:633004"] = 320,
 			["Shadow Sight"] = 328,
 			["Shadow Slagblast"] = 36,
 			["Shadow Spit:3528310"] = 321,
@@ -17013,7 +17054,7 @@ function ZA_UpdateData()
 			--! Hyena
 			[466000] = 910, -- Darkfuse Chompactor
 			[466001] = 814, -- Blackwater Bonecrusher
-			[465999] = 813, -- Crimson Armored Growler
+			[465999] = 818, -- Crimson Armored Growler
 			[466002] = 813, -- Violet Armored Growler
 			[237287] = 159, -- Alabaster Hyena
 			[306423] = 153, -- Caravan Hyena
@@ -20201,6 +20242,10 @@ function ZA_UpdateData()
 			[1228234] = 202,
 			[1214359] = 143,
 			[1216521] = 143,
+			[1216780] = 814,
+			[1216778] = 818,
+			[1216782] = 816,
+			[1216779] = 815,
 			--qqq
 
 
