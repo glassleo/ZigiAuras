@@ -5,6 +5,7 @@ frame:RegisterEvent("PLAYER_LOGIN")
 frame:RegisterEvent("VARIABLES_LOADED")
 frame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
 frame:RegisterEvent("PLAYER_LEVEL_UP")
+frame:RegisterEvent("TRAIT_CONFIG_UPDATED")
 frame:RegisterUnitEvent("PLAYER_SPECIALIZATION_CHANGED", "player")
 frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
@@ -333,7 +334,7 @@ function ZA_UpdateData()
 			[132] = "e8bc9d", -- Copper
 			[133] = "ddc88a", -- Bronze
 			[131] = "e5e5e6", -- Silver
-			[130] = "f2d26b", -- Gold
+			[130] = "ffbc00", -- Gold
 			[134] = "eef9ce", -- Mithril
 			[135] = "9dd9ca", -- Thorium
 			[136] = "9fbe5c", -- Fel Iron
@@ -818,7 +819,7 @@ function ZA_UpdateData()
 			[132] = "d1793b:e8bc9d", -- Copper
 			[133] = "9f8330:ddc88a", -- Bronze
 			[131] = "86878a:e5e5e6", -- Silver
-			[130] = "af8a14:f2d26b", -- Gold
+			[130] = "f5ab0c:ffd059", -- Gold
 			[134] = "678d74:eef9ce", -- Mithril
 			[135] = "528f74:9dd9ca", -- Thorium
 			[136] = "9fbe5c:65b62a", -- Fel Iron
@@ -2318,6 +2319,7 @@ function ZA_UpdateData()
 			["Sign of Iron"] = true,
 			["Sign of the Legion"] = true,
 			["Sign of the Past"] = true,
+			["Sign of Azeroth"] = true,
 			["Sign of the Explorer"] = true,
 			["Winds of Mysterious Fortune"] = true,
 			[424143] = true, -- WoW Remix: Mists of Pandaria
@@ -2328,6 +2330,8 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[1234016] = "State", -- Play Nice, Play Fair
+			[441868] = "State", -- Shadow Realm
 			[1214346] = "State", -- Revolution!
 			[458069] = "State", -- Seafury Tempest
 			[433172] = "State", -- Story Time
@@ -2522,6 +2526,15 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1220625] = "Zone", -- Vial of Healing
+			[1220620] = "Zone", -- Can of Amps
+			[1221113] = "Zone", -- Beefy Burger
+			[1221117] = "Zone", -- Cake from a Fan
+			[453597] = "Zone", -- Draw!
+			[313961] = "Zone", -- Ethereal Essence
+			[473587] = "Zone", -- Carry Battery
+			[313670] = "Zone", -- Spirit of Wind
+			[1225675] = "Zone", -- Prohibition
 			[1217692] = "Zone", -- Holding Candles
 			[1217807] = "Zone", -- Holding Totems
 			[1214026] = "Zone", -- Carrying Web Bomb
@@ -3741,9 +3754,107 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1226946] = 103, -- Blind Madness
+			[458117] = 330, -- Dark Abatement
+			[440800] = 330, -- Dark Abatement
+			[440801] = 330, -- Dark Abatement
+			[454762] = 330, -- Dark Abatement
+			[457818] = 330, -- Dark Abatement
+			[442239] = 330, -- Forbidden Ritual
+			[440679] = 330, -- Forbidden Ritual
+			[440306] = 330, -- Forbidden Ritual
+			[472544] = 100, -- Crushing Claw
+			[1214620] = 111, -- Whooping Rally
+			[1214614] = 101, -- Rip and Tear
+			[1214656] = 103, -- Aggravating Growl
+			[1225378] = 200, -- Titanic Frenzy
+			[1225752] = 800, -- Overcharged Empowerment
+			[1216608] = 64, -- Titan Force Shield
+			[458866] = 330, -- Lurking Call
+			[458867] = 330, -- Lurking Call
+			[458868] = 330, -- Lurking Call
+			[458870] = 330, -- Lurking Call
+			[458871] = 330, -- Lurking Call
+			[1230799] = 800, -- Overcharged Fortification
+			[418791] = 107, -- Blade Toss
+			[418796] = 107, -- Blade Rush
+			[440806] = 330, -- Darkrift Smash
+			[440805] = 330, -- Darkrift Smash
+			[440801] = 331, -- Dark Abatement
+			[1220665] = 911, -- Overcharged Slam
+			[1220664] = 911, -- Overcharged Slam
+			[455644] = 108, -- Crankshaft Assault
+			[455613] = 108, -- Crankshaft Assault
+			["Surging Totem"] = 5,
+			[469490] = 50, -- Double Whammy Shot
+			[469601] = 50, -- Double Whammy Shot
+			[1223085] = 50, -- Double Whammy Shot
+			[469491] = 50, -- Double Whammy Shot
+			[1220399] = 50, -- Double Whammy Shot
+			[1220398] = 50, -- Double Whammy Shot
+			[469286] = 800, -- Giga Coils
+			[469295] = 800, -- Giga Coils
+			[1224378] = 800, -- Giga Coils
+			[469293] = 800, -- Giga Coils
+			[468817] = 5, -- Goblin-guided Rocket
+			[467381] = 5, -- Goblin-guided Rocket
+			[467379] = 5, -- Goblin-guided Rocket
+			[461395] = 5, -- Reward: Coin and Bomb
+			[464810] = 5, -- Reward: Coin and Bomb
+			[461101] = 816, -- Reward: Coin and Shock
+			[464809] = 816, -- Reward: Coin and Shock
+			[461176] = 5, -- Reward: Flame and Bomb
+			[464804] = 5, -- Reward: Flame and Bomb
+			[461389] = 50, -- Reward: Flame and Coin
+			[464806] = 50, -- Reward: Flame and Coin
+			[461091] = 9, -- Reward: Shock and Bomb
+			[464801] = 9, -- Reward: Shock and Bomb
+			[461083] = 4, -- Reward: Shock and Flame
+			[464772] = 4, -- Reward: Shock and Flame
+			[465761] = 100, -- Rig the Game!
+			[465482] = 800, -- Linked Machines
+			[465474] = 800, -- Linked Machines
+			[473195] = 800, -- Linked Machines
+			[465432] = 800, -- Linked Machines
+			[460472] = 9, -- The Big Hit
+			[461060] = 5, -- Spin To Win!
+			[461068] = 50, -- Fraud Detected!
+			[465009] = 5, -- Explosive Gaze
+			[474665] = 100, -- Coin Magnet
+			[464705] = 130, -- Golden Ticket
+			[471927] = 4, -- Withering Flames
+			[465309] = 50, -- Cheat to Win!
+			[464765] = 9, -- Knockdown Stun
+			[465322] = 4, -- Hot Hot Heat
+			[465325] = 4, -- Hot Hot Heat
+			[465587] = 5, -- Explosive Jackpot
+			[460181] = 320, -- Pay-Line
+			[469993] = 32, -- Foul Exhaust
+			[460444] = 130, -- High Roller!
+			[460582] = 800, -- Overload!
+			[377991] = 9, -- Storm Slash
+			[1218087] = 9, -- Storm Slash
+			[392712] = 9, -- Storm Slash
+			[1240833] = 646, -- Adamant Defense
+			[1227345] = 646, -- Adamant Defense
+			[1228511] = 9, -- Titanic Storm Shot
+			[1228507] = 9, -- Titanic Storm Shot
+			[1228504] = 9, -- Titanic Storm Shot
+			[1228512] = 9, -- Titanic Storm Shot
+			[309757] = 9, -- Shocking Strike
+			[1224494] = 800, -- Shock Strike
+			[327082] = 414, -- Rune of the Apocalypse
+			[326805] = 321, -- Rune of Sanguination
+			[1219331] = 800, -- Gallybux Finale Blast
+			[1219333] = 800, -- Gallybux Finale Blast
+			[472659] = 804, -- Shakedown
+			[289153] = 800, -- Electric Blast
+			[460873] = 800, -- Electric Blast
+			[82973] = 800, -- Electric Blast
+			[460847] = 800, -- Electric Blast
 			[466040] = 5, -- Blaze of Glory
-			[469708] = 400, -- Uncontrolled Destruction
-			[468694] = 400, -- Uncontrolled Destruction
+			[469708] = 5, -- Uncontrolled Destruction
+			[468694] = 5, -- Uncontrolled Destruction
 			[1216845] = 112, -- Wrench
 			[1216846] = 100, -- Holding a Wrench
 			[469061] = 5, -- Unstable Crawler Mines
@@ -3873,7 +3984,7 @@ function ZA_UpdateData()
 			[469043] = 12, -- Searing Shrapnel
 			[466539] = 5, -- Golden Crawler Mines
 			[467202] = 6, -- Golden Drip
-			[466518] = 6, -- Molten Gold Knuckles
+			[466518] = 130, -- Molten Gold Knuckles
 			[466509] = 9, -- Stormfury Finger Gun
 			[470245] = 9, -- Stormfury Finger Gun
 			[1223254] = 9, -- Stormfury Finger Gun
@@ -3924,7 +4035,7 @@ function ZA_UpdateData()
 			[1213676] = 400, -- Earthshaker Gaol
 			[472528] = 400, -- Earthshaker Gaol
 			[472631] = 400, -- Earthshaker Gaol
-			[1216142] = 20, -- Double-Minded Fury
+			[1216142] = 105, -- Double-Minded Fury
 			[466385] = 105, -- Moxie
 			[1218319] = 320, -- Voidsplosion
 			[466765] = 911, -- Beta Launch
@@ -4012,7 +4123,7 @@ function ZA_UpdateData()
 			[1219407] = 400, -- Brutal Club
 			[467178] = 282, -- Bottle Service
 			[467180] = 282, -- Bottle Service
-			[474147] = 417, -- Noire Royal
+			[474147] = 320, -- Noire Royal
 			[444451] = 32, -- Speaker's Wrath
 			[444408] = 32, -- Speaker's Wrath
 			[444438] = 32, -- Speaker's Wrath
@@ -7801,7 +7912,7 @@ function ZA_UpdateData()
 			[255041] = 327, -- Terrifying Screech
 			[258709] = 200, -- Corrupted Gold
 			[259205] = 130, -- Spirit of Gold
-			[255582] = 200, -- Molten Gold
+			[255582] = 130, -- Molten Gold
 			[255579] = 130, -- Gilded Claws
 			[255577] = 200, -- Transfusion
 			[255558] = 321, -- Tainted Blood
@@ -9568,6 +9679,8 @@ function ZA_UpdateData()
 			[387708] = 200, -- Tyr's Wrath
 			[385883] = 200, -- Maintenance
 			[393430] = 200, -- Restoration Protocol
+			[1242273] = 200, -- Energy Blast
+			[448219] = 200, -- Energy Blast
 			[385959] = 200, -- Energy Blast
 			[385419] = 200, -- Construct Defense Orb
 			[387740] = 200, -- Bulwark of Order (Titan Maiden)
@@ -13481,7 +13594,7 @@ function ZA_UpdateData()
 			["Molten Crash"] = 12,
 			["Molten Eruption"] = 12,
 			["Molten Fists"] = 12,
-			["Molten Gold"] = 200,
+			["Molten Gold"] = 130,
 			["Molten Meteor"] = 12,
 			["Molten Pool"] = 12,
 			["Molten Surge"] = 12,
@@ -16469,6 +16582,7 @@ function ZA_UpdateData()
 			[288505] = 175, -- Kaldorei Nightsaber
 			[288506] = 153, -- Sandy Nightsaber
 			[288503] = 154, -- Umber Nightsaber
+			[1237631] = 722, -- Moonlit Nightsaber
 			[281887] = 175, -- Vicious Black Warsaber
 			[146615] = 153, -- Vicious Kaldorei Warsaber
 			[281888] = 159, -- Vicious White Warsaber
@@ -16683,7 +16797,7 @@ function ZA_UpdateData()
 			[101821] = 320, -- Ruthless Gladiator's Twilight Drake
 			[101282] = 34, -- Vicious Gladiator's Twilight Drake
 			[124550] = 34, -- Cataclysmic Gladiator's Twilight Drake
-			[201098] = 642, -- Infinite Timereaver
+			[201098] = 329, -- Infinite Timereaver
 			[377071] = 4, -- Crimson Gladiator's Drake
 			[424539] = "Insanity", -- Draconic Gladiator's Drake
 			-- Slitherdrake
@@ -16698,6 +16812,7 @@ function ZA_UpdateData()
 			[107845] = 403, -- Life-Binder's Handmaiden
 			[107844] = 142, -- Twilight Harbinger
 			-- New Drake
+			[1226144] = 329, -- Chrono Corsair
 			[294197] = 12, -- Obsidian Worldbreaker
 			[420097] = 48, -- Azure Worldchiller
 			[326390] = 100, -- Steamscale Incinerator
@@ -17227,6 +17342,7 @@ function ZA_UpdateData()
 			[448188] = 133, -- Machine Defense Unit 1-11
 			[442358] = 910, -- Stonevault Mechsuit
 			[458335] = 822, -- Diamond Mechsuit
+			[1241263] = 800, -- OC91 Chariot
 
 			--! Mite
 			-- Swarmite
@@ -17442,6 +17558,7 @@ function ZA_UpdateData()
 			[64659]  = 158, -- Venomhide Ravasaur
 			[10799]  = 172, -- Violet Raptor
 			-- Ravasaur
+			[1237703] = 720, -- Ivory Savagemane
 			[255696] = 200, -- Gilded Ravasaur
 			[266058] = 415, -- Tomb Stalker
 			-- Dreamtalon
@@ -17821,8 +17938,8 @@ function ZA_UpdateData()
 			-- Waveshredder
 			[473188] = 133, -- Bronze Goblin Waveshredder
 			[446352] = 140, -- Goblin Surfboard
-			[473137] = 910, -- Soweezi's Vintage Waveshredder
-			[447413] = 133, -- Pearlescent Goblin Wave Shredder
+			[473137] = 680, -- Soweezi's Vintage Waveshredder
+			[447413] = 135, -- Pearlescent Goblin Wave Shredder
 
 			--! Dragonfly
 			-- Water Strider
@@ -20246,6 +20363,25 @@ function ZA_UpdateData()
 			[1216778] = 818,
 			[1216782] = 816,
 			[1216779] = 815,
+			[450842] = 9,
+			[443124] = 320,
+			[1219422] = 143,
+			[464835] = 130, -- Gilded
+			[464837] = 130, -- Bloody
+			[464833] = 130, -- Polished
+			[464834] = 130, -- Rusty
+			[464836] = 130, -- Greased
+			[439043] = 808,
+			[1214203] = 100,
+			[1224481] = 6,
+			[1238250] = 200,
+			[1238251] = 200,
+			[1238256] = 200,
+			[1238257] = 200,
+			[1238252] = 200,
+			[1238259] = 200,
+			[1236836] = 200,
+			[468063] = 100,
 			--qqq
 
 
@@ -32091,6 +32227,23 @@ function ZA_UpdateData()
 			[1228234] = 0,
 			[1214359] = 0,
 			[1216521] = 0,
+			[1215279] = 6383558,
+			[1219422] = 5547313,
+			[464835] = 6383481, -- Gilded
+			[464837] = 6383479, -- Bloody
+			[464833] = 6383483, -- Polished
+			[464834] = 6383480, -- Rusty
+			[464836] = 6383482, -- Greased
+			[439043] = 0,
+			[1214203] = 0,
+			[1238250] = 0,
+			[1238251] = 0,
+			[1238256] = 0,
+			[1238257] = 0,
+			[1238252] = 0,
+			[1238259] = 0,
+			[1236836] = 0,
+			[468063] = 0,
 			--qqi
 
 
@@ -32593,6 +32746,22 @@ function ZA_UpdateData()
 			ZA.Spells[474086] = 170 -- Kaja'Cola-braised
 		end
 
+		-- G-99 Breakneck
+		if IsPlayerSpell(1214860) then
+			ZA.Spells[460013] = 100 -- Neutral
+		elseif IsPlayerSpell(1214865) then
+			ZA.Spells[460013] = 818 -- Redlining Red
+		elseif IsPlayerSpell(1214861) then
+			ZA.Spells[460013] = 814 -- Body Roll Blue
+		elseif IsPlayerSpell(1214866) then
+			ZA.Spells[460013] = 816 -- Yellow Cake Yellow
+		elseif IsPlayerSpell(1214862) then
+			ZA.Spells[460013] = 888 -- Goblin Green
+		end
+
+		ZA.Spells[1218373] = ZA.Spells[460013] -- Libration of Undermine version
+		ZA.Spells[1215279] = ZA.Spells[460013] -- For some reason, this spell ID is used instead
+
 
 		--! ArmyData Dragonriding Overrides
 		if ArmyDB and name then
@@ -32948,7 +33117,7 @@ function ZA_UpdateData()
 			-- Imbue
 			[5401] = "462329|Windfury|Imbued with the element of Wind",
 			[5400] = "462326|Flametongue|Imbued with the element of Fire",
-			[6498] = "462325|Earthliving|Imbued with the element of Earth",
+			[6498] = "237578|Earthliving|Imbued with the element of Earth",
 			[7587] = "5975854|Thunderstrike Ward|Imbued with the element of Lightning",
 			[7528] = "1355357|Tidecaller's Guard|Imbued with the element of Water",
 			[7143] = "237172|Rite of Sanctification|Primary stat increased by 2%. Armor increased by 5%.",
