@@ -16471,6 +16471,7 @@ function ZA_UpdateData()
 			[171637] = 153, -- Trained Rocktusk
 			[171633] = 156, -- Wild Goretusk
 			[190690] = 402, -- Bristling Hellboar
+			[1240003] = 401, -- Unarmored Deathtusk Felboar
 			[190977] = 401, -- Deathtusk Felboar
 
 			--! Broom
@@ -17733,6 +17734,10 @@ function ZA_UpdateData()
 			[48025]  = 401, -- Headless Horseman's Mount
 			[72286]  = 160, -- Invincible
 			-- Wraithcharger
+			[1235817] = 401, -- Forsaken's Grotesque Charger
+			[1235819] = 328, -- Wailing Banshee's Charger
+			[1234859] = 720, -- Banshee's Chilling Charger
+			[1235820] = 2, -- Banshee's Sickening Charger
 			[142910] = 720, -- Ironbound Wraithcharger
 			[354353] = 130, -- Fallen Charger
 			[339956] = 134, -- Mawsworn Charger
@@ -20382,6 +20387,7 @@ function ZA_UpdateData()
 			[1238259] = 200,
 			[1236836] = 200,
 			[468063] = 100,
+			[473148] = 100,
 			--qqq
 
 
@@ -32244,6 +32250,7 @@ function ZA_UpdateData()
 			[1238259] = 0,
 			[1236836] = 0,
 			[468063] = 0,
+			[473148] = 0,
 			--qqi
 
 
