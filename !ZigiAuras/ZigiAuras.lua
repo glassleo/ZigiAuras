@@ -601,7 +601,16 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
-			[1223041] = "Teleport: Incontinental Hotel", -- Gallagio Loyalty Rewards Card
+			[451826] = "Defender's Armor Kit",
+			[451827] = "Defender's Armor Kit",
+			[451828] = "Defender's Armor Kit",
+			[1216517] = "Charged Armor Kit",
+			[1216518] = "Charged Armor Kit",
+			[1216519] = "Charged Armor Kit",
+			[451825] = "Stormbound Armor Kit",
+			[451821] = "Stormbound Armor Kit",
+			[451824] = "Stormbound Armor Kit",
+			[1223041] = "Teleport: The Incontinental Hotel", -- Gallagio Loyalty Rewards Card
 			[455392] = "Darkmoon Deck: Symbiosis",
 			[455393] = "Darkmoon Deck: Radiance",
 			[455394] = "Darkmoon Deck: Ascension",
@@ -758,6 +767,9 @@ function ZA_UpdateData()
 			[445417] = "Teleport: Ara-Kara, City of Echoes", -- Path of the Ruined City
 			[445441] = "Teleport: Darkflame Cleft", -- Path of the Warding Candles
 			[1216786] = "Teleport: The Waterworks", -- Path of the Circuit Breaker
+			[1226482] = "Teleport: Liberation of Undermine", -- Path of the Full House
+			[1237215] = "Teleport: Eco-Dome Al'dani", -- Path of the Eco-Dome
+			[1239155] = "Teleport: Manaforge Omega", -- Path of the All-Devouring
 		}
 
 
@@ -1013,6 +1025,8 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Piloted Farmhand"] = 100,
+			["Mountain Prowler"] = 116,
 			["Defunct Bike"] = 100,
 			["Uther the Lightbringer"] = "PALADIN",
 			["Party Bazooka"] = 5,
@@ -2306,23 +2320,27 @@ function ZA_UpdateData()
 			[191212] = "Gathering", -- Fizzy Apple Cider
 
 			-- Event
-			["Sign of the Critter"] = true,
-			["Sign of the Skirmisher"] = true,
-			["Sign of the Emissary"] = true,
-			["Sign of the Warrior"] = true,
-			["Sign of Battle"] = true,
-			["Sign of Apexis"] = true,
-			["Sign of the Twisting Nether"] = true,
-			["Sign of the Scourge"] = true,
-			["Sign of the Destroyer"] = true,
-			["Sign of the Mists"] = true,
-			["Sign of Iron"] = true,
-			["Sign of the Legion"] = true,
-			["Sign of the Past"] = true,
-			["Sign of Azeroth"] = true,
-			["Sign of the Explorer"] = true,
-			["Winds of Mysterious Fortune"] = true,
 			[424143] = true, -- WoW Remix: Mists of Pandaria
+			[186406] = true, -- Sign of the Critter
+			[186401] = true, -- Sign of the Skirmisher
+			[471521] = true, -- Sign of the Explorer
+			[415451] = true, -- Sign of the Emissary (Dragonflight)
+			[225788] = true, -- Sign of the Emissary (Legion)
+			[186404] = true, -- Sign of the Emissary (Warlords of Draenor)
+			[225787] = true, -- Sign of the Warrior
+			[186403] = true, -- Sign of Battle
+			[186400] = true, -- Sign of Apexis
+			[452307] = true, -- Sign of the Past
+			[335148] = true, -- Sign of the Twisting Nether
+			[335149] = true, -- Sign of the Scourge
+			[335150] = true, -- Sign of the Destroyer
+			[335151] = true, -- Sign of the Mists
+			[335152] = true, -- Sign of Iron
+			[359082] = true, -- Sign of the Legion
+			[1223878] = true, -- Sign of Azeroth
+			[1214848] = true, -- Winds of Mysterious Fortune
+			[1250683] = true, -- Collector's Bounty
+			[1250685] = true, -- Greedy Emissary
 
 
 			----------------
@@ -2330,6 +2348,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[189252] = "State", -- Mountain Prowler
 			[1234016] = "State", -- Play Nice, Play Fair
 			[441868] = "State", -- Shadow Realm
 			[1214346] = "State", -- Revolution!
@@ -2526,6 +2545,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[239966] = "Zone", -- War Effort
+			[233641] = "Zone", -- Legionfall Commander
+			[210633] = "Zone", -- Aessina's Blessing
+			[220351] = "Zone", -- Songflower Serenade
 			[1220625] = "Zone", -- Vial of Healing
 			[1220620] = "Zone", -- Can of Amps
 			[1221113] = "Zone", -- Beefy Burger
@@ -3754,6 +3777,21 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[264859] = 2, -- Abyssal Beacon
+			[256983] = 400, -- Frightened Stomp
+			[256981] = 400, -- Frightened Stomp
+			[256991] = 400, -- Frightened Stomp
+			[262606] = 400, -- Frightened Stomp
+			[256992] = 400, -- Frightened Stomp
+			[256996] = 400, -- Frightened Stomp
+			[256995] = 400, -- Frightened Stomp
+			[471383] = 5, -- Test Pilot's Go-Pack
+			[431177] = 20, -- Frostfire Empowerment
+			[184913] = 104, -- Haste
+			[189612] = 101, -- Rending Howl
+			[190694] = 401, -- Fel Rupture
+			[190680] = 401, -- Fel Claws
+			[180178] = 401, -- Blood Pact
 			[1226946] = 103, -- Blind Madness
 			[458117] = 330, -- Dark Abatement
 			[440800] = 330, -- Dark Abatement
@@ -16630,6 +16668,7 @@ function ZA_UpdateData()
 
 			--! Cloud Serpent
 			[1216430] = 329, -- Sha-Warped Cloud Serpent
+			[1236262] = 807, -- Shaohao's Sage Serpent
 			[127170]  = 722, -- Astral Cloud Serpent
 			[446022]  = "Holy Power", -- Astral Emperor's Serpent
 			[123992]  = 48, -- Azure Cloud Serpent
@@ -16726,7 +16765,7 @@ function ZA_UpdateData()
 
 			--! Devilsaur
 			-- Mechasaur
-			[466011] = 176, -- Flarendo the Furious
+			[466011] = 5, -- Flarendo the Furious
 
 			--! Direhorn
 			[138424] = 134, -- Amber Primordial Direhorn
@@ -17157,6 +17196,7 @@ function ZA_UpdateData()
 			[231587] = 2, -- Highlord's Vengeful Charger
 			[231588] = 2, -- Highlord's Vigilant Charger
 			-- Special Steed
+			[1241429] = 3, -- Inarius' Charger
 			[107203] = 203, -- Tyrael's Charger
 			[92231]  = 720, -- Spectral Steed
 			[339588] = 321, -- Sinrunner Blanchy
@@ -20388,6 +20428,34 @@ function ZA_UpdateData()
 			[1236836] = 200,
 			[468063] = 100,
 			[473148] = 100,
+			[297415] = 202,
+			[287937] = 5,
+			[183626] = 114,
+			[451825] = 116,
+			[451821] = 116,
+			[451824] = 116,
+			[1216517] = 116,
+			[1216518] = 116,
+			[1216519] = 116,
+			[451826] = 116,
+			[451827] = 116,
+			[451828] = 116,
+			[457618] = 126,
+			[457619] = 126,
+			[457620] = 126,
+			[457621] = 126,
+			[457622] = 126,
+			[457623] = 126,
+			[457624] = 126,
+			[457625] = 126,
+			[457626] = 126,
+			[252674] = 100,
+			[249972] = 800,
+			[251174] = 100,
+			[251175] = 100,
+			[251112] = 100,
+			[234938] = 202,
+			[273837] = 4,
 			--qqq
 
 
@@ -20464,6 +20532,9 @@ function ZA_UpdateData()
 			[445417] = 646, -- Path of the Ruined City
 			[445441] = 646, -- Path of the Warding Candles
 			[1216786] = 646, -- Path of the Circuit Breaker
+			[1226482] = 646, -- Path of the Full House
+			[1237215] = 646, -- Path of the Eco-Dome
+			[1239155] = 646, -- Path of the All-Devouring
 
 
 			--! Tuskarr Fishing Gear
@@ -30761,9 +30832,9 @@ function ZA_UpdateData()
 			[280310] = 2030683,
 			[257831] = 0,
 			[318682] = 0,
-			[268335] = 1869493,
-			[269702] = 1869493,
-			[267647] = 1869493,
+			[268335] = 0,
+			[269702] = 0,
+			[267647] = 0,
 			[298611] = 1830317,
 			[298609] = 1830317,
 			[298606] = 1830317,
@@ -32251,6 +32322,28 @@ function ZA_UpdateData()
 			[1236836] = 0,
 			[468063] = 0,
 			[473148] = 0,
+			[297415] = 0,
+			[287937] = 0,
+			[183626] = 0,
+			[451825] = 5975854,
+			[451821] = 5975854,
+			[451824] = 5975854,
+			[451826] = 5975753,
+			[451827] = 5975753,
+			[451828] = 5975753,
+			[457618] = 4549251,
+			[457619] = 4549251,
+			[457620] = 4549251,
+			[457621] = 4549251,
+			[457622] = 4549251,
+			[457623] = 4549251,
+			[252674] = 0,
+			[249972] = 0,
+			[251174] = 0,
+			[251175] = 0,
+			[251112] = 0,
+			[234938] = 0,
+			[273837] = 0,
 			--qqi
 
 
@@ -32384,6 +32477,9 @@ function ZA_UpdateData()
 			[445417] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportAraKara", -- Path of the Ruined City
 			[445441] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportDarkflameCleft", -- Path of the Warding Candles
 			--[1216786] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportOperationFloodgate", -- Path of the Circuit Breaker
+			--[1226482] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportLiberationOfUndermine", -- Path of the Full House
+			--[1237215] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportEcoDomeAlDani", -- Path of the Eco-Dome
+			--[1239155] = "Interface/AddOns/!ZigiAuras/Icons/HeroTeleportManaforgeOmega", -- Path of the All-Devouring
 			
 
 
@@ -32792,20 +32888,20 @@ function ZA_UpdateData()
 				colors[#colors+1] = 642 -- Infinite
 
 				local transforms = {
-					[2] = 4, -- Blazing
-					[3] = 140, -- Storm-Eater
-					[4] = 36, -- Shadowflame
+					[2] = 140, -- Storm-Eater
+					[3] = 36, -- Shadowflame
+					[4] = 4, -- Blazing
 				}
 				
 				local icons = {
-					[2] = 5319138, -- Blazing
-					[3] = 4630364, -- Storm-Eater
-					[4] = 5319139, -- Shadowflame
+					[2] = 4630364, -- Storm-Eater
+					[3] = 5319139, -- Shadowflame
+					[4] = 5319138, -- Blazing
 				}
 				local names = {
-					[2] = "Blazing Proto-Drake",
-					[3] = "Storm-Eater Proto-Drake",
-					[4] = "Shadowflame Proto-Drake",
+					[2] = "Storm-Eater Proto-Drake",
+					[3] = "Shadowflame Proto-Drake",
+					[4] = "Blazing Proto-Drake",
 				}
 
 				ZA.Spells[id] = transforms[transform] or colors[color]
