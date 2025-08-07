@@ -1025,6 +1025,11 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Kal'shin"] = 650,
+			["Energy Form"] = 650,
+			["Borthas the Cold"] = 415,
+			["The Lich King"] = "DEATHKNIGHT",
+			["Chosen Champion"] = 417,
 			["Piloted Farmhand"] = 100,
 			["Mountain Prowler"] = 116,
 			["Defunct Bike"] = 100,
@@ -1217,6 +1222,7 @@ function ZA_UpdateData()
 
 		--! Hearthstones
 		ZA.Hearthstones = {
+			[1240219] = "Hearthstone", -- P.O.S.T. Master's Express Hearthstone
 			[1217281] = "Hearthstone", -- Redeployment Module
 			["Explosive Hearthstone"] = "Hearthstone",
 			["Notorious Thread's Hearthstone"] = "Hearthstone",
@@ -1405,7 +1411,7 @@ function ZA_UpdateData()
 			[435493] = true, -- Concoction: Kiss of Death
 			[451303] = "Volatile Energy: Mastery", -- Harvester's Edict
 			[449282] = "Aim of the Iron Dwarves: Critical Strike", -- Weathered Northrend Sigil (Iron Dwarf)
-			[449281] = "Power of the Taunka: Attack Power", -- Weathered Northrend Sigil (Taunka)
+			[449281] = "Power of the Taunka: Mastery", -- Weathered Northrend Sigil (Taunka)
 			[449278] = "Speed of the Vrykul: Haste", -- Weathered Northrend Sigil (Vrykul)
 
 			-- Dragonflight
@@ -2249,10 +2255,13 @@ function ZA_UpdateData()
 			[23445] = true, -- Evil Twin (Wormhole)
 
 			-- Experience/Reputation
+			[1229050] = "XP", -- Mastery of Timeways
+			[423861] = "XP", -- Mastery of Timeways
+			[1229052] = "Reputation", -- Knowledge of Timeways
+			[423860] = "Reputation", -- Knowledge of Timeways
+			[1221184] = "XP", -- Surge of Mysterious Wisdom
 			[430191] = "XP", -- Warband Mentored Leveling
 			[419239] = "XP", -- Dreaming Winds
-			[423860] = "Reputation", -- Knowledge of Timeways
-			[423861] = "XP", -- Mastery of Timeways
 			["Experience Eliminated"] = "XP",
 			["Winds of Wisdom"] = "XP",
 			[418744] = "Reputation", -- Dreamsurge Learnings
@@ -2279,6 +2288,7 @@ function ZA_UpdateData()
 			[1227124] = "Reputation", -- Sacred Flame's Ward
 
 			-- Contract/Envoy
+			["Contract: The K'aresh Trust"] = true,
 			["Contract: The Cartels of Undermine"] = true,
 			["Contract: The Severed Threads"] = true,
 			["Contract: Hallowfall Arathi"] = true,
@@ -2348,6 +2358,11 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[1232742] = true, -- Phase Diving
+			[1214374] = true, -- Phase Diving
+			[470996] = "State", -- Soul-Scribe's Allowance
+			[358277] = "State", -- Whispers of the Everliving
+			[242960] = "State", -- Void Rift
 			[189252] = "State", -- Mountain Prowler
 			[1234016] = "State", -- Play Nice, Play Fair
 			[441868] = "State", -- Shadow Realm
@@ -2545,6 +2560,24 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1246861] = "Zone", -- Martin Fury
+			[1246841] = "Zone", -- Boots of Speedy Blinding
+			[1246833] = "Zone", -- Knee Seeking Arrow
+			[1246853] = "Zone", -- Deck of Several Things
+			[471549] = "Zone", -- Flickering Lantern
+			[1233477] = "Zone", -- Arcane Essence
+			[1233475] = "Zone", -- Void Essence
+			[1233478] = "Zone", -- Spirit Essence
+			[1213857] = "Zone", -- Mail Overflow
+			[347319] = "Zone", -- Path of Greed
+			[345155] = "Zone", -- Grateful Blessing
+			[355462] = "Zone", -- Reliquary Sight
+			[1221007] = "Zone", -- Mysterious Tremorshards
+			[1218454] = "Zone", -- Mysterious Swiftstrike
+			[463525] = "Zone", -- Prismatic Blessing
+			[1218388] = "Zone", -- Mysterious Celerity
+			[22888] = "Zone", -- Rallying Cry of the Dragonslayer
+			[313770] = "Zone", -- War Effort
 			[239966] = "Zone", -- War Effort
 			[233641] = "Zone", -- Legionfall Commander
 			[210633] = "Zone", -- Aessina's Blessing
@@ -3777,6 +3810,420 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1239486] = 331, -- Broadside
+			[1239488] = 331, -- Broadside
+			[1239445] = 331, -- Broadside
+			[1239427] = 50, -- Scuttle That One!
+			[1239426] = 50, -- Scuttle That One!
+			[1239859] = 320, -- All Hands!
+			[1239350] = 320, -- All Hands!
+			[1244311] = 126, -- Torrential Energy
+			[1244308] = 126, -- Torrential Energy
+			[1244309] = 126, -- Torrential Energy
+			[1244313] = 126, -- Torrential Energy
+			[1231659] = 32, -- Behold!
+			[1236428] = 32, -- Behold!
+			[1231630] = 32, -- Behold!
+			[1231649] = 32, -- Behold!
+			[1231655] = 32, -- Behold!
+			[1231660] = 32, -- Behold!
+			[1231880] = 32, -- Behold!
+			[1236770] = 64, -- Arcane Geyser
+			[1236774] = 64, -- Arcane Geyser
+			[1236778] = 64, -- Arcane Geyser
+			[1236779] = 64, -- Arcane Geyser
+			[1236780] = 64, -- Arcane Geyser
+			[1236782] = 64, -- Arcane Geyser
+			[1242780] = 64, -- Consumed Ethereal
+			[1242777] = 64, -- Consumed Ethereal
+			[1242770] = 64, -- Consume
+			[1242769] = 64, -- Consume
+			[1231664] = 804, -- Disturbed Sands
+			[1227014] = 804, -- K'areshi Sands
+			[1227013] = 804, -- Kareshi Sands
+			[1231665] = 804, -- Miniature Reshi Sandgarden
+			[1243017] = 804, -- Sand Crash
+			[1230713] = 804, -- Sand Devil
+			[1230714] = 804, -- Sand Devil
+			[1243007] = 804, -- Sand Step
+			[1242469] = 804, -- Sands of K'aresh
+			[1237671] = 804, -- Sandstorm
+			[1246351] = 804, -- Sandstorm
+			[1237672] = 804, -- Sandstorm
+			[1246355] = 804, -- Sandstorm
+			[1248321] = 804, -- Sandstorm
+			[1237220] = 804, -- Stinging Sandstorm
+			[1237224] = 804, -- Stinging Sandstorm
+			[1221161] = 804, -- Whirling Sand
+			[1221164] = 804, -- Whirling Sand
+			[1221165] = 804, -- Whirling Sand
+			[1236256] = 330, -- Vorpal Cleave
+			[1215487] = 330, -- Vorpal Strike
+			[1237137] = 320, -- Vorpal Overload
+			[1237140] = 320, -- Vorpal Overload
+			[1239665] = 103, -- Rough Kisses
+			[1239664] = 103, -- Rough Kisses
+			[1239688] = 103, -- Rough Kisses
+			[1239668] = 103, -- Rough Kisses
+			[1221207] = 320, -- Umbra Bolt
+			[1236186] = 320, -- Umbra Bolt
+			[1237745] = 320, -- Umbra Bolt
+			[1231875] = 33, -- Lance Throw
+			[1233169] = 203, -- Retrieve Stolen Tech
+			[1232935] = 65, -- Blood of K'aresh
+			[1234939] = 320, -- Gorge Essence
+			[1240219] = 811, -- P.O.S.T. Master's Express Hearthstone
+			[1230315] = 64, -- Phase
+			[1231865] = 64, -- Phase
+			[1230941] = 64, -- Phase
+			[1217739] = 400, -- Burrow
+			[1217816] = 400, -- Burrow
+			[1224089] = 400, -- Burrow
+			[1224090] = 400, -- Burrow
+			[1224094] = 400, -- Burrow
+			[1224300] = 400, -- Burrow
+			[1224302] = 400, -- Burrow
+			[1224389] = 400, -- Burrow
+			[1224390] = 400, -- Burrow
+			[1224391] = 400, -- Burrow
+			[1229318] = 400, -- Burrow
+			[1229319] = 400, -- Burrow
+			[1229320] = 400, -- Burrow
+			[1251138] = 400, -- Burrow
+			[1217808] = 400, -- Burrow
+			[1217810] = 400, -- Burrow
+			[1224086] = 400, -- Burrow
+			[1224392] = 400, -- Burrow
+			[1227759] = 400, -- Burrow
+			[1229316] = 400, -- Burrow
+			[1229321] = 400, -- Burrow
+			[1237195] = 400, -- Burrow Charge
+			[1237199] = 400, -- Burrow Charge
+			[1223007] = 400, -- Burrowing Eruption
+			[1223008] = 400, -- Burrowing Eruption
+			[1223006] = 400, -- Burrowing Eruption
+			[1226289] = 400, -- Burrowing Eruption
+			[1226290] = 400, -- Burrowing Eruption
+			[1226291] = 400, -- Burrowing Eruption
+			[1227777] = 400, -- Burrowing Eruption
+			[1227779] = 400, -- Burrowing Eruption
+			[1227789] = 400, -- Burrowing Eruption
+			[1237884] = 400, -- Burrowing...
+			[1241337] = 400, -- Dustcoil Burrow
+			[1241342] = 400, -- Dustcoil Burrow
+			[1241343] = 400, -- Dustcoil Burrow
+			[1241344] = 400, -- Dustcoil Burrow
+			[1241334] = 400, -- Dustcoil Burrow
+			[1241336] = 400, -- Dustcoil Burrow
+			[1232778] = 320, -- Umbral Beckoning
+			[1232787] = 320, -- Umbral Beckoning
+			[1232789] = 320, -- Umbral Beckoning
+			[1232790] = 320, -- Umbral Beckoning
+			[1232779] = 320, -- Umbral Beckoning
+			[1232780] = 320, -- Umbral Beckoning
+			[1238909] = 320, -- Umbral Devastation
+			[1235467] = 320, -- Umbral Gate
+			[1235466] = 320, -- Umbral Gate
+			[1235463] = 320, -- Umbral Gate
+			[1235302] = 320, -- Umbral Gate
+			[1235397] = 330, -- Umbral Reach
+			[1231445] = 330, -- Umbral Stomp
+			[1230608] = 400, -- Dazing Gauntlet
+			[1246806] = 320, -- Entropic Conjunction
+			[1230610] = 320, -- Entropic Conjunction
+			[1223209] = 320, -- Entropic Conjunction
+			[1223517] = 320, -- Entropic Conjunction
+			[1225938] = 320, -- Entropic Conjunction
+			[1228155] = 320, -- Entropic Conjunction
+			[1240562] = 320, -- Entropic Conjunction
+			[1226277] = 320, -- Entropic Howl
+			[1223160] = 320, -- Entropic Miasma
+			[1225327] = 320, -- Entropic Miasma
+			[1232287] = 320, -- Entropic Mist
+			[1239310] = 320, -- Entropic Rupture
+			[1239316] = 320, -- Entropic Rupture
+			[1239309] = 320, -- Entropic Rupture
+			[1239312] = 320, -- Entropic Rupture
+			[1227881] = 320, -- Entropic Shockwave
+			[1226788] = 327, -- Entropic Terror
+			[1246537] = 320, -- Entropic Unity
+			[1246536] = 320, -- Entropic Unity
+			[1244171] = 320, -- Entropic Upheaval
+			[1237697] = 320, -- Entropic Wrath
+			[1237698] = 320, -- Entropic Wrath
+			[1237699] = 320, -- Entropic Wrath
+			[1237700] = 320, -- Entropic Wrath
+			[1241352] = 64, -- Nullifying Shroud
+			[1246541] = 320, -- Null Binding
+			[1246542] = 320, -- Null Binding
+			[1247495] = 320, -- Null Explosion
+			[1247424] = 320, -- Null Consumption
+			[1238895] = 320, -- Null Breath
+			[1232315] = 320, -- Null Mantle
+			[1226441] = 320, -- Null Rupture
+			[1227799] = 320, -- Null Toxin
+			[473548] = 320, -- Nullbomb
+			[1219336] = 320, -- Nullbomb - Reverse
+			[1226443] = 320, -- Null Rupture
+			[1227209] = 320, -- Null Rupture
+			[1227800] = 320, -- Null Toxin
+			[1230622] = 320, -- NullBomb - Override
+			[1231146] = 320, -- Null Breath
+			[1237088] = 320, -- Nullgaze Surge
+			[1237226] = 320, -- Nullgaze Surge
+			[1237737] = 320, -- Null Ruptures
+			[1238892] = 320, -- Null Breath
+			[1243305] = 320, -- Nullstorm Blast
+			[1247419] = 320, -- Null Explosion
+			[1219334] = 320, -- Nullbomb
+			[1230627] = 320, -- Nullbpmb - Override
+			[1231144] = 320, -- Null Breath
+			[1243304] = 320, -- Nullstorm Blast
+			[473829] = 320, -- Channeling Void
+			[1227734] = 320, -- Coalesce Voidwing
+			[1227891] = 320, -- Coalesce Voidwing
+			[1227897] = 320, -- Coalesce Voidwing
+			[1227715] = 320, -- Coalesce Voidwing
+			[1227898] = 320, -- Coalesce Voidwing
+			[468961] = 320, -- Cosmetic - Void Beam
+			[1236690] = 320, -- Devouring Void
+			[1236689] = 320, -- Devouring Void
+			[1236991] = 320, -- Devouring Void
+			[1239221] = 320, -- Diamantine Voidcore
+			[1234996] = 320, -- Diamantine Voidcore
+			[1239233] = 320, -- Diamantine Voidcore
+			[1239234] = 320, -- Diamantine Voidcore
+			[1234297] = 320, -- Ensnared by Void
+			[1227665] = 330, -- Fists of the Voidlord
+			[1243055] = 330, -- Fists of the Voidlord
+			[1252103] = 330, -- Fists of the Voidlord
+			[1243053] = 330, -- Fists of the Voidlord
+			[1243054] = 330, -- Fists of the Voidlord
+			[1243056] = 330, -- Fists of the Voidlord
+			[1243057] = 330, -- Fists of the Voidlord
+			[1244609] = 330, -- Fists of the Voidlord
+			[1227659] = 330, -- Fists of the Voidlord
+			[1227663] = 330, -- Fists of the Voidlord
+			[1244610] = 330, -- Fists of the Voidlord
+			[1244517] = 320, -- From Vengeance to Void
+			[1244521] = 320, -- I Have Become Void!
+			[1245440] = 320, -- K'areshi Voidstone
+			[1235531] = 320, -- Maw of the Void
+			[1237929] = 320, -- Maw of the Void
+			[1238128] = 320, -- Maw of the Void
+			[1216203] = 320, -- Oozing Void
+			[1219494] = 320, -- Oozing Void
+			[1219567] = 320, -- Oozing Void
+			[1228477] = 320, -- Open Void Portal
+			[1237615] = 320, -- Overflowing Void
+			[467384] = 320, -- Place Void Bait
+			[1233931] = 320, -- Raging Void
+			[1233941] = 320, -- Raging Void
+			[1235130] = 320, -- Shards of the Void
+			[1235136] = 320, -- Shards of the Void
+			[466059] = 320, -- Summon Void Glass
+			[1219328] = 320, -- Summon Void Mass
+			[1219167] = 320, -- Summon Void Residue
+			[466074] = 320, -- Summon Void Shards
+			[1233929] = 320, -- The Raging Void
+			[1231934] = 320, -- Unleashed Void
+			[1231933] = 320, -- Unleashed Void
+			[1252578] = 320, -- Unstable Void Rift
+			[1235973] = 320, -- Vengeful Void Barrier
+			[1241892] = 320, -- Void
+			[1223198] = 320, -- Void
+			[464188] = 320, -- Void Absorption
+			[1238047] = 320, -- Void Barrage
+			[1228597] = 320, -- Void Barrage
+			[1228864] = 320, -- Void Barrage
+			[1238050] = 320, -- Void Barrage
+			[1242836] = 320, -- Void Barrage
+			[1242837] = 320, -- Void Barrage
+			[1242838] = 320, -- Void Barrage
+			[473405] = 320, -- Void Barrier
+			[1220961] = 320, -- Void Beam
+			[1220970] = 320, -- Void Beam
+			[1237252] = 320, -- Void Beam
+			[1242831] = 320, -- Void Beam
+			[1242832] = 320, -- Void Beam
+			[1220984] = 320, -- Void Beam
+			[1230937] = 320, -- Void Blast
+			[1235064] = 320, -- Void Blast
+			[1215227] = 320, -- Void Bolt
+			[1243286] = 320, -- Void Bolt
+			[1240722] = 320, -- Void Bolt Volley
+			[1220962] = 320, -- Void Bomb
+			[467393] = 320, -- Void Boss Explosion
+			[1231468] = 320, -- Void Breath
+			[1231470] = 320, -- Void Breath
+			[1234321] = 320, -- Void Bubble
+			[1227052] = 320, -- Void Burst
+			[1252952] = 320, -- Void Burst
+			[1252953] = 320, -- Void Burst
+			[1227475] = 320, -- Void Charged
+			[474725] = 320, -- Void Cleansed
+			[1214311] = 203, -- Void Collector
+			[1214312] = 203, -- Void Collector
+			[471002] = 320, -- Void Corruption
+			[471024] = 320, -- Void Corruption
+			[1237906] = 320, -- Void Corruption
+			[1239052] = 320, -- Void Corruption
+			[1239409] = 320, -- Void Echo
+			[1231482] = 320, -- Void Ejection
+			[1231483] = 320, -- Void Ejection
+			[1231477] = 320, -- Void Ejection
+			[1238921] = 320, -- Void Empowerment
+			[1238922] = 320, -- Void Empowerment
+			[1238919] = 320, -- Void Empowerment
+			[1228250] = 320, -- Void Eruption
+			[1228263] = 320, -- Void Eruption
+			[1228248] = 320, -- Void Eruption
+			[1233445] = 320, -- Void Essence
+			[1233475] = 320, -- Void Essence
+			[1245588] = 320, -- Void Explosion
+			[1252375] = 320, -- Void Explosion
+			[1248816] = 320, -- Void Forged Echo
+			[1223667] = 320, -- Void Glare
+			[1223671] = 320, -- Void Glare
+			[1223666] = 320, -- Void Glare
+			[1223715] = 320, -- Void Glare
+			[1243901] = 320, -- Void Harvest
+			[1243887] = 320, -- Void Harvest
+			[1245002] = 320, -- Void Harvest
+			[1243911] = 320, -- Void Harvest
+			[1243873] = 320, -- Void Harvest
+			[1243874] = 320, -- Void Harvest
+			[1243904] = 320, -- Void Harvest
+			[1243910] = 320, -- Void Harvest
+			[1243912] = 320, -- Void Harvest
+			[1243915] = 320, -- Void Harvest
+			[1215372] = 320, -- Void Hunter
+			[1227471] = 320, -- Void Infused
+			[1232782] = 320, -- Void Infusion
+			[1250600] = 320, -- Void Lightning
+			[1227158] = 320, -- Void Lure
+			[1235967] = 320, -- Void Lure
+			[1227174] = 320, -- Void Lure
+			[1243591] = 320, -- Void Manifestation
+			[1243333] = 320, -- Void Manifestation
+			[1220469] = 320, -- Void Meteor
+			[1220484] = 320, -- Void Meteor
+			[1244888] = 320, -- Void Mucus
+			[1244870] = 320, -- Void Mucus
+			[1242157] = 320, -- Void Ray
+			[1236692] = 320, -- Void Reconstitution
+			[1242018] = 320, -- Void Resonance
+			[1242021] = 320, -- Void Resonance
+			[467923] = 320, -- Void Rift Dispel
+			[1252565] = 320, -- Void Rift Storm
+			[1252577] = 320, -- Void Rift Storm
+			[1214720] = 320, -- Void Ritual
+			[1214717] = 320, -- Void Ritual
+			[1232619] = 320, -- Void Rush
+			[1232621] = 320, -- Void Rush
+			[1232622] = 320, -- Void Rush
+			[1235308] = 320, -- Void Rush
+			[1232628] = 320, -- Void Rush
+			[1237689] = 320, -- Void Shell
+			[1231932] = 320, -- Void Shell
+			[1213562] = 320, -- Void Shield
+			[1220965] = 320, -- Void Shot
+			[1220966] = 320, -- Void Shot
+			[1233772] = 320, -- Void Shot
+			[1231432] = 320, -- Void Sight
+			[1233380] = 320, -- Void Sight
+			[1220978] = 320, -- Void Sight
+			[1221016] = 320, -- Void Sight
+			[1227310] = 320, -- Void Siphon
+			[1234020] = 320, -- Void Slam
+			[1229037] = 320, -- Void Slice
+			[1244556] = 320, -- Void Spittle
+			[1246813] = 320, -- Void Spore
+			[1214316] = 320, -- Void Spore Collector
+			[1231935] = 320, -- Void Spray
+			[1239677] = 320, -- Void Spray
+			[1241166] = 320, -- Void Storage: Veilscrolls
+			[1241165] = 320, -- Void Storage: Veilscrolls
+			[1231882] = 320, -- Void Strike
+			[1243641] = 320, -- Void Surge
+			[465438] = 320, -- Void Surge
+			[465440] = 320, -- Void Surge
+			[465439] = 320, -- Void Surge
+			[1243637] = 320, -- Void Surge
+			[467007] = 320, -- Void Surging
+			[1214747] = 320, -- Void Taint
+			[1248424] = 320, -- Void Tear
+			[1248171] = 320, -- Void Tear
+			[1248133] = 320, -- Void Tear
+			[1245638] = 320, -- Void Tear
+			[1245646] = 320, -- Void Tear
+			[1248430] = 320, -- Void Tear
+			[1227482] = 320, -- Void Tornado
+			[1240401] = 320, -- Void Volley
+			[1242173] = 320, -- Void Volley
+			[1242189] = 320, -- Void Volley
+			[1242171] = 320, -- Void Volley
+			[1242840] = 320, -- Void Warp
+			[1236785] = 320, -- Void-Infused Nexus
+			[1224856] = 320, -- Void-Touched Fragment
+			[1224916] = 320, -- Void-Touched Fragment
+			[1224917] = 320, -- Void-Touched Fragment
+			[1224918] = 320, -- Void-Touched Fragment
+			[1228117] = 320, -- Voidbinder's Mastery
+			[1228147] = 320, -- Voidbinder's Mastery
+			[1228174] = 320, -- Voidbinder's Mastery
+			[1228201] = 320, -- Voidbinder's Mastery
+			[1243344] = 320, -- Voidbinder's Mastery
+			[1227048] = 320, -- Voidblade Ambush
+			[1227051] = 320, -- Voidblade Ambush
+			[1227049] = 320, -- Voidblade Ambush
+			[1248979] = 320, -- Voidblade Ambush
+			[1227050] = 320, -- Voidblade Ambush
+			[1225745] = 320, -- Voidbound
+			[1225786] = 320, -- Voidbound
+			[1221391] = 320, -- Voidcall
+			[1221396] = 320, -- Voidcall
+			[1239412] = 320, -- Voidcall
+			[1239413] = 320, -- Voidcall
+			[1239415] = 320, -- Voidcall
+			[1244498] = 320, -- Voidcall
+			[1244500] = 320, -- Voidcall
+			[1221395] = 320, -- Voidcall
+			[1244497] = 320, -- Voidcall
+			[1221401] = 320, -- Voidcaller's Bond
+			[1221411] = 320, -- Voidcaller's Bond
+			[1238697] = 320, -- Voidglass Barrier
+			[1223542] = 320, -- Voidglass Contaminant
+			[1238693] = 320, -- Voidglass Shards
+			[1250055] = 320, -- Voidgrasp
+			[1250054] = 320, -- Voidgrasp
+			[1228203] = 320, -- Voidmastery
+			[1231909] = 320, -- Voidstar
+			[1231921] = 320, -- Voidstar
+			[1231925] = 320, -- Voidstar
+			[1232397] = 320, -- Voidstar
+			[1227355] = 320, -- Voidstep
+			[1237205] = 320, -- Voidstep
+			[1227361] = 320, -- Voidstep
+			[1227299] = 320, -- Voidstep
+			[1227359] = 320, -- Voidstep
+			[1226380] = 320, -- Voidstorm
+			[1239270] = 320, -- Voidwarding
+			[1239268] = 320, -- Voidwarding
+			[1249246] = 320, -- Voidwarding
+			[1237099] = 126, -- Erratic Surge
+			[1215855] = 126, -- Erratic Surge
+			[1243446] = 64, -- Page Blast
+			[1243443] = 64, -- Page Blast
+			[1217510] = 5, -- Speed Dialing
+			[354276] = 418, -- Blessing of the Vengeful Soul
+			[252475] = 320, -- Touch of the Void
+			[310959] = 320, -- Touch of the Void
+			[1240034] = 3, -- Blessed Bladestorm
+			[1240429] = 3, -- Blessed Bladestorm
+			[1240428] = 3, -- Blessed Bladestorm
+			[1240412] = 3, -- Blessed Bladestorm
+			[1240033] = 3, -- Blessed Bladestorm
 			[264859] = 2, -- Abyssal Beacon
 			[256983] = 400, -- Frightened Stomp
 			[256981] = 400, -- Frightened Stomp
@@ -4170,7 +4617,7 @@ function ZA_UpdateData()
 			[1226677] = 999, -- Cartel Jumper Cables
 			[457853] = 111, -- Incide Workers
 			[457854] = 911, -- Punishing Blow
-			[1217281] = 106, -- Redeployment Module
+			[1217281] = 200, -- Redeployment Module
 			[473973] = 320, -- Card Shark
 			[473964] = 320, -- Card Shark
 			[473961] = 320, -- Card Shark
@@ -4517,8 +4964,8 @@ function ZA_UpdateData()
 			[1215905] = 417, -- Carnage Cannon
 			[1215909] = 417, -- Carnage Cannon
 			[1215975] = 103, -- Juice It Up!
-			[473539] = 105, -- Flurry of Punches
-			[473541] = 105, -- Flurry of Punches
+			[473539] = 400, -- Flurry of Punches
+			[473541] = 400, -- Flurry of Punches
 			[1217354] = 644, -- Picking Filter
 			[473533] = 103, -- Ferocious Howl
 			[473993] = 417, -- Black Blood Bolt
@@ -7150,7 +7597,10 @@ function ZA_UpdateData()
 			[453311] = 320, -- Void Bolt
 			[455340] = 320, -- Void Bolt
 			[459242] = 320, -- Void Bolt
+			[470126] = 320, -- Void Suppression
+			[1241036] = 320, -- Void Bolt
 			[7588] = 330, -- Void Bolt
+			[1240735] = 320, -- Void Bolt Volley
 			[165874] = 320, -- Void Bolt Volley
 			[165875] = 320, -- Void Bolt Volley
 			[269282] = 320, -- Void Bolt Volley
@@ -9471,6 +9921,7 @@ function ZA_UpdateData()
 			["Stone Blast"] = 803,
 			[388643] = 800, -- Volatile Current
 			[386410] = 800, -- Thunderous Blast
+			[201846] = 800, -- Stormsurge
 			[387261] = 800, -- Stormsurge
 			[382530] = 800, -- Surge
 			[390463] = 911, -- Storm Nova
@@ -11918,6 +12369,9 @@ function ZA_UpdateData()
 			["Defensive Leap"] = 115,
 			["Defibrilate"] = 100,
 			["Defibrillate"] = 800,
+			[1240266] = 160, -- Remorseless Winter
+			[1215094] = 411, -- Pain and Suffering
+			[1240279] = 411, -- Defile
 			["Defile"] = 411,
 			["Defile:3636837"] = 805,
 			["Defiled Consecration"] = 32,
@@ -15839,7 +16293,7 @@ function ZA_UpdateData()
 			["Vampiric Drain"] = 321,
 			["Vampiric Embrace"] = 323,
 			["Vampiric Speed"] = 323,
-			["Vampiric Touch"] = 323,
+			["Vampiric Touch"] = 328,
 			["Vanish to Nothing"] = 411,
 			["Vanish"] = 411,
 			["Vanquishing Strike:2065633"] = 101,
@@ -16330,6 +16784,7 @@ function ZA_UpdateData()
 			[44153]  = 133, -- Flying Machine
 			[44151]  = 133, -- Turbo-Charged Flying Machine
 			-- Copter
+			[1247662] = 282, -- Brewfest Barrel Bomber
 			[261437] = 130, -- Mecha-Mogul Mk2
 			[63796]  = 130, -- Mimiron's Head
 			-- Hovercraft
@@ -16351,6 +16806,7 @@ function ZA_UpdateData()
 			[247448] = 325, -- Darkmoon Dirigible
 			[446052] = 100, -- Delver's Dirigible
 			[466133] = 100, -- Delver's Gob-Trotter
+			[1224048] = 100, -- Delver's Mana-Skimmer
 
 			--! Alpaca
 			[316493] = 156, -- Elusive Quickhoof
@@ -16781,16 +17237,20 @@ function ZA_UpdateData()
 			[290608] = 200, -- Crusader's Direhorn
 
 			--! Disc
+			[431992] = 646, -- Compass Rose
+			[229376] = ZA.Specialization(64, 64, 4, 16), -- Archmage's Prismatic Disc
+			-- Flying Cloud
+			[130092] = 811, -- Red Flying Cloud
 			[435082] = 131, -- Sky Surfer
 			[435082] = 132, -- Mogu Hazeblazer
 			[435044] = 130, -- Golden Discus
-			[229376] = ZA.Specialization(64, 64, 4, 16), -- Archmage's Prismatic Disc
+			-- Gearglider
+			[353265] = 203, -- Vandal's Gearglider
+			[353264] = 203, -- Xy Trustee's Gearglider
 			[353263] = 203, -- Cartel Master's Gearglider
 			[353264] = 203, -- Pilfered Gearglider
-			[130092] = 811, -- Red Flying Cloud
 			[353265] = 203, -- Silver Gearglider
 			[346554] = 203, -- Tazavesh Gearglider
-			[431992] = 646, -- Compass Rose
 
 			--! Dog
 			-- Bakar
@@ -16852,10 +17312,12 @@ function ZA_UpdateData()
 			[107845] = 403, -- Life-Binder's Handmaiden
 			[107844] = 142, -- Twilight Harbinger
 			-- New Drake
+			[1234573] = 72, -- Unbound Star-Eater
 			[1226144] = 329, -- Chrono Corsair
 			[294197] = 12, -- Obsidian Worldbreaker
 			[420097] = 48, -- Azure Worldchiller
 			[326390] = 100, -- Steamscale Incinerator
+			[1242272] = 320, -- Royal Voidwing
 			[302143] = 320, -- Uncorrupted Voidwing
 			[359843] = 815, -- Tangled Dreamweaver
 			-- Netherwing Drake
@@ -16925,6 +17387,10 @@ function ZA_UpdateData()
 			[171626] = 12, -- Armored Irontusk
 			[294568] = 12, -- Beastlord's Irontusk
 			-- Felcrusher
+			[1244259] = 240, -- Cinder-seared Elekk
+			[1244261] = 127, -- Legion Forged Elekk
+			[1244247] = 32, -- Thunder-ridged Elekk
+			[1244260] = 402, -- Void-Razed Elekk
 			[254259] = 822, -- Avenging Felcrusher
 			[254258] = 813, -- Blessed Felcrusher
 			[258022] = 200, -- Lightforged Felcrusher
@@ -16967,6 +17433,7 @@ function ZA_UpdateData()
 			[229417] = 127, -- Slayer's Felbroken Shrieker
 			[369476] = 402, -- Amalgam of Rage
 			[466144] = 5, -- Prized Gladiator's Fel Bat
+			[472157] = 320, -- Astral Gladiator's Fel Bat
 			[449466] = 133, -- Forged Gladiator's Fel Bat
 			[449465] = 131, -- Silver Gladiator's Fel Bat
 			-- Plaguebat
@@ -16975,6 +17442,8 @@ function ZA_UpdateData()
 			[451489] = 910, -- Siesbarg
 			[451491] = 150, -- Ascendant Skyrazor
 			[451486] = 150, -- Sureki Skyrazor
+			-- Crocolisk Bat
+			[1227192] = 6, -- Herald of Sa'bak
 
 			--! Felstalker
 			[189998] = 32, -- Illidari Felstalker
@@ -17068,6 +17537,7 @@ function ZA_UpdateData()
 			[130137] = 153, -- White Riding Goat
 
 			--! Gorger
+			[1241070] = 413, -- Translocated Gorger
 			[333027] = 413, -- Loyal Gorger
 			[344659] = 413, -- Voracious Gorger
 
@@ -17113,6 +17583,11 @@ function ZA_UpdateData()
 			-- Stormrook
 			[417888] = 800, -- Algarian Stormrider
 			[447213] = 811, -- Alunira
+			-- Wildhammer Gryphon
+			[1245357] = 9, -- Adorned Northeron Gryphon
+			[1245358] = 120, -- High Shaman's Aerie Gryphon
+			[1245359] = 817, -- Cinder-Plumed Highland Gryphon
+			[1245361] = 412, -- Emberwing Sky Guide
 
 			--! Hawkstrider
 			[35022]  = 175, -- Black Hawkstrider
@@ -17224,8 +17699,22 @@ function ZA_UpdateData()
 			[171840] = 16, -- Coldflame Infernal
 			[213349] = 4, -- Flarecore Infernal
 
-			--! Jawcrawler
+			--! Creeper
+			-- Jawcrawler
 			[447957] = 202, -- Ferocious Jawcrawler
+			-- Void Creeper
+			[1233542] = 34, -- The Bone Freezer
+			[1233546] = 36, -- Ruby Void Creeper
+			[1233547] = 806, -- Acid Void Creeper
+			[1234820] = 142, -- Vicious Void Creeper (Alliance)
+			[1234821] = 141, -- Vicious Void Creeper (Horde)
+
+
+			--! Void Swarmer
+			[1245517] = 331, -- Scarlet Void Flyer
+			[1246781] = 320, -- Azure Void Flyer
+			[1223191] = 821, -- Terror of the Night
+			[1223187] = 36, -- Terror of the Wastes
 
 			--! Kite
 			[435109] = 144, -- Feathered Windsurfer
@@ -17255,6 +17744,7 @@ function ZA_UpdateData()
 			[69826]  = 2, -- Great Sunwalker Kodo
 
 			--! Krolusk
+			[1240632] = 202, -- Pearlescent Krolusk
 			[288736] = 157, -- Azureshell Krolusk
 			[279454] = 119, -- Conqueror's Scythemaw
 			[239049] = 156, -- Obsidian Krolusk
@@ -17335,7 +17825,8 @@ function ZA_UpdateData()
 			[408649] = 12, -- Shadowflame Shalewing
 			[408654] = 804, -- Sandy Shalewing
 
-			--! Mauler
+			--! Devourer Mauler
+			[1241076] = 413, -- Sthaarb's Last Lunch
 			[356501] = 413, -- Rampaging Mauler
 			[347536] = 413, -- Tamed Mauler
 
@@ -17645,6 +18136,10 @@ function ZA_UpdateData()
 			[327405] = 415, -- Colossal Slaughterclaw
 			[336042] = 415, -- Hulking Deathroc
 			[336045] = 415, -- Predatory Plagueroc
+			-- K'arroc
+			[1233511] = 175, -- Umbral K'arroc
+			[1221132] = 173, -- Resplendent K'arroc
+			[1233518] = 142, -- Lavender K'arroc
 
 			--! Rocket
 			[466014] = 815, -- Steamwheedle Supplier
@@ -17747,42 +18242,46 @@ function ZA_UpdateData()
 
 			--! Skeletal Horse
 			-- Skeletal Horse
-			[64977]  = 415, -- Black Skeletal Horse
-			[17463]  = 415, -- Blue Skeletal Horse
-			[17464]  = 415, -- Brown Skeletal Horse
-			[17462]  = 415, -- Red Skeletal Horse
-			[288722] = 415, -- Risen Mare
-			[413922] = 415, -- Valiance
-			[136505] = 720, -- Ghastly Charger
+			[64977]   = 415, -- Black Skeletal Horse
+			[17463]   = 415, -- Blue Skeletal Horse
+			[17464]   = 415, -- Brown Skeletal Horse
+			[17462]   = 415, -- Red Skeletal Horse
+			[288722]  = 415, -- Risen Mare
+			[413922]  = 415, -- Valiance
+			[136505]  = 720, -- Ghastly Charger
 			-- Skeletal Charger
-			[64656]  = 33, -- Blue Skeletal Warhorse
-			[63643]  = 33, -- Forsaken Warhorse
-			[17465]  = 33, -- Green Skeletal Warhorse
-			[66846]  = 33, -- Ochre Skeletal Warhorse
-			[23246]  = 33, -- Purple Skeletal Warhorse
-			[22722]  = 33, -- Red Skeletal Warhorse
-			[17481]  = 33, -- Rivendare's Deathcharger
-			[65645]  = 18, -- White Skeletal Warhorse
-			[229499] = 321, -- Midnight
-			[281890] = 96, -- Vicious Black Bonesteed
-			[146622] = 401, -- Vicious Skeletal Warhorse
-			[281889] = 18, -- Vicious White Bonesteed
+			[64656]   = 33, -- Blue Skeletal Warhorse
+			[63643]   = 33, -- Forsaken Warhorse
+			[17465]   = 33, -- Green Skeletal Warhorse
+			[66846]   = 33, -- Ochre Skeletal Warhorse
+			[23246]   = 33, -- Purple Skeletal Warhorse
+			[22722]   = 33, -- Red Skeletal Warhorse
+			[17481]   = 33, -- Rivendare's Deathcharger
+			[65645]   = 18, -- White Skeletal Warhorse
+			[229499]  = 321, -- Midnight
+			[281890]  = 96, -- Vicious Black Bonesteed
+			[146622]  = 401, -- Vicious Skeletal Warhorse
+			[281889]  = 18, -- Vicious White Bonesteed
 			-- Deathcharger
-			[48778]  = 33, -- Acherus Deathcharger
-			[73313]  = 33, -- Crimson Deathcharger
-			[36702]  = 401, -- Fiery Warhorse
-			[48025]  = 401, -- Headless Horseman's Mount
-			[72286]  = 160, -- Invincible
+			[1245202] = 4, -- The Headless Horseman's Burning Charger
+			[1245197] = 24, -- The Headless Horseman's Chilling Charger
+			[1245198] = 401, -- The Headless Horseman's Ghoulish Charger
+			[1245205] = 2, -- The Headless Horseman's Hallowed Charger
+			[36702]   = 401, -- Fiery Warhorse
+			[48025]   = 401, -- Headless Horseman's Mount
+			[48778]   = 33, -- Acherus Deathcharger
+			[73313]   = 33, -- Crimson Deathcharger
+			[72286]   = 160, -- Invincible
 			-- Wraithcharger
-			[1235817] = 401, -- Forsaken's Grotesque Charger
+			[1245205] = 401, -- Forsaken's Grotesque Charger
 			[1235819] = 328, -- Wailing Banshee's Charger
 			[1234859] = 720, -- Banshee's Chilling Charger
 			[1235820] = 2, -- Banshee's Sickening Charger
-			[142910] = 720, -- Ironbound Wraithcharger
-			[354353] = 130, -- Fallen Charger
-			[339956] = 134, -- Mawsworn Charger
-			[354351] = 813, -- Sanctum Gloomcharger
-			[354352] = 134, -- Soulbound Gloomcharger
+			[142910]  = 720, -- Ironbound Wraithcharger
+			[354353]  = 130, -- Fallen Charger
+			[339956]  = 134, -- Mawsworn Charger
+			[354351]  = 813, -- Sanctum Gloomcharger
+			[354352]  = 134, -- Soulbound Gloomcharger
 
 			--! Snapdragon
 			[474086] = 135, -- Prismatic Snapdragon
@@ -17848,6 +18347,10 @@ function ZA_UpdateData()
 			[423891] = 16, -- Lunar Dreamstag
 			[423877] = 158, -- Rekindled Dreamstag
 			[423873] = 176, -- Suntouched Dreamstag
+			-- Slateback
+			[1250578] = 650, -- Phase-Lost Slateback
+			[1233559] = 21, -- Blue Barry
+			[1233561] = 173, -- Curious Slateback
 
 			--! Talbuk
 			[39315]  = 140, -- Cobalt Riding Talbuk
@@ -17867,6 +18370,7 @@ function ZA_UpdateData()
 			[171830] = 804, -- Swift Breezestrider
 			[171831] = 813, -- Trained Silverpelt
 			-- Ruinstrider
+			[1245370] = 154, -- Ornery Breezestrider
 			[253004] = 157, -- Amethyst Ruinstrider
 			[253005] = 134, -- Beryl Ruinstrider
 			[253007] = 157, -- Cerulean Ruinstrider
@@ -17982,9 +18486,14 @@ function ZA_UpdateData()
 			--! Surfboard
 			-- Waveshredder
 			[473188] = 133, -- Bronze Goblin Waveshredder
-			[446352] = 140, -- Goblin Surfboard
+			[446352] = 140, -- Kickin' Kezan Waveshredder
 			[473137] = 680, -- Soweezi's Vintage Waveshredder
 			[447413] = 135, -- Pearlescent Goblin Wave Shredder
+			-- Chess Board
+			[1235803] = 816, -- Grandmaster's Royal Board
+			[1235756] = 64, -- Grandmaster's Prophetic Board
+			[1235763] = 24, -- Grandmaster's Deep Board
+			[1235763] = 807, -- Grandmaster's Smokey Board
 
 			--! Dragonfly
 			-- Water Strider
@@ -20456,6 +20965,64 @@ function ZA_UpdateData()
 			[251112] = 100,
 			[234938] = 202,
 			[273837] = 4,
+			[468964] = 100,
+			[474643] = 202,
+			[468739] = 111,
+			[1220722] = 100,
+			[283517] = 320,
+			[284636] = 100,
+			[284634] = 100,
+			[284635] = 100,
+			[466718] = 100,
+			[466709] = 100,
+			[466726] = 100,
+			[35683] = 100,
+			[245249] = 320,
+			[243086] = 100,
+			[255441] = 320,
+			[354878] = 100,
+			[357016] = 203,
+			[354842] = 418,
+			[1225074] = 126,
+			[1225873] = 126,
+			[1227288] = 126,
+			[1227206] = 126,
+			[1227294] = 126,
+			[1227311] = 126,
+			[1233223] = 126,
+			[1233355] = 126,
+			[1233385] = 126,
+			[1233375] = 126,
+			[1233392] = 126,
+			[1233394] = 126,
+			[1230667] = 64, -- Celebratory Pack of Runed Ethereal Crests
+			[1230665] = 64, -- Glorious Cluster of Gilded Ethereal Crests
+			[1230660] = 64, -- Pack of Runed Ethereal Crests
+			[1230663] = 64, -- Pouch of Weathered Ethereal Crests
+			[1230662] = 64, -- Satchel of Carved Ethereal Crests
+			[1230668] = 64, -- Triumphant Satchel of Carved Ethereal Crests
+			[473406] = 203,
+			[1214928] = 650,
+			[1214321] = 100,
+			[473746] = 100,
+			[473489] = 100,
+			[1230794] = 650,
+			[416681] = 650,
+			[461181] = 650,
+			[461361] = 650,
+			[469037] = 650,
+			[1246632] = 650,
+			[1246661] = 650,
+			[466212] = 320, -- Channeling Void Essence
+			[1215854] = 650,
+			[1239390] = 72,
+			[1224049] = 100,
+			[1224052] = 100,
+			[449852] = 646,
+			[1216691] = 202,
+			[1216649] = 203,
+			[469894] = 803,
+			[468717] = 120,
 			--qqq
 
 
@@ -32344,6 +32911,62 @@ function ZA_UpdateData()
 			[251112] = 0,
 			[234938] = 0,
 			[273837] = 0,
+			[468964] = 0,
+			[474643] = 0,
+			[1220722] = 0,
+			[284636] = 0,
+			[284634] = 0,
+			[284635] = 0,
+			[466718] = 0,
+			[466709] = 0,
+			[466726] = 0,
+			[245249] = 0,
+			[243086] = 0,
+			[255441] = 0,
+			[351391] = 0,
+			[354878] = 0,
+			[357016] = 0,
+			[354842] = 0,
+			[1225074] = 237123,
+			[1225873] = 237092,
+			[1227288] = 237091,
+			[1227206] = 237093,
+			[1227294] = 237104,
+			[1227311] = 237110,
+			[1233223] = 237102,
+			[1233355] = 237113,
+			[1233385] = 237091,
+			[1233375] = 237114,
+			[1233392] = 237125,
+			[1233394] = 237131,
+			[1230667] = 0, -- Celebratory Pack of Runed Ethereal Crests
+			[1230665] = 0, -- Glorious Cluster of Gilded Ethereal Crests
+			[1230660] = 0, -- Pack of Runed Ethereal Crests
+			[1230663] = 0, -- Pouch of Weathered Ethereal Crests
+			[1230662] = 0, -- Satchel of Carved Ethereal Crests
+			[1230668] = 0, -- Triumphant Satchel of Carved Ethereal Crests
+			[473406] = 0,
+			[1214928] = 0,
+			[1214321] = 0,
+			[473746] = 0,
+			[473489] = 0,
+			[1230794] = 0,
+			[416681] = 0,
+			[461181] = 0,
+			[461361] = 0,
+			[469037] = 0,
+			[1246632] = 0,
+			[1246661] = 0,
+			[466212] = 0, -- Channeling Void Essence
+			[1215854] = 0,
+			[1239390] = 0,
+			[1224049] = 0,
+			[1224052] = 0,
+			[449852] = 0,
+			[1216691] = 0,
+			[1216649] = 0,
+			[469894] = 0,
+			[468717] = 5929756,
 			--qqi
 
 
