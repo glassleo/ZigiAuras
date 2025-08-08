@@ -2560,6 +2560,15 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1248417] = "Zone", -- Dulux Bluesberry Blast
+			[1248416] = "Zone", -- Supreme Mangoro Madness
+			[1248415] = "Zone", -- Omega Oyster Outbreak
+			[1248414] = "Zone", -- Kaja'Cola Sweetness Spike
+			[1248413] = "Zone", -- Kaja'Cola Flavor Surge
+			[1248412] = "Zone", -- Kaja'Cola Sugar Rush
+			[1248411] = "Zone", -- Kaja'Cola Energy Crash
+			[1248410] = "Zone", -- Ultimate Orange O-pocalypse
+			[1248409] = "Zone", -- Kaja Classic Original Taste
 			[1246861] = "Zone", -- Martin Fury
 			[1246841] = "Zone", -- Boots of Speedy Blinding
 			[1246833] = "Zone", -- Knee Seeking Arrow
@@ -3810,6 +3819,24 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1216093] = 320, -- Shadow Gaze
+			[1231867] = 325, -- Petrification Curse
+			[1240565] = 806, -- Corrosive Spittle
+			[1240566] = 806, -- Corrosive Spittle
+			[1240567] = 806, -- Corrosive Spittle
+			[456172] = 400, -- Subterranean Eruption
+			[456171] = 400, -- Subterranean Eruption
+			[1240060] = 911, -- Rampaging Charge
+			[1240108] = 911, -- Rampaging Charge
+			[1240109] = 911, -- Rampaging Charge
+			[1240114] = 911, -- Rampaging Charge
+			[1241360] = 911, -- Rampaging Charge
+			[1241361] = 911, -- Rampaging Charge
+			[1241362] = 911, -- Rampaging Charge
+			[1241363] = 911, -- Rampaging Charge
+			[1240025] = 103, -- Unbound Fury
+			[1240025] = 103, -- Unbound Fury
+			[1240027] = 103, -- Unbound Fury
 			[1239486] = 331, -- Broadside
 			[1239488] = 331, -- Broadside
 			[1239445] = 331, -- Broadside
@@ -10844,7 +10871,7 @@ function ZA_UpdateData()
 			["Tarak's Ritual"] = 32,
 			["Rocket Boost"] = 4,
 			[342886] = 805, -- Twilight Dust (The Slumbering Emperor)
-			["Lumbering Charge"] = 104,
+			["Lumbering Charge"] = 911,
 			["Explosive Fungistorm"] = 40,
 			["Throw Bomb"] = 5,
 			["Oppressive Chains"] = 909,
@@ -21023,6 +21050,8 @@ function ZA_UpdateData()
 			[1216649] = 203,
 			[469894] = 803,
 			[468717] = 120,
+			[1245440] = 320,
+			[1231240] = 811,
 			--qqq
 
 
@@ -29001,6 +29030,88 @@ function ZA_UpdateData()
 			[375782] = 101, -- Thousandbite Piranha Lure
 
 			--! Tailoring
+			-- Khaz Algar
+			[425143] = 150, -- Recraft Equipment
+			[1228344] = 815, -- Pure Chronomatic Fiber
+			[1228342] = 820, -- Pure Precise Fiber
+			[1228338] = 813, -- Pure Energizing Fiber
+			[1228343] = 814, -- Pure Dexterous Fiber
+			[446938] = 150, -- Consecrated Cuffs
+			[446940] = 150, -- Consecrated Cloak
+			[446934] = 150, -- Warm Sunrise Bracers
+			[446931] = 6, -- Treads of the Woven Dawn
+			[446939] = 150, -- Consecrated Cord
+			[446933] = 32, -- Slippers of the Woven Dusk
+			[446942] = 150, -- Consecrated Robe
+			[446937] = 150, -- Consecrated Slippers
+			[446932] = 32, -- Gloves of the Woven Dusk
+			[446945] = 150, -- Consecrated Gloves
+			[446944] = 150, -- Consecrated Mantle
+			[446935] = 150, -- Cool Sunset Bracers
+			[446941] = 150, -- Consecrated Hood
+			[446943] = 150, -- Consecrated Leggings
+			[446930] = 6, -- Grips of the Woven Dawn
+			[446971] = 150, -- Artisan Fishing Cap
+			[446973] = 150, -- Artisan Alchemist's Robe
+			[446972] = 150, -- Artisan Enchanter's Hat
+			[446974] = 150, -- Artisan Chef's Hat
+			[446975] = 150, -- Artisan Tailor's Coat
+			[446970] = 150, -- Artisan Gardening Hat
+			[446979] = 32, -- Duskweave Bag
+			[446991] = 6, -- Dawnthread Lining
+			[447000] = 126, -- Sunset Spellthread
+			[446977] = 6, -- Dawnweave Reagent Bag
+			[446992] = 32, -- Duskthread Lining
+			[447888] = 150, -- Hideseeker's Tote
+			[446982] = 150, -- Concoctor's Clutch
+			[454431] = 150, -- The Severed Satchel
+			[446988] = 150, -- Gardener's Seed Satchel
+			[446984] = 150, -- Hideshaper's Workbag
+			[446985] = 150, -- Magically "Infinite" Messenger
+			[446986] = 150, -- Prodigy's Toolbox
+			[446987] = 150, -- Darkmoon Duffle
+			[446990] = 150, -- Jeweler's Purse
+			[447001] = 126, -- Daybreak Spellthread
+			[446989] = 150, -- Excavator's Haversack
+			[446983] = 150, -- Ignition Satchel
+			[456706] = 150, -- Algari Weaverline
+			[438891] = 150, -- Algari Competitor's Cloth Treads
+			[438892] = 150, -- Algari Competitor's Cloth Bands
+			[438895] = 150, -- Algari Competitor's Cloth Tunic
+			[438889] = 150, -- Algari Competitor's Cloth Leggings
+			[438896] = 150, -- Algari Competitor's Cloth Sash
+			[438893] = 150, -- Algari Competitor's Cloth Hood
+			[438897] = 150, -- Algari Competitor's Cloth Cloak
+			[438890] = 150, -- Algari Competitor's Cloth Shoulderpads
+			[438894] = 150, -- Algari Competitor's Cloth Gloves
+			[446995] = 150, -- Preserving Embroidery Thread
+			[446997] = 150, -- Weavercloth Embroidery Thread
+			[446998] = 150, -- Gritty Polishing Cloth
+			[446996] = 150, -- Bright Polishing Cloth
+			[446999] = 126, -- Weavercloth Spellthread
+			[446978] = 150, -- Weavercloth Reagent Bag
+			[446963] = 150, -- Pioneer's Perfected Gloves
+			[446962] = 150, -- Pioneer's Perfected Mantle
+			[446959] = 150, -- Pioneer's Perfected Hood
+			[454397] = 150, -- Exquisite Weavercloth Bolt
+			[446965] = 150, -- Weavercloth Fishing Cap
+			[446976] = 150, -- Weavercloth Bag
+			[446969] = 150, -- Weavercloth Chef's Hat
+			[446958] = 150, -- Pioneer's Perfected Cloak
+			[446961] = 150, -- Pioneer's Perfected Leggings
+			[446966] = 150, -- Weavercloth Enchanter's Hat
+			[446964] = 150, -- Weavercloth Gardening Hat
+			[446967] = 150, -- Weavercloth Tailor's Coat
+			[446968] = 150, -- Weavercloth Alchemist's Robe
+			[446957] = 150, -- Pioneer's Perfected Cord
+			[446927] = 32, -- Duskweave Bolt
+			[446928] = 6, -- Dawnweave Bolt
+			[446960] = 150, -- Pioneer's Cloth Robe
+			[446955] = 150, -- Pioneer's Cloth Slippers
+			[446929] = 150, -- Weavercloth Bolt
+			[447002] = 202, -- Weavercloth Bandage
+			[446956] = 150, -- Pioneer's Cloth Cuffs
+			[446926] = 150, -- Unraveling
 			-- Dragon Isles
 			[426434] = 120, -- Verdant Tether
 			[419023] = 150, -- Verdant Combatant's Wildercloth Tunic
