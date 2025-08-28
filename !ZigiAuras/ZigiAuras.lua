@@ -432,6 +432,8 @@ function ZA_UpdateData()
 			[331] = "b20a55", -- Ascension
 			[328] = "824cff", -- Psychic
 			[34]  = "983cda", -- Twilight
+			[340] = "cac5c2", -- Voidlight
+			[341] = "686348", -- Blasphemy
 			[320] = "6e6eff", -- Void
 			[332] = "4a78e1", -- Voidstrike
 			[324] = "c46d7c", -- Corruption
@@ -459,6 +461,7 @@ function ZA_UpdateData()
 			[64]  = "e14aff", -- Arcane
 			[648] = "d37bfc", -- Arcane Surge
 			[647] = "d6acfc", -- Arcane Lightning
+			[647] = "bb60f0", -- Deep Arcane
 			[644] = "e88796", -- Primordial
 			[640] = "ac7ffc", -- Lunar
 			[65]  = "927fcf", -- Spellstrike
@@ -933,6 +936,8 @@ function ZA_UpdateData()
 			[320] = "220649:243bff", -- Void
 			[332] = "220649:3b7be3", -- Voidstrike
 			[34]  = "3949dc:ff256d", -- Twilight
+			[340] = "3d50ff:fff1ab", -- Voidlight
+			[341] = "2e2c22:f5e7a4", -- Blasphemy
 			[321] = "711010:f90000", -- Blood
 			[322] = "aa3f55:e4c06a", -- Pain
 			[323] = "523d5c:558d8b", -- Haunt
@@ -958,6 +963,7 @@ function ZA_UpdateData()
 			[64]  = "e14aff:c89eff", -- Arcane
 			[648] = "f945ff:82eeff", -- Arcane Surge
 			[647] = "ad14db:deedff", -- Arcane Lightning
+			[649] = "8000ff:c037e6", -- Deep Arcane
 			[644] = "c62b87:ffc4a0", -- Primordial
 			[640] = "d28aff:766fff", -- Lunar
 			[65]  = "863a9c:9696e0", -- Spellstrike
@@ -1031,10 +1037,11 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Shadowguard Assassin"] = 648,
 			["S.P.H.E.R.E."] = 647,
 			["Xeronia"] = 80,
-			["Kal'shin"] = 650,
-			["Energy Form"] = 650,
+			["Kal'shin"] = 648,
+			["Energy Form"] = 648,
 			["Borthas the Cold"] = 415,
 			["The Lich King"] = "DEATHKNIGHT",
 			["Chosen Champion"] = 417,
@@ -2367,6 +2374,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[1244018] = "State", -- Tazavesh, the Veiled Market, Hard Mode
 			[1232742] = true, -- Phase Diving
 			[1214374] = true, -- Phase Diving
 			[470996] = "State", -- Soul-Scribe's Allowance
@@ -2569,6 +2577,11 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1246818] = "Zone", -- Armoire of Invincibility
+			[1233946] = "Zone", -- Battered Aegis
+			[448876] = "Zone", -- Fungal Footpads
+			[1246366] = "Zone", -- Street Smart
+			[1246815] = "Zone", -- The 1 Ring
 			[1246351] = "Zone", -- Sandstorm
 			[1246346] = "Zone", -- Phaseblood Potion
 			[1248428] = "Zone", -- Three Dimensional Misprint
@@ -2592,7 +2605,9 @@ function ZA_UpdateData()
 			[1246861] = "Zone", -- Martin Fury
 			[1246841] = "Zone", -- Boots of Speedy Blinding
 			[1246833] = "Zone", -- Knee Seeking Arrow
-			[1246853] = "Zone", -- Deck of Several Things
+			[1246850] = "Zone", -- Deck of Several Things (Critical Strike)
+			[1246854] = "Zone", -- Deck of Several Things (Mastery)
+			[1246853] = "Zone", -- Deck of Several Things (Haste)
 			[471549] = "Zone", -- Flickering Lantern
 			[1233477] = "Zone", -- Arcane Essence
 			[1233475] = "Zone", -- Void Essence
@@ -3842,6 +3857,52 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1231923] = 648, -- Corespark Impale
+			[1231919] = 648, -- Corespark Impale
+			[1231915] = 648, -- Corespark Impale
+			[1231917] = 648, -- Corespark Impale
+			[1246345] = 417, -- Phaseblood Potion
+			[1246346] = 417, -- Phaseblood Potion
+			[1232298] = 649, -- Mending Leech
+			[1222341] = 332, -- Gloom Bite
+			[1227768] = 332, -- Gloom Bite
+			[1222242] = 332, -- Gloom Bite
+			[1217500] = 648, -- Exhilarating Speed
+			[427869] = 320, -- Unbridled Void
+			[427865] = 320, -- Unbridled Void
+			[429428] = 400, -- Earth Burst
+			[429427] = 803, -- Earth Burst Totem
+			[428879] = 400, -- Smash Rock
+			[429422] = 400, -- Stone Bolt
+			[428709] = 400, -- Granite Eruption
+			[428706] = 400, -- Granite Eruption
+			[428703] = 400, -- Granite Eruption
+			[448640] = 332, -- Shield Stampede
+			[448975] = 332, -- Shield Stampede
+			[448635] = 332, -- Shield Stampede
+			[448639] = 332, -- Shield Stampede
+			[448962] = 332, -- Shield Stampede
+			[464896] = 332, -- Shield Stampede
+			[426771] = 320, -- Void Outburst
+			[426786] = 320, -- Void Outburst
+			[445207] = 50, -- Piercing Wail
+			[429109] = 108, -- Restoring Metals
+			[429110] = 108, -- Alloy Bolt
+			[1239396] = 911, -- Run Through
+			[1239405] = 911, -- Run Through
+			[1239407] = 911, -- Run Through
+			[1236572] = 330, -- Arcane Bulwark
+			[1236354] = 649, -- Soul Siphon
+			[1241565] = 332, -- Witherdusk Surge
+			[1241568] = 332, -- Witherdusk Surge
+			[1241572] = 332, -- Witherdusk Surge
+			[1241550] = 240, -- Azurefire Brand
+			[1241830] = 801, -- Wave Striding
+			[1239175] = 320, -- Open Portal
+			[1221190] = 413, -- Gluttonous Miasma
+			[1221191] = 413, -- Gluttonous Miasma
+			[401205] = 806, -- Sticky Mucus
+			[401209] = 808, -- Spiked Shell
 			[1227259] = 413, -- Volatile Spittle
 			[1239791] = 413, -- Gluttonous Eruption
 			[1236586] = 413, -- Gluttonous Eruption
@@ -3934,15 +3995,15 @@ function ZA_UpdateData()
 			[1246787] = 722, -- Stellar Core
 			[1230674] = 320, -- Spaghettification
 			[1230675] = 320, -- Spaghettification
-			[1235490] = 320, -- Astrophysical Jet
-			[1237097] = 320, -- Astrophysical Jet
-			[1235491] = 320, -- Astrophysical Jet
-			[1237098] = 320, -- Astrophysical Jet
-			[1237089] = 320, -- Astrophysical Jet
-			[1235114] = 648, -- Soaring Reshii
-			[1238982] = 648, -- Soaring Reshii
-			[1238981] = 648, -- Soaring Reshii
-			[1243609] = 647, -- Airborne
+			[1235490] = 340, -- Astrophysical Jet
+			[1237097] = 340, -- Astrophysical Jet
+			[1235491] = 340, -- Astrophysical Jet
+			[1237098] = 340, -- Astrophysical Jet
+			[1237089] = 340, -- Astrophysical Jet
+			[1235114] = 340, -- Soaring Reshii
+			[1238982] = 340, -- Soaring Reshii
+			[1238981] = 340, -- Soaring Reshii
+			[1243609] = 340, -- Airborne
 			[1243577] = 332, -- Reverse Gravity
 			[1243581] = 332, -- Reverse Gravity
 			[1243580] = 332, -- Reverse Gravity
@@ -4351,13 +4412,13 @@ function ZA_UpdateData()
 			[1244308] = 648, -- Torrential Energy
 			[1244309] = 648, -- Torrential Energy
 			[1244313] = 648, -- Torrential Energy
-			[1231659] = 32, -- Behold!
-			[1236428] = 32, -- Behold!
-			[1231630] = 32, -- Behold!
-			[1231649] = 32, -- Behold!
-			[1231655] = 32, -- Behold!
-			[1231660] = 32, -- Behold!
-			[1231880] = 32, -- Behold!
+			[1231659] = 330, -- Behold!
+			[1236428] = 330, -- Behold!
+			[1231630] = 330, -- Behold!
+			[1231649] = 330, -- Behold!
+			[1231655] = 330, -- Behold!
+			[1231660] = 330, -- Behold!
+			[1231880] = 330, -- Behold!
 			[1236770] = 648, -- Arcane Geyser
 			[1236774] = 648, -- Arcane Geyser
 			[1236778] = 648, -- Arcane Geyser
@@ -4458,7 +4519,8 @@ function ZA_UpdateData()
 			[1235302] = 320, -- Umbral Gate
 			[1235397] = 330, -- Umbral Reach
 			[1231445] = 330, -- Umbral Stomp
-			[1230608] = 400, -- Dazing Gauntlet
+			[1231893] = 400, -- Crushing Stomp
+			[1230608] = 911, -- Dazing Gauntlet
 			[1246806] = 320, -- Entropic Conjunction
 			[1230610] = 320, -- Entropic Conjunction
 			[1223209] = 320, -- Entropic Conjunction
@@ -5190,7 +5252,7 @@ function ZA_UpdateData()
 			[470727] = 400, -- Jump Smash
 			[466991] = 411, -- Withering Fire
 			[473149] = 112, -- Thwack!
-			[429545] = 320, -- Censoring Gear
+			[429545] = 5, -- Censoring Gear
 			[445251] = 101, -- Rupturing Bite
 			[468572] = 330, -- Black Arrow
 			[1216784] = 911, -- Forward Charge
@@ -8046,7 +8108,7 @@ function ZA_UpdateData()
 			[432142] = 906, -- Venom Slash
 			[457149] = 325, -- Lethargic Curse
 			[436360] = 32, -- Shadow Blast
-			[456438] = 330, -- Fists of Stone
+			[456438] = 400, -- Fists of Stone
 			[456453] = 330, -- Void Claws
 			[104849] = 320, -- Void Bolt
 			[105416] = 320, -- Void Bolt
@@ -17799,15 +17861,18 @@ function ZA_UpdateData()
 			[260174] = 158, -- Terrified Pack Mule
 
 			--! Dragonhawk
-			[62048]  = 909, -- Illidari Doomhawk
-			[96503]  = 820, -- Amani Dragonhawk
-			[142478] = 133, -- Armored Blue Dragonhawk
-			[142266] = 142, -- Armored Red Dragonhawk
-			[61996]  = 62, -- Blue Dragonhawk
-			[194464] = 68, -- Eclipse Dragonhawk
-			[61997]  = 817, -- Red Dragonhawk
-			[66088]  = 817, -- Sunreaver Dragonhawk
-			[351195] = 411, -- Vengeance
+			[1234305] = 2, -- Lightwing Dragonhawk
+			[1234303] = 320, -- Voidwing Dragonhawk
+			[1239138] = 340, -- Voidlight Surger
+			[351195]  = 411, -- Vengeance
+			[62048]   = 909, -- Illidari Doomhawk
+			[96503]   = 820, -- Amani Dragonhawk
+			[142478]  = 133, -- Armored Blue Dragonhawk
+			[142266]  = 142, -- Armored Red Dragonhawk
+			[61996]   = 62, -- Blue Dragonhawk
+			[194464]  = 68, -- Eclipse Dragonhawk
+			[61997]   = 817, -- Red Dragonhawk
+			[66088]   = 817, -- Sunreaver Dragonhawk
 
 			--! Drake
 			[360954] = 814, -- Highland Drake
@@ -21583,6 +21648,17 @@ function ZA_UpdateData()
 			[467314] = 144,
 			[467431] = 100,
 			[464275] = 100,
+			[468174] = 100,
+			[468204] = 100,
+			[468399] = 202,
+			[474449] = 202,
+			[474631] = 101,
+			[472756] = 101,
+			[473353] = 804,
+			[474034] = 804,
+			[465340] = 203,
+			[466282] = 888,
+			[1216539] = 202,
 			--qqq
 
 
@@ -33630,10 +33706,17 @@ function ZA_UpdateData()
 			[1216952] = 0,
 			[1239419] = 0,
 			[467228] = 0,
-			[465340] = 203,
 			[467314] = 0,
 			[467431] = 0,
 			[464275] = 0,
+			[468174] = 0,
+			[468204] = 0,
+			[468399] = 0,
+			[474449] = 0,
+			[474631] = 0,
+			[472756] = 0,
+			[466282] = 0,
+			[1216539] = 0,
 			--qqi
 
 
