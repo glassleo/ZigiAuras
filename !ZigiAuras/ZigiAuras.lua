@@ -365,6 +365,7 @@ function ZA_UpdateData()
 			[200] = "fff58a", -- Titanic
 			[3]   = "cabe90", -- Holystrike
 			[6]   = "ffd42a", -- Radiant
+			[60]  = "f2ac5c", -- Radiantstrike
 			[202] = "e7cbb6", -- Discipline
 			[201] = "46cdff", -- Ethereal
 			[204] = "46cdff", -- Azerite
@@ -418,7 +419,7 @@ function ZA_UpdateData()
 			[801] = "58c8f0", -- Water
 			[901] = "5ba29c", -- Waterstrike
 			[24]  = "7ddfde", -- Froststorm
-			[240] = "7ddcff", -- Coldflame
+			[240] = "3dBaf8", -- Coldflame
 			[80]  = "4f77f8", -- Spellfrost
 			[18]  = "b2dac6", -- Holyfrost
 			[48]  = "5b6eda", -- Shadowfrost
@@ -461,7 +462,7 @@ function ZA_UpdateData()
 			[64]  = "e14aff", -- Arcane
 			[648] = "d37bfc", -- Arcane Surge
 			[647] = "d6acfc", -- Arcane Lightning
-			[647] = "bb60f0", -- Deep Arcane
+			[649] = "bb60f0", -- Deep Arcane
 			[644] = "e88796", -- Primordial
 			[640] = "ac7ffc", -- Lunar
 			[65]  = "927fcf", -- Spellstrike
@@ -607,6 +608,7 @@ function ZA_UpdateData()
 
 		--! Text
 		ZA.Text = {
+			[1234526] = "Portal: Delver's Headquarters", -- Manabound Ethergate
 			[451826] = "Defender's Armor Kit",
 			[451827] = "Defender's Armor Kit",
 			[451828] = "Defender's Armor Kit",
@@ -868,6 +870,7 @@ function ZA_UpdateData()
 			[200] = "ffa500:fff58a", -- Titanic
 			[3]   = "bccccf:ffd76b", -- Holystrike
 			[6]   = "ff6c00:ffd42a", -- Radiant
+			[60]  = "dedcbf:ff9124", -- Radiantstrike
 			[202] = "ce958c:fff1d6", -- Discipline
 			[201] = "00baff:fff9de", -- Ethereal
 			[204] = "0090ff:f8ff66", -- Azerite
@@ -920,7 +923,7 @@ function ZA_UpdateData()
 			[801] = "289dc8:71e2ff", -- Water
 			[901] = "2c5c7c:76c6b8", -- Waterstrike
 			[24]  = "008aac:b0fff5", -- Froststorm
-			[240] = "0d70d4:7ddcff", -- Coldflame
+			[240] = "1672ef:62fdff", -- Coldflame
 			[80]  = "3899f3:a877ff", -- Spellfrost
 			[18]  = "309b9c:fdffe9", -- Holyfrost
 			[48]  = "6000ed:73bbd8", -- Shadowfrost
@@ -1347,6 +1350,8 @@ function ZA_UpdateData()
 			[274742] = "Blackrock: Versatility",
 
 			-- The War Within
+			-- 11.2
+			[1244029] = "Woven Fate: Mastery", -- Lily of the Eternal Weave
 			-- 11.1.5
 			[1223887] = "Hallowed Tome: Haste", -- Hallowed Tome of the Abbot
 			[1223898] = "Hallowed Tome: Critical Strike", -- Hallowed Tome of the Zealot
@@ -2577,6 +2582,12 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[1242340] = "Zone", -- Speed Siphoner
+			[474544] = "Zone", -- Harpoon Cannon
+			[1218562] = "Zone", -- Lassoed Necroray
+			[417805] = "Zone", -- Spirit of Cooperation
+			[1246876] = "Zone", -- Jug of Endless Mayonnaise
+			[474081] = "Zone", -- Black Blood Collector
 			[1246818] = "Zone", -- Armoire of Invincibility
 			[1233946] = "Zone", -- Battered Aegis
 			[448876] = "Zone", -- Fungal Footpads
@@ -3370,6 +3381,8 @@ function ZA_UpdateData()
 			[274742] = 722, -- Might of the Blackrock
 
 			-- The War Within
+			-- 11.2
+			[1244029] = 62, -- Lily of the Eternal Weave
 			-- 11.1.5
 			[1223887] = 6, -- Hallowed Tome of the Abbot
 			[1223898] = 6, -- Hallowed Tome of the Zealot
@@ -3857,12 +3870,127 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1239754] = 418, -- Soul Impale
+			[1239758] = 418, -- Soul Impale
+			[1239761] = 418, -- Soul Impale
+			[1239757] = 418, -- Soul Impale
+			[455153] = 112, -- Vicious Crunch
+			[452306] = 60, -- Blessed Bladework
+			[452308] = 60, -- Blessed Bladework
+			[452309] = 60, -- Blessed Bladework
+			[452177] = 911, -- Fervent Charge
+			[452178] = 911, -- Fervent Charge
+			[40432] = 648, -- Warp
+			[1222356] = 648, -- Warp
+			[171167] = 648, -- Warp
+			[36908] = 648, -- Warp
+			[40949] = 648, -- Warp
+			[429483] = 641, -- Warp
+			[441205] = 648, -- Warp
+			[32920] = 648, -- Warp
+			[441221] = 648, -- Warp
+			[35779] = 648, -- Warp
+			[1242358] = 648, -- Warp
+			[458276] = 648, -- Warp
+			[468570] = 648, -- Warp
+			[1228231] = 648, -- Warp
+			[238482] = 648, -- Warp
+			[429460] = 641, -- Warp
+			[448546] = 648, -- Warp
+			[455252] = 648, -- Warp
+			[1244913] = 648, -- Warp
+			[436065] = 641, -- Warp
+			[448134] = 648, -- Warp
+			[448584] = 648, -- Warp
+			[449417] = 648, -- Warp
+			[452904] = 648, -- Warp
+			[458253] = 648, -- Warp
+			[1228095] = 648, -- Warp
+			[1228105] = 648, -- Warp
+			[1228230] = 648, -- Warp
+			[1235864] = 648, -- Warp
+			[1242636] = 648, -- Warp
+			[448020] = 648, -- Warp
+			[448585] = 648, -- Warp
+			[455279] = 648, -- Warp
+			[468554] = 648, -- Warp
+			[468588] = 648, -- Warp
+			[238518] = 648, -- Warp
+			[429459] = 641, -- Warp
+			[436036] = 641, -- Warp
+			[449149] = 648, -- Warp
+			[440996] = 410, -- Diseased Bite
+			[1241500] = 240, -- Azurefire Brand
+			[1241543] = 240, -- Azurefire Brand
+			[1241555] = 240, -- Azurefire Brand
+			[1241559] = 240, -- Azurefire Brand
+			[1241563] = 240, -- Azurefire Brand
+			[1241550] = 240, -- Azurefire Brand
+			[1245667] = 332, -- Regurgitate Kobold
+			[1245765] = 327, -- Fearsome Roar
+			[1245784] = 400, -- Crumbling Slam
+			[444257] = 105, -- Thunderous Drums
+			[1241310] = 648, -- Arcane Burrow
+			[1241330] = 648, -- Arcane Burrow
+			[1241294] = 648, -- Arcane Burrow
+			[1241312] = 648, -- Arcane Burrow
+			[1241297] = 648, -- Arcane Burrow
+			[1241307] = 648, -- Arcane Burrow
+			[1241278] = 102, -- Razor Maw
+			[1241278] = 102, -- Razor Maw
+			[392945] = 4, -- Blazing Chaos
+			[392971] = 4, -- Blazing Chaos
+			[392984] = 4, -- Blazing Chaos
+			[392977] = 4, -- Blazing Chaos
+			[392981] = 4, -- Blazing Chaos
+			[394427] = 4, -- Stabilize Flame
+			[394482] = 4, -- Stabilize Flame
+			[395433] = 9, -- Shape Tempest
+			[395435] = 9, -- Shape Tempest
+			[395817] = 160, -- Frost Barrier
+			[395820] = 160, -- Frost Barrier
+			[396005] = 160, -- Frost Barrier
+			[369939] = 4, -- Leaping Flames
+			[389213] = 4, -- Leaping Flame
+			[394917] = 4, -- Leaping Flames
+			[404308] = 4, -- Leaping Flames
+			[404383] = 4, -- Leaping Flames
+			[370917] = 4, -- Leaping Flames
+			[403853] = 4, -- Leaping Flames
+			[370901] = 4, -- Leaping Flames
+			[404368] = 4, -- Leaping Flames
+			[403834] = 4, -- Leaping Flames
+			[404363] = 4, -- Leaping Flames
+			[404367] = 4, -- Leaping Flames
+			[393306] = 400, -- Rock Shards
+			[1234529] = 320, -- Cosmic Maw
+			[457938] = 320, -- Stifling Echo
+			[457902] = 330, -- Enveloping Shadows
+			[439523] = 330, -- Dusk Demise
+			[1242039] = 320, -- Implosion
+			[1242142] = 320, -- Implosion
+			[1241991] = 203, -- Kareshi Timebomb
+			[1242033] = 203, -- Kareshi Timebomb
+			[1241753] = 332, -- Portal Infusion
+			[1241777] = 332, -- Portal Infusion
+			[1242162] = 332, -- Portal Infusion
+			[1242185] = 332, -- Portal Infusion
+			[1239134] = 332, -- Cosmic Tranquilization
+			[446064] = 901, -- Slam
+			[1234526] = 648, -- Delver's Mana-Bound Ethergate
+			[441812] = 102, -- Dreadful Wound
+			[451177] = 102, -- Dreadful Wound
+			[441585] = 103, -- Ravage
+			[441602] = 103, -- Ravage
+			[423394] = 28, -- Overload Empowered Deposit
+			[445860] = 646, -- Drowned Illusions
+			[433029] = 646, -- Illusionary Bolt
 			[1231923] = 648, -- Corespark Impale
 			[1231919] = 648, -- Corespark Impale
 			[1231915] = 648, -- Corespark Impale
 			[1231917] = 648, -- Corespark Impale
-			[1246345] = 417, -- Phaseblood Potion
-			[1246346] = 417, -- Phaseblood Potion
+			[1246345] = 649, -- Phaseblood Potion
+			[1246346] = 649, -- Phaseblood Potion
 			[1232298] = 649, -- Mending Leech
 			[1222341] = 332, -- Gloom Bite
 			[1227768] = 332, -- Gloom Bite
@@ -3891,7 +4019,7 @@ function ZA_UpdateData()
 			[1239396] = 911, -- Run Through
 			[1239405] = 911, -- Run Through
 			[1239407] = 911, -- Run Through
-			[1236572] = 330, -- Arcane Bulwark
+			[1236572] = 649, -- Arcane Bulwark
 			[1236354] = 649, -- Soul Siphon
 			[1241565] = 332, -- Witherdusk Surge
 			[1241568] = 332, -- Witherdusk Surge
@@ -4150,15 +4278,6 @@ function ZA_UpdateData()
 			[1247214] = 648, -- Phase Warp
 			[1232680] = 648, -- Phase Warp
 			[1232524] = 648, -- Phase Warp
-			[1222356] = 648, -- Warp
-			[1242636] = 648, -- Warp
-			[1228231] = 648, -- Warp
-			[1228095] = 648, -- Warp
-			[1228105] = 648, -- Warp
-			[1242358] = 648, -- Warp
-			[1244913] = 648, -- Warp
-			[1228230] = 648, -- Warp
-			[1235864] = 648, -- Warp
 			[1220390] = 64, -- Warp Strike
 			[1220386] = 64, -- Warp Strike
 			[1227137] = 64, -- Warp Strike
@@ -4280,6 +4399,7 @@ function ZA_UpdateData()
 			[1250854] = 332, -- Nexus Daggers
 			[1250855] = 332, -- Nexus Daggers
 			[1237245] = 413, -- Decroding Spittle
+			[1223614] = 64, -- Ethereal Barricade
 			[1223612] = 64, -- Ethereal Barrier
 			[1223611] = 999, -- Ethereal Exhaustion
 			[326809] = 999, -- Satiated
@@ -5467,7 +5587,7 @@ function ZA_UpdateData()
 			[1218152] = 200, -- Liquid Gold
 			[287072] = 200, -- Liquid Gold
 			[418262] = 320, -- Void Grasp
-			[418295] = 330, -- Umbral Slash
+			[418295] = 332, -- Umbral Slash
 			[418297] = 320, -- Castigate
 			[1218029] = 5, -- Crab-a-bomb Barrage
 			[1218024] = 5, -- Crab-a-bomb Barrage
@@ -6921,7 +7041,7 @@ function ZA_UpdateData()
 			[453212] = 32, -- Obsidian Beam
 			[431365] = 330, -- Tormenting Ray
 			[431364] = 330, -- Tormenting Ray
-			[450756] = 327, -- Abyssal Howl
+			[450756] = 330, -- Abyssal Howl
 			[431491] = 102, -- Tainted Slash
 			[5174]   = 2, --Cookie's Cooking
 			[6306]   = 806, -- Acid Splash
@@ -7299,8 +7419,8 @@ function ZA_UpdateData()
 			["Wave 1"] = 100, -- BigWigs
 			[450417] = 806, -- Infectious Spit
 			[424741] = 810, -- Infectious Spores
-			[440185] = 806, -- Infectious Spores
-			[440187] = 806, -- Infectious Spores
+			[440185] = 888, -- Infectious Spores
+			[440187] = 888, -- Infectious Spores
 			[383874] = 402, -- Hyperthermia
 			[444701] = 400, -- Fracturing Leap
 			[444688] = 400, -- Fracturing Leap
@@ -8283,7 +8403,7 @@ function ZA_UpdateData()
 			[440550] = 100, -- Holding Supplies
 			[372369] = 100, -- Shoot
 			[431659] = 32, -- Shadow Bolt
-			[446079] = 900, -- Call of the Abyss
+			[446079] = 48, -- Call of the Abyss
 			[470587] = 48, -- Abyssal Surge
 			[440615] = 48, -- Abyssal Surge
 			[470588] = 325, -- Curse of the Depths
@@ -8366,7 +8486,7 @@ function ZA_UpdateData()
 			[413135] = 36, -- Shadowlava Swing
 			[413134] = 36, -- Shadowlava Swing
 			[373277] = 320, -- Thing from Beyond
-			[460905] = 96, -- Warband Bank Distane Inhibitor
+			[460905] = 649, -- Warband Bank Distane Inhibitor
 			[4294]   = 403, -- The Life-Binding
 			[456260] = 646, -- Teleporter Mishap
 			[427266] = 8, -- Emerald Serpent's Ward
@@ -17200,6 +17320,7 @@ function ZA_UpdateData()
 			[133038] = 64, -- Zot!
 			[113862] = 323, -- Greater Invisibility (DR)
 			[113942] = 999, -- Demonic Gateway (Debuff)
+			[1219480] = 4, -- Ascendance (Fire)
 			[114050] = 4, -- Ascendance (Fire)
 			[114051] = 811, -- Ascendance (Air)
 			[114052] = 801, -- Ascendance (Water)
@@ -18213,7 +18334,7 @@ function ZA_UpdateData()
 			[102514] = 811, -- Corrupted Hippogryph
 			[149801] = 815, -- Emerald Hippogryph
 			[97359]  = 4, -- Flameward Hippogryph
-			[225765] = 813, -- Leyfeather Hippogryph
+			[225765] = 649, -- Leyfeather Hippogryph
 			[215159] = 661, -- Long-Forgotten Hippogryph
 			[66087]  = 18, -- Silver Covenant Hippogryph
 			[274610] = 142, -- Teldrassil Hippogryph
@@ -18551,7 +18672,7 @@ function ZA_UpdateData()
 			[308087] = 130, -- Lucky Yun
 
 			--! Panthara
-			[243512] = 106, -- Luminous Starseeker
+			[243512] = 721, -- Luminous Starseeker
 
 			--! Parrot
 			[471696] = 34, -- Hooktalon
@@ -21431,6 +21552,7 @@ function ZA_UpdateData()
 			[1220989] = 5,
 			[1225809] = 130,
 			[473218] = 130,
+			[1246363] = 130,
 			[474433] = 804,
 			[1214821] = 100,
 			[465255] = 202,
@@ -21591,12 +21713,12 @@ function ZA_UpdateData()
 			[1233375] = 126,
 			[1233392] = 126,
 			[1233394] = 126,
-			[1230667] = 64, -- Celebratory Pack of Runed Ethereal Crests
-			[1230665] = 64, -- Glorious Cluster of Gilded Ethereal Crests
-			[1230660] = 64, -- Pack of Runed Ethereal Crests
-			[1230663] = 64, -- Pouch of Weathered Ethereal Crests
-			[1230662] = 64, -- Satchel of Carved Ethereal Crests
-			[1230668] = 64, -- Triumphant Satchel of Carved Ethereal Crests
+			[1230667] = 649, -- Celebratory Pack of Runed Ethereal Crests
+			[1230665] = 649, -- Glorious Cluster of Gilded Ethereal Crests
+			[1230660] = 649, -- Pack of Runed Ethereal Crests
+			[1230663] = 649, -- Pouch of Weathered Ethereal Crests
+			[1230662] = 649, -- Satchel of Carved Ethereal Crests
+			[1230668] = 649, -- Triumphant Satchel of Carved Ethereal Crests
 			[473406] = 203,
 			[1214928] = 650,
 			[1214321] = 100,
@@ -21659,6 +21781,18 @@ function ZA_UpdateData()
 			[465340] = 203,
 			[466282] = 888,
 			[1216539] = 202,
+			[474081] = 100,
+			[474290] = 100,
+			[474083] = 800,
+			[1234535] = 649,
+			[1231440] = 100,
+			[1218551] = 100,
+			[1221228] = 646,
+			[1223969] = 801,
+			[1224021] = 203,
+			[1224356] = 111,
+			[423395] = 111,
+			[474393] = 4,
 			--qqq
 
 
@@ -33717,6 +33851,15 @@ function ZA_UpdateData()
 			[472756] = 0,
 			[466282] = 0,
 			[1216539] = 0,
+			[474290] = 0,
+			[1234535] = 0,
+			[1231440] = 0,
+			[1218551] = 0,
+			[1218551] = 0,
+			[1221228] = 0,
+			[1223969] = 0,
+			[1224021] = 0,
+			[474393] = 0,
 			--qqi
 
 
@@ -33857,6 +34000,8 @@ function ZA_UpdateData()
 
 
 			--§ Spells
+			[1234526] = 7137505, -- Manabound Ethergate
+			[1223614] = 7137533, -- Ethereal Barricade
 			[1223612] = 7137533, -- Ethereal Barrier
 			[17162]  = 135862, -- Summon Water Elemental
 			[394927] = 4630438, -- Light of Creation (Kharnalex, The First Light) (missing icon)
