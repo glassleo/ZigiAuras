@@ -3870,6 +3870,21 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1240494] = 900, -- Add a Handful of Hops
+			[1240484] = 900, -- Add a Pinch of Hops
+			[1240493] = 900, -- Add a Dash of Hops
+			[440977] = 909, -- Sharpen Your Knife
+			[444998] = 806, -- Toxic Exoskeleton
+			[445015] = 806, -- Toxic Exoskeleton
+			[117830] = 282, -- Throw Brew
+			[276213] = 282, -- Throw Brew
+			[1238359] = 282, -- Throw Brew
+			[121963] = 282, -- Throw Spilled Unga Brew in Cauldron
+			[121886] = 282, -- Throw Unga Jungle Brew in Cauldron
+			[445805] = 801, -- Thrashing Frenzy
+			[445774] = 801, -- Thrashing Frenzy
+			[1231344] = 106, -- Summon Relic
+			[1231345] = 106, -- Summon Relic
 			[1239754] = 418, -- Soul Impale
 			[1239758] = 418, -- Soul Impale
 			[1239761] = 418, -- Soul Impale
@@ -21793,6 +21808,9 @@ function ZA_UpdateData()
 			[1224356] = 111,
 			[423395] = 111,
 			[474393] = 4,
+			[442171] = 648,
+			[1240523] = 100,
+			[1236218] = 100,
 			--qqq
 
 
@@ -33860,6 +33878,9 @@ function ZA_UpdateData()
 			[1223969] = 0,
 			[1224021] = 0,
 			[474393] = 0,
+			[442171] = 0,
+			[1240523] = 0,
+			[1236218] = 0,
 			--qqi
 
 
