@@ -3870,8 +3870,11 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1235781] = 900, -- Add a Handful of Hops
 			[1240494] = 900, -- Add a Handful of Hops
+			[1235019] = 900, -- Add a Pinch of Hops
 			[1240484] = 900, -- Add a Pinch of Hops
+			[1235540] = 900, -- Add a Dash of Hops
 			[1240493] = 900, -- Add a Dash of Hops
 			[440977] = 909, -- Sharpen Your Knife
 			[444998] = 806, -- Toxic Exoskeleton
