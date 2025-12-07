@@ -1,4 +1,4 @@
-## Interface: 110200
+## Interface: 110207
 ## Title: ZigiAuras
 ## Version: Perpetual
 ## Notes: Global variables for WeakAuras
