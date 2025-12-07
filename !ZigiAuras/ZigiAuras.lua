@@ -1040,6 +1040,7 @@ function ZA_UpdateData()
 
 		--! Vehicles
 		ZA.Vehicles = {
+			["Birchbramble"] = 8,
 			["Shadowguard Assassin"] = 648,
 			["S.P.H.E.R.E."] = 647,
 			["Xeronia"] = 80,
@@ -2050,7 +2051,7 @@ function ZA_UpdateData()
 			--! Consumable Auras
 
 			["Well Fed"] = true,
-			["Herty Well Fed"] = true,
+			["Hearty Well Fed"] = true,
 			[20707] = true, -- Soulstone
 
 
@@ -2263,6 +2264,7 @@ function ZA_UpdateData()
 			-- AUGMENT RUNE --
 			------------------
 
+			[1234969] = "Augment", -- Ethereal Augmentation
 			[393438] = "Augment", -- Draconic Augmentation
 			[347901] = "Augment", -- Veiled Augmentation
 
@@ -2276,6 +2278,8 @@ function ZA_UpdateData()
 			[23445] = true, -- Evil Twin (Wormhole)
 
 			-- Experience/Reputation
+			[1255630] = "XP", -- Moratari's Infinite Wisdom
+			[1232454] = "Reputation", -- Infinite Power
 			[1229050] = "XP", -- Mastery of Timeways
 			[423861] = "XP", -- Mastery of Timeways
 			[1229052] = "Reputation", -- Knowledge of Timeways
@@ -2351,6 +2355,7 @@ function ZA_UpdateData()
 			[191212] = "Gathering", -- Fizzy Apple Cider
 
 			-- Event
+			[1213439] = true, -- WoW Remix: Legion
 			[424143] = true, -- WoW Remix: Mists of Pandaria
 			[186406] = true, -- Sign of the Critter
 			[186401] = true, -- Sign of the Skirmisher
@@ -2368,6 +2373,7 @@ function ZA_UpdateData()
 			[335151] = true, -- Sign of the Mists
 			[335152] = true, -- Sign of Iron
 			[359082] = true, -- Sign of the Legion
+			[1256081] = true, -- Sign of Azeroth
 			[1223878] = true, -- Sign of Azeroth
 			[1214848] = true, -- Winds of Mysterious Fortune
 			[1250683] = true, -- Collector's Bounty
@@ -2379,6 +2385,7 @@ function ZA_UpdateData()
 			----------------
 
 			--! State
+			[1238465] = "State", -- Heroic World Tier
 			[1244018] = "State", -- Tazavesh, the Veiled Market, Hard Mode
 			[1232742] = true, -- Phase Diving
 			[1214374] = true, -- Phase Diving
@@ -2582,6 +2589,10 @@ function ZA_UpdateData()
 			[67556] = "Zone", -- Cooking Speed
 
 			--! Zone
+			[225976] = "Zone", -- Ley Infusion
+			[1225968] = "Zone", -- Nostwin's Return Service
+			[1251596] = "Zone", -- Infinite Meetings with Moratari
+			[396972] = "Zone", -- Shared A Meal
 			[1242340] = "Zone", -- Speed Siphoner
 			[474544] = "Zone", -- Harpoon Cannon
 			[1218562] = "Zone", -- Lassoed Necroray
@@ -3870,6 +3881,30 @@ function ZA_UpdateData()
 
 
 			--! Spell
+			[1233637] = 8, -- Teleport Home
+			[1233181] = 800, -- Tempest Wrath
+			[1241078] = 32, -- Offering of the Assassin
+			[1241187] = 10, -- Offering of Restoration
+			[1241957] = 412, -- Offering of Brutality
+			[1241191] = 104, -- Offering of Swiftness
+			[1241757] = 401, -- Offering of the Pact
+			[1242042] = 34, -- Offering of the Void
+			[1237711] = 127, -- Twisted Crusade
+			[1237710] = 401, -- Call of the Legion
+			[1242245] = 641, -- Timerunning
+			[1225969] = 641, -- Nostwin's Return Service
+			[1225967] = 641, -- Nostwin's Voucher
+			[1232807] = 641, -- Unraveling Sands
+			[1236723] = 641, -- Remix Time
+			[422416] = 8, -- Overgrowth
+			[420377] = 888, -- Acorn Volley
+			[1241693] = 416, -- Locust Swarm
+			[1241694] = 416, -- Locust Swarm
+			[1242028] = 320, -- Shadowburst Lance
+			[1242041] = 320, -- Shadowburst Lance
+			[1242045] = 320, -- Shadowburst Lance
+			[1242048] = 320, -- Shadowburst Lance
+			[1242070] = 320, -- Shadowburst Lance
 			[1235781] = 900, -- Add a Handful of Hops
 			[1240494] = 900, -- Add a Handful of Hops
 			[1235019] = 900, -- Add a Pinch of Hops
@@ -13341,7 +13376,7 @@ function ZA_UpdateData()
 			["Dreadstalkers"] = 32,
 			["Dream Dust"] = 802,
 			["Dreaming Charge"] = 805,
-			["Dreamwalk"] = 10,
+			["Dreamwalk"] = 280,
 			["Drifting Star:4037119"] = 203,
 			["Drink Muck"] = 410,
 			["Drink Potion"] = 281,
@@ -18132,8 +18167,10 @@ function ZA_UpdateData()
 			[254069] = 200, -- Glorious Felcrusher
 
 			--! Elemental
+			[1233925] = 321, -- Lana'thel's Crimson Cascade
 			[424009] = 4, -- Runebound Firelord
 			[358072] = 160, -- Bound Blizzard
+			[1255478] = 401, -- Farseer's Felscorned Tempest
 			[231442] = ZA.Specialization(811, 4, 811, 24), -- Farseer's Raging Tempest
 			[289555] = 24, -- Glacial Tidestorm
 			-- Shadow Elemental
@@ -18162,33 +18199,38 @@ function ZA_UpdateData()
 			[300149] = 910, -- Silent Glider
 			[291538] = 818, -- Unshackled Waveray
 
-			--! Felbat
-			[253088] = 4, -- Antoran Charhound
-			[253087] = 32, -- Antoran Gloomhound
-			[229417] = 127, -- Slayer's Felbroken Shrieker
-			[369476] = 402, -- Amalgam of Rage
-			[466144] = 5, -- Prized Gladiator's Fel Bat
-			[472157] = 320, -- Astral Gladiator's Fel Bat
-			[449466] = 133, -- Forged Gladiator's Fel Bat
-			[449465] = 131, -- Silver Gladiator's Fel Bat
+			--! Fel Bat
+			[1229283] = 401, -- Ashplague Fel Bat
+			[1229276] = 401, -- Bloodhunter Fel Bat
+			[1229288] = 401, -- Wretched Fel Bat
+			[253088]  = 4, -- Antoran Charhound
+			[253087]  = 32, -- Antoran Gloomhound
+			[1255431] = 401, -- Slayer's Felscorned Shrieker
+			[229417]  = 127, -- Slayer's Felbroken Shrieker
+			[369476]  = 402, -- Amalgam of Rage
+			[466144]  = 5, -- Prized Gladiator's Fel Bat
+			[472157]  = 320, -- Astral Gladiator's Fel Bat
+			[449466]  = 133, -- Forged Gladiator's Fel Bat
+			[449465]  = 131, -- Silver Gladiator's Fel Bat
 			-- Plaguebat
-			[272472] = 134, -- Undercity Plaguebat
+			[272472]  = 134, -- Undercity Plaguebat
 			-- Skyrazor
-			[451489] = 910, -- Siesbarg
-			[451491] = 150, -- Ascendant Skyrazor
-			[451486] = 150, -- Sureki Skyrazor
+			[451489]  = 910, -- Siesbarg
+			[451491]  = 150, -- Ascendant Skyrazor
+			[451486]  = 150, -- Sureki Skyrazor
 			-- Crocolisk Bat
-			[1227192] = 6, -- Herald of Sa'bak
+			[1227192] = 200, -- Herald of Sa'bak
 
 			--! Felstalker
 			[189998] = 32, -- Illidari Felstalker
 
 			--! Felsteed
-			[5784]   = (class == "WARLOCK" and IsSpellKnown(101508)) and 401 or 400, -- Felsteed
-			[23161]  = (class == "WARLOCK" and IsSpellKnown(101508)) and 401 or 400, -- Wrathsteed
-			[238454] = 320, -- Netherlord's Accursed Wrathsteed
-			[238452] = 402, -- Netherlord's Brimstone Wrathsteed
-			[232412] = 401, -- Netherlord's Chaotic Wrathsteed
+			[5784]    = (class == "WARLOCK" and IsSpellKnown(101508)) and 401 or 400, -- Felsteed
+			[23161]   = (class == "WARLOCK" and IsSpellKnown(101508)) and 401 or 400, -- Wrathsteed
+			[1255480] = 401, -- Felscorned Netherlord's Dreadsteed
+			[238454]  = 320, -- Netherlord's Accursed Wrathsteed
+			[238452]  = 402, -- Netherlord's Brimstone Wrathsteed
+			[232412]  = 401, -- Netherlord's Chaotic Wrathsteed
 
 			--! Fey Dragon
 			[425338] = 805, -- Flourishing Whimsydrake
@@ -18741,6 +18783,7 @@ function ZA_UpdateData()
 			[60002]  = 641, -- Time-Lost Proto-Drake
 			[60024]  = 820, -- Violet Proto-Drake
 			[229388] = 105, -- Battlelord's Bloodthirsty War Wyrm
+			[1255482]= 401, -- Felscorned War Wyrm
 			[386452] = 48, -- Frostbrood Proto-Wyrm
 
 			[262027] = 156, -- Corrupted Gladiator's Proto-Drake
@@ -19008,7 +19051,7 @@ function ZA_UpdateData()
 			[73313]   = 33, -- Crimson Deathcharger
 			[72286]   = 160, -- Invincible
 			-- Wraithcharger
-			[1245205] = 401, -- Forsaken's Grotesque Charger
+			[1235817] = 908, -- Forsaken's Grotesque Charger
 			[1235819] = 328, -- Wailing Banshee's Charger
 			[1234859] = 720, -- Banshee's Chilling Charger
 			[1235820] = 2, -- Banshee's Sickening Charger
@@ -21814,6 +21857,11 @@ function ZA_UpdateData()
 			[442171] = 648,
 			[1240523] = 100,
 			[1236218] = 100,
+			[1233782] = 126,
+			[1244388] = 204,
+			[1244387] = 204,
+			[1241752] = 127,
+			[1255827] = 722,
 			--qqq
 
 
@@ -22126,6 +22174,27 @@ function ZA_UpdateData()
 			[402144] = 176, -- Animist's Legguards
 
 			--! Alchemy
+			[1269228] = 819, -- Black Dye Pigment
+			[1268662] = 819, -- Black Dye Pigment
+			[1269226] = 814, -- Blue Dye Pigment
+			[1268984] = 814, -- Blue Dye Pigment
+			[1269235] = 116, -- Brown Dye Pigment
+			[1267108] = 116, -- Brown Dye Pigment
+			[1269230] = 815, -- Green Dye Pigment
+			[1268985] = 815, -- Green Dye Pigment
+			[1269233] = 817, -- Orange Dye Pigment
+			[1268993] = 817, -- Orange Dye Pigment
+			[1269231] = 813, -- Purple Dye Pigment
+			[1269057] = 813, -- Purple Dye Pigment
+			[1269229] = 818, -- Red Dye Pigment
+			[1268998] = 818, -- Red Dye Pigment
+			[1269232] = 822, -- Teal Dye Pigment
+			[1268999] = 822, -- Teal Dye Pigment
+			[1269227] = 150, -- White Dye Pigment
+			[1268770] = 150, -- White Dye Pigment
+			[1269234] = 816, -- Yellow Dye Pigment
+			[1268989] = 816, -- Yellow Dye Pigment
+
 			-- Dragon Isles
 			[415810] = 806, -- Potion of Withering Dreams
 			[415628] = 321, -- Dreamwalker's Healing Potion
@@ -33884,6 +33953,10 @@ function ZA_UpdateData()
 			[442171] = 0,
 			[1240523] = 0,
 			[1236218] = 0,
+			[1233782] = 0,
+			[1241752] = 0,
+			[1255827] = 0,
+			[1233637] = 7252953, -- Teleport Home
 			--qqi
 
 
